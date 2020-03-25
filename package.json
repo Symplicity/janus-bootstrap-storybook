@@ -6,7 +6,15 @@
     "url": "git+https://github.com/Symplicity/janus-bootstrap-storybook.git"
   },
   "description": "Storybook to build, test, certify, and document reference components with Janus-Bootstrap",
-  "keywords": ["symplicity","design system","janus","booststrap","storybook","html","rtl"],
+  "keywords": [
+    "symplicity",
+    "design system",
+    "janus",
+    "booststrap",
+    "storybook",
+    "html",
+    "rtl"
+  ],
   "license": "MIT",
   "author": "",
   "main": "index.js",
