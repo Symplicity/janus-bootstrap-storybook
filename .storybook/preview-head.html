@@ -1,0 +1,13 @@
+<style type="text/css">
+   html[dir] body { 
+      margin: 15px; 
+   }
+</style>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+   let body = document.querySelector('html');
+   let dir = body.getAttribute('dir');
+   console.log(dir);
+   if (!dir) body.setAttribute('dir','ltr');
+ });
+ </script>
