@@ -23,7 +23,7 @@
   "scenarios": [
     {
       "label": "Alerts-SB-Success",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-alerts--alert-success",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-alerts--alert-success",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -41,7 +41,7 @@
     },
     {
       "label": "Alerts-SB-Info",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-alerts--alert-success",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-alerts--alert-success",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -59,7 +59,7 @@
     },
     {
       "label": "Badges-SB",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-badges--story-1",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-badges--story-1",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -77,7 +77,7 @@
     },
     {
       "label": "Buttons-SB",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-button--basic",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--basic",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -95,7 +95,7 @@
     },
     {
       "label": "Dropdown-SB",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-dropdown--story-5",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-dropdown--story-5",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -113,7 +113,7 @@
     },
     {
       "label": "Forms-SB",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-forms--story",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-forms--story",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -131,7 +131,7 @@
     },
     {
       "label": "Popovers-SB",
-      "url": "http://10.0.0.13:9009/iframe.html?id=components-popovers--story-1",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-popovers--story-1",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
