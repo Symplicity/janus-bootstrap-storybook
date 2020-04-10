@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.0] - 2020-04-10
+### Added
+- Added .out directory for exporting build to display on Carlito
+
+## [0.2.0] - 2020-04-09
+### Changed
+- Use special DNS name host.docker.internal rather than 10.0.0.13 for docker/backstopjs interplay
+
 ## [0.1.0] - 2020-02-21
 ### Added
 - Initial setup. See the README.
