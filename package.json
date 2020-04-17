@@ -24,7 +24,8 @@
     "test": "npm-run-all test:*",
     "test:run": "docker run --rm -v $(pwd):/src backstopjs/backstopjs test",
     "test:view-report": "open-cli backstop_data/html_report/index.html",
-    "approve": "docker run --rm -v $(pwd):/src backstopjs/backstopjs approve"
+    "approve": "docker run --rm -v $(pwd):/src backstopjs/backstopjs approve",
+    "reference": "docker run --rm -v $(pwd):/src backstopjs/backstopjs reference"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

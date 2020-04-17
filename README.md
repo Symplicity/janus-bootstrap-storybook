@@ -66,10 +66,11 @@ Visual regression testing opens storybook pages in a headless browser, takes scr
 
 ###Adding new tests
 1. Edit `backstop.json` and add your test in the `scenarios` array. See [the docs](https://github.com/garris/BackstopJS#using-backstopjs)
-2. Run all tests using `npm run test`.
-3. In the test report, the only failures reported should be for your new test.
-4. If there are other failures, **you must resolve them** with contributors before continuing.
-4. Run `npm run approve` to approve all of the results of your test, including your new test.
+2. If this is a new scenario and component you will need to generate a set of reference images before running a test, for example you would use `npm run reference --filter=Typography-SB` if your new sceario had a label of `Typography-SB`.
+3. Run all tests using `npm run test`.
+4. In the test report, the only failures reported should be for your new test.
+5. If there are other failures, **you must resolve them** with contributors before continuing.
+6. Run `npm run approve` to approve all of the results of your test, including your new test.
 
 
 Sharing your work
