@@ -11,9 +11,45 @@ export default {
   },
 };
 
+export const AlertPrimary = () => `
+    <div class="alert alert-primary" role="alert">
+      This is a primary alert - check it out!<br>
+      This is a primary alert - check it out!<br>
+      This is a primary alert - check it out!<br>
+      This is a primary alert - check it out!<br>
+    </div>`;
+    
+AlertPrimary.story = {
+  name: 'Primary',
+  parameters: {
+    notes: 'Primary alerts should be used to confirm that an important task or workflow has been completed.',
+  },
+};
+
+export const AlertSecondary = () => `
+    <div class="alert alert-secondary" role="alert">
+      This is a secondary alert - check it out!<br>
+      This is a secondary alert - check it out!<br>
+      This is a secondary alert - check it out!<br>
+      This is a secondary alert - check it out!
+    </div>`;
+    
+AlertSecondary.story = {
+  name: 'Secondary',
+  parameters: {
+    notes: 'Secondary alerts should be used to confirm that an important task or workflow has been completed.',
+  },
+};
+
 export const AlertSuccess = () => `
-    <div class="alert alert-success" role="alert">
-      <b>Success!</b> Action completed successfully - Messages Alert.
+    <div class="alert alert-success media" role="alert">
+      <span class="icn-check_circle_filled mr-2"></span>
+      <div class="media-body">
+        This is a success alert - check it out!<br>  
+        This is a success alert - check it out!<br>
+        This is a success alert - check it out!<br>
+        This is a success alert - check it out!<br>
+      </div>
     </div>`;
     
 AlertSuccess.story = {
@@ -23,22 +59,38 @@ AlertSuccess.story = {
   },
 };
 
-export const AlertInfo = () => `
-    <div class="alert alert-primary" role="alert">
+export const Error = () => errorHTML;
+    
+Error.story = {
+  name: 'Error',
+  parameters: { 
+    notes: `
+    #The Error
+    
+    Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
+    
+    ##Sample Code
+    
+    \`\`\`html
+    ${errorHTML}
+    \`\`\`
+    `
+  }
+}
+
+const errorHTML = `
+    <div class="alert alert-danger" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><span class="icn-close"></span></span>
         </button>
-        Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
-        </div>`;
-        
-AlertInfo.story = {
-  name: 'Info',
-  parameters: {
-    notes: 'Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.',
-  },
-};
+        <b>An error has occurred</b><br>
+        <ul>
+            <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
+            <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
+            <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+        </ul>
+    </div>`;
 
-        
 export const AlertWarning = () => `
     <div class="alert alert-warning" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -57,38 +109,44 @@ AlertWarning.story = {
   },
 };
 
-
-const dangerHTML = `
-    <div class="alert alert-danger" role="alert">
+export const AlertInfo = () => `
+    <div class="alert alert-primary" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><span class="icn-close"></span></span>
         </button>
-        <b>An error has occurred</b><br>
-        <ul>
-            <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
-            <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
-            <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
-        </ul>
-    </div>`;
+        Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
+        </div>`;
+        
+AlertInfo.story = {
+  name: 'Info',
+  parameters: {
+    notes: 'Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.',
+  },
+};
 
-export const Danger = () => dangerHTML;
-    
-Danger.story = {
-  name: 'Danger',
-  parameters: { 
-    notes: `
-    #The Danger
-    
-    Danger alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
-    
-    ##Sample Code
-    
-    \`\`\`html
-    ${dangerHTML}
-    \`\`\`
-    `
-  }
-}
+export const AlertLight = () => `
+    <div class="alert alert-light" role="alert">
+        This is a light alert - check it out!
+    </div>`;
+        
+AlertLight.story = {
+  name: 'Light',
+  parameters: {
+    notes: 'Use the Light style when ???',
+  },
+};
+
+export const AlertDark = () => `
+    <div class="alert alert-dark" role="alert">
+        This is a dark alert - check it out!
+    </div>`;
+        
+AlertDark.story = {
+  name: 'Dark',
+  parameters: {
+    notes: 'Use the Dark style when ???',
+  },
+};
 
 /*
 <p>Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight <strong>required</strong> contextual classes (e.g., <code class="highlighter-rouge">.alert-success</code>). For inline dismissal, use the <a href="#dismissing">alerts jQuery plugin</a>.</p>
