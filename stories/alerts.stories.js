@@ -50,6 +50,9 @@ export const AlertSuccess = () => `
         This is a success alert - check it out!<br>
         This is a success alert - check it out!<br>
       </div>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"><span class="icn-close"></span></span>
+      </button>
     </div>`;
     
 AlertSuccess.story = {
@@ -83,6 +86,7 @@ const errorHTML = `
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><span class="icn-close"></span></span>
         </button>
+        <span class="icn-error_filled mr-2"></span>
         <b>An error has occurred</b><br>
         <ul>
             <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
@@ -96,6 +100,7 @@ export const AlertWarning = () => `
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><span class="icn-close"></span></span>
         </button>
+        <span class="icn-warning_filled mr-2"></span>
         <b>Warning! Please be careful to proceed the action.</b><br>
         Sony Laptops Are Still Part Of The Sony Family.<br>
         <button type="button" class="btn btn-secondary">Action</button>
@@ -110,12 +115,15 @@ AlertWarning.story = {
 };
 
 export const AlertInfo = () => `
-    <div class="alert alert-primary" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <div class="alert alert-info media" role="alert">
+        <span class="icn-info_filled mr-2"></span>
+        <div class="media-body">
+            Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
+        </div>
+        <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true"><span class="icn-close"></span></span>
         </button>
-        Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
-        </div>`;
+    </div>`;
         
 AlertInfo.story = {
   name: 'Info',
