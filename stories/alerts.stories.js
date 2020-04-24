@@ -41,26 +41,56 @@ AlertSecondary.story = {
   },
 };
 
-export const AlertSuccess = () => `
-    <div class="alert alert-success media" role="alert">
-      <span class="icn-check_circle_filled mr-2"></span>
-      <div class="media-body">
+const alertSuccessHTML = `
+    <div class="alert alert-success d-flex" role="alert">
+      <div class="flex-shrink-1">
+        <span class="icn-check_circle_filled mr-2"></span>
+      </div>
+      <div class="flex-grow-1">
         This is a success alert - check it out!<br>  
         This is a success alert - check it out!<br>
         This is a success alert - check it out!<br>
         This is a success alert - check it out!<br>
       </div>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true"><span class="icn-close"></span></span>
-      </button>
+      <div class="flex-shrink-1">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-close"></span></span>
+        </button>
+      </div>
     </div>`;
-    
+  
+export const AlertSuccess = () => alertSuccessHTML;
+
 AlertSuccess.story = {
   name: 'Success',
   parameters: {
-    notes: 'Success alerts should be used to confirm that an important task or workflow has been completed.',
+    notes: `
+    #Success
+      
+    Success alerts should be used to confirm that an important task or workflow has been completed.
+    
+    ##Sample Code
+    
+    \`\`\`html
+    ${alertSuccessHTML}
+    \`\`\`
+    `
   },
 };
+
+const errorHTML = `
+    <div class="alert alert-danger" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"><span class="icn-close"></span></span>
+      </button>
+      <span class="icn-error_filled mr-2"></span>
+      <b>An error has occurred</b><br>
+      <ul>
+        <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
+        <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
+        <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+      </ul>
+    </div>`;
 
 export const Error = () => errorHTML;
     
@@ -68,7 +98,7 @@ Error.story = {
   name: 'Error',
   parameters: { 
     notes: `
-    #The Error
+    #Error
     
     Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
     
@@ -81,54 +111,75 @@ Error.story = {
   }
 }
 
-const errorHTML = `
-    <div class="alert alert-danger" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><span class="icn-close"></span></span>
-        </button>
-        <span class="icn-error_filled mr-2"></span>
-        <b>An error has occurred</b><br>
-        <ul>
-            <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
-            <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
-            <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
-        </ul>
-    </div>`;
-
-export const AlertWarning = () => `
-    <div class="alert alert-warning" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><span class="icn-close"></span></span>
-        </button>
+const alertWarningHTML = `
+    <div class="alert alert-warning d-flex" role="alert">
+      <div class="flex-shrink-1">
         <span class="icn-warning_filled mr-2"></span>
+      </div>
+      <div class="flex-grow-1">
         <b>Warning! Please be careful to proceed the action.</b><br>
         Sony Laptops Are Still Part Of The Sony Family.<br>
         <button type="button" class="btn btn-secondary">Action</button>
         <button type="button" class="btn btn-secondary">Alernative</button>
-</div>`;
-    
+      </div>
+      <div class="flex-shrink-1">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-close"></span></span>
+        </button>
+      </div>
+    </div>`;
+   
+export const AlertWarning = () => alertWarningHTML;
+
 AlertWarning.story = {
   name: 'Warning',
   parameters: {
-    notes: 'Warnings should be used when the user should resolve a likely problem, but the user is free to ignore it.',
+    notes: `
+    #Warning
+
+    Warnings should be used when the user should resolve a likely problem, but the user is free to ignore it.
+
+    ##Sample Code
+    
+    \`\`\`html
+    ${alertWarningHTML}
+    \`\`\`
+    `
   },
 };
 
-export const AlertInfo = () => `
-    <div class="alert alert-info media" role="alert">
-        <span class="icn-info_filled mr-2"></span>
-        <div class="media-body">
+const alertInfoHTML = `
+    <div class="alert alert-info d-flex" role="alert">
+        <div class="flex-shrink-1">
+          <span class="icn-info_filled mr-2"></span>
+        </div>
+        <div class="flex-grow-1">
             Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
         </div>
-        <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true"><span class="icn-close"></span></span>
-        </button>
+        <div class="flex-shrink-1">
+          <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icn-close"></span></span>
+          </button>
+        </div>
     </div>`;
-        
+
+export const AlertInfo = () => alertInfoHTML;
+
 AlertInfo.story = {
   name: 'Info',
   parameters: {
-    notes: 'Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.',
+    notes: `
+
+    #Info
+
+    Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.
+
+    ##Sample Code
+    
+    \`\`\`html
+    ${alertInfoHTML}
+    \`\`\`
+    `
   },
 };
 
