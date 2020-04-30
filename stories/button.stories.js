@@ -20,23 +20,23 @@ export default {
 //const buttonWithAction = () => withActions('click')(() => `<button type="button" class="btn btn-primary">Action Button</button>`);
 
 const basicHTML = () => withActions('click', 'mouseover')(() => `
-<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary btn-lg">Primary</button>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-primary btn-sm">Primary</button>
 <br/><br/>
-<button type="button" class="btn btn-secondary">Default Secondary State</button>
+<button type="button" class="btn btn-secondary btn-lg">Default Secondary State</button>
 <button type="button" class="btn btn-secondary">Default Secondary State</button>
 <button type="button" class="btn btn-secondary btn-sm">Default Secondary State</button>
 <br/><br/>
-<button type="button" class="btn btn-alt-secondary">Alt Secondary State</button>
+<button type="button" class="btn btn-alt-secondary btn-lg">Alt Secondary State</button>
 <button type="button" class="btn btn-alt-secondary">Alt Secondary State</button>
 <button type="button" class="btn btn-alt-secondary btn-sm">Alt Secondary State</button>
 <br/><br/>
-<button type="button" class="btn" disabled>Disabled</button>
+<button type="button" class="btn btn-lg" disabled>Disabled</button>
 <button type="button" class="btn" disabled>Disabled</button>
 <button type="button" class="btn btn-sm" disabled>Disabled</button>
 <br/><br/>
-<button type="button" class="btn btn-link">Primary Link</button>
+<button type="button" class="btn btn-link btn-lg">Primary Link</button>
 <button type="button" class="btn btn-link secondary-link">Secondary Link</button>
 <button type="button" class="btn btn-link danger-link">Danger Link</button>
 `
