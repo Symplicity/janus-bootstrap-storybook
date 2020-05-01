@@ -79,17 +79,23 @@ AlertSuccess.story = {
 };
 
 const errorHTML = `
-    <div class="alert alert-danger" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true"><span class="icn-close"></span></span>
-      </button>
-      <span class="icn-error_filled mr-2"></span>
-      <b>An error has occurred</b><br>
-      <ul>
-        <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
-        <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
-        <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
-      </ul>
+    <div class="alert alert-danger d-flex" role="alert">
+      <div class="flex-shrink-1">
+        <span class="icn-error_filled mr-2"></span>
+      </div>
+      <div class="flex-grow-1">
+        <b>An error has occurred</b><br>
+        <ul class="pl-3">
+          <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
+          <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
+          <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-1">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-close"></span></span>
+        </button>
+      </div>
     </div>`;
 
 export const Error = () => errorHTML;
