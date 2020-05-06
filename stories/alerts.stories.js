@@ -11,6 +11,151 @@ export default {
   },
 };
 
+export const AlertDark = () => `
+    <div class="alert alert-dark" role="alert">
+        This is a dark alert - check it out!
+    </div>`;
+        
+AlertDark.story = {
+  name: 'Dark',
+  parameters: {
+    notes: 'Use the Dark style when ???',
+  },
+};
+
+const errorHTML = `
+    <div class="alert alert-danger d-flex" role="alert">
+      <div class="flex-shrink-1">
+        <span class="icn-error_filled mr-2"></span>
+      </div>
+      <div class="flex-grow-1">
+        <b>An error has occurred</b><br>
+        <ul class="pl-3">
+          <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
+          <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
+          <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+        </ul>
+      </div>
+      <div class="flex-shrink-1">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-close"></span></span>
+        </button>
+      </div>
+    </div>`;
+
+export const Error = () => errorHTML;
+    
+Error.story = {
+  name: 'Error',
+  parameters: { 
+    notes: `
+    #Error
+    
+    Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
+    
+    ##Sample Code
+    
+    \`\`\`html
+    ${errorHTML}
+    \`\`\`
+    `
+  }
+}
+
+const alertExpandableHTML = `
+    <div class="alert alert-success d-flex" role="alert">
+      <div class="flex-shrink-1">
+        <span class="icn-check_circle_filled mr-2"></span>
+      </div>
+      <div class="flex-grow-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Praesent gravida felis quis lorem efficitur pellentesque. 
+        Donec viverra felis et ex ullamcorper rutrum. 
+        Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
+        Phasellus in dapibus nisl, vitae hendrerit massa. 
+        Quisque et molestie mauris. Cras at magna ex.
+        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          (more...)
+        </a>
+        <div class="collapse" id="collapseExample">
+          <hr>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida felis quis lorem efficitur pellentesque. Donec viverra felis et ex ullamcorper rutrum. Donec non nulla aliquam, porta ligula vitae, aliquet turpis. Phasellus in dapibus nisl, vitae hendrerit massa. Quisque et molestie mauris. Cras at magna ex.
+        </div>
+      </div>
+      <div class="flex-shrink-1">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-close"></span></span>
+        </button>
+      </div>
+    </div>
+  </div>`;
+
+export const AlertExpandable = () => alertExpandableHTML;
+
+AlertExpandable.story = {
+  name: 'Expandable',
+  parameters: {
+    notes: `
+    #Expandable
+      
+    Use the Expandable alert when you need to show more information
+
+    ##Sample Code
+    
+    \`\`\`html
+    ${alertExpandableHTML}
+    \`\`\`
+    `
+  },
+};
+
+const alertInfoHTML = `
+    <div class="alert alert-info d-flex" role="alert">
+        <div class="flex-shrink-1">
+          <span class="icn-info_filled mr-2"></span>
+        </div>
+        <div class="flex-grow-1">
+            Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
+        </div>
+        <div class="flex-shrink-1">
+          <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icn-close"></span></span>
+          </button>
+        </div>
+    </div>`;
+
+export const AlertInfo = () => alertInfoHTML;
+
+AlertInfo.story = {
+  name: 'Info',
+  parameters: {
+    notes: `
+
+    #Info
+
+    Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.
+
+    ##Sample Code
+    
+    \`\`\`html
+    ${alertInfoHTML}
+    \`\`\`
+    `
+  },
+};
+
+export const AlertLight = () => `
+    <div class="alert alert-light" role="alert">
+        This is a light alert - check it out!
+    </div>`;
+        
+AlertLight.story = {
+  name: 'Light',
+  parameters: {
+    notes: 'Use the Light style when ???',
+  },
+};
+
 export const AlertPrimary = () => `
     <div class="alert alert-primary" role="alert">
       This is a primary alert - check it out!<br>
@@ -78,45 +223,6 @@ AlertSuccess.story = {
   },
 };
 
-const errorHTML = `
-    <div class="alert alert-danger d-flex" role="alert">
-      <div class="flex-shrink-1">
-        <span class="icn-error_filled mr-2"></span>
-      </div>
-      <div class="flex-grow-1">
-        <b>An error has occurred</b><br>
-        <ul class="pl-3">
-          <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
-          <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
-          <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
-        </ul>
-      </div>
-      <div class="flex-shrink-1">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close"></span></span>
-        </button>
-      </div>
-    </div>`;
-
-export const Error = () => errorHTML;
-    
-Error.story = {
-  name: 'Error',
-  parameters: { 
-    notes: `
-    #Error
-    
-    Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
-    
-    ##Sample Code
-    
-    \`\`\`html
-    ${errorHTML}
-    \`\`\`
-    `
-  }
-}
-
 const alertWarningHTML = `
     <div class="alert alert-warning d-flex" role="alert">
       <div class="flex-shrink-1">
@@ -151,65 +257,6 @@ AlertWarning.story = {
     ${alertWarningHTML}
     \`\`\`
     `
-  },
-};
-
-const alertInfoHTML = `
-    <div class="alert alert-info d-flex" role="alert">
-        <div class="flex-shrink-1">
-          <span class="icn-info_filled mr-2"></span>
-        </div>
-        <div class="flex-grow-1">
-            Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
-        </div>
-        <div class="flex-shrink-1">
-          <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-close"></span></span>
-          </button>
-        </div>
-    </div>`;
-
-export const AlertInfo = () => alertInfoHTML;
-
-AlertInfo.story = {
-  name: 'Info',
-  parameters: {
-    notes: `
-
-    #Info
-
-    Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.
-
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertInfoHTML}
-    \`\`\`
-    `
-  },
-};
-
-export const AlertLight = () => `
-    <div class="alert alert-light" role="alert">
-        This is a light alert - check it out!
-    </div>`;
-        
-AlertLight.story = {
-  name: 'Light',
-  parameters: {
-    notes: 'Use the Light style when ???',
-  },
-};
-
-export const AlertDark = () => `
-    <div class="alert alert-dark" role="alert">
-        This is a dark alert - check it out!
-    </div>`;
-        
-AlertDark.story = {
-  name: 'Dark',
-  parameters: {
-    notes: 'Use the Dark style when ???',
   },
 };
 
