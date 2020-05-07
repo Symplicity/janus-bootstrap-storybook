@@ -68,23 +68,25 @@ const alertExpandableHTML = `
         <span class="icn-check_circle_filled mr-2"></span>
       </div>
       <div class="flex-grow-1">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Praesent gravida felis quis lorem efficitur pellentesque. 
-        Donec viverra felis et ex ullamcorper rutrum. 
-        Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
-        Phasellus in dapibus nisl, vitae hendrerit massa. 
-        Quisque et molestie mauris. Cras at magna ex.
-        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          (more...)
-        </a>
+        <p class="mb-2"><strong>Bold body text</strong></p>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Praesent gravida felis quis lorem efficitur pellentesque. 
+          Donec viverra felis et ex ullamcorper rutrum. 
+          Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
+          Phasellus in dapibus nisl, vitae hendrerit massa. 
+          Quisque et molestie mauris. Cras at magna ex.
+        </p>
         <div class="collapse" id="collapseExample">
-          <hr>
+          <hr class="mt-2 mb-2">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida felis quis lorem efficitur pellentesque. Donec viverra felis et ex ullamcorper rutrum. Donec non nulla aliquam, porta ligula vitae, aliquet turpis. Phasellus in dapibus nisl, vitae hendrerit massa. Quisque et molestie mauris. Cras at magna ex.
         </div>
+        <button class="btn btn-link p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          + More
+        </button>
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-success"></span></span>
         </button>
       </div>
     </div>
