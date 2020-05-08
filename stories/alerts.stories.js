@@ -64,8 +64,8 @@ Error.story = {
 
 const alertExpandableHTML = `
     <div class="alert alert-success d-flex" role="alert">
-      <div class="flex-shrink-1">
-        <span class="icn-check_circle_filled mr-2"></span>
+      <div class="flex-shrink-1 mr-2">
+        <span class="icn-check_circle_filled"></span>
       </div>
       <div class="flex-grow-1">
         <p class="mb-2"><strong>Bold body text</strong></p>
@@ -74,17 +74,23 @@ const alertExpandableHTML = `
           Donec viverra felis et ex ullamcorper rutrum. 
           Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
           Phasellus in dapibus nisl, vitae hendrerit massa. 
-          Quisque et molestie mauris. Cras at magna ex.
+          Quisque et molestie mauris. Cras at magna ex. <a href="#" class="alert-success">an example link</a>.
         </p>
-        <div class="collapse" id="collapseExample">
+        <div class="collapse show" id="collapseExample">
           <hr class="mt-2 mb-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent gravida felis quis lorem efficitur pellentesque. Donec viverra felis et ex ullamcorper rutrum. Donec non nulla aliquam, porta ligula vitae, aliquet turpis. Phasellus in dapibus nisl, vitae hendrerit massa. Quisque et molestie mauris. Cras at magna ex.
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Praesent gravida felis quis lorem efficitur pellentesque. 
+            Donec viverra felis et ex ullamcorper rutrum. 
+            Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
+            Phasellus in dapibus nisl, vitae hendrerit massa. 
+            Quisque et molestie mauris. Cras at magna ex. <a href="#" class="alert-success">an example link</a>.
+          </p>
         </div>
-        <button class="btn btn-link p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-          + More
-        </button>
+        <a role="button" class="btn btn-link p-0" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+          - Less
+        </a>
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true"><span class="icn-close text-success"></span></span>
         </button>
