@@ -86,9 +86,9 @@ const alertExpandableHTML = `
             Quisque et molestie mauris. Cras at magna ex. <a href="#" class="alert-success">an example link</a>.
           </p>
         </div>
-        <a role="button" class="btn btn-link p-0 more-link text-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
+        <button type="button" class="btn btn-link p-0 more-link text-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true" aria-controls="collapseExample">
           <span class="sr-only">Show More/Less</span>          
-        </a>
+        </button>
       </div>
       <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
