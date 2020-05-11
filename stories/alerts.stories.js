@@ -65,7 +65,7 @@ Error.story = {
 const alertExpandableHTML = `
     <div class="alert alert-success d-flex" role="alert">
       <div class="flex-shrink-1 mr-2">
-        <span class="icn-check_circle_filled"></span>
+        <span class="icn-check_circle_filled icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <p class="mb-2"><strong>Bold body text</strong></p>
@@ -89,7 +89,7 @@ const alertExpandableHTML = `
       </div>
       <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-success"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-success"></span></span>
         </button>
       </div>
     </div>
