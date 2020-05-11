@@ -26,7 +26,7 @@ AlertDark.story = {
 const errorHTML = `
     <div class="alert alert-danger d-flex" role="alert">
       <div class="flex-shrink-1">
-        <span class="icn-error_filled mr-2"></span>
+        <span class="icn-error_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <b>An error has occurred</b><br>
@@ -38,7 +38,7 @@ const errorHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
         </button>
       </div>
     </div>`;
@@ -89,7 +89,7 @@ const alertExpandableHTML = `
       </div>
       <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-success"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-success icon-sm-font-size"></span></span>
         </button>
       </div>
     </div>
@@ -117,14 +117,14 @@ AlertExpandable.story = {
 const alertInfoHTML = `
     <div class="alert alert-info d-flex" role="alert">
         <div class="flex-shrink-1">
-          <span class="icn-info_filled mr-2"></span>
+          <span class="icn-info_filled mr-2 icon-lg-font-size"></span>
         </div>
         <div class="flex-grow-1">
             Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
         </div>
         <div class="flex-shrink-1">
           <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-close"></span></span>
+              <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
           </button>
         </div>
     </div>`;
@@ -194,7 +194,7 @@ AlertSecondary.story = {
 const alertSuccessHTML = `
     <div class="alert alert-success d-flex" role="alert">
       <div class="flex-shrink-1">
-        <span class="icn-check_circle_filled mr-2"></span>
+        <span class="icn-check_circle_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         This is a success alert - check it out!<br>  
@@ -204,7 +204,7 @@ const alertSuccessHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
         </button>
       </div>
     </div>`;
@@ -231,7 +231,7 @@ AlertSuccess.story = {
 const alertWarningHTML = `
     <div class="alert alert-warning d-flex" role="alert">
       <div class="flex-shrink-1">
-        <span class="icn-warning_filled mr-2"></span>
+        <span class="icn-warning_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <b>Warning! Please be careful to proceed the action.</b><br>
@@ -241,7 +241,7 @@ const alertWarningHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
         </button>
       </div>
     </div>`;
