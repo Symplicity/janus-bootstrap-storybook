@@ -17,7 +17,7 @@ const borderRadiusHTML = `
       <title>Example small rounded image</title>
       <rect width="100%" height="100%" fill="#868e96"></rect>
       <text x="16%" y="40%" fill="#dee2e6" dy=".3em">Default</text>
-      <text x="33%" y="65%" fill="#dee2e6" dy=".3em">3px</text>
+      <text x="33%" y="65%" fill="#dee2e6" dy=".3em">4px</text>
     </svg>
   </div>
   <br>
@@ -38,14 +38,6 @@ const borderRadiusHTML = `
       <text x="35%" y="65%" fill="#dee2e6" dy=".3em">2px</text>
     </svg>
   </div>
-  <br>
-  <div>
-    <svg class="bd-placeholder-img rounded-xl" width="75" height="75" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Example large rounded image: 75x75">
-      <title>Example xlarge rounded image</title>
-      <rect width="100%" height="100%" fill="#868e96"></rect>
-      <text x="15%" y="40%" fill="#dee2e6" dy=".3em">XLarge</text>
-      <text x="33%" y="65%" fill="#dee2e6" dy=".3em">4px</text>
-    </svg>
 </div>`; 
 export const BorderRadius = () => borderRadiusHTML;
 
@@ -55,14 +47,12 @@ BorderRadius.story = {
     notes: `
     ##Sizes
 
-    Default - .188rem / 3.008px
+    Default (.rounded) - .25rem / 4px
 
-    Small - .125rem / 2px
+    Small (.rounded-sm) - .125rem / 2px
 
-    Large - .188rem / 3.008px
+    Large (.rounded-lg) - .188rem / 3.008px
 
-    Xlarge - .25rem / 4px
-    
     ##Sample Code
     
     \`\`\`html
