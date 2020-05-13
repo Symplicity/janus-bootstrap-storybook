@@ -38,7 +38,7 @@ const errorHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -63,7 +63,7 @@ Error.story = {
 }
 
 const alertExpandableHTML = `
-    <div class="alert alert-success d-flex" role="alert">
+    <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 mr-2">
         <span class="icn-check_circle_filled icon-lg-font-size"></span>
       </div>
@@ -89,7 +89,7 @@ const alertExpandableHTML = `
       </div>
       <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-success icon-sm-font-size"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -126,7 +126,7 @@ const alertInfoHTML = `
         </div>
         <div class="flex-shrink-1">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
+              <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
           </button>
         </div>
     </div>`;
@@ -197,7 +197,7 @@ const alertSuccessHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-shadow-none icon-sm-font-size"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -237,7 +237,7 @@ const alertWarningHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
+          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
