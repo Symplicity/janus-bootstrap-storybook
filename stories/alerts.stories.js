@@ -24,16 +24,16 @@ AlertDark.story = {
 };
 
 const errorHTML = `
-    <div class="alert alert-danger d-flex" role="alert">
-      <div class="flex-shrink-1">
+    <div class="alert alert-danger alert-dismissible d-flex" role="alert">
+      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
         <span class="icn-error_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <b>An error has occurred</b><br>
-        <ul class="pl-3">
-          <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
-          <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
-          <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+        <ul class="pl-3 mb-0">
+          <li>This is a danger alert - check it out!</li>
+          <li>This is a danger alert - check it out!</li>
+          <li>This is a danger alert - check it out!</li>
         </ul>
       </div>
       <div class="flex-shrink-1">
@@ -115,15 +115,17 @@ AlertExpandable.story = {
 };
 
 const alertInfoHTML = `
-    <div class="alert alert-info d-flex" role="alert">
-        <div class="flex-shrink-1">
+    <div class="alert alert-info alert-dismissible d-flex" role="alert">
+        <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
           <span class="icn-info_filled mr-2 icon-lg-font-size"></span>
         </div>
         <div class="flex-grow-1">
-            Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.
+          <p><strong>This is a info alert - check it out!</strong></p>
+          <p>This is a info alert - check it out!</p>
+          <p class="mb-0">This is a info alert - check it out!</p>
         </div>
         <div class="flex-shrink-1">
-          <button type="button" class="close float-right" data-dismiss="alert" aria-label="Close">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
           </button>
         </div>
@@ -164,9 +166,6 @@ AlertLight.story = {
 export const AlertPrimary = () => `
     <div class="alert alert-primary" role="alert">
       This is a primary alert - check it out!<br>
-      This is a primary alert - check it out!<br>
-      This is a primary alert - check it out!<br>
-      This is a primary alert - check it out!<br>
     </div>`;
     
 AlertPrimary.story = {
@@ -179,9 +178,6 @@ AlertPrimary.story = {
 export const AlertSecondary = () => `
     <div class="alert alert-secondary" role="alert">
       This is a secondary alert - check it out!<br>
-      This is a secondary alert - check it out!<br>
-      This is a secondary alert - check it out!<br>
-      This is a secondary alert - check it out!
     </div>`;
     
 AlertSecondary.story = {
@@ -192,19 +188,16 @@ AlertSecondary.story = {
 };
 
 const alertSuccessHTML = `
-    <div class="alert alert-success d-flex" role="alert">
-      <div class="flex-shrink-1">
+    <div class="alert alert-success alert-dismissible d-flex" role="alert">
+      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
         <span class="icn-check_circle_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
-        This is a success alert - check it out!<br>  
-        This is a success alert - check it out!<br>
-        This is a success alert - check it out!<br>
-        This is a success alert - check it out!<br>
+        This is a success alert - check it out! 
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-shadow-none icon-sm-font-size"></span></span>
         </button>
       </div>
     </div>`;
@@ -229,15 +222,18 @@ AlertSuccess.story = {
 };
 
 const alertWarningHTML = `
-    <div class="alert alert-warning d-flex" role="alert">
-      <div class="flex-shrink-1">
+    <div class="alert alert-warning alert-dismissible d-flex" role="alert">
+      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
         <span class="icn-warning_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
-        <b>Warning! Please be careful to proceed the action.</b><br>
-        Sony Laptops Are Still Part Of The Sony Family.<br>
+        <p class="mb-2">
+          <b>Warning! Please be careful to proceed the action.</b>
+        </p>
+        This is a warning alert - check it out!
+        <!--br>
         <button type="button" class="btn btn-secondary">Action</button>
-        <button type="button" class="btn btn-secondary">Alernative</button>
+        <button type="button" class="btn btn-secondary">Alernative</button-->
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
