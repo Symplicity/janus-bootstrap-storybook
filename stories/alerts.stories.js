@@ -25,7 +25,7 @@ AlertDark.story = {
 
 const errorHTML = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
-      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
+      <div class="flex-shrink-1 d-flex">
         <span class="icn-error_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
@@ -116,7 +116,7 @@ AlertExpandable.story = {
 
 const alertInfoHTML = `
     <div class="alert alert-info alert-dismissible d-flex" role="alert">
-        <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
+        <div class="flex-shrink-1 d-flex">
           <span class="icn-info_filled mr-2 icon-lg-font-size"></span>
         </div>
         <div class="flex-grow-1">
@@ -189,7 +189,7 @@ AlertSecondary.story = {
 
 const alertSuccessHTML = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
-      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
+      <div class="flex-shrink-1 d-flex">
         <span class="icn-check_circle_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
@@ -223,7 +223,7 @@ AlertSuccess.story = {
 
 const alertWarningHTML = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
-      <div class="flex-shrink-1 d-flex align-items-top justify-content-center">
+      <div class="flex-shrink-1 d-flex">
         <span class="icn-warning_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
