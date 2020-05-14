@@ -12,14 +12,14 @@ export default {
 };
 
 export const AlertDark = () => `
-    <div class="alert alert-dark" role="alert">
+    <div class="alert table-dark" role="alert">
         This is a dark alert - check it out!
     </div>`;
         
 AlertDark.story = {
   name: 'Dark',
   parameters: {
-    notes: 'Use the Dark style when ???',
+    notes: 'The classes used to create a dark alert is slightly different than usual; we omit the class `alert-dark` and use `table-dark` instead.<br><br> This results in the effect of inverting the colors to achieve the desired color scheme defined in the spec.',
   },
 };
 
