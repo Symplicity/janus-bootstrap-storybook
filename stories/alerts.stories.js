@@ -38,7 +38,7 @@ const errorHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -89,7 +89,7 @@ const alertExpandableHTML = `
       </div>
       <div class="flex-shrink-1 ml-2">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -126,7 +126,7 @@ const alertInfoHTML = `
         </div>
         <div class="flex-shrink-1">
           <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
+              <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
           </button>
         </div>
     </div>`;
@@ -197,7 +197,7 @@ const alertSuccessHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -237,7 +237,7 @@ const alertWarningHTML = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close icon-sm-font-size text-shadow-none"></span></span>
+          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
