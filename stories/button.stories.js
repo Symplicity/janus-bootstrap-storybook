@@ -19,45 +19,43 @@ export default {
 // Basically, you need to call withAction('eventname')(someStoryFunction), where someStoryFunction is a function that returns an HTML node or snippet.
 //const buttonWithAction = () => withActions('click')(() => `<button type="button" class="btn btn-primary">Action Button</button>`);
 
-const basicHTML = () => withActions('click', 'mouseover')(() => `
-<button type="button" class="btn btn-primary btn-lg">Primary</button>
+const primaryHTML = () => withActions('click', 'mouseover')(() => `
+<h3>Primary - Large</h3>
+<button type="button" class="btn btn-lg btn-primary">Primary</button>
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
+<button type="button" class="btn btn-lg btn-primary"><i class="icn-star mr-2"></i>Primary</button>
+<button type="button" class="btn btn-lg btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
+<br><br>
+<h3>Primary - Regular</h3>
 <button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-primary btn-sm">Primary</button>
-<br/><br/>
-<button type="button" class="btn btn-secondary btn-lg">Default Secondary State</button>
-<button type="button" class="btn btn-secondary">Default Secondary State</button>
-<button type="button" class="btn btn-secondary btn-sm">Default Secondary State</button>
-<br/><br/>
-<button type="button" class="btn btn-alt-secondary btn-lg">Alt Secondary State</button>
-<button type="button" class="btn btn-alt-secondary">Alt Secondary State</button>
-<button type="button" class="btn btn-alt-secondary btn-sm">Alt Secondary State</button>
-<br/><br/>
-<button type="button" class="btn btn-lg" disabled>Disabled</button>
-<button type="button" class="btn" disabled>Disabled</button>
-<button type="button" class="btn btn-sm" disabled>Disabled</button>
-<br/><br/>
-<button type="button" class="btn btn-link btn-lg">Primary Link</button>
-<button type="button" class="btn btn-link secondary-link">Secondary Link</button>
-<button type="button" class="btn btn-link danger-link">Danger Link</button>
+<button type="button" class="btn btn-primary" disabled>Primary</button>
+<button type="button" class="btn btn-primary"><i class="icn-star mr-2"></i>Primary</button>
+<button type="button" class="btn btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
+<br><br>
+<h3>Primary - Small</h3>
+<button type="button" class="btn btn-sm btn-primary">Primary</button>
+<button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
+<button type="button" class="btn btn-sm btn-primary"><i class="icn-star mr-2"></i>Primary</button>
+<button type="button" class="btn btn-sm btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
 `
 );
 
-export const Basic = () => basicHTML();
+export const Primary = () => primaryHTML();
 
-Basic.story = {
-  name: 'Basic',
+Primary.story = {
+  name: 'Primary',
   parameters: {
     notes: `
-      # Basic Buttons
+      # Primary Buttons
 
       ## Documentation
       
-      Here are some notes on basic buttons. 
+      Here are some notes on primary buttons. 
       
       ## Code Sample
       
       \`\`\`html
-      ${basicHTML}
+      ${primaryHTML}
       \`\`\`
       
       ${buttonNotes}
@@ -66,86 +64,92 @@ Basic.story = {
   }
 };
 
-const iconHTML = `
-<button type="button" class="btn btn-primary btn-lg"><i class="icn-star mr-2"></i>Primary Large</button>
-<button type="button" class="btn btn-primary"><i class="icn-star mr-1"></i>Primary Default</button>
-<button type="button" class="btn btn-primary btn-sm"><i class="icn-star mr-1"></i>Primary Small</button>
-<br/><br/>
-<button type="button" class="btn btn-secondary btn-lg"><i class="icn-star mr-2"></i>Secondary Large</button>
-<button type="button" class="btn btn-secondary"><i class="icn-star mr-2"></i>Secondary Default</button>
-<button type="button" class="btn btn-secondary btn-sm"><i class="icn-star mr-1"></i>Secondary Small</button>
-<br/><br/>
-<button type="button" class="btn btn-alt-secondary btn-lg"><i class="icn-star mr-2"></i>Alt Secondary Large</button>
-<button type="button" class="btn btn-alt-secondary"><i class="icn-star mr-2"></i>Alt Secondary Default</button>
-<button type="button" class="btn btn-alt-secondary btn-sm"><i class="icn-star mr-1"></i>Alt Secondary Small</button>
-<br/><br/>
-<button type="button" class="btn btn-lg" disabled><i class="icn-star mr-2"></i>Disabled Large Link</button>
-<button type="button" class="btn text-danger" disabled><i class="icn-star mr-2"></i>Disabled Default Link</button>
-<button type="button" class="btn btn-sm" disabled><i class="icn-star mr-1"></i>Disabled Small Link</button>
-<br/><br/>
-<button type="button" class="btn btn-link btn-lg"><i class="icn-star mr-2"></i>Primary Large Link</button>
-<button type="button" class="btn btn-link secondary-link text-danger"><i class="icn-star mr-2"></i>Default Danger Link</button>
-<button type="button" class="btn btn-link btn-sm"><i class="icn-star mr-1"></i>Small Link</button>
-`;
+const altPrimaryHTML = () => withActions('click', 'mouseover')(() => `
+<h3>Alt Primary - Large</h3>
+<button type="button" class="btn btn-lg btn-outline-primary">Alt Primary</button>
+<button type="button" class="btn btn-lg btn-outline-primary" disabled>Alt Primary</button>
+<button type="button" class="btn btn-lg btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-lg btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+<br><br>
+<h3>Alt Primary - Regular</h3>
+<button type="button" class="btn btn-outline-primary">Alt Primary</button>
+<button type="button" class="btn btn-outline-primary" disabled>Alt Primary</button>
+<button type="button" class="btn btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+<br><br>
+<h3>Alt Primary - Small</h3>
+<button type="button" class="btn btn-sm btn-outline-primary">Alt Primary</button>
+<button type="button" class="btn btn-sm btn-outline-primary" disabled>Alt Primary</button>
+<button type="button" class="btn btn-sm btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-sm btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+`
+);
 
-export const Icon = () => iconHTML;
+export const AltPrimary = () => altPrimaryHTML();
 
-Icon.story = {
-  name: 'Icon',
+AltPrimary.story = {
+  name: 'Alt Primary',
   parameters: {
     notes: `
-      # Icon Buttons
+      # Alt Primary Buttons
 
       ## Documentation
       
-      Here are some notes on icon buttons. 
+      Here are some notes on alt primary buttons. 
       
       ## Code Sample
       
       \`\`\`html
-      ${iconHTML}
+      ${altPrimaryHTML}
       \`\`\`
       
-      ${buttonIconNotes}
+      ${buttonNotes}
       
       ` 
-  },
+  }
 };
 
-const outlineHTML = `
-<button type="button" class="btn btn-outline-primary">Primary</button>
+const secondaryHTML = () => withActions('click', 'mouseover')(() => `
+<h3>Secondary - Large</h3>
+<button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-lg btn-outline-secondary" disabled>Secondary</button>
+<button type="button" class="btn btn-lg btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-lg btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+<br><br>
+<h3>Secondary - Regular</h3>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
-<button type="button" class="btn btn-outline-success">Success</button>
-<button type="button" class="btn btn-outline-danger">Danger</button>
-<button type="button" class="btn btn-outline-warning">Warning</button>
-<button type="button" class="btn btn-outline-info">Info</button>
-<button type="button" class="btn btn-outline-dark">Dark</button>
+<button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
+<button type="button" class="btn btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+<br><br>
+<h3>Secondary - Small</h3>
+<button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" disabled>Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+`
+);
 
-<div class="p-5 mt-5" style="background:dimgrey;">
-  <button type="button" class="btn btn-outline-light">Light</button>
-</div>
-`;
+export const Secondary = () => secondaryHTML();
 
-export const Outline = () => outlineHTML;
-
-Outline.story = {
-  name: 'Outline',
+Secondary.story = {
+  name: 'Secondary',
   parameters: {
     notes: `
-      # Outline Buttons
+      # Secondary Buttons
 
       ## Documentation
       
-      Here are some notes on outline buttons. 
+      Here are some notes on alt primary buttons. 
       
       ## Code Sample
       
       \`\`\`html
-      ${outlineHTML}
+      ${altPrimaryHTML}
       \`\`\`
       
-      ${buttonOutlineNotes}
+      ${buttonNotes}
       
       ` 
-  },
+  }
 };
