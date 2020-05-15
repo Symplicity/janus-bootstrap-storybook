@@ -184,8 +184,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Buttons-SB-Icon",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--icon",
+      "label": "Buttons-SB-Primary",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--primary",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -202,8 +202,26 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Buttons-SB-Outline",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--outline",
+      "label": "Buttons-SB-Alt-Primary",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--alt-primary",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Buttons-SB-Secondary",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-button--secondary",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
