@@ -153,3 +153,48 @@ Secondary.story = {
       ` 
   }
 };
+
+const otherHTML = () => withActions('click', 'mouseover')(() => `
+<h3>Other - Large</h3>
+<button type="button" class="btn btn-lg btn-danger">Leave</button>
+<button type="button" class="btn btn-lg btn-danger" disabled>Leave</button>
+<button type="button" class="btn btn-lg btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-lg btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+<br><br>
+<h3>Other - Regular</h3>
+<button type="button" class="btn btn-danger">Leave</button>
+<button type="button" class="btn btn-danger" disabled>Leave</button>
+<button type="button" class="btn btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+<br><br>
+<h3>Other - Small</h3>
+<button type="button" class="btn btn-sm btn-danger">Leave</button>
+<button type="button" class="btn btn-sm btn-danger" disabled>Leave</button>
+<button type="button" class="btn btn-sm btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-sm btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+`
+);
+
+export const Other = () => otherHTML();
+
+Other.story = {
+  name: 'Other',
+  parameters: {
+    notes: `
+      # Other Buttons
+
+      ## Documentation
+      
+      Here are some notes on alt primary buttons. 
+      
+      ## Code Sample
+      
+      \`\`\`html
+      ${altPrimaryHTML}
+      \`\`\`
+      
+      ${buttonNotes}
+      
+      ` 
+  }
+};
