@@ -82,7 +82,7 @@ AlertSuccess.story = {
   },
 };
 
-const errorHTML = `
+const alertErrorHTML = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
         <span class="icn-error_filled mr-2 icon-lg-font-size"></span>
@@ -102,9 +102,9 @@ const errorHTML = `
       </div>
     </div>`;
 
-export const Error = () => errorHTML;
+export const AlertError = () => alertErrorHTML;
     
-Error.story = {
+AlertError.story = {
   name: 'Error',
   parameters: { 
     notes: `
@@ -115,7 +115,7 @@ Error.story = {
     ##Sample Code
     
     \`\`\`html
-    ${errorHTML}
+    ${alertErrorHTML}
     \`\`\`
     `
   }
