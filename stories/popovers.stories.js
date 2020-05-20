@@ -1,5 +1,6 @@
 import { document, setTimeout } from 'global';
 import { withA11y } from '@storybook/addon-a11y';
+import bootstrap from 'bootstrap';
 
 import {
   array,
