@@ -355,7 +355,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "button[data-toggle=\"popover\"]:first-of-type",
+      "clickSelector": "",
       "postInteractionWait": 100,
       "selectors": [],
       "selectorExpansion": true,
