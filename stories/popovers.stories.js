@@ -1,6 +1,5 @@
 import { document, setTimeout } from 'global';
 import { withA11y } from '@storybook/addon-a11y';
-import bootstrap from 'bootstrap';
 
 import {
   array,
@@ -42,8 +41,7 @@ Popover on top
 Popover on right
 </button>
 
-<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
+<button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 Popover on bottom
 </button>
 
