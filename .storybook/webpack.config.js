@@ -12,6 +12,11 @@ module.exports = async ({ config, mode }) => {
   // Add bootstrap JS to preview mode
 
    config.entry.push(require.resolve('../node_modules/bootstrap/dist/js/bootstrap.bundle.js'));
+   config.module.rules.push({
+        test: /\.stories.jsx?$/,
+        loaders: [require.resolve('@storybook/addon-storysource/loader')],
+        enforce: 'pre',
+   });
    config.plugins.push(
         new webpack.ProvidePlugin({
            $: 'jquery',
