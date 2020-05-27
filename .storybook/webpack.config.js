@@ -10,6 +10,7 @@ module.exports = async ({ config, mode }) => {
   // 'PRODUCTION' is used when building the static version of storybook.
 
   // Add bootstrap JS to preview mode
+
    config.entry.push(require.resolve('../node_modules/bootstrap/dist/js/bootstrap.bundle.js'));
    config.plugins.push(
         new webpack.ProvidePlugin({
