@@ -3,7 +3,7 @@
 import readme from '../README.md';
 import changelog from '../CHANGELOG.md';
 import pkg from '../package.json';
-import janusBoostrapPkg from '../node_modules/bootstrap/package.json';
+import janusBoostrapPkg from '../node_modules/@symplicity/bootstrap/package.json';
 import janusDesignTokensPkg from '../node_modules/@symplicity/janus-tokens/package.json';
 
 import designTokensDocs from '../node_modules/@symplicity/janus-tokens/docs/index.html';
