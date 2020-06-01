@@ -15,11 +15,6 @@ const menu_basic_html = `<div class="dropdown-menu show" style="position: relati
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
   <a class="dropdown-item" href="#">Something else here</a>
-</div>
-<div class="dropdown-menu show" style="position: relative; top: 0; max-width: 400px;">
-  <a class="dropdown-item text-truncate" href="#">Seven Steps For Keeping Teeth Healthy For Animals</a>
-  <a class="dropdown-item" href="#">Forward</a>
-  <a class="dropdown-item" href="#">Process</a>
 </div>`;
 
 export const MenuBasic = () => `<div class="container-fluid">${menu_basic_html}</div>`;
