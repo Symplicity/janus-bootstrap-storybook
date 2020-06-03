@@ -93,7 +93,7 @@ const menu_divider_html = `<div class="dropdown-menu show" style="position: rela
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
   <div class="dropdown-divider"></div>
-  <a class="dropdown-item btn-danger" href="#">Delete</a>
+  <a class="dropdown-item text-danger" href="#">Delete</a>
 </div>`;
 
 export const MenuDivider = () => `<div class="container-fluid">${menu_divider_html}</div>`;

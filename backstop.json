@@ -418,7 +418,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Menu-SB-Prefix-Divider",
+      "label": "Menu-SB-Divider",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-menus--menu-divider",
       "referenceUrl": "",
       "readyEvent": "",
