@@ -11,10 +11,10 @@ export default {
   },
 };
 
-const menu_basic_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_basic_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0; max-width: 200px;">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
-  <a class="dropdown-item" href="#">Something else here</a>
+  <a class="dropdown-item" href="#">Something else here here here here</a>
 </div>`;
 
 export const MenuBasic = () => `<div class="container-fluid">${menu_basic_html}</div>`;
