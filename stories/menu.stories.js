@@ -145,3 +145,34 @@ MenuHeader.story = {
     }
   
 };
+
+
+const menu_responsive_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0;">
+  <h6 class="dropdown-header">16/24 bold</h6>
+  <a class="dropdown-item" href="#">Add to Career Portfolio</a>
+  <a class="dropdown-item" href="#">Remove QR Code</a>
+  <a class="dropdown-item" href="#">View as Word</a>
+  <div class="dropdown-divider"></div>
+  <h6 class="dropdown-header">Tools</h6>
+  <a class="dropdown-item" href="#">Add to Career Portfolio</a>
+  <a class="dropdown-item" href="#">Remove QR Code</a>
+  <a class="dropdown-item" href="#">View as Word</a>
+</div>`;
+
+export const MenuResponsive = () => `<div class="container-fluid">${menu_responsive_html}</div>`;
+
+MenuResponsive.story = { 
+    name: 'Menu Responsive',
+    parameters: { 
+      notes: `
+      
+      #Sample Code
+
+      \`\`\`html
+      ${menu_responsive_html}
+      \`\`\`
+
+      `
+    }
+  
+};
