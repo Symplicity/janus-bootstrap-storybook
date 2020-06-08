@@ -15,13 +15,13 @@ const modal_basic_html = `<div class="modal" tabindex="-1" role="dialog" style="
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="close d-flex" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true" class="icn-close"></span>
         </button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+        <p class="mb-0">Modal body text goes here.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
