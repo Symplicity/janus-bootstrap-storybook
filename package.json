@@ -54,5 +54,8 @@
     "open-cli": "^6.0.1",
     "sass-loader": "^8.0.0",
     "storybook-addon-rtl": "^0.2.2"
+  },
+  "dependencies": {
+    "bootstrap": "file:node_modules/@symplicity/bootstrap"
   }
 }
