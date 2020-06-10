@@ -11,8 +11,9 @@ export default {
   },
 };
 
-const dropdown_html = `<div class="dropdown">
-  <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+const dropdown_primary_html = `<div class="dropdown">
+  <h3>Primary - Large</h3>
+  <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Primary 
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -20,19 +21,39 @@ const dropdown_html = `<div class="dropdown">
     <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
     <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
   </div>
+  <br><br>
+  <h3>Primary - Regular</h3>
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Primary 
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+  </div>
+  <br><br>
+  <h3>Primary - Small</h3>
+  <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Primary 
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
+    <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+  </div>
 </div>`;
 
-export const story5 = () => `<div class="container-fluid">${dropdown_html}</div>`;
+export const DropdownPrimary = () => `<div class="container-fluid">${dropdown_primary_html}</div>`;
 
-story5.story = { 
-    name: 'Dropdown',
+DropdownPrimary.story = { 
+    name: 'Primary',
     parameters: { 
       notes: `
       
       #Sample Code
 
       \`\`\`html
-      ${dropdown_html}
+      ${dropdown_primary_html}
       \`\`\`
 
       `
