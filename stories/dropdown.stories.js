@@ -43,7 +43,7 @@ const dropdown_primary_html = `<div class="dropdown">
   </div>
 </div>`;
 
-export const DropdownPrimary = () => `<div class="container-fluid">${dropdown_primary_html}</div>`;
+export const DropdownPrimary = () => `${dropdown_primary_html}`;
 
 DropdownPrimary.story = { 
     name: 'Primary',
