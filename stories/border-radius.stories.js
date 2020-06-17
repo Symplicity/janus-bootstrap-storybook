@@ -44,7 +44,7 @@ const borderRadiusHTML = `
       <title>Example extra large rounded image</title>
       <rect width="100%" height="100%" fill="#868e96"></rect>
       <text x="15%" y="40%" fill="#dee2e6" dy=".3em">XLarge</text>
-      <text x="25%" y="65%" fill="#dee2e6" dy=".3em">10px</text>
+      <text x="35%" y="65%" fill="#dee2e6" dy=".3em">6px</text>
     </svg>
   </div>
 </div>`; 
@@ -61,6 +61,8 @@ BorderRadius.story = {
     Small (.rounded-sm) - .125rem / 2px
 
     Large (.rounded-lg) - .188rem / 3.008px
+
+    Xlarge (.rounded-xl) - .375rem / 6px
 
     ##Sample Code
     
