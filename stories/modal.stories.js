@@ -91,3 +91,60 @@ ModalTrigger.story = {
     }
   
 };
+
+
+const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="display: block; position: relative;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="close d-flex" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="icn-close"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-0">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">
+                Text Field w/ Blurb
+                <br>
+                <small class="text-muted">Please enter an email (not school)</small>
+              </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>    
+          </form>
+        </p>
+      </div>
+      <div class="modal-footer flex-row">
+          <div class="flex-grow-1">
+            <button type="button" class="btn btn-link p-0">Other Action (Optional)</button>
+          </div>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+export const ModalForm = () => `<div class="container-fluid">${modal_form_html}</div>`;
+
+ModalForm.story = { 
+    name: 'Modal with Form',
+    parameters: { 
+      notes: `
+      
+      #Sample Code
+
+      \`\`\`html
+      ${modal_form_html}
+      \`\`\`
+
+      `
+    }
+  
+};
