@@ -1,6 +1,9 @@
 import { document, setTimeout } from 'global';
 import { withA11y } from '@storybook/addon-a11y';
 
+import $ from 'jquery';
+window.jQuery = window.$ = $;
+
 import {
   array,
   boolean,
