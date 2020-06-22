@@ -51,7 +51,7 @@ AlertSecondary.story = {
 const alertSuccessHTML = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="icn-check_circle_filled mr-2 icon-lg-font-size"></span>
+        <span class="alert-icon icn-check_circle_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         This is a success alert - check it out! 
@@ -85,7 +85,7 @@ AlertSuccess.story = {
 const alertErrorHTML = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="icn-error_filled mr-2 icon-lg-font-size"></span>
+        <span class="alert-icon icn-error_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <b>An error has occurred</b><br>
@@ -124,7 +124,7 @@ AlertError.story = {
 const alertWarningHTML = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="icn-warning_filled mr-2 icon-lg-font-size"></span>
+        <span class="alert-icon icn-warning_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
         <p class="mb-2">
@@ -218,7 +218,7 @@ AlertExpandable.story = {
 const alertInfoHTML = `
     <div class="alert alert-info alert-dismissible d-flex" role="alert">
         <div class="flex-shrink-1 d-flex">
-          <span class="icn-info_filled mr-2 icon-lg-font-size"></span>
+          <span class="alert-icon icn-info_filled mr-2 icon-lg-font-size"></span>
         </div>
         <div class="flex-grow-1">
           <p><strong>This is a info alert - check it out!</strong></p>
