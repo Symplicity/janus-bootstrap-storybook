@@ -42,8 +42,7 @@ export const Badges = () => {
     Danger: "danger",
     Info: "info",
     Light: "light",
-    Dark: "dark",
-    Ghost: "ghost-primary",
+    Dark: "dark"
   };
 
   const badge1_text = text("Badge 1 Text", "New");
@@ -57,7 +56,7 @@ export const Badges = () => {
   const badge2_level = select(
       "Badge 2 Level",
       badge_options,
-      "ghost-primary"
+      "text-dark"
   );
   
   return `
@@ -65,42 +64,42 @@ export const Badges = () => {
   <h2>Example</h2>
   <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
   
-  <h2>Design system heading <span class="badge badge-${badge1_level}">${badge1_text}</span> <span class="badge badge-ghost badge-${badge2_level}">${badge2_text}</span></h2>
-  <h3>Design system heading <span class="badge badge-${badge1_level}">${badge1_text}</span> <span class="badge badge-ghost badge-${badge2_level}">${badge2_text}</span></h3>
-  <h4>Design system heading <span class="badge badge-${badge1_level}">${badge1_text}</span> <span class="badge badge-ghost badge-${badge2_level}">${badge2_text}</span></h4>
-  <h5>Design system heading <span class="badge badge-${badge1_level}">${badge1_text}</span> <span class="badge badge-ghost badge-${badge2_level}">${badge2_text}</span></h5>
-  <h6>Design system heading <span class="badge badge-${badge1_level}">${badge1_text}</span> <span class="badge badge-ghost badge-${badge2_level}">${badge2_text}</span></h6> 
+  <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h2>
+  <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h3>
+  <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h4>
+  <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h5>
+  <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h6> 
   <!--br><br>
   <button type="button" class="btn btn-primary btn-lg">
-    Notification <span class="badge badge-light">9</span>
+    Notification <span class="badge bg-light">9</span>
     <span class="sr-only">unread messages</span>
   </button>
   <button type="button" class="btn btn-primary">
-    Notification <span class="badge badge-light">9</span>
+    Notification <span class="badge bg-light">9</span>
     <span class="sr-only">unread messages</span>
   </button>
   <br><br>
-  <span class="badge badge-primary">Primary</span>
-  <span class="badge badge-secondary">Secondary</span>
-  <span class="badge badge-success">Success</span>
-  <span class="badge badge-danger">Danger</span>
-  <span class="badge badge-warning">Warning</span>
-  <span class="badge badge-info">Info</span>
-  <span class="badge badge-light">Light</span>
-  <span class="badge badge-dark">Dark</span>
+  <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning">Warning</span>
+  <span class="badge bg-info">Info</span>
+  <span class="badge bg-light">Light</span>
+  <span class="badge bg-dark">Dark</span>
   <br>
-  <span class="badge badge-pill badge-primary">Primary</span>
-  <span class="badge badge-pill badge-secondary">Secondary</span>
-  <span class="badge badge-pill badge-success">Success</span>
-  <span class="badge badge-pill badge-danger">Danger</span>
-  <span class="badge badge-pill badge-warning">Warning</span>
-  <span class="badge badge-pill badge-info">Info</span>
-  <span class="badge badge-pill badge-light">Light</span>
-  <span class="badge badge-pill badge-dark">Dark</span>
+  <span class="badge rounded-pill bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning">Warning</span>
+  <span class="badge rounded-pill bg-info">Info</span>
+  <span class="badge rounded-pill bg-light">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
   <br><br>
-  <span class="h3">Software Engineer <span class="badge badge-primary">New</span></span>
+  <span class="h3">Software Engineer <span class="badge bg-primary">New</span></span>
   <br>
-  <span class="h3">Software Engineer <span class="badge badge-pill badge-primary">New</span></span>
+  <span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
   <br><br-->        
 `;
   
@@ -115,14 +114,14 @@ Badges.story = {
         Documentation and examples for badges, our small count and labeling component.
 
         \`\`\`html
-        <span class="badge badge-primary">Primary</span>
-        <span class="badge badge-secondary">Secondary</span>
-        <span class="badge badge-success">Success</span>
-        <span class="badge badge-danger">Danger</span>
-        <span class="badge badge-warning">Warning</span>
-        <span class="badge badge-info">Info</span>
-        <span class="badge badge-light">Light</span>
-        <span class="badge badge-dark">Dark</span>
+        <span class="badge bg-primary">Primary</span>
+        <span class="badge bg-secondary">Secondary</span>
+        <span class="badge bg-success">Success</span>
+        <span class="badge bg-danger">Danger</span>
+        <span class="badge bg-warning">Warning</span>
+        <span class="badge bg-info">Info</span>
+        <span class="badge bg-light">Light</span>
+        <span class="badge bg-dark">Dark</span>
         \`\`\`
         
         ${moreDocumentation}
@@ -134,11 +133,11 @@ Badges.story = {
 
 const button_badges = `
 <button type="button" class="btn btn-primary btn-lg">
-  Notification <span class="badge badge-light">9</span>
+  Notification <span class="badge bg-light text-dark">9</span>
   <span class="sr-only">unread messages</span>
 </button>
 <button type="button" class="btn btn-primary">
-  Notification <span class="badge badge-light">9</span>
+  Notification <span class="badge bg-light text-dark">9</span>
   <span class="sr-only">unread messages</span>
 </button>`;
 
@@ -161,14 +160,14 @@ Buttons.story = {
 
 
 const contextual_variations = `
-<span class="badge badge-primary">Primary</span>
-<span class="badge badge-secondary">Secondary</span>
-<span class="badge badge-success">Success</span>
-<span class="badge badge-danger">Danger</span>
-<span class="badge badge-warning">Warning</span>
-<span class="badge badge-info">Info</span>
-<span class="badge badge-light">Light</span>
-<span class="badge badge-dark">Dark</span>`;
+<span class="badge bg-primary">Primary</span>
+<span class="badge bg-secondary">Secondary</span>
+<span class="badge bg-success">Success</span>
+<span class="badge bg-danger">Danger</span>
+<span class="badge bg-warning">Warning</span>
+<span class="badge bg-info">Info</span>
+<span class="badge bg-light text-dark">Light</span>
+<span class="badge bg-dark">Dark</span>`;
 
 export const Contexts = () => contextual_variations;
 Contexts.story = {
@@ -189,14 +188,14 @@ Contexts.story = {
 
 
 const pill_badges = `
-<span class="badge badge-pill badge-primary">Primary</span>
-<span class="badge badge-pill badge-secondary">Secondary</span>
-<span class="badge badge-pill badge-success">Success</span>
-<span class="badge badge-pill badge-danger">Danger</span>
-<span class="badge badge-pill badge-warning">Warning</span>
-<span class="badge badge-pill badge-info">Info</span>
-<span class="badge badge-pill badge-light">Light</span>
-<span class="badge badge-pill badge-dark">Dark</span>`;
+<span class="badge rounded-pill bg-primary">Primary</span>
+<span class="badge rounded-pill bg-secondary">Secondary</span>
+<span class="badge rounded-pill bg-success">Success</span>
+<span class="badge rounded-pill bg-danger">Danger</span>
+<span class="badge rounded-pill bg-warning">Warning</span>
+<span class="badge rounded-pill bg-info">Info</span>
+<span class="badge rounded-pill bg-light text-dark">Light</span>
+<span class="badge rounded-pill bg-dark">Dark</span>`;
 
 export const Pills = () => pill_badges;
 Pills.story = {
@@ -217,9 +216,9 @@ Pills.story = {
 
 
 const text_badges = `
-<span class="h3">Software Engineer <span class="badge badge-primary">New</span></span>
+<span class="h3">Software Engineer <span class="badge bg-primary">New</span></span>
 <br>
-<span class="h3">Software Engineer <span class="badge badge-pill badge-primary">New</span></span>
+<span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
 `;
 
 export const Text = () => text_badges;
