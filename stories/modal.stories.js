@@ -105,7 +105,7 @@ const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="d
       <div class="modal-body">
         <p class="mb-0">
           <form>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="exampleFormControlInput1">
                 Text Field w/ Blurb
                 <br>
@@ -113,7 +113,7 @@ const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="d
               </label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="exampleFormControlTextarea1">Textarea</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>    
