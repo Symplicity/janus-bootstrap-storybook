@@ -88,7 +88,7 @@ const altPrimaryHTML = () => withActions('click', 'mouseover')(() => `
 export const AltPrimary = () => altPrimaryHTML();
 
 AltPrimary.story = {
-  name: 'Alt Primary',
+  name: 'Alt Primary (Outline)',
   parameters: {
     notes: `
       # Alt Primary Buttons
@@ -133,7 +133,7 @@ const secondaryHTML = () => withActions('click', 'mouseover')(() => `
 export const Secondary = () => secondaryHTML();
 
 Secondary.story = {
-  name: 'Secondary',
+  name: 'Secondary (Outline)',
   parameters: {
     notes: `
       # Secondary Buttons
@@ -191,6 +191,69 @@ Other.story = {
       
       \`\`\`html
       ${altPrimaryHTML}
+      \`\`\`
+      
+      ${buttonNotes}
+      
+      ` 
+  }
+};
+
+
+const groupHTML = () => withActions('click', 'mouseover')(() => `
+<h3>Basic</h3>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-outline-primary">Action1</button>
+  <button type="button" class="btn btn-outline-primary">Action2</button>
+  <button type="button" class="btn btn-outline-primary"><i class="icn icn-more_horizontal align-middle h1"></i></button>
+</div>
+<br><br>
+<h3>Usage</h3>
+<button type="button" class="btn btn-primary">Process Incident</button>
+<div class="btn-group" role="group" aria-label="Usage example">
+  <button type="button" class="btn btn-outline-primary">Edit</button>
+  <button type="button" class="btn btn-outline-primary">Forward</button>
+  <button type="button" class="btn btn-outline-primary"><i class="icn icn-more_horizontal align-middle h1"></i></button>
+</div>
+<br><br>
+<h3>Sizing</h3>
+<div class="btn-group" role="group" aria-label="Sizing example">
+  <button type="button" class="btn btn-lg btn-outline-primary">Left</button>
+  <button type="button" class="btn btn-lg btn-outline-primary">Middle</button>
+  <button type="button" class="btn btn-lg btn-outline-primary">Right</button>
+</div>
+<br><br>
+<div class="btn-group" role="group" aria-label="Sizing example">
+  <button type="button" class="btn btn-outline-primary">Left</button>
+  <button type="button" class="btn btn-outline-primary">Middle</button>
+  <button type="button" class="btn btn-outline-primary">Right</button>
+</div>
+<br><br>
+<div class="btn-group" role="group" aria-label="Sizing example">
+  <button type="button" class="btn btn-sm btn-outline-primary">Left</button>
+  <button type="button" class="btn btn-sm btn-outline-primary">Middle</button>
+  <button type="button" class="btn btn-sm btn-outline-primary">Right</button>
+</div>
+<br>
+`
+);
+
+export const Group = () => groupHTML();
+
+Group.story = {
+  name: 'Group',
+  parameters: {
+    notes: `
+      # Other Buttons
+
+      ## Documentation
+      
+      Here are some notes on alt primary buttons. 
+      
+      ## Code Sample
+      
+      \`\`\`html
+      ${groupHTML}
       \`\`\`
       
       ${buttonNotes}
