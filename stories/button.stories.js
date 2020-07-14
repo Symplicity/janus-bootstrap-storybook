@@ -209,13 +209,15 @@ const groupHTML = () => withActions('click', 'mouseover')(() => `
 </div>
 <br><br>
 <h3>Usage</h3>
-<button type="button" class="btn btn-primary">Process Incident</button>
-<div class="btn-group" role="group" aria-label="Usage example">
-  <button type="button" class="btn btn-outline-primary">Edit</button>
-  <button type="button" class="btn btn-outline-primary">Forward</button>
-  <button type="button" class="btn btn-outline-primary"><i class="icn icn-more_horizontal align-middle h1"></i></button>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <button type="button" class="btn btn-primary mr-2">Process Incident</button>
+  <div class="btn-group" role="group" aria-label="Usage example">
+    <button type="button" class="btn btn-outline-primary">Edit</button>
+    <button type="button" class="btn btn-outline-primary">Forward</button>
+    <button type="button" class="btn btn-outline-primary"><i class="icn icn-more_horizontal align-middle h1"></i></button>
+  </div>
 </div>
-<br><br>
+<br>
 <h3>Sizing</h3>
 <div class="btn-group" role="group" aria-label="Sizing example">
   <button type="button" class="btn btn-lg btn-outline-primary">Left</button>
