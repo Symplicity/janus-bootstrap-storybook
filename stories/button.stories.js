@@ -219,10 +219,10 @@ const groupHTML = () => withActions('click', 'mouseover')(() => `
 </div>
 <br>
 <h3>Sizing</h3>
-<div class="btn-group" role="group" aria-label="Sizing example">
-  <button type="button" class="btn btn-lg btn-outline-primary">Left</button>
-  <button type="button" class="btn btn-lg btn-outline-primary">Middle</button>
-  <button type="button" class="btn btn-lg btn-outline-primary">Right</button>
+<div class="btn-group btn-group-lg" role="group" aria-label="Sizing example">
+  <button type="button" class="btn btn-outline-primary">Left</button>
+  <button type="button" class="btn btn-outline-primary">Middle</button>
+  <button type="button" class="btn btn-outline-primary">Right</button>
 </div>
 <br><br>
 <div class="btn-group" role="group" aria-label="Sizing example">
@@ -231,10 +231,10 @@ const groupHTML = () => withActions('click', 'mouseover')(() => `
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>
 <br><br>
-<div class="btn-group" role="group" aria-label="Sizing example">
-  <button type="button" class="btn btn-sm btn-outline-primary">Left</button>
-  <button type="button" class="btn btn-sm btn-outline-primary">Middle</button>
-  <button type="button" class="btn btn-sm btn-outline-primary">Right</button>
+<div class="btn-group btn-group-sm" role="group" aria-label="Sizing example">
+  <button type="button" class="btn btn-outline-primary">Left</button>
+  <button type="button" class="btn btn-outline-primary">Middle</button>
+  <button type="button" class="btn btn-outline-primary">Right</button>
 </div>
 <br>
 `
