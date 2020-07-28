@@ -13,13 +13,14 @@ export default {
       selectedPanel: 'storybook/a11y/panel',
     },
   },
+  decorators: [withActions('mouseover .btn', 'click .btn')]
 };
 
 // Here is how you use the Actions addon. The click events will be recorded in the Actions tab, like a console/logger.
 // Basically, you need to call withAction('eventname')(someStoryFunction), where someStoryFunction is a function that returns an HTML node or snippet.
 //const buttonWithAction = () => withActions('click')(() => `<button type="button" class="btn btn-primary">Action Button</button>`);
 
-const primaryHTML = () => withActions('click', 'mouseover')(() => `
+const primaryHTML = ` 
 <h3>Primary - Large</h3>
 <button type="button" class="btn btn-lg btn-primary">Primary</button>
 <button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
@@ -37,10 +38,9 @@ const primaryHTML = () => withActions('click', 'mouseover')(() => `
 <button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
 <button type="button" class="btn btn-sm btn-primary"><i class="icn-star mr-2"></i>Primary</button>
 <button type="button" class="btn btn-sm btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
-`
-);
+`;
 
-export const Primary = () => primaryHTML();
+export const Primary = () => primaryHTML;
 
 Primary.story = {
   name: 'Primary',
@@ -64,7 +64,7 @@ Primary.story = {
   }
 };
 
-const altPrimaryHTML = () => withActions('click', 'mouseover')(() => `
+const altPrimaryHTML = `
 <h3>Alt Primary - Large</h3>
 <button type="button" class="btn btn-lg btn-outline-primary">Alt Primary</button>
 <button type="button" class="btn btn-lg btn-outline-primary" disabled>Alt Primary</button>
@@ -82,10 +82,9 @@ const altPrimaryHTML = () => withActions('click', 'mouseover')(() => `
 <button type="button" class="btn btn-sm btn-outline-primary" disabled>Alt Primary</button>
 <button type="button" class="btn btn-sm btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
 <button type="button" class="btn btn-sm btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
-`
-);
+`;
 
-export const AltPrimary = () => altPrimaryHTML();
+export const AltPrimary = () => altPrimaryHTML;
 
 AltPrimary.story = {
   name: 'Alt Primary (Outline)',
@@ -109,7 +108,7 @@ AltPrimary.story = {
   }
 };
 
-const secondaryHTML = () => withActions('click', 'mouseover')(() => `
+const secondaryHTML = `
 <h3>Secondary - Large</h3>
 <button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-lg btn-outline-secondary" disabled>Secondary</button>
@@ -127,10 +126,9 @@ const secondaryHTML = () => withActions('click', 'mouseover')(() => `
 <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Secondary</button>
 <button type="button" class="btn btn-sm btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
 <button type="button" class="btn btn-sm btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
-`
-);
+`;
 
-export const Secondary = () => secondaryHTML();
+export const Secondary = () => secondaryHTML;
 
 Secondary.story = {
   name: 'Secondary (Outline)',
@@ -145,7 +143,7 @@ Secondary.story = {
       ## Code Sample
       
       \`\`\`html
-      ${altPrimaryHTML}
+      ${secondaryHTML}
       \`\`\`
       
       ${buttonNotes}
@@ -154,7 +152,7 @@ Secondary.story = {
   }
 };
 
-const otherHTML = () => withActions('click', 'mouseover')(() => `
+const otherHTML = `
 <h3>Other - Large</h3>
 <button type="button" class="btn btn-lg btn-danger">Leave</button>
 <button type="button" class="btn btn-lg btn-danger" disabled>Leave</button>
@@ -172,10 +170,9 @@ const otherHTML = () => withActions('click', 'mouseover')(() => `
 <button type="button" class="btn btn-sm btn-danger" disabled>Leave</button>
 <button type="button" class="btn btn-sm btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
 <button type="button" class="btn btn-sm btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
-`
-);
+`;
 
-export const Other = () => otherHTML();
+export const Other = () => otherHTML;
 
 Other.story = {
   name: 'Other',
@@ -200,7 +197,7 @@ Other.story = {
 };
 
 
-const groupHTML = () => withActions('click', 'mouseover')(() => `
+const groupHTML = `
 <h3>Basic</h3>
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-outline-primary">Action1</button>
@@ -237,10 +234,9 @@ const groupHTML = () => withActions('click', 'mouseover')(() => `
   <button type="button" class="btn btn-outline-primary">Right</button>
 </div>
 <br>
-`
-);
+`;
 
-export const Group = () => groupHTML();
+export const Group = () => groupHTML;
 
 Group.story = {
   name: 'Group',
