@@ -202,7 +202,7 @@ const groupHTML = `
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-outline-primary">Action1</button>
   <button type="button" class="btn btn-outline-primary">Action2</button>
-  <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0 float-left"></i></button>
+  <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0"></i></button>
 </div>
 <br><br>
 <h3>Usage</h3>
@@ -211,7 +211,7 @@ const groupHTML = `
   <div class="btn-group" role="group" aria-label="Usage example">
     <button type="button" class="btn btn-outline-primary">Edit</button>
     <button type="button" class="btn btn-outline-primary">Forward</button>
-    <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0 float-left"></i></button>
+    <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0"></i></button>
   </div>
 </div>
 <br>
