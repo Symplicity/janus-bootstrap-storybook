@@ -30,14 +30,14 @@ const primaryHTML = `
 <h3>Primary - Regular</h3>
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-primary"><i class="icn-star mr-2"></i>Primary</button>
-<button type="button" class="btn btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
+<button type="button" class="btn btn-primary"><i class="icn-star mr-1"></i>Primary</button>
+<button type="button" class="btn btn-primary" disabled><i class="icn-star mr-1"></i>Primary</button>
 <br><br>
 <h3>Primary - Small</h3>
 <button type="button" class="btn btn-sm btn-primary">Primary</button>
 <button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-sm btn-primary"><i class="icn-star mr-2"></i>Primary</button>
-<button type="button" class="btn btn-sm btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
+<button type="button" class="btn btn-sm btn-primary">Primary</button>
+<button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
 `;
 
 export const Primary = () => primaryHTML;
@@ -74,14 +74,14 @@ const altPrimaryHTML = `
 <h3>Alt Primary - Regular</h3>
 <button type="button" class="btn btn-outline-primary">Alt Primary</button>
 <button type="button" class="btn btn-outline-primary" disabled>Alt Primary</button>
-<button type="button" class="btn btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
-<button type="button" class="btn btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-outline-primary"><i class="icn-star mr-1"></i>Alt Primary</button>
+<button type="button" class="btn btn-outline-primary" disabled><i class="icn-star mr-1"></i>Alt Primary</button>
 <br><br>
 <h3>Alt Primary - Small</h3>
 <button type="button" class="btn btn-sm btn-outline-primary">Alt Primary</button>
 <button type="button" class="btn btn-sm btn-outline-primary" disabled>Alt Primary</button>
-<button type="button" class="btn btn-sm btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
-<button type="button" class="btn btn-sm btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-sm btn-outline-primary">Alt Primary</button>
+<button type="button" class="btn btn-sm btn-outline-primary" disabled>Alt Primary</button>
 `;
 
 export const AltPrimary = () => altPrimaryHTML;
@@ -118,14 +118,14 @@ const secondaryHTML = `
 <h3>Secondary - Regular</h3>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
-<button type="button" class="btn btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-outline-secondary"><i class="icn-star mr-1"></i>Secondary</button>
+<button type="button" class="btn btn-outline-secondary" disabled><i class="icn-star mr-1"></i>Secondary</button>
 <br><br>
 <h3>Secondary - Small</h3>
 <button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-sm btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
-<button type="button" class="btn btn-sm btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" disabled>Secondary</button>
 `;
 
 export const Secondary = () => secondaryHTML;
@@ -168,8 +168,8 @@ const otherHTML = `
 <h3>Other - Small</h3>
 <button type="button" class="btn btn-sm btn-danger">Leave</button>
 <button type="button" class="btn btn-sm btn-danger" disabled>Leave</button>
-<button type="button" class="btn btn-sm btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
-<button type="button" class="btn btn-sm btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-sm btn-danger">Delete</button>
+<button type="button" class="btn btn-sm btn-danger" disabled>Delete</button>
 `;
 
 export const Other = () => otherHTML;
