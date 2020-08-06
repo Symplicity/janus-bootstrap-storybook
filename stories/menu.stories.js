@@ -11,7 +11,7 @@ export default {
   },
 };
 
-const menu_basic_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0; max-width: 200px;">
+const menu_basic_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0; max-width: 200px;">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
   <a class="dropdown-item" href="#">Something else here here here here</a>
@@ -37,7 +37,7 @@ MenuBasic.story = {
 
 
 
-const menu_prefix_icon_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_prefix_icon_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
   <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-search mr-2 float-left"></i>Chad Hampton</a>
   <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-withdraw_filled mr-2 float-left"></i>Chad Hampton</a>
   <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-donut mr-2 float-left"></i>Chad Hampton</a>
@@ -66,7 +66,7 @@ MenuPrefixIcon.story = {
 
 
 
-const menu_suffix_icon_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_suffix_icon_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
   <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
   <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
   <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
@@ -91,7 +91,7 @@ MenuSuffixIcon.story = {
 };
 
 
-const menu_divider_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_divider_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
@@ -119,7 +119,7 @@ MenuDivider.story = {
 
 
 
-const menu_header_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_header_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
@@ -150,7 +150,7 @@ MenuHeader.story = {
 };
 
 
-const menu_responsive_html = `<div class="dropdown-menu show" style="position: relative; top: 0; margin: 0;">
+const menu_responsive_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0;">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
