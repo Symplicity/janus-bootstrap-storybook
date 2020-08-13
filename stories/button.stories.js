@@ -1,19 +1,14 @@
-import { withA11y } from '@storybook/addon-a11y';
-import { withActions } from '@storybook/addon-actions';
-
 import buttonNotes from './button.notes.md';
 import buttonIconNotes from './button.icon.notes.md';
 import buttonOutlineNotes from './button.outline.notes.md';
 
 export default {
-  title: 'Components|Button',
-  decorators: [withA11y],
+  title: 'Components/Button',
   parameters: {
     options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
-  decorators: [withActions('mouseover .btn', 'click .btn')]
+      selectedPanel: 'storybook/a11y/panel'
+    }
+  }
 };
 
 // Here is how you use the Actions addon. The click events will be recorded in the Actions tab, like a console/logger.
@@ -60,7 +55,7 @@ Primary.story = {
       
       ${buttonNotes}
       
-      ` 
+      `
   }
 };
 

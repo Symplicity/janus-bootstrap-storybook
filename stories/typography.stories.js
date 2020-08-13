@@ -1,9 +1,7 @@
 import { document, setTimeout } from 'global';
-import { withA11y } from '@storybook/addon-a11y';
 
 export default {
-  title: 'Components|Typography',
-  decorators: [withA11y],
+  title: 'Components/Typography',
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',

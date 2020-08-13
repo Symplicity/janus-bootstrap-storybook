@@ -1,9 +1,7 @@
 import { document, setTimeout } from 'global';
-import { withA11y } from '@storybook/addon-a11y';
 
 export default {
-  title: 'Components|Dropdown',
-  decorators: [withA11y],
+  title: 'Components/Dropdown',
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',

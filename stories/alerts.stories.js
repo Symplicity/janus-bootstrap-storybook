@@ -1,10 +1,7 @@
-import { withA11y } from '@storybook/addon-a11y';
-
 const text = 'Unified Design System';
 
 export default {
-  title: 'Components|Alerts',
-  decorators: [withA11y],
+  title: 'Components/Alerts',
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
     notes: 'Use alerts to provide feedback to the user.',
@@ -26,7 +23,7 @@ AlertDark.story = {
 
 export const AlertPrimary = () => `
     <div class="alert alert-primary" role="alert">
-      This is a primary alert - check it out!<br>
+      This is a primary alert - check it out!
     </div>`;
     
 AlertPrimary.story = {
@@ -38,7 +35,7 @@ AlertPrimary.story = {
 
 export const AlertSecondary = () => `
     <div class="alert alert-secondary" role="alert">
-      This is a secondary alert - check it out!<br>
+      This is a secondary alert - check it out!
     </div>`;
     
 AlertSecondary.story = {
@@ -88,7 +85,7 @@ const alertErrorHTML = `
         <span class="alert-icon icn-error_filled mr-2 icon-lg-font-size"></span>
       </div>
       <div class="flex-grow-1">
-        <b>An error has occurred</b><br>
+        <b>An error has occurred</b>
         <ul class="pl-3 mb-0">
           <li>This is a danger alert - check it out!</li>
           <li>This is a danger alert - check it out!</li>

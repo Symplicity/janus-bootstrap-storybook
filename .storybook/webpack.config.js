@@ -14,7 +14,7 @@ module.exports = async ({ config, mode }) => {
    config.entry.push(require.resolve('../node_modules/@symplicity/bootstrap/dist/js/bootstrap.bundle.js'));
    config.module.rules.push({
         test: /\.stories.js?$/,
-        loaders: [require.resolve('@storybook/addon-storysource/loader')],
+        loaders: [require.resolve('../node_modules/@storybook/source-loader')],
         enforce: 'pre',
    });
    config.plugins.push(

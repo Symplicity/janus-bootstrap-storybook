@@ -1,10 +1,7 @@
-import { withA11y } from '@storybook/addon-a11y';
-
 const text = 'Unified Design System';
 
 export default {
-  title: 'Components|Border Radius',
-  decorators: [withA11y],
+  title: 'Components/Border Radius',
   parameters: {
     options: { selectedPanel: 'storybook/a11y/panel' },
     notes: 'Use alerts to provide feedback to the user.',

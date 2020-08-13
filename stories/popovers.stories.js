@@ -1,5 +1,4 @@
 import { document, setTimeout } from 'global';
-import { withA11y } from '@storybook/addon-a11y';
 
 import $ from 'jquery';
 window.jQuery = window.$ = $;
@@ -17,8 +16,8 @@ import {
 } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components|Popovers',
-  decorators: [withA11y,withKnobs],
+  title: 'Components/Popovers',
+  decorators: [withKnobs],
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',

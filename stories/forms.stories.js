@@ -1,10 +1,8 @@
 import { document, setTimeout } from 'global';
-import { withA11y } from '@storybook/addon-a11y';
 
 
 export default {
-  title: 'Components|Forms',
-  decorators: [withA11y],
+  title: 'Components/Forms',
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',

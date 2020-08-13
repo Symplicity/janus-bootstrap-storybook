@@ -1,5 +1,4 @@
 import { document, setTimeout } from 'global';
-import { withA11y } from '@storybook/addon-a11y';
 
 import {
   array,
@@ -14,8 +13,8 @@ import {
 } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components|Badges',
-  decorators: [withA11y,withKnobs],
+  title: 'Components/Badges',
+  decorators: [withKnobs],
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',
@@ -38,10 +37,10 @@ export const Badges = () => {
     Primary: "primary",
     Secondary: "secondary",
     Success: "success",
-    Warning: "warning",
+    Warning: "warning text-dark",
     Danger: "danger",
     Info: "info",
-    Light: "light",
+    Light: "light text-dark",
     Dark: "dark"
   };
 
@@ -56,7 +55,7 @@ export const Badges = () => {
   const badge2_level = select(
       "Badge 2 Level",
       badge_options,
-      "text-dark"
+      "light text-dark"
   );
   
   return `
@@ -64,43 +63,11 @@ export const Badges = () => {
   <h2>Example</h2>
   <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
   
-  <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h2>
-  <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h3>
-  <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h4>
-  <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h5>
-  <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-light ${badge2_level}">${badge2_text}</span></h6> 
-  <!--br><br>
-  <button type="button" class="btn btn-primary btn-lg">
-    Notification <span class="badge bg-light">9</span>
-    <span class="sr-only">unread messages</span>
-  </button>
-  <button type="button" class="btn btn-primary">
-    Notification <span class="badge bg-light">9</span>
-    <span class="sr-only">unread messages</span>
-  </button>
-  <br><br>
-  <span class="badge bg-primary">Primary</span>
-  <span class="badge bg-secondary">Secondary</span>
-  <span class="badge bg-success">Success</span>
-  <span class="badge bg-danger">Danger</span>
-  <span class="badge bg-warning">Warning</span>
-  <span class="badge bg-info">Info</span>
-  <span class="badge bg-light">Light</span>
-  <span class="badge bg-dark">Dark</span>
-  <br>
-  <span class="badge rounded-pill bg-primary">Primary</span>
-  <span class="badge rounded-pill bg-secondary">Secondary</span>
-  <span class="badge rounded-pill bg-success">Success</span>
-  <span class="badge rounded-pill bg-danger">Danger</span>
-  <span class="badge rounded-pill bg-warning">Warning</span>
-  <span class="badge rounded-pill bg-info">Info</span>
-  <span class="badge rounded-pill bg-light">Light</span>
-  <span class="badge rounded-pill bg-dark">Dark</span>
-  <br><br>
-  <span class="h3">Software Engineer <span class="badge bg-primary">New</span></span>
-  <br>
-  <span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
-  <br><br-->        
+  <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h2>
+  <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h3>
+  <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h4>
+  <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
+  <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
 `;
   
 };

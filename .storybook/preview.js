@@ -1,7 +1,5 @@
-import { configure, addParameters, addDecorator } from '@storybook/html';
-import { withA11y } from '@storybook/addon-a11y';
+import { configure } from '@storybook/html';
 import '!style-loader!css-loader!./css-loader.scss';
-
 import { initializeRTL } from 'storybook-addon-rtl';
 
 // Import colors from janus design tokens and offer them as backgorund colors
@@ -15,22 +13,31 @@ Object.keys(janusColors).forEach(function(color) {
       }
 });
 
-addDecorator(withA11y);
+export const decorators = [];
 
-addParameters({
-  a11y: {
-    config: {},
-    options: {
-      checks: { 'color-contrast': { options: { noScroll: true } } },
-      restoreScroll: true,
-    },
+export const parameters = {
+  actions: {
+    handles: ['mouseover .btn', 'click .btn']
   },
-  backgrounds: backgrounds,
-  options: {
-    hierarchyRootSeparator: /\|/,
+  backgrounds: {
+    default: 'light',
+    values: [
+      { 
+        name: 'light', 
+        value: '#fff'
+      },
+      { 
+        name: 'medium', 
+        value: '#efefef'
+      },
+      { 
+        name: 'dark', 
+        value: '#333' 
+      },
+    ],
   }
-});
+};
 
 initializeRTL();
 
-configure(require.context('../stories', true, /\.stories\.js$/), module);
+//configure(require.context('../stories', true, /\.stories\.js$/), module);
