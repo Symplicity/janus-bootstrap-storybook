@@ -17,20 +17,18 @@ const menu_basic_html = `<div class="dropdown-menu shadow-sm show" style="positi
 
 export const MenuBasic = () => `<div class="container-fluid">${menu_basic_html}</div>`;
 
-MenuBasic.story = { 
-    name: 'Menu Basic',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuBasic.storyName = 'Menu Basic';
 
-      \`\`\`html
-      ${menu_basic_html}
-      \`\`\`
-
-      `
-    }
+MenuBasic.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_basic_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -46,20 +44,18 @@ const menu_prefix_icon_html = `<div class="dropdown-menu shadow-sm show" style="
 
 export const MenuPrefixIcon = () => `<div class="container-fluid">${menu_prefix_icon_html}</div>`;
 
-MenuPrefixIcon.story = { 
-    name: 'Menu Prefix Icon',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuPrefixIcon.storyName = 'Menu Prefix Icon';
 
-      \`\`\`html
-      ${menu_prefix_icon_html}
-      \`\`\`
-
-      `
-    }
+MenuPrefixIcon.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_prefix_icon_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -72,20 +68,18 @@ const menu_suffix_icon_html = `<div class="dropdown-menu shadow-sm show" style="
 
 export const MenuSuffixIcon = () => `<div class="container-fluid">${menu_suffix_icon_html}</div>`;
 
-MenuSuffixIcon.story = { 
-    name: 'Menu Suffix Icon',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuSuffixIcon.storyName = 'Menu Suffix Icon';
 
-      \`\`\`html
-      ${menu_suffix_icon_html}
-      \`\`\`
-
-      `
-    }
+MenuSuffixIcon.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_suffix_icon_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -99,20 +93,18 @@ const menu_divider_html = `<div class="dropdown-menu shadow-sm show" style="posi
 
 export const MenuDivider = () => `<div class="container-fluid">${menu_divider_html}</div>`;
 
-MenuDivider.story = { 
-    name: 'Menu with Divider',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuDivider.storyName = 'Menu with Divider';
 
-      \`\`\`html
-      ${menu_divider_html}
-      \`\`\`
-
-      `
-    }
+MenuDivider.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_divider_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -131,20 +123,18 @@ const menu_header_html = `<div class="dropdown-menu shadow-sm show" style="posit
 
 export const MenuHeader = () => `<div class="container-fluid">${menu_header_html}</div>`;
 
-MenuHeader.story = { 
-    name: 'Menu with Header',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuHeader.storyName = 'Menu with Header';
 
-      \`\`\`html
-      ${menu_header_html}
-      \`\`\`
-
-      `
-    }
+MenuHeader.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_header_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -162,18 +152,16 @@ const menu_responsive_html = `<div class="dropdown-menu shadow-sm show" style="p
 
 export const MenuResponsive = () => `<div class="container-fluid">${menu_responsive_html}</div>`;
 
-MenuResponsive.story = { 
-    name: 'Menu Responsive',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+MenuResponsive.storyName = 'Menu Responsive';
 
-      \`\`\`html
-      ${menu_responsive_html}
-      \`\`\`
-
-      `
-    }
+MenuResponsive.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${menu_responsive_html}
+  \`\`\`
+
+  `
 };

@@ -64,31 +64,29 @@ export const story1 = () => {
   return container[0]; 
     
 };
-story1.story = { 
-    name: 'Popovers',
-    parameters: { 
-      notes: `
+story1.storyName = 'Popovers';
 
-        #Declarative Popovers
+story1.parameters = { 
+  notes: `
 
-        ###HTML
+    #Declarative Popovers
 
-        \`\`\`html
-        ${popovers_html}
-        \`\`\`
-        
-        ###JavaScript (Bootstrap/jQuery)
-        Call the popover plugin function for each popover.
+    ###HTML
 
-        \`\`\`js
-        $('[data-toggle="popover"]').popover();
-        \`\`\`
-        
-        ${moreDocumentation}
-        
-      `
-    }
-  
+    \`\`\`html
+    ${popovers_html}
+    \`\`\`
+    
+    ###JavaScript (Bootstrap/jQuery)
+    Call the popover plugin function for each popover.
+
+    \`\`\`js
+    $('[data-toggle="popover"]').popover();
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
 };
 
 

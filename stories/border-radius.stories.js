@@ -44,28 +44,27 @@ const borderRadiusHTML = `
       <text x="35%" y="65%" fill="#dee2e6" dy=".3em">6px</text>
     </svg>
   </div>
-</div>`; 
+</div>`;
 export const BorderRadius = () => borderRadiusHTML;
 
-BorderRadius.story = {
-  name: 'Sizes',
-  parameters: {
-    notes: `
-    ##Sizes
+BorderRadius.storyName = 'Sizes';
 
-    Default (.rounded) - .25rem / 4px
+BorderRadius.parameters = {
+  notes: `
+  ##Sizes
 
-    Small (.rounded-sm) - .125rem / 2px
+  Default (.rounded) - .25rem / 4px
 
-    Large (.rounded-lg) - .188rem / 3.008px
+  Small (.rounded-sm) - .125rem / 2px
 
-    Xlarge (.rounded-xl) - .375rem / 6px
+  Large (.rounded-lg) - .188rem / 3.008px
 
-    ##Sample Code
-    
-    \`\`\`html
-    ${borderRadiusHTML}
-    \`\`\`
-    `
-  },
+  Xlarge (.rounded-xl) - .375rem / 6px
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${borderRadiusHTML}
+  \`\`\`
+  `
 };

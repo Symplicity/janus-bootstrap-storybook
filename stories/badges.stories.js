@@ -72,29 +72,28 @@ export const Badges = () => {
   
 };
 
-Badges.story = { 
-    name: 'Badges',
-    parameters: { 
-      notes: `
+Badges.storyName = 'Badges';
 
-        #Badges
-        Documentation and examples for badges, our small count and labeling component.
+Badges.parameters = { 
+  notes: `
 
-        \`\`\`html
-        <span class="badge bg-primary">Primary</span>
-        <span class="badge bg-secondary">Secondary</span>
-        <span class="badge bg-success">Success</span>
-        <span class="badge bg-danger">Danger</span>
-        <span class="badge bg-warning">Warning</span>
-        <span class="badge bg-info">Info</span>
-        <span class="badge bg-light">Light</span>
-        <span class="badge bg-dark">Dark</span>
-        \`\`\`
-        
-        ${moreDocumentation}
-        
-      `
-    }
+    #Badges
+    Documentation and examples for badges, our small count and labeling component.
+
+    \`\`\`html
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span>
+    <span class="badge bg-success">Success</span>
+    <span class="badge bg-danger">Danger</span>
+    <span class="badge bg-warning">Warning</span>
+    <span class="badge bg-info">Info</span>
+    <span class="badge bg-light">Light</span>
+    <span class="badge bg-dark">Dark</span>
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
 };
 
 
@@ -109,20 +108,19 @@ const button_badges = `
 </button>`;
 
 export const Buttons = () => button_badges;
-Buttons.story = {
-  name: "Button Badges",
-  parameters: {
-    notes: `
-      #Contextual Variations
+Buttons.storyName = "Button Badges";
 
-      \`\`\`html
-      ${button_badges}
-      \`\`\`
+Buttons.parameters = {
+  notes: `
+    #Contextual Variations
 
-      ${moreDocumentation}
+    \`\`\`html
+    ${button_badges}
+    \`\`\`
 
-    `
-  }
+    ${moreDocumentation}
+
+  `
 };
 
 
@@ -137,20 +135,19 @@ const contextual_variations = `
 <span class="badge bg-dark">Dark</span>`;
 
 export const Contexts = () => contextual_variations;
-Contexts.story = {
-  name: "Contextual Variations",
-  parameters: {
-    notes: `
-      #Contextual Variations
+Contexts.storyName = "Contextual Variations";
 
-      \`\`\`html
-      ${contextual_variations}
-      \`\`\`
+Contexts.parameters = {
+  notes: `
+    #Contextual Variations
 
-      ${moreDocumentation}
+    \`\`\`html
+    ${contextual_variations}
+    \`\`\`
 
-    `
-  }
+    ${moreDocumentation}
+
+  `
 };
 
 
@@ -165,20 +162,19 @@ const pill_badges = `
 <span class="badge rounded-pill bg-dark">Dark</span>`;
 
 export const Pills = () => pill_badges;
-Pills.story = {
-  name: "Pill Badges",
-  parameters: {
-    notes: `
-      #Pill Badges
-    
-      \`\`\`html
-      ${pill_badges}
-      \`\`\`
-      
-      ${moreDocumentation}
+Pills.storyName = "Pill Badges";
 
-    `
-  }
+Pills.parameters = {
+  notes: `
+    #Pill Badges
+  
+    \`\`\`html
+    ${pill_badges}
+    \`\`\`
+    
+    ${moreDocumentation}
+
+  `
 };
 
 
@@ -189,18 +185,17 @@ const text_badges = `
 `;
 
 export const Text = () => text_badges;
-Text.story = {
-  name: "Text Badges",
-  parameters: {
-    notes: `
-      #Text Badges
+Text.storyName = "Text Badges";
 
-      \`\`\`html
-      ${text_badges}
-      \`\`\`
+Text.parameters = {
+  notes: `
+    #Text Badges
 
-      ${moreDocumentation}
+    \`\`\`html
+    ${text_badges}
+    \`\`\`
 
-    `
-  }
+    ${moreDocumentation}
+
+  `
 };

@@ -17,18 +17,15 @@ export default {
 
 export const story1 = () => `<h1>Welcome</h1><p>To get started with this storybook, check out the <a href="/?path=/info/about-start-here--story">read me</a>.</p>`;
 
-story1.story = {
-   name: 'Read Me'
-};
+story1.storyName = 'Read Me';
 
 
 export const story2 = () => `<p>View the changelog in the <a href="/?path=/info/about-start-here--story2">notes tab</a>.</p>`;
 
-story2.story = {
-   name: 'Changelog',
-   parameters: { 
-      notes: changelog
-   }
+story2.storyName = 'Changelog';
+
+story2.parameters = { 
+   notes: changelog
 };
 
 
@@ -68,9 +65,8 @@ export const story3 = () => {
    
 };
 
-story3.story = {
-   name: 'Versions',
-   parameters: { 
-      notes: ''
-   }   
+story3.storyName = 'Versions';
+
+story3.parameters = { 
+   notes: ''
 };

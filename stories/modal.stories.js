@@ -31,20 +31,18 @@ const modal_basic_html = `<div class="modal" tabindex="-1" role="dialog" style="
 
 export const ModalBasic = () => `<div class="container-fluid">${modal_basic_html}</div>`;
 
-ModalBasic.story = { 
-    name: 'Modal Basic',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+ModalBasic.storyName = 'Modal Basic';
 
-      \`\`\`html
-      ${modal_basic_html}
-      \`\`\`
-
-      `
-    }
+ModalBasic.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${modal_basic_html}
+  \`\`\`
+
+  `
 };
 
 const modal_trigger_html = `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -74,20 +72,18 @@ const modal_trigger_html = `<button type="button" class="btn btn-primary" data-t
 
 export const ModalTrigger = () => `<div class="container-fluid">${modal_trigger_html}</div>`;
 
-ModalTrigger.story = { 
-    name: 'Modal from Trigger',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+ModalTrigger.storyName = 'Modal from Trigger';
 
-      \`\`\`html
-      ${modal_trigger_html}
-      \`\`\`
-
-      `
-    }
+ModalTrigger.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${modal_trigger_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -131,18 +127,16 @@ const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="d
 
 export const ModalForm = () => `<div class="container-fluid">${modal_form_html}</div>`;
 
-ModalForm.story = { 
-    name: 'Modal with Form',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+ModalForm.storyName = 'Modal with Form';
 
-      \`\`\`html
-      ${modal_form_html}
-      \`\`\`
-
-      `
-    }
+ModalForm.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${modal_form_html}
+  \`\`\`
+
+  `
 };

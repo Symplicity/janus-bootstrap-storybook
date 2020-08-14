@@ -49,20 +49,18 @@ const dropdown_primary_html = `<div class="dropdown">
 
 export const DropdownPrimary = () => `${dropdown_primary_html}`;
 
-DropdownPrimary.story = { 
-    name: 'Primary',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+DropdownPrimary.storyName = 'Primary';
 
-      \`\`\`html
-      ${dropdown_primary_html}
-      \`\`\`
-
-      `
-    }
+DropdownPrimary.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${dropdown_primary_html}
+  \`\`\`
+
+  `
 };
 
 
@@ -106,19 +104,17 @@ const dropdown_outline_html = `<div class="dropdown">
 
 export const DropdownOutline = () => `${dropdown_outline_html}`;
 
-DropdownOutline.story = { 
-    name: 'Outline',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+DropdownOutline.storyName = 'Outline';
 
-      \`\`\`html
-      ${dropdown_outline_html}
-      \`\`\`
-
-      `
-    }
+DropdownOutline.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${dropdown_outline_html}
+  \`\`\`
+
+  `
 };
 

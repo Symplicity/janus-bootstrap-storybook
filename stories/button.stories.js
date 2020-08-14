@@ -37,26 +37,25 @@ const primaryHTML = `
 
 export const Primary = () => primaryHTML;
 
-Primary.story = {
-  name: 'Primary',
-  parameters: {
-    notes: `
-      # Primary Buttons
+Primary.storyName = 'Primary';
 
-      ## Documentation
-      
-      Here are some notes on primary buttons. 
-      
-      ## Code Sample
-      
-      \`\`\`html
-      ${primaryHTML}
-      \`\`\`
-      
-      ${buttonNotes}
-      
-      `
-  }
+Primary.parameters = {
+  notes: `
+    # Primary Buttons
+
+    ## Documentation
+    
+    Here are some notes on primary buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${primaryHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    `
 };
 
 const altPrimaryHTML = `
@@ -81,26 +80,25 @@ const altPrimaryHTML = `
 
 export const AltPrimary = () => altPrimaryHTML;
 
-AltPrimary.story = {
-  name: 'Alt Primary (Outline)',
-  parameters: {
-    notes: `
-      # Alt Primary Buttons
+AltPrimary.storyName = 'Alt Primary (Outline)';
 
-      ## Documentation
-      
-      Here are some notes on alt primary buttons. 
-      
-      ## Code Sample
-      
-      \`\`\`html
-      ${altPrimaryHTML}
-      \`\`\`
-      
-      ${buttonNotes}
-      
-      ` 
-  }
+AltPrimary.parameters = {
+  notes: `
+    # Alt Primary Buttons
+
+    ## Documentation
+    
+    Here are some notes on alt primary buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${altPrimaryHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
 };
 
 const secondaryHTML = `
@@ -125,26 +123,25 @@ const secondaryHTML = `
 
 export const Secondary = () => secondaryHTML;
 
-Secondary.story = {
-  name: 'Secondary (Outline)',
-  parameters: {
-    notes: `
-      # Secondary Buttons
+Secondary.storyName = 'Secondary (Outline)';
 
-      ## Documentation
-      
-      Here are some notes on alt primary buttons. 
-      
-      ## Code Sample
-      
-      \`\`\`html
-      ${secondaryHTML}
-      \`\`\`
-      
-      ${buttonNotes}
-      
-      ` 
-  }
+Secondary.parameters = {
+  notes: `
+    # Secondary Buttons
+
+    ## Documentation
+    
+    Here are some notes on alt primary buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${secondaryHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
 };
 
 const otherHTML = `
@@ -169,26 +166,25 @@ const otherHTML = `
 
 export const Other = () => otherHTML;
 
-Other.story = {
-  name: 'Other',
-  parameters: {
-    notes: `
-      # Other Buttons
+Other.storyName = 'Other';
 
-      ## Documentation
-      
-      Here are some notes on alt primary buttons. 
-      
-      ## Code Sample
-      
-      \`\`\`html
-      ${altPrimaryHTML}
-      \`\`\`
-      
-      ${buttonNotes}
-      
-      ` 
-  }
+Other.parameters = {
+  notes: `
+    # Other Buttons
+
+    ## Documentation
+    
+    Here are some notes on alt primary buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${altPrimaryHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
 };
 
 
@@ -233,24 +229,23 @@ const groupHTML = `
 
 export const Group = () => groupHTML;
 
-Group.story = {
-  name: 'Group',
-  parameters: {
-    notes: `
-      # Other Buttons
+Group.storyName = 'Group';
 
-      ## Documentation
-      
-      Here are some notes on alt primary buttons. 
-      
-      ## Code Sample
-      
-      \`\`\`html
-      ${groupHTML}
-      \`\`\`
-      
-      ${buttonNotes}
-      
-      ` 
-  }
+Group.parameters = {
+  notes: `
+    # Other Buttons
+
+    ## Documentation
+    
+    Here are some notes on alt primary buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${groupHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
 };

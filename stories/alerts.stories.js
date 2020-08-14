@@ -25,24 +25,22 @@ export const AlertPrimary = () => `
     <div class="alert alert-primary" role="alert">
       This is a primary alert - check it out!
     </div>`;
-    
-AlertPrimary.story = {
-  name: 'Primary',
-  parameters: {
-    notes: 'Primary alerts should be used to confirm that an important task or workflow has been completed.',
-  },
+
+AlertPrimary.storyName = 'Primary';
+
+AlertPrimary.parameters = {
+  notes: 'Primary alerts should be used to confirm that an important task or workflow has been completed.',
 };
 
 export const AlertSecondary = () => `
     <div class="alert alert-secondary" role="alert">
       This is a secondary alert - check it out!
     </div>`;
-    
-AlertSecondary.story = {
-  name: 'Secondary',
-  parameters: {
-    notes: 'Secondary alerts should be used to confirm that an important task or workflow has been completed.',
-  },
+
+AlertSecondary.storyName = 'Secondary';
+
+AlertSecondary.parameters = {
+  notes: 'Secondary alerts should be used to confirm that an important task or workflow has been completed.',
 };
 
 const alertSuccessHTML = `
@@ -59,24 +57,23 @@ const alertSuccessHTML = `
         </button>
       </div>
     </div>`;
-  
+
 export const AlertSuccess = () => alertSuccessHTML;
 
-AlertSuccess.story = {
-  name: 'Success',
-  parameters: {
-    notes: `
-    #Success
-      
-    Success alerts should be used to confirm that an important task or workflow has been completed.
+AlertSuccess.storyName = 'Success';
+
+AlertSuccess.parameters = {
+  notes: `
+  #Success
     
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertSuccessHTML}
-    \`\`\`
-    `
-  },
+  Success alerts should be used to confirm that an important task or workflow has been completed.
+  
+  ##Sample Code
+  
+  \`\`\`html
+  ${alertSuccessHTML}
+  \`\`\`
+  `
 };
 
 const alertErrorHTML = `
@@ -100,23 +97,22 @@ const alertErrorHTML = `
     </div>`;
 
 export const AlertError = () => alertErrorHTML;
-    
-AlertError.story = {
-  name: 'Error',
-  parameters: { 
-    notes: `
-    #Error
-    
-    Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
-    
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertErrorHTML}
-    \`\`\`
-    `
-  }
-}
+
+AlertError.storyName = 'Error';
+
+AlertError.parameters = { 
+  notes: `
+  #Error
+  
+  Error alerts help the user recover from critical problems or errors. They should be used when the user <strong>must</strong> take action to resolve a problem before moving forward.
+  
+  ##Sample Code
+  
+  \`\`\`html
+  ${alertErrorHTML}
+  \`\`\`
+  `
+};
 
 const alertWarningHTML = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
@@ -138,24 +134,23 @@ const alertWarningHTML = `
         </button>
       </div>
     </div>`;
-   
+
 export const AlertWarning = () => alertWarningHTML;
 
-AlertWarning.story = {
-  name: 'Warning',
-  parameters: {
-    notes: `
-    #Warning
+AlertWarning.storyName = 'Warning';
 
-    Warnings should be used when the user should resolve a likely problem, but the user is free to ignore it.
+AlertWarning.parameters = {
+  notes: `
+  #Warning
 
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertWarningHTML}
-    \`\`\`
-    `
-  },
+  Warnings should be used when the user should resolve a likely problem, but the user is free to ignore it.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${alertWarningHTML}
+  \`\`\`
+  `
 };
 
 /*
@@ -231,34 +226,19 @@ const alertInfoHTML = `
 
 export const AlertInfo = () => alertInfoHTML;
 
-AlertInfo.story = {
-  name: 'Info',
-  parameters: {
-    notes: `
+AlertInfo.storyName = 'Info';
 
-    #Info
+AlertInfo.parameters = {
+  notes: `
 
-    Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.
+  #Info
 
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertInfoHTML}
-    \`\`\`
-    `
-  },
+  Use the Info style when providing information that is safe to ignore, such as usage tips. Always include the ability to permanently dismiss an Info alert.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${alertInfoHTML}
+  \`\`\`
+  `
 };
-
-/*
-export const AlertLight = () => `
-    <div class="alert alert-light" role="alert">
-        This is a light alert - check it out!
-    </div>`;
-        
-AlertLight.story = {
-  name: 'Light',
-  parameters: {
-    notes: 'Use the Light style when ???',
-  },
-};
-*/

@@ -15,20 +15,18 @@ const global_html = `<p>
 </p>`;
 export const Global = () => `<div class="container-fluid">${global_html}</div>`;
 
-Global.story = { 
-    name: 'Global',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+Global.storyName = 'Global';
 
-      \`\`\`html
-      ${global_html}
-      \`\`\`
-
-      `
-    }
+Global.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${global_html}
+  \`\`\`
+
+  `
 };
 
 const headings_html = `<div>
@@ -41,18 +39,16 @@ const headings_html = `<div>
 </div>`;
 export const Headings = () => `<div class="container-fluid">${headings_html}</div>`;
 
-Headings.story = { 
-    name: 'Headings',
-    parameters: { 
-      notes: `
-      
-      #Sample Code
+Headings.storyName = 'Headings';
 
-      \`\`\`html
-      ${headings_html}
-      \`\`\`
-
-      `
-    }
+Headings.parameters = { 
+  notes: `
   
+  #Sample Code
+
+  \`\`\`html
+  ${headings_html}
+  \`\`\`
+
+  `
 };
