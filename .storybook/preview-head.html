@@ -1,13 +1,10 @@
-<style type="text/css">
-   html[dir] body { 
-      margin: 15px; 
-   }
+<style>
+    <!-- custom preview styles -->
 </style>
 <script>
-   document.addEventListener('DOMContentLoaded', function() {
-   let body = document.querySelector('html');
-   let dir = body.getAttribute('dir');
-   console.log(dir);
-   if (!dir) body.setAttribute('dir','ltr');
+    document.addEventListener('DOMContentLoaded', function() {
+    let body = document.querySelector('html');
+    let dir = body.getAttribute('dir');
+    if (!dir) body.setAttribute('dir','ltr');
  });
 </script>

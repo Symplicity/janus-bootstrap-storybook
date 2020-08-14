@@ -40,7 +40,7 @@
     "@storybook/addon-options": "^5.3.19",
     "@storybook/addon-storysource": "^6.0.6",
     "@storybook/addon-viewport": "^6.0.6",
-    "@storybook/addons": "^6.0.6",
+    "@storybook/addons": "^6.0.7",
     "@storybook/client-api": "^6.0.6",
     "@storybook/core": "^6.0.6",
     "@storybook/core-events": "^6.0.6",
@@ -57,6 +57,7 @@
     "storybook-addon-rtl": "^0.2.2"
   },
   "dependencies": {
+    "@storybook/theming": "^6.0.7",
     "bootstrap": "file:node_modules/@symplicity/bootstrap"
   }
 }

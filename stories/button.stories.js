@@ -11,10 +11,6 @@ export default {
   }
 };
 
-// Here is how you use the Actions addon. The click events will be recorded in the Actions tab, like a console/logger.
-// Basically, you need to call withAction('eventname')(someStoryFunction), where someStoryFunction is a function that returns an HTML node or snippet.
-//const buttonWithAction = () => withActions('click')(() => `<button type="button" class="btn btn-primary">Action Button</button>`);
-
 const primaryHTML = ` 
 <h3>Primary - Large</h3>
 <button type="button" class="btn btn-lg btn-primary">Primary</button>
