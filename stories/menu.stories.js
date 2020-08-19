@@ -68,9 +68,9 @@ MenuPrefixIcon.parameters = {
 
 
 const menu_suffix_icon_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right mt-1 float-right"></i></a>
+  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
+  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
+  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
 </div>`;
 
 export const MenuSuffixIcon = () => `<div class="container-fluid">${menu_suffix_icon_html}</div>`;
