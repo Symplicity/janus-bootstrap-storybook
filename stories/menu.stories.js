@@ -1,7 +1,21 @@
 import { document, setTimeout } from 'global';
 
+import {
+  array,
+  boolean,
+  button,
+  color,
+  date,
+  select,
+  withKnobs,
+  text,
+  number,
+} from '@storybook/addon-knobs';
+
+
 export default {
   title: 'Components/Menus',
+  decorators: [withKnobs],
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel',
@@ -65,15 +79,22 @@ MenuPrefixIcon.parameters = {
   `
 };
 
+export const MenuSuffixIcon = () => {
 
+const item1_text = text("Item 1", "Chad Hampton");
+const item2_text = text("Item 2", "Something Verylong");
+const item3_text = text("Item 3", "Something Short");
 
-const menu_suffix_icon_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">Chad Hampton<i class="icn-chevron_right"></i></a>
-</div>`;
+return `
 
-export const MenuSuffixIcon = () => `<div class="container-fluid">${menu_suffix_icon_html}</div>`;
+<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+  <a class="dropdown-item with-suffix-icon" href="#">${item1_text}<i class="icn-chevron_right"></i></a>
+  <a class="dropdown-item with-suffix-icon" href="#">${item2_text}<i class="icn-chevron_right"></i></a>
+  <a class="dropdown-item with-suffix-icon" href="#">${item3_text}<i class="icn-chevron_right"></i></a>
+</div>
+`;
+
+};
 
 MenuSuffixIcon.storyName = 'Menu Suffix Icon';
 
@@ -83,7 +104,11 @@ MenuSuffixIcon.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${menu_suffix_icon_html}
+  <div class="dropdown-menu shadow-sm show">
+    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
+    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
+    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
+  </div>
   \`\`\`
 
   `
