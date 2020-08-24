@@ -26,7 +26,7 @@ export default {
 const input_email_html = `
 <form>
   <div class="mb-3">
-    <label for="email" class="form-label mb-0 h4">Email</label>
+    <label for="email" class="form-label">Email</label>
     <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
     <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
   </div>
