@@ -14,7 +14,7 @@ import {
 
 
 export default {
-  title: 'Examples/Forms',
+  title: 'Examples/Unvalidated Form',
   decorators: [withKnobs],
   parameters: {
     options: {
