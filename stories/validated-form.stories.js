@@ -24,7 +24,7 @@ export default {
 };
 
 const validated_form_html = `
-<div class="bordered-container" style="max-width: 500px;"> 
+<div style="max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 4px;"> 
   <form>
     <div class="mb-3 is-invalid">
       <label for="email2" class="form-label">Email</label>
