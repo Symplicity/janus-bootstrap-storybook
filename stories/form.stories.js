@@ -24,8 +24,6 @@ export default {
 };
 
 const input_email_html = `
-<h4>Default</h4>
-<hr>
 <form>
   <div class="mb-3">
     <label for="email" class="form-label">Email</label>
@@ -34,8 +32,6 @@ const input_email_html = `
   </div>
 </form>
 <br><br>
-<h4>Invalid/Error</h4>
-<hr>
 <form>
   <div class="mb-3 is-invalid">
     <label for="email2" class="form-label">Email</label>
