@@ -59,3 +59,48 @@ InputEmail.parameters = {
 
   `
 };
+
+const select_html = `
+<form>
+  <div class="mb-3">
+    <label for="select" class="form-label">Select</label>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+</form>
+<br><br>
+<form>
+  <div class="mb-3 is-invalid">
+    <label for="select2" class="form-label">Select</label>
+    <div class="invalid-feedback">
+       <span><span class="icn-error_filled"></span> This field is required.</span>
+    </div>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+</form>
+`;
+
+export const Select = () => `<div class="container-fluid">${select_html}</div>`;
+
+Select.storyName = '<select>';
+
+Select.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${select_html}
+  \`\`\`
+
+  `
+};
