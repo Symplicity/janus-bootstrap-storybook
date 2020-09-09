@@ -104,3 +104,35 @@ Select.parameters = {
 
   `
 };
+
+const textarea_html = `
+<form>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+</form>
+<br><br>
+<form>
+  <div class="mb-3 is-invalid">
+    <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+  </div>
+</form>
+`;
+
+export const Textarea = () => `<div class="container-fluid">${textarea_html}</div>`;
+
+Textarea.storyName = '<textarea>';
+
+Textarea.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${textarea_html}
+  \`\`\`
+
+  `
+};

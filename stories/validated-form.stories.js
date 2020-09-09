@@ -38,19 +38,23 @@ const validated_form_html = `
       <option value="3">Three</option>
     </select>
   </div>
-    <div class="mb-3 is-invalid">
-      <label for="email2" class="form-label">Email</label>
-      <div class="invalid-feedback">
-          <div class="feedback-icon">
-            <span class="icn-error_filled"></span>
-          </div>
-          <div class="feedback-text">
-            <span> This field is required.</span>
-          </div>
-      </div>
-      <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
-      <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
+  <div class="mb-3 is-invalid">
+    <label for="email2" class="form-label">Email</label>
+    <div class="invalid-feedback">
+        <div class="feedback-icon">
+          <span class="icn-error_filled"></span>
+        </div>
+        <div class="feedback-text">
+          <span> This field is required.</span>
+        </div>
     </div>
+    <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
+    <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
+  </div>
+  <div class="mb-3 is-invalid">
+    <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+  </div>
   </form>
 </div>
 `;

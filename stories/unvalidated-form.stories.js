@@ -40,6 +40,10 @@ const unvalidated_form_html = `
       <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
       <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
     </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
   </form>
 </div>
 `;
