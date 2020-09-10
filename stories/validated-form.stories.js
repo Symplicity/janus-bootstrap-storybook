@@ -53,7 +53,7 @@ const validated_form_html = `
     </div>
     <div class="mb-3 is-invalid">
       <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
     </div>
     <div class="mb-3 is-invalid">
       <legend>More Fields</legend>

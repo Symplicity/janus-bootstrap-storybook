@@ -109,14 +109,14 @@ const textarea_html = `
 <form>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
 </form>
 <br><br>
 <form>
   <div class="mb-3 is-invalid">
     <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
   </div>
 </form>
 `;
