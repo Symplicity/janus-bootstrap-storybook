@@ -44,6 +44,31 @@ const unvalidated_form_html = `
       <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
     </div>
+    <fieldset>
+      <div class="mb-3">
+        <legend>More Fields</legend>
+        <label for="email" class="form-label">Checkbox Group</label>
+        <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+          <label class="form-check-label" for="flexCheck1">
+            Andre Clayton
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+          <label class="form-check-label" for="flexCheck2">
+            Jimmy Briggs      
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
+          <label class="form-check-label" for="flexCheck3">
+            Rosalie Jacobs 
+          </label>
+        </div>
+      </fieldset>
+    </div>
   </form>
 </div>
 `;
