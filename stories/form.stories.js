@@ -140,54 +140,58 @@ Textarea.parameters = {
 const input_checkbox_html = `
 <form>
   <div class="mb-3">
-    <label for="email" class="form-label">Checkbox Group</label>
-    <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
-      <label class="form-check-label" for="flexCheck1">
-        Andre Clayton
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
-      <label class="form-check-label" for="flexCheck2">
-        Jimmy Briggs      
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
-      <label class="form-check-label" for="flexCheck3">
-        Rosalie Jacobs 
-      </label>
-    </div>
+    <fieldset>
+      <legend>Checkbox Group</legend>
+      <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+        <label class="form-check-label" for="flexCheck1">
+          Andre Clayton
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+        <label class="form-check-label" for="flexCheck2">
+          Jimmy Briggs      
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
+        <label class="form-check-label" for="flexCheck3">
+          Rosalie Jacobs 
+        </label>
+      </div>
+    </fieldset>
   </div>
 </form>
 <br><br>
 <form>
   <div class="mb-3 is-invalid">
-    <label for="email2" class="form-label">Checkbox Group</label>
-    <div class="invalid-feedback">
-       <span><span class="icn-error_filled"></span> This field is required.</span>
-    </div>
-    <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
-      <label class="form-check-label" for="flexCheck4">
-        Andre Clayton
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
-      <label class="form-check-label" for="flexCheck5">
-        Jimmy Briggs      
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
-      <label class="form-check-label" for="flexCheck6">
-        Rosalie Jacobs 
-      </label>
-    </div>
+    <fieldset>
+      <legend>Checkbox Group</legend>
+      <div class="invalid-feedback">
+         <span><span class="icn-error_filled"></span> This field is required.</span>
+      </div>
+      <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
+        <label class="form-check-label" for="flexCheck4">
+          Andre Clayton
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
+        <label class="form-check-label" for="flexCheck5">
+          Jimmy Briggs      
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
+        <label class="form-check-label" for="flexCheck6">
+          Rosalie Jacobs 
+        </label>
+      </div>
+    </fieldset>
   </div>
 </form>
 `;
@@ -203,6 +207,80 @@ InputCheckbox.parameters = {
 
   \`\`\`html
   ${input_checkbox_html}
+  \`\`\`
+
+  `
+};
+
+const input_radio_html = `
+<form>
+  <div class="mb-3">
+    <fieldset>
+      <legend>Radio Group</legend>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Andre Clayton
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Jimmy Briggs      
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+        <label class="form-check-label" for="flexRadioDefault3">
+          Rosalie Jacobs 
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</form>
+<br><br>
+<form>
+  <div class="mb-3 is-invalid">
+    <fieldset>
+      <legend>Radio Group</legend>
+      <div class="invalid-feedback">
+         <span><span class="icn-error_filled"></span> This field is required.</span>
+      </div>
+      <div id="radioHelpBlock" class="form-text">Please enter an email (not school)</div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+        <label class="form-check-label" for="flexRadioDefault4">
+          Andre Clayton
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+        <label class="form-check-label" for="flexRadioDefault5">
+          Jimmy Briggs      
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+        <label class="form-check-label" for="flexRadioDefault6">
+          Rosalie Jacobs 
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</form>
+`;
+
+export const InputRadio = () => `<div class="container-fluid">${input_radio_html}</div>`;
+
+InputRadio.storyName = '[type="radio"]';
+
+InputRadio.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${input_radio_html}
   \`\`\`
 
   `

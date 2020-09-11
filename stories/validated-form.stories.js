@@ -55,31 +55,60 @@ const validated_form_html = `
       <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
       <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
     </div>
+    <h3>More Fields</h3>
     <div class="mb-3 is-invalid">
-      <legend>More Fields</legend>
-      <label for="email2" class="form-label">Checkbox Group</label>
-      <div class="invalid-feedback">
-         <span><span class="icn-error_filled"></span> This field is required.</span>
-      </div>
-      <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
-        <label class="form-check-label" for="flexCheck4">
-          Andre Clayton
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
-        <label class="form-check-label" for="flexCheck5">
-          Jimmy Briggs      
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
-        <label class="form-check-label" for="flexCheck6">
-          Rosalie Jacobs 
-        </label>
-      </div>
+      <fieldset>
+        <legend>Checkbox Group</legend>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
+        <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
+          <label class="form-check-label" for="flexCheck4">
+            Andre Clayton
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
+          <label class="form-check-label" for="flexCheck5">
+            Jimmy Briggs      
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
+          <label class="form-check-label" for="flexCheck6">
+            Rosalie Jacobs 
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="mb-3 is-invalid">
+      <fieldset>
+        <legend>Radio Group</legend>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
+        <div id="radioHelpBlock" class="form-text">Please enter an email (not school)</div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Andre Clayton
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Jimmy Briggs      
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+          <label class="form-check-label" for="flexRadioDefault3">
+            Rosalie Jacobs 
+          </label>
+        </div>
+      </fieldset>
     </div>
   </form>
 </div>

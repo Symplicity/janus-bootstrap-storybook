@@ -44,10 +44,10 @@ const unvalidated_form_html = `
       <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
     </div>
-    <fieldset>
-      <div class="mb-3">
-        <legend>More Fields</legend>
-        <label for="email" class="form-label">Checkbox Group</label>
+    <div class="mb-3">
+      <h3>More Fields</h3>
+      <fieldset>
+        <legend>Checkbox Group</legend>
         <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
@@ -64,6 +64,29 @@ const unvalidated_form_html = `
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
           <label class="form-check-label" for="flexCheck3">
+            Rosalie Jacobs 
+          </label>
+        </div>
+      </fieldset>
+    </div>
+    <div class="mb-3">
+      <fieldset>
+        <legend>Radio Group</legend>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Andre Clayton
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+          <label class="form-check-label" for="flexRadioDefault2">
+            Jimmy Briggs      
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+          <label class="form-check-label" for="flexRadioDefault3">
             Rosalie Jacobs 
           </label>
         </div>
