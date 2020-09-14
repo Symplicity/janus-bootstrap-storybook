@@ -25,7 +25,7 @@ export default {
 
 const input_email_html = `
 <form>
-  <div class="mb-3">
+  <div class="mb-4">
     <label for="email" class="form-label">Email</label>
     <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
     <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
@@ -33,7 +33,7 @@ const input_email_html = `
 </form>
 <br><br>
 <form>
-  <div class="mb-3 is-invalid">
+  <div class="mb-4 is-invalid">
     <label for="email2" class="form-label">Email</label>
     <div class="invalid-feedback">
        <span><span class="icn-error_filled"></span> This field is required.</span>
@@ -62,7 +62,7 @@ InputEmail.parameters = {
 
 const select_html = `
 <form>
-  <div class="mb-3">
+  <div class="mb-4">
     <label for="select" class="form-label">Select</label>
     <select class="form-select" aria-label="Default select example">
       <option selected>Open this select menu</option>
@@ -74,7 +74,7 @@ const select_html = `
 </form>
 <br><br>
 <form>
-  <div class="mb-3 is-invalid">
+  <div class="mb-4 is-invalid">
     <label for="select2" class="form-label">Select</label>
     <div class="invalid-feedback">
        <span><span class="icn-error_filled"></span> This field is required.</span>
@@ -107,14 +107,14 @@ Select.parameters = {
 
 const textarea_html = `
 <form>
-<div class="mb-3">
+<div class="mb-4">
   <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
 </form>
 <br><br>
 <form>
-  <div class="mb-3 is-invalid">
+  <div class="mb-4 is-invalid">
     <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
     <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
   </div>
@@ -139,7 +139,7 @@ Textarea.parameters = {
 
 const input_checkbox_html = `
 <form>
-  <div class="mb-3">
+  <div class="mb-4">
     <fieldset>
       <legend>Checkbox Group</legend>
       <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
@@ -166,7 +166,7 @@ const input_checkbox_html = `
 </form>
 <br><br>
 <form>
-  <div class="mb-3 is-invalid">
+  <div class="mb-4 is-invalid">
     <fieldset>
       <legend>Checkbox Group</legend>
       <div class="invalid-feedback">
@@ -214,7 +214,7 @@ InputCheckbox.parameters = {
 
 const input_radio_html = `
 <form>
-  <div class="mb-3">
+  <div class="mb-4">
     <fieldset>
       <legend>Radio Group</legend>
       <div class="form-check">
@@ -240,7 +240,7 @@ const input_radio_html = `
 </form>
 <br><br>
 <form>
-  <div class="mb-3 is-invalid">
+  <div class="mb-4 is-invalid">
     <fieldset>
       <legend>Radio Group</legend>
       <div class="invalid-feedback">

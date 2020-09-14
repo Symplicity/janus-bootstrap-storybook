@@ -26,7 +26,7 @@ export default {
 const unvalidated_form_html = `
 <div style="max-width: 500px; border: 1px solid #ccc; padding: 20px;  border-radius: 4px;"> 
   <form>
-    <div class="mb-3">
+    <div class="mb-4">
       <label for="select" class="form-label">Select</label>
       <select class="form-select" aria-label="Default select example">
         <option selected>Open this select menu</option>
@@ -35,17 +35,17 @@ const unvalidated_form_html = `
         <option value="3">Three</option>
       </select>
     </div>
-    <div class="mb-3">
+    <div class="mb-4">
       <label for="email" class="form-label">Email</label>
       <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
       <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
     </div>
-    <div class="mb-3">
+    <div class="mb-4">
       <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
     </div>
-    <div class="mb-3">
-      <h3>More Fields</h3>
+    <p class="h3 fieldgroup-label">More Fields</p>
+    <div class="mb-4">
       <fieldset>
         <legend>Checkbox Group</legend>
         <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
@@ -69,7 +69,7 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-3">
+    <div class="mb-4">
       <fieldset>
         <legend>Radio Group</legend>
         <div class="form-check">

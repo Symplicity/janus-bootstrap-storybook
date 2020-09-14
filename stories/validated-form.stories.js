@@ -26,7 +26,7 @@ export default {
 const validated_form_html = `
 <div style="max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 4px;"> 
   <form>
-    <div class="mb-3 is-invalid">
+    <div class="mb-4 is-invalid">
       <label for="select2" class="form-label">Select</label>
       <div class="invalid-feedback">
          <span><span class="icn-error_filled"></span> This field is required.</span>
@@ -38,7 +38,7 @@ const validated_form_html = `
         <option value="3">Three</option>
       </select>
     </div>
-    <div class="mb-3 is-invalid">
+    <div class="mb-4 is-invalid">
       <label for="email2" class="form-label">Email</label>
       <div class="invalid-feedback">
           <div class="feedback-icon">
@@ -51,18 +51,18 @@ const validated_form_html = `
       <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
       <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
     </div>
-    <div class="mb-3 is-invalid">
+    <div class="mb-4 is-invalid">
       <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
       <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
     </div>
-    <h3>More Fields</h3>
-    <div class="mb-3 is-invalid">
+    <p class="h3 fieldgroup-label">More Fields</p>
+    <div class="mb-4 is-invalid">
       <fieldset>
         <legend>Checkbox Group</legend>
         <div class="invalid-feedback">
            <span><span class="icn-error_filled"></span> This field is required.</span>
         </div>
-        <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
+        <div id="checkbox2HelpBlock" class="form-text">Select ones that apply to you</div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
           <label class="form-check-label" for="flexCheck4">
@@ -83,13 +83,12 @@ const validated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-3 is-invalid">
+    <div class="mb-4 is-invalid">
       <fieldset>
         <legend>Radio Group</legend>
         <div class="invalid-feedback">
            <span><span class="icn-error_filled"></span> This field is required.</span>
         </div>
-        <div id="radioHelpBlock" class="form-text">Please enter an email (not school)</div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
           <label class="form-check-label" for="flexRadioDefault1">
