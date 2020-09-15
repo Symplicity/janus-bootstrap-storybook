@@ -109,6 +109,46 @@ const validated_form_html = `
         </div>
       </fieldset>
     </div>
+    <div class="mb-4 is-invalid">
+      <fieldset>
+        <legend>Subform</legend>
+        <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
+        <div class="subform bg-light p-3 rounded">
+          <div class="mb-2">
+            <label for="select" class="form-label">Country</label>
+            <select class="form-select" aria-label="Country select example">
+              <option value=""></option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <label for="formGroupExampleInputStreet" class="form-label">Street</label>
+            <input type="text" class="form-control" id="formGroupExampleInputStreet">
+          </div>
+          <div class="mb-2">
+            <label for="formGroupExampleInputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="formGroupExampleInputCity">
+          </div>
+          <div class="mb-2 row">
+            <div class="col">
+              <label for="selectState" class="form-label">State</label>
+              <select class="form-select" id="selectState" aria-label="State select example">
+                <option value=""></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col">
+              <label for="zip" class="form-label">Zip</label>
+              <input type="text" id="zip" class="form-control">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
   </form>
 </div>
 `;
