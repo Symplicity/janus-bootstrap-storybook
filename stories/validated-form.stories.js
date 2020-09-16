@@ -146,6 +146,9 @@ const validated_form_html = `
               <input type="text" id="zip" class="form-control">
             </div>
           </div>
+          <div class="subform-footer">
+            <a href="#" role="button" class="btn text-danger"><i class="icn-delete mr-2"></i>Delete</a>
+          </div>
         </div>
       </fieldset>
     </div>

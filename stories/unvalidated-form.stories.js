@@ -96,7 +96,7 @@ const unvalidated_form_html = `
       <fieldset>
         <legend>Subform</legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
-        <div class="subform bg-light p-3 rounded">
+        <div class="subform-body bg-light p-3 rounded">
           <div class="mb-2">
             <label for="select" class="form-label">Country</label>
             <select class="form-select" aria-label="Country select example">
