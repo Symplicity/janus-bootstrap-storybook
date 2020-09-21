@@ -132,6 +132,7 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
+    <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
   </form>
 </div>
 `;
