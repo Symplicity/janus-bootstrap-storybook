@@ -92,7 +92,7 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-4">
+    <div class="mb-3">
       <fieldset>
         <legend>Subform</legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
@@ -132,7 +132,20 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
-    <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
+    <div class="mb-4">
+      <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
+    </div>
+    <div class="mb-4">
+      <fieldset>
+        <legend>Simple File Upload</legend>
+        <div class="form-file">
+          <input type="file" class="form-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="form-file-label" for="inputGroupFile01">
+            <span class="btn btn-outline-secondary">Choose File</span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
   </form>
 </div>
 `;

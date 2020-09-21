@@ -152,7 +152,23 @@ const validated_form_html = `
         </div>
       </fieldset>
     </div>
-    <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
+    <div class="mb-4">
+      <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
+    </div>
+    <div class="mb-4 is-invalid">
+      <fieldset>
+        <legend>Simple File Upload</legend>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
+        <div class="form-file">
+          <input type="file" class="form-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="form-file-label" for="inputGroupFile01">
+            <span class="btn btn-outline-secondary">Choose File</span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
   </form>
 </div>
 `;
