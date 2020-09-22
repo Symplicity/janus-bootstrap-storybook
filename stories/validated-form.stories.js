@@ -41,12 +41,7 @@ const validated_form_html = `
     <div class="mb-4 is-invalid">
       <label for="email2" class="form-label">Email</label>
       <div class="invalid-feedback">
-          <div class="feedback-icon">
-            <span class="icn-error_filled"></span>
-          </div>
-          <div class="feedback-text">
-            <span> This field is required.</span>
-          </div>
+         <span><span class="icn-error_filled"></span> This field is required.</span>
       </div>
       <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
       <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
