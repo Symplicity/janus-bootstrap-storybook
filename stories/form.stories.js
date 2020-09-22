@@ -285,3 +285,52 @@ InputRadio.parameters = {
 
   `
 };
+
+const input_file_html = `
+<form>
+  <div class="mb-4">
+    <fieldset>
+      <legend>Simple File Upload</legend>
+      <div class="form-file">
+        <input type="file" class="form-file-input" id="inputGroupFile01">
+        <label class="form-file-label" for="inputGroupFile01">
+          <span class="btn btn-outline-secondary">Choose File</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</form>
+<br><br>
+<form>
+  <div class="mb-4 is-invalid">
+    <fieldset>
+      <legend>Simple File Upload</legend>
+      <div class="invalid-feedback">
+         <span><span class="icn-error_filled"></span> This field is required.</span>
+      </div>
+      <div class="form-file">
+        <input type="file" class="form-file-input" id="inputGroupFile02">
+        <label class="form-file-label" for="inputGroupFile02">
+          <span class="btn btn-outline-secondary">Choose File</span>
+        </label>
+      </div>
+    </fieldset>
+  </div>
+</form>
+`;
+
+export const InputFile = () => `<div class="container-fluid">${input_file_html}</div>`;
+
+InputFile.storyName = '[type="file"]';
+
+InputFile.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${input_file_html}
+  \`\`\`
+
+  `
+};
