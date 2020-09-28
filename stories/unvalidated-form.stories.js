@@ -92,12 +92,12 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-3">
+    <div class="mb-75">
       <fieldset>
         <legend>Subform</legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
         <div class="subform-body bg-light p-3 rounded">
-          <div class="mb-2">
+          <div class="mb-75">
             <label for="select" class="form-label">Country</label>
             <select class="form-select" aria-label="Country select example">
               <option value=""></option>
@@ -106,16 +106,16 @@ const unvalidated_form_html = `
               <option value="3">Three</option>
             </select>
           </div>
-          <div class="mb-2">
+          <div class="mb-75">
             <label for="formGroupExampleInputStreet" class="form-label">Street</label>
             <input type="text" class="form-control" id="formGroupExampleInputStreet">
           </div>
-          <div class="mb-2">
+          <div class="mb-75">
             <label for="formGroupExampleInputCity" class="form-label">City</label>
             <input type="text" class="form-control" id="formGroupExampleInputCity">
           </div>
-          <div class="mb-2 row">
-            <div class="col">
+          <div class="mb-0 row">
+            <div class="col pr-2">
               <label for="selectState" class="form-label">State</label>
               <select class="form-select" id="selectState" aria-label="State select example">
                 <option value=""></option>
@@ -124,7 +124,7 @@ const unvalidated_form_html = `
                 <option value="3">Three</option>
               </select>
             </div>
-            <div class="col">
+            <div class="col pl-2">
               <label for="zip" class="form-label">Zip</label>
               <input type="text" id="zip" class="form-control">
             </div>
