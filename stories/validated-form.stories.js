@@ -44,7 +44,7 @@ const validated_form_html = `
          <span><span class="icn-error_filled"></span> This field is required.</span>
       </div>
       <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
-      <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
+      <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com">
     </div>
     <div class="mb-4 is-invalid">
       <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
@@ -157,7 +157,7 @@ const validated_form_html = `
            <span><span class="icn-error_filled"></span> This field is required.</span>
         </div>
         <div class="form-file">
-          <input type="file" class="form-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <input type="file" class="form-file-input" id="inputGroupFile01">
           <label class="form-file-label" for="inputGroupFile01">
             <span class="btn btn-outline-secondary">Choose File</span>
           </label>

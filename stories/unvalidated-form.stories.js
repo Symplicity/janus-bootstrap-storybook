@@ -38,7 +38,7 @@ const unvalidated_form_html = `
     <div class="mb-4">
       <label for="email" class="form-label">Email</label>
       <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
-      <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
+      <input type="email" class="form-control" id="email" placeholder="name@example.com">
     </div>
     <div class="mb-4">
       <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
@@ -139,7 +139,7 @@ const unvalidated_form_html = `
       <fieldset>
         <legend>Simple File Upload</legend>
         <div class="form-file">
-          <input type="file" class="form-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <input type="file" class="form-file-input" id="inputGroupFile01">
           <label class="form-file-label" for="inputGroupFile01">
             <span class="btn btn-outline-secondary">Choose File</span>
           </label>
