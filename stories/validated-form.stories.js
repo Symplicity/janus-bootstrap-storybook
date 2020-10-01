@@ -157,9 +157,10 @@ const validated_form_html = `
            <span><span class="icn-error_filled"></span> This field is required.</span>
         </div>
         <div class="form-file">
-          <input type="file" class="form-file-input" id="inputGroupFile01">
-          <label class="form-file-label" for="inputGroupFile01">
-            <span class="btn btn-outline-secondary">Choose File</span>
+          <input type="file" class="form-file-input" id="customFile">
+          <label class="form-file-label" for="customFile">
+            <span class="form-file-text">Choose file...</span>
+            <span class="form-file-button">Browse</span>
           </label>
         </div>
       </fieldset>
