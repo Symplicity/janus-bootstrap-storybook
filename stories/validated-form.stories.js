@@ -142,7 +142,7 @@ const validated_form_html = `
             </div>
           </div>
           <div class="subform-footer">
-            <button onclick="return false;" class="btn btn-link text-decoration-none text-danger"><i class="icn-delete mr-2"></i>Delete</button>
+            <button type="button" class="btn btn-link text-decoration-none text-danger"><i class="icn-delete mr-2"></i>Delete</button>
           </div>
         </div>
       </fieldset>
