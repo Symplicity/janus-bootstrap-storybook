@@ -45,7 +45,7 @@
     "@storybook/core": "^6.0.22",
     "@storybook/core-events": "^6.0.22",
     "@storybook/html": "^6.0.22",
-    "@symplicity/bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.0-alpha1-janus",
+    "@symplicity/bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.0-alpha2-janus",
     "@symplicity/janus-tokens": "git+https://github.com/Symplicity/janus-tokens.git",
     "@symplicity/unicon": "git+https://gitlab.symplicity.com/symplicity/unicon.git",
     "babel-loader": "^8.0.6",
