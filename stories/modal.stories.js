@@ -14,9 +14,7 @@ const modal_basic_html = `<div class="modal" tabindex="-1" role="dialog" style="
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Modal title</h4>
-        <button type="button" class="close d-flex" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="icn-close"></span>
-        </button>
+        <button type="button" class="btn-close d-flex" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p class="mb-0">Modal body text goes here.</p>
@@ -54,9 +52,7 @@ const modal_trigger_html = `<button type="button" class="btn btn-primary" data-t
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="icn-close"></span>
-        </button>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         ...
@@ -92,9 +88,7 @@ const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="d
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Modal title</h4>
-        <button type="button" class="close d-flex" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" class="icn-close"></span>
-        </button>
+        <button type="button" class="btn-close d-flex" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <p class="mb-0">
