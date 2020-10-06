@@ -52,8 +52,8 @@ const alertSuccessHTML = `
         This is a success alert - check it out! 
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -90,8 +90,8 @@ const alertErrorHTML = `
         </ul>
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -129,8 +129,8 @@ const alertWarningHTML = `
         <button type="button" class="btn btn-secondary">Alernative</button-->
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>`;
@@ -180,8 +180,8 @@ const alertExpandableHTML = `
         </div>
       </div>
       <div class="flex-shrink-1 ml-2">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
+        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -218,8 +218,8 @@ const alertInfoHTML = `
           <p class="mb-0">This is a info alert - check it out!</p>
         </div>
         <div class="flex-shrink-1">
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-close text-shadow-none"></span></span>
+          <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
           </button>
         </div>
     </div>`;
