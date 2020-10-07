@@ -100,11 +100,11 @@ Badges.parameters = {
 const button_badges = `
 <button type="button" class="btn btn-primary btn-lg">
   Notification <span class="badge bg-light text-dark">9</span>
-  <span class="sr-only">unread messages</span>
+  <span class="visually-hidden">unread messages</span>
 </button>
 <button type="button" class="btn btn-primary">
   Notification <span class="badge bg-light text-dark">9</span>
-  <span class="sr-only">unread messages</span>
+  <span class="visually-hidden">unread messages</span>
 </button>`;
 
 export const Buttons = () => button_badges;
