@@ -27,9 +27,22 @@ const card_basic_html = `
   <div class="card">
     <h3 class="card-header text-uppercase"><span class="icn-clock_filled bg-pale-blue"></span>Events</h3>
     <div class="card-body">
-      <h3 class="card-title">Special title treatment</h3>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group mr-2" role="group" aria-label="First group">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Create New 
+        </button>
+        <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+        </div>
+      </div> 
+      <div class="btn-group mr-2" role="group" aria-label="Second group">
+        <button class="btn btn-outline-secondary" type="button" id="cardButton2">
+          Edit Draft Reports 
+        </button>
+      </div>
     </div>
   </div>
 </div>`;
@@ -56,13 +69,25 @@ export const CardBasic = () => {
   );
 
   return `
-  <div style="width: 18rem;">
+  <div>
     <div class="card">
       <h3 class="card-header text-uppercase"><span class="${card_icon_class} ${card_icon_bg_color}"></span>${card_title_text}</h3>
       <div class="card-body">
-        <h3 class="card-title">Special title treatment</h3>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group mr-2" role="group" aria-label="First group">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Create New 
+            </button>
+            <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+            </div>
+          </div> 
+          <button class="btn btn-outline-secondary" type="button" id="cardButton2">
+            Edit Draft Reports 
+          </button>
+        </div>
       </div>
     </div>
   </div>
