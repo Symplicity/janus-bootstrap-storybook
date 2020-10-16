@@ -104,12 +104,12 @@ const validated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-75 is-invalid">
+    <div class="mb-6 is-invalid">
       <fieldset>
         <legend>Subform</legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
         <div class="subform bg-light p-3 rounded">
-          <div class="mb-75">
+          <div class="mb-6">
             <label for="select" class="form-label">Country</label>
             <select class="form-select" aria-label="Country select example">
               <option value=""></option>
@@ -118,11 +118,11 @@ const validated_form_html = `
               <option value="3">Three</option>
             </select>
           </div>
-          <div class="mb-75">
+          <div class="mb-6">
             <label for="formGroupExampleInputStreet" class="form-label">Street</label>
             <input type="text" class="form-control" id="formGroupExampleInputStreet">
           </div>
-          <div class="mb-75">
+          <div class="mb-6">
             <label for="formGroupExampleInputCity" class="form-label">City</label>
             <input type="text" class="form-control" id="formGroupExampleInputCity">
           </div>
