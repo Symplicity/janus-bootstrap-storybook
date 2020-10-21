@@ -24,19 +24,13 @@ export default {
 };
 
 const menu_basic_html = `
-<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
   <a class="dropdown-item" href="#">Something else here here here here here here here</a>
-</div>
-<br>
-<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
-  <a class="dropdown-item" href="#">A</a>
-  <a class="dropdown-item" href="#">B</a>
-  <a class="dropdown-item" href="#">C</a>
 </div>`;
 
-export const MenuBasic = () => `<div class="container-fluid">${menu_basic_html}</div>`;
+export const MenuBasic = () => `${menu_basic_html}`;
 
 MenuBasic.storyName = 'Menu Basic';
 
@@ -54,16 +48,59 @@ MenuBasic.parameters = {
 
 
 
-const menu_prefix_icon_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-search mr-2 float-left"></i>Chad Hampton</a>
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-withdraw_filled mr-2 float-left"></i>Chad Hampton</a>
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-donut mr-2 float-left"></i>Chad Hampton</a>
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-copy mr-2 float-left"></i>Chad Hampton</a>
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-care-report mr-2 float-left"></i>Chad Hampton</a>
-  <a class="dropdown-item with-prefix-icon" href="#"><i class="icn-rss mr-2 float-left"></i>Chad Hampton</a>
+const menu_prefix_icon_html = `
+<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-search"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton is a super long name isn't it, yes it most certainly is?
+    </div>
+  </a>
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-withdraw_filled"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton
+    </div>
+  </a>
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-donut"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton 
+    </div>
+  </a>
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-copy"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton
+    </div>
+  </a>
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-care-report"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton
+    </div>
+  </a>
+  <a class="dropdown-item with-prefix-icon d-flex" href="#">
+    <div class="flex-shrink-1 mr-2">
+      <span class="icn-rss"></span>
+    </div>
+    <div class="w-100">
+      Chad Hampton
+    </div>
+  </a>
 </div>`;
 
-export const MenuPrefixIcon = () => `<div class="container-fluid">${menu_prefix_icon_html}</div>`;
+export const MenuPrefixIcon = () => `${menu_prefix_icon_html}`;
 
 MenuPrefixIcon.storyName = 'Menu Prefix Icon';
 
@@ -82,16 +119,36 @@ MenuPrefixIcon.parameters = {
 export const MenuSuffixIcon = () => {
 
 const item1_text = text("Item 1", "Chad Hampton");
-const item2_text = text("Item 2", "Something Verylong");
+const item2_text = text("Item 2", "Something Very very very long");
 const item3_text = text("Item 3", "Something Short");
 
 return `
-
-<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
-  <a class="dropdown-item with-suffix-icon" href="#">${item1_text}<i class="icn-chevron_right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">${item2_text}<i class="icn-chevron_right"></i></a>
-  <a class="dropdown-item with-suffix-icon" href="#">${item3_text}<i class="icn-chevron_right"></i></a>
-</div>
+  <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        ${item1_text}
+      </div>
+      <div class="flex-shrink-1">
+        <span class="icn-chevron_right"></span>
+      </div>
+    </a>
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        ${item2_text}
+      </div>
+      <div class="flex-shrink-1">
+        <span class="icn-chevron_right"></span>
+      </div>
+    </a>
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        ${item3_text}
+      </div>
+      <div class="flex-shrink-1">
+        <span class="icn-chevron_right"></span>
+      </div>
+    </a>
+  </div>
 `;
 
 };
@@ -115,7 +172,8 @@ MenuSuffixIcon.parameters = {
 };
 
 
-const menu_divider_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_divider_html = `
+<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
@@ -123,7 +181,7 @@ const menu_divider_html = `<div class="dropdown-menu shadow-sm show" style="posi
   <a class="dropdown-item text-danger" href="#">Delete</a>
 </div>`;
 
-export const MenuDivider = () => `<div class="container-fluid">${menu_divider_html}</div>`;
+export const MenuDivider = () => `${menu_divider_html}`;
 
 MenuDivider.storyName = 'Menu with Divider';
 
@@ -141,7 +199,8 @@ MenuDivider.parameters = {
 
 
 
-const menu_header_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0 20px 20px 0;">
+const menu_header_html = `
+<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
@@ -153,7 +212,7 @@ const menu_header_html = `<div class="dropdown-menu shadow-sm show" style="posit
   <a class="dropdown-item" href="#">View as Word</a>
 </div>`;
 
-export const MenuHeader = () => `<div class="container-fluid">${menu_header_html}</div>`;
+export const MenuHeader = () => `${menu_header_html}`;
 
 MenuHeader.storyName = 'Menu with Header';
 
@@ -170,7 +229,8 @@ MenuHeader.parameters = {
 };
 
 
-const menu_responsive_html = `<div class="dropdown-menu shadow-sm show" style="position: relative; top: 0; margin: 0;">
+const menu_responsive_html = `
+<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
@@ -182,7 +242,7 @@ const menu_responsive_html = `<div class="dropdown-menu shadow-sm show" style="p
   <a class="dropdown-item" href="#">View as Word</a>
 </div>`;
 
-export const MenuResponsive = () => `<div class="container-fluid">${menu_responsive_html}</div>`;
+export const MenuResponsive = () => `${menu_responsive_html}`;
 
 MenuResponsive.storyName = 'Menu Responsive';
 
