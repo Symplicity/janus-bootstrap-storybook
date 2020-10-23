@@ -122,3 +122,41 @@ CardBasic.parameters = {
   
   `
 }
+
+const card_empty_state_html = `
+  <div>
+    <div class="card">
+      <h3 class="card-header text-uppercase">
+        <div class="d-flex">
+          <div class="card-header-icon flex-shrink-1">
+            <span class="icn-link bg-pale-purple"></span>
+          </div>
+          <div class="card-header-text w-100">
+            Events
+          </div>
+        </div>
+      </h3>
+      <div class="card-body text-center text-muted pt-0">
+        <span class="icn-calendar d-block icon-xl-font-size"></span>
+        <span class="display-7">You're all caught up.</span>
+      </div>
+    </div>
+  </div>
+`;
+
+export const CardEmptyState = () => `${card_empty_state_html}`;
+
+CardEmptyState.storyName = 'Card Empty State';
+
+CardEmptyState.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${card_empty_state_html}
+  \`\`\`
+
+  `
+};
+
