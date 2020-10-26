@@ -23,7 +23,7 @@ export default {
 };
 
 const card_basic_html = `
-<div style="width: 18rem;">
+<div>
   <div class="card">
     <h3 class="card-header text-uppercase">
       <div class="d-flex">
@@ -109,7 +109,7 @@ export const CardBasic = () => {
   `
 };
 
-CardBasic.storyName = 'Card Basic';
+CardBasic.storyName = 'Basic';
   
 CardBasic.parameters = { 
   notes: `
@@ -123,7 +123,7 @@ CardBasic.parameters = {
   `
 }
 
-const card_empty_state_html = `
+const card_empty_state_with_icons_html = `
   <div>
     <div class="card">
       <h3 class="card-header text-uppercase">
@@ -144,17 +144,50 @@ const card_empty_state_html = `
   </div>
 `;
 
-export const CardEmptyState = () => `${card_empty_state_html}`;
+export const CardEmptyStateWithIcons = () => `${card_empty_state_with_icons_html}`;
 
-CardEmptyState.storyName = 'Card Empty State';
+CardEmptyStateWithIcons.storyName = 'Empty State / Icons';
 
-CardEmptyState.parameters = { 
+CardEmptyStateWithIcons.parameters = { 
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${card_empty_state_html}
+  ${card_empty_state_with_icons_html}
+  \`\`\`
+
+  `
+};
+
+const card_empty_state_no_icons_html = `
+  <div>
+    <div class="card">
+      <h3 class="card-header text-uppercase">
+        <div class="d-flex">
+          <div class="card-header-text w-100">
+            Events
+          </div>
+        </div>
+      </h3>
+      <div class="card-body text-center text-muted pt-0">
+        <span class="display-7">You're all caught up.</span>
+      </div>
+    </div>
+  </div>
+`;
+
+export const CardEmptyStateNoIcons = () => `${card_empty_state_no_icons_html}`;
+
+CardEmptyStateNoIcons.storyName = 'Empty State / No Icons';
+
+CardEmptyStateNoIcons.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${card_empty_state_with_icons_html}
   \`\`\`
 
   `
