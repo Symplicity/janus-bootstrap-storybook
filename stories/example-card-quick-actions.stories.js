@@ -13,7 +13,7 @@ import {
 } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components/Cards',
+  title: 'Examples/Cards/Quick Actions',
   decorators: [withKnobs],
   parameters: {
     options: {
@@ -104,7 +104,7 @@ export const CardBasic = () => {
     </div>`
 };
 
-CardBasic.storyName = 'Basic';
+CardBasic.storyName = 'Quick Actions';
   
 CardBasic.parameters = { 
   notes: `
@@ -117,74 +117,3 @@ CardBasic.parameters = {
   
   `
 }
-
-const card_empty_state_with_icons_html = `
-  <div>
-    <div class="card">
-      <h3 class="card-header text-uppercase">
-        <div class="d-flex">
-          <div class="card-header-icon flex-shrink-1">
-            <span class="icn-link bg-pale-purple"></span>
-          </div>
-          <div class="card-header-text w-100">
-            Events
-          </div>
-        </div>
-      </h3>
-      <div class="card-body text-center text-muted pt-0">
-        <span class="icn-calendar d-block icon-xl-font-size"></span>
-        <span class="display-7">You're all caught up.</span>
-      </div>
-    </div>
-  </div>
-`;
-
-export const CardEmptyStateWithIcons = () => `${card_empty_state_with_icons_html}`;
-
-CardEmptyStateWithIcons.storyName = 'Empty State / Icons';
-
-CardEmptyStateWithIcons.parameters = { 
-  notes: `
-  
-  #Sample Code
-
-  \`\`\`html
-  ${card_empty_state_with_icons_html}
-  \`\`\`
-
-  `
-};
-
-const card_empty_state_no_icons_html = `
-  <div>
-    <div class="card">
-      <h3 class="card-header text-uppercase">
-        <div class="d-flex">
-          <div class="card-header-text w-100">
-            Events
-          </div>
-        </div>
-      </h3>
-      <div class="card-body text-center text-muted pt-0">
-        <span class="display-7">You're all caught up.</span>
-      </div>
-    </div>
-  </div>
-`;
-
-export const CardEmptyStateNoIcons = () => `${card_empty_state_no_icons_html}`;
-
-CardEmptyStateNoIcons.storyName = 'Empty State / No Icons';
-
-CardEmptyStateNoIcons.parameters = { 
-  notes: `
-  
-  #Sample Code
-
-  \`\`\`html
-  ${card_empty_state_with_icons_html}
-  \`\`\`
-
-  `
-};
-

@@ -14,7 +14,7 @@ import {
 
 
 export default {
-  title: 'Examples/Unvalidated Form',
+  title: 'Examples/Forms/Validated Form',
   decorators: [withKnobs],
   parameters: {
     options: {
@@ -23,11 +23,14 @@ export default {
   },
 };
 
-const unvalidated_form_html = `
-<div style="max-width: 500px; border: 1px solid #ccc; padding: 20px;  border-radius: 4px;"> 
+const validated_form_html = `
+<div style="max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 4px;"> 
   <form>
-    <div class="mb-4">
-      <label for="select" class="form-label">Select</label>
+    <div class="mb-4 is-invalid">
+      <label for="select2" class="form-label">Select</label>
+      <div class="invalid-feedback">
+         <span><span class="icn-error_filled"></span> This field is required.</span>
+      </div>
       <select class="form-select" aria-label="Default select example">
         <option selected>Open this select menu</option>
         <option value="1">One</option>
@@ -35,43 +38,52 @@ const unvalidated_form_html = `
         <option value="3">Three</option>
       </select>
     </div>
-    <div class="mb-4">
-      <label for="email" class="form-label">Email</label>
-      <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
-      <input type="email" class="form-control" id="email" placeholder="name@example.com">
+    <div class="mb-4 is-invalid">
+      <label for="email2" class="form-label">Email</label>
+      <div class="invalid-feedback">
+         <span><span class="icn-error_filled"></span> This field is required.</span>
+      </div>
+      <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
+      <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com">
     </div>
-    <div class="mb-4">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+    <div class="mb-4 is-invalid">
+      <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
     </div>
     <p class="h3 fieldgroup-label">More Fields</p>
-    <div class="mb-4">
+    <div class="mb-4 is-invalid">
       <fieldset>
         <legend>Checkbox Group</legend>
-        <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
+        <div id="checkbox2HelpBlock" class="form-text">Select ones that apply to you</div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
-          <label class="form-check-label" for="flexCheck1">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck4">
+          <label class="form-check-label" for="flexCheck4">
             Andre Clayton
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
-          <label class="form-check-label" for="flexCheck2">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck5">
+          <label class="form-check-label" for="flexCheck5">
             Jimmy Briggs      
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheck3" checked>
-          <label class="form-check-label" for="flexCheck3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheck6">
+          <label class="form-check-label" for="flexCheck6">
             Rosalie Jacobs 
           </label>
         </div>
       </fieldset>
     </div>
-    <div class="mb-4">
+    <div class="mb-4 is-invalid">
       <fieldset>
         <legend>Radio Group</legend>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
           <label class="form-check-label" for="flexRadioDefault1">
@@ -92,11 +104,11 @@ const unvalidated_form_html = `
         </div>
       </fieldset>
     </div>
-    <div class="mb-6">
+    <div class="mb-6 is-invalid">
       <fieldset>
         <legend>Subform</legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
-        <div class="subform-body bg-light p-3 rounded">
+        <div class="subform bg-light p-3 rounded">
           <div class="mb-6">
             <label for="select" class="form-label">Country</label>
             <select class="form-select" aria-label="Country select example">
@@ -129,15 +141,21 @@ const unvalidated_form_html = `
               <input type="text" id="zip" class="form-control">
             </div>
           </div>
+          <div class="subform-footer">
+            <button type="button" class="btn btn-link text-decoration-none text-danger"><i class="icn-delete mr-2"></i>Delete</button>
+          </div>
         </div>
       </fieldset>
     </div>
     <div class="mb-4">
       <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
     </div>
-    <div class="mb-4">
+    <div class="mb-4 is-invalid">
       <fieldset>
         <legend>Simple File Upload</legend>
+        <div class="invalid-feedback">
+           <span><span class="icn-error_filled"></span> This field is required.</span>
+        </div>
         <div class="form-file">
           <input type="file" class="form-file-input" id="customFile">
           <label class="form-file-label" for="customFile">
@@ -151,17 +169,17 @@ const unvalidated_form_html = `
 </div>
 `;
 
-export const UnvalidatedForm = () => `<div class="container-fluid">${unvalidated_form_html}</div>`;
+export const ValidatedForm = () => `<div class="container-fluid">${validated_form_html}</div>`;
 
-UnvalidatedForm.storyName = 'Unvalidated Form';
+ValidatedForm.storyName = 'Validated Form';
 
-UnvalidatedForm.parameters = { 
+ValidatedForm.parameters = { 
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${unvalidated_form_html}
+  ${validated_form_html}
   \`\`\`
 
   `
