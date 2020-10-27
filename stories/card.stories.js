@@ -24,7 +24,7 @@ export default {
 
 const card_basic_html = `
   <div class="card">
-    <h3 class="card-header text-uppercase">
+    <h3 class="card-header text-uppercase bg-white">
       <div class="d-flex">
         <div class="card-header-icon flex-shrink-1">
           <span class="icn-clock_filled bg-pale-blue"></span>
@@ -51,7 +51,8 @@ const card_basic_html = `
         </button>
       </div>
     </div>
-  </div>`;
+  </div>
+`;
 
 export const CardBasic = () => {
 
@@ -74,7 +75,7 @@ export const CardBasic = () => {
 
   return `
     <div class="card">
-      <h3 class="card-header text-uppercase">
+      <h3 class="card-header text-uppercase bg-white">
         <div class="d-flex">
           <div class="card-header-icon flex-shrink-1">
             <span class="${card_icon_class} ${card_icon_bg_color}"></span>
@@ -101,7 +102,8 @@ export const CardBasic = () => {
           </button>
         </div>
       </div>
-    </div>`
+    </div>
+`
 };
 
 CardBasic.storyName = 'Basic';
@@ -119,22 +121,20 @@ CardBasic.parameters = {
 }
 
 const card_empty_state_with_icons_html = `
-  <div>
-    <div class="card">
-      <h3 class="card-header text-uppercase">
-        <div class="d-flex">
-          <div class="card-header-icon flex-shrink-1">
-            <span class="icn-link bg-pale-purple"></span>
-          </div>
-          <div class="card-header-text w-100">
-            Events
-          </div>
+  <div class="card">
+    <h3 class="card-header text-uppercase bg-white">
+      <div class="d-flex">
+        <div class="card-header-icon flex-shrink-1">
+          <span class="icn-link bg-pale-purple"></span>
         </div>
-      </h3>
-      <div class="card-body text-center text-muted pt-0">
-        <span class="icn-calendar d-block icon-xl-font-size"></span>
-        <span class="display-7">You're all caught up.</span>
+        <div class="card-header-text w-100">
+          Events
+        </div>
       </div>
+    </h3>
+    <div class="card-body text-center text-muted pt-0">
+      <span class="icn-calendar d-block icon-xl-font-size"></span>
+      <span class="display-7">You're all caught up.</span>
     </div>
   </div>
 `;
@@ -156,18 +156,16 @@ CardEmptyStateWithIcons.parameters = {
 };
 
 const card_empty_state_no_icons_html = `
-  <div>
-    <div class="card">
-      <h3 class="card-header text-uppercase">
-        <div class="d-flex">
-          <div class="card-header-text w-100">
-            Events
-          </div>
+  <div class="card">
+    <h3 class="card-header text-uppercase bg-white">
+      <div class="d-flex">
+        <div class="card-header-text w-100">
+          Events
         </div>
-      </h3>
-      <div class="card-body text-center text-muted pt-0">
-        <span class="display-7">You're all caught up.</span>
       </div>
+    </h3>
+    <div class="card-body text-center text-muted pt-0">
+      <span class="display-7">You're all caught up.</span>
     </div>
   </div>
 `;
@@ -183,6 +181,46 @@ CardEmptyStateNoIcons.parameters = {
 
   \`\`\`html
   ${card_empty_state_with_icons_html}
+  \`\`\`
+
+  `
+};
+
+const card_sidebar = `
+  <div class="card bg-light border-0">
+    <h3 class="card-header bg-light mb-0">
+      <div class="d-flex">
+        <div>
+          <button class="btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span class="icn-chevron_down h4 mr-1"></span> Sidebar Box Title
+          </button>
+        </div>
+        <div class="ml-auto">
+          <button class="btn btn-link text-decoration-none p-0 mb-0">
+            <span class="icn-edit"></span> Edit
+          </button>
+        </div>
+      </div>
+    </h3>
+    <div class="collapse" id="collapseExample">
+      <div class="card-body text-center text-muted pt-0">
+        <span class="display-7">You're all caught up.</span>
+      </div>
+    </div>
+  </div>
+`;
+
+export const CardSidebar = () => `${card_sidebar}`;
+
+CardSidebar.storyName = 'Sidebar';
+
+CardSidebar.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${card_sidebar}
   \`\`\`
 
   `
