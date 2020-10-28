@@ -187,24 +187,26 @@ CardEmptyStateNoIcons.parameters = {
 };
 
 const card_sidebar = `
-  <div class="card bg-light border-0">
-    <h3 class="card-header bg-light mb-0">
-      <div class="d-flex">
-        <div>
-          <button class="btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            <span class="icn-chevron_down h4 mr-1"></span> Sidebar Box Title
-          </button>
+  <div class="sidebar">
+    <div class="card bg-light border-0">
+      <h3 class="card-header bg-light mb-0">
+        <div class="d-flex">
+          <div>
+            <button class="btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <span class="icn-chevron_down d-inline-block h4 mt-0 mb-0 mr-1"></span> Sidebar Box Title
+            </button>
+          </div>
+          <div class="ml-auto">
+            <button class="btn btn-link text-decoration-none p-0 mb-0">
+              <span class="icn-edit"></span> Edit
+            </button>
+          </div>
         </div>
-        <div class="ml-auto">
-          <button class="btn btn-link text-decoration-none p-0 mb-0">
-            <span class="icn-edit"></span> Edit
-          </button>
+      </h3>
+      <div class="collapse" id="collapseExample">
+        <div class="card-body text-center text-muted pt-0">
+          <span class="display-7">You're all caught up.</span>
         </div>
-      </div>
-    </h3>
-    <div class="collapse" id="collapseExample">
-      <div class="card-body text-center text-muted pt-0">
-        <span class="display-7">You're all caught up.</span>
       </div>
     </div>
   </div>
@@ -216,6 +218,10 @@ CardSidebar.storyName = 'Sidebar';
 
 CardSidebar.parameters = { 
   notes: `
+
+  #Notes
+  - Handling for caret rotation is controlled based on the state of the
+  aria-expanded attribute and presence of a .sidebar container class.
   
   #Sample Code
 
