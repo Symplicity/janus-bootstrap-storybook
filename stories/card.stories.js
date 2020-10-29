@@ -204,8 +204,10 @@ const card_sidebar = `
         </div>
       </h3>
       <div class="collapse" id="collapseExample">
-        <div class="card-body text-center text-muted pt-0">
-          <span class="display-7">You're all caught up.</span>
+        <div class="card-body text-center pt-0">
+          <button class="btn btn-link text-decoration-none">
+            Add Document
+          </button>
         </div>
       </div>
     </div>
