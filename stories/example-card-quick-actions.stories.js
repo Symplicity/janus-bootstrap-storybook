@@ -24,7 +24,7 @@ export default {
 
 const card_basic_html = `
   <div class="card">
-    <h3 class="card-header text-uppercase">
+    <h3 class="card-header text-uppercase bg-white">
       <div class="d-flex">
         <div class="card-header-icon flex-shrink-1">
           <span class="icn-clock_filled bg-pale-blue"></span>
@@ -74,7 +74,7 @@ export const CardBasic = () => {
 
   return `
     <div class="card">
-      <h3 class="card-header text-uppercase">
+      <h3 class="card-header text-uppercase bg-white">
         <div class="d-flex">
           <div class="card-header-icon flex-shrink-1">
             <span class="${card_icon_class} ${card_icon_bg_color}"></span>
