@@ -3,7 +3,7 @@ import buttonIconNotes from './button.icon.notes.md';
 import buttonOutlineNotes from './button.outline.notes.md';
 
 export default {
-  title: 'Components/Button',
+  title: 'Components/Buttons',
   parameters: {
     options: {
       selectedPanel: 'storybook/a11y/panel'
