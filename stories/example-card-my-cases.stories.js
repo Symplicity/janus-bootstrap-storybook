@@ -121,6 +121,7 @@ const card_basic_html = `
           <div class="tab-pane fade" id="subtab3" role="tabpanel" aria-labelledby="contact-tab">Subtab 3 Content</div>
         </div>
       </div>
+      <a href="#" class="mt-2 d-block">View all</a>
     </div>
   </div>`;
 
@@ -241,6 +242,7 @@ export const CardBasic = () => {
           <div class="tab-pane fade" id="subtab2" role="tabpanel" aria-labelledby="profile-tab">Subtab 2 Content</div>
           <div class="tab-pane fade" id="subtab3" role="tabpanel" aria-labelledby="contact-tab">Subtab 3 Content</div>
         </div>
+        <a href="#" class="mt-2 d-block">View all</a>
       </div>
     </div>`
 };
