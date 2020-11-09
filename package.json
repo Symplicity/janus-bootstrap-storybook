@@ -58,6 +58,7 @@
   },
   "dependencies": {
     "@storybook/theming": "^6.0.28",
-    "bootstrap": "file:node_modules/@symplicity/bootstrap"
+    "bootstrap": "file:node_modules/@symplicity/bootstrap",
+    "tabler-icons": "^1.35.0"
   }
 }
