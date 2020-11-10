@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconAward from '../node_modules/tabler-icons/icons/award.svg';
+import iconSprite from '../node_modules/tabler-icons/tabler-sprite.svg';
 
 import {
   array,
@@ -51,7 +51,9 @@ const menu_prefix_icon_html = `
 <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      ${iconAward}
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton is a super long name isn't it, yes it most certainly is?
@@ -59,7 +61,9 @@ const menu_prefix_icon_html = `
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      <span class="icn-withdraw_filled"></span>
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton
@@ -67,7 +71,9 @@ const menu_prefix_icon_html = `
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      <span class="icn-donut"></span>
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton 
@@ -75,7 +81,9 @@ const menu_prefix_icon_html = `
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      <span class="icn-copy"></span>
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton
@@ -83,7 +91,9 @@ const menu_prefix_icon_html = `
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      <span class="icn-care-report"></span>
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton
@@ -91,7 +101,9 @@ const menu_prefix_icon_html = `
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 mr-2">
-      <span class="icn-rss"></span>
+      <svg width="20" height="20">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
     </div>
     <div class="w-100">
       Chad Hampton
@@ -128,7 +140,11 @@ return `
         ${item1_text}
       </div>
       <div class="flex-shrink-1">
-        <span class="icn-chevron_right"></span>
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="${iconSprite}#tabler-caret-right" />
+          </svg>
+        </span>
       </div>
     </a>
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
