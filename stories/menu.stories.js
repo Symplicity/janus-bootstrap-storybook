@@ -142,7 +142,7 @@ return `
       <div class="flex-shrink-1">
         <span>
           <svg width="20" height="20">
-            <use xlink:href="${iconSprite}#tabler-caret-right" />
+            <use xlink:href="${iconSprite}#tabler-chevron-right" />
           </svg>
         </span>
       </div>
@@ -152,7 +152,11 @@ return `
         ${item2_text}
       </div>
       <div class="flex-shrink-1">
-        <span class="icn-chevron_right"></span>
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="${iconSprite}#tabler-chevron-right" />
+          </svg>
+        </span>
       </div>
     </a>
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
@@ -160,7 +164,11 @@ return `
         ${item3_text}
       </div>
       <div class="flex-shrink-1">
-        <span class="icn-chevron_right"></span>
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="${iconSprite}#tabler-chevron-right" />
+          </svg>
+        </span>
       </div>
     </a>
   </div>
@@ -176,10 +184,43 @@ MenuSuffixIcon.parameters = {
   #Sample Code
 
   \`\`\`html
-  <div class="dropdown-menu shadow-sm show">
-    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
-    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
-    <a class="dropdown-item with-suffix-icon" href="#">Fname Lname<i class="icn-chevron_right"></i></a>
+  <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        Fname Lname
+      </div>
+      <div class="flex-shrink-1">
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="path/to/icon-sprite.svg#tabler-chevron-right" />
+          </svg>
+        </span>
+      </div>
+    </a>
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        Fname Lname
+      </div>
+      <div class="flex-shrink-1">
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="path/to/icon-sprite.svg#tabler-chevron-right" />
+          </svg>
+        </span>
+      </div>
+    </a>
+    <a class="dropdown-item with-suffix-icon d-flex" href="#">
+      <div class="w-100">
+        Fname Lname
+      </div>
+      <div class="flex-shrink-1">
+        <span>
+          <svg width="20" height="20">
+            <use xlink:href="path/to/icon-sprite.svg#tabler-chevron-right" />
+          </svg>
+        </span>
+      </div>
+    </a>
   </div>
   \`\`\`
 
