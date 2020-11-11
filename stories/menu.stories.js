@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/tabler-icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
 
 import {
   array,
