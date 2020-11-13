@@ -65,7 +65,7 @@ export const CardBasic = () => {
   }
 
   const card_title_text = text("Title", "Quick Actions");
-  const card_icon_class = text("Unicon Class", "icn-link");
+  const card_icon_class = text("Icon Class", "icn-link");
   const card_icon_bg_color = select(
       "Icon Background Color",
       icon_bg_color_options,

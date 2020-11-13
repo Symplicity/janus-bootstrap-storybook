@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import {
   array,
   boolean,
@@ -25,9 +27,14 @@ export default {
 const card_basic_html = `
   <div class="card">
     <h3 class="card-header text-uppercase bg-white">
-      <div class="d-flex">
+      <div class="d-flex align-items-end">
         <div class="card-header-icon flex-shrink-1">
           <span class="icn-clock_filled bg-pale-blue"></span>
+          <span class="bg-pale-blue">
+            <svg width="1rem" height="1rem">
+              <use xlink:href="../node_modules/@tabler/icons/tabler-sprite.svg#tabler-link" />
+            </svg>
+          </span>
         </div>
         <div class="card-header-text w-100">
           Quick Actions
@@ -66,7 +73,7 @@ export const CardBasic = () => {
   }
 
   const card_title_text = text("Title", "Quick Actions");
-  const card_icon_class = text("Unicon Class", "icn-link");
+  const card_icon_class = text("Icon Class", "tabler-link");
   const card_icon_bg_color = select(
       "Icon Background Color",
       icon_bg_color_options,
@@ -78,7 +85,11 @@ export const CardBasic = () => {
       <h3 class="card-header text-uppercase bg-white">
         <div class="d-flex">
           <div class="card-header-icon flex-shrink-1">
-            <span class="${card_icon_class} ${card_icon_bg_color}"></span>
+            <span class="${card_icon_bg_color}">
+              <svg width="1rem" height="1rem">
+                <use xlink:href="${iconSprite}#${card_icon_class}" />
+              </svg>
+            </span>
           </div>
           <div class="card-header-text w-100">
             ${card_title_text}
@@ -125,7 +136,11 @@ const card_empty_state_with_icons_html = `
     <h3 class="card-header text-uppercase bg-white">
       <div class="d-flex">
         <div class="card-header-icon flex-shrink-1">
-          <span class="icn-link bg-pale-purple"></span>
+          <span class="bg-pale-purple">
+            <svg width="1rem" height="1rem">
+              <use xlink:href="${iconSprite}#tabler-link" />
+            </svg>
+          </span>
         </div>
         <div class="card-header-text w-100">
           Events
@@ -133,7 +148,12 @@ const card_empty_state_with_icons_html = `
       </div>
     </h3>
     <div class="card-body text-center text-muted pt-0">
-      <span class="icn-calendar d-block icon-xl-font-size"></span>
+      <!--span class="icn-calendar d-block icon-xl-font-size"></span-->
+      <span class="d-block icon-xl-font-size">
+        <svg width="2.5rem" height="2.5rem">
+          <use xlink:href="${iconSprite}#tabler-calendar" />
+        </svg>
+      </span>
       <span class="display-7">You're all caught up.</span>
     </div>
   </div>
@@ -193,12 +213,19 @@ const card_sidebar = `
         <div class="d-flex">
           <div>
             <button class="btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              <span class="icn-chevron_down d-inline-block h4 mt-0 mb-0 mr-1"></span> Sidebar Box Title
+              <span class="tabler-chevron-down d-inline-block h4 mt-0 mb-0 mr-1">
+                <svg width="1rem" height="1rem">
+                  <use xlink:href="${iconSprite}#tabler-chevron-down" />
+                </svg>
+              </span>
+              Sidebar Box Title
             </button>
           </div>
           <div class="ml-auto">
             <button class="btn btn-link text-decoration-none p-0 mb-0">
-              <span class="icn-edit"></span> Edit
+              <svg width="1rem" height="1rem">
+                <use xlink:href="${iconSprite}#tabler-pencil" />
+              </svg> Edit
             </button>
           </div>
         </div>
