@@ -25,40 +25,37 @@ export default {
 };
 
 const card_basic_html = `
-  <div class="card">
-    <h3 class="card-header text-uppercase bg-white">
-      <div class="d-flex align-items-end">
-        <div class="card-header-icon flex-shrink-1">
-          <span class="icn-clock_filled bg-pale-blue"></span>
-          <span class="bg-pale-blue">
+    <div class="card">
+      <h3 class="card-header text-uppercase bg-white">
+        <div class="card-header-icon d-inline-block">
+          <span class="bg-pale-purple d-block">
             <svg width="1rem" height="1rem">
-              <use xlink:href="../node_modules/@tabler/icons/tabler-sprite.svg#tabler-link" />
+              <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
             </svg>
           </span>
         </div>
-        <div class="card-header-text w-100">
+        <div class="card-header-text d-inline-block">
           Quick Actions
         </div>
-      </div>
-    </h3>
-    <div class="card-body">
-      <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="First group">
-          <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Create New 
+      </h3>
+      <div class="card-body">
+        <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group" role="group" aria-label="First group">
+            <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Create New 
+            </button>
+            <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
+              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+            </div>
+          </div> 
+          <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+            Edit Draft Reports 
           </button>
-          <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
-          </div>
-        </div> 
-        <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
-          Edit Draft Reports 
-        </button>
+        </div>
       </div>
     </div>
-  </div>
 `;
 
 export const CardBasic = () => {
@@ -83,17 +80,15 @@ export const CardBasic = () => {
   return `
     <div class="card">
       <h3 class="card-header text-uppercase bg-white">
-        <div class="d-flex">
-          <div class="card-header-icon flex-shrink-1">
-            <span class="${card_icon_bg_color}">
-              <svg width="1rem" height="1rem">
-                <use xlink:href="${iconSprite}#${card_icon_class}" />
-              </svg>
-            </span>
-          </div>
-          <div class="card-header-text w-100">
-            ${card_title_text}
-          </div>
+        <div class="card-header-icon d-inline-block">
+          <span class="${card_icon_bg_color} d-block">
+            <svg width="1rem" height="1rem">
+              <use xlink:href="${iconSprite}#${card_icon_class}" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-header-text d-inline-block">
+          ${card_title_text}
         </div>
       </h3>
       <div class="card-body">
@@ -134,17 +129,15 @@ CardBasic.parameters = {
 const card_empty_state_with_icons_html = `
   <div class="card">
     <h3 class="card-header text-uppercase bg-white">
-      <div class="d-flex">
-        <div class="card-header-icon flex-shrink-1">
-          <span class="bg-pale-purple">
-            <svg width="1rem" height="1rem">
-              <use xlink:href="${iconSprite}#tabler-link" />
-            </svg>
-          </span>
-        </div>
-        <div class="card-header-text w-100">
-          Events
-        </div>
+      <div class="card-header-icon d-inline-block">
+        <span class="bg-pale-purple d-block">
+          <svg width="1rem" height="1rem">
+            <use xlink:href="${iconSprite}#tabler-link" />
+          </svg>
+        </span>
+      </div>
+      <div class="card-header-text d-inline-block">
+        Events
       </div>
     </h3>
     <div class="card-body text-center text-muted pt-0">
@@ -178,10 +171,8 @@ CardEmptyStateWithIcons.parameters = {
 const card_empty_state_no_icons_html = `
   <div class="card">
     <h3 class="card-header text-uppercase bg-white">
-      <div class="d-flex">
-        <div class="card-header-text w-100">
-          Events
-        </div>
+      <div class="card-header-text d-inline-block">
+        Events
       </div>
     </h3>
     <div class="card-body text-center text-muted pt-0">
