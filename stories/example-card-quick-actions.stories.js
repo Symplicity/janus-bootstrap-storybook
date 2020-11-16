@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import {
   array,
   boolean,
@@ -25,13 +27,15 @@ export default {
 const card_basic_html = `
   <div class="card">
     <h3 class="card-header text-uppercase bg-white">
-      <div class="d-flex">
-        <div class="card-header-icon flex-shrink-1">
-          <span class="icn-clock_filled bg-pale-blue"></span>
-        </div>
-        <div class="card-header-text w-100">
-          Quick Actions
-        </div>
+      <div class="card-header-icon d-inline-block">
+        <span class="bg-pale-purple d-block">
+          <svg width="1rem" height="1rem">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
+          </svg>
+        </span>
+      </div>
+      <div class="card-header-text d-inline-block">
+        Quick Actions
       </div>
     </h3>
     <div class="card-body">
@@ -65,7 +69,7 @@ export const CardBasic = () => {
   }
 
   const card_title_text = text("Title", "Quick Actions");
-  const card_icon_class = text("Icon Class", "icn-link");
+  const card_icon_class = text("Icon Class", "tabler-link");
   const card_icon_bg_color = select(
       "Icon Background Color",
       icon_bg_color_options,
@@ -75,13 +79,15 @@ export const CardBasic = () => {
   return `
     <div class="card">
       <h3 class="card-header text-uppercase bg-white">
-        <div class="d-flex">
-          <div class="card-header-icon flex-shrink-1">
-            <span class="${card_icon_class} ${card_icon_bg_color}"></span>
-          </div>
-          <div class="card-header-text w-100">
-            ${card_title_text}
-          </div>
+        <div class="card-header-icon d-inline-block">
+          <span class="${card_icon_bg_color} d-block">
+            <svg width="1rem" height="1rem">
+              <use xlink:href="${iconSprite}#${card_icon_class}" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-header-text d-inline-block">
+          ${card_title_text}
         </div>
       </h3>
       <div class="card-body">
