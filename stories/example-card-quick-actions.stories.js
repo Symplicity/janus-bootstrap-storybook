@@ -25,37 +25,68 @@ export default {
 };
 
 const card_basic_html = `
-  <div class="card">
-    <h3 class="card-header text-uppercase bg-white">
-      <div class="card-header-icon d-inline-block">
-        <span class="bg-pale-purple d-block">
-          <svg width="1rem" height="1rem">
-            <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
-          </svg>
-        </span>
-      </div>
-      <div class="card-header-text d-inline-block">
-        Quick Actions
-      </div>
-    </h3>
-    <div class="card-body">
-      <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-        <div class="btn-group" role="group" aria-label="First group">
-          <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Create New 
-          </button>
-          <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-            <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+    <div class="card">
+      <h3 class="card-header text-uppercase bg-white">
+        <div class="card-header-icon d-inline-block">
+          <span class="bg-pale-purple d-block">
+            <svg width="1rem" height="1rem">
+              <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-header-text d-inline-block">
+          Quick Actions
+        </div>
+      </h3>
+      <div class="card-body">
+        <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group flex-wrap" role="group" aria-label="First group">
+            <div class="mt-1 mb-1 mr-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create New 
+              </button>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+                Edit Draft Reports 
+              </button>
+            </div>
           </div>
-        </div> 
-        <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
-          Edit Draft Reports 
-        </button>
+        </div>
       </div>
-    </div>
-  </div>`;
+    </div>`;
 
 export const CardBasic = () => {
 
@@ -70,6 +101,7 @@ export const CardBasic = () => {
 
   const card_title_text = text("Title", "Quick Actions");
   const card_icon_class = text("Icon Class", "tabler-link");
+  const card_item_icon_class = text("Item Icon Class", "tabler-search");
   const card_icon_bg_color = select(
       "Icon Background Color",
       icon_bg_color_options,
@@ -92,21 +124,53 @@ export const CardBasic = () => {
       </h3>
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group" role="group" aria-label="First group">
-            <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Create New 
-            </button>
-            <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+          <div class="btn-group flex-wrap" role="group" aria-label="First group">
+            <div class="mt-1 mb-1 mr-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create New 
+              </button>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <span class="mr-1 mt-1">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                      </svg>
+                    </span>
+                    Chad Hampton
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div> 
-          <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
-            Edit Draft Reports 
-          </button>
+            <div>
+              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+                Edit Draft Reports 
+              </button>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>`
 };
 
