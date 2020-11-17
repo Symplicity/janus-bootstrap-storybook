@@ -141,8 +141,7 @@ const card_empty_state_with_icons_html = `
       </div>
     </h3>
     <div class="card-body text-center text-muted pt-0">
-      <!--span class="icn-calendar d-block icon-xl-font-size"></span-->
-      <span class="d-block icon-xl-font-size">
+      <span class="d-block">
         <svg width="2.5rem" height="2.5rem">
           <use xlink:href="${iconSprite}#tabler-calendar" />
         </svg>
