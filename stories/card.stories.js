@@ -40,19 +40,23 @@ const card_basic_html = `
       </h3>
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group" role="group" aria-label="First group">
-            <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Create New 
-            </button>
-            <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+          <div class="btn-group flex-wrap" role="group" aria-label="First group">
+            <div class="mt-1 mb-1 mr-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create New 
+              </button>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li> 
+              </ul>
             </div>
-          </div> 
-          <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
-            Edit Draft Reports 
-          </button>
+            <div>
+              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+                Edit Draft Reports 
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -93,19 +97,23 @@ export const CardBasic = () => {
       </h3>
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group" role="group" aria-label="First group">
-            <button class="btn btn-outline-secondary dropdown-toggle mt-1 mb-1 mr-6" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Create New 
-            </button>
-            <div class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>
-              <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a>    
+          <div class="btn-group flex-wrap" role="group" aria-label="First group">
+            <div class="mt-1 mb-1 mr-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Create New 
+              </button>
+              <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li>
+                <li><a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1"></i>Chad Hampton</a></li> 
+              </ul>
             </div>
-          </div> 
-          <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
-            Edit Draft Reports 
-          </button>
+            <div>
+              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+                Edit Draft Reports 
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
