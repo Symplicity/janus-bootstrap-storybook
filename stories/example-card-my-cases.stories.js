@@ -57,7 +57,9 @@ const card_basic_html = `
             <ul class="list-unstyled lh-lg mb-0">
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -65,7 +67,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -73,7 +77,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -81,7 +87,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -89,7 +97,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -97,7 +107,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -105,7 +117,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -113,7 +127,9 @@ const card_basic_html = `
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -181,7 +197,9 @@ export const CardBasic = () => {
             <ul class="list-unstyled lh-lg mb-0">
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -189,7 +207,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -197,7 +217,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -205,7 +227,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -213,7 +237,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -221,7 +247,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -229,7 +257,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
@@ -237,7 +267,9 @@ export const CardBasic = () => {
               </li>
               <li class="d-flex">
                 <div class="flex-shrink-1">
-                  <span class="icn-folders"></span>
+                  <svg width="1rem" height="1rem" class="mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-folders" />
+                  </svg>
                 </div>
                 <div class="w-100 ml-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
