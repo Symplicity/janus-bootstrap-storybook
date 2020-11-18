@@ -9,46 +9,59 @@ export default {
     notes: 'Use alerts to provide feedback to the user.',
   },
 };
-/*
-export const AlertDark = () => `
-    <div class="alert table-dark" role="alert">
-        This is a dark alert - check it out!
-    </div>`;
-        
-AlertDark.story = {
-  name: 'Dark',
-  parameters: {
-    notes: 'The classes used to create a dark alert is slightly different than usual; we omit the class `alert-dark` and use `table-dark` instead.<br><br> This results in the effect of inverting the colors to achieve the desired color scheme defined in the spec.',
-  },
-};
-*/
 
-const AlertPrimary = () => `
+const alert_primary_html = `
     <div class="alert alert-primary" role="alert">
       This is a primary alert - check it out!
-    </div>`;
+    </div>
+`;
+
+export const AlertPrimary = () => `${alert_primary_html}`;
 
 AlertPrimary.storyName = 'Primary';
 
 AlertPrimary.parameters = {
-  notes: 'Primary alerts should be used to confirm that an important task or workflow has been completed.',
+  notes: `
+  #Primary
+    
+  Primary alerts should be used to confirm that an important task or workflow has been completed.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${alert_primary_html}
+  \`\`\`
+  `
 };
 
-export const AlertSecondary = () => `
+const alert_secondary_html = `
     <div class="alert alert-secondary" role="alert">
       This is a secondary alert - check it out!
-    </div>`;
+    </div>
+`;
+
+export const AlertSecondary = () => `${alert_secondary_html}`;
 
 AlertSecondary.storyName = 'Secondary';
 
 AlertSecondary.parameters = {
-  notes: 'Secondary alerts should be used to confirm that an important task or workflow has been completed.',
+  notes: `
+  #Secondary
+    
+  Secondary alerts should be used to confirm that an important task or workflow has been completed.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${alert_secondary_html}
+  \`\`\`
+  `
 };
 
 const alert_success_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1rem" height="1rem" class="alert-icon mr-2 icon-lg-font-size">>
+        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-circle-check" />
         </svg>
       </div>
@@ -81,10 +94,12 @@ AlertSuccess.parameters = {
   `
 };
 
-const alertErrorHTML = `
+const alert_error_html = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="alert-icon icn-error_filled mr-2 icon-lg-font-size"></span>
+        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-bug" />
+        </svg>
       </div>
       <div class="flex-grow-1">
         <b>An error has occurred</b>
@@ -99,9 +114,10 @@ const alertErrorHTML = `
           <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
-    </div>`;
+    </div>
+`;
 
-export const AlertError = () => alertErrorHTML;
+export const AlertError = () => `${alert_error_html}`;
 
 AlertError.storyName = 'Error';
 
@@ -114,33 +130,33 @@ AlertError.parameters = {
   ##Sample Code
   
   \`\`\`html
-  ${alertErrorHTML}
+  ${alert_error_html}
   \`\`\`
   `
 };
 
-const alertWarningHTML = `
+const alert_warning_html = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="alert-icon icn-warning_filled mr-2 icon-lg-font-size"></span>
+        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-alert-triangle" />
+        </svg>
       </div>
       <div class="flex-grow-1">
         <p class="mb-2">
           <b>Warning! Please be careful to proceed the action.</b>
         </p>
         This is a warning alert - check it out!
-        <!--br>
-        <button type="button" class="btn btn-secondary">Action</button>
-        <button type="button" class="btn btn-secondary">Alernative</button-->
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
-    </div>`;
+    </div>
+`;
 
-export const AlertWarning = () => alertWarningHTML;
+export const AlertWarning = () => `${alert_warning_html}`;
 
 AlertWarning.storyName = 'Warning';
 
@@ -153,83 +169,32 @@ AlertWarning.parameters = {
   ##Sample Code
   
   \`\`\`html
-  ${alertWarningHTML}
+  ${alert_warning_html}
   \`\`\`
   `
 };
 
-/*
-const alertExpandableHTML = `
-    <div class="alert alert-success alert-dismissible d-flex" role="alert">
-      <div class="flex-shrink-1 mr-2">
-        <span class="icn-check_circle_filled icon-lg-font-size"></span>
+const alert_info_html = `
+    <div class="alert alert-info alert-dismissible d-flex" role="alert">
+      <div class="flex-shrink-1 d-flex">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-info-circle" />
+        </svg>
       </div>
       <div class="flex-grow-1">
-        <p class="mb-2"><strong>Bold body text</strong></p>
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Praesent gravida felis quis lorem efficitur pellentesque. 
-          Donec viverra felis et ex ullamcorper rutrum. 
-          Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
-          Phasellus in dapibus nisl, vitae hendrerit massa. 
-          Quisque et molestie mauris. Cras at magna ex. <a href="#" class="alert-success">an example link</a>.
-        </p>
-        <div class="collapse show" id="collapseExample">
-          <hr class="mt-2 mb-2">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Praesent gravida felis quis lorem efficitur pellentesque. 
-            Donec viverra felis et ex ullamcorper rutrum. 
-            Donec non nulla aliquam, porta ligula vitae, aliquet turpis. 
-            Phasellus in dapibus nisl, vitae hendrerit massa. 
-            Quisque et molestie mauris. Cras at magna ex. <a href="#" class="alert-success">an example link</a>.
-          </p>
-        </div>
+        <p><strong>This is a info alert - check it out!</strong></p>
+        <p>This is a info alert - check it out!</p>
+        <p class="mb-0">This is a info alert - check it out!</p>
       </div>
-      <div class="flex-shrink-1 ml-2">
+      <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
-  </div>`;
+`;
 
-export const AlertExpandable = () => alertExpandableHTML;
-
-AlertExpandable.story = {
-  name: 'Expandable',
-  parameters: {
-    notes: `
-    #Expandable
-      
-    Use the Expandable alert when you need to show more information
-
-    ##Sample Code
-    
-    \`\`\`html
-    ${alertExpandableHTML}
-    \`\`\`
-    `
-  },
-};
-*/
-
-const alertInfoHTML = `
-    <div class="alert alert-info alert-dismissible d-flex" role="alert">
-        <div class="flex-shrink-1 d-flex">
-          <span class="alert-icon icn-info_filled mr-2 icon-lg-font-size"></span>
-        </div>
-        <div class="flex-grow-1">
-          <p><strong>This is a info alert - check it out!</strong></p>
-          <p>This is a info alert - check it out!</p>
-          <p class="mb-0">This is a info alert - check it out!</p>
-        </div>
-        <div class="flex-shrink-1">
-          <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
-          </button>
-        </div>
-    </div>`;
-
-export const AlertInfo = () => alertInfoHTML;
+export const AlertInfo = () => `${alert_info_html}`;
 
 AlertInfo.storyName = 'Info';
 
@@ -243,7 +208,7 @@ AlertInfo.parameters = {
   ##Sample Code
   
   \`\`\`html
-  ${alertInfoHTML}
+  ${alert_info_html}
   \`\`\`
   `
 };
