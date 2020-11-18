@@ -1,3 +1,5 @@
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 const text = 'Unified Design System';
 
 export default {
@@ -21,7 +23,7 @@ AlertDark.story = {
 };
 */
 
-export const AlertPrimary = () => `
+const AlertPrimary = () => `
     <div class="alert alert-primary" role="alert">
       This is a primary alert - check it out!
     </div>`;
@@ -43,10 +45,12 @@ AlertSecondary.parameters = {
   notes: 'Secondary alerts should be used to confirm that an important task or workflow has been completed.',
 };
 
-const alertSuccessHTML = `
+const alert_success_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <span class="alert-icon icn-check_circle_filled mr-2 icon-lg-font-size"></span>
+        <svg width="1rem" height="1rem" class="alert-icon mr-2 icon-lg-font-size">>
+          <use xlink:href="${iconSprite}#tabler-circle-check" />
+        </svg>
       </div>
       <div class="flex-grow-1">
         This is a success alert - check it out! 
@@ -56,9 +60,10 @@ const alertSuccessHTML = `
           <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
-    </div>`;
+    </div>
+`;
 
-export const AlertSuccess = () => alertSuccessHTML;
+export const AlertSuccess = () => `${alert_success_html}`;
 
 AlertSuccess.storyName = 'Success';
 
@@ -71,7 +76,7 @@ AlertSuccess.parameters = {
   ##Sample Code
   
   \`\`\`html
-  ${alertSuccessHTML}
+  ${alert_success_html}
   \`\`\`
   `
 };
