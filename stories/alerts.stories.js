@@ -70,7 +70,6 @@ const alert_success_html = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -111,7 +110,6 @@ const alert_error_html = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -150,7 +148,6 @@ const alert_warning_html = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
@@ -188,7 +185,6 @@ const alert_info_html = `
       </div>
       <div class="flex-shrink-1">
         <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true"><span class="icn-btn-close text-shadow-none"></span></span>
         </button>
       </div>
     </div>
