@@ -26,15 +26,15 @@ export default {
 
 const card_basic_html = `
     <div class="card">
-      <h3 class="card-header text-uppercase bg-white">
-        <div class="card-header-icon d-inline-block">
+      <h3 class="card-header text-uppercase bg-white d-flex">
+        <div class="card-header-icon">
           <span class="bg-pale-purple d-block">
             <svg width="1rem" height="1rem">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
             </svg>
           </span>
         </div>
-        <div class="card-header-text d-inline-block">
+        <div class="card-header-text">
           Quick Actions
         </div>
       </h3>
@@ -111,15 +111,15 @@ export const CardBasic = () => {
 
   return `
     <div class="card">
-      <h3 class="card-header text-uppercase bg-white">
-        <div class="card-header-icon d-inline-block">
+      <h3 class="card-header text-uppercase bg-white d-flex">
+        <div class="card-header-icon">
           <span class="${card_icon_bg_color} d-block">
             <svg width="1rem" height="1rem">
               <use xlink:href="${iconSprite}#${card_icon_class}" />
             </svg>
           </span>
         </div>
-        <div class="card-header-text d-inline-block">
+        <div class="card-header-text">
           ${card_title_text}
         </div>
       </h3>
@@ -191,15 +191,15 @@ CardBasic.parameters = {
 
 const card_empty_state_with_icons_html = `
   <div class="card">
-    <h3 class="card-header text-uppercase bg-white">
-      <div class="card-header-icon d-inline-block">
+    <h3 class="card-header text-uppercase bg-white d-flex">
+      <div class="card-header-icon">
         <span class="bg-pale-purple d-block">
           <svg width="1rem" height="1rem">
             <use xlink:href="${iconSprite}#tabler-link" />
           </svg>
         </span>
       </div>
-      <div class="card-header-text d-inline-block">
+      <div class="card-header-text">
         Events
       </div>
     </h3>
@@ -232,8 +232,8 @@ CardEmptyStateWithIcons.parameters = {
 
 const card_empty_state_no_icons_html = `
   <div class="card">
-    <h3 class="card-header text-uppercase bg-white">
-      <div class="card-header-text d-inline-block">
+    <h3 class="card-header text-uppercase bg-white d-flex">
+      <div class="card-header-text">
         Events
       </div>
     </h3>
@@ -265,20 +265,25 @@ const card_sidebar = `
       <h3 class="card-header bg-light mb-0">
         <div class="d-flex">
           <div>
-            <button class="btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              <span class="tabler-chevron-down d-inline-block h4 mt-0 mb-0 mr-1">
+            <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <span class="tabler-chevron-down h4 mt-0 mb-0 mr-1">
                 <svg width="1rem" height="1rem">
                   <use xlink:href="${iconSprite}#tabler-chevron-down" />
                 </svg>
               </span>
-              Sidebar Box Title
+              <span>
+                Sidebar Box Title
+              </span>
             </button>
           </div>
           <div class="ml-auto">
-            <button class="btn btn-link text-decoration-none p-0 mb-0">
-              <svg width="1rem" height="1rem">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg> Edit
+            <button class="d-flex btn btn-link text-decoration-none p-0 mb-0">
+              <span class="mr-1">
+                <svg width="1rem" height="1rem">
+                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                </svg> 
+              </span>
+              <span>Edit</span>
             </button>
           </div>
         </div>
