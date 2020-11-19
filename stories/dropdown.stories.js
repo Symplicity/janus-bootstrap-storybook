@@ -110,9 +110,36 @@ const dropdown_primary_html = `
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
 </div>`;
