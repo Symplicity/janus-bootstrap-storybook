@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import {
   array,
   boolean,
@@ -133,7 +135,11 @@ const unvalidated_form_html = `
       </fieldset>
     </div>
     <div class="mb-4">
-      <button type="button" class="btn btn-outline-secondary"><i class="icn-add mr-1"></i>Add Address</button>
+      <button type="button" class="btn btn-outline-secondary">
+        <svg width="1.25rem" height="1.25rem" class="mr-1 mt-n1">
+          <use xlink:href="${iconSprite}#tabler-plus" />
+        </svg>Add Address
+      </button>
     </div>
     <div class="mb-4">
       <fieldset>
