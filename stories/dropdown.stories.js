@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import {
   array,
   boolean,
@@ -30,9 +32,36 @@ const dropdown_primary_html = `
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton Is A Very Loooooooooong Name</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
   <br><br>
@@ -42,9 +71,36 @@ const dropdown_primary_html = `
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
   <br><br>
@@ -75,9 +131,36 @@ export const DropdownPrimary = () => {
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pl}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pl}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pl}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pl}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pl}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pl}
+            </span>
+          </a>
         </div>
       </div>
       <br><br>
@@ -87,9 +170,36 @@ export const DropdownPrimary = () => {
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pr}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pr}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_pr}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pr}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pr}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_pr}
+            </span>
+          </a>
         </div>
       </div>
       <br><br>
@@ -99,9 +209,36 @@ export const DropdownPrimary = () => {
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ps}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ps}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ps}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ps}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ps}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ps}
+            </span>
+          </a>
         </div>
       </div>
     </div>
@@ -130,9 +267,36 @@ const dropdown_outline_html = `<div class="dropdown">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton4">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
   <br><br>
@@ -142,9 +306,36 @@ const dropdown_outline_html = `<div class="dropdown">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton5">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
   <br><br>
@@ -154,9 +345,36 @@ const dropdown_outline_html = `<div class="dropdown">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton6">
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>
-      <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>Chad Hampton</a>    
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
+      <a class="dropdown-item d-flex" href="#">
+        <span>
+          <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+          </svg>
+        </span>
+        <span class="flex-fill">
+          Chad Hampton Is A Very Loooooooooong Name
+        </span>
+      </a>
     </div>
   </div>
 </div>`;
@@ -177,9 +395,36 @@ export const DropdownOutline = () => {
           Primary
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton4">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ol}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ol}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_ol}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ol}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ol}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_ol}
+            </span>
+          </a>
         </div>
       </div>
       <br><br>
@@ -189,9 +434,36 @@ export const DropdownOutline = () => {
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton5">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_or}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_or}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_or}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_or}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_or}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_or}
+            </span>
+          </a>
         </div>
       </div>
       <br><br>
@@ -201,9 +473,36 @@ export const DropdownOutline = () => {
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton6">
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_os}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_os}</a>
-          <a class="dropdown-item" href="#"><i class="icn-search mr-2 mt-1 float-left"></i>${dropdown_os}</a>    
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_os}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_os}
+            </span>
+          </a>
+          <a class="dropdown-item d-flex" href="#">
+            <span>
+              <svg width="1rem" height="1rem" class="mr-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search" />
+              </svg>
+            </span>
+            <span class="flex-fill">
+              ${dropdown_os}
+            </span>
+          </a>
         </div>
       </div>
     </div>
