@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import {
   array,
   boolean,
@@ -36,7 +38,9 @@ const input_email_html = `
   <div class="mb-4 is-invalid">
     <label for="email2" class="form-label">Email</label>
     <div class="invalid-feedback">
-       <span><span class="icn-error_filled"></span> This field is required.</span>
+      <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <use xlink:href="${iconSprite}#tabler-alert-circle" />
+      </svg>This field is required.
     </div>
     <div id="email2HelpBlock" class="form-text">Please enter an email (not school)</div>
     <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
@@ -77,7 +81,9 @@ const select_html = `
   <div class="mb-4 is-invalid">
     <label for="select2" class="form-label">Select</label>
     <div class="invalid-feedback">
-       <span><span class="icn-error_filled"></span> This field is required.</span>
+      <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <use xlink:href="${iconSprite}#tabler-alert-circle" />
+      </svg>This field is required.
     </div>
     <select class="form-select" aria-label="Default select example">
       <option selected>Open this select menu</option>
@@ -170,7 +176,9 @@ const input_checkbox_html = `
     <fieldset>
       <legend>Checkbox Group</legend>
       <div class="invalid-feedback">
-         <span><span class="icn-error_filled"></span> This field is required.</span>
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <use xlink:href="${iconSprite}#tabler-alert-circle" />
+        </svg>This field is required.
       </div>
       <div id="checkbox2HelpBlock" class="form-text">Please enter an email (not school)</div>
       <div class="form-check">
@@ -244,7 +252,9 @@ const input_radio_html = `
     <fieldset>
       <legend>Radio Group</legend>
       <div class="invalid-feedback">
-         <span><span class="icn-error_filled"></span> This field is required.</span>
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <use xlink:href="${iconSprite}#tabler-alert-circle" />
+        </svg>This field is required.
       </div>
       <div id="radioHelpBlock" class="form-text">Please enter an email (not school)</div>
       <div class="form-check">
@@ -306,7 +316,9 @@ const input_file_html = `
     <fieldset>
       <legend>Simple File Upload</legend>
       <div class="invalid-feedback">
-         <span><span class="icn-error_filled"></span> This field is required.</span>
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <use xlink:href="${iconSprite}#tabler-alert-circle" />
+        </svg>This field is required.
       </div>
       <div class="form-file">
         <input type="file" class="form-file-input" id="inputGroupFile02">
