@@ -2,6 +2,8 @@ import buttonNotes from './button.notes.md';
 import buttonIconNotes from './button.icon.notes.md';
 import buttonOutlineNotes from './button.outline.notes.md';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 export default {
   title: 'Components/Buttons',
   parameters: {
@@ -12,23 +14,39 @@ export default {
 };
 
 const primaryHTML = ` 
-<h3>Primary - Large</h3>
-<button type="button" class="btn btn-lg btn-primary">Primary</button>
-<button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-lg btn-primary"><i class="icn-star mr-2"></i>Primary</button>
-<button type="button" class="btn btn-lg btn-primary" disabled><i class="icn-star mr-2"></i>Primary</button>
-<br><br>
-<h3>Primary - Regular</h3>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-primary"><i class="icn-star mr-1"></i>Primary</button>
-<button type="button" class="btn btn-primary" disabled><i class="icn-star mr-1"></i>Primary</button>
-<br><br>
-<h3>Primary - Small</h3>
-<button type="button" class="btn btn-sm btn-primary">Primary</button>
-<button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
-<button type="button" class="btn btn-sm btn-primary">Primary</button>
-<button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
+  <h3>Primary - Large</h3>
+  <button type="button" class="btn btn-lg btn-primary">Primary</button>
+  <button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
+  <button type="button" class="btn btn-lg btn-primary">
+    <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+      <use xlink:href="${iconSprite}#tabler-star" />
+    </svg>Primary
+  </button>
+  <button type="button" class="btn btn-lg btn-primary" disabled>
+    <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+      <use xlink:href="${iconSprite}#tabler-star" />
+    </svg>Primary
+  </button>
+  <br><br>
+  <h3>Primary - Regular</h3>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary" disabled>Primary</button>
+  <button type="button" class="btn btn-primary">
+    <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+      <use xlink:href="${iconSprite}#tabler-star" />
+    </svg>Primary
+  Primary</button>
+  <button type="button" class="btn btn-primary" disabled>
+    <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+      <use xlink:href="${iconSprite}#tabler-star" />
+    </svg>Primary
+  </button>
+  <br><br>
+  <h3>Primary - Small</h3>
+  <button type="button" class="btn btn-sm btn-primary">Primary</button>
+  <button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
+  <button type="button" class="btn btn-sm btn-primary">Primary</button>
+  <button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
 `;
 
 export const Primary = () => primaryHTML;
@@ -58,14 +76,31 @@ const altPrimaryHTML = `
 <h3>Alt Primary - Large</h3>
 <button type="button" class="btn btn-lg btn-outline-primary">Alt Primary</button>
 <button type="button" class="btn btn-lg btn-outline-primary" disabled>Alt Primary</button>
-<button type="button" class="btn btn-lg btn-outline-primary"><i class="icn-star mr-2"></i>Alt Primary</button>
-<button type="button" class="btn btn-lg btn-outline-primary" disabled><i class="icn-star mr-2"></i>Alt Primary</button>
+<button type="button" class="btn btn-lg btn-outline-primary">
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Alt Primary
+</button>
+</button>
+<button type="button" class="btn btn-lg btn-outline-primary" disabled>
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Alt Primary
+</button>
 <br><br>
 <h3>Alt Primary - Regular</h3>
 <button type="button" class="btn btn-outline-primary">Alt Primary</button>
 <button type="button" class="btn btn-outline-primary" disabled>Alt Primary</button>
-<button type="button" class="btn btn-outline-primary"><i class="icn-star mr-1"></i>Alt Primary</button>
-<button type="button" class="btn btn-outline-primary" disabled><i class="icn-star mr-1"></i>Alt Primary</button>
+<button type="button" class="btn btn-outline-primary">
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Alt Primary
+</button>
+<button type="button" class="btn btn-outline-primary" disabled>
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Alt Primary
+</button>
 <br><br>
 <h3>Alt Primary - Small</h3>
 <button type="button" class="btn btn-sm btn-outline-primary">Alt Primary</button>
@@ -101,14 +136,30 @@ const secondaryHTML = `
 <h3>Secondary - Large</h3>
 <button type="button" class="btn btn-lg btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-lg btn-outline-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-lg btn-outline-secondary"><i class="icn-star mr-2"></i>Secondary</button>
-<button type="button" class="btn btn-lg btn-outline-secondary" disabled><i class="icn-star mr-2"></i>Secondary</button>
+<button type="button" class="btn btn-lg btn-outline-secondary">
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Secondary
+</button>
+<button type="button" class="btn btn-lg btn-outline-secondary" disabled>
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Secondary
+</button>
 <br><br>
 <h3>Secondary - Regular</h3>
 <button type="button" class="btn btn-outline-secondary">Secondary</button>
 <button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
-<button type="button" class="btn btn-outline-secondary"><i class="icn-star mr-1"></i>Secondary</button>
-<button type="button" class="btn btn-outline-secondary" disabled><i class="icn-star mr-1"></i>Secondary</button>
+<button type="button" class="btn btn-outline-secondary">
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Secondary
+</button>
+<button type="button" class="btn btn-outline-secondary" disabled>
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-star" />
+  </svg>Secondary
+</button>
 <br><br>
 <h3>Secondary - Small</h3>
 <button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
@@ -144,14 +195,30 @@ const otherHTML = `
 <h3>Other - Large</h3>
 <button type="button" class="btn btn-lg btn-danger">Leave</button>
 <button type="button" class="btn btn-lg btn-danger" disabled>Leave</button>
-<button type="button" class="btn btn-lg btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
-<button type="button" class="btn btn-lg btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-lg btn-danger">
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-trash" />
+  </svg>Delete
+</button>
+<button type="button" class="btn btn-lg btn-danger" disabled>
+  <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+    <use xlink:href="${iconSprite}#tabler-trash" />
+  </svg>Delete
+</button>
 <br><br>
 <h3>Other - Regular</h3>
 <button type="button" class="btn btn-danger">Leave</button>
 <button type="button" class="btn btn-danger" disabled>Leave</button>
-<button type="button" class="btn btn-danger"><i class="icn-delete mr-2"></i>Delete</button>
-<button type="button" class="btn btn-danger" disabled><i class="icn-delete mr-2"></i>Delete</button>
+<button type="button" class="btn btn-danger">
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-trash" />
+  </svg>Delete
+</button>
+<button type="button" class="btn btn-danger" disabled>
+  <svg width="1rem" height="1rem" class="mt-n1 mr-1">
+    <use xlink:href="${iconSprite}#tabler-trash" />
+  </svg>Delete
+</button>
 <br><br>
 <h3>Other - Small</h3>
 <button type="button" class="btn btn-sm btn-danger">Leave</button>
@@ -189,7 +256,11 @@ const groupHTML = `
 <div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" class="btn btn-outline-primary">Action1</button>
   <button type="button" class="btn btn-outline-primary">Action2</button>
-  <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0"></i></button>
+  <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions">
+    <svg width="1.125rem" height="1.125rem" class="m-0">
+      <use xlink:href="${iconSprite}#tabler-dots" />
+    </svg>
+  </button>
 </div>
 <br><br>
 <h3>Usage</h3>
@@ -198,7 +269,11 @@ const groupHTML = `
   <div class="btn-group" role="group" aria-label="Usage example">
     <button type="button" class="btn btn-outline-primary">Edit</button>
     <button type="button" class="btn btn-outline-primary">Forward</button>
-    <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions"><i class="icn icn-more_horizontal h2 m-0"></i></button>
+    <button type="button" class="btn btn-outline-primary pt-0 pb-0" aria-label="More Actions">
+    <svg width="1.125rem" height="1.125rem" class="m-0">
+      <use xlink:href="${iconSprite}#tabler-dots" />
+    </svg>
+    </button>
   </div>
 </div>
 <br>
