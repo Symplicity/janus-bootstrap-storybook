@@ -58,8 +58,10 @@ export const story1 = () => {
   const container = $('<div class="text-center" style="margin-top:100px"></div>').append(popovers_html);
   
   setTimeout(function() {
-     container.find('[data-toggle="popover"]').popover();
-   },0)
+    $(function() {
+      container.find('[data-toggle="popover"]').popover();
+    });
+  },0)
   
   return container[0]; 
     
