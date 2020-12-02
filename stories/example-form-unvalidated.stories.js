@@ -143,13 +143,9 @@ const unvalidated_form_html = `
     </div>
     <div class="mb-4">
       <fieldset>
-        <legend>Simple File Upload</legend>
+        <legend id="file-label">Simple File Upload</legend>
         <div class="form-file">
-          <input type="file" class="form-file-input" id="customFile">
-          <label class="form-file-label" for="customFile">
-            <span class="form-file-text">Choose file...</span>
-            <span class="form-file-button">Browse</span>
-          </label>
+          <input type="file" aria-labelledby="file-label" class="form-control" id="customFile">
         </div>
       </fieldset>
     </div>
