@@ -320,3 +320,39 @@ Group.parameters = {
     
     ` 
 };
+
+
+const iconHTML = `
+<h3>Icon with Text</h3>
+  <div>
+    <button type="button" class="btn btn-icon-with-text">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+      </svg>
+      Dislike
+    </button>
+  </div>
+`;
+
+export const Icon = () => iconHTML;
+
+Icon.storyName = 'Icon';
+
+Icon.parameters = {
+  notes: `
+    # Icon Buttons
+
+    ## Documentation
+    
+    Here are some notes on icon buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${iconHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
+};
