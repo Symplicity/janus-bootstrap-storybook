@@ -324,14 +324,38 @@ Group.parameters = {
 
 const iconHTML = `
 <h3>Icon with Text</h3>
-  <div>
+<div class="d-flex flex-row">
+  <div class="p-2">
     <button type="button" class="btn btn-icon-with-text">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
       </svg>
       Dislike
     </button>
+    <br><br>
+    <button type="button" class="btn btn-icon-with-text active">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+      </svg>
+      Dislike
+    </button>
   </div>
+  <div class="p-2">
+    <button type="button" class="btn btn-icon-with-text text-primary">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+      </svg>
+      Dislike
+    </button>
+    <br><br>
+    <button type="button" class="btn btn-icon-with-text text-primary active">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+      </svg>
+      Dislike
+    </button>
+  </div>
+</div>
 `;
 
 export const Icon = () => iconHTML;
