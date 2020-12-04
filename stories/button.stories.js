@@ -322,18 +322,18 @@ Group.parameters = {
 };
 
 
-const iconHTML = `
+const actionHTML = `
 <h3>Icon with Text</h3>
 <div class="d-flex flex-row">
   <div class="p-2">
-    <button type="button" class="btn btn-icon-with-text">
+    <button type="button" class="btn btn-action">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
       </svg>
       Dislike
     </button>
     <br><br>
-    <button type="button" class="btn btn-icon-with-text active">
+    <button type="button" class="btn btn-action active">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
       </svg>
@@ -341,14 +341,14 @@ const iconHTML = `
     </button>
   </div>
   <div class="p-2">
-    <button type="button" class="btn btn-icon-with-text text-primary">
+    <button type="button" class="btn btn-action text-primary">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
       </svg>
       Dislike
     </button>
     <br><br>
-    <button type="button" class="btn btn-icon-with-text text-primary active">
+    <button type="button" class="btn btn-action text-primary active">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
       </svg>
@@ -356,24 +356,37 @@ const iconHTML = `
     </button>
   </div>
 </div>
+<br><br>
+<h3>Text only</h3>
+<div class="d-flex flex-row">
+  <div class="p-2">
+    <button type="button" class="btn btn-action">
+      Edit 
+    </button>
+    <br><br>
+    <button type="button" class="btn btn-action active">
+      Edit 
+    </button>
+  </div>
+</div>
 `;
 
-export const Icon = () => iconHTML;
+export const Action = () => actionHTML;
 
-Icon.storyName = 'Icon';
+Action.storyName = 'Actions';
 
-Icon.parameters = {
+Action.parameters = {
   notes: `
-    # Icon Buttons
+    # Action Buttons
 
     ## Documentation
     
-    Here are some notes on icon buttons. 
+    Here are some notes on action buttons. 
     
     ## Code Sample
     
     \`\`\`html
-    ${iconHTML}
+    ${actionHTML}
     \`\`\`
     
     ${buttonNotes}
