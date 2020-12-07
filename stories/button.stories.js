@@ -360,12 +360,46 @@ const actionHTML = `
 <h3>Text only</h3>
 <div class="d-flex flex-row">
   <div class="p-2">
-    <button type="button" class="btn btn-action">
+    <button type="button" class="btn btn-action text-primary">
       Edit 
     </button>
     <br><br>
-    <button type="button" class="btn btn-action active">
+    <button type="button" class="btn btn-action text-primary active">
       Edit 
+    </button>
+  </div>
+</div>
+<br><br>
+<h3>Icon only</h3>
+<div class="d-flex flex-row">
+  <div class="p-2">
+    <button type="button" class="btn btn-action">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+        <span class="visually-hidden">Thumbs Down</span>
+      </svg>
+    </button>
+    <br><br>
+    <button type="button" class="btn btn-action active">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+        <span class="visually-hidden">Thumbs Down</span>
+      </svg>
+    </button>
+  </div>
+  <div class="p-2">
+    <button type="button" class="btn btn-action text-primary">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+        <span class="visually-hidden">Thumbs Down</span>
+      </svg>
+    </button>
+    <br><br>
+    <button type="button" class="btn btn-action text-primary active">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-thumb-down" />
+        <span class="visually-hidden">Thumbs Down</span>
+      </svg>
     </button>
   </div>
 </div>
