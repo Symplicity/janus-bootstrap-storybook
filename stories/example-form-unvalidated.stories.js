@@ -136,7 +136,7 @@ const unvalidated_form_html = `
     </div>
     <div class="mb-4">
       <button type="button" class="btn btn-outline-secondary">
-        <svg width="1.25rem" height="1.25rem" class="mr-1 mt-n1">
+        <svg width="1.25rem" height="1.25rem" class="me-1 mt-n1">
           <use xlink:href="${iconSprite}#tabler-plus" />
         </svg>Add Address
       </button>

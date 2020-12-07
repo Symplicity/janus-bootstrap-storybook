@@ -61,7 +61,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -71,7 +71,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -81,7 +81,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -91,7 +91,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -101,7 +101,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -111,7 +111,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -121,7 +121,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -131,7 +131,7 @@ const card_basic_html = `
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -201,7 +201,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -211,7 +211,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -221,7 +221,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -231,7 +231,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -241,7 +241,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -251,7 +251,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -261,7 +261,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>
@@ -271,7 +271,7 @@ export const CardBasic = () => {
                     <use xlink:href="${iconSprite}#tabler-folders" />
                   </svg>
                 </div>
-                <div class="w-100 ml-1">
+                <div class="w-100 ms-1">
                   <a href="#" class="link-secondary text-decoration-none"><strong>Incident Report</strong>: Richard Gilmore (#IR0001-002)</a>
                 </div>
               </li>

@@ -41,14 +41,14 @@ const card_basic_html = `
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 mr-6">
+            <div class="mt-1 mb-1 me-6">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
                       </svg>
@@ -58,7 +58,7 @@ const card_basic_html = `
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
                       </svg>
@@ -68,7 +68,7 @@ const card_basic_html = `
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
                       </svg>
@@ -79,7 +79,7 @@ const card_basic_html = `
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
@@ -126,14 +126,14 @@ export const CardBasic = () => {
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 mr-6">
+            <div class="mt-1 mb-1 me-6">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="${iconSprite}#${card_item_icon_class}" />
                       </svg>
@@ -143,7 +143,7 @@ export const CardBasic = () => {
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="${iconSprite}#${card_item_icon_class}" />
                       </svg>
@@ -153,7 +153,7 @@ export const CardBasic = () => {
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    <span class="mr-1 mt-1">
+                    <span class="me-1 mt-1">
                       <svg width="1rem" height="1rem">
                         <use xlink:href="${iconSprite}#${card_item_icon_class}" />
                       </svg>
@@ -164,7 +164,7 @@ export const CardBasic = () => {
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 mr-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
@@ -263,10 +263,10 @@ const card_sidebar = `
   <div class="sidebar">
     <div class="card bg-light border-0">
       <h3 class="card-header bg-light mb-0">
-        <div class="d-flex">
+        <div class="d-flex justify-content-between">
           <div>
             <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              <span class="tabler-chevron-down h4 mt-0 mb-0 mr-1">
+              <span class="tabler-chevron-down h4 mt-0 mb-0 me-1">
                 <svg width="1rem" height="1rem">
                   <use xlink:href="${iconSprite}#tabler-chevron-down" />
                 </svg>
@@ -276,9 +276,9 @@ const card_sidebar = `
               </span>
             </button>
           </div>
-          <div class="ml-auto">
+          <div>
             <button class="d-flex btn btn-link text-decoration-none p-0 mb-0">
-              <span class="mr-1">
+              <span class="me-1">
                 <svg width="1rem" height="1rem">
                   <use xlink:href="${iconSprite}#tabler-pencil" />
                 </svg> 

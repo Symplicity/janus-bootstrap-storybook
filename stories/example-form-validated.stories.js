@@ -31,7 +31,7 @@ const validated_form_html = `
     <div class="mb-4 is-invalid">
       <label for="select2" class="form-label">Select</label>
       <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>This field is required.
       </div>
@@ -45,7 +45,7 @@ const validated_form_html = `
     <div class="mb-4 is-invalid">
       <label for="email2" class="form-label">Email</label>
       <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>This field is required.
       </div>
@@ -61,7 +61,7 @@ const validated_form_html = `
       <fieldset>
         <legend>Checkbox Group</legend>
         <div class="invalid-feedback">
-          <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
             <use xlink:href="${iconSprite}#tabler-alert-circle" />
           </svg>This field is required.
         </div>
@@ -90,7 +90,7 @@ const validated_form_html = `
       <fieldset>
         <legend>Radio Group</legend>
         <div class="invalid-feedback">
-          <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
             <use xlink:href="${iconSprite}#tabler-alert-circle" />
           </svg>This field is required.
         </div>
@@ -153,7 +153,7 @@ const validated_form_html = `
           </div>
           <div class="subform-footer">
             <button type="button" class="btn btn-link text-decoration-none text-danger">
-              <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-2">
+              <svg width="1.25rem" height="1.25rem" class="mt-n1 me-2">
                 <use xlink:href="${iconSprite}#tabler-trash" />
               </svg>Delete
             </button>
@@ -163,7 +163,7 @@ const validated_form_html = `
     </div>
     <div class="mb-4">
       <button type="button" class="btn btn-outline-secondary">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-plus" />
         </svg>Add Address
       </button>
@@ -172,7 +172,7 @@ const validated_form_html = `
       <fieldset>
         <legend id="file-label">Simple File Upload</legend>
         <div class="invalid-feedback">
-          <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+          <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
             <use xlink:href="${iconSprite}#tabler-alert-circle" />
           </svg>This field is required.
         </div>

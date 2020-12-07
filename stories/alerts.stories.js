@@ -61,7 +61,7 @@ AlertSecondary.parameters = {
 const alert_success_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon me-2 icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-circle-check" />
         </svg>
       </div>
@@ -96,13 +96,13 @@ AlertSuccess.parameters = {
 const alert_error_html = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon me-2 icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-bug" />
         </svg>
       </div>
       <div class="flex-grow-1">
         <b>An error has occurred</b>
-        <ul class="pl-3 mb-0">
+        <ul class="ps-3 mb-0">
           <li>This is a danger alert - check it out!</li>
           <li>This is a danger alert - check it out!</li>
           <li>This is a danger alert - check it out!</li>
@@ -136,7 +136,7 @@ AlertError.parameters = {
 const alert_warning_html = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon me-2 icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-alert-triangle" />
         </svg>
       </div>
@@ -174,7 +174,7 @@ AlertWarning.parameters = {
 const alert_info_html = `
     <div class="alert alert-info alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.25rem" height="1.25rem" class="alert-icon mr-2 icon-lg-font-size">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon me-2 icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-info-circle" />
         </svg>
       </div>

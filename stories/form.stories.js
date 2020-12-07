@@ -38,7 +38,7 @@ const input_email_html = `
   <div class="mb-4 is-invalid">
     <label for="email2" class="form-label">Email</label>
     <div class="invalid-feedback">
-      <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+      <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
         <use xlink:href="${iconSprite}#tabler-alert-circle" />
       </svg>This field is required.
     </div>
@@ -81,7 +81,7 @@ const select_html = `
   <div class="mb-4 is-invalid">
     <label for="select2" class="form-label">Select</label>
     <div class="invalid-feedback">
-      <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+      <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
         <use xlink:href="${iconSprite}#tabler-alert-circle" />
       </svg>This field is required.
     </div>
@@ -176,7 +176,7 @@ const input_checkbox_html = `
     <fieldset>
       <legend>Checkbox Group</legend>
       <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>This field is required.
       </div>
@@ -252,7 +252,7 @@ const input_radio_html = `
     <fieldset>
       <legend>Radio Group</legend>
       <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>This field is required.
       </div>
@@ -316,7 +316,7 @@ const input_file_html = `
     <fieldset>
       <legend>Simple File Upload</legend>
       <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 mr-1">
+        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>This field is required.
       </div>

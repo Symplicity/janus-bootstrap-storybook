@@ -50,7 +50,7 @@ MenuBasic.parameters = {
 const menu_prefix_icon_html = `
 <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
@@ -60,7 +60,7 @@ const menu_prefix_icon_html = `
     </div>
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
@@ -70,7 +70,7 @@ const menu_prefix_icon_html = `
     </div>
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
@@ -80,7 +80,7 @@ const menu_prefix_icon_html = `
     </div>
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
@@ -90,7 +90,7 @@ const menu_prefix_icon_html = `
     </div>
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
@@ -100,7 +100,7 @@ const menu_prefix_icon_html = `
     </div>
   </a>
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
-    <div class="flex-shrink-1 mr-2">
+    <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
         <use xlink:href="${iconSprite}#tabler-search" />
       </svg>
