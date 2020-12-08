@@ -69,7 +69,7 @@ const alert_success_html = `
         This is a success alert - check it out! 
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
@@ -109,7 +109,7 @@ const alert_error_html = `
         </ul>
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
@@ -147,7 +147,7 @@ const alert_warning_html = `
         This is a warning alert - check it out!
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
@@ -184,7 +184,7 @@ const alert_info_html = `
         <p class="mb-0">This is a info alert - check it out!</p>
       </div>
       <div class="flex-shrink-1">
-        <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>

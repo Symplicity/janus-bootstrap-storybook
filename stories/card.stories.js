@@ -42,7 +42,7 @@ const card_basic_html = `
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
             <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
@@ -127,7 +127,7 @@ export const CardBasic = () => {
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
             <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
@@ -265,7 +265,7 @@ const card_sidebar = `
       <h3 class="card-header bg-light mb-0">
         <div class="d-flex justify-content-between">
           <div>
-            <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               <span class="tabler-chevron-down h4 mt-0 mb-0 me-1">
                 <svg width="1rem" height="1rem">
                   <use xlink:href="${iconSprite}#tabler-chevron-down" />

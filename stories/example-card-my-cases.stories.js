@@ -41,13 +41,13 @@ const card_basic_html = `
       <nav>
         <ul class="nav nav-tabs border-top border-bottom pt-0 pb-0 p-sm-7 pt-sm-0 pb-sm-0 h5" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="subtab1-tab" data-toggle="tab" href="#subtab1" role="tab" aria-controls="subtab1" aria-selected="true">Subtab1</a>
+            <a class="nav-link active" id="subtab1-tab" data-bs-toggle="tab" href="#subtab1" role="tab" aria-controls="subtab1" aria-selected="true">Subtab1</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="subtab2-tab" data-toggle="tab" href="#subtab2" role="tab" aria-controls="subtab2" aria-selected="false">Subtab2</a>
+            <a class="nav-link" id="subtab2-tab" data-bs-toggle="tab" href="#subtab2" role="tab" aria-controls="subtab2" aria-selected="false">Subtab2</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="subtab3-tab" data-toggle="tab" href="#subtab3" role="tab" aria-controls="subtab3" aria-selected="false">Subtab3</a>
+            <a class="nav-link" id="subtab3-tab" data-bs-toggle="tab" href="#subtab3" role="tab" aria-controls="subtab3" aria-selected="false">Subtab3</a>
           </li>
         </ul>
       </nav>
@@ -181,13 +181,13 @@ export const CardBasic = () => {
       <nav>
         <ul class="nav nav-tabs border-top border-bottom pt-0 pb-0 p-sm-7 pt-sm-0 pb-sm-0 h5" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="subtab1-tab" data-toggle="tab" href="#subtab1" role="tab" aria-controls="subtab1" aria-selected="true">Subtab1</a>
+            <a class="nav-link active" id="subtab1-tab" data-bs-toggle="tab" href="#subtab1" role="tab" aria-controls="subtab1" aria-selected="true">Subtab1</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="subtab2-tab" data-toggle="tab" href="#subtab2" role="tab" aria-controls="subtab2" aria-selected="false">Subtab2</a>
+            <a class="nav-link" id="subtab2-tab" data-bs-toggle="tab" href="#subtab2" role="tab" aria-controls="subtab2" aria-selected="false">Subtab2</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="subtab3-tab" data-toggle="tab" href="#subtab3" role="tab" aria-controls="subtab3" aria-selected="false">Subtab3</a>
+            <a class="nav-link" id="subtab3-tab" data-bs-toggle="tab" href="#subtab3" role="tab" aria-controls="subtab3" aria-selected="false">Subtab3</a>
           </li>
         </ul>
       </nav>

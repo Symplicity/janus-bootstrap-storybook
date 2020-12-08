@@ -28,7 +28,7 @@ const dropdown_primary_html = `
 <div class="dropdown">
   <h3>Primary - Large</h3>
   <div>
-    <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
@@ -67,7 +67,7 @@ const dropdown_primary_html = `
   <br><br>
   <h3>Primary - Regular</h3>
   <div>
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
@@ -106,7 +106,7 @@ const dropdown_primary_html = `
   <br><br>
   <h3>Primary - Small</h3>
   <div>
-    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
@@ -154,7 +154,7 @@ export const DropdownPrimary = () => {
     <div class="dropdown">
       <h3>Primary - Large</h3>
       <div>
-        <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-lg btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton1">
@@ -193,7 +193,7 @@ export const DropdownPrimary = () => {
       <br><br>
       <h3>Primary - Regular</h3>
       <div>
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
@@ -232,7 +232,7 @@ export const DropdownPrimary = () => {
       <br><br>
       <h3>Primary - Small</h3>
       <div>
-        <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
@@ -290,7 +290,7 @@ DropdownPrimary.parameters = {
 const dropdown_outline_html = `<div class="dropdown">
   <h3>Outline - Large</h3>
   <div>
-    <button class="btn btn-lg btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-lg btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton4">
@@ -329,7 +329,7 @@ const dropdown_outline_html = `<div class="dropdown">
   <br><br>
   <h3>Outline - Regular</h3>
   <div>
-    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton5">
@@ -368,7 +368,7 @@ const dropdown_outline_html = `<div class="dropdown">
   <br><br>
   <h3>Outline - Small</h3>
   <div>
-    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Primary 
     </button>
     <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton6">
@@ -418,7 +418,7 @@ export const DropdownOutline = () => {
     <div class="dropdown">
       <h3>Outline - Large</h3>
       <div>
-        <button class="btn btn-lg btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-lg btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton4">
@@ -457,7 +457,7 @@ export const DropdownOutline = () => {
       <br><br>
       <h3>Outline - Regular</h3>
       <div>
-        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton5">
@@ -496,7 +496,7 @@ export const DropdownOutline = () => {
       <br><br>
       <h3>Outline - Small</h3>
       <div>
-        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton6" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Primary 
         </button>
         <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton6">

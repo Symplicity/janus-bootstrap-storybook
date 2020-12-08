@@ -42,7 +42,7 @@ const card_basic_html = `
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
             <div class="mt-1 mb-1 mr-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
@@ -126,7 +126,7 @@ export const CardBasic = () => {
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
             <div class="mt-1 mb-1 mr-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
