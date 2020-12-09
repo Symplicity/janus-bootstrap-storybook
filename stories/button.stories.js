@@ -373,14 +373,14 @@ const actionHTML = `
 <h3>Icon only</h3>
 <div class="d-flex flex-row">
   <div class="p-2">
-    <button type="button" class="btn btn-action">
+    <button type="button" class="btn btn-action btn-action-icon-only">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
         <span class="visually-hidden">Thumbs Down</span>
       </svg>
     </button>
     <br><br>
-    <button type="button" class="btn btn-action active">
+    <button type="button" class="btn btn-action btn-action-icon-only active">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
         <span class="visually-hidden">Thumbs Down</span>
@@ -388,14 +388,14 @@ const actionHTML = `
     </button>
   </div>
   <div class="p-2">
-    <button type="button" class="btn btn-action text-primary">
+    <button type="button" class="btn btn-action btn-action-icon-only text-primary">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
         <span class="visually-hidden">Thumbs Down</span>
       </svg>
     </button>
     <br><br>
-    <button type="button" class="btn btn-action text-primary active">
+    <button type="button" class="btn btn-action btn-action-icon-only text-primary active">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-thumb-down" />
         <span class="visually-hidden">Thumbs Down</span>
