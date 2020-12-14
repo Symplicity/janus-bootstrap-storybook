@@ -25,7 +25,7 @@ export default {
 };
 
 const menu_basic_html = `
-<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+<div class="dropdown-menu show position-relative">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
   <a class="dropdown-item" href="#">Something else here here here here here here here</a>
@@ -48,7 +48,7 @@ MenuBasic.parameters = {
 };
 
 const menu_prefix_icon_html = `
-<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+<div class="dropdown-menu show position-relative">
   <a class="dropdown-item with-prefix-icon d-flex" href="#">
     <div class="flex-shrink-1 me-2">
       <svg width="20" height="20">
@@ -134,7 +134,7 @@ const item2_text = text("Item 2", "Something Very very very long");
 const item3_text = text("Item 3", "Something Short");
 
 return `
-  <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+  <div class="dropdown-menu show position-relative">
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
       <div class="w-100">
         ${item1_text}
@@ -184,7 +184,7 @@ MenuSuffixIcon.parameters = {
   #Sample Code
 
   \`\`\`html
-  <div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+  <div class="dropdown-menu show position-relative">
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
       <div class="w-100">
         Fname Lname
@@ -229,7 +229,7 @@ MenuSuffixIcon.parameters = {
 
 
 const menu_divider_html = `
-<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+<div class="dropdown-menu show position-relative">
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
@@ -256,7 +256,7 @@ MenuDivider.parameters = {
 
 
 const menu_header_html = `
-<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+<div class="dropdown-menu show position-relative">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
@@ -286,7 +286,7 @@ MenuHeader.parameters = {
 
 
 const menu_responsive_html = `
-<div class="dropdown-menu shadow-sm show" style="top: auto; right: auto; bottom: auto; left: auto;">
+<div class="dropdown-menu show position-relative">
   <h6 class="dropdown-header">16/24 bold</h6>
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>

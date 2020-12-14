@@ -35,7 +35,8 @@ export const parameters = {
         value: '#333' 
       },
     ],
-  }
+  },
+  layout: 'fullscreen'
 };
 
 initializeRTL();
