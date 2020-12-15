@@ -407,7 +407,7 @@ const actionHTML = `
 
 export const Action = () => actionHTML;
 
-Action.storyName = 'Actions';
+Action.storyName = 'Action';
 
 Action.parameters = {
   notes: `
