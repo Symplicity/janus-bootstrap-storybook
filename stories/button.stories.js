@@ -427,3 +427,67 @@ Action.parameters = {
     
     ` 
 };
+
+
+const toggleHTML = `
+<h3>Toggle</h3>
+<div class="d-flex flex-row">
+  <div class="p-2">
+    <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
+    <label class="btn btn-action-toggle" for="btn-check-outlined1">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-star" />
+        <span class="visually-hidden">Favorite</span>
+      </svg>
+    </label>
+    <br><br>
+    <input type="checkbox" class="btn-check" id="btn-check-outlined2" checked autocomplete="off">
+    <label class="btn btn-action-toggle" for="btn-check-outlined2">
+      <svg class="icon-lg-font-size mt-n1 text-warning">
+        <use xlink:href="${iconSprite}#tabler-star-on" />
+        <span class="visually-hidden">Favorite</span>
+      </svg>
+    </label>
+  </div>
+  <div class="p-2">
+    <input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
+    <label class="btn btn-action-toggle" for="btn-check-outlined3">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-star" />
+      </svg>
+      <span>Favorite</span>
+    </label>
+    <br><br>
+    <input type="checkbox" class="btn-check" id="btn-check-outlined4" checked autocomplete="off">
+    <label class="btn btn-action-toggle" for="btn-check-outlined4">
+      <svg class="icon-lg-font-size mt-n1 text-warning">
+        <use xlink:href="${iconSprite}#tabler-star-on" />
+      </svg>
+      <span class="text-warning">Favorited</span>
+    </label>
+  </div>
+</div>
+`;
+
+export const Toggle = () => toggleHTML;
+
+Toggle.storyName = 'Toggle';
+
+Toggle.parameters = {
+  notes: `
+    # Toggle Action Buttons
+
+    ## Documentation
+    
+    Here are some notes on toggle action buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${toggleHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
+};
