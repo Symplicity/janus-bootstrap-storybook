@@ -113,7 +113,7 @@
     },
     {
       "label": "Alerts-SB-Info",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-alerts--alert-success",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-alerts--alert-info",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
