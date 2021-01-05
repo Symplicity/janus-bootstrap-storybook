@@ -170,14 +170,16 @@ const validated_form_html = `
     </div>
     <div class="mb-4 is-invalid">
       <fieldset>
-        <legend id="file-label">Simple File Upload</legend>
-        <div class="invalid-feedback">
-          <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
-            <use xlink:href="${iconSprite}#tabler-alert-circle" />
-          </svg>This field is required.
-        </div>
         <div class="form-file">
-          <input type="file" aria-labelledby="file-label" class="form-control" id="customFile">
+          <label class="form-label" for="inputGroupFile02">
+            Simple File Upload
+          </label>
+          <div class="invalid-feedback">
+            <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
+              <use xlink:href="${iconSprite}#tabler-alert-circle" />
+            </svg>This field is required.
+          </div>
+          <input type="file" class="form-control" id="inputGroupFile02">
         </div>
       </fieldset>
     </div>
