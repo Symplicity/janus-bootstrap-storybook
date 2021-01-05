@@ -300,12 +300,11 @@ const input_file_html = `
 <form>
   <div class="mb-4">
     <fieldset>
-      <legend>Simple File Upload</legend>
       <div class="form-file">
-        <input type="file" class="form-file-input" id="inputGroupFile01">
-        <label class="form-file-label" for="inputGroupFile01">
-          <span class="btn btn-outline-secondary">Choose File</span>
+        <label class="form-label" for="inputGroupFile01">
+          Simple File Upload 
         </label>
+        <input type="file" class="form-control" id="inputGroupFile01">
       </div>
     </fieldset>
   </div>
@@ -314,17 +313,16 @@ const input_file_html = `
 <form>
   <div class="mb-4 is-invalid">
     <fieldset>
-      <legend>Simple File Upload</legend>
-      <div class="invalid-feedback">
-        <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
-          <use xlink:href="${iconSprite}#tabler-alert-circle" />
-        </svg>This field is required.
-      </div>
       <div class="form-file">
-        <input type="file" class="form-file-input" id="inputGroupFile02">
-        <label class="form-file-label" for="inputGroupFile02">
-          <span class="btn btn-outline-secondary">Choose File</span>
+        <label class="form-label" for="inputGroupFile02">
+          Simple File Upload
         </label>
+        <div class="invalid-feedback">
+          <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
+            <use xlink:href="${iconSprite}#tabler-alert-circle" />
+          </svg>This field is required.
+        </div>
+        <input type="file" class="form-control" id="inputGroupFile02">
       </div>
     </fieldset>
   </div>
