@@ -36,8 +36,8 @@ const sidebarHTML = `
             <img src="https://via.placeholder.com/33" alt="Placeholder" class="d-inline-flex">
           </div>
           <div class="flex-grow-1 ps-2">
-            <span><strong>System Engineer</strong></span><br>
-            <span>Rockville, MD</span>
+            <span><strong>System Engineer System Engineer System Engineer System Engineer </strong></span><br>
+            <span>Rockville, MD Rockville, MD Rockville, MD Rockville, MD Rockville, MD </span>
           </div>
         </li>
         <li class="pb-7 d-flex">
