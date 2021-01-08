@@ -533,3 +533,51 @@ Toggle.parameters = {
     
     ` 
 };
+
+
+const extendedHTML = `
+<ul class="d-flex flex-row list-unstyled">
+  <li class="p-2">
+    <a href="#" role="button" class="text-dark h6">
+      <svg class="icon-lg-font-size mt-n1">
+        <use xlink:href="${iconSprite}#tabler-file-search" />
+      </svg>
+      <span><strong>Case File:</strong> Katy Perry (43023923)</span>
+    </a>
+  </li>
+</ul>
+<div class="p-2">
+  <label for="exampleFormControlInput1" class="form-label h6">Lookup Field</label>
+  <div class="input-group">
+    <input class="form-control border-end-0" id="exampleFormControlInput1">
+    <span class="input-group-text bg-white border-start-0">
+      <svg class="icon-lg-font-size">
+        <use xlink:href="${iconSprite}#tabler-search" />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+export const Extended = () => extendedHTML;
+
+Extended.storyName = 'Extended Icon Actions';
+
+Extended.parameters = {
+  notes: `
+    # Extended Icon Actions
+
+    ## Documentation
+    
+    Here are some notes on extended icon actions. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${extendedHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    ` 
+};
