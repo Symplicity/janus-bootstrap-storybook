@@ -542,7 +542,7 @@ const extendedHTML = `
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-file-search" />
       </svg>
-      <span><strong>Case File:</strong> Katy Perry (43023923)</span>
+      <span><strong>Subject:</strong> Fname Lname (1234567890)</span>
     </a>
   </li>
 </ul>
