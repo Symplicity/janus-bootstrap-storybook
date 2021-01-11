@@ -24,7 +24,7 @@ export default {
   },
 };
 
-const card_basic_html = `
+const card_homepage_html = `
     <div class="card">
       <h3 class="card-header text-uppercase bg-white d-flex">
         <div class="card-header-icon">
@@ -89,7 +89,7 @@ const card_basic_html = `
     </div>
 `;
 
-export const CardBasic = () => {
+export const CardHomepage = () => {
 
   const icon_bg_color_options = {
     "Pale Green": "bg-pale-green",
@@ -175,15 +175,15 @@ export const CardBasic = () => {
 `
 };
 
-CardBasic.storyName = 'Basic';
+CardHomepage.storyName = 'Homepage';
   
-CardBasic.parameters = { 
+CardHomepage.parameters = { 
   notes: `
   
   #Sample Code 
 
   \`\`\`html
-  ${card_basic_html}
+  ${card_homepage_html}
   \`\`\`
   
   `

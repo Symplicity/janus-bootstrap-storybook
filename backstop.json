@@ -382,8 +382,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Cards-SB-Basic",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-cards--card-basic",
+      "label": "Cards-SB-Homepage",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-cards--card-homepage",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
