@@ -321,19 +321,33 @@ CardSidebar.parameters = {
 
 const card_group = `
     <div class="card card-alt">
-      <svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+      <!--svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg-->
+      <img class="card-img-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title text-uppercase h6"><b>Career Plan</b></h5>
+        <h6 class="h3">Career Outcome</h6>
+        <p class="card-text">
+          <span class="line-clamp-5">
+            No matter how far along you are in your sophistication 
+            as an amateur astronomer, there is always one fundamental 
+            moment that we all go back to. That is that very first thing 
+            to know.
+
+            No matter how far along you are in your sophistication 
+            as an amateur astronomer, there is always one fundamental 
+            moment that we all go back to. That is that very first thing 
+            to know.
+
+            No matter how far along you are in your sophistication 
+            as an amateur astronomer, there is always one fundamental 
+            moment that we all go back to. That is that very first thing 
+            to know.
+          </span>
+        </p>
       </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Cras justo odio</li>
-        <li class="list-group-item">Dapibus ac facilisis in</li>
-        <li class="list-group-item">Vestibulum at eros</li>
-      </ul>
-      <div class="card-body">
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+      <div class="card-body pt-0">
+        <a href="#" class="card-link">Text link 1</a>
+        <a href="#" class="card-link">Text link 2</a>
       </div>
     </div>  
 `;
