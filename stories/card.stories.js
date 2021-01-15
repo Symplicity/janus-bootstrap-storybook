@@ -325,7 +325,9 @@ const card_group = `
       <img class="card-img-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
       <div class="card-body">
         <h5 class="card-title text-uppercase h6"><b>Career Plan</b></h5>
-        <h6 class="h3">Career Outcome</h6>
+        <h6 class="h3 text-capitalize">
+          <span class="line-clamp-3">thrill friends and family with a make it yourself pizza party make it as cool as you can imagine</span>
+        </h6>
         <p class="card-text">
           <span class="line-clamp-5">
             No matter how far along you are in your sophistication 
@@ -352,7 +354,56 @@ const card_group = `
     </div>  
 `;
 
-export const CardGroup = () => `<div style="width: 18em;">${card_group}</div>`;
+export const CardGroup = () => {
+
+  const line_clamp = {
+    "1 line": "line-clamp-1",
+    "2 lines": "line-clamp-2",
+    "3 lines": "line-clamp-3",
+    "4 lines": "line-clamp-4",
+    "5 lines": "line-clamp-5"
+  }
+
+  const card_subheading_text = text("Subheading Text", "thrill friends and family with a make it yourself pizza party make it as cool as you can imagine"); 
+
+  const card_subheading_line_clamp = select(
+      "Subheading Line Clamp",
+      line_clamp,
+      "line-clamp-2"
+  );
+
+  const card_body_text = text("Body Text", "\
+    No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (1) \
+    No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (2) \
+    No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (3) \
+  ");
+
+  const card_body_line_clamp = select(
+      "Body Line Clamp",
+      line_clamp,
+      "line-clamp-5"
+  );
+
+  return `
+    <div class="card card-alt">
+      <!--svg class="bd-placeholder-img card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg-->
+      <img class="card-img-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
+      <div class="card-body">
+        <h5 class="card-title text-uppercase h6"><b>Career Plan</b></h5>
+        <h6 class="h3 text-capitalize">
+          <span class="${card_subheading_line_clamp}">${card_subheading_text}</span>
+        </h6>
+        <p class="card-text">
+          <span class="${card_body_line_clamp}">${card_body_text}</span>
+        </p>
+      </div>
+      <div class="card-body pt-0">
+        <a href="#" class="card-link">Text link 1</a>
+        <a href="#" class="card-link">Text link 2</a>
+      </div>
+    </div>  
+  `
+};
 
 CardGroup.storyName = 'Group';
 
@@ -365,7 +416,7 @@ CardGroup.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${card_sidebar}
+  ${card_group}
   \`\`\`
 
   `
