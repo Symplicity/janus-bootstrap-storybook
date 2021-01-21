@@ -39,9 +39,9 @@ For additional documentation, see:
 let header_html = `
 <div class="d-block bg-light">
   <nav class="d-block navbar navbar-light" style="max-width: 1400px; margin: 0 auto;">
-    <div class="d-flex justify-content-between align-items-center pt-3 pb-3 p-sm-0">
+    <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex">
-        <button class="border-0 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="border-0 navbar-toggler ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <svg width="1rem" height="1rem">
             <use xlink:href="${iconSprite}#tabler-menu-2" />
           </svg>
@@ -55,24 +55,27 @@ let header_html = `
           <span class="input-group-text">$</span>
         </div>
       </div>
-      <div class="d-flex">
-        <button class="btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
-          <svg class="icon-lg-font-size mt-n1">
+      <div class="d-flex me-7 me-md-0">
+        <button class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+          <svg class="icon-xl-font-size mt-n1">
             <use xlink:href="${iconSprite}#tabler-star" />
             <span class="visually-hidden">More Actions</span>
           </svg>
         </button>
-        <button class="btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
-          <svg class="icon-lg-font-size mt-n1">
+        <button class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+          <svg class="icon-xl-font-size mt-n1">
             <use xlink:href="${iconSprite}#tabler-pencil" />
             <span class="visually-hidden">More Actions</span>
           </svg>
         </button>
-        <button type="button" class="btn btn-action btn-action-icon-only btn-action-header me-7 me-md-9" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown">
-          <svg class="icon-lg-font-size mt-n1">
+        <!--button type="button" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-1 me-md-9" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+          <svg class="icon-xl-font-size mt-n1">
             <use xlink:href="${iconSprite}#tabler-dots" />
             <span class="visually-hidden">More Actions</span>
           </svg>
+        </button-->
+        <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle border-0 w-auto h-auto me-1 me-md-9"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+          <img role="button" class="rounded-circle icon-xxl-font-size border-0" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
         </button>
         <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-1" aria-labelledby="dropdownMenuButton1" >
           <li>
