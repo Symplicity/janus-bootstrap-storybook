@@ -37,11 +37,11 @@ For additional documentation, see:
 `;
 
 let header_html = `
-<div class="d-block bg-light">
-  <nav class="d-block navbar navbar-light" style="max-width: 1400px; margin: 0 auto;">
+<div class="d-block bg-white">
+  <nav class="d-block navbar navbar-light shadow" style="max-width: 1400px; margin: 0 auto;">
     <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex">
-        <button class="border-0 navbar-toggler ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="d-flex align-items-center">
+        <button class="border-0 navbar-toggler ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <svg width="1rem" height="1rem">
             <use xlink:href="${iconSprite}#tabler-menu-2" />
           </svg>
@@ -74,8 +74,8 @@ let header_html = `
             <span class="visually-hidden">More Actions</span>
           </svg>
         </button-->
-        <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle border-0 w-auto h-auto me-1 me-md-9"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
-          <img role="button" class="rounded-circle icon-xxl-font-size border-0" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+        <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle border border-dark w-auto h-auto me-1 me-md-9"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
+          <img role="button" class="rounded-circle border border-white icon-xxl-font-size" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
         </button>
         <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-1" aria-labelledby="dropdownMenuButton1" >
           <li>
