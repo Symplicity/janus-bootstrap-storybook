@@ -423,11 +423,11 @@ CardGroup.parameters = {
 };
 
 const card_group_horizontal = `
-    <div class="card">
+    <div class="card" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">
           <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
-          <!--img class="rounded-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons"-->
+          <!--img src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons"-->
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -490,7 +490,7 @@ export const CardGroupHorizontal = () => {
   );
 
   return `
-    <div class="card">
+    <div class="card" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">
           <svg class="bd-placeholder-img" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
