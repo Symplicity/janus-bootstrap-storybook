@@ -322,7 +322,7 @@ CardSidebar.parameters = {
 const card_group = `
     <div class="card card-alt">
       <!--svg class="bd-placeholder-img rounded-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg-->
-      <img class="rounded-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
+      <img class="rounded-top img-fluid" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
       <div class="card-body">
         <h5 class="card-title text-uppercase h6"><b>Career Plan</b></h5>
         <h6 class="h3 text-capitalize">
@@ -387,7 +387,7 @@ export const CardGroup = () => {
   return `
     <div class="card card-alt">
       <!--svg class="bd-placeholder-img rounded-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg-->
-      <img class="rounded-top" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
+      <img class="rounded-top img-fluid" src="https://media.istockphoto.com/photos/hot-air-balloons-flying-at-sunset-cappadocia-turkey-picture-id1164258121" alt="Hot air balloons">
       <div class="card-body">
         <h5 class="card-title text-uppercase h6"><b>Career Plan</b></h5>
         <h6 class="h3 text-capitalize">
@@ -512,9 +512,9 @@ export const CardGroupHorizontal = () => {
   `
 };
 
-CardGroup.storyName = 'Group Horizontal';
+CardGroupHorizontal.storyName = 'Horizontal';
 
-CardGroup.parameters = { 
+CardGroupHorizontal.parameters = { 
   notes: `
 
   #Notes
