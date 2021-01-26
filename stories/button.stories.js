@@ -471,7 +471,7 @@ const toggleHTML = `
 <div class="d-flex flex-row">
   <div class="p-2">
     <input type="checkbox" class="btn-check" id="btn-check-outlined5" autocomplete="off">
-    <label class="btn btn-action btn-action-toggle" for="btn-check-outlined5">
+    <label class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined5">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-plus" />
       </svg>
@@ -479,7 +479,7 @@ const toggleHTML = `
     </label>
     <br><br>
     <input type="checkbox" class="btn-check" id="btn-check-outlined6" checked autocomplete="off">
-    <label class="btn btn-action btn-action-toggle active" for="btn-check-outlined6">
+    <label class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined6">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-check" />
       </svg>
@@ -488,23 +488,23 @@ const toggleHTML = `
   </div>
   <div class="p-2">
     <input type="checkbox" class="btn-check" id="btn-check-outlined7" autocomplete="off">
-    <label class="btn btn-action btn-action-toggle" for="btn-check-outlined7">
+    <label class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined7">
       Add
     </label>
     <br><br>
     <input type="checkbox" class="btn-check" id="btn-check-outlined8" checked autocomplete="off">
-    <label class="btn btn-action btn-action-toggle active" for="btn-check-outlined8">
+    <label class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined8">
       Added
     </label>
   </div>
   <div class="p-2">
     <input type="checkbox" class="btn-check" id="btn-check-outlined9" autocomplete="off">
-    <label class="btn btn-action btn-action-toggle" for="btn-check-outlined9">
+    <label class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined9">
       xxx
     </label>
     <br><br>
     <input type="checkbox" class="btn-check" id="btn-check-outlined10" checked autocomplete="off">
-    <label class="btn btn-action btn-action-toggle active" for="btn-check-outlined10">
+    <label class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined10">
       xxxx
     </label>
   </div>
