@@ -16,19 +16,19 @@ export default {
 
 const actionHTML = `
   <div class="container">
-    <button class="btn btn-action btn-action-icon-only" type="button">
+    <button class="btn btn-action btn-action-icon-only rounded-circle" type="button">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-star" />
         <span class="visually-hidden">More Actions</span>
       </svg>
     </button>
-    <button class="btn btn-action btn-action-icon-only" type="button">
+    <button class="btn btn-action btn-action-icon-only rounded-circle" type="button">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-pencil" />
         <span class="visually-hidden">More Actions</span>
       </svg>
     </button>
-    <button type="button" class="btn btn-action btn-action-icon-only" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+    <button type="button" class="btn btn-action btn-action-icon-only rounded-circle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown">
       <svg class="icon-lg-font-size mt-n1">
         <use xlink:href="${iconSprite}#tabler-dots" />
         <span class="visually-hidden">More Actions</span>

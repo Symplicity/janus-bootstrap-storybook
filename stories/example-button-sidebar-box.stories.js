@@ -22,7 +22,7 @@ const sidebarHTML = `
           <span class="mt-2 d-inline-flex align-middle"><strong>Similar Jobs</strong></span>
         </div>
         <div class="p-7 pt-3">
-          <button class="btn btn-action btn-action-icon-only" type="button">
+          <button class="btn btn-action btn-action-icon-only rounded-circle" type="button">
             <svg class="icon-lg-font-size mt-n1">
               <use xlink:href="${iconSprite}#tabler-pencil" />
               <span class="visually-hidden">Edit Similar Jobs</span>
