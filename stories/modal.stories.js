@@ -9,7 +9,8 @@ export default {
   },
 };
 
-const modal_basic_html = `<div class="modal" tabindex="-1" role="dialog" style="display: block; position: relative;">
+const modal_basic_html = `
+<div class="modal" tabindex="-1" style="display: block; position: relative;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -43,11 +44,12 @@ ModalBasic.parameters = {
   `
 };
 
-const modal_trigger_html = `<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+const modal_trigger_html = `
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
 </button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -83,7 +85,7 @@ ModalTrigger.parameters = {
 };
 
 
-const modal_form_html = `<div class="modal" tabindex="-1" role="dialog" style="display: block; position: relative;">
+const modal_form_html = `<div class="modal" tabindex="-1" style="display: block; position: relative;">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

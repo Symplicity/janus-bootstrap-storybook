@@ -38,7 +38,7 @@ For additional documentation, see:
 
 let header_html = `
 <div class="d-block bg-white">
-  <nav class="d-block navbar navbar-light shadow" style="max-width: 1400px; margin: 0 auto;">
+  <nav class="d-block navbar navbar-light shadow-lg" style="max-width: 1400px; margin: 0 auto;">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <button class="border-0 navbar-toggler ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
