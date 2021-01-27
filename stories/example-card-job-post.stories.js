@@ -24,7 +24,7 @@ export default {
   },
 };
 
-const card_group = `
+const card = `
     <div class="card">
       <div class="card-header bg-transparent d-flex pb-0 mb-0">
         <div class="card-logo">
@@ -63,7 +63,7 @@ const card_group = `
     </div>  
 `;
 
-export const CardGroup = () => {
+export const Card = () => {
 
   const line_clamp = {
     "1 line": "line-clamp-1",
@@ -134,9 +134,9 @@ export const CardGroup = () => {
   `
 };
 
-CardGroup.storyName = 'Job Post';
+Card.storyName = 'Job Post';
 
-CardGroup.parameters = { 
+Card.parameters = { 
   notes: `
 
   #Notes
@@ -145,7 +145,7 @@ CardGroup.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${card_group}
+  ${card}
   \`\`\`
 
   `

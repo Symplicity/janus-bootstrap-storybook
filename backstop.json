@@ -1102,6 +1102,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Example-SB-Cards-Job-Post",
+      "url": "http://host.docker.internal:9009/iframe.html?id=examples-cards-job-post--card",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 100,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Example-SB-Cards-My-Cases",
       "url": "http://host.docker.internal:9009/iframe.html?id=examples-cards-my-cases--card-basic",
       "referenceUrl": "",
