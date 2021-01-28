@@ -512,7 +512,7 @@ export const CardGroupHorizontal = () => {
   `
 };
 
-CardGroupHorizontal.storyName = 'Horizontal';
+CardGroupHorizontal.storyName = 'Group Horizontal';
 
 CardGroupHorizontal.parameters = { 
   notes: `
