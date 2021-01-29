@@ -9,6 +9,7 @@ export default {
 };
 
 const borderRadiusHTML = `
+<div>
   <div>
     <svg class="bd-placeholder-img rounded-0" width="75" height="75" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Example small rounded image: 75x75">
       <title>Example zero rounded image</title>

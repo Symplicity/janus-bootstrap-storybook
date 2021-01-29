@@ -59,15 +59,16 @@ export const Badges = () => {
   );
   
   return `
-  
-  <h2>Example</h2>
-  <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
-  
-  <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h2>
-  <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h3>
-  <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h4>
-  <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
-  <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
+  <div>
+    <h2>Example</h2>
+    <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
+    
+    <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h2>
+    <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h3>
+    <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h4>
+    <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
+    <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
+  </div>
 `;
   
 };
@@ -98,14 +99,17 @@ Badges.parameters = {
 
 
 const button_badges = `
-<button type="button" class="btn btn-primary btn-lg">
-  Notification <span class="badge bg-light text-dark">9</span>
-  <span class="visually-hidden">unread messages</span>
-</button>
-<button type="button" class="btn btn-primary">
-  Notification <span class="badge bg-light text-dark">9</span>
-  <span class="visually-hidden">unread messages</span>
-</button>`;
+<div>
+  <button type="button" class="btn btn-primary btn-lg">
+    Notification <span class="badge bg-light text-dark">9</span>
+    <span class="visually-hidden">unread messages</span>
+  </button>
+  <button type="button" class="btn btn-primary">
+    Notification <span class="badge bg-light text-dark">9</span>
+    <span class="visually-hidden">unread messages</span>
+  </button>
+</div>
+`;
 
 export const Buttons = () => button_badges;
 Buttons.storyName = "Button Badges";
@@ -125,14 +129,17 @@ Buttons.parameters = {
 
 
 const contextual_variations = `
-<span class="badge bg-primary">Primary</span>
-<span class="badge bg-secondary">Secondary</span>
-<span class="badge bg-success">Success</span>
-<span class="badge bg-danger">Danger</span>
-<span class="badge bg-warning">Warning</span>
-<span class="badge bg-info">Info</span>
-<span class="badge bg-light text-dark">Light</span>
-<span class="badge bg-dark">Dark</span>`;
+<div>
+  <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning">Warning</span>
+  <span class="badge bg-info">Info</span>
+  <span class="badge bg-light text-dark">Light</span>
+  <span class="badge bg-dark">Dark</span>
+</div>
+`;
 
 export const Contexts = () => contextual_variations;
 Contexts.storyName = "Contextual Variations";
@@ -152,14 +159,17 @@ Contexts.parameters = {
 
 
 const pill_badges = `
-<span class="badge rounded-pill bg-primary">Primary</span>
-<span class="badge rounded-pill bg-secondary">Secondary</span>
-<span class="badge rounded-pill bg-success">Success</span>
-<span class="badge rounded-pill bg-danger">Danger</span>
-<span class="badge rounded-pill bg-warning">Warning</span>
-<span class="badge rounded-pill bg-info">Info</span>
-<span class="badge rounded-pill bg-light text-dark">Light</span>
-<span class="badge rounded-pill bg-dark">Dark</span>`;
+<div>
+  <span class="badge rounded-pill bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning">Warning</span>
+  <span class="badge rounded-pill bg-info">Info</span>
+  <span class="badge rounded-pill bg-light text-dark">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
+</div>
+`;
 
 export const Pills = () => pill_badges;
 Pills.storyName = "Pill Badges";
@@ -179,9 +189,11 @@ Pills.parameters = {
 
 
 const text_badges = `
-<span class="h3">Software Engineer <span class="badge bg-primary">New</span></span>
-<br>
-<span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
+<div>
+  <span class="h3">Software Engineer <span class="badge bg-primary">New</span></span>
+  <br>
+  <span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
+</div>
 `;
 
 export const Text = () => text_badges;

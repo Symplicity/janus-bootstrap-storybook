@@ -48,7 +48,7 @@ const input_email_html = `
 </form>
 `;
 
-export const InputEmail = () => `<div class="container-fluid">${input_email_html}</div>`;
+export const InputEmail = () => `<div>${input_email_html}</div>`;
 
 InputEmail.storyName = '[type="email"]';
 
@@ -95,7 +95,7 @@ const select_html = `
 </form>
 `;
 
-export const Select = () => `<div class="container-fluid">${select_html}</div>`;
+export const Select = () => `<div>${select_html}</div>`;
 
 Select.storyName = '<select>';
 
@@ -127,7 +127,7 @@ const textarea_html = `
 </form>
 `;
 
-export const Textarea = () => `<div class="container-fluid">${textarea_html}</div>`;
+export const Textarea = () => `<div>${textarea_html}</div>`;
 
 Textarea.storyName = '<textarea>';
 
@@ -204,7 +204,7 @@ const input_checkbox_html = `
 </form>
 `;
 
-export const InputCheckbox = () => `<div class="container-fluid">${input_checkbox_html}</div>`;
+export const InputCheckbox = () => `<div>${input_checkbox_html}</div>`;
 
 InputCheckbox.storyName = '[type="checkbox"]';
 
@@ -280,7 +280,7 @@ const input_radio_html = `
 </form>
 `;
 
-export const InputRadio = () => `<div class="container-fluid">${input_radio_html}</div>`;
+export const InputRadio = () => `<div>${input_radio_html}</div>`;
 
 InputRadio.storyName = '[type="radio"]';
 
@@ -329,7 +329,7 @@ const input_file_html = `
 </form>
 `;
 
-export const InputFile = () => `<div class="container-fluid">${input_file_html}</div>`;
+export const InputFile = () => `<div>${input_file_html}</div>`;
 
 InputFile.storyName = '[type="file"]';
 

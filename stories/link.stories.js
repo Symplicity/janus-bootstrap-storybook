@@ -23,7 +23,7 @@ Ideally, a beginner should use around 100</p>
 
 `;
 
-export const Default = () => defaultHTML;
+export const Default = () => `<div>${defaultHTML}</div>`;
 
 Default.storyName = 'Default';
 
@@ -61,7 +61,7 @@ Ideally, a beginner should use around 100</p>
 
 `;
 
-export const Primary = () => primaryHTML;
+export const Primary = () => `<div>${primaryHTML}</div>`;
 
 Primary.storyName = 'Primary';
 
@@ -99,7 +99,7 @@ Ideally, a beginner should use around 100</p>
 
 `;
 
-export const Secondary = () => secondaryHTML;
+export const Secondary = () => `<div>${secondaryHTML}</div>`;
 
 Secondary.storyName = 'Secondary';
 
@@ -157,7 +157,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 `;
 
-export const Colored = () => coloredHTML;
+export const Colored = () => `<div>${coloredHTML}</div>`;
 
 Colored.storyName = 'Colored';
 

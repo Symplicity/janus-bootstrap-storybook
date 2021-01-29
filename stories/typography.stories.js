@@ -13,7 +13,7 @@ export default {
 const global_html = `<p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt purus sit amet rutrum pretium. Aenean neque ligula, accumsan et scelerisque eget, egestas sit amet odio. Nam sollicitudin egestas aliquet. Curabitur lacinia leo vel ornare viverra. Nunc ornare luctus ligula.
 </p>`;
-export const Global = () => `<div class="container-fluid">${global_html}</div>`;
+export const Global = () => `<div>${global_html}</div>`;
 
 Global.storyName = 'Global';
 
@@ -37,7 +37,7 @@ const headings_html = `<div>
     <h5>h5. Bootstrap heading</h5>
     <h6>h6. Bootstrap heading</h6>
 </div>`;
-export const Headings = () => `<div class="container-fluid">${headings_html}</div>`;
+export const Headings = () => `<div>${headings_html}</div>`;
 
 Headings.storyName = 'Headings';
 

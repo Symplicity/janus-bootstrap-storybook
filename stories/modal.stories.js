@@ -28,7 +28,7 @@ const modal_basic_html = `
   </div>
 </div>`;
 
-export const ModalBasic = () => `<div class="container-fluid">${modal_basic_html}</div>`;
+export const ModalBasic = () => `<div>${modal_basic_html}</div>`;
 
 ModalBasic.storyName = 'Modal Basic';
 
@@ -68,7 +68,7 @@ const modal_trigger_html = `
 </div>
 </div>`;
 
-export const ModalTrigger = () => `<div class="container-fluid">${modal_trigger_html}</div>`;
+export const ModalTrigger = () => `<div>${modal_trigger_html}</div>`;
 
 ModalTrigger.storyName = 'Modal from Trigger';
 
@@ -121,7 +121,7 @@ const modal_form_html = `<div class="modal" tabindex="-1" style="display: block;
   </div>
 </div>`;
 
-export const ModalForm = () => `<div class="container-fluid">${modal_form_html}</div>`;
+export const ModalForm = () => `<div>${modal_form_html}</div>`;
 
 ModalForm.storyName = 'Modal with Form';
 
