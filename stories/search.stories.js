@@ -28,7 +28,8 @@ const search_mobile_input_html = `
         <h4 class="modal-title visually-hidden">Search</h4>
         <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body d-flex align-items-start justify-content-center">
+      <div class="modal-body align-items-start justify-content-center">
+        <!-- input -->
         <div class="input-group mb-3">
           <span class="input-group-text border-0 bg-white pt-0 pe-0 pb-0" id="basic-addon1">
             <svg class="icon-lg-font-size">
@@ -37,6 +38,48 @@ const search_mobile_input_html = `
             </svg>
           </span>
           <input type="text" id="myInput" class="form-control border-0" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <hr>
+        <!-- results -->
+        <div>
+          <ul class="list-unstyled">
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span>
+                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+                  </svg>
+                </span>
+                <span class="flex-fill">
+                  Chad Hampton Is A Very Loooooooooong Name
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span>
+                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+                  </svg>
+                </span>
+                <span class="flex-fill">
+                  Chad Hampton Is A Very Loooooooooong Name
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span>
+                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+                  </svg>
+                </span>
+                <span class="flex-fill">
+                  Chad Hampton Is A Very Loooooooooong Name
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
