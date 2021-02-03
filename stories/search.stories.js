@@ -137,16 +137,16 @@ const search_mobile_combo_input_html = `
       </div>
       <div class="modal-body align-items-start justify-content-center">
         <!-- input -->
-        <select class="form-select rounded-pill border-0 shadow-lg mb-7" aria-label="Search input">
+        <select class="search-select fs-6 form-select rounded-pill border-0 shadow-lg mb-7" aria-label="Search input">
           <option selected>search in...</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
         <div class="input-group flex-nowrap rounded-pill shadow-lg overflow-hidden">
-          <input type="text" id="myInput" class="form-control border-0" aria-label="Search input" aria-describedby="addon-wrapping">
+          <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping">
           <span class="input-group-text border-0" id="addon-wrapping">
-            <svg class="icon-lg-font-size mt-n1">
+            <svg class="icon-lg-font-size">
               <use xlink:href="${iconSprite}#tabler-search" />
               <span class="visually-hidden">Open Search Dialog</span>
             </svg>
