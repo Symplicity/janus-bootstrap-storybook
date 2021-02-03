@@ -15,12 +15,21 @@ export default {
    }
 };
 
-export const story1 = () => `<h1>Welcome</h1><p>To get started with this storybook, check out the <a href="/?path=/info/about-start-here--story">read me</a>.</p>`;
+export const story1 = () => `
+  <div>
+    <h1>Welcome</h1>
+    <p>To get started with this storybook, check out the <a href="/?path=/info/about-start-here--story">read me</a>.</p>
+  </div>
+`;
 
 story1.storyName = 'Read Me';
 
 
-export const story2 = () => `<p>View the changelog in the <a href="/?path=/info/about-start-here--story2">notes tab</a>.</p>`;
+export const story2 = () => `
+  <div>
+    <p>View the changelog in the <a href="/?path=/info/about-start-here--story2">notes tab</a>.</p>
+  </div>
+`;
 
 story2.storyName = 'Changelog';
 
@@ -34,7 +43,7 @@ export const story3 = () => {
    var thisVersion = pkg.version;
    
    return `
-   
+    <div> 
       <h2>Janus Bootstrap Storybook</h2>
       Version ${thisVersion}
       
@@ -60,7 +69,7 @@ export const story3 = () => {
             </tr>
          </tbody>
       </table>
-      
+    </div>
    `;
    
 };
