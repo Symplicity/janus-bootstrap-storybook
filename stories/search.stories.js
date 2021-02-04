@@ -2,6 +2,18 @@ import { document, setTimeout } from 'global';
 
 import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
 
+import {
+  array,
+  boolean,
+  button,
+  color,
+  date,
+  select,
+  withKnobs,
+  text,
+  number,
+} from '@storybook/addon-knobs';
+
 export default {
   title: 'Components/Search',
   parameters: {
@@ -28,58 +40,21 @@ const search_mobile_input_html = `
         <h4 class="modal-title visually-hidden">Search</h4>
         <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body align-items-start justify-content-center">
+      <div class="modal-search d-flex m-3 mt-0 mb-0">
         <!-- input -->
-        <div class="input-group mb-3">
-          <span class="input-group-text border-0 bg-white pt-0 pe-0 pb-0" id="basic-addon1">
-            <svg class="icon-lg-font-size">
-              <use xlink:href="${iconSprite}#tabler-chevron-left" />
-              <span class="visually-hidden">Exit Search Dialog</span>
-            </svg>
-          </span>
-          <input type="text" id="myInput" class="form-control border-0" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <hr>
+        <span class="input-group-text border-0 bg-white ms-2" id="basic-addon1">
+          <svg class="icon-lg-font-size">
+            <use xlink:href="${iconSprite}#tabler-chevron-left" />
+            <span class="visually-hidden">Exit Search Dialog</span>
+          </svg>
+        </span>
+        <input type="text" id="myInput" class="form-control border-0 p-0" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <hr class="ms-8 me-8">
+      <div class="modal-body align-items-start justify-content-center p-0 m-8 mt-0 mb-0">
         <!-- results -->
-        <div>
-          <ul class="list-unstyled">
-            <li>
-              <a class="dropdown-item d-flex" href="#">
-                <span>
-                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
-                  </svg>
-                </span>
-                <span class="flex-fill">
-                  Chad Hampton Is A Very Loooooooooong Name
-                </span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex" href="#">
-                <span>
-                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
-                  </svg>
-                </span>
-                <span class="flex-fill">
-                  Chad Hampton Is A Very Loooooooooong Name
-                </span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item d-flex" href="#">
-                <span>
-                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                    <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
-                  </svg>
-                </span>
-                <span class="flex-fill">
-                  Chad Hampton Is A Very Loooooooooong Name
-                </span>
-              </a>
-            </li>
-          </ul>
+        <div class="d-flex">
+          <ul class="list-unstyled w-100"></ul>
         </div>
       </div>
     </div>
@@ -98,6 +73,26 @@ export const SearchMobileInput = () => {
     myModal.addEventListener('shown.bs.modal', function () {
       myInput.focus()
     })
+
+    /* Populate results list for testing overflow */
+
+    const dotClick = document.querySelector('.list-unstyled');
+    dotClick.innerHTML = `
+      ${Array(20).fill().map((item, i) => `
+        <li>
+          <a class="dropdown-item d-flex" href="#" id="item-${i+1}">
+            <span>
+              <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+              </svg>
+            </span>
+            <span class="flex-fill">
+              Chad Hampton Is A Very Loooooooooong Name
+            </span>
+          </a>
+        </li>
+      `).join('')}
+    `
   },0)
 
   return container[0];
