@@ -33,11 +33,11 @@ const search_mobile_input_html = `
   </button>
 </div>
 
-<div class="modal" tabindex="-1" id="myModal">
+<div class="modal" tabindex="-1" id="myModal" aria-labelledby="modal-title">
   <div class="modal-dialog modal-fullscreen-lg-down" role="document">
     <div class="modal-content">
       <div class="modal-header bg-white">
-        <h4 class="modal-title visually-hidden">Search</h4>
+        <h4 id="modal-title" class="modal-title visually-hidden">Search</h4>
         <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-search d-flex m-3 mt-0 mb-0">
@@ -51,7 +51,7 @@ const search_mobile_input_html = `
         <input type="text" id="myInput" class="form-control border-0 p-0" aria-label="Username" aria-describedby="basic-addon1">
       </div>
       <hr class="ms-8 me-8">
-      <div class="modal-body align-items-start justify-content-center p-0 m-8 mt-0 mb-0">
+      <div class="modal-body align-items-start justify-content-center p-0 m-8 mt-0">
         <!-- results -->
         <div class="d-flex">
           <ul class="list-unstyled w-100"></ul>
@@ -76,8 +76,8 @@ export const SearchMobileInput = () => {
 
     /* Populate results list for testing overflow */
 
-    const dotClick = document.querySelector('.list-unstyled');
-    dotClick.innerHTML = `
+    const createListItems = document.querySelector('.list-unstyled');
+    createListItems.innerHTML = `
       ${Array(20).fill().map((item, i) => `
         <li>
           <a class="dropdown-item d-flex" href="#" id="item-${i+1}">
