@@ -36,22 +36,31 @@ const search_mobile_input_html = `
 <div class="modal" tabindex="-1" id="myModal" aria-labelledby="modal-title">
   <div class="modal-dialog modal-fullscreen-lg-down" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-white">
-        <h4 id="modal-title" class="modal-title visually-hidden">Search</h4>
-        <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-search d-flex m-3 mt-0 mb-0">
-        <!-- input -->
-        <span class="input-group-text border-0 bg-white ms-2" id="basic-addon1">
-          <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-chevron-left" />
-            <span class="visually-hidden">Exit Search Dialog</span>
-          </svg>
-        </span>
-        <input type="text" id="myInput" class="form-control border-0 p-0" aria-label="Username" aria-describedby="basic-addon1">
-      </div>
+        <div class="modal-header bg-white p-0">
+          <h4 id="modal-title" class="modal-title visually-hidden">Search</h4>
+        </div>
+        <form>
+          <div class="modal-search d-flex m-8 pt-0 mb-0">
+            <!-- Back -->
+            <div class="d-flex">
+              <button type="button" class="btn ms-n3" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="1.25rem" height="1.25rem" class="mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-chevron-left" />
+                </svg>
+              </button>
+            </div>
+            <!-- Input -->
+            <div class="d-flex justify-content-between w-100">
+              <input type="text" id="myInput" class="form-control border-0 p-0" aria-label="Search" aria-describedby="modal-title">
+            </div>
+            <!-- Clear --> 
+            <div class="d-flex">
+              <button type="reset" class="btn btn-close me-n3" aria-label="Clear"></button>
+            </div>
+          </div>
+      </form>
       <hr class="ms-8 me-8">
-      <div class="modal-body align-items-start justify-content-center p-0 m-8 mt-0">
+      <div class="modal-body align-items-start justify-content-center p-0 p-8 pt-0">
         <!-- results -->
         <div class="d-flex">
           <ul class="list-unstyled w-100"></ul>
@@ -80,14 +89,14 @@ export const SearchMobileInput = () => {
     createListItems.innerHTML = `
       ${Array(20).fill().map((item, i) => `
         <li>
-          <a class="dropdown-item d-flex" href="#" id="item-${i+1}">
+          <a class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i+1}">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
                 <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
               </svg>
             </span>
             <span class="flex-fill">
-              Chad Hampton Is A Very Loooooooooong Name
+              Chad Hampton Is A Very Loooooooooong Name - ${i+1}
             </span>
           </a>
         </li>
