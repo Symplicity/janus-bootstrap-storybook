@@ -44,7 +44,7 @@ const search_mobile_input_html = `
             <!-- Back -->
             <div class="d-flex">
               <button type="button" class="btn ms-n3" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="1.25rem" height="1.25rem" class="mt-n1">
+                <svg width="1.5rem" height="1.5rem" class="mt-n1">
                   <use xlink:href="${iconSprite}#tabler-chevron-left" />
                 </svg>
               </button>
