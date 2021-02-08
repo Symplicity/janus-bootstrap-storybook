@@ -163,6 +163,9 @@ const search_mobile_input_complex_results_html = `
         <div class="d-flex">
           <ul class="list-unstyled w-100"></ul>
         </div>
+        <a href="#" class="mt-n2 d-block fw-normal">
+          Search all "goog" results
+        </a>
       </div>
     </div>
   </div>
@@ -195,8 +198,12 @@ export const SearchMobileInputComplexResults = () => {
               </svg>
             </span>
             <span class="flex-fill ms-1">
-              <span class="d-flex">Google</span>
-              <span class="d-flex text-muted fs-6">Employer</span>
+              <span class="d-flex">
+                <span class="line-clamp-1">Google</span>
+              </span>
+              <span class="d-flex">
+                <span class="line-clamp-1 fs-6">Employer at a very prestigious institution</span>
+              </span>
             </span>
           </button>
         </li>
