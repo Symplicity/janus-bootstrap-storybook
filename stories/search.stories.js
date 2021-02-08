@@ -121,6 +121,106 @@ SearchMobileInput.parameters = {
   `
 };
 
+const search_mobile_input_complex_results_html = `
+<div class="m-3">
+  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+    <svg class="icon-xl-font-size mt-n1">
+      <use xlink:href="${iconSprite}#tabler-search" />
+      <span class="visually-hidden">Open Search Dialog</span>
+    </svg>
+  </button>
+</div>
+
+<div class="modal" tabindex="-1" id="myModal" aria-labelledby="modal-title">
+  <div class="modal-dialog modal-fullscreen-lg-down" role="document">
+    <div class="modal-content">
+        <div class="modal-header bg-white p-0">
+          <h4 id="modal-title" class="modal-title visually-hidden">Search</h4>
+        </div>
+        <form>
+          <div class="modal-search d-flex m-8 pt-0 mb-0">
+            <!-- Back -->
+            <div class="d-flex">
+              <button type="button" class="btn ms-n3" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="1.5rem" height="1.5rem" class="mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-chevron-left" />
+                </svg>
+              </button>
+            </div>
+            <!-- Input -->
+            <div class="d-flex justify-content-between w-100">
+              <input type="text" id="myInput" class="form-control border-0 p-0" aria-label="Search" aria-describedby="modal-title">
+            </div>
+            <!-- Clear --> 
+            <div class="d-flex">
+              <button type="reset" class="btn btn-close me-n3" aria-label="Clear"></button>
+            </div>
+          </div>
+      </form>
+      <hr class="ms-8 me-8">
+      <div class="modal-body align-items-start justify-content-center p-0 p-8 pt-0">
+        <!-- results -->
+        <div class="d-flex">
+          <ul class="list-unstyled w-100"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+export const SearchMobileInputComplexResults = () => {
+  const container = $('<div style="margin: 0;"></div>').append(search_mobile_input_complex_results_html)
+
+  setTimeout(function() {
+    /* Mimic autofocus attribute in bs.modal: http://localhost:9001/docs/5.0/components/modal/#how-it-works */
+
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+  
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
+
+    /* Populate results list for testing overflow */
+
+    const createListItems = document.querySelector('.list-unstyled');
+    createListItems.innerHTML = `
+      ${Array(5).fill().map((item, i) => `
+        <li>
+          <button class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i+1}">
+            <span class="list-avatar rounded-circle m-1 text-center">
+              <svg class="icon-lg-font-size mt-2">
+                <use xlink:href="${iconSprite}#tabler-building" />
+                <span class="visually-hidden">Open Search Dialog</span>
+              </svg>
+            </span>
+            <span class="flex-fill ms-1">
+              <span class="d-flex">Google</span>
+              <span class="d-flex text-muted fs-6">Employer</span>
+            </span>
+          </button>
+        </li>
+      `).join('')}
+    `
+  },0)
+
+  return container[0];
+};
+
+SearchMobileInputComplexResults.storyName = 'Mobile Input Complex Results';
+
+SearchMobileInputComplexResults.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${search_mobile_input_complex_results_html}
+  \`\`\`
+
+  `
+};
+
 
 const search_mobile_combo_input_html = `
 <div class="m-3">
