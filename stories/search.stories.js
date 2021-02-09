@@ -23,9 +23,93 @@ export default {
   },
 };
 
+const search_desktop_input_html = `
+<div class="m-3">
+  <div class="dropdown d-none d-lg-block">
+    <div class="d-flex">
+      <button class="btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton">
+        <svg class="icon-xl-font-size m-0">
+          <use xlink:href="${iconSprite}#tabler-search" />
+          <span class="visually-hidden">Open Search Dialog</span>
+        </svg>
+      </button>
+    </div>
+
+    <form class="mt-2">
+      <div class="d-flex align-items-center">
+        <div class="active d-flex btn-search btn btn-action btn-action-icon-only btn-action-header" role="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
+          <div class="d-flex">
+            <svg class="icon-xl-font-size ms-0 me-2 mt-1">
+              <use xlink:href="${iconSprite}#tabler-search" />
+              <span class="visually-hidden">Open Search Dialog</span>
+            </svg>
+          </div>
+          <div class="flex-grow-1">
+            <!-- Input -->
+            <input type="text" id="myInput" class="form-control border-0 p-1" aria-label="Search" aria-describedby="dropdownMenuButton2" autofocus>
+          </div>
+        </div>
+      </div>
+    </form>
+    <ul class="btn-search-results dropdown-menu p-0 show" aria-labelledby="dropdownMenuButton2">
+
+    </ul>
+  </div>
+</div>
+`;
+
+export const SearchDesktopInput = () => {
+  const container = $('<div style="margin: 0;"></div>').append(search_desktop_input_html)
+
+  setTimeout(function() {
+
+    /*
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+  
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
+    */
+    const createListItems = document.querySelector('.dropdown-menu');
+    createListItems.innerHTML = `
+      ${Array(5).fill().map((item, i) => `
+        <li>
+          <a class="dropdown-item d-flex mb-2" href="#" id="item-${i+1}">
+            <span>
+              <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+              </svg>
+            </span>
+            <span class="flex-fill">
+              Chad Hampton Is A Very Loooooooooong Name - ${i+1}
+            </span>
+          </a>
+        </li>
+      `).join('')}
+    `
+  },0)
+
+  return container[0];
+};
+
+SearchDesktopInput.storyName = 'Desktop Input';
+
+SearchDesktopInput.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${search_desktop_input_html}
+  \`\`\`
+
+  `
+};
+
 const search_mobile_input_html = `
 <div class="m-3">
-  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header" type="button">
     <svg class="icon-xl-font-size mt-n1">
       <use xlink:href="${iconSprite}#tabler-search" />
       <span class="visually-hidden">Open Search Dialog</span>
