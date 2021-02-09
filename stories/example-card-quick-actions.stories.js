@@ -2,6 +2,18 @@ import { document, setTimeout } from 'global';
 
 import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
 
+import {
+  array,
+  boolean,
+  button,
+  color,
+  date,
+  select,
+  withKnobs,
+  text,
+  number,
+} from '@storybook/addon-knobs';
+
 export default {
   title: 'Examples/Cards/Quick Actions',
   decorators: [withKnobs],
@@ -89,7 +101,7 @@ export const CardBasic = () => {
 
   const card_title_text = text("Title", "Quick Actions");
   const card_icon_class = text("Icon Class", "tabler-link");
-  const card_item_icon_class = text("Item Icon Class", "tabler-search");
+  const card_item_icon_class = text("Dropdown Item Icon Class", "tabler-search");
   const card_icon_bg_color = select(
       "Icon Background Color",
       icon_bg_color_options,
