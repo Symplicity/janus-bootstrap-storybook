@@ -25,33 +25,18 @@ export default {
 
 const search_desktop_input_html = `
 <div class="m-3">
-  <div class="dropdown d-none d-lg-block">
-    <div class="d-flex">
-      <button class="btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton">
-        <svg class="icon-xl-font-size m-0">
-          <use xlink:href="${iconSprite}#tabler-search" />
-          <span class="visually-hidden">Open Search Dialog</span>
-        </svg>
-      </button>
+  <div class="dropdown">
+    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+        <use xlink:href="${iconSprite}#tabler-search" />
+        <span class="visually-hidden">Open Search Dialog</span>
+      </svg>
+      <form class="d-flex w-100 d-none d-lg-block">
+        <label for="search-input" class="visually-hidden">Search</label>
+        <input type="text" id="search-input" class="form-control border-0 p-1 bg-transparent">
+      </form>
     </div>
-
-    <form class="mt-2">
-      <div class="d-flex align-items-center">
-        <div class="active d-flex btn-search btn btn-action btn-action-icon-only btn-action-header" role="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
-          <div class="d-flex">
-            <svg class="icon-xl-font-size ms-0 me-2 mt-1">
-              <use xlink:href="${iconSprite}#tabler-search" />
-              <span class="visually-hidden">Open Search Dialog</span>
-            </svg>
-          </div>
-          <div class="flex-grow-1">
-            <!-- Input -->
-            <input type="text" id="myInput" class="form-control border-0 p-1" aria-label="Search" aria-describedby="dropdownMenuButton2" autofocus>
-          </div>
-        </div>
-      </div>
-    </form>
-    <ul class="btn-search-results dropdown-menu p-0 show" aria-labelledby="dropdownMenuButton2">
+    <ul class="dropdown-menu btn-search-results p-0" aria-labelledby="dropdownMenuButton">
 
     </ul>
   </div>
