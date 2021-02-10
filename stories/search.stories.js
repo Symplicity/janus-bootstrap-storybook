@@ -24,14 +24,21 @@ export default {
 };
 
 const search_desktop_input_html = `
-<div class="m-3">
+<div class="bg-light rounded m-3 mb-0 p-3 d-lg-none text-center">
+  <p class="fs-4 m-4">
+    This component only displays above the "lg" breakpoint (992px).<br><br>
+    Increase the width of your screen until this message disappears.
+  </p>
+</div>
+
+<div class="m-3 d-none d-lg-block">
   <div class="dropdown">
     <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
       <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
         <use xlink:href="${iconSprite}#tabler-search" />
         <span class="visually-hidden">Open Search Dialog</span>
       </svg>
-      <form class="d-flex w-100 d-none d-lg-block">
+      <form class="d-flex w-100">
         <label for="search-input" class="visually-hidden">Search</label>
         <input type="text" id="search-input" class="form-control border-0 p-1 bg-transparent">
       </form>
