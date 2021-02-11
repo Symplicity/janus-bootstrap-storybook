@@ -109,7 +109,7 @@ const search_desktop_combo_input_html = `
 
 <div class="m-3 d-none d-lg-block">
   <div class="dropdown">
-    <div class="d-flex align-items-center btn-search btn-search-combo btn btn-action btn-action-icon-only btn-action-header p-0 border-0 shadow-lg" type="button">
+    <div class="d-flex align-items-center btn-search btn-search-combo btn btn-action btn-action-icon-only btn-action-header p-0 border-0" role="button">
       <form class="d-flex w-100 rounded-pill shadow-lg">
         <!-- input -->
         <select class="search-select fs-6 form-select rounded-pill mr-0" aria-label="Search input">
