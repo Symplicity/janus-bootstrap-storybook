@@ -99,6 +99,78 @@ SearchDesktopInput.parameters = {
   `
 };
 
+const search_desktop_combo_input_html = `
+<div class="bg-light rounded m-3 mb-0 p-3 d-lg-none text-center">
+  <p class="fs-4 m-4">
+    This component only displays above the "lg" breakpoint (992px).<br><br>
+    Increase the width of your screen until this message disappears.
+  </p>
+</div>
+
+<div class="m-3 d-none d-lg-block">
+  <div class="dropdown">
+    <div class="d-flex align-items-center btn-search btn-search-combo btn btn-action btn-action-icon-only btn-action-header p-0 border-0 shadow-lg" type="button">
+      <form class="d-flex w-100 rounded-pill shadow-lg">
+        <!-- input -->
+        <select class="search-select fs-6 form-select rounded-pill mr-0" aria-label="Search input">
+          <option selected>search in...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Threeeeeeeee</option>
+        </select>
+        <div class="input-group flex-nowrap rounded-pill overflow-hidden">
+          <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping" autofocus>
+          <button class="input-group-text border-0 ms-0" id="addon-wrapping">
+            <svg class="icon-lg-font-size m-0">
+              <use xlink:href="${iconSprite}#tabler-search" />
+              <span class="visually-hidden">Open Search Dialog</span>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+export const SearchDesktopComboInput = () => {
+  const container = $('<div style="margin: 0;"></div>').append(search_desktop_combo_input_html)
+
+  setTimeout(function() {
+   
+    var $myInput = $('#myInput')
+    $myInput.focus()
+
+    $('select').change(function(){
+      var text = $(this).find('option:selected').text()
+      var $aux = $('<select/>').append($('<option/>').text(text))
+      var myInput = $('#myInput')
+      $(this).after($aux)
+      $(this).width($aux.width() + 30)
+      $aux.remove()
+
+      $myInput.focus()
+    }).change()
+
+  },0)
+
+  return container[0];
+};
+
+SearchDesktopComboInput.storyName = 'Desktop Combo Input';
+
+SearchDesktopComboInput.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${search_desktop_combo_input_html}
+  \`\`\`
+
+  `
+};
+
 const search_mobile_input_html = `
 <div class="m-3">
   <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header" type="button">
