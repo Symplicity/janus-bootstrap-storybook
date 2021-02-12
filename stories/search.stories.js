@@ -33,17 +33,28 @@ const search_desktop_input_html = `
 
 <div class="m-3 d-none d-lg-block">
   <div class="dropdown">
-    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+        <use xlink:href="${iconSprite}#tabler-search" />
+        <span class="visually-hidden">Open Search Dialog</span>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="m-3 d-none d-lg-block">
+  <div class="dropdown">
+    <div class="show d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
       <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
         <use xlink:href="${iconSprite}#tabler-search" />
         <span class="visually-hidden">Open Search Dialog</span>
       </svg>
       <form class="d-flex w-100">
         <label for="search-input" class="visually-hidden">Search</label>
-        <input type="text" id="search-input" class="form-control border-0 p-1 bg-transparent">
+        <input type="text" id="search-input" class="form-control border-0 p-1 bg-transparent" autofocus>
       </form>
     </div>
-    <ul class="dropdown-menu btn-search-results p-0" aria-labelledby="dropdownMenuButton">
+    <ul class="show dropdown-menu btn-search-results p-0" aria-labelledby="dropdownMenuButton2">
 
     </ul>
   </div>
