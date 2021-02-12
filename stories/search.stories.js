@@ -66,14 +66,6 @@ export const SearchDesktopInput = () => {
 
   setTimeout(function() {
 
-    /*
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
-  
-    myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
-    */
     const createListItems = document.querySelector('.dropdown-menu');
     createListItems.innerHTML = `
       ${Array(5).fill().map((item, i) => `
@@ -119,27 +111,36 @@ const search_desktop_combo_input_html = `
 </div>
 
 <div class="m-3 d-none d-lg-block">
-  <div class="dropdown">
-    <div class="d-flex align-items-center btn-search btn-search-combo btn btn-action btn-action-icon-only btn-action-header p-0 border-0" role="button">
-      <form class="d-flex w-100 rounded-pill shadow-lg">
-        <!-- input -->
-        <select class="search-select fs-6 form-select rounded-pill mr-0" aria-label="Search input">
-          <option selected>search in...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Threeeeeeeee</option>
-        </select>
-        <div class="input-group flex-nowrap rounded-pill overflow-hidden">
-          <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping" autofocus>
-          <button class="input-group-text border-0 ms-0" id="addon-wrapping">
-            <svg class="icon-lg-font-size m-0">
-              <use xlink:href="${iconSprite}#tabler-search" />
-              <span class="visually-hidden">Open Search Dialog</span>
-            </svg>
-          </button>
-        </div>
-      </form>
+  <div class="">
+    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton1" data-toggle="collapse">
+      <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+        <use xlink:href="${iconSprite}#tabler-search" />
+        <span class="visually-hidden">Open Search Dialog</span>
+      </svg>
     </div>
+  </div>
+</div>
+
+<div class="m-3 d-none d-lg-block">
+  <div class="d-flex align-items-center btn-search btn-search-combo btn btn-action btn-action-icon-only btn-action-header p-0 border-0 shadow-lg" role="button">
+    <form class="d-flex w-100 rounded-pill">
+      <!-- input -->
+      <select class="search-select fs-6 form-select rounded-pill mr-0" aria-label="Search input">
+        <option selected>search in...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Threeeeeeeee</option>
+      </select>
+      <div class="input-group flex-nowrap rounded-pill overflow-hidden">
+        <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping" autofocus>
+        <button class="input-group-text border-0 ms-0" id="addon-wrapping">
+          <svg class="icon-lg-font-size m-0">
+            <use xlink:href="${iconSprite}#tabler-search" />
+            <span class="visually-hidden">Open Search Dialog</span>
+          </svg>
+        </button>
+      </div>
+    </form>
   </div>
 </div>
 `;
@@ -148,7 +149,9 @@ export const SearchDesktopComboInput = () => {
   const container = $('<div style="margin: 0;"></div>').append(search_desktop_combo_input_html)
 
   setTimeout(function() {
-   
+  
+    // For demonstration purposes only, do not use in production
+
     var $myInput = $('#myInput')
     $myInput.focus()
 
