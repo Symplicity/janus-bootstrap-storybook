@@ -36,7 +36,7 @@ const primaryHTML = `
     <svg width="1rem" height="1rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Primary
-  Primary</button>
+  </button>
   <button type="button" class="btn btn-primary" disabled>
     <svg width="1rem" height="1rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
