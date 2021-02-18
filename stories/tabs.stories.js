@@ -37,7 +37,7 @@ For additional documentation, see:
 let tabs_html = `
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active</a>
+    <a class="nav-link active" aria-current="page" href="#">Active <span class="badge bg-light text-dark rounded-circle">44</span></a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
