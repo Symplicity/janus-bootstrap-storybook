@@ -35,18 +35,21 @@ For additional documentation, see:
 `;
 
 let tabs_html = `
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs bg-white">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Active <span class="badge bg-light text-dark rounded-circle">44</span></a>
+    <a class="nav-link fs-5 active" aria-current="page" href="#">Core Information</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link fs-5" href="#">Summaries <span class="badge bg-light text-dark rounded-circle">2</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link fs-5" href="#">Actions</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link fs-5" href="#">Meetings <span class="badge bg-light text-dark rounded-circle p-1">44</span></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link fs-5" href="#">On-Campus Interview <span class="badge bg-light text-dark rounded-circle p-1">44</span></a>
   </li>
 </ul>
 `;
