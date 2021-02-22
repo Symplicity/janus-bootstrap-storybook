@@ -49,7 +49,7 @@ let tabs_html = `
     <a class="nav-link fs-5" href="#">Meetings <span class="badge bg-light text-dark rounded-circle p-1">44</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link fs-5" href="#">On-Campus Interview <span class="badge bg-light text-dark rounded-circle p-1">44</span></a>
+    <a class="nav-link fs-5" href="#">On-Campus Interview and Other Non Campus Interview Placement<span class="badge bg-light text-dark rounded-circle p-1">44</span></a>
   </li>
 </ul>
 `;
