@@ -28,35 +28,37 @@ const actionHTML = `
         <span class="visually-hidden">More Actions</span>
       </svg>
     </button>
-    <button type="button" class="btn btn-action btn-action-icon-only rounded-circle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown">
-      <svg class="icon-lg-font-size mt-n1">
-        <use xlink:href="${iconSprite}#tabler-dots" />
-        <span class="visually-hidden">More Actions</span>
-      </svg>
-    </button>
-    <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-1" aria-labelledby="dropdownMenuButton1" >
-      <li>
-        <a class="dropdown-item d-flex" href="#">
-          Add to Career Portfolio
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item d-flex" href="#">
-          Remove QR Code
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item d-flex" href="#">
-          View as Word
-        </a>
-      </li>
-      <li><hr class="dropdown-divider"></li>
-      <li>
-        <a class="dropdown-item d-flex text-danger" href="#">
-          Delete
-        </a>
-      </li>
-    </ul>
+    <div class="btn-group">
+      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-display="static">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-dots" />
+          <span class="visually-hidden">More Actions</span>
+        </svg>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-2 text-nowrap" aria-labelledby="dropdownMenuButton1" >
+        <li>
+          <a class="dropdown-item" href="#">
+            Add to Career Portfolio
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">
+            Remove QR Code
+          </a>
+        </li>
+        <li>
+          <a class="dropdown-item" href="#">
+            View as Word
+          </a>
+        </li>
+        <li><hr class="dropdown-divider"></li>
+        <li>
+          <a class="dropdown-item text-danger" href="#">
+            Delete
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 `;
 
