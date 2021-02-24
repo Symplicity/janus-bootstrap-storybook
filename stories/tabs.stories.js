@@ -35,7 +35,7 @@ For additional documentation, see:
 `;
 
 let tabsSingleRowHTML = `
-<ul class="nav nav-tabs bg-white rounded-top border border-light d-inline-flex ps-7 pe-7">
+<ul class="nav nav-tabs bg-white rounded-top border border-light ps-7 pe-7">
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Core Information</span>
@@ -94,7 +94,7 @@ TabsSingleRow.parameters = {
 };
 
 let tabsDoubleRowHTML = `
-<ul class="nav nav-tabs bg-white rounded-top border border-light d-inline-flex ps-7 pe-7">
+<ul class="nav nav-tabs bg-white rounded-top border border-light ps-7 pe-7">
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Core Information</span>
@@ -126,7 +126,7 @@ let tabsDoubleRowHTML = `
     </a>
   </li>
 </ul>
-<ul class="nav nav-tabs bg-white border border-light border-top-0 d-inline-flex ps-7 pe-7 w-100">
+<ul class="nav nav-tabs bg-white border border-light border-top-0 ps-7 pe-7">
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Core Information</span>
