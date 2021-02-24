@@ -35,7 +35,7 @@ For additional documentation, see:
 `;
 
 let tabsSingleRowHTML = `
-<ul class="nav nav-tabs bg-white">
+<ul class="nav nav-tabs bg-white rounded-top border border-light d-inline-flex ps-7 pe-7">
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Core Information</span>
