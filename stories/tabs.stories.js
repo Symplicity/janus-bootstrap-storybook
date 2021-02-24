@@ -34,7 +34,7 @@ For additional documentation, see:
 
 `;
 
-let tabs_html = `
+let tabsSingleRowHTML = `
 <ul class="nav nav-tabs bg-white">
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
@@ -70,22 +70,11 @@ let tabs_html = `
 `;
 
 
-export const story1 = () => { 
+export const TabsSingleRow = () => `<div class="text-center" style="margin-top:100px">${tabsSingleRowHTML}</div>`;
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(tabs_html);
-  
-  setTimeout(function() {
-    $(function() {
-      container.find('[data-bs-toggle="popover"]').popover();
-    });
-  },0)
-  
-  return container[0]; 
-    
-};
-story1.storyName = 'Tabs';
+TabsSingleRow.storyName = 'Single Row';
 
-story1.parameters = { 
+TabsSingleRow.parameters = { 
   notes: `
 
     #Tabs
@@ -93,16 +82,12 @@ story1.parameters = {
     ###HTML
 
     \`\`\`html
-    ${tabs_html}
+    ${TabsSingleRow}
     \`\`\`
     
     ###JavaScript (Bootstrap/jQuery)
     Call the popover plugin function for each popover.
 
-    \`\`\`js
-    $('[data-bs-toggle="popover"]').popover();
-    \`\`\`
-    
     ${moreDocumentation}
     
   `
