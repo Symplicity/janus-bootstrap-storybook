@@ -175,7 +175,7 @@ TabsDoubleRow.parameters = {
 let tabsWithControlsHTML = `
   <div class="bg-white rounded-top border border-light d-flex">
     <button class="d-flex align-items-center bg-white border-0 text-light">
-      <svg class="icon-xl-font-size">
+      <svg class="icon-lg-font-size">
         <use xlink:href="${iconSprite}#tabler-chevron-left" />
         <span class="visually-hidden">Open Search Dialog</span>
       </svg>
@@ -213,7 +213,7 @@ let tabsWithControlsHTML = `
       </li>
     </ul>
     <button class="d-flex align-items-center bg-white border-0 text-primary">
-      <svg class="icon-xl-font-size">
+      <svg class="icon-lg-font-size">
         <use xlink:href="${iconSprite}#tabler-chevron-right" />
         <span class="visually-hidden">Open Search Dialog</span>
       </svg>
@@ -224,7 +224,7 @@ let tabsWithControlsHTML = `
 
 export const TabsWithControls = () => `<div class="text-center" style="margin-top:100px">${tabsWithControlsHTML}</div>`;
 
-TabsWithControls.storyName = 'with Controls';
+TabsWithControls.storyName = 'SRow with Controls';
 
 TabsWithControls.parameters = { 
   notes: `
