@@ -46,7 +46,7 @@ let tabsSingleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -57,7 +57,7 @@ let tabsSingleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Meetings</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
     </a>
   </li>
   <li class="nav-item">
@@ -65,7 +65,7 @@ let tabsSingleRowHTML = `
       <span class="line-clamp-2 text-start">
         On-Campus Interview and Other Non Campus Interview Placement
       </span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
     </a>
   </li>
 </ul>
@@ -102,7 +102,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -113,7 +113,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Meetings</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
     </a>
   </li>
   <li class="nav-item">
@@ -121,7 +121,7 @@ let tabsDoubleRowHTML = `
       <span class="line-clamp-2 text-start">
         On-Campus Interview and Other Non Campus Interview Placement
       </span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
     </a>
   </li>
 </ul>
@@ -134,7 +134,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -183,7 +183,7 @@ let tabsWithControlsSingleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5" href="#">
           <span>Summaries</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
         </a>
       </li>
       <li class="nav-item">
@@ -194,7 +194,7 @@ let tabsWithControlsSingleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5" href="#">
           <span>Meetings</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
         </a>
       </li>
       <li class="nav-item">
@@ -254,7 +254,7 @@ let tabsWithControlsDoubleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5" href="#">
           <span>Summaries</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
         </a>
       </li>
       <li class="nav-item">
@@ -265,7 +265,7 @@ let tabsWithControlsDoubleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5" href="#">
           <span>Meetings</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
         </a>
       </li>
       <li class="nav-item">
@@ -273,7 +273,7 @@ let tabsWithControlsDoubleRowHTML = `
           <span class="line-clamp-2 text-start">
             On-Campus Interview and Other Non Campus Interview Placement
           </span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
         </a>
       </li>
     </ul>
@@ -301,7 +301,7 @@ let tabsWithControlsDoubleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5 active" aria-current="page" href="#">
           <span>Summaries</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
         </a>
       </li>
       <li class="nav-item">
