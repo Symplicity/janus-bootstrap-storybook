@@ -202,7 +202,7 @@ let tabsWithControlsSingleRowHTML = `
           <span class="line-clamp-2 text-start">
             On-Campus Interview and Other Non Campus Interview Placement
           </span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">44</span>
         </a>
       </li>
     </ul>
