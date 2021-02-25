@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+
 import $ from 'jquery';
 window.jQuery = window.$ = $;
 
@@ -44,7 +46,7 @@ let tabsSingleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -55,7 +57,7 @@ let tabsSingleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Meetings</span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
     </a>
   </li>
   <li class="nav-item">
@@ -63,7 +65,7 @@ let tabsSingleRowHTML = `
       <span class="line-clamp-2 text-start">
         On-Campus Interview and Other Non Campus Interview Placement
       </span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
     </a>
   </li>
 </ul>
@@ -103,7 +105,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -114,7 +116,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5" href="#">
       <span>Meetings</span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
     </a>
   </li>
   <li class="nav-item">
@@ -122,7 +124,7 @@ let tabsDoubleRowHTML = `
       <span class="line-clamp-2 text-start">
         On-Campus Interview and Other Non Campus Interview Placement
       </span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">44</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
     </a>
   </li>
 </ul>
@@ -135,7 +137,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge text-dark rounded-circle p-1 ms-1">2</span>
+      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -170,4 +172,75 @@ TabsDoubleRow.parameters = {
   `
 };
 
+let tabsWithControlsHTML = `
+  <div class="bg-white rounded-top border border-light d-flex">
+    <button class="d-flex align-items-center bg-white border-0 text-light">
+      <svg class="icon-xl-font-size">
+        <use xlink:href="${iconSprite}#tabler-chevron-left" />
+        <span class="visually-hidden">Open Search Dialog</span>
+      </svg>
+    </button>
+    <ul class="flex-grow-1 nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link fs-5 active" aria-current="page" href="#">
+          <span>Core Information</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-5" href="#">
+          <span>Summaries</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">2</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-5" href="#">
+          <span>Actions</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-5" href="#">
+          <span>Meetings</span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fs-5" href="#">
+          <span class="line-clamp-2 text-start">
+            On-Campus Interview and Other Non Campus Interview Placement
+          </span>
+          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1">44</span>
+        </a>
+      </li>
+    </ul>
+    <button class="d-flex align-items-center bg-white border-0 text-primary">
+      <svg class="icon-xl-font-size">
+        <use xlink:href="${iconSprite}#tabler-chevron-right" />
+        <span class="visually-hidden">Open Search Dialog</span>
+      </svg>
+    </button>
+  </div>
+`;
 
+
+export const TabsWithControls = () => `<div class="text-center" style="margin-top:100px">${tabsWithControlsHTML}</div>`;
+
+TabsWithControls.storyName = 'with Controls';
+
+TabsWithControls.parameters = { 
+  notes: `
+
+    #Tabs
+
+    ###HTML
+
+    \`\`\`html
+    ${TabsWithControls}
+    \`\`\`
+    
+    ###JavaScript (Bootstrap/jQuery)
+    Call the popover plugin function for each popover.
+
+    ${moreDocumentation}
+    
+  `
+};
