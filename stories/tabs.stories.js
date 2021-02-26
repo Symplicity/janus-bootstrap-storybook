@@ -134,7 +134,7 @@ let tabsDoubleRowHTML = `
   <li class="nav-item">
     <a class="nav-link fs-5 active" aria-current="page" href="#">
       <span>Summaries</span>
-      <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
+      <span class="badge bg-primary count-badge fw-bold text-white rounded-circle p-1 ms-1 mt-1">2</span>
     </a>
   </li>
   <li class="nav-item">
@@ -301,7 +301,7 @@ let tabsWithControlsDoubleRowHTML = `
       <li class="nav-item">
         <a class="nav-link fs-5 active" aria-current="page" href="#">
           <span>Summaries</span>
-          <span class="badge bg-light count-badge fw-bold text-dark rounded-circle p-1 ms-1 mt-1">2</span>
+          <span class="badge bg-primary count-badge fw-bold text-white rounded-circle p-1 ms-1 mt-1">2</span>
         </a>
       </li>
       <li class="nav-item">
