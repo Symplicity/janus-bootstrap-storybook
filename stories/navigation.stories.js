@@ -78,7 +78,7 @@ const navigation_html = `
           </li>
           <li class="nav-item">
             <div class="list-group">
-              <a class="d-flex text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+              <a class="d-flex nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
                 <span>
                   <svg width="1rem" height="1rem" class="me-2 mt-n1">
                     <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -93,16 +93,40 @@ const navigation_html = `
                   </svg>
                 </span>
               </a>
-              <ul class="navbar-nav collapse" aria-labelledby="dropdownMenu2" id="navbarNav2">
+              <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu2" id="navbarNav2">
                 <li class="nav-item">
-                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
                         <use xlink:href="${iconSprite}#tabler-point" />
                       </svg>
                     </span>
                     <span class="flex-fill">
-                      Home
+                      Career Fairs
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
+                    <span>
+                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-point" />
+                      </svg>
+                    </span>
+                    <span class="flex-fill">
+                      Information Sessions
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark ms-n2 ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                    <span>
+                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-point" />
+                      </svg>
+                    </span>
+                    <span class="flex-fill">
+                      On-Campus Job Interviews
                     </span>
                   </a>
                 </li>
