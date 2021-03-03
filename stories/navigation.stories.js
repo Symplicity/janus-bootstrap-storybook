@@ -76,6 +76,39 @@ const navigation_html = `
               </span>
             </a>
           </li>
+          <li class="nav-item">
+            <div class="list-group">
+              <a class="d-flex text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+                <span>
+                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-calendar" />
+                  </svg>
+                </span>
+                <span class="w-100">
+                  Events
+                </span>
+                <span class="tabler-chevron-down h4 mt-0 mb-0 me-1 text-right">
+                  <svg width="1rem" height="1rem">
+                    <use xlink:href="${iconSprite}#tabler-chevron-down" />
+                  </svg>
+                </span>
+              </a>
+              <ul class="navbar-nav collapse" aria-labelledby="dropdownMenu2" id="navbarNav2">
+                <li class="nav-item">
+                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                    <span>
+                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-point" />
+                      </svg>
+                    </span>
+                    <span class="flex-fill">
+                      Home
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
