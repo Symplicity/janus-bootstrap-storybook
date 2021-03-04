@@ -98,7 +98,7 @@ const navigation_html = `
                   <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point" />
+                        <use xlink:href="${iconSprite}#tabler-point-on" />
                       </svg>
                     </span>
                     <span class="flex-fill">
@@ -110,7 +110,7 @@ const navigation_html = `
                   <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point" />
+                        <use xlink:href="${iconSprite}#tabler-point-on" />
                       </svg>
                     </span>
                     <span class="flex-fill">
@@ -122,7 +122,7 @@ const navigation_html = `
                   <a class="nav-link text-dark ms-n2 ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point" />
+                        <use xlink:href="${iconSprite}#tabler-point-on" />
                       </svg>
                     </span>
                     <span class="flex-fill">
