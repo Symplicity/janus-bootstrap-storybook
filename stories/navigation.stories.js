@@ -41,7 +41,7 @@ const desktop_navigation_html = `
       <nav class="d-block navbar navbar-light shadow-lg">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
-            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
               <svg width="1rem" height="1rem">
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
@@ -50,7 +50,7 @@ const desktop_navigation_html = `
           </div>
         </div>
       </nav>
-      <nav class="main-nav collapse navbar-collapse bg-light mt-0" id="navbarNav">
+      <nav class="main-nav navbar-collapse bg-light mt-0" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-4">
           <li class="nav-item">
             <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
@@ -172,7 +172,7 @@ const mobile_navigation_html = `
       </nav>
       <div class="modal" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-          <nav class="main-nav bg-light mt-0 vh-100 bg-light" id="navbarNav">
+          <nav class="main-nav bg-white mt-0 vh-100 bg-light" id="navbarNav">
             <ul class="navbar-nav pt-4 pb-4">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
