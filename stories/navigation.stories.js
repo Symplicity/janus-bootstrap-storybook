@@ -37,8 +37,8 @@ For additional documentation, see:
 `;
 
 const desktop_navigation_html = `
-    <div class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
-      <header class="main-nav d-block navbar navbar-light shadow-lg">
+    <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
+      <nav class="d-block navbar navbar-light shadow-lg">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@ const desktop_navigation_html = `
             <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
         </div>
-      </header>
+      </nav>
       <nav class="main-nav collapse navbar-collapse bg-light mt-0" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-4">
           <li class="nav-item">
@@ -135,7 +135,7 @@ const desktop_navigation_html = `
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
 `
 
 export const DesktopNavigation = () => `${desktop_navigation_html}`;
@@ -156,105 +156,110 @@ DesktopNavigation.parameters = {
 
 
 const mobile_navigation_html = `
-    <div class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
-      <header class="main-nav d-block navbar navbar-light shadow-lg">
+    <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
+      <nav class="d-block navbar navbar-light shadow-lg">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
-            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
               <svg width="1rem" height="1rem">
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
+              <span class="visually-hidden">Toggle Main Navigation</span>
             </button>
             <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
         </div>
-      </header>
-      <nav class="main-nav collapse navbar-collapse bg-light mt-0" id="navbarNav">
-        <ul class="navbar-nav pt-4 pb-4">
-          <li class="nav-item">
-            <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
-              <span>
-                <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                  <use xlink:href="${iconSprite}#tabler-home" />
-                </svg>
-              </span>
-              <span class="flex-fill">
-                Home
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
-              <span>
-                <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                  <use xlink:href="${iconSprite}#tabler-briefcase" />
-                </svg>
-              </span>
-              <span class="flex-fill">
-                Jobs
-              </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <div class="list-group">
-              <a class="d-flex nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
-                <span>
-                  <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                    <use xlink:href="${iconSprite}#tabler-calendar" />
-                  </svg>
-                </span>
-                <span class="w-100">
-                  Events
-                </span>
-                <span class="tabler-chevron-down h4 mt-0 mb-0 me-1 text-right">
-                  <svg width="1rem" height="1rem">
-                    <use xlink:href="${iconSprite}#tabler-chevron-down" />
-                  </svg>
-                </span>
-              </a>
-              <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu2" id="navbarNav2">
-                <li class="nav-item">
-                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
-                    <span>
-                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point-on" />
-                      </svg>
-                    </span>
-                    <span class="flex-fill">
-                      Career Fairs
-                    </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
-                    <span>
-                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point-on" />
-                      </svg>
-                    </span>
-                    <span class="flex-fill">
-                      Information Sessions
-                    </span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark ms-n2 ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
-                    <span>
-                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                        <use xlink:href="${iconSprite}#tabler-point-on" />
-                      </svg>
-                    </span>
-                    <span class="flex-fill">
-                      On-Campus Job Interviews
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
       </nav>
-    </div>
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-fullscreen">
+          <nav class="main-nav bg-light mt-0 vh-100 bg-light" id="navbarNav">
+            <ul class="navbar-nav pt-4 pb-4">
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                  <span>
+                    <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                      <use xlink:href="${iconSprite}#tabler-home" />
+                    </svg>
+                  </span>
+                  <span class="flex-fill">
+                    Home
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+                  <span>
+                    <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                      <use xlink:href="${iconSprite}#tabler-briefcase" />
+                    </svg>
+                  </span>
+                  <span class="flex-fill">
+                    Jobs
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <div class="list-group">
+                  <a class="d-flex nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+                    <span>
+                      <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-calendar" />
+                      </svg>
+                    </span>
+                    <span class="w-100">
+                      Events
+                    </span>
+                    <span class="tabler-chevron-down h4 mt-0 mb-0 me-1 text-right">
+                      <svg width="1rem" height="1rem">
+                        <use xlink:href="${iconSprite}#tabler-chevron-down" />
+                      </svg>
+                    </span>
+                  </a>
+                  <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu2" id="navbarNav2">
+                    <li class="nav-item">
+                      <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
+                        <span>
+                          <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-point-on" />
+                          </svg>
+                        </span>
+                        <span class="flex-fill">
+                          Career Fairs
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto" aria-current="page" href="#">
+                        <span>
+                          <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-point-on" />
+                          </svg>
+                        </span>
+                        <span class="flex-fill">
+                          Information Sessions
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-dark ms-n2 ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                        <span>
+                          <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-point-on" />
+                          </svg>
+                        </span>
+                        <span class="flex-fill">
+                          On-Campus Job Interviews
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 `
 
 export const MobileNavigation = () => `${mobile_navigation_html}`;
