@@ -38,7 +38,7 @@ For additional documentation, see:
 
 const desktop_navigation_html = `
     <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
-      <nav class="d-block navbar navbar-light shadow-lg">
+      <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -156,7 +156,7 @@ DesktopNavigation.parameters = {
 
 const mobile_navigation_html = `
     <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
-      <nav class="d-block navbar navbar-light shadow-lg">
+      <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
