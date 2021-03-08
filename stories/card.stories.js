@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -90,23 +90,22 @@ const card_homepage_html = `
 `;
 
 export const CardHomepage = () => {
-
   const icon_bg_color_options = {
-    "Pale Green": "bg-pale-green",
-    "Pale Orange": "bg-pale-orange",
-    "Pale Indigo": "bg-pale-indigo",
-    "Pale Purple": "bg-pale-purple",
-    "Pale Blue": "bg-pale-blue",
-    "Pale Red": "bg-pale-red"      
-  }
+    'Pale Green': 'bg-pale-green',
+    'Pale Orange': 'bg-pale-orange',
+    'Pale Indigo': 'bg-pale-indigo',
+    'Pale Purple': 'bg-pale-purple',
+    'Pale Blue': 'bg-pale-blue',
+    'Pale Red': 'bg-pale-red',
+  };
 
-  const card_title_text = text("Title", "Quick Actions");
-  const card_icon_class = text("Icon Class", "tabler-link");
-  const card_item_icon_class = text("Item Icon Class", "tabler-search");
+  const card_title_text = text('Title', 'Quick Actions');
+  const card_icon_class = text('Icon Class', 'tabler-link');
+  const card_item_icon_class = text('Item Icon Class', 'tabler-search');
   const card_icon_bg_color = select(
-      "Icon Background Color",
-      icon_bg_color_options,
-      "bg-pale-purple"
+    'Icon Background Color',
+    icon_bg_color_options,
+    'bg-pale-purple'
   );
 
   return `
@@ -172,12 +171,12 @@ export const CardHomepage = () => {
         </div>
       </div>
     </div>
-`
+`;
 };
 
 CardHomepage.storyName = 'Homepage';
-  
-CardHomepage.parameters = { 
+
+CardHomepage.parameters = {
   notes: `
   
   #Sample Code 
@@ -186,8 +185,8 @@ CardHomepage.parameters = {
   ${card_homepage_html}
   \`\`\`
   
-  `
-}
+  `,
+};
 
 const card_empty_state_with_icons_html = `
   <div class="card">
@@ -214,11 +213,12 @@ const card_empty_state_with_icons_html = `
   </div>
 `;
 
-export const CardEmptyStateWithIcons = () => `${card_empty_state_with_icons_html}`;
+export const CardEmptyStateWithIcons = () =>
+  `${card_empty_state_with_icons_html}`;
 
 CardEmptyStateWithIcons.storyName = 'Empty State / Icons';
 
-CardEmptyStateWithIcons.parameters = { 
+CardEmptyStateWithIcons.parameters = {
   notes: `
   
   #Sample Code
@@ -227,7 +227,7 @@ CardEmptyStateWithIcons.parameters = {
   ${card_empty_state_with_icons_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const card_empty_state_no_icons_html = `
@@ -247,7 +247,7 @@ export const CardEmptyStateNoIcons = () => `${card_empty_state_no_icons_html}`;
 
 CardEmptyStateNoIcons.storyName = 'Empty State / No Icons';
 
-CardEmptyStateNoIcons.parameters = { 
+CardEmptyStateNoIcons.parameters = {
   notes: `
   
   #Sample Code
@@ -256,7 +256,7 @@ CardEmptyStateNoIcons.parameters = {
   ${card_empty_state_with_icons_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const card_sidebar = `
@@ -303,7 +303,7 @@ export const CardSidebar = () => `${card_sidebar}`;
 
 CardSidebar.storyName = 'Sidebar';
 
-CardSidebar.parameters = { 
+CardSidebar.parameters = {
   notes: `
 
   #Notes
@@ -316,7 +316,7 @@ CardSidebar.parameters = {
   ${card_sidebar}
   \`\`\`
 
-  `
+  `,
 };
 
 const card_group = `
@@ -355,33 +355,38 @@ const card_group = `
 `;
 
 export const CardGroup = () => {
-
   const line_clamp = {
-    "1 line": "line-clamp-1",
-    "2 lines": "line-clamp-2",
-    "3 lines": "line-clamp-3",
-    "4 lines": "line-clamp-4",
-    "5 lines": "line-clamp-5"
-  }
+    '1 line': 'line-clamp-1',
+    '2 lines': 'line-clamp-2',
+    '3 lines': 'line-clamp-3',
+    '4 lines': 'line-clamp-4',
+    '5 lines': 'line-clamp-5',
+  };
 
-  const card_subheading_text = text("Subheading Text", "thrill friends and family with a make it yourself pizza party make it as cool as you can imagine"); 
-
-  const card_subheading_line_clamp = select(
-      "Subheading Line Clamp",
-      line_clamp,
-      "line-clamp-2"
+  const card_subheading_text = text(
+    'Subheading Text',
+    'thrill friends and family with a make it yourself pizza party make it as cool as you can imagine'
   );
 
-  const card_body_text = text("Body Text", "\
+  const card_subheading_line_clamp = select(
+    'Subheading Line Clamp',
+    line_clamp,
+    'line-clamp-2'
+  );
+
+  const card_body_text = text(
+    'Body Text',
+    '\
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (1) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (2) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (3) \
-  ");
+  '
+  );
 
   const card_body_line_clamp = select(
-      "Body Line Clamp",
-      line_clamp,
-      "line-clamp-5"
+    'Body Line Clamp',
+    line_clamp,
+    'line-clamp-5'
   );
 
   return `
@@ -402,12 +407,12 @@ export const CardGroup = () => {
         <a href="#" class="card-link">Text link 2</a>
       </div>
     </div>  
-  `
+  `;
 };
 
 CardGroup.storyName = 'Group';
 
-CardGroup.parameters = { 
+CardGroup.parameters = {
   notes: `
 
   #Notes
@@ -419,7 +424,7 @@ CardGroup.parameters = {
   ${card_group}
   \`\`\`
 
-  `
+  `,
 };
 
 const card_group_horizontal = `
@@ -460,33 +465,38 @@ const card_group_horizontal = `
 `;
 
 export const CardGroupHorizontal = () => {
-
   const line_clamp = {
-    "1 line": "line-clamp-1",
-    "2 lines": "line-clamp-2",
-    "3 lines": "line-clamp-3",
-    "4 lines": "line-clamp-4",
-    "5 lines": "line-clamp-5"
-  }
+    '1 line': 'line-clamp-1',
+    '2 lines': 'line-clamp-2',
+    '3 lines': 'line-clamp-3',
+    '4 lines': 'line-clamp-4',
+    '5 lines': 'line-clamp-5',
+  };
 
-  const card_subheading_text = text("Subheading Text", "thrill friends and family with a make it yourself pizza party make it as cool as you can imagine"); 
-
-  const card_subheading_line_clamp = select(
-      "Subheading Line Clamp",
-      line_clamp,
-      "line-clamp-2"
+  const card_subheading_text = text(
+    'Subheading Text',
+    'thrill friends and family with a make it yourself pizza party make it as cool as you can imagine'
   );
 
-  const card_body_text = text("Body Text", "\
+  const card_subheading_line_clamp = select(
+    'Subheading Line Clamp',
+    line_clamp,
+    'line-clamp-2'
+  );
+
+  const card_body_text = text(
+    'Body Text',
+    '\
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (1) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (2) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (3) \
-  ");
+  '
+  );
 
   const card_body_line_clamp = select(
-      "Body Line Clamp",
-      line_clamp,
-      "line-clamp-5"
+    'Body Line Clamp',
+    line_clamp,
+    'line-clamp-5'
   );
 
   return `
@@ -509,12 +519,12 @@ export const CardGroupHorizontal = () => {
         </div>
       </div>
     </div>  
-  `
+  `;
 };
 
 CardGroupHorizontal.storyName = 'Group Horizontal';
 
-CardGroupHorizontal.parameters = { 
+CardGroupHorizontal.parameters = {
   notes: `
 
   #Notes
@@ -526,5 +536,5 @@ CardGroupHorizontal.parameters = {
   ${card_group_horizontal}
   \`\`\`
 
-  `
+  `,
 };

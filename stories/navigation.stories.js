@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import $ from 'jquery';
 window.jQuery = window.$ = $;
@@ -136,13 +136,13 @@ const desktop_navigation_html = `
         </ul>
       </nav>
     </header>
-`
+`;
 
 export const DesktopNavigation = () => `${desktop_navigation_html}`;
 
 DesktopNavigation.storyName = 'Desktop';
 
-DesktopNavigation.parameters = { 
+DesktopNavigation.parameters = {
   notes: `
 
     ###HTML
@@ -151,9 +151,8 @@ DesktopNavigation.parameters = {
     ${desktop_navigation_html}
     \`\`\`
     
-  `
+  `,
 };
-
 
 const mobile_navigation_html = `
     <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
@@ -260,13 +259,13 @@ const mobile_navigation_html = `
         </div>
       </div>
     </header>
-`
+`;
 
 export const MobileNavigation = () => `${mobile_navigation_html}`;
 
 MobileNavigation.storyName = 'Mobile';
 
-MobileNavigation.parameters = { 
+MobileNavigation.parameters = {
   notes: `
 
     ###HTML
@@ -275,5 +274,5 @@ MobileNavigation.parameters = {
     ${mobile_navigation_html}
     \`\`\`
     
-  `
+  `,
 };

@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -62,35 +62,41 @@ const search_desktop_input_html = `
 `;
 
 export const SearchDesktopInput = () => {
-  const container = $('<div style="margin: 0;"></div>').append(search_desktop_input_html)
+  const container = $('<div style="margin: 0;"></div>').append(
+    search_desktop_input_html
+  );
 
-  setTimeout(function() {
-
+  setTimeout(function () {
     const createListItems = document.querySelector('.dropdown-menu');
     createListItems.innerHTML = `
-      ${Array(5).fill().map((item, i) => `
+      ${Array(5)
+        .fill()
+        .map(
+          (item, i) => `
         <li>
-          <a class="dropdown-item d-flex mb-2" href="#" id="item-${i+1}">
+          <a class="dropdown-item d-flex mb-2" href="#" id="item-${i + 1}">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
                 <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
               </svg>
             </span>
             <span class="flex-fill">
-              Chad Hampton Is A Very Loooooooooong Name - ${i+1}
+              Chad Hampton Is A Very Loooooooooong Name - ${i + 1}
             </span>
           </a>
         </li>
-      `).join('')}
-    `
-  },0)
+      `
+        )
+        .join('')}
+    `;
+  }, 0);
 
   return container[0];
 };
 
 SearchDesktopInput.storyName = 'Desktop Input';
 
-SearchDesktopInput.parameters = { 
+SearchDesktopInput.parameters = {
   notes: `
   
   #Sample Code
@@ -99,7 +105,7 @@ SearchDesktopInput.parameters = {
   ${search_desktop_input_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const search_desktop_combo_input_html = `
@@ -146,34 +152,36 @@ const search_desktop_combo_input_html = `
 `;
 
 export const SearchDesktopComboInput = () => {
-  const container = $('<div style="margin: 0;"></div>').append(search_desktop_combo_input_html)
+  const container = $('<div style="margin: 0;"></div>').append(
+    search_desktop_combo_input_html
+  );
 
-  setTimeout(function() {
-  
+  setTimeout(function () {
     // For demonstration purposes only, do not use in production
 
-    var $myInput = $('#myInput')
-    $myInput.focus()
+    var $myInput = $('#myInput');
+    $myInput.focus();
 
-    $('select').change(function(){
-      var text = $(this).find('option:selected').text()
-      var $aux = $('<select/>').append($('<option/>').text(text))
-      var myInput = $('#myInput')
-      $(this).after($aux)
-      $(this).width($aux.width() + 30)
-      $aux.remove()
+    $('select')
+      .change(function () {
+        var text = $(this).find('option:selected').text();
+        var $aux = $('<select/>').append($('<option/>').text(text));
+        var myInput = $('#myInput');
+        $(this).after($aux);
+        $(this).width($aux.width() + 30);
+        $aux.remove();
 
-      $myInput.focus()
-    }).change()
-
-  },0)
+        $myInput.focus();
+      })
+      .change();
+  }, 0);
 
   return container[0];
 };
 
 SearchDesktopComboInput.storyName = 'Desktop Combo Input';
 
-SearchDesktopComboInput.parameters = { 
+SearchDesktopComboInput.parameters = {
   notes: `
   
   #Sample Code
@@ -182,7 +190,7 @@ SearchDesktopComboInput.parameters = {
   ${search_desktop_combo_input_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const search_mobile_input_html = `
@@ -233,45 +241,52 @@ const search_mobile_input_html = `
 </div>`;
 
 export const SearchMobileInput = () => {
-  const container = $('<div style="margin: 0;"></div>').append(search_mobile_input_html)
+  const container = $('<div style="margin: 0;"></div>').append(
+    search_mobile_input_html
+  );
 
-  setTimeout(function() {
+  setTimeout(function () {
     /* Mimic autofocus attribute in bs.modal: http://localhost:9001/docs/5.0/components/modal/#how-it-works */
 
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
-  
+    var myModal = document.getElementById('myModal');
+    var myInput = document.getElementById('myInput');
+
     myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
+      myInput.focus();
+    });
 
     /* Populate results list for testing overflow */
 
     const createListItems = document.querySelector('.list-unstyled');
     createListItems.innerHTML = `
-      ${Array(20).fill().map((item, i) => `
+      ${Array(20)
+        .fill()
+        .map(
+          (item, i) => `
         <li>
-          <a class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i+1}">
+          <a class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i + 1}">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
                 <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
               </svg>
             </span>
             <span class="flex-fill">
-              Chad Hampton Is A Very Loooooooooong Name - ${i+1}
+              Chad Hampton Is A Very Loooooooooong Name - ${i + 1}
             </span>
           </a>
         </li>
-      `).join('')}
-    `
-  },0)
+      `
+        )
+        .join('')}
+    `;
+  }, 0);
 
   return container[0];
 };
 
 SearchMobileInput.storyName = 'Mobile Input';
 
-SearchMobileInput.parameters = { 
+SearchMobileInput.parameters = {
   notes: `
   
   #Sample Code
@@ -280,7 +295,7 @@ SearchMobileInput.parameters = {
   ${search_mobile_input_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const search_mobile_input_complex_results_html = `
@@ -334,25 +349,32 @@ const search_mobile_input_complex_results_html = `
 </div>`;
 
 export const SearchMobileInputComplexResults = () => {
-  const container = $('<div style="margin: 0;"></div>').append(search_mobile_input_complex_results_html)
+  const container = $('<div style="margin: 0;"></div>').append(
+    search_mobile_input_complex_results_html
+  );
 
-  setTimeout(function() {
+  setTimeout(function () {
     /* Mimic autofocus attribute in bs.modal: http://localhost:9001/docs/5.0/components/modal/#how-it-works */
 
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
-  
+    var myModal = document.getElementById('myModal');
+    var myInput = document.getElementById('myInput');
+
     myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
+      myInput.focus();
+    });
 
     /* Populate results list for testing overflow */
 
     const createListItems = document.querySelector('.list-unstyled');
     createListItems.innerHTML = `
-      ${Array(5).fill().map((item, i) => `
+      ${Array(5)
+        .fill()
+        .map(
+          (item, i) => `
         <li>
-          <button class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i+1}">
+          <button class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${
+            i + 1
+          }">
             <span class="list-avatar rounded-circle m-1 text-center">
               <svg class="icon-lg-font-size mt-2">
                 <use xlink:href="${iconSprite}#tabler-building" />
@@ -369,16 +391,18 @@ export const SearchMobileInputComplexResults = () => {
             </span>
           </button>
         </li>
-      `).join('')}
-    `
-  },0)
+      `
+        )
+        .join('')}
+    `;
+  }, 0);
 
   return container[0];
 };
 
 SearchMobileInputComplexResults.storyName = 'Mobile Input Complex Results';
 
-SearchMobileInputComplexResults.parameters = { 
+SearchMobileInputComplexResults.parameters = {
   notes: `
   
   #Sample Code
@@ -387,9 +411,8 @@ SearchMobileInputComplexResults.parameters = {
   ${search_mobile_input_complex_results_html}
   \`\`\`
 
-  `
+  `,
 };
-
 
 const search_mobile_combo_input_html = `
 <div class="m-3">
@@ -431,25 +454,27 @@ const search_mobile_combo_input_html = `
 </div>`;
 
 export const SearchMobileComboInput = () => {
-  const container = $('<div style="margin: 0;"></div>').append(search_mobile_combo_input_html)
+  const container = $('<div style="margin: 0;"></div>').append(
+    search_mobile_combo_input_html
+  );
 
-  setTimeout(function() {
+  setTimeout(function () {
     /* Mimic autofocus attribute in bs.modal: http://localhost:9001/docs/5.0/components/modal/#how-it-works */
 
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
-  
+    var myModal = document.getElementById('myModal');
+    var myInput = document.getElementById('myInput');
+
     myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
-  },0)
+      myInput.focus();
+    });
+  }, 0);
 
   return container[0];
 };
 
 SearchMobileComboInput.storyName = 'Mobile Combo Input';
 
-SearchMobileComboInput.parameters = { 
+SearchMobileComboInput.parameters = {
   notes: `
   
   #Sample Code
@@ -458,5 +483,5 @@ SearchMobileComboInput.parameters = {
   ${search_mobile_combo_input_html}
   \`\`\`
 
-  `
+  `,
 };

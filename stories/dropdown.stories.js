@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -145,10 +145,12 @@ const dropdown_primary_html = `
 </div>`;
 
 export const DropdownPrimary = () => {
-
-  const dropdown_pl = text("Dropdown Primary - Large", "Chad Hampton Is A Very Loooooooooong Name");
-  const dropdown_pr = text("Dropdown Primary - Regular", "Chad Hampton");
-  const dropdown_ps = text("Dropdown Primary - Small", "Chad Hampton");
+  const dropdown_pl = text(
+    'Dropdown Primary - Large',
+    'Chad Hampton Is A Very Loooooooooong Name'
+  );
+  const dropdown_pr = text('Dropdown Primary - Regular', 'Chad Hampton');
+  const dropdown_ps = text('Dropdown Primary - Small', 'Chad Hampton');
 
   return `
     <div class="dropdown">
@@ -269,12 +271,12 @@ export const DropdownPrimary = () => {
         </div>
       </div>
     </div>
-    `
+    `;
 };
 
 DropdownPrimary.storyName = 'Primary';
 
-DropdownPrimary.parameters = { 
+DropdownPrimary.parameters = {
   notes: `
   
   #Sample Code
@@ -283,9 +285,8 @@ DropdownPrimary.parameters = {
   ${dropdown_primary_html}
   \`\`\`
 
-  `
+  `,
 };
-
 
 const dropdown_outline_html = `<div class="dropdown">
   <h3>Outline - Large</h3>
@@ -409,10 +410,12 @@ const dropdown_outline_html = `<div class="dropdown">
 //export const DropdownOutline = () => `${dropdown_outline_html}`;
 
 export const DropdownOutline = () => {
-
-  const dropdown_ol = text("Dropdown Outline - Large", "Chad Hampton Is A Very Loooooooooong Name");
-  const dropdown_or = text("Dropdown Outline - Regular", "Chad Hampton");
-  const dropdown_os = text("Dropdown Outline - Small", "Chad Hampton");
+  const dropdown_ol = text(
+    'Dropdown Outline - Large',
+    'Chad Hampton Is A Very Loooooooooong Name'
+  );
+  const dropdown_or = text('Dropdown Outline - Regular', 'Chad Hampton');
+  const dropdown_os = text('Dropdown Outline - Small', 'Chad Hampton');
 
   return `
     <div class="dropdown">
@@ -533,11 +536,11 @@ export const DropdownOutline = () => {
         </div>
       </div>
     </div>
-    `
+    `;
 };
 DropdownOutline.storyName = 'Outline';
 
-DropdownOutline.parameters = { 
+DropdownOutline.parameters = {
   notes: `
   
   #Sample Code
@@ -546,6 +549,5 @@ DropdownOutline.parameters = {
   ${dropdown_outline_html}
   \`\`\`
 
-  `
+  `,
 };
-

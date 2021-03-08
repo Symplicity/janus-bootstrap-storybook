@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -13,7 +13,6 @@ import {
   text,
   number,
 } from '@storybook/addon-knobs';
-
 
 export default {
   title: 'Examples/Forms/Validated Form',
@@ -187,11 +186,12 @@ const validated_form_html = `
 </div>
 `;
 
-export const ValidatedForm = () => `<div class="container-fluid">${validated_form_html}</div>`;
+export const ValidatedForm = () =>
+  `<div class="container-fluid">${validated_form_html}</div>`;
 
 ValidatedForm.storyName = 'Validated Form';
 
-ValidatedForm.parameters = { 
+ValidatedForm.parameters = {
   notes: `
   
   #Sample Code
@@ -200,5 +200,5 @@ ValidatedForm.parameters = {
   ${validated_form_html}
   \`\`\`
 
-  `
+  `,
 };

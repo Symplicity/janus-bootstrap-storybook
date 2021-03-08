@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import $ from 'jquery';
 window.jQuery = window.$ = $;
@@ -106,12 +106,13 @@ let header_html = `
 </div>
 `;
 
-export const LayoutHeader = () => { 
+export const LayoutHeader = () => {
+  const header_bg_color = text('Header BG Color', '#ffffff');
 
-  const header_bg_color = text("Header BG Color", "#ffffff");
+  const container = $('<div style="margin: 100px -1rem 0;"></div>').append(
+    header_html
+  );
 
-  const container = $('<div style="margin: 100px -1rem 0;"></div>').append(header_html);
- 
   return `
     <div class="d-block bg-white">
       <nav class="d-block navbar navbar-light shadow-lg" style="max-width: 1400px; margin: 0 auto; background: ${header_bg_color}">
@@ -180,12 +181,11 @@ export const LayoutHeader = () => {
         </div>
       </nav>
     </div>
-  `
-    
+  `;
 };
 LayoutHeader.storyName = 'Header';
 
-LayoutHeader.parameters = { 
+LayoutHeader.parameters = {
   notes: `
 
     #Declarative Popovers
@@ -196,9 +196,5 @@ LayoutHeader.parameters = {
     ${header_html}
     \`\`\`
     
-  `
+  `,
 };
-
-
-
-

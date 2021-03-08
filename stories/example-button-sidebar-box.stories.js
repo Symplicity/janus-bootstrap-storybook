@@ -2,17 +2,16 @@ import buttonNotes from './button.notes.md';
 import buttonIconNotes from './button.icon.notes.md';
 import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 export default {
   title: 'Examples/Buttons/Sidebar Box',
   parameters: {
     options: {
-      selectedPanel: 'storybook/a11y/panel'
-    }
-  }
+      selectedPanel: 'storybook/a11y/panel',
+    },
+  },
 };
-
 
 const sidebarHTML = `
   <div class="sidebar">
@@ -66,14 +65,14 @@ const sidebarHTML = `
 
 export const Sidebar = () => {
   const container = $('<div></div>').append(sidebarHTML);
-  
-  setTimeout(function() {
-    $(function() {
+
+  setTimeout(function () {
+    $(function () {
       container.find('[data-bs-toggle="dropdown"]').dropdown('show');
     });
-  },0)
-  
-  return container[0]; 
+  }, 0);
+
+  return container[0];
 };
 
 Sidebar.storyName = 'Sidebar';
@@ -94,5 +93,5 @@ Sidebar.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };

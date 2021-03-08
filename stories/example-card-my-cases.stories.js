@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -146,22 +146,21 @@ const card_basic_html = `
   </div>`;
 
 export const CardBasic = () => {
-
   const icon_bg_color_options = {
-    "Pale Green": "bg-pale-green",
-    "Pale Orange": "bg-pale-orange",
-    "Pale Indigo": "bg-pale-indigo",
-    "Pale Purple": "bg-pale-purple",
-    "Pale Blue": "bg-pale-blue",
-    "Pale Red": "bg-pale-red"      
-  }
+    'Pale Green': 'bg-pale-green',
+    'Pale Orange': 'bg-pale-orange',
+    'Pale Indigo': 'bg-pale-indigo',
+    'Pale Purple': 'bg-pale-purple',
+    'Pale Blue': 'bg-pale-blue',
+    'Pale Red': 'bg-pale-red',
+  };
 
-  const card_title_text = text("Title", "My Cases");
-  const card_icon_class = text("Icon Class", "tabler-folders");
+  const card_title_text = text('Title', 'My Cases');
+  const card_icon_class = text('Icon Class', 'tabler-folders');
   const card_icon_bg_color = select(
-      "Icon Background Color",
-      icon_bg_color_options,
-      "bg-pale-red"
+    'Icon Background Color',
+    icon_bg_color_options,
+    'bg-pale-red'
   );
 
   return `
@@ -282,12 +281,12 @@ export const CardBasic = () => {
         </div>
         <a href="#" class="mt-2 d-block">View all</a>
       </div>
-    </div>`
+    </div>`;
 };
 
 CardBasic.storyName = 'My Cases';
-  
-CardBasic.parameters = { 
+
+CardBasic.parameters = {
   notes: `
   
   #Sample Code 
@@ -296,5 +295,5 @@ CardBasic.parameters = {
   ${card_basic_html}
   \`\`\`
   
-  `
-}
+  `,
+};

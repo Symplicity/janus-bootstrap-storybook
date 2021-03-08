@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import $ from 'jquery';
 window.jQuery = window.$ = $;
@@ -71,12 +71,12 @@ let tabsSingleRowHTML = `
 </ul>
 `;
 
-
-export const TabsSingleRow = () => `<div class="text-center" style="margin-top:100px">${tabsSingleRowHTML}</div>`;
+export const TabsSingleRow = () =>
+  `<div class="text-center" style="margin-top:100px">${tabsSingleRowHTML}</div>`;
 
 TabsSingleRow.storyName = 'Single Row';
 
-TabsSingleRow.parameters = { 
+TabsSingleRow.parameters = {
   notes: `
 
     #Tabs
@@ -89,7 +89,7 @@ TabsSingleRow.parameters = {
     
     ${moreDocumentation}
     
-  `
+  `,
 };
 
 let tabsDoubleRowHTML = `
@@ -145,12 +145,12 @@ let tabsDoubleRowHTML = `
 </ul>
 `;
 
-
-export const TabsDoubleRow = () => `<div class="text-center" style="margin-top:100px">${tabsDoubleRowHTML}</div>`;
+export const TabsDoubleRow = () =>
+  `<div class="text-center" style="margin-top:100px">${tabsDoubleRowHTML}</div>`;
 
 TabsDoubleRow.storyName = 'Double Row';
 
-TabsDoubleRow.parameters = { 
+TabsDoubleRow.parameters = {
   notes: `
 
     #Tabs
@@ -163,7 +163,7 @@ TabsDoubleRow.parameters = {
     
     ${moreDocumentation}
     
-  `
+  `,
 };
 
 let tabsWithControlsSingleRowHTML = `
@@ -215,12 +215,12 @@ let tabsWithControlsSingleRowHTML = `
   </div>
 `;
 
-
-export const TabsWithControlsSingleRow = () => `<div class="text-center" style="margin-top:100px">${tabsWithControlsSingleRowHTML}</div>`;
+export const TabsWithControlsSingleRow = () =>
+  `<div class="text-center" style="margin-top:100px">${tabsWithControlsSingleRowHTML}</div>`;
 
 TabsWithControlsSingleRow.storyName = 'SRow with Controls';
 
-TabsWithControlsSingleRow.parameters = { 
+TabsWithControlsSingleRow.parameters = {
   notes: `
 
     #Tabs
@@ -233,9 +233,8 @@ TabsWithControlsSingleRow.parameters = {
     
     ${moreDocumentation}
     
-  `
+  `,
 };
-
 
 let tabsWithControlsDoubleRowHTML = `
   <div class="bg-white rounded-top border border-light d-flex">
@@ -321,12 +320,12 @@ let tabsWithControlsDoubleRowHTML = `
   </div>
 `;
 
-
-export const TabsWithControlsDoubleRow = () => `<div class="text-center" style="margin-top:100px">${tabsWithControlsDoubleRowHTML}</div>`;
+export const TabsWithControlsDoubleRow = () =>
+  `<div class="text-center" style="margin-top:100px">${tabsWithControlsDoubleRowHTML}</div>`;
 
 TabsWithControlsDoubleRow.storyName = 'DRow with Controls';
 
-TabsWithControlsDoubleRow.parameters = { 
+TabsWithControlsDoubleRow.parameters = {
   notes: `
 
     #Tabs
@@ -339,5 +338,5 @@ TabsWithControlsDoubleRow.parameters = {
     
     ${moreDocumentation}
     
-  `
+  `,
 };

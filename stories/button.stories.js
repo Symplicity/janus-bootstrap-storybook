@@ -2,15 +2,15 @@ import buttonNotes from './button.notes.md';
 import buttonIconNotes from './button.icon.notes.md';
 import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 export default {
   title: 'Components/Buttons',
   parameters: {
     options: {
-      selectedPanel: 'storybook/a11y/panel'
-    }
-  }
+      selectedPanel: 'storybook/a11y/panel',
+    },
+  },
 };
 
 const primaryHTML = `
@@ -71,7 +71,7 @@ Primary.parameters = {
     
     ${buttonNotes}
     
-    `
+    `,
 };
 
 const altPrimaryHTML = `
@@ -133,7 +133,7 @@ AltPrimary.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
 
 const secondaryHTML = `
@@ -194,7 +194,7 @@ Secondary.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
 
 const otherHTML = `
@@ -255,9 +255,8 @@ Other.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
-
 
 const groupHTML = `
 <div>
@@ -327,9 +326,8 @@ Group.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
-
 
 const actionHTML = `
 <div>
@@ -436,9 +434,8 @@ Action.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
-
 
 const toggleHTML = `
 <div>
@@ -544,9 +541,8 @@ Toggle.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };
-
 
 const extendedHTML = `
 <div>
@@ -594,5 +590,5 @@ Extended.parameters = {
     
     ${buttonNotes}
     
-    ` 
+    `,
 };

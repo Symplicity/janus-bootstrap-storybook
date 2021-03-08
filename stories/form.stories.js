@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -13,7 +13,6 @@ import {
   text,
   number,
 } from '@storybook/addon-knobs';
-
 
 export default {
   title: 'Components/Forms',
@@ -52,7 +51,7 @@ export const InputEmail = () => `<div>${input_email_html}</div>`;
 
 InputEmail.storyName = '[type="email"]';
 
-InputEmail.parameters = { 
+InputEmail.parameters = {
   notes: `
   
   #Sample Code
@@ -61,7 +60,7 @@ InputEmail.parameters = {
   ${input_email_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const select_html = `
@@ -99,7 +98,7 @@ export const Select = () => `<div>${select_html}</div>`;
 
 Select.storyName = '<select>';
 
-Select.parameters = { 
+Select.parameters = {
   notes: `
   
   #Sample Code
@@ -108,7 +107,7 @@ Select.parameters = {
   ${select_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const textarea_html = `
@@ -131,7 +130,7 @@ export const Textarea = () => `<div>${textarea_html}</div>`;
 
 Textarea.storyName = '<textarea>';
 
-Textarea.parameters = { 
+Textarea.parameters = {
   notes: `
   
   #Sample Code
@@ -140,7 +139,7 @@ Textarea.parameters = {
   ${textarea_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const input_checkbox_html = `
@@ -208,7 +207,7 @@ export const InputCheckbox = () => `<div>${input_checkbox_html}</div>`;
 
 InputCheckbox.storyName = '[type="checkbox"]';
 
-InputCheckbox.parameters = { 
+InputCheckbox.parameters = {
   notes: `
   
   #Sample Code
@@ -217,7 +216,7 @@ InputCheckbox.parameters = {
   ${input_checkbox_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const input_radio_html = `
@@ -284,7 +283,7 @@ export const InputRadio = () => `<div>${input_radio_html}</div>`;
 
 InputRadio.storyName = '[type="radio"]';
 
-InputRadio.parameters = { 
+InputRadio.parameters = {
   notes: `
   
   #Sample Code
@@ -293,7 +292,7 @@ InputRadio.parameters = {
   ${input_radio_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const input_file_html = `
@@ -333,7 +332,7 @@ export const InputFile = () => `<div>${input_file_html}</div>`;
 
 InputFile.storyName = '[type="file"]';
 
-InputFile.parameters = { 
+InputFile.parameters = {
   notes: `
   
   #Sample Code
@@ -342,5 +341,5 @@ InputFile.parameters = {
   ${input_file_html}
   \`\`\`
 
-  `
+  `,
 };

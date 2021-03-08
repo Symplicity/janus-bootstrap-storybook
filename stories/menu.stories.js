@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -35,7 +35,7 @@ export const MenuBasic = () => `${menu_basic_html}`;
 
 MenuBasic.storyName = 'Menu Basic';
 
-MenuBasic.parameters = { 
+MenuBasic.parameters = {
   notes: `
   
   #Sample Code
@@ -44,7 +44,7 @@ MenuBasic.parameters = {
   ${menu_basic_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const menu_prefix_icon_html = `
@@ -115,7 +115,7 @@ export const MenuPrefixIcon = () => `${menu_prefix_icon_html}`;
 
 MenuPrefixIcon.storyName = 'Menu Prefix Icon';
 
-MenuPrefixIcon.parameters = { 
+MenuPrefixIcon.parameters = {
   notes: `
   
   #Sample Code
@@ -124,16 +124,15 @@ MenuPrefixIcon.parameters = {
   ${menu_prefix_icon_html}
   \`\`\`
 
-  `
+  `,
 };
 
 export const MenuSuffixIcon = () => {
+  const item1_text = text('Item 1', 'Chad Hampton');
+  const item2_text = text('Item 2', 'Something Very very very long');
+  const item3_text = text('Item 3', 'Something Short');
 
-const item1_text = text("Item 1", "Chad Hampton");
-const item2_text = text("Item 2", "Something Very very very long");
-const item3_text = text("Item 3", "Something Short");
-
-return `
+  return `
   <div class="dropdown-menu show position-relative">
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
       <div class="w-100">
@@ -173,12 +172,11 @@ return `
     </a>
   </div>
 `;
-
 };
 
 MenuSuffixIcon.storyName = 'Menu Suffix Icon';
 
-MenuSuffixIcon.parameters = { 
+MenuSuffixIcon.parameters = {
   notes: `
   
   #Sample Code
@@ -224,9 +222,8 @@ MenuSuffixIcon.parameters = {
   </div>
   \`\`\`
 
-  `
+  `,
 };
-
 
 const menu_divider_html = `
 <div class="dropdown-menu show position-relative">
@@ -241,7 +238,7 @@ export const MenuDivider = () => `${menu_divider_html}`;
 
 MenuDivider.storyName = 'Menu with Divider';
 
-MenuDivider.parameters = { 
+MenuDivider.parameters = {
   notes: `
   
   #Sample Code
@@ -250,10 +247,8 @@ MenuDivider.parameters = {
   ${menu_divider_html}
   \`\`\`
 
-  `
+  `,
 };
-
-
 
 const menu_header_html = `
 <div class="dropdown-menu show position-relative">
@@ -272,7 +267,7 @@ export const MenuHeader = () => `${menu_header_html}`;
 
 MenuHeader.storyName = 'Menu with Header';
 
-MenuHeader.parameters = { 
+MenuHeader.parameters = {
   notes: `
   
   #Sample Code
@@ -281,9 +276,8 @@ MenuHeader.parameters = {
   ${menu_header_html}
   \`\`\`
 
-  `
+  `,
 };
-
 
 const menu_responsive_html = `
 <div class="dropdown-menu show position-relative">
@@ -302,7 +296,7 @@ export const MenuResponsive = () => `${menu_responsive_html}`;
 
 MenuResponsive.storyName = 'Menu Responsive';
 
-MenuResponsive.parameters = { 
+MenuResponsive.parameters = {
   notes: `
   
   #Sample Code
@@ -311,5 +305,5 @@ MenuResponsive.parameters = {
   ${menu_responsive_html}
   \`\`\`
 
-  `
+  `,
 };

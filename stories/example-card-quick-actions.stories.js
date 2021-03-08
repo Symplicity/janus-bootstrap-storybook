@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -89,23 +89,25 @@ const card_basic_html = `
     </div>`;
 
 export const CardBasic = () => {
-
   const icon_bg_color_options = {
-    "Pale Green": "bg-pale-green",
-    "Pale Orange": "bg-pale-orange",
-    "Pale Indigo": "bg-pale-indigo",
-    "Pale Purple": "bg-pale-purple",
-    "Pale Blue": "bg-pale-blue",
-    "Pale Red": "bg-pale-red"      
-  }
+    'Pale Green': 'bg-pale-green',
+    'Pale Orange': 'bg-pale-orange',
+    'Pale Indigo': 'bg-pale-indigo',
+    'Pale Purple': 'bg-pale-purple',
+    'Pale Blue': 'bg-pale-blue',
+    'Pale Red': 'bg-pale-red',
+  };
 
-  const card_title_text = text("Title", "Quick Actions");
-  const card_icon_class = text("Icon Class", "tabler-link");
-  const card_item_icon_class = text("Dropdown Item Icon Class", "tabler-search");
+  const card_title_text = text('Title', 'Quick Actions');
+  const card_icon_class = text('Icon Class', 'tabler-link');
+  const card_item_icon_class = text(
+    'Dropdown Item Icon Class',
+    'tabler-search'
+  );
   const card_icon_bg_color = select(
-      "Icon Background Color",
-      icon_bg_color_options,
-      "bg-pale-purple"
+    'Icon Background Color',
+    icon_bg_color_options,
+    'bg-pale-purple'
   );
 
   return `
@@ -171,12 +173,12 @@ export const CardBasic = () => {
         </div>
       </div>
     </div>
-    </div>`
+    </div>`;
 };
 
 CardBasic.storyName = 'Quick Actions';
-  
-CardBasic.parameters = { 
+
+CardBasic.parameters = {
   notes: `
   
   #Sample Code 
@@ -185,5 +187,5 @@ CardBasic.parameters = {
   ${card_basic_html}
   \`\`\`
   
-  `
-}
+  `,
+};

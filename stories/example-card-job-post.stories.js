@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global';
 
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 import {
   array,
@@ -64,37 +64,36 @@ const card = `
 `;
 
 export const Card = () => {
-
   const line_clamp = {
-    "1 line": "line-clamp-1",
-    "2 lines": "line-clamp-2",
-    "3 lines": "line-clamp-3",
-    "4 lines": "line-clamp-4",
-    "5 lines": "line-clamp-5"
-  }
+    '1 line': 'line-clamp-1',
+    '2 lines': 'line-clamp-2',
+    '3 lines': 'line-clamp-3',
+    '4 lines': 'line-clamp-4',
+    '5 lines': 'line-clamp-5',
+  };
 
-  const card_heading_text = text("Heading Text", "Full-Time, Internship");
+  const card_heading_text = text('Heading Text', 'Full-Time, Internship');
 
-  const card_subheading_text = text("Subheading Text", "Software Engineer"); 
+  const card_subheading_text = text('Subheading Text', 'Software Engineer');
 
-  const card_location_text = text("Location Text", "Mountain View, CA");
+  const card_location_text = text('Location Text', 'Mountain View, CA');
 
   const card_heading_line_clamp = select(
-      "Heading Line Clamp",
-      line_clamp,
-      "line-clamp-2"
+    'Heading Line Clamp',
+    line_clamp,
+    'line-clamp-2'
   );
 
   const card_subheading_line_clamp = select(
-      "Subheading Line Clamp",
-      line_clamp,
-      "line-clamp-2"
+    'Subheading Line Clamp',
+    line_clamp,
+    'line-clamp-2'
   );
 
   const card_location_line_clamp = select(
-      "Location Line Clamp",
-      line_clamp,
-      "line-clamp-5"
+    'Location Line Clamp',
+    line_clamp,
+    'line-clamp-5'
   );
 
   return `
@@ -131,12 +130,12 @@ export const Card = () => {
         </p>
       </div>
     </div>  
-  `
+  `;
 };
 
 Card.storyName = 'Job Post';
 
-Card.parameters = { 
+Card.parameters = {
   notes: `
 
   #Notes
@@ -148,5 +147,5 @@ Card.parameters = {
   ${card}
   \`\`\`
 
-  `
+  `,
 };

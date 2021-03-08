@@ -1,4 +1,4 @@
-import iconSprite from '../node_modules/@tabler/icons/tabler-sprite.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
 const text = 'Unified Design System';
 
@@ -31,7 +31,7 @@ AlertPrimary.parameters = {
   \`\`\`html
   ${alert_primary_html}
   \`\`\`
-  `
+  `,
 };
 
 const alert_secondary_html = `
@@ -55,7 +55,7 @@ AlertSecondary.parameters = {
   \`\`\`html
   ${alert_secondary_html}
   \`\`\`
-  `
+  `,
 };
 
 const alert_success_html = `
@@ -90,7 +90,7 @@ AlertSuccess.parameters = {
   \`\`\`html
   ${alert_success_html}
   \`\`\`
-  `
+  `,
 };
 
 const alert_error_html = `
@@ -119,7 +119,7 @@ export const AlertError = () => `${alert_error_html}`;
 
 AlertError.storyName = 'Error';
 
-AlertError.parameters = { 
+AlertError.parameters = {
   notes: `
   #Error
   
@@ -130,7 +130,7 @@ AlertError.parameters = {
   \`\`\`html
   ${alert_error_html}
   \`\`\`
-  `
+  `,
 };
 
 const alert_warning_html = `
@@ -168,7 +168,7 @@ AlertWarning.parameters = {
   \`\`\`html
   ${alert_warning_html}
   \`\`\`
-  `
+  `,
 };
 
 const alert_info_html = `
@@ -206,5 +206,5 @@ AlertInfo.parameters = {
   \`\`\`html
   ${alert_info_html}
   \`\`\`
-  `
+  `,
 };
