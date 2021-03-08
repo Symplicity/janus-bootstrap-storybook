@@ -172,7 +172,7 @@ const mobile_navigation_html = `
       </nav>
       <div class="modal" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-          <nav class="main-nav bg-white mt-0 vh-100 bg-light" id="navbarNav">
+          <nav class="main-nav pe-auto bg-white mt-0 vh-100 bg-light" id="navbarNav">
             <ul class="navbar-nav pt-4 pb-4">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
