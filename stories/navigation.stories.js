@@ -51,7 +51,7 @@ const desktop_navigation_html = `
         </div>
       </nav>
       <nav class="main-nav navbar-collapse bg-light mt-0" id="navbarNav">
-        <ul class="navbar-nav pt-4 pb-4">
+        <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
             <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
               <span>
@@ -132,6 +132,60 @@ const desktop_navigation_html = `
                 </li>
               </ul>
             </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+              <span>
+                <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-home" />
+                </svg>
+              </span>
+              <span class="flex-fill">
+                Home
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+              <span>
+                <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-home" />
+                </svg>
+              </span>
+              <span class="flex-fill">
+                Home
+              </span>
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+              <span>
+                <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-home" />
+                </svg>
+              </span>
+              <span class="flex-fill">
+                Home
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+              <span>
+                <svg width="1rem" height="1rem" class="me-2 mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-home" />
+                </svg>
+              </span>
+              <span class="flex-fill">
+                Home
+              </span>
+            </a>
           </li>
         </ul>
       </nav>
