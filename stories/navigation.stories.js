@@ -2,9 +2,6 @@ import { document, setTimeout } from 'global';
 
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite.svg';
 
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
 import {
   array,
   boolean,
@@ -50,7 +47,7 @@ const desktop_navigation_html = `
           </div>
         </div>
       </nav>
-      <nav class="main-nav navbar-collapse bg-light mt-0" id="navbarNav">
+      <nav class="main-nav navbar-collapse show bg-light mt-0" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
             <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
@@ -162,7 +159,7 @@ const desktop_navigation_html = `
           </li>
         </ul>
         <hr>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav pb-4">
           <li class="nav-item">
             <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
               <span>
