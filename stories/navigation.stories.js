@@ -369,19 +369,7 @@ const mobile_navigation_html = `
     </header>
 `;
 
-export const MobileNavigation = () => {
-
-  const container = $('<div class="m-0"></div>').append(mobile_navigation_html);
-  
-  setTimeout(function() {
-    $(function() {
-      container.find('.navbar-toggler').click();
-    });
-  },0)
-  
-  return container[0]; 
-
-};
+export const MobileNavigation = () => `${mobile_navigation_html}`;
 
 MobileNavigation.storyName = 'Mobile';
 
