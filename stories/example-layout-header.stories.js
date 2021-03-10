@@ -37,8 +37,8 @@ For additional documentation, see:
 `;
 
 let header_html = `
-<div class="d-block bg-white">
-  <nav class="d-block navbar navbar-light shadow-lg" style="max-width: 1400px; margin: 0 auto;">
+<header class="d-block">
+  <nav class="d-block navbar navbar-light bg-white shadow-lg" style="max-width: 1400px; margin: 0 auto;">
     <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
         <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +103,7 @@ let header_html = `
       </div>
     </div>
   </nav>
-</div>
+</header>
 `;
 
 export const LayoutHeader = () => {
@@ -114,8 +114,8 @@ export const LayoutHeader = () => {
   );
 
   return `
-    <div class="d-block bg-white">
-      <nav class="d-block navbar navbar-light shadow-lg" style="max-width: 1400px; margin: 0 auto; background: ${header_bg_color}">
+    <header class="d-block">
+      <nav class="d-block navbar navbar-light bg-white shadow-lg" style="max-width: 1400px; margin: 0 auto; background: ${header_bg_color}">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -180,7 +180,7 @@ export const LayoutHeader = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   `;
 };
 LayoutHeader.storyName = 'Header';
