@@ -34,8 +34,9 @@ For additional documentation, see:
 `;
 
 const desktop_navigation_html = `
-    <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
-      <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
+  <div class="bg-light m-0 vh-100">
+    <header class="d-block pt-0" style="max-width: 1400px; margin: 0 auto;">
+      <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
@@ -47,7 +48,7 @@ const desktop_navigation_html = `
           </div>
         </div>
       </nav>
-      <nav class="main-nav navbar-collapse show bg-light mt-0" id="navbarNav">
+      <nav class="main-nav navbar-collapse show mt-0" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
             <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
@@ -187,6 +188,7 @@ const desktop_navigation_html = `
         </ul>
       </nav>
     </header>
+  </div>
 `;
 
 export const DesktopNavigation = () => `${desktop_navigation_html}`;
@@ -206,6 +208,7 @@ DesktopNavigation.parameters = {
 };
 
 const mobile_navigation_html = `
+  <div class="bg-light m-0 vh-100">
     <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
       <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
@@ -364,6 +367,7 @@ const mobile_navigation_html = `
         </div>
       </div>
     </header>
+  </div>
 `;
 
 export const MobileNavigation = () => `${mobile_navigation_html}`;
