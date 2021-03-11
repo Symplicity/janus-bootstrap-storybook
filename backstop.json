@@ -994,6 +994,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Navigation-SB-Mobile",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-navigation--mobile-navigation",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": ".navbar-toggler",
+      "postInteractionWait": 1000,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Popovers-SB-Top",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-popovers--story-1",
       "referenceUrl": "",
