@@ -991,7 +991,14 @@
       "selectorExpansion": true,
       "expect": 0,
       "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1024,
+          "height": 768
+        }
+      ]
     },
     {
       "label": "Navigation-SB-Mobile",
@@ -1009,7 +1016,19 @@
       "selectorExpansion": true,
       "expect": 0,
       "misMatchThreshold" : 0.1,
-      "requireSameDimensions": true
+      "requireSameDimensions": true,
+      "viewports": [
+        {
+          "label": "phone",
+          "width": 320,
+          "height": 480
+        },
+        {
+          "label": "tablet",
+          "width": 768,
+          "height": 576
+        }
+      ]
     },
     {
       "label": "Popovers-SB-Top",
