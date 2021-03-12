@@ -51,7 +51,7 @@ const desktop_navigation_html = `
       <nav class="main-nav navbar-collapse show mt-0" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
-            <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
