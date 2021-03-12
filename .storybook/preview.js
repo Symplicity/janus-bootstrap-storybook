@@ -15,6 +15,44 @@ Object.keys(janusColors).forEach(function(color) {
 
 export const decorators = [];
 
+const customViewports = {
+  mobile1: {
+    name: 'Mobile - Small',
+    styles: {
+      width: '576px',
+      height: '963px',
+    },
+  },
+  mobile2: {
+    name: 'Mobile - Medium',
+    styles: {
+      width: '768px',
+      height: '963px',
+    },
+  },
+  mobile3: {
+    name: 'Mobile - Large',
+    styles: {
+      width: '992px',
+      height: '963px',
+    },
+  },
+  mobile4: {
+    name: 'Tablet',
+    styles: {
+      width: '1200px',
+      height: '963px',
+    },
+  },
+  mobile5: {
+    name: 'Desktop',
+    styles: {
+      width: '1440px',
+      height: '963px',
+    },
+  },
+};
+
 export const parameters = {
   actions: {
     handles: ['mouseover .btn', 'click .btn']
@@ -35,6 +73,11 @@ export const parameters = {
         value: '#333' 
       },
     ],
+  },
+  viewport: {
+    viewports: {
+      ...customViewports,
+    }
   },
   layout: 'fullscreen'
 };
