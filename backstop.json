@@ -986,7 +986,7 @@
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "",
-      "postInteractionWait": 1000,
+      "postInteractionWait": 100,
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,

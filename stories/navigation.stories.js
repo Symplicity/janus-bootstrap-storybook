@@ -117,7 +117,7 @@ const desktop_navigation_html = `
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark ms-n2 ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+                  <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
                         <use xlink:href="${iconSprite}#tabler-point-on" />
@@ -132,7 +132,7 @@ const desktop_navigation_html = `
             </div>
           </li>
         </ul>
-        <hr>
+        <hr class="ms-4 me-4">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
@@ -159,7 +159,7 @@ const desktop_navigation_html = `
             </a>
           </li>
         </ul>
-        <hr>
+        <hr class="ms-4 me-4">
         <ul class="navbar-nav pb-4">
           <li class="nav-item">
             <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
@@ -309,7 +309,7 @@ const mobile_navigation_html = `
                 </div>
               </li>
             </ul>
-            <hr>
+            <hr class="ms-4 me-4">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
@@ -336,7 +336,7 @@ const mobile_navigation_html = `
                 </a>
               </li>
             </ul>
-            <hr>
+            <hr class="ms-4 me-4">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
