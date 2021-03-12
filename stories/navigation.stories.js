@@ -34,7 +34,13 @@ For additional documentation, see:
 `;
 
 const desktop_navigation_html = `
-  <div class="bg-light m-0 vh-100">
+  <div class="bg-light rounded m-3 mb-0 p-3 d-lg-none text-center">
+    <p class="fs-4 m-4">
+      This component only displays above the "lg" breakpoint (992px).<br><br>
+      Increase the width of your screen until this message disappears.
+    </p>
+  </div>
+  <div class="bg-light m-0 vh-100 d-none d-lg-block">
     <header class="d-block pt-0" style="max-width: 1400px; margin: 0 auto;">
       <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
@@ -208,7 +214,13 @@ DesktopNavigation.parameters = {
 };
 
 const mobile_navigation_html = `
-  <div class="bg-light m-0 vh-100">
+  <div class="bg-light rounded m-3 mb-0 p-3 d-none d-lg-block text-center">
+    <p class="fs-4 m-4">
+      This component only displays below the "lg" breakpoint (992px).<br><br>
+      Decrease the width of your screen until this message disappears.
+    </p>
+  </div>
+  <div class="bg-light m-0 vh-100 d-lg-none">
     <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
       <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
