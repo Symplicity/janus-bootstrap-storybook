@@ -239,10 +239,10 @@ const mobile_navigation_html = `
         <div class="modal-dialog modal-fullscreen">
           <nav class="main-nav pe-auto bg-white mt-0 bg-light vh-100 pt-0 pb-4" id="navbarNav">
             <div class="nav-header d-flex pt-2">
-              <div class="d-flex align-items-center">
-                <button type="button" class="btn-close m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="d-flex align-items-center flex-grow-1 justify-content-center">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <svg class="bd-placeholder-img d-none d-sm-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
+              <svg class="bd-placeholder-img d-none d-sm-block me-3" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
             </div>
             <ul class="navbar-nav pb-0">
               <li class="nav-item">
