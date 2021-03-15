@@ -237,7 +237,13 @@ const mobile_navigation_html = `
       </nav>
       <div class="modal" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-          <nav class="main-nav pe-auto bg-white mt-0 bg-light vh-100 pt-4 pb-4" id="navbarNav">
+          <nav class="main-nav pe-auto bg-white mt-0 bg-light vh-100 pt-0 pb-4" id="navbarNav">
+            <div class="d-flex">
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn-close p-4" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <svg class="bd-placeholder-img d-none d-sm-block m-2 ms-0" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
+            </div>
             <ul class="navbar-nav pb-0">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-3 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
