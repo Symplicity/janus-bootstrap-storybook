@@ -54,7 +54,7 @@ const desktop_navigation_html = `
           </div>
         </div>
       </nav>
-      <nav class="main-nav navbar-collapse show mt-0" id="navbarNav">
+      <nav class="main-nav navbar-collapse show mt-0 fs-5" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
             <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
