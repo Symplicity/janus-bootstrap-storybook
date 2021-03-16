@@ -235,9 +235,9 @@ const mobile_navigation_html = `
           </div>
         </div>
       </nav>
-      <div class="modal" id="myModal">
+      <div class="modal p-0" id="myModal">
         <div class="modal-dialog modal-fullscreen">
-          <nav class="main-nav pe-auto bg-white mt-0 bg-light vh-100 pt-0 pb-4" id="navbarNav">
+          <nav class="main-nav pe-auto bg-white mt-0 pt-0 pb-4" id="navbarNav">
             <div class="nav-header d-flex pt-2">
               <div class="d-flex align-items-center flex-grow-1 justify-content-center">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
