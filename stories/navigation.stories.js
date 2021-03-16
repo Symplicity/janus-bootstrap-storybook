@@ -57,7 +57,7 @@ const desktop_navigation_html = `
       <nav class="main-nav navbar-collapse show mt-0 fs-5" id="navbarNav">
         <ul class="navbar-nav pt-4 pb-0">
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto active" aria-current="page" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto active" aria-current="page" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
@@ -69,7 +69,7 @@ const desktop_navigation_html = `
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-briefcase" />
@@ -82,7 +82,7 @@ const desktop_navigation_html = `
           </li>
           <li class="nav-item">
             <div class="list-group">
-              <a class="d-flex nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+              <a class="d-flex nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
                 <span>
                   <svg width="1rem" height="1rem" class="me-2 mt-n1">
                     <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -138,10 +138,10 @@ const desktop_navigation_html = `
             </div>
           </li>
         </ul>
-        <hr class="ms-4 me-4">
+        <hr class="ms-4 me-4 mt-2 mb-2">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
@@ -153,7 +153,7 @@ const desktop_navigation_html = `
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
@@ -165,10 +165,10 @@ const desktop_navigation_html = `
             </a>
           </li>
         </ul>
-        <hr class="ms-4 me-4">
+        <hr class="ms-4 me-4 mt-2 mb-2">
         <ul class="navbar-nav pb-4">
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
@@ -180,7 +180,7 @@ const desktop_navigation_html = `
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark ps-4 pe-4 pt-2 pb-2 h-auto" href="#">
+            <a class="nav-link text-dark ms-4 me-4 mt-2 mb-2 h-auto" href="#">
               <span>
                 <svg width="1rem" height="1rem" class="me-2 mt-n1">
                   <use xlink:href="${iconSprite}#tabler-home" />
@@ -329,7 +329,7 @@ const mobile_navigation_html = `
                 </div>
               </li>
             </ul>
-            <hr class="ms-4 me-4">
+            <hr class="ms-4 me-4 mt-2 mb-2">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-4 pe-4 pt-6 pb-6 h-auto" href="#">
@@ -356,7 +356,7 @@ const mobile_navigation_html = `
                 </a>
               </li>
             </ul>
-            <hr class="ms-4 me-4">
+            <hr class="ms-4 me-4 mt-2 mb-2">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark ps-4 pe-4 pt-6 pb-6 h-auto" href="#">
