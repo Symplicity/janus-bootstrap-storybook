@@ -16,41 +16,56 @@ Object.keys(janusColors).forEach(function(color) {
 export const decorators = [];
 
 const customViewports = {
-  mobile1: {
-    name: 'Mobile - Small',
+  viewport1: {
+    name: 'Mobile (sm) - iPhone 4',
     styles: {
-      width: '576px',
-      height: '963px',
+      width: '640px',
+      height: '960px',
     },
   },
-  mobile2: {
-    name: 'Mobile - Medium',
+  viewport2: {
+    name: 'Mobile (md) - iPhone XR',
     styles: {
-      width: '768px',
-      height: '963px',
+      width: '828px',
+      height: '1792px',
     },
   },
-  mobile3: {
-    name: 'Mobile - Large',
+  viewport3: {
+    name: 'Mobile (lg) - iPhone 8 Plus',
     styles: {
-      width: '992px',
-      height: '963px',
+      width: '1080px',
+      height: '1920px',
     },
   },
-  mobile4: {
-    name: 'Tablet',
+  viewport4: {
+    name: 'Tablet - Amazon Fire HD 10',
     styles: {
-      width: '1200px',
-      height: '963px',
+      width: '1280px',
+      height: '800px',
     },
   },
-  mobile5: {
-    name: 'Desktop',
+  viewport5: {
+    name: 'Desktop (sm) - 21.09%',
     styles: {
-      width: '1440px',
-      height: '963px',
+      width: '1366px',
+      height: '768px',
     },
   },
+  viewport6: {
+    name: 'Desktop (md) - 9.6%',
+    styles: {
+      width: '1536px',
+      height: '864px',
+    },
+  },
+  viewport7: {
+    name: 'Desktop (lg) - 21.93%',
+    styles: {
+      width: '1920px',
+      height: '1080px',
+    },
+  },
+
 };
 
 export const parameters = {
