@@ -40,12 +40,12 @@ const desktop_navigation_html = `
       Increase the width of your screen until this message disappears.
     </p>
   </div>
-  <div class="bg-light m-0 vh-100 d-none d-lg-block">
+  <div class="m-0 vh-100 d-none d-lg-block">
     <header class="d-block pt-0" style="max-width: 1400px; margin: 0 auto;">
       <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
-            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+            <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
               <svg width="1rem" height="1rem">
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
@@ -225,7 +225,7 @@ const mobile_navigation_html = `
       <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
-            <button class="border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
+            <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
               <svg width="1rem" height="1rem">
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
