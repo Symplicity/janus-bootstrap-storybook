@@ -2,9 +2,6 @@ import { document, setTimeout } from 'global';
 
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
 
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
 import {
   array,
   boolean,
@@ -36,7 +33,7 @@ For additional documentation, see:
 
 `;
 
-let avatars_html = `
+let avatar_text_html = `
 <!--div class="container">
   <div class="row">
     <div class="col">
@@ -91,24 +88,25 @@ let avatars_html = `
 `;
 
 
-export const story1 = () => { 
+export const AvatarText = () => { 
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatars_html);
+  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_text_html);
   
   return container[0]; 
     
 };
-story1.storyName = 'Avatars';
 
-story1.parameters = { 
+AvatarText.storyName = 'Text Avatar';
+
+AvatarText.parameters = { 
   notes: `
 
-    # Custom Avatars
+    # Text Avatar
 
     ###HTML
 
     \`\`\`html
-    ${avatars_html}
+    ${avatar_text_html}
     \`\`\`
     
     ${moreDocumentation}
@@ -116,6 +114,58 @@ story1.parameters = {
   `
 };
 
+let avatar_image_html = `
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="avatar avatar-sm avatar-image rounded-circle" type="button">
+        <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-md avatar-image rounded-circle" type="button">
+        <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-lg avatar-image rounded-circle" type="button">
+        <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-xl avatar-image rounded-circle" type="button">
+        <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+
+export const AvatarImage = () => { 
+
+  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_image_html);
+  
+  return container[0]; 
+    
+};
+AvatarImage.storyName = 'Image Avatar';
+
+AvatarImage.parameters = { 
+  notes: `
+
+    # Image Avatar
+
+    ###HTML
+
+    \`\`\`html
+    ${avatar_image_html}
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
+};
 
 
 
