@@ -33,7 +33,7 @@ For additional documentation, see:
 
 `;
 
-let avatar_text_html = `
+const avatar_text_html = `
 <!--div class="container">
   <div class="row">
     <div class="col">
@@ -114,7 +114,7 @@ AvatarText.parameters = {
   `
 };
 
-let avatar_image_html = `
+const avatar_image_html = `
 <div class="container">
   <div class="row">
     <div class="col">
@@ -166,6 +166,73 @@ AvatarImage.parameters = {
     
   `
 };
+
+
+const avatar_icon_html = `
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="avatar avatar-sm avatar-icon rounded bg-pale-purple" type="button">
+        <svg class="text-white">
+          <use xlink:href="${iconSprite}#tabler-briefcase" />
+          <span class="visually-hidden">Work</span>
+        </svg>
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-md avatar-icon rounded bg-pale-purple" type="button">
+        <svg class="text-white">
+          <use xlink:href="${iconSprite}#tabler-briefcase" />
+          <span class="visually-hidden">Work</span>
+        </svg>
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-lg avatar-icon rounded bg-pale-purple" type="button">
+        <svg class="text-white">
+          <use xlink:href="${iconSprite}#tabler-briefcase" />
+          <span class="visually-hidden">Work</span>
+        </svg>
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-xl avatar-icon rounded bg-pale-purple" type="button">
+        <svg class="text-white">
+          <use xlink:href="${iconSprite}#tabler-briefcase" />
+          <span class="visually-hidden">Work</span>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+
+export const AvatarIcon = () => { 
+
+  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_icon_html);
+  
+  return container[0]; 
+    
+};
+AvatarIcon.storyName = 'Icon Avatar';
+
+AvatarIcon.parameters = { 
+  notes: `
+
+    # Icon Avatar
+
+    ###HTML
+
+    \`\`\`html
+    ${avatar_icon_html}
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
+};
+
 
 
 
