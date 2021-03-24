@@ -34,33 +34,6 @@ For additional documentation, see:
 `;
 
 const avatar_text_html = `
-<!--div class="container">
-  <div class="row">
-    <div class="col">
-      <button class="avatar avatar-sm avatar-text rounded-circle bg-pale-blue" type="button">
-        <span class="text-white">WW</span>
-      </button>
-    </div>
-    <div class="col">
-      <button class="avatar avatar-sm avatar-image rounded-circle" type="button">
-        <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
-      </button>
-    </div>
-    <div class="col">
-      <button class="avatar avatar-sm avatar-icon rounded bg-pale-purple" type="button">
-        <svg class="text-white">
-          <use xlink:href="${iconSprite}#tabler-briefcase" />
-          <span class="visually-hidden">Work</span>
-        </svg>
-      </button>
-    </div>
-    <div class="col">
-      <button class="avatar avatar-sm avatar-image rounded" type="button">
-        <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
-      </button>
-    </div>
-  </div>
-</div-->
 <div class="container">
   <div class="row">
     <div class="col">
@@ -188,7 +161,7 @@ const avatar_icon_html = `
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-lg avatar-icon rounded bg-pale-purple" type="button">
+      <button class="avatar avatar-lg avatar-icon rounded-4 bg-pale-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>
@@ -196,7 +169,7 @@ const avatar_icon_html = `
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-xl avatar-icon rounded bg-pale-purple" type="button">
+      <button class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>
@@ -234,5 +207,56 @@ AvatarIcon.parameters = {
 };
 
 
+const avatar_logo_html = `
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="avatar avatar-sm avatar-image rounded" type="button">
+        <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-md avatar-image rounded" type="button">
+        <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-lg avatar-image rounded" type="button">
+        <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
+      </button>
+    </div>
+    <div class="col">
+      <button class="avatar avatar-xl avatar-image rounded" type="button">
+        <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
+      </button>
+    </div>
+  </div>
+</div>
+`;
 
+
+export const AvatarLogo = () => { 
+
+  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_logo_html);
+  
+  return container[0]; 
+    
+};
+AvatarLogo.storyName = 'Logo Avatar';
+
+AvatarLogo.parameters = { 
+  notes: `
+
+    # Logo Avatar
+
+    ###HTML
+
+    \`\`\`html
+    ${avatar_logo_html}
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
+};
 
