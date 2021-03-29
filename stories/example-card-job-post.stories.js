@@ -48,15 +48,15 @@ const card = `
       <div class="card-body">
         <svg class="bd-placeholder-img rounded-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Logo</text></svg>
         <h5 class="card-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
-        <h6 class="h3 text-capitalize">
+        <h6 class="h3 text-capitalize mb-1">
           <span class="line-clamp-3">Software Engineer</span>
         </h6>
-        <p class="card-text mb-0">
+        <p class="card-text mb-3">
           <span class="line-clamp-5">
             Mountain View, CA
           </span>
         </p>
-        <p class="card-text mt-2 mb-0">
+        <p class="card-text mb-0">
           <span class="fs-6 text-muted mb-0">5d ago</span>
         </p>
       </div>
@@ -119,13 +119,13 @@ export const Card = () => {
       </div>
       <div class="card-body">
         <h5 class="card-title text-uppercase h6"><b>${card_heading_text}</b></h5>
-        <h6 class="h3 text-capitalize">
+        <h6 class="h3 text-capitalize mb-1">
           <span class="${card_subheading_line_clamp}">${card_subheading_text}</span>
         </h6>
-        <p class="card-text mb-0">
+        <p class="card-text mb-3">
           <span class="${card_location_line_clamp}">${card_location_text}</span>
         </p>
-        <p class="card-text mt-2 mb-0">
+        <p class="card-text mb-0">
           <span class="fs-6 text-muted mb-0">5d ago</span>
         </p>
       </div>
