@@ -25,58 +25,7 @@ export default {
 };
 
 const profile_header = `
-      <div class="profile-header p-9 border border-light">
-        <div class="w-100 p-0">
-          <div class="row m-0">
-            <div class="col col-11 p-0">
-              <div class="profile-header-logo d-inline-block align-top">
-                <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9 mb-9">
-                  <svg class="text-white">
-                    <use xlink:href="${iconSprite}#tabler-briefcase" />
-                    <span class="visually-hidden">Work</span>
-                  </svg>
-                </span>
-              </div>
-              <div class="profile-header-body d-inline-block">
-                <svg class="bd-placeholder-img rounded-top me-2 mb-2" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Logo</text></svg>
-                <h5 class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
-                <h6 class="h3 text-capitalize mb-1">
-                  <span class="line-clamp-3">Software Engineer - 2201989</span>
-                </h6>
-                <p class="profile-header-text mb-3">
-                  <span class="line-clamp-5">
-                    Posted on Oct 14, 2020      
-                  </span>
-                </p>
-                <p class="profile-header-text mb-0">
-                  <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
-                </p>
-              </div>
-            </div>
-            <div class="col col-1 p-0">
-              <div class="profile-header-actions d-flex flex-grow-1 justify-content-end">
-                <button type="button" class="btn btn-action btn-action-icon-only rounded-circle">
-                  <svg class="icon-xl-font-size mt-n1">
-                    <use xlink:href="/path/to/icon-sprite.svg#tabler-star" />
-                    <span class="visually-hidden">Favorite</span>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="row m-0 justify-content-end">
-            <div class="btn-toolbar mt-9 w-auto me-0 p-0" role="toolbar" aria-label="Toolbar with button groups">
-              <button type="button" class="btn btn-primary me-6">Auto Renew</button>
-              <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
-              <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-center" aria-label="More Actions">
-                <svg width="1.125rem" height="1.125rem">
-                  <use xlink:href="${iconSprite}#tabler-dots" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- add back html once final -->
 `;
 
 export const ProfileHeader = () => {
@@ -118,7 +67,7 @@ export const ProfileHeader = () => {
           <div class="row m-0">
             <div class="col col-11 p-0">
               <div class="profile-header-logo d-inline-block align-top">
-                <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9 mb-9">
+                <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9">
                   <svg class="text-white">
                     <use xlink:href="${iconSprite}#tabler-briefcase" />
                     <span class="visually-hidden">Work</span>
@@ -148,8 +97,8 @@ export const ProfileHeader = () => {
               </div>
             </div>
             <div class="col col-1 p-0">
-              <div class="profile-header-actions d-flex flex-grow-1 justify-content-end">
-                <button type="button" class="btn btn-action btn-action-icon-only rounded-circle">
+              <div class="profile-header-secondary-actions d-flex flex-grow-1 justify-content-end">
+                <button type="button" class="btn btn-action btn-action-icon-only rounded-circle mt-n2">
                   <svg class="icon-xl-font-size mt-n1">
                     <use xlink:href="${iconSprite}#tabler-star" />
                     <span class="visually-hidden">Favorite</span>
@@ -158,8 +107,8 @@ export const ProfileHeader = () => {
               </div>
             </div>
           </div>
-          <div class="row m-0 justify-content-end">
-            <div class="btn-toolbar mt-9 w-auto me-0 p-0" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="row profile-header-primary-actions">
+            <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
               <button type="button" class="btn btn-primary me-6">Auto Renew</button>
               <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
               <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-center" aria-label="More Actions">
