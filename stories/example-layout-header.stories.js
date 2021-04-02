@@ -68,12 +68,6 @@ let header_html = `
             <span class="visually-hidden">More Actions</span>
           </svg>
         </button>
-        <!--button type="button" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-1 me-md-9" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
-          <svg class="icon-xl-font-size mt-n1">
-            <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
-            <span class="visually-hidden">More Actions</span>
-          </svg>
-        </button-->
         <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle border border-dark w-auto h-auto me-1 me-md-9"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
           <img role="button" class="rounded-circle border border-white icon-xxl-font-size" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
         </button>
@@ -145,12 +139,6 @@ export const LayoutHeader = () => {
                 <span class="visually-hidden">More Actions</span>
               </svg>
             </button>
-            <!--button type="button" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-1 me-md-9" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
-              <svg class="icon-xl-font-size mt-n1">
-                <use xlink:href="${iconSprite}#tabler-dots" />
-                <span class="visually-hidden">More Actions</span>
-              </svg>
-            </button-->
             <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle border border-dark w-auto h-auto me-1 me-md-9"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1">
               <img role="button" class="rounded-circle border border-white icon-xxl-font-size" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
             </button>
