@@ -111,7 +111,7 @@ export const ProfileHeader = () => {
             <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
               <button type="button" class="btn btn-primary me-6">Auto Renew</button>
               <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
-              <button type="button" class="btn btn-outline-primary d-flex align-items-center justify-content-center" aria-label="More Actions">
+              <button type="button" class="btn btn-outline-primary btn-more d-flex align-items-center justify-content-center" aria-label="More Actions">
                 <svg width="1.125rem" height="1.125rem">
                   <use xlink:href="${iconSprite}#tabler-dots" />
                 </svg>

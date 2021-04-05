@@ -28,7 +28,7 @@ const actionHTML = `
       </svg>
     </button>
     <div class="btn-group">
-      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-display="static">
+      <button type="button" class="btn btn-action btn-action-icon-only btn-more rounded-circle" aria-expanded="false" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-display="static">
         <svg class="icon-lg-font-size mt-n1">
           <use xlink:href="${iconSprite}#tabler-dots" />
           <span class="visually-hidden">More Actions</span>

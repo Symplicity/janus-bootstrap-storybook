@@ -264,7 +264,7 @@ const groupHTML = `
   <div class="btn-group" role="group" aria-label="Basic example">
     <button type="button" class="btn btn-outline-primary">Action1</button>
     <button type="button" class="btn btn-outline-primary">Action2</button>
-    <button type="button" class="btn btn-outline-primary pt-0 pb-0 d-flex align-items-center" aria-label="More Actions">
+    <button type="button" class="btn btn-outline-primary btn-more pt-0 pb-0 d-flex align-items-center" aria-label="More Actions">
       <svg width="1.125rem" height="1.125rem" class="m-0">
         <use xlink:href="${iconSprite}#tabler-dots" />
       </svg>
@@ -277,7 +277,7 @@ const groupHTML = `
     <div class="btn-group" role="group" aria-label="Usage example">
       <button type="button" class="btn btn-outline-primary">Edit</button>
       <button type="button" class="btn btn-outline-primary">Forward</button>
-      <button type="button" class="btn btn-outline-primary pt-0 pb-0 d-flex align-items-center" aria-label="More Actions">
+      <button type="button" class="btn btn-outline-primary btn-more pt-0 pb-0 d-flex align-items-center" aria-label="More Actions">
       <svg width="1.125rem" height="1.125rem" class="m-0">
         <use xlink:href="${iconSprite}#tabler-dots" />
       </svg>
