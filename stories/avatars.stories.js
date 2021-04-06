@@ -211,22 +211,22 @@ const avatar_logo_html = `
 <div class="container">
   <div class="row">
     <div class="col">
-      <button class="avatar avatar-sm avatar-image rounded" type="button">
+      <button class="avatar avatar-sm avatar-image rounded border-0" type="button">
         <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-md avatar-image rounded" type="button">
+      <button class="avatar avatar-md avatar-image rounded border-0" type="button">
         <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-lg avatar-image rounded" type="button">
+      <button class="avatar avatar-lg avatar-image rounded border-0" type="button">
         <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-xl avatar-image rounded" type="button">
+      <button class="avatar avatar-xl avatar-image rounded border-0" type="button">
         <img role="button" class="" src="https://cdn.shopify.com/s/files/1/1846/4053/products/tesla_black-800_600x.jpg" alt="...">
       </button>
     </div>
