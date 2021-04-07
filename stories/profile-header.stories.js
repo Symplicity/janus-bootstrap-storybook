@@ -15,7 +15,7 @@ import {
 } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components/Profile Header',
+  title: 'Components/Headers',
   decorators: [withKnobs],
   parameters: {
     options: {
@@ -24,11 +24,11 @@ export default {
   },
 };
 
-const profile_header = `
+const job_profile_header = `
     <!-- add back html once final -->
 `;
 
-export const ProfileHeader = () => {
+export const JobProfileHeader = () => {
   const line_clamp = {
     '1 line': 'line-clamp-1',
     '2 lines': 'line-clamp-2',
@@ -37,25 +37,25 @@ export const ProfileHeader = () => {
     '5 lines': 'line-clamp-5',
   };
 
-  const profile_header_heading_text = text('Heading Text', 'Full-Time, Internship');
+  const job_profile_header_heading_text = text('Heading Text', 'Full-Time, Internship');
 
-  const profile_header_title_text = text('Title Text', 'Senior Software Engineer - 2201989');
+  const job_profile_header_title_text = text('Title Text', 'Senior Software Engineer - 2201989');
 
-  const profile_header_additional_info_text = text('Additional Info', 'Posted on Oct 14, 2020');
+  const job_profile_header_additional_info_text = text('Additional Info', 'Posted on Oct 14, 2020');
 
-  const profile_header_heading_line_clamp = select(
+  const job_profile_header_heading_line_clamp = select(
     'Heading Line Clamp',
     line_clamp,
     'line-clamp-2'
   );
 
-  const profile_header_title_line_clamp = select(
+  const job_profile_header_title_line_clamp = select(
     'Title Line Clamp',
     line_clamp,
     'line-clamp-2'
   );
 
-  const profile_header_additional_info_line_clamp = select(
+  const job_profile_header_additional_info_line_clamp = select(
     'Additional Info Line Clamp',
     line_clamp,
     'line-clamp-5'
@@ -77,19 +77,19 @@ export const ProfileHeader = () => {
               <div class="profile-header-body d-inline-block">
                 <!-- Use IIFE to conditionally render this based on corresponding Knob value -->
                 ${(() => {
-                  if (profile_header_heading_text) {
+                  if (job_profile_header_heading_text) {
                     return `
-                      <h5 class="profile-header-title text-uppercase h6"><b>${profile_header_heading_text}</b></h5>
+                      <h5 class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></h5>
                     `
                   } else {
                     return `` 
                   }
                 })()}
                 <h6 class="h3 text-capitalize mb-1">
-                  <span class="${profile_header_title_line_clamp}">${profile_header_title_text}</span>
+                  <span class="${job_profile_header_title_line_clamp}">${job_profile_header_title_text}</span>
                 </h6>
                 <p class="profile-header-text mb-3">
-                  <span class="${profile_header_additional_info_line_clamp}">${profile_header_additional_info_text}</span>
+                  <span class="${job_profile_header_additional_info_line_clamp}">${job_profile_header_additional_info_text}</span>
                 </p>
                 <p class="profile-header-text mb-0">
                   <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
@@ -123,9 +123,9 @@ export const ProfileHeader = () => {
   `;
 };
 
-ProfileHeader.storyName = 'Profile Header';
+JobProfileHeader.storyName = 'Job Profile Header';
 
-ProfileHeader.parameters = {
+JobProfileHeader.parameters = {
   notes: `
 
   #Notes
@@ -136,7 +136,7 @@ ProfileHeader.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${profile_header}
+  ${job_profile_header}
   \`\`\`
 
   `,
