@@ -25,7 +25,55 @@ export default {
 };
 
 const job_profile_header = `
-    <!-- add back html once final -->
+  <div class="profile-header p-9 border border-light">
+    <div class="w-100 p-0">
+      <div class="row m-0">
+        <div class="col col-11 p-0">
+          <div class="profile-header-logo d-inline-block align-top">
+            <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9">
+              <svg class="text-white">
+                <use xlink:href="/path/to/icon-sprite.svg#tabler-briefcase" />
+                <span class="visually-hidden">Work</span>
+              </svg>
+            </span>
+          </div>
+          <div class="profile-header-body d-inline-block">
+            <h5 class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
+            <h6 class="h3 text-capitalize mb-1">
+              <span class="line-clamp-2">Senior Software Engineer - 2201989</span>
+            </h6>
+            <p class="profile-header-text mb-3">
+              <span class="line-clamp-5">Posted on Oct 14, 2020</span>
+            </p>
+            <p class="profile-header-text mb-0">
+              <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+            </p>
+          </div>
+        </div>
+        <div class="col col-1 p-0">
+          <div class="profile-header-secondary-actions d-flex flex-grow-1 justify-content-end">
+            <button type="button" class="btn btn-action btn-action-icon-only rounded-circle mt-n2">
+              <svg class="icon-xl-font-size mt-n1">
+                <use xlink:href="/path/to/icon-sprite.svg##tabler-star" />
+                <span class="visually-hidden">Favorite</span>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row profile-header-primary-actions">
+        <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
+          <button type="button" class="btn btn-primary me-6">Auto Renew</button>
+          <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
+          <button type="button" class="btn btn-outline-primary btn-more d-flex align-items-center justify-content-center" aria-label="More Actions">
+            <svg width="1.125rem" height="1.125rem">
+              <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 `;
 
 export const JobProfileHeader = () => {
