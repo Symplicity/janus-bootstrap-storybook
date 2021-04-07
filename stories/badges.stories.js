@@ -62,12 +62,12 @@ export const Badges = () => {
   <div>
     <h2>Example</h2>
     <p>Badges scale to match the size of the immediate parent element by using relative font sizing and em units.</p>
-    
-    <h2>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h2>
-    <h3>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h3>
-    <h4>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h4>
-    <h5>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
-    <h6>Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
+    <h1>h1 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h1>
+    <h2>h2 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h2>
+    <h3>h3 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h3>
+    <h4>h4 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h4>
+    <h5>h5 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
+    <h6>h6 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
   </div>
 `;
   
