@@ -189,3 +189,73 @@ JobProfileHeader.parameters = {
 
   `,
 };
+
+
+const employer_profile_header = `
+<!-- add once html is set -->
+`;
+
+export const EmployerProfileHeader = () => {
+
+  return `
+      <div class="profile-header p-9 border border-light">
+        <div class="w-100 p-0">
+          <div class="row m-0">
+            <div class="col col-11 p-0">
+              <div class="profile-header-logo d-inline-block align-top">
+                <span class="avatar avatar-xl avatar-icon rounded-4 d-flex me-9">
+                  <img role="button" class="" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="...">
+                </span>
+              </div>
+              <div class="profile-header-body d-inline-block">
+                <!--h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5-->
+                <h6 class="h3 text-capitalize mb-1">
+                  <span>Open Interviews Position <span class="badge bg-danger">Campus Interview</span></span>
+                </h6>
+                <p class="profile-header-text mb-3">
+                  <span>Google, Inc</span>
+                </p>
+                <p class="profile-header-text mb-0">
+                  <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+                </p>
+              </div>
+            </div>
+            <div class="col col-1 p-0">
+              <div class="profile-header-secondary-actions d-flex flex-grow-1 justify-content-end">
+                <button type="button" class="btn btn-action btn-action-icon-only rounded-circle">
+                  <svg class="icon-xl-font-size mt-n1">
+                    <use xlink:href="${iconSprite}#tabler-star" />
+                    <span class="visually-hidden">Favorite</span>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row profile-header-primary-actions">
+            <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
+              <button type="button" class="btn btn-primary me-6">Schedule Interview</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  `;
+};
+
+EmployerProfileHeader.storyName = 'Employer Header';
+
+EmployerProfileHeader.parameters = {
+  notes: `
+
+  #Notes
+  This HTML is copied from Examples > Cards > Employer Post.
+
+  Changes made in one of these stories will need to be applied to the other accordingly.
+  
+  #Sample Code
+
+  \`\`\`html
+  ${employer_profile_header}
+  \`\`\`
+
+  `,
+};
