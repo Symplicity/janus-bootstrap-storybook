@@ -25,43 +25,39 @@ export default {
 };
 
 const job_profile_header = `
-  <div class="profile-header p-9 border border-light">
-    <div class="w-100 p-0">
-      <div class="row m-0">
-        <div class="col col-11 p-0">
-          <div class="profile-header-logo d-inline-block align-top">
-            <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9">
-              <svg class="text-white">
-                <use xlink:href="/path/to/icon-sprite.svg#tabler-briefcase" />
-                <span class="visually-hidden">Work</span>
-              </svg>
-            </span>
-          </div>
-          <div class="profile-header-body d-inline-block">
-            <h5 class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
-            <h6 class="h3 text-capitalize mb-1">
-              <span class="line-clamp-2">Senior Software Engineer - 2201989</span>
-            </h6>
-            <p class="profile-header-text mb-3">
-              <span class="line-clamp-5">Posted on Oct 14, 2020</span>
-            </p>
-            <p class="profile-header-text mb-0">
-              <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
-            </p>
-          </div>
+  <div class="profile-header">
+    <div class="w-100 p-9 border border-light">
+      <div class="m-0">
+        <div class="profile-header-secondary-actions position-relative">
+          <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-n2">
+            <svg class="icon-xl-font-size mt-n1">
+              <use xlink:href="/path/to/icon-sprite.svg#tabler-star" />
+              <span class="visually-hidden">Favorite</span>
+            </svg>
+          </button>
         </div>
-        <div class="col col-1 p-0">
-          <div class="profile-header-secondary-actions d-flex flex-grow-1 justify-content-end">
-            <button type="button" class="btn btn-action btn-action-icon-only rounded-circle mt-n2">
-              <svg class="icon-xl-font-size mt-n1">
-                <use xlink:href="/path/to/icon-sprite.svg##tabler-star" />
-                <span class="visually-hidden">Favorite</span>
-              </svg>
-            </button>
-          </div>
+        <div class="profile-header-logo align-top me-9">
+          <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex">
+            <svg class="text-white">
+              <use xlink:href="$/path/to/icon-sprite.svg#tabler-briefcase" />
+              <span class="visually-hidden">Work</span>
+            </svg>
+          </span>
+        </div>
+        <div class="profile-header-body">
+          <h5 class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
+          <h6 class="h3 text-capitalize mb-1">
+            <span class="line-clamp-2">Senior Software Engineer - 2201989</span>
+          </h6>
+          <p class="profile-header-text mb-3">
+            <span class="line-clamp-5">Posted on Oct 14, 2020</span>
+          </p>
+          <p class="profile-header-text mb-0">
+            <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+          </p>
         </div>
       </div>
-      <div class="row profile-header-primary-actions">
+      <div class="profile-header-primary-actions p-0 mt-7">
         <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
           <button type="button" class="btn btn-primary me-6">Auto Renew</button>
           <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
@@ -110,52 +106,48 @@ export const JobProfileHeader = () => {
   );
 
   return `
-      <div class="profile-header p-9 border border-light">
-        <div class="w-100 p-0">
-          <div class="row m-0">
-            <div class="col col-11 p-0">
-              <div class="profile-header-logo d-inline-block align-top">
-                <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex me-9">
-                  <svg class="text-white">
-                    <use xlink:href="${iconSprite}#tabler-briefcase" />
-                    <span class="visually-hidden">Work</span>
-                  </svg>
-                </span>
-              </div>
-              <div class="profile-header-body d-inline-block">
-                <!-- Use IIFE to conditionally render this based on corresponding Knob value -->
-                ${(() => {
-                  if (job_profile_header_heading_text) {
-                    return `
-                      <h5 class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></h5>
-                    `
-                  } else {
-                    return `` 
-                  }
-                })()}
-                <h6 class="h3 text-capitalize mb-1">
-                  <span class="${job_profile_header_title_line_clamp}">${job_profile_header_title_text}</span>
-                </h6>
-                <p class="profile-header-text mb-3">
-                  <span class="${job_profile_header_additional_info_line_clamp}">${job_profile_header_additional_info_text}</span>
-                </p>
-                <p class="profile-header-text mb-0">
-                  <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
-                </p>
-              </div>
+      <div class="profile-header">
+        <div class="w-100 p-9 border border-light">
+          <div class="m-0">
+            <div class="profile-header-secondary-actions position-relative">
+              <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-n2">
+                <svg class="icon-xl-font-size mt-n1">
+                  <use xlink:href="${iconSprite}#tabler-star" />
+                  <span class="visually-hidden">Favorite</span>
+                </svg>
+              </button>
             </div>
-            <div class="col col-1 p-0">
-              <div class="profile-header-secondary-actions d-flex flex-grow-1 justify-content-end">
-                <button type="button" class="btn btn-action btn-action-icon-only rounded-circle mt-n2">
-                  <svg class="icon-xl-font-size mt-n1">
-                    <use xlink:href="${iconSprite}#tabler-star" />
-                    <span class="visually-hidden">Favorite</span>
-                  </svg>
-                </button>
-              </div>
+            <div class="profile-header-logo align-top me-9">
+              <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex">
+                <svg class="text-white">
+                  <use xlink:href="${iconSprite}#tabler-briefcase" />
+                  <span class="visually-hidden">Work</span>
+                </svg>
+              </span>
+            </div>
+            <div class="profile-header-body">
+              <!-- Use IIFE to conditionally render this based on corresponding Knob value -->
+              ${(() => {
+                if (job_profile_header_heading_text) {
+                  return `
+                    <h5 class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></h5>
+                  `
+                } else {
+                  return `` 
+                }
+              })()}
+              <h6 class="h3 text-capitalize mb-1">
+                <span class="${job_profile_header_title_line_clamp}">${job_profile_header_title_text}</span>
+              </h6>
+              <p class="profile-header-text mb-3">
+                <span class="${job_profile_header_additional_info_line_clamp}">${job_profile_header_additional_info_text}</span>
+              </p>
+              <p class="profile-header-text mb-0">
+                <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+              </p>
             </div>
           </div>
-          <div class="row profile-header-primary-actions">
+          <div class="profile-header-primary-actions p-0 mt-7">
             <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
               <button type="button" class="btn btn-primary me-6">Auto Renew</button>
               <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
@@ -196,19 +188,19 @@ const employer_profile_header = `
     <div class="w-100 p-9 border border-light">
       <div class="m-0">
         <div class="profile-header-secondary-actions position-relative">
-          <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-n2">
+          <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-1">
             <svg class="icon-xl-font-size mt-n1">
               <use xlink:href="${iconSprite}#tabler-star" />
               <span class="visually-hidden">Favorite</span>
             </svg>
           </button>
         </div>
-        <div class="profile-header-logo d-inline-block me-9">
-          <span class="avatar avatar-xl avatar-icon rounded-4 d-flex me-9">
+        <div class="profile-header-logo me-9">
+          <span class="avatar avatar-xl avatar-icon rounded-4 d-flex">
             <img role="button" class="" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="...">
           </span>
         </div>
-        <div class="profile-header-body d-inline-block">
+        <div class="profile-header-body">
           <!--h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5-->
           <h6 class="h3 text-capitalize mb-1">
             <span>Open Interviews Position <span class="badge bg-danger">Campus Interview</span></span>
