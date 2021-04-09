@@ -45,10 +45,10 @@ const job_profile_header = `
           </span>
         </div>
         <div class="profile-header-body">
-          <h5 class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></h5>
-          <h6 class="h3 text-capitalize mb-1">
+          <span class="profile-header-title text-uppercase h6"><b>Full-Time, Internship</b></span>
+          <span class="h3 text-capitalize mb-1">
             <span class="line-clamp-2">Senior Software Engineer - 2201989</span>
-          </h6>
+          </span>
           <p class="profile-header-text mb-3">
             <span class="line-clamp-5">Posted on Oct 14, 2020</span>
           </p>
@@ -130,15 +130,15 @@ export const JobProfileHeader = () => {
               ${(() => {
                 if (job_profile_header_heading_text) {
                   return `
-                    <h5 class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></h5>
+                    <span class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></span>
                   `
                 } else {
                   return `` 
                 }
               })()}
-              <h6 class="h3 text-capitalize mb-1">
+              <span class="h3 text-capitalize mb-1">
                 <span class="${job_profile_header_title_line_clamp}">${job_profile_header_title_text}</span>
-              </h6>
+              </span>
               <p class="profile-header-text mb-3">
                 <span class="${job_profile_header_additional_info_line_clamp}">${job_profile_header_additional_info_text}</span>
               </p>
@@ -202,9 +202,9 @@ const employer_profile_header = `
         </div>
         <div class="profile-header-body">
           <!--h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5-->
-          <h6 class="h3 text-capitalize mb-1">
-            <span>Open Interviews Position <span class="badge bg-danger">Campus Interview</span></span>
-          </h6>
+          <span class="h3 text-capitalize mb-1">
+            <span>Open Interviews Position <span class="badge bg-danger fs-7">Campus Interview</span></span>
+          </span>
           <p class="profile-header-text mb-3">
             <span>Google, Inc</span>
           </p>
@@ -258,10 +258,10 @@ const event_profile_header = `
           </button>
         </div>
         <div class="profile-header-body d-inline-block">
-          <h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5>
-          <h6 class="h3 text-capitalize mb-1">
+          <span class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></span>
+          <span class="h3 text-capitalize mb-1">
             <span>2020 Fall Virtual Engineering Career Fair</span>
-          </h6>
+          </span>
           <p class="profile-header-text mb-0">
             <span>Online</span>
           </p>
