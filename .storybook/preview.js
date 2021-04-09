@@ -17,49 +17,49 @@ export const decorators = [];
 
 const customViewports = {
   viewport1: {
-    name: 'Mobile (sm) - iPhone 4',
+    name: 'Mobile (sm) - 320x960',
     styles: {
-      width: '640px',
+      width: '320px',
       height: '960px',
     },
   },
   viewport2: {
-    name: 'Mobile (md) - iPhone XR',
+    name: 'Mobile (md) - 414x1792',
     styles: {
-      width: '828px',
+      width: '414px',
       height: '1792px',
     },
   },
   viewport3: {
-    name: 'Mobile (lg) - iPhone 8 Plus',
+    name: 'Mobile (lg) - 540x1920',
     styles: {
-      width: '1080px',
+      width: '540px',
       height: '1920px',
     },
   },
   viewport4: {
-    name: 'Tablet - Amazon Fire HD 10',
+    name: 'Mobile (xl) - 640x800',
     styles: {
-      width: '1280px',
+      width: '640px',
       height: '800px',
     },
   },
   viewport5: {
-    name: 'Desktop (sm) - 21.09%',
+    name: 'Desktop (sm) 1366x768',
     styles: {
       width: '1366px',
       height: '768px',
     },
   },
   viewport6: {
-    name: 'Desktop (md) - 9.6%',
+    name: 'Desktop (md) 1536x864',
     styles: {
       width: '1536px',
       height: '864px',
     },
   },
   viewport7: {
-    name: 'Desktop (lg) - 21.93%',
+    name: 'Desktop (lg) 1920x1080',
     styles: {
       width: '1920px',
       height: '1080px',
