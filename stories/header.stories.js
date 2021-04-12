@@ -24,6 +24,7 @@ export default {
   },
 };
 
+
 const job_profile_header = `
   <div class="profile-header">
     <div class="w-100 p-9 border border-light">
@@ -299,6 +300,52 @@ EventProfileHeader.parameters = {
 
   \`\`\`html
   ${event_profile_header}
+  \`\`\`
+
+  `,
+};
+
+
+const career_plan_profile_header_html = `
+  <div class="profile-header">
+    <div class="w-100 p-9 border border-light">
+      <div class="m-0">
+        <div class="profile-header-body d-flex">
+          <div class="flex-grow-1">
+            <!--h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5-->
+            <span class="h3 text-capitalize mb-1">
+              <span>Open Interviews Position <span class="badge bg-danger fs-7">Campus Interview</span></span>
+            </span>
+            <p class="profile-header-text mb-3">
+              <span>Google, Inc</span>
+            </p>
+            <p class="profile-header-text mb-0">
+              <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+            </p>
+          </div>
+          <img role="button" class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="..." style="width: 100px;">
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+export const CareerPlanProfileHeader = () => `${career_plan_profile_header_html}`;
+
+CareerPlanProfileHeader.storyName = 'Career Plan Header';
+
+CareerPlanProfileHeader.parameters = {
+  notes: `
+
+  #Notes
+  This HTML is copied from Examples > Cards > Event Post.
+
+  Changes made in one of these stories will need to be applied to the other accordingly.
+  
+  #Sample Code
+
+  \`\`\`html
+  ${career_plan_profile_header_html}
   \`\`\`
 
   `,
