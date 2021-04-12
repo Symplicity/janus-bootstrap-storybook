@@ -323,7 +323,7 @@ const career_plan_profile_header_html = `
               <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
             </p>
           </div>
-          <img role="button" class="rounded" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="..." style="width: 100px;">
+          <img src="/progress-bar-placeholder.png" alt="Static Placeholder">
         </div>
       </div>
     </div>
