@@ -323,7 +323,9 @@ const career_plan_profile_header_html = `
               <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
             </p>
           </div>
-          <img src="/progress-bar-placeholder.png" alt="Static Placeholder">
+          <div>
+            <img src="/progress-bar-placeholder.png" alt="Static Placeholder">
+          </div>
         </div>
       </div>
     </div>
