@@ -164,7 +164,7 @@ export const JobProfileHeader = () => {
   `;
 };
 
-JobProfileHeader.storyName = 'Job Profile Header';
+JobProfileHeader.storyName = 'Job Profile';
 
 JobProfileHeader.parameters = {
   notes: `
@@ -225,7 +225,7 @@ const employer_profile_header = `
 
 export const EmployerProfileHeader = () => `${employer_profile_header}`;
 
-EmployerProfileHeader.storyName = 'Employer Header';
+EmployerProfileHeader.storyName = 'Employer';
 
 EmployerProfileHeader.parameters = {
   notes: `
@@ -286,7 +286,7 @@ const event_profile_header = `
 
 export const EventProfileHeader = () => `${event_profile_header}`;
 
-EventProfileHeader.storyName = 'Event Header';
+EventProfileHeader.storyName = 'Event';
 
 EventProfileHeader.parameters = {
   notes: `
@@ -334,7 +334,7 @@ const career_plan_profile_header_html = `
 
 export const CareerPlanProfileHeader = () => `${career_plan_profile_header_html}`;
 
-CareerPlanProfileHeader.storyName = 'Career Plan Header';
+CareerPlanProfileHeader.storyName = 'Career Plan';
 
 CareerPlanProfileHeader.parameters = {
   notes: `
