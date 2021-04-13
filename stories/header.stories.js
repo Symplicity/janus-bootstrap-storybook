@@ -312,15 +312,15 @@ const career_plan_profile_header_html = `
       <div class="m-0">
         <div class="profile-header-body d-flex">
           <div class="flex-grow-1">
-            <!--h5 class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></h5-->
             <span class="h3 text-capitalize mb-1">
-              <span>Open Interviews Position <span class="badge bg-danger fs-7">Campus Interview</span></span>
+              <span>Minimum Number of Activities</span>
             </span>
             <p class="profile-header-text mb-3">
-              <span>Google, Inc</span>
+              <span>Career Plan</span>
             </p>
-            <p class="profile-header-text mb-0">
-              <span class="fs-6 text-muted mb-0">Expires on Nov 14, 2020</span>
+            <p class="profile-header-text mb-0 d-flex">
+              <span class="fs-6 text-muted mb-0">Started on Jun 10, 2020</span>
+              <a href="#" class="fs-6 ms-6">Give Up</a>
             </p>
           </div>
           <div>
