@@ -352,3 +352,63 @@ CareerPlanProfileHeader.parameters = {
 
   `,
 };
+
+
+const connection_profile_header = `
+  <div class="profile-header">
+    <div class="w-100 p-9 border border-light">
+      <div class="m-0">
+        <div class="profile-header-logo align-top me-9">
+          <span class="avatar avatar-xl avatar-icon rounded-4 d-flex">
+            <img role="button" class="" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="...">
+          </span>
+        </div>
+        <div class="profile-header-body">
+          <span class="d-flex fs-6">
+            <svg class="icon-lg-font-size">
+              <use xlink:href="${iconSprite}#tabler-check" />
+              <span class="visually-hidden">Connected</span>
+            </svg>
+            <span class="h6 text-uppercase mb-0">Connected</span>
+          </span>
+          <span class="h3 text-capitalize mb-1">
+            UI2 Stage CSM
+            <span class="badge rounded-pill bg-light text-dark">6 Following</span></span>
+          </span>
+          <p class="profile-header-text mb-3">
+            <span>Niagra, US-NY</span>
+          </p>
+          <p class="profile-header-text mb-0">
+            <span class="fs-6 text-muted mb-0">20.0k Undergraduates | 3.5k Graduates</span>
+          </p>
+        </div>
+      </div>
+      <div class="profile-header-primary-actions p-0 mt-7">
+        <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
+          <button type="button" class="btn btn-primary me-6">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+export const ConnectionProfileHeader = () => `${connection_profile_header}`;
+
+ConnectionProfileHeader.storyName = 'Connection';
+
+ConnectionProfileHeader.parameters = {
+  notes: `
+
+  #Notes
+  This HTML is copied from Examples > Cards > Employer Post.
+
+  Changes made in one of these stories will need to be applied to the other accordingly.
+  
+  #Sample Code
+
+  \`\`\`html
+  ${connection_profile_header}
+  \`\`\`
+
+  `,
+};
