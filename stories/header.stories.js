@@ -369,7 +369,7 @@ const connection_profile_header = `
               <use xlink:href="${iconSprite}#tabler-check" />
               <span class="visually-hidden">Connected</span>
             </svg>
-            <span class="h6 text-uppercase mb-0">Connected</span>
+            <span class="h6 text-uppercase mb-0 ms-1 fw-bolder">Connected</span>
           </span>
           <span class="h3 text-capitalize mb-1">
             UI2 Stage CSM
