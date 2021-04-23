@@ -189,7 +189,7 @@ const employer_profile_header = `
     <div class="w-100 p-9 border border-light">
       <div class="m-0">
         <div class="profile-header-secondary-actions position-relative">
-          <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-1">
+          <button type="button" class="bg-white border-0 position-absolute end-0 w-auto h-auto p-0 sw-2">
             <svg class="icon-xl-font-size mt-n1">
               <use xlink:href="${iconSprite}#tabler-star" />
               <span class="visually-hidden">Favorite</span>
@@ -251,18 +251,18 @@ const event_profile_header = `
     <div class="w-100 p-9 border border-light">
       <div class="m-0">
         <div class="profile-header-secondary-actions position-relative">
-          <button type="button" class="btn btn-action btn-action-icon-only rounded-circle position-absolute end-0 mt-n2">
+          <button type="button" class="bg-white border-0 position-absolute end-0 w-auto h-auto p-0 sw-2">
             <svg class="icon-xl-font-size mt-n1">
               <use xlink:href="${iconSprite}#tabler-star" />
               <span class="visually-hidden">Favorite</span>
             </svg>
           </button>
         </div>
-        <div class="profile-header-body d-inline-block">
-          <span class="profile-header-title text-uppercase h6"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></span>
-          <span class="h3 text-capitalize mb-1">
+        <div class="profile-header-body d-inline-block pe-4">
+          <p class="profile-header-title text-uppercase h6 mb-0"><b>Dec 15 4:00pm - Dec 18 4:00pm</b></p>
+          <p class="h3 text-capitalize mb-1">
             <span>2020 Fall Virtual Engineering Career Fair</span>
-          </span>
+          </p>
           <p class="profile-header-text mb-0">
             <span>Online</span>
           </p>
