@@ -59,7 +59,6 @@
   },
   "dependencies": {
     "@storybook/theming": "^6.2.9",
-    "@symplicity/tabler-icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
     "bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.0-beta1-janus"
   }
 }
