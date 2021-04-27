@@ -418,6 +418,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Buttons-SB-Toggle-Button",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-buttons--toggle-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.01,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Buttons-SB-Toggle-Checkbox",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-buttons--toggle-checkbox",
       "referenceUrl": "",

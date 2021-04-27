@@ -437,6 +437,103 @@ Action.parameters = {
     `,
 };
 
+const toggleButtonHTML = `
+<div>
+  <h3>Toggle (Button)</h3>
+  <div class="d-flex flex-row">
+    <div class="p-2">
+      <button class="btn">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-star" />
+          <span class="visually-hidden">Favorite</span>
+        </svg>
+      </button>
+      <br><br>
+      <button class="btn">
+        <svg class="icon-lg-font-size mt-n1 text-warning">
+          <use xlink:href="${iconSprite}#tabler-star-on" />
+          <span class="visually-hidden">Favorite</span>
+        </svg>
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-star" />
+        </svg>
+        <span>Favorite</span>
+      </button>
+      <br><br>
+      <button class="btn">
+        <svg class="icon-lg-font-size mt-n1 text-warning">
+          <use xlink:href="${iconSprite}#tabler-star-on" />
+        </svg>
+        <span class="text-warning">Favorited</span>
+      </button>
+    </div>
+  </div>
+  <br><br>
+  <div class="d-flex flex-row">
+    <div class="p-2">
+      <button class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined5">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-plus" />
+        </svg>
+        <span class="visually-hidden">Favorited</span>
+      </button>
+      <br><br>
+      <button class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined6">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-check" />
+        </svg>
+        <span class="visually-hidden">OK</span>
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined7">
+        Add
+      </button>
+      <br><br>
+      <button class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined8">
+        Added
+      </button>
+    </div>
+    <div class="p-2">
+      <button class="btn btn-action btn-action-toggle rounded-pill" for="btn-check-outlined9">
+        xxx
+      </button>
+      <br><br>
+      <button class="btn btn-action btn-action-toggle rounded-pill active" for="btn-check-outlined10">
+        xxxx
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+export const ToggleButton = () => toggleButtonHTML;
+
+ToggleButton.storyName = 'Toggle (Button)';
+
+ToggleButton.parameters = {
+  notes: `
+    # Toggle (Button)
+
+    ## Documentation
+    
+    Here are some notes on toggle buttons. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${toggleButtonHTML}
+    \`\`\`
+    
+    ${buttonNotes}
+    
+    `,
+};
+
 const toggleCheckboxHTML = `
 <div>
   <h3>Toggle (Checkbox)</h3>
