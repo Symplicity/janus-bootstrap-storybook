@@ -418,8 +418,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Buttons-SB-Toggle",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-buttons--toggle",
+      "label": "Buttons-SB-Toggle-Checkbox",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-buttons--toggle-checkbox",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",

@@ -437,9 +437,9 @@ Action.parameters = {
     `,
 };
 
-const toggleHTML = `
+const toggleCheckboxHTML = `
 <div>
-  <h3>Toggle</h3>
+  <h3>Toggle (Checkbox)</h3>
   <div class="d-flex flex-row">
     <div class="p-2">
       <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
@@ -521,22 +521,22 @@ const toggleHTML = `
 </div>
 `;
 
-export const Toggle = () => toggleHTML;
+export const ToggleCheckbox = () => toggleCheckboxHTML;
 
-Toggle.storyName = 'Toggle';
+ToggleCheckbox.storyName = 'Toggle (Checkbox)';
 
-Toggle.parameters = {
+ToggleCheckbox.parameters = {
   notes: `
-    # Toggle Action Buttons
+    # Toggle (Checkbox)
 
     ## Documentation
     
-    Here are some notes on toggle action buttons. 
+    Here are some notes on toggle checkboxes. 
     
     ## Code Sample
     
     \`\`\`html
-    ${toggleHTML}
+    ${toggleCheckboxHTML}
     \`\`\`
     
     ${buttonNotes}
