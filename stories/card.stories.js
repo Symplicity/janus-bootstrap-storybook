@@ -262,7 +262,7 @@ CardEmptyStateNoIcons.parameters = {
 const card_sidebar = `
   <div class="sidebar">
     <div class="card bg-light border-0">
-      <h3 class="card-header bg-light mb-0">
+      <h3 class="card-header bg-light mb-0 rounded">
         <div class="d-flex justify-content-between">
           <div>
             <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
