@@ -179,8 +179,8 @@ const alert_info_html = `
         </svg>
       </div>
       <div class="flex-grow-1">
-        <p><strong>This is a info alert - check it out!</strong></p>
-        <p>This is a info alert - check it out!</p>
+        <p class="mb-2"><strong>This is a info alert - check it out!</strong></p>
+        <p class="mb-2">This is a info alert - check it out!</p>
         <p class="mb-0">This is a info alert - check it out!</p>
       </div>
       <div class="flex-shrink-1">
