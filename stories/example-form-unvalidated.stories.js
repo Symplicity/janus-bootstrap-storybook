@@ -155,7 +155,7 @@ const unvalidated_form_html = `
 `;
 
 export const UnvalidatedForm = () =>
-  `<div class="container-fluid">${unvalidated_form_html}</div>`;
+  `<div>${unvalidated_form_html}</div>`;
 
 UnvalidatedForm.storyName = 'Unvalidated Form';
 

@@ -187,7 +187,7 @@ const validated_form_html = `
 `;
 
 export const ValidatedForm = () =>
-  `<div class="container-fluid">${validated_form_html}</div>`;
+  `<div>${validated_form_html}</div>`;
 
 ValidatedForm.storyName = 'Validated Form';
 
