@@ -208,3 +208,41 @@ AlertInfo.parameters = {
   \`\`\`
   `,
 };
+
+const alert_with_divider_html = `
+    <div class="alert alert-success alert-dismissible d-flex" role="alert">
+      <div class="flex-shrink-1 d-flex">
+        <svg width="1.25rem" height="1.25rem" class="alert-icon me-2 icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-circle-check" />
+        </svg>
+      </div>
+      <div class="flex-grow-1">
+        <p class="line-clamp-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu dignissim purus. Nulla posuere lobortis sapien, a rutrum diam imperdiet vitae. Cras volutpat elit ipsum, quis varius libero maximus sed. Sed id interdum magna. Mauris hendrerit dolor sit amet eleifend rhoncus. Suspendisse vel nisl scelerisque, faucibus mi a, tempus orci. Morbi lacinia velit facilisis diam posuere facilisis. Vivamus vel ipsum ac mi rutrum posuere molestie sit amet odio. Mauris vel ipsum sit amet lorem egestas tristique. Integer eu dolor id purus rutrum consequat.</p>
+        <hr>
+        <p class="line-clamp-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu dignissim purus. Nulla posuere lobortis sapien, a rutrum diam imperdiet vitae. Cras volutpat elit ipsum, quis varius libero maximus sed. Sed id interdum magna. Mauris hendrerit dolor sit amet eleifend rhoncus. Suspendisse vel nisl scelerisque, faucibus mi a, tempus orci. Morbi lacinia velit facilisis diam posuere facilisis. Vivamus vel ipsum ac mi rutrum posuere molestie sit amet odio. Mauris vel ipsum sit amet lorem egestas tristique. Integer eu dolor id purus rutrum consequat.</p>
+      </div>
+      <div class="flex-shrink-1">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+        </button>
+      </div>
+    </div>
+`;
+
+export const AlertWithDivider = () => `${alert_with_divider_html}`;
+
+AlertWithDivider.storyName = 'With Divider';
+
+AlertWithDivider.parameters = {
+  notes: `
+  #With Divider
+    
+  Success alerts should be used to confirm that an important task or workflow has been completed.
+  
+  ##Sample Code
+  
+  \`\`\`html
+  ${alert_with_divider_html}
+  \`\`\`
+  `,
+};
+
