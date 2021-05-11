@@ -11,32 +11,57 @@ export default {
 
 const listHTML = `
   <div class="container">
-    <table class="table">
+    <table class="table align-middle">
       <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
+          <th scope="col">Actions</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Student ID</th>
+          <th scope="col">Major(s)</th>
+          <th scope="col">Email</th>
+          <th scope="col">Class Level</th>
+          <th scope="col">Graduation Date</th>
+          <th scope="col">Email Verified</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td colspan="2" class="text-start">Larry the Bird</td>
-          <td>@twitter</td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>
+            <div class="d-flex">
+              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                <svg class="icon-lg-font-size d-flex">
+                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                </svg>
+                <span class="visually-hidden">View</span>
+              </button>
+              <button type="button" class="btn btn-action p-0 border-0">
+                <svg class="icon-lg-font-size d-flex">
+                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                </svg>
+                <span class="visually-hidden">Edit</span>
+              </button>
+            </div>
+          </td>
+          <td>Marsh</td>
+          <td>Steve</td>
+          <td>28912003</td>
+          <td>Zoology</td>
+          <td>smarsh@symp.com</td>
+          <td>Freshman</td>
+          <td>May, 2017</td>
+          <td>
+            <button type="button" class="btn btn-action p-0 me-2 border-0">
+              <svg class="icon-lg-font-size d-flex text-success">
+                <use xlink:href="${iconSprite}#tabler-circle-check" />
+              </svg>
+              <span class="visually-hidden">View</span>
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>  
