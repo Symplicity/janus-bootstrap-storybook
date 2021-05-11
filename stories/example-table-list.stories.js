@@ -11,7 +11,7 @@ export default {
 
 const listHTML = `
   <div class="container">
-    <table class="table align-middle">
+    <table class="table align-middle fs-5">
       <thead>
         <tr>
           <th scope="col">#</th>

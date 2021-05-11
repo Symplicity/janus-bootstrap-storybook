@@ -49,8 +49,8 @@ const card_homepage_html = `
                 <li>
                   <a class="dropdown-item" href="#">
                     <span class="me-1 mt-1">
-                      <svg width="1rem" height="1rem">
-                        <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                      <svg width="1rem" height="1rem" class="sw-2">
+                        <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
                       </svg>
                     </span>
                     Chad Hampton
@@ -113,7 +113,7 @@ export const CardHomepage = () => {
       <h3 class="card-header text-uppercase bg-white d-flex">
         <div class="card-header-icon">
           <span class="${card_icon_bg_color} d-block">
-            <svg width="1rem" height="1rem">
+            <svg width="1rem" height="1rem" class="sw-2">
               <use xlink:href="${iconSprite}#${card_icon_class}" />
             </svg>
           </span>
@@ -193,7 +193,7 @@ const card_empty_state_with_icons_html = `
     <h3 class="card-header text-uppercase bg-white d-flex">
       <div class="card-header-icon">
         <span class="bg-pale-purple d-block">
-          <svg width="1rem" height="1rem">
+          <svg width="1rem" height="1rem" class="sw-2">
             <use xlink:href="${iconSprite}#tabler-link" />
           </svg>
         </span>
