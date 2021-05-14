@@ -33,12 +33,12 @@ const primaryHTML = `
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-primary" disabled>Primary</button>
   <button type="button" class="btn btn-primary">
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Primary
   </button>
   <button type="button" class="btn btn-primary" disabled>
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Primary
   </button>
@@ -95,12 +95,12 @@ const altPrimaryHTML = `
   <button type="button" class="btn btn-outline-primary">Alt Primary</button>
   <button type="button" class="btn btn-outline-primary" disabled>Alt Primary</button>
   <button type="button" class="btn btn-outline-primary">
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Alt Primary
   </button>
   <button type="button" class="btn btn-outline-primary" disabled>
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Alt Primary
   </button>
@@ -156,12 +156,12 @@ const secondaryHTML = `
   <button type="button" class="btn btn-outline-secondary">Secondary</button>
   <button type="button" class="btn btn-outline-secondary" disabled>Secondary</button>
   <button type="button" class="btn btn-outline-secondary">
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Secondary
   </button>
   <button type="button" class="btn btn-outline-secondary" disabled>
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-star" />
     </svg>Secondary
   </button>
@@ -217,12 +217,12 @@ const otherHTML = `
   <button type="button" class="btn btn-danger">Leave</button>
   <button type="button" class="btn btn-danger" disabled>Leave</button>
   <button type="button" class="btn btn-danger">
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-trash" />
     </svg>Delete
   </button>
   <button type="button" class="btn btn-danger" disabled>
-    <svg width="1rem" height="1rem" class="mt-n1 me-1">
+    <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
       <use xlink:href="${iconSprite}#tabler-trash" />
     </svg>Delete
   </button>
