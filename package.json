@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9008 -s public",
     "test": "npm-run-all test:*",
     "test:run": "docker run --rm -v $(pwd):/src backstopjs/backstopjs test",
     "test:view-report": "open-cli backstop_data/html_report/index.html",
@@ -45,7 +45,7 @@
     "@storybook/core": "^6.2.9",
     "@storybook/core-events": "^6.2.9",
     "@storybook/html": "^6.2.9",
-    "@symplicity/bootstrap": "github:Symplicity/bootstrap#v5.0.0-janus",
+    "@symplicity/bootstrap": "github:Symplicity/bootstrap#v5.0.1-janus",
     "@symplicity/janus-tokens": "github:Symplicity/janus-tokens",
     "@symplicity/tabler-icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
     "babel-loader": "^8.2.2",
@@ -59,6 +59,6 @@
   },
   "dependencies": {
     "@storybook/theming": "^6.2.9",
-    "bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.0-beta1-janus"
+    "bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.1-janus"
   }
 }
