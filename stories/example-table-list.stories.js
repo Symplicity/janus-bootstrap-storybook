@@ -10,7 +10,7 @@ export default {
 };
 
 const listHTML = `
-  <div class="container">
+  <div class="mt-7">
     <table class="table align-middle fs-5 text-nowrap">
       <thead>
         <tr>
@@ -29,7 +29,45 @@ const listHTML = `
       <tbody>
         <tr>
           <td>
-            <input type="checkbox">
+            <label class="visually-hidden" for="checkbox1">Select Row</label>
+            <input type="checkbox" id="checkbox1">
+          </td>
+          <td>
+            <div class="d-flex">
+              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                <svg class="icon-lg-font-size d-flex">
+                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                </svg>
+                <span class="visually-hidden">View</span>
+              </button>
+              <button type="button" class="btn btn-action p-0 border-0">
+                <svg class="icon-lg-font-size d-flex">
+                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                </svg>
+                <span class="visually-hidden">Edit</span>
+              </button>
+            </div>
+          </td>
+          <td>Marsh</td>
+          <td>Steve</td>
+          <td>28912003</td>
+          <td>Zoology</td>
+          <td>smarsh@symp.com</td>
+          <td>Freshman</td>
+          <td>May, 2017</td>
+          <td>
+            <button type="button" class="btn btn-action p-0 me-2 border-0">
+              <svg class="icon-lg-font-size d-flex text-success">
+                <use xlink:href="${iconSprite}#tabler-circle-check" />
+              </svg>
+              <span class="visually-hidden">View</span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="visually-hidden" for="checkbox2">Select Row</label>
+            <input type="checkbox" id="checkbox2">
           </td>
           <td>
             <div class="d-flex">
