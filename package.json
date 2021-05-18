@@ -55,10 +55,12 @@
     "open-cli": "^6.0.1",
     "raw-loader": "^4.0.2",
     "sass-loader": "^8.0.0",
-    "storybook-addon-rtl": "^0.2.2"
+    "storybook-addon-rtl": "^0.2.2",
+    "plugins": [
+      [ "@babel/plugin-proposal-private-property-in-object", { "loose": true } ]
+    ]
   },
   "dependencies": {
-    "@storybook/theming": "^6.2.9",
-    "bootstrap": "git+https://github.com/Symplicity/bootstrap.git#v5.0.1-janus"
+    "@storybook/theming": "^6.2.9"
   }
 }
