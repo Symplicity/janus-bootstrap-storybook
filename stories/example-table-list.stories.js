@@ -11,8 +11,8 @@ export default {
 
 const listHTML = `
   <div class="mt-7">
-    <table class="table align-middle fs-5 text-nowrap">
-      <thead>
+    <table class="table align-middle fs-5 text-nowrap table-borderless">
+      <thead class="border-bottom border-light">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Actions</th>
@@ -27,7 +27,7 @@ const listHTML = `
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr class="border-bottom border-light">
           <td>
             <label class="visually-hidden" for="checkbox1">Select Row</label>
             <input type="checkbox" id="checkbox1">
@@ -64,7 +64,7 @@ const listHTML = `
             </button>
           </td>
         </tr>
-        <tr>
+        <tr class="border-bottom border-light">
           <td>
             <label class="visually-hidden" for="checkbox2">Select Row</label>
             <input type="checkbox" id="checkbox2">
