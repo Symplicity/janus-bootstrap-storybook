@@ -49,7 +49,7 @@ const listHTML = `
             </div>
           </td>
           <td>Marsh</td>
-          <!--td>Steve</td>
+          <td>Steve</td>
           <td>28912003</td>
           <td>Zoology</td>
           <td>smarsh@symp.com</td>
