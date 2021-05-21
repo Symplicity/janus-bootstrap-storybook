@@ -49,7 +49,7 @@ const listHTML = `
             </div>
           </td>
           <td>Marsh</td>
-          <td>Steve</td>
+          <!--td>Steve</td>
           <td>28912003</td>
           <td>Zoology</td>
           <td>smarsh@symp.com</td>
@@ -106,19 +106,7 @@ const listHTML = `
   </div>
 `;
 
-export const List = () => {
-  const container = $('<div></div>').append(
-    listHTML
-  );
-
-  setTimeout(function () {
-    $(function () {
-      container.find('[data-bs-toggle="dropdown"]').dropdown('show');
-    });
-  }, 0);
-
-  return container[0];
-};
+export const List = () => `${listHTML}`;
 
 List.storyName = 'List';
 
