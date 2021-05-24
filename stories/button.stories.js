@@ -451,7 +451,7 @@ const toggleButtonHTML = `
       <br><br>
       <button class="btn">
         <svg class="icon-lg-font-size mt-n1 text-warning">
-          <use xlink:href="${iconSprite}#tabler-star-on" />
+          <use xlink:href="${iconSprite}#tabler-zz-star-on" />
           <span class="visually-hidden">Favorite</span>
         </svg>
       </button>
@@ -466,7 +466,7 @@ const toggleButtonHTML = `
       <br><br>
       <button class="btn">
         <svg class="icon-lg-font-size mt-n1 text-warning">
-          <use xlink:href="${iconSprite}#tabler-star-on" />
+          <use xlink:href="${iconSprite}#tabler-zz-star-on" />
         </svg>
         <span class="text-warning">Favorited</span>
       </button>
@@ -550,7 +550,7 @@ const toggleCheckboxHTML = `
       <input type="checkbox" class="btn-check" id="btn-check-outlined2" checked autocomplete="off">
       <label class="btn btn-action-toggle" for="btn-check-outlined2">
         <svg class="icon-lg-font-size mt-n1 text-warning">
-          <use xlink:href="${iconSprite}#tabler-star-on" />
+          <use xlink:href="${iconSprite}#tabler-zz-star-on" />
           <span class="visually-hidden">Favorite</span>
         </svg>
       </label>
@@ -567,7 +567,7 @@ const toggleCheckboxHTML = `
       <input type="checkbox" class="btn-check" id="btn-check-outlined4" checked autocomplete="off">
       <label class="btn btn-action-toggle" for="btn-check-outlined4">
         <svg class="icon-lg-font-size mt-n1 text-warning">
-          <use xlink:href="${iconSprite}#tabler-star-on" />
+          <use xlink:href="${iconSprite}#tabler-zz-star-on" />
         </svg>
         <span class="text-warning">Favorited</span>
       </label>
