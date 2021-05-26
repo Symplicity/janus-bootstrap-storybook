@@ -16,7 +16,15 @@ const listHTML = `
         <tr>
           <th scope="col">#</th>
           <th scope="col">Actions</th>
-          <th scope="col">Last Name</th>
+          <th scope="col">
+            <button class="d-flex border-0 bg-white fw-bold p-0">
+              Last Name
+              <svg class="icon-lg-font-size d-flex">
+                <use xlink:href="${iconSprite}#tabler-caret-up" />
+              </svg>
+              <span class="visually-hidden">Sorted ascending</span>
+            </button>
+          </th>
           <th scope="col">First Name</th>
           <th scope="col">Student ID</th>
           <th scope="col">Major(s)</th>
@@ -48,7 +56,7 @@ const listHTML = `
               </button>
             </div>
           </td>
-          <td>Marsh</td>
+          <td>Baldwin</td>
           <td>Steve</td>
           <td>28912003</td>
           <td>Zoology</td>
@@ -85,7 +93,7 @@ const listHTML = `
               </button>
             </div>
           </td>
-          <td>Marsh</td>
+          <td>Adams</td>
           <td>Steve</td>
           <td>28912003</td>
           <td>Zoology</td>
