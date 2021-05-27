@@ -11,8 +11,8 @@ export default {
 
 const listHTML = `
   <div class="mt-7">
-    <table class="table align-middle fs-5 text-nowrap table-borderless">
-      <thead class="border-bottom border-light">
+    <table class="table align-middle fs-5 table-borderless">
+      <thead class="border-bottom border-light text-nowrap">
         <tr>
           <th scope="col">#</th>
           <th scope="col">Actions</th>
@@ -59,7 +59,9 @@ const listHTML = `
           <td>Baldwin</td>
           <td>Steve</td>
           <td>28912003</td>
-          <td>Zoology</td>
+          <td>
+            <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
+          </td>
           <td>smarsh@symp.com</td>
           <td>Freshman</td>
           <td>May, 2017</td>
