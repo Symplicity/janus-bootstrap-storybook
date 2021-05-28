@@ -698,7 +698,7 @@
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "#dropdownMenuButton4",
-      "postInteractionWait": 100,
+      "postInteractionWait": 300,
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
