@@ -61,7 +61,7 @@ AlertSecondary.parameters = {
 const alert_success_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.55rem" height="1.55rem" class="me-2">
+        <svg width="1.5rem" height="1.5rem" class="me-2">
           <use xlink:href="${iconSprite}#tabler-circle-check" />
         </svg>
       </div>
@@ -96,7 +96,7 @@ AlertSuccess.parameters = {
 const alert_error_html = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.55rem" height="1.55rem" class="me-2">
+        <svg width="1.5rem" height="1.5rem" class="me-2">
           <use xlink:href="${iconSprite}#tabler-circle-x" />
         </svg>
       </div>
@@ -136,7 +136,7 @@ AlertError.parameters = {
 const alert_warning_html = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.55rem" height="1.55rem" class="me-2">
+        <svg width="1.5rem" height="1.5rem" class="me-2">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
         </svg>
       </div>
@@ -174,7 +174,7 @@ AlertWarning.parameters = {
 const alert_info_html = `
     <div class="alert alert-info alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.55rem" height="1.55rem" class="me-2">
+        <svg width="1.5rem" height="1.5rem" class="me-2">
           <use xlink:href="${iconSprite}#tabler-info-circle" />
         </svg>
       </div>
@@ -212,7 +212,7 @@ AlertInfo.parameters = {
 const alert_with_divider_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
       <div class="flex-shrink-1 d-flex">
-        <svg width="1.55rem" height="1.55rem" class="me-2">
+        <svg width="1.5rem" height="1.5rem" class="me-2">
           <use xlink:href="${iconSprite}#tabler-circle-check" />
         </svg>
       </div>
