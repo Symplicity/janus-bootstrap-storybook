@@ -138,36 +138,30 @@ export const MenuSuffixIcon = () => {
       <div class="w-100">
         ${item1_text}
       </div>
-      <div class="flex-shrink-1">
-        <span>
-          <svg width="20" height="20">
-            <use xlink:href="${iconSprite}#tabler-chevron-right" />
-          </svg>
-        </span>
+      <div class="ms-8">
+        <svg width="20" height="20">
+          <use xlink:href="${iconSprite}#tabler-chevron-right" />
+        </svg>
       </div>
     </a>
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
       <div class="w-100">
         ${item2_text}
       </div>
-      <div class="flex-shrink-1">
-        <span>
-          <svg width="20" height="20">
-            <use xlink:href="${iconSprite}#tabler-chevron-right" />
-          </svg>
-        </span>
+      <div class="ms-8">
+        <svg width="20" height="20">
+          <use xlink:href="${iconSprite}#tabler-chevron-right" />
+        </svg>
       </div>
     </a>
     <a class="dropdown-item with-suffix-icon d-flex" href="#">
       <div class="w-100">
         ${item3_text}
       </div>
-      <div class="flex-shrink-1">
-        <span>
-          <svg width="20" height="20">
-            <use xlink:href="${iconSprite}#tabler-chevron-right" />
-          </svg>
-        </span>
+      <div class="ms-8">
+        <svg width="20" height="20">
+          <use xlink:href="${iconSprite}#tabler-chevron-right" />
+        </svg>
       </div>
     </a>
   </div>
