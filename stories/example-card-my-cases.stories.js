@@ -28,7 +28,7 @@ const card_basic_html = `
    <div class="card">
       <h3 class="card-header text-uppercase bg-white">
         <div class="card-header-icon d-inline-block">
-          <span class="bg-pale-red d-block">
+          <span class="bg-accent-red d-block">
             <svg width="1rem" height="1rem">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
             </svg>
@@ -147,12 +147,12 @@ const card_basic_html = `
 
 export const CardBasic = () => {
   const icon_bg_color_options = {
-    'Pale Green': 'bg-pale-green',
-    'Pale Orange': 'bg-pale-orange',
-    'Pale Indigo': 'bg-pale-indigo',
-    'Pale Purple': 'bg-pale-purple',
-    'Pale Blue': 'bg-pale-blue',
-    'Pale Red': 'bg-pale-red',
+    'Accent Green': 'bg-accent-green',
+    'Accent Orange': 'bg-accent-orange',
+    'Accent Indigo': 'bg-accent-indigo',
+    'Accent Purple': 'bg-accent-purple',
+    'Accent Blue': 'bg-accent-blue',
+    'Accent Red': 'bg-accent-red',
   };
 
   const card_title_text = text('Title', 'My Cases');
@@ -160,7 +160,7 @@ export const CardBasic = () => {
   const card_icon_bg_color = select(
     'Icon Background Color',
     icon_bg_color_options,
-    'bg-pale-red'
+    'bg-accent-red'
   );
 
   return `
