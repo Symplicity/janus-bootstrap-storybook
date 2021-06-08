@@ -37,22 +37,22 @@ const avatar_text_html = `
 <div class="container">
   <div class="row">
     <div class="col">
-      <button class="avatar avatar-sm avatar-text rounded-circle bg-pale-blue" type="button">
+      <button class="avatar avatar-sm avatar-text rounded-circle bg-accent-blue" type="button">
         <span class="text-white">WW</span>
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-md avatar-text rounded-circle bg-pale-blue" type="button">
+      <button class="avatar avatar-md avatar-text rounded-circle bg-accent-blue" type="button">
         <span class="text-white">WW</span>
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-lg avatar-text rounded-circle bg-pale-blue" type="button">
+      <button class="avatar avatar-lg avatar-text rounded-circle bg-accent-blue" type="button">
         <span class="text-white">WW</span>
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-xl avatar-text rounded-circle bg-pale-blue" type="button">
+      <button class="avatar avatar-xl avatar-text rounded-circle bg-accent-blue" type="button">
         <span class="text-white">WW</span>
       </button>
     </div>
@@ -145,7 +145,7 @@ const avatar_icon_html = `
 <div class="container">
   <div class="row">
     <div class="col">
-      <button class="avatar avatar-sm avatar-icon rounded bg-pale-purple" type="button">
+      <button class="avatar avatar-sm avatar-icon rounded bg-accent-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>
@@ -153,7 +153,7 @@ const avatar_icon_html = `
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-md avatar-icon rounded bg-pale-purple" type="button">
+      <button class="avatar avatar-md avatar-icon rounded bg-accent-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>
@@ -161,7 +161,7 @@ const avatar_icon_html = `
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-lg avatar-icon rounded-4 bg-pale-purple" type="button">
+      <button class="avatar avatar-lg avatar-icon rounded-4 bg-accent-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>
@@ -169,7 +169,7 @@ const avatar_icon_html = `
       </button>
     </div>
     <div class="col">
-      <button class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple" type="button">
+      <button class="avatar avatar-xl avatar-icon rounded-4 bg-accent-purple" type="button">
         <svg class="text-white">
           <use xlink:href="${iconSprite}#tabler-briefcase" />
           <span class="visually-hidden">Work</span>

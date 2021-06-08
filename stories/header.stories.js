@@ -38,7 +38,7 @@ const job_profile_header = `
           </button>
         </div>
         <div class="profile-header-logo align-top me-9">
-          <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex">
+          <span class="avatar avatar-xl avatar-icon rounded-4 bg-accent-purple d-flex">
             <svg class="text-white">
               <use xlink:href="$/path/to/icon-sprite.svg#tabler-briefcase" />
               <span class="visually-hidden">Work</span>
@@ -119,7 +119,7 @@ export const JobProfileHeader = () => {
               </button>
             </div>
             <div class="profile-header-logo align-top me-9">
-              <span class="avatar avatar-xl avatar-icon rounded-4 bg-pale-purple d-flex">
+              <span class="avatar avatar-xl avatar-icon rounded-4 bg-accent-purple d-flex">
                 <svg class="text-white">
                   <use xlink:href="${iconSprite}#tabler-briefcase" />
                   <span class="visually-hidden">Work</span>
