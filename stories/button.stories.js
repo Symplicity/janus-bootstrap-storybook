@@ -411,6 +411,26 @@ const actionHTML = `
       </button>
     </div>
   </div>
+  <br><br>
+  <h3>Outline Icon only</h3>
+  <div class="d-flex flex-row">
+    <div class="p-2">
+      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle border-light">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-chevron-left" />
+          <span class="visually-hidden">Previous</span>
+        </svg>
+      </button>
+    </div>
+    <div class="p-2">
+      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle border-light">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-chevron-right" />
+          <span class="visually-hidden">Next</span>
+        </svg>
+      </button>
+    </div>
+  </div>
 </div>
 `;
 
