@@ -143,17 +143,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <a href="#" class="link-dark">Dark link</a>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-green">Pale-Green link</a>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-orange">Pale-Orange link</a>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-indigo">Pale-Indigo link</a>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-purple">Pale-Purple link</a>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-blue">Pale-Blue link</a>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-<a href="#" class="link-pale-red">Pale-Red link</a>
 
 `;
 
