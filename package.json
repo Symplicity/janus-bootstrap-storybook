@@ -28,14 +28,14 @@
     "reference": "docker run --rm -v $(pwd):/src backstopjs/backstopjs reference"
   },
   "devDependencies": {
-    "@babel/core": "^7.13.15",
+    "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-private-property-in-object": "^7.14.5",
     "@storybook/addon-a11y": "^6.3.0",
     "@storybook/addon-actions": "^6.3.0",
     "@storybook/addon-backgrounds": "^6.3.0",
     "@storybook/addon-essentials": "^6.3.0",
     "@storybook/addon-events": "^6.2.9",
-    "@storybook/addon-knobs": "^6.2.9",
+    "@storybook/addon-knobs": "^6.3.0",
     "@storybook/addon-links": "^6.3.0",
     "@storybook/addon-notes": "^5.3.21",
     "@storybook/addon-options": "^5.3.21",
@@ -59,6 +59,8 @@
     "storybook-addon-rtl": "^0.3.0"
   },
   "dependencies": {
-    "@storybook/theming": "^6.3.0"
+    "@storybook/theming": "^6.3.0",
+    "@tabler/icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
+    "bootstrap": "github:Symplicity/bootstrap#v5.0.2-janus"
   }
 }
