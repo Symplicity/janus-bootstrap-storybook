@@ -24,6 +24,48 @@ export default {
   },
 };
 
+const input_text_html = `
+<form>
+  <div class="mb-4">
+    <label for="text" class="form-label">Text</label>
+    <div id="textlHelpBlock" class="form-text">Please enter a text</div>
+    <input type="text" class="form-control" id="text" placeholder="lorem ipsum" aria-describedby="textlHelpBlock">
+  </div>
+</form>
+`;
+
+export const InputText = () => `<div>${input_text_html}</div>`;
+InputText.storyName = '[type="text"]';
+InputText.parameters = {
+  notes: `  
+  #Sample Code
+  \`\`\`html
+  ${input_text_html}
+  \`\`\`
+  `,
+};
+
+const input_number_html = `
+<form>
+  <div class="mb-4">
+    <label for="number" class="form-label">Number</label>
+    <div id="numberHelpBlock" class="form-text">Please enter a number</div>
+    <input type="number" class="form-control" id="number" placeholder="1" aria-describedby="numberHelpBlock">
+  </div>
+</form>
+`;
+
+export const InputNumber = () => `<div>${input_number_html}</div>`;
+InputNumber.storyName = '[type="number"]';
+InputNumber.parameters = {
+  notes: `  
+  #Sample Code
+  \`\`\`html
+  ${input_number_html}
+  \`\`\`
+  `,
+};
+
 const input_email_html = `
 <form>
   <div class="mb-4">
