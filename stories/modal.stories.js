@@ -59,7 +59,7 @@ const modal_trigger_html = `
       <div class="modal-body">
         ...
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer d-grid gap-2 d-xs-block d-sm-inline-block text-end">
         <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
