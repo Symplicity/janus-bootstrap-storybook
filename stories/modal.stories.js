@@ -110,12 +110,18 @@ const modal_form_html = `<div class="modal" tabindex="-1" style="display: block;
           </form>
         </p>
       </div>
-      <div class="modal-footer flex-row">
-          <div class="flex-grow-1">
-            <button type="button" class="btn btn-link p-0">Other Action (Optional)</button>
+      <div class="modal-footer d-grid gap-2 d-xs-block d-sm-inline-block text-end">
+        <div class="d-sm-flex">
+          <div class="flex-grow-1 text-start d-xs-block">
+            <button type="button" class="btn btn-link p-0 w-100">Other Action (Optional)</button>
           </div>
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
