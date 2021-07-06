@@ -110,10 +110,10 @@ const modal_form_html = `<div class="modal" tabindex="-1" style="display: block;
           </form>
         </p>
       </div>
-      <div class="modal-footer d-grid gap-2 d-xs-block d-sm-inline-block text-end">
-        <div class="d-sm-flex">
-          <div class="flex-grow-1 text-start d-xs-block">
-            <button type="button" class="btn btn-link p-0 w-100">Other Action (Optional)</button>
+      <div class="modal-footer">
+        <div class="d-sm-flex d-grid gap-2 w-100 justify-content-sm-end">
+          <div class="flex-grow-1 d-xs-block align-self-center text-xs-center text-center text-sm-start">
+            <button type="button" class="btn btn-link p-0 flex-fill">Other Action (Optional)</button>
           </div>
           <div class="d-xs-block">
             <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
