@@ -157,16 +157,12 @@ export const ScreenStaffList = () => {
   return `
     <div class="m-0" style="background-color: ${styles.wrapper.bg};">
       <div class="mx-auto my-0" style="max-width: ${styles.wrapper.mw}">
-        <div class="bg-light rounded m-3 mb-0 p-3 d-lg-none text-center">
-          <div class="fs-4 m-4">
-            <p>This component only displays above the "lg" breakpoint (992px).</p>
-            <p>Increase the width of your screen until this message disappears.</p>
-          </div>
-        </div>
+
+        <!-- header lg -->
         <div class="m-0 d-none d-lg-block">
           <header class="d-block pt-0">
             <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation">
-              <div class="row justify-content-between align-items-center">
+              <div class="row justify-content-between align-items-center w-100">
                 <div class="col-4 d-flex align-items-center flex-wrap">
                   <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-7 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
                     <svg width="1rem" height="1rem">
@@ -202,11 +198,11 @@ export const ScreenStaffList = () => {
         </div>
 
 
-
-        <div class="bg-light m-0 vh-100 d-lg-none">
+        <!-- header sm -->
+        <div class="bg-light m-0 d-lg-none">
           <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
             <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
+              <div class="d-flex justify-content-between align-items-center flex-wrap w-100">
                 <div class="d-flex align-items-center flex-wrap">
                   <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
                     <svg width="1rem" height="1rem">
@@ -256,7 +252,7 @@ export const ScreenStaffList = () => {
                     </li>
                     <li class="nav-item">
                       <div class="list-group">
-                        <a class="d-flex flex-wrap nav-link text-dark ps-4 pe-4 pt-6 pb-6 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+                        <a class="d-flex nav-link text-dark ps-4 pe-4 pt-6 pb-6 h-auto text-decoration-none" type="button" id="dropdownMenu1" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation" href="#">
                           <span>
                             <svg width="1rem" height="1rem" class="me-2 mt-n1">
                               <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -271,7 +267,7 @@ export const ScreenStaffList = () => {
                             </svg>
                           </span>
                         </a>
-                        <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu2" id="navbarNav2">
+                        <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu1" id="navbarNav1">
                           <li class="nav-item">
                             <a class="nav-link text-dark ps-3 pe-4 pt-6 pb-6 h-auto" aria-current="page" href="#">
                               <span>
@@ -366,14 +362,36 @@ export const ScreenStaffList = () => {
                       </a>
                     </li>
                   </ul>
+                  <div class="ps-4 pe-4 pt-6 pb-6 my-2">
+                    <div class="dropdown">
+                      <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ECECEC;">
+                        <svg class="icon-xl-font-size mx-2">
+                          <use xlink:href="${iconSprite}#tabler-search" />
+                          <span class="visually-hidden">Open Search Dialog</span>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex flex-column justify-content-start ps-4 pe-4 pt-6 pb-6">
+                    <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle">
+                      <svg class="icon-lg-font-size mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
+                        <span class="visually-hidden">Thumbs Down</span>
+                      </svg>
+                    </button>
+                    <button class="avatar avatar-md avatar-image rounded-circle mt-2" type="button">
+                      <img role="button" class="" src="https://www.edge.org/sites/default/files/styles/member-photo/public/member-pictures/picture-510-1416068804.jpg?itok=cnAQyDr5" alt="...">
+                    </button>
+                  </div>
                 </nav>
               </div>
             </div>
           </header>
         </div>
         
-        <div class="d-flex mt-4">
-          <nav class="main-nav navbar-collapse show mt-0 fs-5" id="navbarNav" style="max-width: 250px;">
+        <div class="d-flex mt-4 w-100">
+          <nav class="main-nav navbar-collapse mt-0 fs-5 show" id="navbarNav" style="max-width: 250px;">
             <ul class="navbar-nav pt-2 pb-0">
               <li class="nav-item">
                 <a class="nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto active" aria-current="page" href="#">
@@ -413,7 +431,7 @@ export const ScreenStaffList = () => {
               </li>
               <li class="nav-item">
                 <div class="list-group">
-                  <a class="d-flex flex-wrap nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+                  <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
                         <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -484,7 +502,7 @@ export const ScreenStaffList = () => {
 
               <li class="nav-item">
                 <div class="list-group">
-                  <a class="d-flex flex-wrap nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+                  <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu3" data-bs-toggle="collapse" data-bs-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation" href="#">
                     <span>
                       <svg width="1rem" height="1rem" class="me-2 mt-n1">
                         <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -499,7 +517,7 @@ export const ScreenStaffList = () => {
                       </svg>
                     </span>
                   </a>
-                  <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu2" id="navbarNav2">
+                  <ul class="navbar-nav collapse ps-2" aria-labelledby="dropdownMenu3" id="navbarNav3">
                     <li class="nav-item">
                       <a class="nav-link text-dark ms-3 me-4 mt-10 mb-10 h-auto" aria-current="page" href="#">
                         <span>
@@ -710,8 +728,8 @@ export const ScreenStaffList = () => {
             </ul>
           </nav>
           
-          <div class="ms-3 d-flex flex-column justify-content-start flex-wrap">
-            <div class="d-flex justify-content-between align-items-center flex-wrap mx-2">
+          <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-2">
+            <div class="d-flex justify-content-between align-items-center flex-wrap px-2 w-100">
               <h2>Incident Reports</h2>
               <button type="button" class="btn btn-sm btn-danger">
                 <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
@@ -720,16 +738,16 @@ export const ScreenStaffList = () => {
               </button>
             </div>
 
-            <div class="bg-white my-3">
+            <div class="bg-white my-3 w-100">
               <div class="text-center">${tabsDoubleRowHTML}</div>
               
               <div class="p-4">
                 <div style="background-color: #F6F6F6;">
                   <form class="row p-3 m-0 align-items-center">
-                    <div class="col-3">
+                    <div class="col-md-6 col-lg-3 my-1">
                       <input type="text" class="form-control fs-6" id="text" placeholder="Search cases by student, email, IR#" aria-describedby="textlHelpBlock">
                     </div>
-                    <div class="col-2">
+                    <div class="col-md-6 col-lg-2 my-1">
                       <select class="form-select fs-6" aria-label="Default select example">
                         <option selected>Assigned to</option>
                         <option value="1">One</option>
@@ -737,21 +755,21 @@ export const ScreenStaffList = () => {
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="col-3 d-flex flex-wrap">
+                    <div class="col-md-6 col-lg-3 d-flex flex-wrap my-1">
                       <div class="form-check me-3">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
                         <label class="form-check-label fs-6" for="flexCheck1">
                           Parent Case
                         </label>
                       </div>
-                      <div class="form-check me-3">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                      <div class="form-check me-3 my-1">
+                        <input class="form-check-input type="checkbox" value="" id="flexCheck2">
                         <label class="form-check-label fs-6" for="flexCheck2">
                           Child Case   
                         </label>
                       </div>
                     </div>
-                    <div class="col-4 d-flex justify-content-end flex-wrap">
+                    <div class="col-md-6 col-lg-4 d-flex justify-content-end flex-wrap my-1">
                       <button type="button" class="btn btn-outline-secondary ms-2 fs-6">
                         <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
                           <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-search" />
@@ -765,8 +783,8 @@ export const ScreenStaffList = () => {
                     </div>
                   </form>
                 </div>
-                <div class="d-flex align-items-center justify-content-between flex-wrap p-3">
-                  <div class="d-flex align-items-center justify-content-center flex-wrap">
+                <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+                  <div class="d-flex align-items-center justify-content-center">
                     <select class="form-select fs-6" aria-label="Default select example">
                       <option selected>Batch Options</option>
                       <option value="1">One</option>
@@ -777,22 +795,22 @@ export const ScreenStaffList = () => {
                   </div>
                   <div class="d-flex align-items-center flex-wrap">
                     <div class="d-flex">
-                      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle border-light">
+                      <button type="button" class="btn btn-action btn-action-icon-only border-light">
                         <svg class="icon-lg-font-size mt-n1">
                           <use xlink:href="${iconSprite}#tabler-chevron-left" />
                           <span class="visually-hidden">Previous</span>
                         </svg>
                       </button>
                     </div>
-                    <div class="d-flex ms-2 me-2">
-                      <select class="form-select border-0 shadow-none" aria-label="Default select example">
+                    <div class="d-flex mx-0">
+                      <select class="form-select shadow-none border-light fs-6" aria-label="Default select example">
                         <option value="2">Page 2</option>
                         <option value="3">Page 3</option>
                         <option value="4">Page 4</option>
                       </select>
                     </div>
                     <div class="d-flex">
-                      <button type="button" class="btn btn-action btn-action-icon-only rounded-circle border-light">
+                      <button type="button" class="btn btn-action btn-action-icon-only border-light">
                         <svg class="icon-lg-font-size mt-n1">
                           <use xlink:href="${iconSprite}#tabler-chevron-right" />
                           <span class="visually-hidden">Next</span>
@@ -800,297 +818,300 @@ export const ScreenStaffList = () => {
                       </button>
                     </div>
                   </div>
-                </div>
-                <table class="table align-middle fs-5 table-borderless">
-                  <thead class="border-bottom border-light text-nowrap">
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Actions</th>
-                      <th scope="col">
-                        <button class="d-flex border-0 bg-white fw-bold p-0">
-                          Last Name
-                          <svg class="icon-lg-font-size d-flex">
-                            <use xlink:href="${iconSprite}#tabler-caret-up" />
-                          </svg>
-                          <span class="visually-hidden">Sorted ascending</span>
-                        </button>
-                      </th>
-                      <th scope="col">First Name</th>
-                      <th scope="col">Student ID</th>
-                      <th scope="col">Major(s)</th>
-                      <th scope="col">Email</th>
-                      <th scope="col">Class Level</th>
-                      <th scope="col">Graduation Date</th>
-                      <th scope="col">Email Verified</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox1">Select Row</label>
-                        <input type="checkbox" id="checkbox1">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Baldwin</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>
-                        <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
-                      </td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox2">Select Row</label>
-                        <input type="checkbox" id="checkbox2">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Adams</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>Zoology</td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox1">Select Row</label>
-                        <input type="checkbox" id="checkbox1">
-                      </td>
-                      <td>
-                        <div class="d-flex">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Baldwin</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>
-                        <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
-                      </td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox2">Select Row</label>
-                        <input type="checkbox" id="checkbox2">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Adams</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>Zoology</td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox2">Select Row</label>
-                        <input type="checkbox" id="checkbox2">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Adams</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>Zoology</td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox2">Select Row</label>
-                        <input type="checkbox" id="checkbox2">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Adams</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>Zoology</td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr class="border-bottom border-light">
-                      <td>
-                        <label class="visually-hidden" for="checkbox2">Select Row</label>
-                        <input type="checkbox" id="checkbox2">
-                      </td>
-                      <td>
-                        <div class="d-flex flex-wrap">
-                          <button type="button" class="btn btn-action p-0 me-2 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-file-search" />
-                            </svg>
-                            <span class="visually-hidden">View</span>
-                          </button>
-                          <button type="button" class="btn btn-action p-0 border-0">
-                            <svg class="icon-lg-font-size d-flex">
-                              <use xlink:href="${iconSprite}#tabler-pencil" />
-                            </svg>
-                            <span class="visually-hidden">Edit</span>
-                          </button>
-                        </div>
-                      </td>
-                      <td>Adams</td>
-                      <td>Steve</td>
-                      <td>28912003</td>
-                      <td>Zoology</td>
-                      <td>smarsh@symp.com</td>
-                      <td>Freshman</td>
-                      <td>May, 2017</td>
-                      <td>
-                        <button type="button" class="btn btn-action p-0 me-2 border-0">
-                          <svg class="icon-lg-font-size d-flex text-success">
-                            <use xlink:href="${iconSprite}#tabler-circle-check" />
-                          </svg>
-                          <span class="visually-hidden">View</span>
-                        </button>
-                      </td>
-                    </tr>
+                  <div class="w-100 overflow-scroll p-0 my-2 border border-light">
+                    <table class="table align-middle fs-5 table-borderless">
+                      <thead class="border-bottom border-light text-nowrap">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Actions</th>
+                          <th scope="col">
+                            <button class="d-flex border-0 bg-white fw-bold p-0">
+                              Last Name
+                              <svg class="icon-lg-font-size d-flex">
+                                <use xlink:href="${iconSprite}#tabler-caret-up" />
+                              </svg>
+                              <span class="visually-hidden">Sorted ascending</span>
+                            </button>
+                          </th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Student ID</th>
+                          <th scope="col">Major(s)</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Class Level</th>
+                          <th scope="col">Graduation Date</th>
+                          <th scope="col">Email Verified</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox1">Select Row</label>
+                            <input type="checkbox" id="checkbox1">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Baldwin</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>
+                            <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
+                          </td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox2">Select Row</label>
+                            <input type="checkbox" id="checkbox2">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Adams</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>Zoology</td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox1">Select Row</label>
+                            <input type="checkbox" id="checkbox1">
+                          </td>
+                          <td>
+                            <div class="d-flex">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Baldwin</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>
+                            <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
+                          </td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox2">Select Row</label>
+                            <input type="checkbox" id="checkbox2">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Adams</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>Zoology</td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox2">Select Row</label>
+                            <input type="checkbox" id="checkbox2">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Adams</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>Zoology</td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox2">Select Row</label>
+                            <input type="checkbox" id="checkbox2">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Adams</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>Zoology</td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
+                        <tr class="border-bottom border-light">
+                          <td>
+                            <label class="visually-hidden" for="checkbox2">Select Row</label>
+                            <input type="checkbox" id="checkbox2">
+                          </td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+                              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-file-search" />
+                                </svg>
+                                <span class="visually-hidden">View</span>
+                              </button>
+                              <button type="button" class="btn btn-action p-0 border-0">
+                                <svg class="icon-lg-font-size d-flex">
+                                  <use xlink:href="${iconSprite}#tabler-pencil" />
+                                </svg>
+                                <span class="visually-hidden">Edit</span>
+                              </button>
+                            </div>
+                          </td>
+                          <td>Adams</td>
+                          <td>Steve</td>
+                          <td>28912003</td>
+                          <td>Zoology</td>
+                          <td>smarsh@symp.com</td>
+                          <td>Freshman</td>
+                          <td>May, 2017</td>
+                          <td>
+                            <button type="button" class="btn btn-action p-0 me-2 border-0">
+                              <svg class="icon-lg-font-size d-flex text-success">
+                                <use xlink:href="${iconSprite}#tabler-circle-check" />
+                              </svg>
+                              <span class="visually-hidden">View</span>
+                            </button>
+                          </td>
+                        </tr>
 
-                  </tbody>
-                </table>  
+                      </tbody>
+                    </table>  
+                  
+                  </div>
+                </div>
               </div>
             
             </div>
