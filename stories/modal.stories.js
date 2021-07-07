@@ -20,10 +20,15 @@ const modal_basic_html = `
       <div class="modal-body">
         <p class="mb-0">Modal body text goes here.</p>
       </div>
-      <div class="modal-footer d-grid gap-2 d-xs-block d-sm-inline-block text-end">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+      <div class="modal-footer">
+        <div class="d-sm-flex d-grid gap-2 w-100 justify-content-sm-end">
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
+          </div>
+        </div>
     </div>
   </div>
 </div>`;
@@ -59,9 +64,15 @@ const modal_trigger_html = `
       <div class="modal-body">
         ...
       </div>
-      <div class="modal-footer d-grid gap-2 d-xs-block d-sm-inline-block text-end">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-footer">
+        <div class="d-sm-flex d-grid gap-2 w-100 justify-content-sm-end">
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
