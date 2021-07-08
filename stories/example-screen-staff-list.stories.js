@@ -45,7 +45,7 @@ const headerLG = `
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
             </button>
-            <svg class="bd-placeholder-img d-none d-md-block" width="210" height="45" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">210x45</text></svg>
+            <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
           <div class="col-4">
             <div class="dropdown">
@@ -930,11 +930,12 @@ const staff_list_html = `
     ${headerLG}
     ${headerSM}    
     <div class="d-flex mt-4 w-100">
-      ${sidebarNavLG}
-      
+      <div class="d-none d-lg-block">
+        ${sidebarNavLG}
+      </div>      
       <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-2">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-2 w-100">
-          <h2>Incident Reports</h2>
+          <h2>Incident Reports</h2> 
           <button type="button" class="btn btn-sm btn-danger">
             <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
               <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-plus" />
