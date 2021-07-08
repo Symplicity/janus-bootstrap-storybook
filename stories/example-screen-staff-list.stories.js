@@ -169,7 +169,6 @@ export const ScreenStaffList = () => {
         </div>
       </nav>
     </header>
-    <!-- a comment -->
   `;
 };
 ScreenStaffList.storyName = 'Staff List';
