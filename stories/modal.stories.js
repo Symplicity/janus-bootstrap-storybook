@@ -21,7 +21,7 @@ const modal_basic_html = `
         <p class="mb-0">Modal body text goes here.</p>
       </div>
       <div class="modal-footer">
-        <div class="d-sm-flex d-grid gap-2 w-100 m-0 justify-content-sm-end">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
           <div class="d-xs-block">
             <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
           </div>
@@ -65,7 +65,7 @@ const modal_trigger_html = `
         ...
       </div>
       <div class="modal-footer">
-        <div class="d-sm-flex d-grid gap-2 w-100 m-0 justify-content-sm-end">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
           <div class="d-xs-block">
             <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
           </div>
@@ -122,7 +122,7 @@ const modal_form_html = `<div class="modal" tabindex="-1" style="display: block;
         </p>
       </div>
       <div class="modal-footer">
-        <div class="d-sm-flex d-grid gap-2 w-100 m-0 justify-content-sm-end">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
           <div class="flex-grow-1 d-xs-block align-self-center text-xs-center text-center text-sm-start">
             <button type="button" class="btn btn-link p-0 flex-fill">Other Action (Optional)</button>
           </div>
