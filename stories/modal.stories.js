@@ -153,3 +153,54 @@ ModalForm.parameters = {
 
   `
 };
+
+const modal_scrollable_html = `<div class="modal" tabindex="-1" style="display: block;">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec commodo nisi. Integer eget turpis sed ante tincidunt maximus. Fusce ut augue et quam fringilla consectetur eget vitae elit. Aenean pulvinar sem nec elit aliquet, et tempor mauris vehicula. Phasellus iaculis massa turpis, in sollicitudin lectus tincidunt vel. Vestibulum faucibus dolor vel pellentesque vestibulum. Donec vitae laoreet erat, at aliquam mauris. Integer volutpat ligula id risus volutpat pharetra.
+        </p>
+        <p>
+         Mauris id elementum ipsum. Donec sed mi velit. Vivamus nisi risus, vehicula in lacinia nec, accumsan sit amet turpis. Nam vel sem felis. Nullam non imperdiet sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sollicitudin lacinia magna non cursus. Maecenas ipsum libero, condimentum finibus hendrerit a, pulvinar et lacus. Nulla nunc odio, venenatis vitae fermentum quis, maximus at libero. Etiam et tortor neque. Sed eget accumsan tortor. Nullam lacinia nibh nec dui hendrerit, ac vehicula sem dictum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec commodo nisi. Integer eget turpis sed ante tincidunt maximus. Fusce ut augue et quam fringilla consectetur eget vitae elit. Aenean pulvinar sem nec elit aliquet, et tempor mauris vehicula. Phasellus iaculis massa turpis, in sollicitudin lectus tincidunt vel. Vestibulum faucibus dolor vel pellentesque vestibulum. Donec vitae laoreet erat, at aliquam mauris. Integer volutpat ligula id risus volutpat pharetra.
+        </p>
+        <p>
+         Mauris id elementum ipsum. Donec sed mi velit. Vivamus nisi risus, vehicula in lacinia nec, accumsan sit amet turpis. Nam vel sem felis. Nullam non imperdiet sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse sollicitudin lacinia magna non cursus. Maecenas ipsum libero, condimentum finibus hendrerit a, pulvinar et lacus. Nulla nunc odio, venenatis vitae fermentum quis, maximus at libero. Etiam et tortor neque. Sed eget accumsan tortor. Nullam lacinia nibh nec dui hendrerit, ac vehicula sem dictum.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+export const ModalScrollable = () => `<div>${modal_scrollable_html}</div>`;
+
+ModalScrollable.storyName = 'Modal with Body Scroll';
+
+ModalScrollable.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${modal_scrollable_html}
+  \`\`\`
+
+  `
+};
