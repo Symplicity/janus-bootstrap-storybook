@@ -1174,6 +1174,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Modal-SB-Scrollable",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-modals--modal-scrollable",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": ".btn-primary",
+      "postInteractionWait": 1000,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Navigation-SB-Desktop",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-navigation--desktop-navigation",
       "referenceUrl": "",
