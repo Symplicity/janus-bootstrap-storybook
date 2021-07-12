@@ -1021,7 +1021,7 @@ const staff_list_html = `
                   </button>
                 </div>
               </div>
-              <div class="w-100 overflow-scroll p-0 my-2 border border-light">
+              <div class="w-100 overflow-auto p-0 my-2 border border-light">
                 ${tableContent}              
               </div>
             </div>
