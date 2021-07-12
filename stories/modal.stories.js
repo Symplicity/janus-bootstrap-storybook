@@ -96,7 +96,7 @@ ModalTrigger.parameters = {
 };
 
 
-const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
+const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; position: relative;">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
