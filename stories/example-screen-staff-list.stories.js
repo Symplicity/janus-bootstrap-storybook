@@ -289,24 +289,25 @@ const tabsDoubleRowHTML = `
       </a>
     </li>
   </ul>
-  <ul class="nav nav-tabs bg-white border border-light border-top-0 ps-7 pe-7">
-    <li class="nav-item">
-      <a class="nav-link active fs-5" href="#">
+
+  <ul class="nav nav-tabs bg-white ps-7 pe-7">
+    <li class="nav-item py-2 px-3">
+      <a class="fs-6 text-primary" href="#" style="font-weight: 400;">
         <span>All Jobs</span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link fs-5" aria-current="page" href="#">
+    <li class="nav-item p-2">
+      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
         <span>Recommended Jobs</span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link fs-5" href="#">
+    <li class="nav-item p-2">
+      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
         <span>My Favorites</span>
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link fs-5" href="#">
+    <li class="nav-item p-2">
+      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
         <span>Applications</span>
       </a>
     </li>
@@ -314,7 +315,7 @@ const tabsDoubleRowHTML = `
 `;
 
 const listFilters = `
-  <div class="d-flex align-items-center justify-content-between flex-wrap pt-4 pb-3">
+  <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
       <select class="form-select fs-6" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
         <option selected>Batch Options</option>
@@ -988,9 +989,9 @@ const staff_list_html = `
         </div>
         <div class="bg-white my-3 w-100">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
-          <div class="p-4">
-            <div style="background-color: #F6F6F6;">
-              <form class="row p-3 m-0 align-items-center">
+
+            <div style="background-color: #FFF;">
+              <form class="row px-2 py-3 mx-3 mt-2 align-items-center" style="background-color: #F6F6F6;">
                 <div class="col-md-6 col-lg-3 my-1">
                   <input type="text" class="form-control fs-6" id="text" placeholder="Search cases by student, email, IR#" aria-label="Search">
                 </div>
@@ -1034,8 +1035,8 @@ const staff_list_html = `
             <div class="w-100 overflow-auto p-0 my-2 border border-light">
               ${tableContent}              
             </div>
-          </div>
-        </div>
+
+            </div>
       </div>
     </div>
   </div>
