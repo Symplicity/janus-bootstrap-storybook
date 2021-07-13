@@ -313,6 +313,50 @@ const tabsDoubleRowHTML = `
   </ul>
 `;
 
+const listFilters = `
+  <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+    <div class="d-flex align-items-center justify-content-center">
+      <select class="form-select fs-6 border-light" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
+        <option selected>Batch Options</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <span class="fs-6 text-muted ms-3" style="min-width: 120px;">1 item selected</span>
+    </div>
+    <div class="d-flex align-items-center flex-wrap">
+      <div class="w-auto me-4">
+        <select class="form-select shadow-none border-0 fs-6" aria-label="Default select example" style="line-height: 1.3;">
+          <option value="20">Show 20</option>
+          <option value="50">Show 50</option>
+          <option value="100">Show 100</option>
+        </select>
+      </div>
+      <div class="d-flex">
+        <button type="button" class="btn btn-action btn-action-icon-only" style="border: 1px solid #aaaaaa; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+          <svg class="icon-lg-font-size mt-n1 text-danger">
+            <use xlink:href="${iconSprite}#tabler-chevron-left" />
+            <span class="visually-hidden">Previous</span>
+          </svg>
+        </button>
+        <div class="d-flex mx-0">
+          <select class="form-select shadow-none fs-6 pr-5 rounded-0 border-end-0 border-start-0" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
+            <option value="3">Page 3</option>
+            <option value="1">Page 1</option>
+            <option value="2">Page 2</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-action btn-action-icon-only" style="border: 1px solid #aaaaaa; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+          <svg class="icon-lg-font-size mt-n1 text-danger">
+            <use xlink:href="${iconSprite}#tabler-chevron-right" />
+            <span class="visually-hidden">Next</span>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+`
+
 const tableContent = `
   <table class="table align-middle fs-5 table-borderless">
     <thead class="border-bottom border-light text-nowrap">
@@ -958,8 +1002,8 @@ const staff_list_html = `
                     <option value="3">Three</option>
                   </select>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex flex-wrap my-1">
-                  <div class="form-check me-3">
+                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-wrap my-1">
+                  <div class="form-check me-3 my-1">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
                     <label class="form-check-label fs-6" for="flexCheck1">
                       Parent Case
@@ -986,44 +1030,9 @@ const staff_list_html = `
                 </div>
               </form>
             </div>
-            <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
-              <div class="d-flex align-items-center justify-content-center">
-                <select class="form-select fs-6" aria-label="Default select example">
-                  <option selected>Batch Options</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <span class="fs-6 text-muted ms-3" style="min-width: 120px;">1 item selected</span>
-              </div>
-              <div class="d-flex align-items-center flex-wrap">
-                <div class="d-flex">
-                  <button type="button" class="btn btn-action btn-action-icon-only border-light">
-                    <svg class="icon-lg-font-size mt-n1">
-                      <use xlink:href="${iconSprite}#tabler-chevron-left" />
-                      <span class="visually-hidden">Previous</span>
-                    </svg>
-                  </button>
-                </div>
-                <div class="d-flex mx-0">
-                  <select class="form-select shadow-none border-light fs-6" aria-label="Default select example">
-                    <option value="2">Page 2</option>
-                    <option value="3">Page 3</option>
-                    <option value="4">Page 4</option>
-                  </select>
-                </div>
-                <div class="d-flex">
-                  <button type="button" class="btn btn-action btn-action-icon-only border-light">
-                    <svg class="icon-lg-font-size mt-n1">
-                      <use xlink:href="${iconSprite}#tabler-chevron-right" />
-                      <span class="visually-hidden">Next</span>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="w-100 overflow-auto p-0 my-2 border border-light">
-                ${tableContent}              
-              </div>
+            ${listFilters}
+            <div class="w-100 overflow-auto p-0 my-2 border border-light">
+              ${tableContent}              
             </div>
           </div>
         </div>
