@@ -314,9 +314,9 @@ const tabsDoubleRowHTML = `
 `;
 
 const listFilters = `
-  <div class="d-flex align-items-center justify-content-between flex-wrap py-3">
+  <div class="d-flex align-items-center justify-content-between flex-wrap pt-4 pb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6 border-light" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
+      <select class="form-select fs-6" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
