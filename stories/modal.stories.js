@@ -204,3 +204,43 @@ ModalScrollable.parameters = {
 
   `
 };
+
+const modal_featured_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-white">
+        <h4 id="exampleModalLabel" class="modal-title invisible">Modal title</h4>
+        <button type="button" class="btn-close d-flex" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="/minions-placeholder.jpg" alt="Minions" class="img-fluid">
+      </div>
+      <div class="modal-footer border-0">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-center">
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Build Resume Now</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`;
+
+export const ModalFeatured = () => `<div>${modal_featured_html}</div>`;
+
+ModalFeatured.storyName = 'Modal with Featured Image';
+
+ModalFeatured.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${modal_featured_html}
+  \`\`\`
+
+  `
+};
