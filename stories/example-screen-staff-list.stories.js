@@ -362,13 +362,13 @@ const tableContent = `
   <table class="table align-middle fs-5 mb-0 table-borderless">
     <thead class="border-bottom border-light text-nowrap">
       <tr>
-        <th scope="col">
+        <th class="fw-normal" scope="col">
           <label class="visually-hidden" for="checkboxHeader">Select Row</label>
           <input type="checkbox" id="checkboxHeader">
         </th>
-        <th scope="col" style="min-width: 73px;" >Actions</th>
-        <th scope="col">
-          <button class="d-flex border-0 bg-white fw-bold p-0">
+        <th class="fw-normal" scope="col" style="min-width: 73px;">Actions</th>
+        <th class="fw-normal" scope="col">
+          <button class="d-flex border-0 bg-white p-0">
             Last Name
             <svg class="icon-lg-font-size d-flex">
               <use xlink:href="${iconSprite}#tabler-caret-up" />
@@ -376,13 +376,13 @@ const tableContent = `
             <span class="visually-hidden">Sorted ascending</span>
           </button>
         </th>
-        <th scope="col">First Name</th>
-        <th scope="col">Student ID</th>
-        <th scope="col">Major(s)</th>
-        <th scope="col">Email</th>
-        <th scope="col">Class Level</th>
-        <th scope="col">Graduation Date</th>
-        <th scope="col">Email Verified</th>
+        <th class="fw-normal" scope="col">First Name</th>
+        <th class="fw-normal" scope="col">Student ID</th>
+        <th class="fw-normal" scope="col">Major(s)</th>
+        <th class="fw-normal" scope="col">Email</th>
+        <th class="fw-normal" scope="col">Class Level</th>
+        <th class="fw-normal" scope="col">Graduation Date</th>
+        <th class="fw-normal" scope="col">Email Verified</th>
       </tr>
     </thead>
     <tbody class="table-data"></tbody>
@@ -848,7 +848,7 @@ export const ScreenStaffList = () => {
         )
       .join('')}
     `;
-  }, 0);
+  }, 100);
 
   return container[0];
 }
