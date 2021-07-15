@@ -216,7 +216,7 @@ const modal_featured_html = `<div class="modal" id="exampleModal" tabindex="-1" 
         <img src="/minions-placeholder.jpg" alt="Minions" class="img-fluid">
       </div>
       <div class="modal-footer border-0">
-        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-center">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-center">
           <div class="d-xs-block">
             <button type="button" class="btn btn-primary w-100">Build Resume Now</button>
           </div>
