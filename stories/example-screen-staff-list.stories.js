@@ -314,7 +314,7 @@ const tabsDoubleRowHTML = `
   </ul>
 `;
 
-const listFilters = `
+const batchAndPagination = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
       <select class="form-select fs-6" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
@@ -359,11 +359,14 @@ const listFilters = `
 `
 
 const tableContent = `
-  <table class="table align-middle fs-5 table-borderless">
+  <table class="table align-middle fs-5 mb-0 table-borderless">
     <thead class="border-bottom border-light text-nowrap">
       <tr>
-        <th scope="col">#</th>
-        <th scope="col">Actions</th>
+        <th scope="col">
+          <label class="visually-hidden" for="checkboxHeader">Select Row</label>
+          <input type="checkbox" id="checkboxHeader">
+        </th>
+        <th scope="col" style="min-width: 73px;" >Actions</th>
         <th scope="col">
           <button class="d-flex border-0 bg-white fw-bold p-0">
             Last Name
@@ -382,274 +385,9 @@ const tableContent = `
         <th scope="col">Email Verified</th>
       </tr>
     </thead>
-    <tbody>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox1">Select Row</label>
-          <input type="checkbox" id="checkbox1">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Baldwin</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>
-          <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
-        </td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox3">Select Row</label>
-          <input type="checkbox" id="checkbox3">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Adams</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>Zoology</td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox4">Select Row</label>
-          <input type="checkbox" id="checkbox4">
-        </td>
-        <td>
-          <div class="d-flex">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Baldwin</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>
-          <span class="line-clamp-2">Zoology, Computer Science, Mathematics, Botany, Chemistry, Political Science</span>
-        </td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox5">Select Row</label>
-          <input type="checkbox" id="checkbox5">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Adams</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>Zoology</td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox6">Select Row</label>
-          <input type="checkbox" id="checkbox6">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Adams</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>Zoology</td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox7">Select Row</label>
-          <input type="checkbox" id="checkbox7">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Adams</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>Zoology</td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="border-bottom border-light">
-        <td>
-          <label class="visually-hidden" for="checkbox2">Select Row</label>
-          <input type="checkbox" id="checkbox2">
-        </td>
-        <td>
-          <div class="d-flex flex-wrap">
-            <button type="button" class="btn btn-action p-0 me-2 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-file-search" />
-              </svg>
-              <span class="visually-hidden">View</span>
-            </button>
-            <button type="button" class="btn btn-action p-0 border-0">
-              <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-pencil" />
-              </svg>
-              <span class="visually-hidden">Edit</span>
-            </button>
-          </div>
-        </td>
-        <td>Adams</td>
-        <td>Steve</td>
-        <td>28912003</td>
-        <td>Zoology</td>
-        <td>smarsh@symp.com</td>
-        <td>Freshman</td>
-        <td>May, 2017</td>
-        <td>
-          <button type="button" class="btn btn-action p-0 me-2 border-0">
-            <svg class="icon-lg-font-size d-flex text-success">
-              <use xlink:href="${iconSprite}#tabler-circle-check" />
-            </svg>
-            <span class="visually-hidden">View</span>
-          </button>
-        </td>
-      </tr>
-    </tbody>
+    <tbody class="table-data"></tbody>
   </table>
 `
-
 const sidebarNavLG = `
   <nav class="main-nav navbar-collapse mt-0 fs-5 show" id="navbarNavLG" style="max-width: 250px;">
     <ul class="navbar-nav pt-2 pb-0">
@@ -981,7 +719,7 @@ const staff_list_html = `
       <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-2">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-2 w-100">
           <h2>Incident Reports</h2> 
-          <button type="button" class="btn btn-sm btn-danger">
+          <button type="button" class="btn btn-danger fs-6">
             <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
               <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-plus" />
             </svg>Add New
@@ -989,11 +727,20 @@ const staff_list_html = `
         </div>
         <div class="bg-white my-3 w-100">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
-
             <div style="background-color: #FFF;">
               <form class="row px-2 py-3 mx-3 mt-2 align-items-center" style="background-color: #F6F6F6;">
                 <div class="col-md-6 col-lg-3 my-1">
-                  <input type="text" class="form-control fs-6" id="text" placeholder="Search cases by student, email, IR#" aria-label="Search">
+                  <div class="input-group">
+                    <div class="input-group-prepend" style="z-index: 5;">
+                      <span class="input-group-text ps-2 pe-0" id="basic-addon1" style="border: none; background-color: transparent;">
+                        <svg class="icon-lg-font-size" style="width: 1rem;">
+                          <use xlink:href="${iconSprite}#tabler-search" />
+                          <span class="visually-hidden">Open Search Dialog</span>
+                        </svg>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control fs-6 ps-4" id="text" placeholder="Search cases by student, email, IR#" aria-label="Search" style="margin-left: -1.4rem; border-radius: 0.25rem;">
+                  </div>
                 </div>
                 <div class="col-md-6 col-lg-2 my-1">
                   <select class="form-select fs-6" aria-label="Default select example">
@@ -1005,15 +752,15 @@ const staff_list_html = `
                 </div>
                 <div class="col-md-6 col-lg-3 d-flex align-items-center flex-wrap my-1">
                   <div class="form-check me-3 my-1">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                    <input class="form-check-input" type="checkbox" value="true" id="flexCheck1">
                     <label class="form-check-label fs-6" for="flexCheck1">
                       Parent Case
                     </label>
                   </div>
                   <div class="form-check me-3 my-1">
-                    <input class="form-check-input type="checkbox" value="" id="flexCheck2">
+                    <input class="form-check-input" type="checkbox" value="true" id="flexCheck2">
                     <label class="form-check-label fs-6" for="flexCheck2">
-                      Child Case   
+                      Child Case
                     </label>
                   </div>
                 </div>
@@ -1031,20 +778,86 @@ const staff_list_html = `
                 </div>
               </form>
             </div>
-            ${listFilters}
-            <div class="w-100 overflow-auto p-0 my-2 border border-light">
+            ${batchAndPagination}
+            <div class="w-100 overflow-auto p-0 my-2 mb-0 border border-light">
               ${tableContent}              
             </div>
 
-            </div>
+          </div>
       </div>
     </div>
   </div>
 </div>
 `;
 
-export const ScreenStaffList = () => `${staff_list_html}`;
+
+export const ScreenStaffList = () => {
+  const container = $('<div style="margin: 0;"></div>').append(
+    staff_list_html
+  );
+
+  const surnames = [["Wang", "Li"], ["Li", "Zhang"], ["Zhang", "Chen"], ["Chen", "Liu"], ["Liu", "Devi"], ["Devi", "Yang"], ["Yang", "Huang"], ["Huang", "Singh"], ["Singh", "Wu"], ["Wu", "Kumar"], ["Kumar", "Xu"], ["Xu", "Ali"], ["Ali", "Zhao"], ["Zhao", "Zhou"], ["Zhou", "Nguyen"], ["Nguyen", "Khan"], ["Khan", "Ma"], ["Ma", "Lu"], ["Lu", "Zhu"], ["Zhu", "Wang"]];
+
+  setTimeout(() => {
+    const createListItems = document.querySelector('.table-data');
+    createListItems.innerHTML = `
+      ${Array(20)
+        .fill()
+        .map(
+          (item, i) => `
+          <tr class="border-bottom border-light">
+            <td>
+              <label class="visually-hidden" for="checkbox1">Select Row</label>
+              <input type="checkbox" id="checkbox1">
+            </td>
+            <td>
+              <div class="d-flex flex-wrap">
+                <button type="button" class="btn btn-action p-0 me-2 border-0">
+                  <svg class="icon-lg-font-size d-flex">
+                    <use xlink:href="${iconSprite}#tabler-file-search" />
+                  </svg>
+                  <span class="visually-hidden">View</span>
+                </button>
+                <button type="button" class="btn btn-action p-0 border-0">
+                  <svg class="icon-lg-font-size d-flex">
+                    <use xlink:href="${iconSprite}#tabler-pencil" />
+                  </svg>
+                  <span class="visually-hidden">Edit</span>
+                </button>
+              </div>
+            </td>
+            <td>${surnames[i][1]}</td>
+            <td>${surnames[i][0]}</td>
+            <td>28912003</td>
+            <td>
+              <span class="line-clamp-2">Zoology</span>
+            </td>
+            <td>smarsh@symp.com</td>
+            <td>Freshman</td>
+            <td>May, 2017</td>
+            <td>
+              <button type="button" class="btn btn-action p-0 me-2 border-0">
+                <svg class="icon-lg-font-size d-flex text-success">
+                  <use xlink:href="${iconSprite}#tabler-circle-check" />
+                </svg>
+                <span class="visually-hidden">View</span>
+              </button>
+            </td>
+          </tr>
+          `
+        )
+      .join('')}
+    `;
+  }, 0);
+
+  return container[0];
+}
+
+
+// export const ScreenStaffList = () => `${staff_list_html}`;
 ScreenStaffList.storyName = 'Staff List';
+
+
 
 ScreenStaffList.parameters = {
   notes: `
