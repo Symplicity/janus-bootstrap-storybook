@@ -33,18 +33,7 @@ const search_desktop_input_html = `
 
 <div class="m-3 d-none d-lg-block">
   <div class="dropdown">
-    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
-        <use xlink:href="${iconSprite}#tabler-search" />
-        <span class="visually-hidden">Open Search Dialog</span>
-      </svg>
-    </div>
-  </div>
-</div>
-
-<div class="m-3 d-none d-lg-block">
-  <div class="dropdown">
-    <div class="show d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
+    <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
       <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
         <use xlink:href="${iconSprite}#tabler-search" />
         <span class="visually-hidden">Open Search Dialog</span>
@@ -54,7 +43,7 @@ const search_desktop_input_html = `
         <input type="text" id="search-input" class="form-control border-0 p-1 bg-transparent" autofocus>
       </form>
     </div>
-    <ul class="show dropdown-menu btn-search-results p-0" aria-labelledby="dropdownMenuButton2">
+    <ul class="dropdown-menu btn-search-results p-0" aria-labelledby="dropdownMenuButton2">
 
     </ul>
   </div>
@@ -76,8 +65,8 @@ export const SearchDesktopInput = () => {
         <li>
           <a class="dropdown-item d-flex mb-2" href="#" id="item-${i + 1}">
             <span>
-              <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+              <svg width="1.25rem" height="1.25rem" class="me-2 mt-n1">
+                <use xlink:href="${iconSprite}#tabler-search"></use>
               </svg>
             </span>
             <span class="flex-fill">

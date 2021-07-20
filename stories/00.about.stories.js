@@ -1,5 +1,3 @@
-
-
 import readme from '../README.md';
 import changelog from '../CHANGELOG.md';
 import pkg from '../package.json';
