@@ -1346,7 +1346,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "",
+      "clickSelector": "#search-input",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
