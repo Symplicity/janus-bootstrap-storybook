@@ -3,8 +3,7 @@ import $ from 'jquery';
 window.jQuery = window.$ = $;
 
 import {
-  withKnobs,
-  text,
+  withKnobs
 } from '@storybook/addon-knobs';
 
 export default {
@@ -26,14 +25,6 @@ For additional documentation, see:
 - Design System 
 `;
 
-
-const styles = {
-  wrapper: {
-    bg: text('Container BG Color', '#F6F6F6'),
-    mw: text('Container Max Width', '1400px')
-  }
-}
-
 const headerLG = `
   <div class="m-0 d-none d-lg-block">
     <header class="d-block pt-0">
@@ -49,7 +40,7 @@ const headerLG = `
           </div>
           <div class="col-4">
             <div class="dropdown">
-              <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ECECEC;">
+              <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header bg-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
                   <use xlink:href="${iconSprite}#tabler-search" />
                   <span class="visually-hidden">Open Search Dialog</span>
@@ -76,7 +67,7 @@ const headerLG = `
 
 const headerSM = `
   <div class="bg-light m-0 d-lg-none">
-    <header class="d-block bg-white pt-0" style="max-width: 1400px; margin: 0 auto; background: #fff">
+    <header class="d-block py-2 mx-auto bg-white">
       <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center flex-wrap w-100">
           <div class="d-flex align-items-center flex-wrap">
@@ -240,7 +231,7 @@ const headerSM = `
             </ul>
             <div class="ps-4 pe-4 pt-6 pb-6 my-2">
               <div class="dropdown">
-                <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #ECECEC;">
+                <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header w-100 bg-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                   <svg class="icon-xl-font-size mx-2">
                     <use xlink:href="${iconSprite}#tabler-search" />
                     <span class="visually-hidden">Open Search Dialog</span>
@@ -289,25 +280,24 @@ const tabsDoubleRowHTML = `
       </a>
     </li>
   </ul>
-
   <ul class="nav nav-tabs bg-white ps-7 pe-7">
     <li class="nav-item py-2 px-3">
-      <a class="fs-6 text-primary" href="#" style="font-weight: 400;">
+      <a class="fs-5fw-normal text-primary" href="#">
         <span>All Jobs</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
+      <a class="fs-5fw-normal text-muted" href="#">
         <span>Recommended Jobs</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
+      <a class="fs-5fw-normal text-muted" href="#">
         <span>My Favorites</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-6 text-muted" href="#" style="font-weight: 400;">
+      <a class="fs-5fw-normal text-muted" href="#">
         <span>Applications</span>
       </a>
     </li>
@@ -317,43 +307,49 @@ const tabsDoubleRowHTML = `
 const batchAndPagination = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
+      <select class="form-select fs-6 pe-8 lh-sm" aria-label="Default select example">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
         <option value="3">Three</option>
       </select>
-      <span class="fs-6 text-muted ms-3" style="min-width: 120px;">1 item selected</span>
+      <span class="fs-6 text-muted ms-3 w-100">1 item selected</span>
     </div>
     <div class="d-flex align-items-center flex-wrap">
       <div class="w-auto me-4">
-        <select class="form-select shadow-none border-0 fs-6" aria-label="Default select example" style="line-height: 1.3;">
+        <select class="form-select shadow-none border-0 lh-sm fs-6" aria-label="Default select example">
           <option value="20">Show 20</option>
           <option value="50">Show 50</option>
           <option value="100">Show 100</option>
         </select>
       </div>
-      <div class="d-flex">
-        <button type="button" class="btn btn-action btn-action-icon-only" style="border: 1px solid #aaaaaa; border-top-right-radius: 0; border-bottom-right-radius: 0;">
-          <svg class="icon-lg-font-size mt-n1 text-danger">
-            <use xlink:href="${iconSprite}#tabler-chevron-left" />
-            <span class="visually-hidden">Previous</span>
-          </svg>
-        </button>
-        <div class="d-flex mx-0">
-          <select class="form-select shadow-none fs-6 pr-5 rounded-0 border-end-0 border-start-0" aria-label="Default select example" style="padding-right: 2rem; line-height: 1.3;">
-            <option value="3">Page 3</option>
-            <option value="1">Page 1</option>
-            <option value="2">Page 2</option>
-          </select>
-        </div>
-        <button type="button" class="btn btn-action btn-action-icon-only" style="border: 1px solid #aaaaaa; border-top-left-radius: 0; border-bottom-left-radius: 0;">
-          <svg class="icon-lg-font-size mt-n1 text-danger">
-            <use xlink:href="${iconSprite}#tabler-chevron-right" />
-            <span class="visually-hidden">Next</span>
-          </svg>
-        </button>
-      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-sm m-0">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <svg class="icon-lg-font-size mt-n1 text-danger">
+                <use xlink:href="${iconSprite}#tabler-chevron-left" />
+                <span class="visually-hidden">Previous</span>
+              </svg>
+            </a>
+          </li>
+          <li class="page-item">
+            <select class="form-select shadow-none fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary" aria-label="Default select example">
+              <option value="3">Page 3</option>
+              <option value="1">Page 1</option>
+              <option value="2">Page 2</option>
+            </select>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <svg class="icon-lg-font-size mt-n1 text-danger">
+                <use xlink:href="${iconSprite}#tabler-chevron-right" />
+                <span class="visually-hidden">Next</span>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 `
@@ -366,7 +362,7 @@ const tableContent = `
           <label class="visually-hidden" for="checkboxHeader">Select Row</label>
           <input type="checkbox" id="checkboxHeader">
         </th>
-        <th class="fw-normal" scope="col" style="min-width: 73px;">Actions</th>
+        <th class="fw-normal" scope="col">Actions</th>
         <th class="fw-normal" scope="col">
           <button class="d-flex border-0 bg-white p-0">
             Last Name
@@ -388,8 +384,9 @@ const tableContent = `
     <tbody class="table-data"></tbody>
   </table>
 `
+
 const sidebarNavLG = `
-  <nav class="main-nav navbar-collapse mt-0 fs-5 show" id="navbarNavLG" style="max-width: 250px;">
+  <nav class="main-nav navbar-collapse mt-0 fs-5 show" id="navbarNavLG">
     <ul class="navbar-nav pt-2 pb-0">
       <li class="nav-item">
         <a class="nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto active" aria-current="page" href="#">
@@ -708,8 +705,8 @@ const sidebarNavLG = `
 `
 
 const staff_list_html = `
-<div class="m-0" style="background-color: ${styles.wrapper.bg};">
-  <div class="mx-auto my-0" style="max-width: ${styles.wrapper.mw}">
+<div class="m-0 bg-light">
+  <div class="mx-auto my-0">
     ${headerLG}
     ${headerSM}    
     <div class="d-flex mt-4 w-100">
@@ -727,23 +724,21 @@ const staff_list_html = `
         </div>
         <div class="bg-white my-3 w-100">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
-            <div style="background-color: #FFF;">
-              <form class="row px-2 py-3 mx-3 mt-2 align-items-center" style="background-color: #F6F6F6;">
-                <div class="col-md-6 col-lg-3 my-1">
+            <div class="bg-white">
+              <form class="row px-2 py-3 mx-3 mt-2 align-items-center bg-light">
+                <div class="col-md-6 col-lg-3 my-1 pe-lg-0">
                   <div class="input-group">
-                    <div class="input-group-prepend" style="z-index: 5;">
-                      <span class="input-group-text ps-2 pe-0" id="basic-addon1" style="border: none; background-color: transparent;">
-                        <svg class="icon-lg-font-size" style="width: 1rem;">
-                          <use xlink:href="${iconSprite}#tabler-search" />
-                          <span class="visually-hidden">Open Search Dialog</span>
-                        </svg>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control fs-6 ps-4" id="text" placeholder="Search cases by student, email, IR#" aria-label="Search" style="margin-left: -1.4rem; border-radius: 0.25rem;">
+                    <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
+                      <svg class="icon-lg-font-size ps-1">
+                        <use xlink:href="${iconSprite}#tabler-search" />
+                        <span class="visually-hidden">Open Search Dialog</span>
+                      </svg>
+                    </span>
+                    <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-2 my-1">
-                  <select class="form-select fs-6" aria-label="Default select example">
+                  <select class="form-select fs-6 text-muted" aria-label="Default select example">
                     <option selected>Assigned to</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -782,7 +777,6 @@ const staff_list_html = `
             <div class="w-100 overflow-auto p-0 my-2 mb-0 border border-light">
               ${tableContent}              
             </div>
-
           </div>
       </div>
     </div>
@@ -790,12 +784,10 @@ const staff_list_html = `
 </div>
 `;
 
-
 export const ScreenStaffList = () => {
-  const container = $('<div style="margin: 0;"></div>').append(
+  const container = $('<div class="m-0"></div>').append(
     staff_list_html
   );
-
   const surnames = [["Wang", "Li"], ["Li", "Zhang"], ["Zhang", "Chen"], ["Chen", "Liu"], ["Liu", "Devi"], ["Devi", "Yang"], ["Yang", "Huang"], ["Huang", "Singh"], ["Singh", "Wu"], ["Wu", "Kumar"], ["Kumar", "Xu"], ["Xu", "Ali"], ["Ali", "Zhao"], ["Zhao", "Zhou"], ["Zhou", "Nguyen"], ["Nguyen", "Khan"], ["Khan", "Ma"], ["Ma", "Lu"], ["Lu", "Zhu"], ["Zhu", "Wang"]];
 
   setTimeout(() => {
@@ -807,8 +799,8 @@ export const ScreenStaffList = () => {
           (item, i) => `
           <tr class="border-bottom border-light">
             <td>
-              <label class="visually-hidden" for="checkbox1">Select Row</label>
-              <input type="checkbox" id="checkbox1">
+              <label class="visually-hidden" for="checkbox${i + 1}">Select Row</label>
+              <input type="checkbox" id="checkbox${i + 1}">
             </td>
             <td>
               <div class="d-flex flex-wrap">
@@ -849,19 +841,13 @@ export const ScreenStaffList = () => {
       .join('')}
     `;
   }, 100);
-
   return container[0];
 }
 
-
-// export const ScreenStaffList = () => `${staff_list_html}`;
 ScreenStaffList.storyName = 'Staff List';
-
-
 
 ScreenStaffList.parameters = {
   notes: `
-
     #Declarative Popovers
 
     ###HTML

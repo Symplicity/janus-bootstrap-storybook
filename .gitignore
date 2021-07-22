@@ -26,5 +26,6 @@ Thumbs.db
 
 # Folders to ignore
 /node_modules/
+/storybook-static
 /backstop_data/bitmaps_test/*
 /backstop_data/html_report/*
