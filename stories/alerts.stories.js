@@ -68,7 +68,7 @@ const alert_success_html = `
       <div class="flex-grow-1">
         This is a success alert - check it out! 
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
@@ -108,7 +108,7 @@ const alert_error_html = `
           <li>This is a danger alert - check it out!</li>
         </ul>
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
@@ -146,7 +146,7 @@ const alert_warning_html = `
         </p>
         This is a warning alert - check it out!
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1  mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
@@ -183,7 +183,7 @@ const alert_info_html = `
         <p class="mb-2">This is a info alert - check it out!</p>
         <p class="mb-0">This is a info alert - check it out!</p>
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
@@ -221,7 +221,7 @@ const alert_with_divider_html = `
         <hr>
         <p class="mb-0 line-clamp-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu dignissim purus. Nulla posuere lobortis sapien, a rutrum diam imperdiet vitae. Cras volutpat elit ipsum, quis varius libero maximus sed. Sed id interdum magna. Mauris hendrerit dolor sit amet eleifend rhoncus. Suspendisse vel nisl scelerisque, faucibus mi a, tempus orci. Morbi lacinia velit facilisis diam posuere facilisis. Vivamus vel ipsum ac mi rutrum posuere molestie sit amet odio. Mauris vel ipsum sit amet lorem egestas tristique. Integer eu dolor id purus rutrum consequat.</p>
       </div>
-      <div class="flex-shrink-1">
+      <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
