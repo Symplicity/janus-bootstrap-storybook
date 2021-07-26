@@ -334,7 +334,7 @@ const batchAndPagination = `
             </a>
           </li>
           <li class="page-item">
-            <select class="form-select shadow-none fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary" aria-label="Default select example">
+            <select class="form-select shadow-none fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary border-end-0 border-start-0" aria-label="Default select example">
               <option value="3">Page 3</option>
               <option value="1">Page 1</option>
               <option value="2">Page 2</option>
