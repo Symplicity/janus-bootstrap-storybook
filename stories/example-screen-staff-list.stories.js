@@ -258,7 +258,7 @@ const headerSM = `
 `
 
 const tabsDoubleRowHTML = `
-  <ul class="nav nav-tabs bg-white rounded-top border border-light ps-7 pe-7">
+  <ul class="nav nav-tabs bg-white rounded-4 ps-7 pe-7">
     <li class="nav-item">
       <a class="nav-link fs-5 active" aria-current="page" href="#">
         <span>All Jobs</span>
@@ -280,24 +280,24 @@ const tabsDoubleRowHTML = `
       </a>
     </li>
   </ul>
-  <ul class="nav nav-tabs bg-white ps-7 pe-7">
-    <li class="nav-item py-2 px-3">
-      <a class="fs-5 fw-normal text-primary" href="#">
+  <ul class="nav nav-tabs bg-white ps-7 pe-7 border-top border-light">
+    <li class="nav-item">
+      <a class="nav-link fs-5 fw-normal text-primary" href="#">
         <span>All Jobs</span>
       </a>
     </li>
-    <li class="nav-item p-2">
-      <a class="fs-5 fw-normal text-muted" href="#">
+    <li class="nav-item">
+      <a class="nav-link fs-5 fw-normal text-muted" href="#">
         <span>Recommended Jobs</span>
       </a>
     </li>
-    <li class="nav-item p-2">
-      <a class="fs-5 fw-normal text-muted" href="#">
+    <li class="nav-item">
+      <a class="nav-link fs-5 fw-normal text-muted" href="#">
         <span>My Favorites</span>
       </a>
     </li>
-    <li class="nav-item p-2">
-      <a class="fs-5 fw-normal text-muted" href="#">
+    <li class="nav-item">
+      <a class="nav-link fs-5 fw-normal text-muted" href="#">
         <span>Applications</span>
       </a>
     </li>
@@ -713,7 +713,7 @@ const staff_list_html = `
       <div class="d-none d-lg-block">
         ${sidebarNavLG}
       </div>      
-      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-2">
+      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-4">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-2 w-100">
           <h2>Incident Reports</h2> 
           <button type="button" class="btn btn-danger fs-6">
@@ -722,7 +722,7 @@ const staff_list_html = `
             </svg>Add New
           </button>
         </div>
-        <div class="bg-white my-3 w-100">
+        <div class="bg-white my-3 w-100 rounded-4">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
             <div class="bg-white">
               <form class="row px-2 py-3 mx-3 mt-2 align-items-center bg-light">
