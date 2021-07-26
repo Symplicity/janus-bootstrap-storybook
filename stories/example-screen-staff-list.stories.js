@@ -282,22 +282,22 @@ const tabsDoubleRowHTML = `
   </ul>
   <ul class="nav nav-tabs bg-white ps-7 pe-7">
     <li class="nav-item py-2 px-3">
-      <a class="fs-5fw-normal text-primary" href="#">
+      <a class="fs-5 fw-normal text-primary" href="#">
         <span>All Jobs</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-5fw-normal text-muted" href="#">
+      <a class="fs-5 fw-normal text-muted" href="#">
         <span>Recommended Jobs</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-5fw-normal text-muted" href="#">
+      <a class="fs-5 fw-normal text-muted" href="#">
         <span>My Favorites</span>
       </a>
     </li>
     <li class="nav-item p-2">
-      <a class="fs-5fw-normal text-muted" href="#">
+      <a class="fs-5 fw-normal text-muted" href="#">
         <span>Applications</span>
       </a>
     </li>
