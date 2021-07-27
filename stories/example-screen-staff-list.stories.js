@@ -317,7 +317,7 @@ const batchAndPagination = `
     </div>
     <div class="d-flex align-items-center flex-wrap">
       <div class="w-auto me-4">
-        <select class="form-select shadow-none border-0 lh-sm fs-6" aria-label="Default select example">
+        <select class="form-select border-0 lh-sm fs-6" aria-label="Default select example">
           <option value="20">Show 20</option>
           <option value="50">Show 50</option>
           <option value="100">Show 100</option>
@@ -326,7 +326,7 @@ const batchAndPagination = `
       <nav aria-label="Page navigation example">
         <ul class="pagination pagination-sm m-0">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <a class="page-link border-end-0 m-0" href="#" aria-label="Previous">
               <svg class="icon-lg-font-size mt-n1 text-danger">
                 <use xlink:href="${iconSprite}#tabler-chevron-left" />
                 <span class="visually-hidden">Previous</span>
@@ -334,14 +334,14 @@ const batchAndPagination = `
             </a>
           </li>
           <li class="page-item">
-            <select class="form-select shadow-none fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary" aria-label="Default select example">
-              <option value="3">Page 3</option>
+            <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0" aria-label="Default select example">
               <option value="1">Page 1</option>
               <option value="2">Page 2</option>
+              <option value="3">Page 3</option>
             </select>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <a class="page-link border-start-0 m-0" href="#" aria-label="Next">
               <svg class="icon-lg-font-size mt-n1 text-danger">
                 <use xlink:href="${iconSprite}#tabler-chevron-right" />
                 <span class="visually-hidden">Next</span>
