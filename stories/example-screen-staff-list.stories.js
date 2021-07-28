@@ -725,47 +725,49 @@ const staff_list_html = `
         <div class="bg-white my-3 w-100 rounded-4">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
             <div class="bg-white">
-              <form class="row px-2 py-3 mx-3 mt-2 align-items-center bg-light">
-                <div class="col-md-6 col-lg-3 my-1 pe-lg-0">
-                  <div class="input-group">
-                    <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
-                      <svg class="icon-lg-font-size ps-1">
-                        <use xlink:href="${iconSprite}#tabler-search" />
-                        <span class="visually-hidden">Open Search Dialog</span>
-                      </svg>
-                    </span>
-                    <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">
+              <form class="px-2 py-3 mx-3 mt-2 bg-light d-flex align-items-start justify-content-between flex-sm-wrap">
+                <div class="d-flex align-items-center justify-content-start flex-wrap flex-grow-1">
+                  <div class="m-1 pe-lg-0 flex-grow-1">
+                    <div class="input-group">
+                      <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
+                        <svg class="icon-lg-font-size ps-1">
+                          <use xlink:href="${iconSprite}#tabler-search" />
+                          <span class="visually-hidden">Open Search Dialog</span>
+                        </svg>
+                      </span>
+                      <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                  </div>
+                  <div class="m-1 flex-grow-1">
+                    <select class="form-select fs-6 text-muted" aria-label="Default select example">
+                      <option selected>Assigned to</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="d-flex align-items-center flex-wrap mx-3 flex-grow-1">
+                    <div class="form-check me-3 my-1">
+                      <input class="form-check-input" type="checkbox" value="true" id="flexCheck1">
+                      <label class="form-check-label fs-6" for="flexCheck1">
+                        Parent Case
+                      </label>
+                    </div>
+                    <div class="form-check me-3 my-1">
+                      <input class="form-check-input" type="checkbox" value="true" id="flexCheck2">
+                      <label class="form-check-label fs-6" for="flexCheck2">
+                        Child Case
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-2 my-1">
-                  <select class="form-select fs-6 text-muted" aria-label="Default select example">
-                    <option selected>Assigned to</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex align-items-center flex-wrap my-1">
-                  <div class="form-check me-3 my-1">
-                    <input class="form-check-input" type="checkbox" value="true" id="flexCheck1">
-                    <label class="form-check-label fs-6" for="flexCheck1">
-                      Parent Case
-                    </label>
-                  </div>
-                  <div class="form-check me-3 my-1">
-                    <input class="form-check-input" type="checkbox" value="true" id="flexCheck2">
-                    <label class="form-check-label fs-6" for="flexCheck2">
-                      Child Case
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 d-flex justify-content-end flex-wrap my-1">
-                  <button type="button" class="btn btn-outline-secondary ms-2 fs-6">
+                <div class="d-flex justify-content-end flex-wrap mx-1">
+                  <button type="button" class="btn btn-outline-secondary m-1 fs-6">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
                       <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-search" />
                     </svg>Apply Search
                   </button>
-                  <button type="button" class="btn btn-outline-secondary ms-2 fs-6">
+                  <button type="button" class="btn btn-outline-secondary m-1 fs-6">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
                       <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-adjustments-horizontal" />
                     </svg>More Filters
