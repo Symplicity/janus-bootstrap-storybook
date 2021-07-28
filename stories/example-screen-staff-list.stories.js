@@ -727,7 +727,7 @@ const staff_list_html = `
             <div class="bg-white">
               <form class="bg-light d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
                 <div class="d-flex align-items-center justify-content-start flex-wrap flex-grow-1">
-                  <div class="flex-grow-1 me-4">
+                  <div class="flex-grow-1 me-7">
                     <div class="input-group">
                       <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
                         <svg class="icon-lg-font-size ps-1">
@@ -738,7 +738,7 @@ const staff_list_html = `
                       <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">
                     </div>
                   </div>
-                  <div class="flex-grow-1 me-4">
+                  <div class="flex-grow-1 me-7">
                     <select class="form-select fs-6 text-muted" aria-label="Default select example">
                       <option selected>Assigned to</option>
                       <option value="1">One</option>
@@ -753,7 +753,7 @@ const staff_list_html = `
                         Parent Case
                       </label>
                     </div>
-                    <div class="form-check me-3 mb-0">
+                    <div class="form-check me-2 mb-0">
                       <input class="form-check-input" type="checkbox" value="true" id="flexCheck2">
                       <label class="form-check-label fs-6" for="flexCheck2">
                         Child Case
