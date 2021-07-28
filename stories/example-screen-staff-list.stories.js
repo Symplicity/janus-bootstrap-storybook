@@ -727,7 +727,7 @@ const staff_list_html = `
             <div class="bg-white">
               <form class="bg-light d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
                 <div class="d-flex align-items-center justify-content-start flex-wrap flex-grow-1">
-                  <div class="flex-grow-1 me-4 my-1">
+                  <div class="flex-grow-1 me-4">
                     <div class="input-group">
                       <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
                         <svg class="icon-lg-font-size ps-1">
@@ -738,7 +738,7 @@ const staff_list_html = `
                       <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">
                     </div>
                   </div>
-                  <div class="flex-grow-1 me-4 my-1">
+                  <div class="flex-grow-1 me-4">
                     <select class="form-select fs-6 text-muted" aria-label="Default select example">
                       <option selected>Assigned to</option>
                       <option value="1">One</option>
@@ -746,14 +746,14 @@ const staff_list_html = `
                       <option value="3">Three</option>
                     </select>
                   </div>
-                  <div class="d-flex align-items-center flex-wrap flex-grow-1 my-1">
-                    <div class="form-check me-3">
+                  <div class="d-flex align-items-center flex-wrap flex-grow-1">
+                    <div class="form-check me-3 mb-0">
                       <input class="form-check-input" type="checkbox" value="true" id="flexCheck1">
                       <label class="form-check-label fs-6" for="flexCheck1">
                         Parent Case
                       </label>
                     </div>
-                    <div class="form-check me-3">
+                    <div class="form-check me-3 mb-0">
                       <input class="form-check-input" type="checkbox" value="true" id="flexCheck2">
                       <label class="form-check-label fs-6" for="flexCheck2">
                         Child Case
@@ -762,12 +762,12 @@ const staff_list_html = `
                   </div>
                 </div>
                 <div class="d-flex justify-content-start flex-wrap">
-                  <button type="button" class="btn btn-outline-secondary fs-6 me-3 my-1">
+                  <button type="button" class="btn btn-outline-secondary fs-6 me-3">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
                       <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-search" />
                     </svg>Apply Search
                   </button>
-                  <button type="button" class="btn btn-outline-secondary fs-6 my-1">
+                  <button type="button" class="btn btn-outline-secondary fs-6">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
                       <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-adjustments-horizontal" />
                     </svg>More Filters
