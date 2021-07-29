@@ -307,7 +307,7 @@ const tabsDoubleRowHTML = `
 const batchAndPagination = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6 pe-8 lh-sm" aria-label="Default select example">
+      <select class="form-select fs-6 pe-8 lh-sm w-auto" aria-label="Default select example">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -714,8 +714,8 @@ const staff_list_html = `
         ${sidebarNavLG}
       </div>      
       <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-4">
-        <div class="d-flex justify-content-between align-items-center flex-wrap px-2 w-100">
-          <h2>Incident Reports</h2> 
+        <div class="d-flex justify-content-between align-items-center flex-wrap px-3 w-100">
+          <h2 class="m-0">Incident Reports</h2> 
           <button type="button" class="btn btn-danger fs-6">
             <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
               <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-plus" />
@@ -805,7 +805,7 @@ export const ScreenStaffList = () => {
               <input type="checkbox" id="checkbox${i + 1}">
             </td>
             <td>
-              <div class="d-flex flex-wrap">
+              <div class="d-flex">
                 <button type="button" class="btn btn-action p-0 me-2 border-0">
                   <svg class="icon-lg-font-size d-flex">
                     <use xlink:href="${iconSprite}#tabler-file-search" />
