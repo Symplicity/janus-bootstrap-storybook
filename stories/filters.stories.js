@@ -146,3 +146,56 @@ FilterButton.parameters = {
 
   `,
 };
+
+
+const all_filters_button_html = `
+<h3>All Filters Button</h3>
+<button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <span>
+    <svg width="1rem" height="1rem" class="mt-n1">
+      <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
+    </svg>
+  </span>
+  All Filters
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>`;
+
+export const AllFiltersButton = () => `<div>${all_filters_button_html}</div>`;
+
+AllFiltersButton.storyName = 'All Filters';
+
+AllFiltersButton.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${all_filters_button_html}
+  \`\`\`
+
+  `
+};
