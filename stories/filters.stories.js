@@ -199,3 +199,31 @@ AllFiltersButton.parameters = {
 
   `
 };
+
+
+const toggle_filter_button_html = `
+<h3>Toggle Filter Button (Checkbox)</h3>
+<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+<label class="btn btn-outline-secondary filter-toggle rounded-pill" for="btn-check">Remote</label>
+<br><br>
+<h3>Toggle Filter Button (Button)</h3>
+<button class="btn btn-outline-secondary filter-toggle rounded-pill">Remote</button>
+<br><br>
+<button class="btn btn-outline-secondary filter-toggle rounded-pill active">Remote</button>
+`;
+
+export const ToggleFilterButton = () => `<div>${toggle_filter_button_html}</div>`;
+
+ToggleFilterButton.storyName = 'Toggle';
+
+ToggleFilterButton.parameters = { 
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${toggle_filter_button_html}
+  \`\`\`
+
+  `
+};
