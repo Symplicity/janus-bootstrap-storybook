@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Components/Navigation',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const moreDocumentation = `

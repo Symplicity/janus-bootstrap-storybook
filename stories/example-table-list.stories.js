@@ -2,11 +2,6 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 
 export default {
   title: 'Examples/Tables/List',
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const listHTML = `

@@ -4,10 +4,6 @@ const text = 'Unified Design System';
 
 export default {
   title: 'Components/Alerts',
-  parameters: {
-    options: { selectedPanel: 'storybook/a11y/panel' },
-    notes: 'Use alerts to provide feedback to the user.',
-  },
 };
 
 const alert_primary_html = `

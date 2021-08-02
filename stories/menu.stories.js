@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Components/Menus',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const menu_basic_html = `

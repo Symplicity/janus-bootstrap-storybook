@@ -2,11 +2,6 @@ import linkNotes from './link.notes.md';
 
 export default {
   title: 'Components/Links',
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel'
-    }
-  }
 };
 
 const defaultHTML = ` 

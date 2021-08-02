@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Components/Forms',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const input_email_html = `

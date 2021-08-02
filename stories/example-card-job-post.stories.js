@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Examples/Cards/Job Post',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const card = `

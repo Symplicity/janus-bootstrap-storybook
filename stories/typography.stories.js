@@ -2,11 +2,6 @@ import { document, setTimeout } from 'global';
 
 export default {
   title: 'Components/Typography',
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 

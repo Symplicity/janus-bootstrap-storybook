@@ -18,11 +18,6 @@ import {
 export default {
   title: 'Components/Popovers',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const moreDocumentation = `

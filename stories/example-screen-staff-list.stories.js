@@ -9,11 +9,6 @@ import {
 export default {
   title: 'Examples/Screens/Staff List',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 // TODO change docs

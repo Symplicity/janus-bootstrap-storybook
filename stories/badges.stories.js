@@ -15,11 +15,6 @@ import {
 export default {
   title: 'Components/Badges',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const moreDocumentation = `

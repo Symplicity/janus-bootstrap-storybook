@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Examples/Forms/Validated Form',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const validated_form_html = `

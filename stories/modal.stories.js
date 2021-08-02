@@ -2,11 +2,6 @@ import { document, setTimeout } from 'global';
 
 export default {
   title: 'Components/Modals',
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const modal_basic_html = `

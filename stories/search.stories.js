@@ -16,11 +16,6 @@ import {
 
 export default {
   title: 'Components/Search',
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const search_desktop_input_html = `

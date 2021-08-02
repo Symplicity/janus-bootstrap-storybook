@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Components/Dropdown',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const dropdown_primary_html = `

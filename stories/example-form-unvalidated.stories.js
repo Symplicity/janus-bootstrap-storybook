@@ -17,11 +17,6 @@ import {
 export default {
   title: 'Examples/Forms/Unvalidated Form',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const unvalidated_form_html = `

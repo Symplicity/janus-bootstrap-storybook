@@ -20,11 +20,6 @@ import {
 export default {
   title: 'Examples/Layout/Header',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const moreDocumentation = `

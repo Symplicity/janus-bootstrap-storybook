@@ -18,11 +18,6 @@ import {
 export default {
   title: 'Components/Filters',
   decorators: [withKnobs],
-  parameters: {
-    options: {
-      selectedPanel: 'storybook/a11y/panel',
-    },
-  },
 };
 
 const filter_button_html = `
