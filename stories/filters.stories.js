@@ -12,6 +12,7 @@ import {
   withKnobs,
   text,
   number,
+  radios,
 } from '@storybook/addon-knobs';
 
 export default {
@@ -212,7 +213,33 @@ const toggle_filter_button_html = `
 <button class="btn btn-outline-secondary filter-toggle rounded-pill active">Remote</button>
 `;
 
-export const ToggleFilterButton = () => `<div>${toggle_filter_button_html}</div>`;
+export const ToggleFilterButton = () => {
+
+  const checkbox_label = 'Checked';
+  const checkbox_options = {
+    Checked: 'checked',
+    Unchecked: ''
+  };
+  const checkbox_checked = radios(checkbox_label, checkbox_options);
+
+  const button_label = 'Active';
+  const button_options = {
+    Active: 'active',
+    Inactive: ''
+  };
+  const button_active = radios(button_label, button_options);
+
+  return `
+    <div>
+      <h3>Toggle Filter Button (Checkbox)</h3>
+      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" ${checkbox_checked}>
+      <label class="btn btn-outline-secondary filter-toggle rounded-pill" for="btn-check">Remote</label>
+      <br><br>
+      <h3>Toggle Filter Button (Button)</h3>
+      <button class="btn btn-outline-secondary filter-toggle rounded-pill ${button_active}">Remote</button>
+    </div>
+  `
+};
 
 ToggleFilterButton.storyName = 'Toggle';
 
