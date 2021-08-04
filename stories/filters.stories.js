@@ -182,7 +182,7 @@ const all_filters_button_html = `
 
 export const AllFiltersButton = () => `<div>${all_filters_button_html}</div>`;
 
-AllFiltersButton.storyName = 'All Filters';
+AllFiltersButton.storyName = 'All Filters with Modal';
 
 AllFiltersButton.parameters = { 
   notes: `
