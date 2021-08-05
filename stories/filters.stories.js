@@ -16,7 +16,7 @@ import {
 } from '@storybook/addon-knobs';
 
 export default {
-  title: 'Components/Filters',
+  title: 'Components/Filters Basic',
   decorators: [withKnobs],
 };
 
