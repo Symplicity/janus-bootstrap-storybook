@@ -143,7 +143,6 @@ FilterButton.parameters = {
   `,
 };
 
-
 const all_filters_button_html = `
 <h3>All Filters Button</h3>
 <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2"  data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -184,7 +183,7 @@ export const AllFiltersButton = () => `<div>${all_filters_button_html}</div>`;
 
 AllFiltersButton.storyName = 'All Filters with Modal';
 
-AllFiltersButton.parameters = { 
+AllFiltersButton.parameters = {
   notes: `
   
   #Sample Code
@@ -193,9 +192,8 @@ AllFiltersButton.parameters = {
   ${all_filters_button_html}
   \`\`\`
 
-  `
+  `,
 };
-
 
 const toggle_filter_button_html = `
 <h3>Toggle Filter Button (Checkbox)</h3>
@@ -209,18 +207,17 @@ const toggle_filter_button_html = `
 `;
 
 export const ToggleFilterButton = () => {
-
   const checkbox_label = 'Checked';
   const checkbox_options = {
     Checked: 'checked',
-    Unchecked: ''
+    Unchecked: '',
   };
   const checkbox_checked = radios(checkbox_label, checkbox_options);
 
   const button_label = 'Active';
   const button_options = {
     Active: 'active',
-    Inactive: ''
+    Inactive: '',
   };
   const button_active = radios(button_label, button_options);
 
@@ -233,12 +230,12 @@ export const ToggleFilterButton = () => {
       <h3>Toggle Filter Button (Button)</h3>
       <button class="btn btn-outline-secondary filter-toggle rounded-pill ${button_active}">Remote</button>
     </div>
-  `
+  `;
 };
 
 ToggleFilterButton.storyName = 'Toggle';
 
-ToggleFilterButton.parameters = { 
+ToggleFilterButton.parameters = {
   notes: `
   
   #Sample Code
@@ -247,5 +244,59 @@ ToggleFilterButton.parameters = {
   ${toggle_filter_button_html}
   \`\`\`
 
-  `
+  `,
+};
+
+const toggle_filter_with_ellipsis_button_html = `
+<h3>Toggle Filter with Ellipsis Button (Checkbox)</h3>
+<input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+<label class="btn btn-outline-secondary filter-toggle rounded-pill  text-truncate" for="btn-check">EL Internship Fast Track (no results found)</label>
+<br><br>
+<h3>Toggle Filter Button with Ellipsis (Button)</h3>
+<button class="btn btn-outline-secondary filter-toggle rounded-pill text-truncate">EL Internship Fast Track (no results found)</button>
+<br><br>
+<button class="btn btn-outline-secondary filter-toggle rounded-pill active">Remote</button>
+`;
+
+export const ToggleFilterWithEllipsisButton = () => {
+  const checkbox_label = 'Checked';
+  const checkbox_options = {
+    Checked: 'checked',
+    Unchecked: '',
+  };
+  const checkbox_checked = radios(checkbox_label, checkbox_options);
+
+  const button_label = 'Active';
+  const button_options = {
+    Active: 'active',
+    Inactive: '',
+  };
+  const button_active = radios(button_label, button_options);
+
+  const max_width_active = number('max-width', 300);
+
+  return `
+    <div>
+      <h3>Toggle Filter with Ellipsis Button (Checkbox)</h3>
+      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off" ${checkbox_checked}>
+      <label class="btn btn-outline-secondary filter-toggle rounded-pill text-truncate" for="btn-check" style="max-width: ${max_width_active}px;">EL Internship Fast Track (no results found)</label>
+      <br><br>
+      <h3>Toggle Filter Button with Ellipsis (Button)</h3>
+      <button class="btn btn-outline-secondary filter-toggle rounded-pill text-truncate ${button_active}" style="max-width: ${max_width_active}px;">EL Internship Fast Track (no results found)</button>
+    </div>
+  `;
+};
+
+ToggleFilterWithEllipsisButton.storyName = 'Toggle with Ellipsis';
+
+ToggleFilterWithEllipsisButton.parameters = {
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${toggle_filter_with_ellipsis_button_html}
+  \`\`\`
+
+  `,
 };
