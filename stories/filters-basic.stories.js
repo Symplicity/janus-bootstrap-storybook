@@ -273,7 +273,16 @@ export const ToggleFilterWithEllipsisButton = () => {
   };
   const button_active = radios(button_label, button_options);
 
-  const max_width_active = number('max-width', 300);
+  const label = 'max-width (px):';
+  const defaultValue = 300;
+  const options = {
+    range: true,
+    min: 50,
+    max: 400,
+    step: 1,
+  };
+
+  const max_width_active = number(label, defaultValue, options);
 
   return `
     <div>
