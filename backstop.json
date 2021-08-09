@@ -16,7 +16,6 @@
       "width": 1024,
       "height": 768
     }
-    
   ],
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
@@ -36,7 +35,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -54,7 +53,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -72,7 +71,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -90,7 +89,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -108,7 +107,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -126,7 +125,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -144,7 +143,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -162,7 +161,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -180,7 +179,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -198,7 +197,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -216,7 +215,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -234,7 +233,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -252,7 +251,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -270,7 +269,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -288,7 +287,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -306,7 +305,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -324,7 +323,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -342,7 +341,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -360,7 +359,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -378,7 +377,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -396,7 +395,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -414,7 +413,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -432,7 +431,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -450,7 +449,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -468,7 +467,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -486,7 +485,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -504,7 +503,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -522,7 +521,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -540,7 +539,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -558,7 +557,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -576,7 +575,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -594,7 +593,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -612,7 +611,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -630,7 +629,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -648,7 +647,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -666,7 +665,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -684,7 +683,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -702,7 +701,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -720,7 +719,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -738,12 +737,12 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-SB-Button-with-Dropdown-Regular",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--filter-button",
+      "label": "Filters-Basic-SB-Button-with-Dropdown-Regular",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -756,12 +755,12 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-SB-Button-with-Dropdown-Small",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--filter-button",
+      "label": "Filters-Basic-SB-Button-with-Dropdown-Small",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -774,7 +773,97 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Basic-SB-All-Filters-with-Modal",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--all-filters-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Basic-SB-Toggle-Filter-Button-Checkbox",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "input#btn-check",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Basic-SB-Toggle-Filter-Button-Button",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "button.filter-toggle",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Basic-SB-Toggle-Filter-With-Ellipsis-Button-Checkbox",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-with-ellipsis-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "input#btn-check",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Basic-SB-Toggle-Filter-With-Ellipsis-Button-Button",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-with-ellipsis-button",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "button.filter-toggle",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -792,7 +881,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -810,7 +899,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -828,7 +917,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -846,7 +935,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -864,7 +953,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -882,7 +971,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -900,7 +989,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -918,7 +1007,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -936,7 +1025,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -954,7 +1043,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -972,7 +1061,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -990,7 +1079,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1008,7 +1097,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1026,7 +1115,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1044,7 +1133,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1062,7 +1151,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1080,7 +1169,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1098,7 +1187,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1116,7 +1205,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1134,7 +1223,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1152,7 +1241,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1170,7 +1259,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1188,7 +1277,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1206,7 +1295,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1224,7 +1313,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1242,7 +1331,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1260,7 +1349,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true,
       "viewports": [
         {
@@ -1285,7 +1374,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true,
       "viewports": [
         {
@@ -1315,7 +1404,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1333,7 +1422,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1351,7 +1440,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1369,7 +1458,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1387,7 +1476,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1405,7 +1494,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1423,7 +1512,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1441,7 +1530,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1459,7 +1548,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1477,7 +1566,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1495,7 +1584,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1513,7 +1602,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1531,7 +1620,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1549,7 +1638,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1567,7 +1656,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1585,7 +1674,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1603,7 +1692,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1621,7 +1710,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1639,7 +1728,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1657,7 +1746,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1675,7 +1764,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1693,7 +1782,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1711,7 +1800,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     },
     {
@@ -1729,7 +1818,7 @@
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
-      "misMatchThreshold" : 0,
+      "misMatchThreshold": 0,
       "requireSameDimensions": true
     }
   ],
