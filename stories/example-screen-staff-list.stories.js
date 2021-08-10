@@ -67,7 +67,7 @@ const headerLG = `
 
 const headerSM = `
   <div class="bg-light m-0 d-lg-none">
-    <header class="d-block py-2 mx-auto bg-white">
+    <header class="d-block mb-2 mx-auto bg-white">
       <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
         <div class="d-flex justify-content-between align-items-center flex-wrap w-100">
           <div class="d-flex align-items-center flex-wrap">
