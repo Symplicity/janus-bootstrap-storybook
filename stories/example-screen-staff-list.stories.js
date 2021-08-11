@@ -307,7 +307,7 @@ const tabsDoubleRowHTML = `
 const batchAndPagination = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6 pe-8 lh-sm w-auto" aria-label="Default select example">
+      <select class="form-select fs-6 pe-8 lh-sm w-auto shadow-none" aria-label="Default select example">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -317,7 +317,7 @@ const batchAndPagination = `
     </div>
     <div class="d-flex align-items-center flex-wrap">
       <div class="w-auto me-4">
-        <select class="form-select border-0 lh-sm fs-6" aria-label="Default select example">
+        <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
           <option value="20">Show 20</option>
           <option value="50">Show 50</option>
           <option value="100">Show 100</option>
@@ -334,7 +334,7 @@ const batchAndPagination = `
             </a>
           </li>
           <li class="page-item">
-            <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0" aria-label="Default select example">
+            <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
               <option value="1">Page 1</option>
               <option value="2">Page 2</option>
               <option value="3">Page 3</option>
@@ -739,7 +739,7 @@ const staff_list_html = `
                     </div>
                   </div>
                   <div class="flex-grow-1 me-7">
-                    <select class="form-select fs-6 text-muted" aria-label="Default select example">
+                    <select class="form-select fs-6 text-muted shadow-none" aria-label="Default select example">
                       <option selected>Assigned to</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
