@@ -52,36 +52,88 @@ export const PicklistButton = () => {
   const filter_option_2 = text('Select Option 2', 'Career Fair Postings');
   const filter_option_3 = text('Select Option 3', 'Jobs Matching My Profile');
 
+  const label = 'Number of items';
+  const defaultValue = 15;
+  const options = {
+    range: true,
+    min: 0,
+    max: 100,
+    step: 1,
+  };
+
+  const value = number(label, defaultValue, options);
+
+  setTimeout(function () {
+    const createListItems = document.querySelector('.list-unstyled-repeat');
+    createListItems.innerHTML = `
+        ${Array(value)
+          .fill()
+          .map(
+            (item, i) =>
+              `<li><div class="list-group"><a class="dropdown-item d-flex" href="#"><span class="flex-fill">Option ${
+                i + 1
+              }</span></div></li>`
+          )
+          .join('')}
+    `;
+  }, 0);
+
   return `
     <div class="dropdown">
-      <h3>Button with Dropdown (same as Filters Basic version)</h3>
+      <h3>Scrollable, Multi-Level, Single-Select Filter</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1" aria-labelledby="dropdownMenuButton2">
-          <a class="dropdown-item d-flex" href="#">
-            <span class="flex-fill">
-              ${filter_option_1}
-            </span>
-          </a>
-          <a class="dropdown-item d-flex" href="#">
-            <span class="flex-fill">
-              ${filter_option_2}
-            </span>
-          </a>
-          <a class="dropdown-item d-flex" href="#">
-            <span class="flex-fill">
-              ${filter_option_3}
-            </span>
-          </a>
+        <div class="dropdown-menu shadow-sm mt-1 pt-0" aria-labelledby="dropdownMenuButton2">
+          <form class="py-3 px-7 mb-2 bg-white border-bottom-light">
+            <div class="input-group">
+              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <span class="input-group-text bg-white">
+                  <svg class="icon-lg-font-size">
+                    <use xlink:href="${iconSprite}#tabler-search" />
+                    <span class="visually-hidden">Search</span>
+                  </svg>
+              </span>
+            </div>
+          </form>
+          <ul class="list-unstyled mb-0 overflow-auto">
+            <li>
+              <div class="list-group">
+                <a class="dropdown-item d-flex" href="#">
+                  <span class="w-100">
+                    ${filter_option_1}
+                  </span>
+                  <span class="tabler-chevron-down h4 mt-0 mb-0 me-n2">
+                    <svg width="1.25rem" height="1.25rem">
+                      <use xlink:href="${iconSprite}#tabler-chevron-right" />
+                    </svg>
+                  </span>
+                </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span class="flex-fill">
+                  ${filter_option_2}
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span class="flex-fill">
+                  ${filter_option_3}
+                </span>
+              </a>
+            </li>
+            <ul class="list-unstyled list-unstyled-repeat mb-0"></ul>
+          </ul>
         </div>
       </div>
     </div>
     `;
 };
 
-PicklistButton.storyName = 'Button with Dropdown';
+PicklistButton.storyName = 'Multi-Level, Single-Select';
 
 PicklistButton.parameters = {
   notes: `
