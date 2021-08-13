@@ -72,7 +72,7 @@ export const PicklistButton = () => {
             (item, i) =>
               `<li><div class="list-group"><a class="dropdown-item d-flex" href="#"><span class="flex-fill">Option ${
                 i + 1
-              }</span></div></li>`
+              }</span></a></div></li>`
           )
           .join('')}
     `;
@@ -85,8 +85,8 @@ export const PicklistButton = () => {
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1 pt-0" aria-labelledby="dropdownMenuButton2">
-          <form class="py-3 px-7 mb-2 bg-white border-bottom-light">
+        <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
