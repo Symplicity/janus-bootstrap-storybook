@@ -741,8 +741,26 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Scrollable-Multi-Level-Single-Select",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced--picklist-button",
+      "label": "Filters-Advanced-SB-Drilldown-Parent",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced--filter-button-parent",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "#dropdownMenuButton2",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Filters-Advanced-SB-Drilldown-Child",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced--filter-button-child",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",

@@ -20,7 +20,7 @@ export default {
   decorators: [withKnobs],
 };
 
-const filter_button_parent_html = `
+const drilldown_button_parent_html = `
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
       <div>
@@ -74,9 +74,12 @@ const filter_button_parent_html = `
     </div>`;
 
 export const FilterButtonParent = () => {
-  const filter_option_1 = text('Select Option 1', 'All Jobs and Interviews');
-  const filter_option_2 = text('Select Option 2', 'Career Fair Postings');
-  const filter_option_3 = text('Select Option 3', 'Jobs Matching My Profile');
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
+  const drilldown_option_3 = text(
+    'Select Option 3',
+    'Jobs Matching My Profile'
+  );
 
   const label = 'Number of items';
   const defaultValue = 15;
@@ -128,7 +131,7 @@ export const FilterButtonParent = () => {
               <div class="list-group">
                 <a class="dropdown-item d-flex" href="#">
                   <span class="w-100">
-                    ${filter_option_1}
+                    ${drilldown_option_1}
                   </span>
                   <span class="h4 mt-0 mb-0 me-n2">
                     <svg width="1.25rem" height="1.25rem">
@@ -140,14 +143,14 @@ export const FilterButtonParent = () => {
             <li>
               <a class="dropdown-item d-flex" href="#">
                 <span class="flex-fill">
-                  ${filter_option_2}
+                  ${drilldown_option_2}
                 </span>
               </a>
             </li>
             <li>
               <a class="dropdown-item d-flex" href="#">
                 <span class="flex-fill">
-                  ${filter_option_3}
+                  ${drilldown_option_3}
                 </span>
               </a>
             </li>
@@ -167,13 +170,13 @@ FilterButtonParent.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${filter_button_parent_html}
+  ${drilldown_button_parent_html}
   \`\`\`
 
   `,
 };
 
-const filter_button_child_html = `
+const drilldown_button_child_html = `
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
@@ -241,9 +244,9 @@ const filter_button_child_html = `
     </div>`;
 
 export const FilterButtonChild = () => {
-  const filter_child_option_1 = text('Select Option 1', 'Category 1.3.1');
-  const filter_child_option_2 = text('Select Option 2', 'Category 1.3.2');
-  const filter_child_option_3 = text('Select Option 3', 'Category 1.3.3');
+  const drilldown_child_option_1 = text('Select Option 1', 'Category 1.3.1');
+  const drilldown_child_option_2 = text('Select Option 2', 'Category 1.3.2');
+  const drilldown_child_option_3 = text('Select Option 3', 'Category 1.3.3');
 
   return `
     <div class="dropdown">
@@ -284,7 +287,7 @@ export const FilterButtonChild = () => {
               <div class="list-group">
                 <a class="dropdown-item d-flex" href="#">
                   <span class="w-100">
-                    ${filter_child_option_1}
+                    ${drilldown_child_option_1}
                   </span>
                   <span class="h4 mt-0 mb-0 me-n2">
                     <svg width="1.25rem" height="1.25rem">
@@ -296,14 +299,14 @@ export const FilterButtonChild = () => {
             <li>
               <a class="dropdown-item d-flex" href="#">
                 <span class="flex-fill">
-                  ${filter_child_option_2}
+                  ${drilldown_child_option_2}
                 </span>
               </a>
             </li>
             <li>
               <a class="dropdown-item d-flex" href="#">
                 <span class="flex-fill">
-                  ${filter_child_option_3}
+                  ${drilldown_child_option_3}
                 </span>
               </a>
             </li>
@@ -322,7 +325,7 @@ FilterButtonChild.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${filter_button_child_html}
+  ${drilldown_button_child_html}
   \`\`\`
 
   `,
