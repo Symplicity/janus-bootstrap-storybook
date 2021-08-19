@@ -244,6 +244,7 @@ const drilldown_button_child_html = `
     </div>`;
 
 export const FilterButtonChild = () => {
+  const drilldown_parent = text('Select Parent', 'Category 1.3.1');
   const drilldown_child_option_1 = text('Select Option 1', 'Category 1.3.1');
   const drilldown_child_option_2 = text('Select Option 2', 'Category 1.3.2');
   const drilldown_child_option_3 = text('Select Option 3', 'Category 1.3.3');
@@ -277,7 +278,7 @@ export const FilterButtonChild = () => {
                     </svg>
                   </span>
                   <span class="w-100 text-center">
-                    Category 1.3
+                    ${drilldown_parent}
                   </span>
                 </a>
             </li>
