@@ -244,17 +244,17 @@ const drilldown_button_child_html = `
     </div>`;
 
 export const FilterButtonChild = () => {
-  const drilldown_parent = text('Select Parent', 'Category 1.3.1');
-  const drilldown_child_option_1 = text('Select Option 1', 'Category 1.3.1');
-  const drilldown_child_option_2 = text('Select Option 2', 'Category 1.3.2');
-  const drilldown_child_option_3 = text('Select Option 3', 'Category 1.3.3');
+  const drilldown_parent = text('Parent Item', 'Category 1.3.1');
+  const drilldown_child_option_1 = text('Child Item 1', 'Category 1.3.1');
+  const drilldown_child_option_2 = text('Child Item 2', 'Category 1.3.2');
+  const drilldown_child_option_3 = text('Child Item 3', 'Category 1.3.3');
 
   return `
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Position Type 
+          ${drilldown_parent} 
         </button>
         <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
