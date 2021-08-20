@@ -244,7 +244,7 @@ const drilldown_button_child_html = `
     </div>`;
 
 export const FilterButtonChild = () => {
-  const drilldown_parent = text('Parent Item', 'Parent Item');
+  const drilldown_parent = text('Position Type', 'Position Type');
   const drilldown_child_option_1 = text('Child Item 1', 'Category 1.3.1');
   const drilldown_child_option_2 = text('Child Item 2', 'Category 1.3.2');
   const drilldown_child_option_3 = text('Child Item 3', 'Category 1.3.3');
