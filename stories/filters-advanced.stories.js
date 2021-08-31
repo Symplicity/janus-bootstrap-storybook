@@ -27,7 +27,7 @@ const drilldown_button_parent_html = `
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -114,7 +114,7 @@ export const FilterButtonParent = () => {
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -183,7 +183,7 @@ const drilldown_button_child_html = `
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -256,7 +256,7 @@ export const FilterButtonChild = () => {
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ${drilldown_parent} 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -327,6 +327,130 @@ FilterButtonChild.parameters = {
 
   \`\`\`html
   ${drilldown_button_child_html}
+  \`\`\`
+
+  `,
+};
+
+
+const multi_select_single_level_html = `
+    <div class="dropdown">
+      <h3>Drilldown Parent</h3>
+      <div>
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Position Type 
+        </button>
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
+            <div class="input-group">
+              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <span class="input-group-text bg-white">
+                  <svg class="icon-lg-font-size">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                    <span class="visually-hidden">Search</span>
+                  </svg>
+              </span>
+            </div>
+          </form>
+          <ul class="list-unstyled mb-0 overflow-auto">
+            <li>
+              <div class="list-group">
+                <a class="dropdown-item d-flex" href="#">
+                  <span class="w-100">
+                    All Jobs and Interviews
+                  </span>
+                  <span class="h4 mt-0 mb-0 me-n2">
+                    <svg width="1.25rem" height="1.25rem">
+                      <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
+                    </svg>
+                  </span>
+                </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span class="flex-fill">
+                  Career Fair Postings
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item d-flex" href="#">
+                <span class="flex-fill">
+                  Jobs Matching My Profile
+                </span>
+              </a>
+            </li>
+            <ul class="list-unstyled list-unstyled-repeat overflow-auto mb-0"></ul>
+          </ul>
+        </div>
+      </div>
+    </div>`;
+
+export const MultiSelectSingleLevel = () => {
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
+  const drilldown_option_3 = text(
+    'Select Option 3',
+    'Jobs Matching My Profile'
+  );
+
+  const label = 'Number of items';
+  const defaultValue = 15;
+  const options = {
+    range: true,
+    min: 0,
+    max: 100,
+    step: 1,
+  };
+
+  const value = number(label, defaultValue, options);
+
+  setTimeout(function () {
+    const createListItems = document.querySelector('.list-unstyled-repeat');
+    createListItems.innerHTML = `
+        ${Array(value)
+          .fill()
+          .map(
+            (item, i) =>
+              `<li><label class="list-group-item border-0"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Option ${
+                i + 1
+              }</label></li>`
+          )
+          .join('')}
+    `;
+  }, 0);
+
+  return `
+    <div class="dropdown">
+      <h3>Multi-Select, Single-Level</h3>
+      <div>
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+          Position Type 
+        </button>
+        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <ul class="list-unstyled mb-0 overflow-auto">
+            <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
+          </ul>
+          <div class="dropdown-divider m-0"></div>
+          <div class="d-flex justify-content-between px-3 py-6">
+            <button type="button" class="btn btn-link">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+};
+
+MultiSelectSingleLevel.storyName = 'Multi-Select, Single-Level';
+
+MultiSelectSingleLevel.parameters = {
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${multi_select_single_level_html}
   \`\`\`
 
   `,
