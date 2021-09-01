@@ -332,7 +332,6 @@ FilterButtonChild.parameters = {
   `,
 };
 
-
 const multi_select_single_level_html = `
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
@@ -412,7 +411,7 @@ export const MultiSelectSingleLevel = () => {
           .fill()
           .map(
             (item, i) =>
-              `<li><label class="list-group-item border-0"><input class="form-check-input me-1" type="checkbox" value="" aria-label="...">Option ${
+              `<li><label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option ${
                 i + 1
               }</label></li>`
           )
@@ -428,12 +427,21 @@ export const MultiSelectSingleLevel = () => {
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 overflow-auto">
+          <ul class="list-unstyled mb-0 px-7 pt-7 pb-2 overflow-auto">
+            <li>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_1}</label>
+            </li>
+            <li>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_2}</label>
+            </li>
+            <li>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_3}</label>
+            </li>
             <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
           </ul>
           <div class="dropdown-divider m-0"></div>
           <div class="d-flex justify-content-between px-3 py-6">
-            <button type="button" class="btn btn-link">Clear</button>
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
             <button type="button" class="btn btn-primary">Apply</button>
           </div>
         </div>
