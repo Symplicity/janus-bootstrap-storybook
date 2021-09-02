@@ -206,7 +206,7 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 100,
+      "delay": 300,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
