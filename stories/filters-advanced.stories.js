@@ -334,56 +334,32 @@ FilterButtonChild.parameters = {
 
 const multi_select_single_level_html = `
     <div class="dropdown">
-      <h3>Drilldown Parent</h3>
+      <h3>Multi-Select, Single-Level</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
-            <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
-              <span class="input-group-text bg-white">
-                  <svg class="icon-lg-font-size">
-                    <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
-                    <span class="visually-hidden">Search</span>
-                  </svg>
-              </span>
-            </div>
-          </form>
-          <ul class="list-unstyled mb-0 overflow-auto">
+          <ul class="list-unstyled mb-0 px-7 pt-7 pb-2 overflow-auto">
             <li>
-              <div class="list-group">
-                <a class="dropdown-item d-flex" href="#">
-                  <span class="w-100">
-                    All Jobs and Interviews
-                  </span>
-                  <span class="h4 mt-0 mb-0 me-n2">
-                    <svg width="1.25rem" height="1.25rem">
-                      <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
-                    </svg>
-                  </span>
-                </a>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
             </li>
             <li>
-              <a class="dropdown-item d-flex" href="#">
-                <span class="flex-fill">
-                  Career Fair Postings
-                </span>
-              </a>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
             </li>
             <li>
-              <a class="dropdown-item d-flex" href="#">
-                <span class="flex-fill">
-                  Jobs Matching My Profile
-                </span>
-              </a>
+              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
             </li>
-            <ul class="list-unstyled list-unstyled-repeat overflow-auto mb-0"></ul>
           </ul>
+          <div class="dropdown-divider m-0"></div>
+          <div class="d-flex justify-content-between px-3 py-6">
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
         </div>
       </div>
-    </div>`;
+    </div>
+    `;
 
 export const MultiSelectSingleLevel = () => {
   const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
