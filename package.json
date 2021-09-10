@@ -46,7 +46,7 @@
     "@storybook/core": "^6.3.8",
     "@storybook/core-events": "^6.3.8",
     "@storybook/html": "^6.3.8",
-    "@symplicity/bootstrap": "github:Symplicity/bootstrap#v5.1.0-janus",
+    "@symplicity/bootstrap": "github:Symplicity/bootstrap#v5.1.1-janus",
     "@symplicity/janus-tokens": "github:Symplicity/janus-tokens",
     "@symplicity/tabler-icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
     "babel-loader": "^8.2.2",
