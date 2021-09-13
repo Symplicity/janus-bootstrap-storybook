@@ -131,7 +131,7 @@ const additionalInfoTwo = `
             </label>
           </div>
         </fieldset>
-        <form class="w-100 d-flex mt-2">
+        <form class="d-flex mt-2">
           <input type="text" class="w-75" id="infoHelpBlock" placeholder="" aria-describedby="infoHelpBlock">
           <button type="button" class="btn btn-sm btn-more btn-outline-secondary px-0 fs-7 me-3 ms-2">Add</button>
         </form>
@@ -231,15 +231,15 @@ const additionalInfoFour = `
 `
 
 const tabsNavigationHtml = `
-  <div class="w-100 overflow-auto p-0 mb-0 border border-light">
-    <div class="bg-white rounded-top border border-light d-flex">
+  <div class="overflow-auto p-0 mb-0 border-light border-bottom">
+    <div class="bg-white rounded-top d-flex">
       <button class="d-flex align-items-center bg-white border-0 text-light rounded-top">
         <svg class="icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-chevron-left" />
           <span class="visually-hidden">Extend tabs' options</span>
         </svg>
       </button>
-      <ul class="w-100 overflow-hidden flex-nowrap nav nav-tabs nav-tabs-single-row-with-controls"></ul>
+      <ul class="overflow-hidden nav nav-tabs nav-tabs-single-row-with-controls" style="height: 60px;"></ul>
       <button class="d-flex align-items-center bg-white border-0 text-warning rounded-top">
         <svg class="icon-lg-font-size">
           <use xlink:href="${iconSprite}#tabler-chevron-right" />
@@ -254,12 +254,12 @@ const form_view_html = `
   <div class="m-0 bg-light">
     <div class="mx-auto my-0">
       ${LayoutLoggedHeader()}
-      <div class="d-flex mt-4 w-100">
+      <div class="d-flex mt-4">
         <div class="d-none d-lg-block">
           ${LayoutSidebar()}
         </div>      
-        <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-4">
-          <div class="d-flex justify-content-between align-items-center flex-wrap px-3 w-100">
+        <div class="d-flex flex-column justify-content-start flex-wrap px-4">
+          <div class="d-flex justify-content-between align-items-center flex-wrap px-3">
             <h2 class="m-0">00012-001-2020 (Billy Goatgruff - A1234421)</h2> 
             <button type="button" class="btn btn-danger fs-6">
               <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
@@ -267,12 +267,12 @@ const form_view_html = `
               </svg>Other Actions
             </button>
           </div>
-          <div class="bg-white my-3 w-100 rounded-4">
+          <div class="bg-white my-3 rounded-4">
             ${tabsNavigationHtml}
             <div class="row g-0">
-              <div class="col-md-8 col-sm-12 px-9 py-4">
+              <div class="col-md-8 col-sm-12 p-7">
                 <span class="text-warning fw-bold">Incident Info</span>
-                <div class="w-100 fs-5 py-4 incident-report-list"></div>
+                <div class="fs-5 py-4 incident-report-list"></div>
                 <div>
                   <button type="button" class="btn btn-outline-secondary fs-5 me-2">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
@@ -286,7 +286,7 @@ const form_view_html = `
                   </button>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-12 px-9 py-4">
+              <div class="col-md-4 col-sm-12 p-7">
                 ${additionalInfoOne}
                 ${additionalInfoTwo}
                 ${additionalInfoThree}
