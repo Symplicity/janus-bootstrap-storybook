@@ -46,7 +46,7 @@ const drilldown_button_parent_html = `
                   <span class="w-100">
                     All Jobs and Interviews
                   </span>
-                  <button class="bg-transparent border-0 me-n3">
+                  <button class="py-0 px-2 bg-transparent border-0 me-n3">
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -135,7 +135,7 @@ export const FilterButtonParent = () => {
                   <span class="w-100">
                     ${drilldown_option_1}
                   </span>
-                  <button class="bg-transparent border-0 me-n3">
+                  <button class="py-0 px-2 bg-transparent border-0 me-n3">
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="${iconSprite}#tabler-chevron-right" />
@@ -221,7 +221,7 @@ const drilldown_button_child_html = `
                   <span class="w-100">
                     Category 1.3.1
                   </span>
-                  <button class="bg-transparent border-0 me-n3">
+                  <button class="py-0 px-2 bg-transparent border-0 me-n3">
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -296,7 +296,7 @@ export const FilterButtonChild = () => {
                   <span class="w-100">
                     ${drilldown_child_option_1}
                   </span>
-                  <button class="bg-transparent border-0 me-n3">
+                  <button class="py-0 px-2 bg-transparent border-0 me-n3">
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="${iconSprite}#tabler-chevron-right" />
