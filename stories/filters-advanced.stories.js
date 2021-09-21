@@ -575,9 +575,9 @@ const multi_select_multi_level_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary filter-toggle d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
-            <input type="text" placeholder="Search Majors" class="border-0">
+            <input type="text" placeholder="Search Majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n3 ms-1">
             <span class="d-flex align-items-center">
@@ -651,9 +651,9 @@ export const MultiSelectMultiLevel = () => {
     <div class="dropdown">
       <h3>Multi-Select, Multi-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary filter-toggle d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
-            <input type="text" placeholder="Search Majors" class="border-0">
+            <input type="text" placeholder="Search Majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n3 ms-1">
             <span class="d-flex align-items-center">
