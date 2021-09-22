@@ -456,15 +456,55 @@ const multi_select_single_level_with_search_html = `
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 px-7 pt-7 pb-2 overflow-auto">
+          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
+            <div class="input-group">
+              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <span class="input-group-text bg-white">
+                  <svg class="icon-lg-font-size">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                    <span class="visually-hidden">Search</span>
+                  </svg>
+              </span>
+            </div>
+          </form>
+          <ul class="list-unstyled mb-0 pt-0 pt-0 pb-0 overflow-auto">
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">Option 1</label>
+                </span>
+              </span>
             </li>
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">Option 2</label>
+                </span>
+              </span>  
+            </li>
+          </ul>
+          <div class="dropdown-divider m-0"></div>
+          <ul class="list-unstyled mb-0 pt-7 pb-2 overflow-auto">
+            <li>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+                </span>
+              </span>
             </li>
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 2</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 3</label>
+                </span>
+              </span>
             </li>
           </ul>
           <div class="dropdown-divider m-0"></div>
@@ -503,9 +543,15 @@ export const MultiSelectSingleLevelWithSearch = () => {
           .fill()
           .map(
             (item, i) =>
-              `<li><label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option ${
-                i + 1
-              }</label></li>`
+              `<li>
+                <span class="dropdown-item d-flex">
+                  <span class="w-100">
+                    <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."> Option ${
+                      i + 1
+                    }</label>
+                  </span>
+                </span>
+              </li>`
           )
           .join('')}
     `;
@@ -520,28 +566,46 @@ export const MultiSelectSingleLevelWithSearch = () => {
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
-              <div class="input-group">
-                <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
-                <span class="input-group-text bg-white">
-                    <svg class="icon-lg-font-size">
-                      <use xlink:href="${iconSprite}#tabler-search" />
-                      <span class="visually-hidden">Search</span>
-                    </svg>
-                </span>
-              </div>
-            </form>
-          <ul class="list-unstyled mb-0 px-7 pt-0 pt-0 pb-0 overflow-auto">
+            <div class="input-group">
+              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <span class="input-group-text bg-white">
+                  <svg class="icon-lg-font-size">
+                    <use xlink:href="${iconSprite}#tabler-search" />
+                    <span class="visually-hidden">Search</span>
+                  </svg>
+              </span>
+            </div>
+          </form>
+          <ul class="list-unstyled mb-0 pt-0 pt-0 pb-0 overflow-auto">
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">${drilldown_option_1}</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">
+                    ${drilldown_option_1}
+                  </label>
+                </span>
+              </span>
             </li>
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">${drilldown_option_2}</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" checked aria-label="...">
+                    ${drilldown_option_2}
+                  </label>
+                </span>
+              </span>  
             </li>
           </ul>
-          <div class="dropdown-divider"></div>
-          <ul class="list-unstyled mb-0 px-7 pt-2 pt-0 pb-2 overflow-auto">
+          <div class="dropdown-divider m-0"></div>
+          <ul class="list-unstyled mb-0 pt-2 pt-0 pb-2 overflow-auto">
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_3}</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">
+                    ${drilldown_option_3}
+                  </label>
+                </span>
+              </span>
             </li>
             <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
           </ul>
