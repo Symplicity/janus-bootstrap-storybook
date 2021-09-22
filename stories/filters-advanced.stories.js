@@ -589,23 +589,33 @@ const multi_select_multi_level_html = `
         </div>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 px-7 pt-7 pb-2 overflow-auto">
-            <li class="d-flex mb-2">
-              <span class="w-100">
-                <label class="list-group-item d-flex border-0 p-0"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
-              </span>
-              <button class="py-0 px-2 bg-transparent border-0 me-n3 ms-1">
-                <span class="d-flex align-items-center">
-                  <svg width="1.25rem" height="1.25rem">
-                    <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
-                  </svg>
+            <li>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
                 </span>
-              </button>
+                <button class="py-0 px-2 bg-transparent border-0 me-n3 ms-1">
+                  <span class="d-flex align-items-center">
+                    <svg width="1.25rem" height="1.25rem">
+                      <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
+                    </svg>
+                  </span>
+                </button>
+              </span>
             </li>
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 2</label>
+                </span>
+              </span>
             </li>
             <li>
-              <label class="list-group-item d-flex border-0 p-0 mb-2"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+              <span class="dropdown-item d-flex">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 3</label>
+                </span>
+              </span>
             </li>
           </ul>
         </div>
