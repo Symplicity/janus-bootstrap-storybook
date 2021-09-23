@@ -348,7 +348,7 @@ const multi_select_single_level_html = `
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 pt-7 pb-2 overflow-auto">
+          <ul class="list-unstyled mb-0 py-2 overflow-auto">
             <li>
               <span class="dropdown-item d-flex">
                 <span class="w-100">
@@ -430,7 +430,7 @@ export const MultiSelectSingleLevel = () => {
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 pt-7 pb-2 overflow-auto">
+          <ul class="list-unstyled mb-0 py-2 overflow-auto">
             <li>
               <span class="dropdown-item d-flex">
                 <span class="w-100">
@@ -487,7 +487,7 @@ const multi_select_single_level_with_search_html = `
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
+          <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
@@ -596,7 +596,7 @@ export const MultiSelectSingleLevelWithSearch = () => {
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
+          <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
               <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
