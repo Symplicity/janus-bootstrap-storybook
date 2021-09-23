@@ -670,11 +670,11 @@ const multi_select_multi_level_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-2 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <input type="text" placeholder="Search Majors" class="border-0 p-0">
           </span>
-          <button class="bg-transparent border-0 me-n3 ms-1">
+          <button class="bg-transparent border-0 me-n2">
             <span class="d-flex align-items-center">
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-down" />
@@ -683,13 +683,13 @@ const multi_select_multi_level_html = `
           </button>
         </div>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 px-7 pt-7 pb-2 overflow-auto">
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
                 </span>
-                <button class="py-0 px-2 bg-transparent border-0 me-n3 ms-1">
+                <button class="py-0 px-2 bg-transparent border-0 me-n3">
                   <span class="d-flex align-items-center">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -699,14 +699,14 @@ const multi_select_multi_level_html = `
               </span>
             </li>
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 2</label>
                 </span>
               </span>
             </li>
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 3</label>
                 </span>
@@ -745,7 +745,7 @@ export const MultiSelectMultiLevel = () => {
           .map(
             (item, i) =>
               `<li>
-                <span class="dropdown-item d-flex">
+                <span class="dropdown-item d-flex px-2 py-1">
                   <span class="w-100">
                     <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."> Option ${
                       i + 1
@@ -762,11 +762,11 @@ export const MultiSelectMultiLevel = () => {
     <div class="dropdown">
       <h3>Multi-Select, Multi-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-2 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <input type="text" placeholder="Search Majors" class="border-0 p-0">
           </span>
-          <button class="bg-transparent border-0 me-n3 ms-1">
+          <button class="bg-transparent border-0 me-n3">
             <span class="d-flex align-items-center">
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="${iconSprite}#tabler-chevron-down" />
@@ -775,13 +775,13 @@ export const MultiSelectMultiLevel = () => {
           </button>
         </div>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-          <ul class="list-unstyled mb-0 pt-7 pb-2 overflow-auto">
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_1}</label>
                 </span>
-                <button class="py-0 px-2 bg-transparent border-0 me-n3 ms-1">
+                <button class="py-0 px-2 bg-transparent border-0 me-n2">
                   <span class="d-flex align-items-center">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-right" />
@@ -791,14 +791,14 @@ export const MultiSelectMultiLevel = () => {
               </span>
             </li>
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_2}</label>
                 </span>
               </span>
             </li>
             <li>
-              <span class="dropdown-item d-flex">
+              <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_3}</label>
                 </span>
