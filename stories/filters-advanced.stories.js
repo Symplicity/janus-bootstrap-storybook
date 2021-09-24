@@ -30,7 +30,7 @@ const drilldown_button_parent_html = `
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
@@ -47,6 +47,7 @@ const drilldown_button_parent_html = `
                     All Jobs and Interviews
                   </span>
                   <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                    <span class="visually-hidden">Child menu</span>
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -119,7 +120,7 @@ export const FilterButtonParent = () => {
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
@@ -136,6 +137,7 @@ export const FilterButtonParent = () => {
                     ${drilldown_option_1}
                   </span>
                   <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                    <span class="visually-hidden">Child menu</span>
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="${iconSprite}#tabler-chevron-right" />
@@ -190,7 +192,7 @@ const drilldown_button_child_html = `
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
@@ -222,6 +224,7 @@ const drilldown_button_child_html = `
                     Category 1.3.1
                   </span>
                   <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                    <span class="visually-hidden">Child menu</span>
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -265,7 +268,7 @@ export const FilterButtonChild = () => {
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
@@ -297,6 +300,7 @@ export const FilterButtonChild = () => {
                     ${drilldown_child_option_1}
                   </span>
                   <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                    <span class="visually-hidden">Child menu</span>
                     <span class="d-flex align-items-center">
                       <svg width="1.25rem" height="1.25rem">
                         <use xlink:href="${iconSprite}#tabler-chevron-right" />
@@ -489,7 +493,7 @@ const multi_select_single_level_with_search_html = `
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
@@ -598,7 +602,7 @@ export const MultiSelectSingleLevelWithSearch = () => {
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
-              <input type="search" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
+              <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
@@ -670,9 +674,13 @@ const multi_select_multi_level_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary ps-2 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
-            <input type="text" placeholder="Search Majors" class="border-0 p-0">
+            <label for="search-input">Majors</label>
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n2">
             <span class="d-flex align-items-center">
@@ -690,6 +698,7 @@ const multi_select_multi_level_html = `
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
                 </span>
                 <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                  <span class="visually-hidden">Child menu</span>
                   <span class="d-flex align-items-center">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-right" />
@@ -762,11 +771,15 @@ export const MultiSelectMultiLevel = () => {
     <div class="dropdown">
       <h3>Multi-Select, Multi-Level</h3>
       <div>
-        <div class="btn btn-outline-secondary ps-2 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
-            <input type="text" placeholder="Search Majors" class="border-0 p-0">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n3">
+            <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="${iconSprite}#tabler-chevron-down" />
