@@ -677,10 +677,10 @@ const multi_select_multi_level_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
           </span>
           <button class="bg-transparent border-0 me-n2">
             <span class="d-flex align-items-center">
@@ -746,6 +746,17 @@ export const MultiSelectMultiLevel = () => {
 
   const value = number(label, defaultValue, options);
 
+  const mwLabel = 'max-width (px):';
+  const mwDefaultValue = 320;
+  const mwOptions = {
+    range: true,
+    min: 320,
+    max: 600,
+    step: 1,
+  };
+
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+
   setTimeout(function () {
     const createListItems = document.querySelector('.list-unstyled-repeat');
     createListItems.innerHTML = `
@@ -774,9 +785,9 @@ export const MultiSelectMultiLevel = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
           <button class="bg-transparent border-0 me-n3">
             <span class="visually-hidden">Child menu</span>
