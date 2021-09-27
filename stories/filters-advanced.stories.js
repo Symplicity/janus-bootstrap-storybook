@@ -750,12 +750,25 @@ export const MultiSelectMultiLevel = () => {
   const mwDefaultValue = 320;
   const mwOptions = {
     range: true,
-    min: 320,
+    min: 100,
     max: 600,
     step: 1,
   };
 
   const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+
+  const tag_cloud_item = text('Tag Cloud Item', 'Engineering');
+
+  const tcLabel = 'Tag Cloud # of items';
+  const tcDefaultValue = 5;
+  const tcOptions = {
+    range: true,
+    min: 0,
+    max: 10,
+    step: 1,
+  };
+
+  const tag_cloud_value = number(tcLabel, tcDefaultValue, tcOptions);
 
   setTimeout(function () {
     const createListItems = document.querySelector('.list-unstyled-repeat');
@@ -778,13 +791,34 @@ export const MultiSelectMultiLevel = () => {
     `;
   }, 0);
 
+  setTimeout(function () {
+    const createListItems = document.querySelector('.list-inline');
+    createListItems.innerHTML = `
+        ${Array(tag_cloud_value)
+          .fill()
+          .map(
+            (item, i) =>
+              `<li class="list-inline-item">
+                <button class="btn text-white d-inline-flex badge bg-primary minw-0">
+                  ${tag_cloud_item}
+                  <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
+                </button>
+              </li>`
+          )
+          .join('')}
+    `;
+  }, 0);
+
   return `
     <div class="dropdown">
       <h3>Multi-Select, Multi-Level</h3>
-      <div>
+      <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
+        <ul class="list-unstyled list-inline mb-2 mt-n1">
+
+        </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
