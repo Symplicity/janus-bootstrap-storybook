@@ -677,6 +677,14 @@ const multi_select_multi_level_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
+        <ul class="list-unstyled list-inline mb-2 mt-n1">
+          <li class="list-inline-item">
+            <button class="btn text-white d-inline-flex badge bg-primary minw-0">
+              Engineering
+              <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
+            </button>
+          </li>
+        </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
