@@ -757,18 +757,18 @@ export const MultiSelectMultiLevel = () => {
 
   const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
 
-  const tag_cloud_item = text('Tag Cloud Item', 'Engineering');
+  const filter_chip_item = text('Filter Chip Item', 'Engineering');
 
-  const tcLabel = 'Tag Cloud # of items';
-  const tcDefaultValue = 5;
-  const tcOptions = {
+  const fcLabel = '# of Filter Chips';
+  const fcDefaultValue = 5;
+  const fcOptions = {
     range: true,
     min: 0,
     max: 10,
     step: 1,
   };
 
-  const tag_cloud_value = number(tcLabel, tcDefaultValue, tcOptions);
+  const filter_chip_value = number(fcLabel, fcDefaultValue, fcOptions);
 
   setTimeout(function () {
     const createListItems = document.querySelector('.list-unstyled-repeat');
@@ -794,13 +794,13 @@ export const MultiSelectMultiLevel = () => {
   setTimeout(function () {
     const createListItems = document.querySelector('.list-inline');
     createListItems.innerHTML = `
-        ${Array(tag_cloud_value)
+        ${Array(filter_chip_value)
           .fill()
           .map(
             (item, i) =>
               `<li class="list-inline-item">
                 <button class="btn text-white d-inline-flex badge bg-primary minw-0">
-                  ${tag_cloud_item}
+                  ${filter_chip_item}
                   <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
                 </button>
               </li>`
