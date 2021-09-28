@@ -678,7 +678,7 @@ const multi_select_multi_level_html = `
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
         <ul class="list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item">
+          <li class="list-inline-item me-1">
             <button class="btn text-white d-inline-flex badge bg-primary minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
@@ -806,7 +806,7 @@ export const MultiSelectMultiLevel = () => {
           .fill()
           .map(
             (item, i) =>
-              `<li class="list-inline-item">
+              `<li class="list-inline-item me-1">
                 <button class="btn text-white d-inline-flex badge bg-primary minw-0">
                   ${filter_chip_item}
                   <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
