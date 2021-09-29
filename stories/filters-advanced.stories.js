@@ -698,7 +698,7 @@ const multi_select_multi_level_html = `
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-none border-medium mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
@@ -840,7 +840,7 @@ export const MultiSelectMultiLevel = () => {
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-none border-medium mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
