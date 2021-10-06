@@ -82,7 +82,7 @@ let header_html = `
               View as Word
             </a>
           </li>
-          <li><hr class="dropdown-divider"></li>
+          <li><div class="dropdown-divider"></div></li>
           <li>
             <a class="dropdown-item d-flex text-danger" href="#">
               Delete
@@ -153,7 +153,7 @@ export const LayoutHeader = () => {
                   View as Word
                 </a>
               </li>
-              <li><hr class="dropdown-divider"></li>
+              <li><div class="dropdown-divider"></div></li>
               <li>
                 <a class="dropdown-item d-flex text-danger" href="#">
                   Delete
