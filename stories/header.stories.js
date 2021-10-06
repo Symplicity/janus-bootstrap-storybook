@@ -19,7 +19,6 @@ export default {
   decorators: [withKnobs],
 };
 
-
 const job_profile_header = `
   <div class="profile-header">
     <div class="w-100 p-9 border border-light">
@@ -57,7 +56,7 @@ const job_profile_header = `
         <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
           <button type="button" class="btn btn-primary me-6">Auto Renew</button>
           <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
-          <button type="button" class="btn btn-outline-primary btn-more d-flex align-items-center justify-content-center" aria-label="More Actions">
+          <button type="button" class="btn btn-outline-primary btn-more" aria-label="More Actions">
             <svg width="1.125rem" height="1.125rem">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
             </svg>
@@ -77,11 +76,20 @@ export const JobProfileHeader = () => {
     '5 lines': 'line-clamp-5',
   };
 
-  const job_profile_header_heading_text = text('Heading Text', 'Full-Time, Internship');
+  const job_profile_header_heading_text = text(
+    'Heading Text',
+    'Full-Time, Internship'
+  );
 
-  const job_profile_header_title_text = text('Title Text', 'Senior Software Engineer - 2201989');
+  const job_profile_header_title_text = text(
+    'Title Text',
+    'Senior Software Engineer - 2201989'
+  );
 
-  const job_profile_header_additional_info_text = text('Additional Info', 'Posted on Oct 14, 2020');
+  const job_profile_header_additional_info_text = text(
+    'Additional Info',
+    'Posted on Oct 14, 2020'
+  );
 
   const job_profile_header_heading_line_clamp = select(
     'Heading Line Clamp',
@@ -127,9 +135,9 @@ export const JobProfileHeader = () => {
                 if (job_profile_header_heading_text) {
                   return `
                     <span class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></span>
-                  `
+                  `;
                 } else {
-                  return `` 
+                  return ``;
                 }
               })()}
               <span class="h3 text-capitalize mb-1">
@@ -147,7 +155,7 @@ export const JobProfileHeader = () => {
             <div class="btn-toolbar w-auto p-0" role="toolbar" aria-label="Toolbar with button groups">
               <button type="button" class="btn btn-primary me-6">Auto Renew</button>
               <button type="button" class="btn btn-outline-primary me-6">Edit Job Details</button>
-              <button type="button" class="btn btn-outline-primary btn-more d-flex align-items-center justify-content-center" aria-label="More Actions">
+              <button type="button" class="btn btn-outline-primary btn-more" aria-label="More Actions">
                 <svg width="1.125rem" height="1.125rem">
                   <use xlink:href="${iconSprite}#tabler-dots" />
                 </svg>
@@ -177,7 +185,6 @@ JobProfileHeader.parameters = {
 
   `,
 };
-
 
 const employer_profile_header = `
   <div class="profile-header">
@@ -239,7 +246,6 @@ EmployerProfileHeader.parameters = {
   `,
 };
 
-
 const event_profile_header = `
   <div class="profile-header">
     <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top" height="150" width="100%" style="object-fit: cover;" alt="...">
@@ -300,7 +306,6 @@ EventProfileHeader.parameters = {
   `,
 };
 
-
 const career_plan_profile_header_html = `
   <div class="profile-header">
     <div class="w-100 p-9 border border-light">
@@ -327,7 +332,8 @@ const career_plan_profile_header_html = `
   </div>
 `;
 
-export const CareerPlanProfileHeader = () => `${career_plan_profile_header_html}`;
+export const CareerPlanProfileHeader = () =>
+  `${career_plan_profile_header_html}`;
 
 CareerPlanProfileHeader.storyName = 'Career Plan';
 
@@ -347,7 +353,6 @@ CareerPlanProfileHeader.parameters = {
 
   `,
 };
-
 
 const connection_profile_header = `
   <div class="profile-header">

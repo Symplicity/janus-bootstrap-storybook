@@ -21,11 +21,11 @@ export default {
 
 const card = `
     <div class="card">
-      <div class="card-header bg-transparent d-flex pb-0 mb-0">
+      <div class="card-header bg-transparent d-flex pb-0 mb-0 align-items-start">
         <div class="card-logo">
           <svg class="bd-placeholder-img rounded" width="80" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Logo</text></svg>
         </div>
-        <div class="card-actions d-flex flex-grow-1 justify-content-end">
+        <div class="card-actions d-flex flex-grow-1 justify-content-end align-items-start">
           <button type="button" class="btn btn-action btn-action-icon-only rounded-circle me-3">
             <svg class="icon-xl-font-size mt-n1">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-thumb-down" />
@@ -93,11 +93,11 @@ export const Card = () => {
 
   return `
     <div class="card">
-      <div class="card-header bg-transparent d-flex pb-0 mb-0">
+      <div class="card-header bg-transparent d-flex pb-0 mb-0 align-items-start">
         <div class="card-logo">
           <svg class="bd-placeholder-img rounded" width="80" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Logo" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Logo</text></svg>
         </div>
-        <div class="card-actions d-flex flex-grow-1 justify-content-end">
+        <div class="card-actions d-flex flex-grow-1 justify-content-end align-items-start">
           <button type="button" class="btn btn-action btn-action-icon-only rounded-circle me-3">
             <svg class="icon-xl-font-size mt-n1">
               <use xlink:href="${iconSprite}#tabler-thumb-down" />
