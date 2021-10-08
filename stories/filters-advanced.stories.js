@@ -685,7 +685,7 @@ const multi_select_multi_level_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100 bg-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -827,7 +827,7 @@ export const MultiSelectMultiLevel = () => {
         <ul class="list-unstyled list-inline mb-2 mt-n1">
 
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100 bg-white" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
