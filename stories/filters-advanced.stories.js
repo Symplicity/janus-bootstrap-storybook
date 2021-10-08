@@ -24,7 +24,7 @@ const drilldown_button_parent_html = `
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -114,7 +114,7 @@ export const FilterButtonParent = () => {
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -186,7 +186,7 @@ const drilldown_button_child_html = `
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -262,7 +262,7 @@ export const FilterButtonChild = () => {
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ${drilldown_parent} 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -348,7 +348,7 @@ const multi_select_single_level_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -378,8 +378,8 @@ const multi_select_single_level_html = `
           </ul>
           <div class="dropdown-divider m-0"></div>
           <div class="d-flex justify-content-between px-3 py-6">
-            <button class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button class="btn btn-primary">Apply</button>
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
           </div>
         </div>
       </div>
@@ -430,7 +430,7 @@ export const MultiSelectSingleLevel = () => {
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -460,8 +460,8 @@ export const MultiSelectSingleLevel = () => {
           </ul>
           <div class="dropdown-divider m-0"></div>
           <div class="d-flex justify-content-between px-3 py-6">
-            <button class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button class="btn btn-primary">Apply</button>
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
           </div>
         </div>
       </div>
@@ -487,7 +487,7 @@ const multi_select_single_level_with_search_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level, With Search</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -544,8 +544,8 @@ const multi_select_single_level_with_search_html = `
           </ul>
           <div class="dropdown-divider m-0"></div>
           <div class="d-flex justify-content-between px-3 py-6">
-            <button class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button class="btn btn-primary">Apply</button>
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
           </div>
         </div>
       </div>
@@ -596,7 +596,7 @@ export const MultiSelectSingleLevelWithSearch = () => {
     <div class="dropdown">
       <h3>Multi-Select, Single-Level, With Search</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           Position Type 
         </button>
         <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
@@ -646,8 +646,8 @@ export const MultiSelectSingleLevelWithSearch = () => {
           </ul>
           <div class="dropdown-divider m-0"></div>
           <div class="d-flex justify-content-between px-3 py-6">
-            <button class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button class="btn btn-primary">Apply</button>
+            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            <button type="button" class="btn btn-primary">Apply</button>
           </div>
         </div>
       </div>
@@ -685,7 +685,7 @@ const multi_select_multi_level_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100 bg-white" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -827,7 +827,7 @@ export const MultiSelectMultiLevel = () => {
         <ul class="list-unstyled list-inline mb-2 mt-n1">
 
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100 bg-white" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
