@@ -704,3 +704,34 @@ Extended.parameters = {
     
     `,
 };
+
+const filterChipHTML = `
+<div>
+  <h3>Filter Chip</h3>
+  <button class="btn text-white d-inline-flex badge bg-primary minw-0">
+        Engineering
+        <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
+  </button>
+</div>
+`;
+
+export const FilterChip = () => filterChipHTML;
+
+FilterChip.storyName = 'Filter Chip';
+
+FilterChip.parameters = {
+  notes: `
+    # Filter Chip
+
+    ## Documentation
+    
+    Here are some notes on filter chips. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${filterChipHTML}
+    \`\`\`
+    
+    `,
+};
