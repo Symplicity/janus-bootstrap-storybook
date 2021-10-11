@@ -489,6 +489,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Buttons-SB-Filter-Chip",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-buttons--filter-chip",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Cards-SB-Homepage",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-cards--card-homepage",
       "referenceUrl": "",
