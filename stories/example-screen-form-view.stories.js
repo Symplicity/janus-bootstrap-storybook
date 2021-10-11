@@ -22,7 +22,7 @@ For additional documentation, see:
 const additionalInfoOne = `
   <div class="card bg-light border-0 mb-2">
     <div class="card-header bg-light mb-0 rounded">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <button class="d-flex text-left btn text-warning text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseInfoOne" aria-expanded="false" aria-controls="collapseInfoOne">
           <span class="tabler-chevron-down lh-1 my-0 me-1">
             <svg width="1rem" height="1rem">
@@ -61,7 +61,7 @@ const additionalInfoOne = `
 const additionalInfoTwo = `
   <div class="card bg-light border-0 mb-2">
     <div class="card-header bg-light mb-0 rounded">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <button class="d-flex text-left btn text-warning text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseInfoTwo" aria-expanded="false" aria-controls="collapseInfoTwo">
           <span class="tabler-chevron-down lh-1 my-0 me-1">
             <svg width="1rem" height="1rem">
@@ -72,11 +72,9 @@ const additionalInfoTwo = `
             Incident Report Flags
           </span>
         </button>
-        <div>
-          <button class="btn text-warning text-decoration-none p-0 mb-0">
-            <span class="fs-6 fw-light">Edit</span>
-          </button>
-        </div>
+        <button class="btn text-warning text-decoration-none p-0 mb-0">
+          <span class="fs-6 fw-light">Edit</span>
+        </button>
       </div>
     </div>
     <div class="collapse" id="collapseInfoTwo">
@@ -143,7 +141,7 @@ const additionalInfoTwo = `
 const additionalInfoThree = `
   <div class="card bg-light border-0 mb-2">
     <div class="card-header bg-light mb-0 rounded">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <button class="d-flex text-left btn text-warning text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseInfoThree" aria-expanded="false" aria-controls="collapseInfoThree">
           <span class="tabler-chevron-down lh-1 my-0 me-1">
             <svg width="1rem" height="1rem">
@@ -154,11 +152,9 @@ const additionalInfoThree = `
             Charge Information
           </span>
         </button>
-        <div>
-          <button class="btn text-warning text-decoration-none p-0 mb-0">
-            <span class="fs-6 fw-light">Edit</span>
-          </button>
-        </div>
+        <button class="btn text-warning text-decoration-none p-0 mb-0">
+          <span class="fs-6 fw-light">Edit</span>
+        </button>
       </div>
     </div>
     <div class="collapse" id="collapseInfoThree">
@@ -174,7 +170,7 @@ const additionalInfoThree = `
 const additionalInfoFour = `
   <div class="card bg-light border-0 mb-2">
     <div class="card-header bg-light mb-0 rounded">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <button class="d-flex text-left btn text-warning text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseInfoFour" aria-expanded="false" aria-controls="collapseInfoFour">
           <span class="tabler-chevron-down lh-1 my-0 me-1">
             <svg width="1rem" height="1rem">
@@ -189,7 +185,7 @@ const additionalInfoFour = `
     </div>
     <div class="collapse show" id="collapseInfoFour">
       <div class="card-body text-left pt-0 fs-6">
-        <div class="d-flex justify-content-between mb-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
           <svg width="1.125rem" height="1.125rem" class="mt-1 me-2" role="button" tabindex="0">
             <use xlink:href="${iconSprite}#tabler-file-search" />
           </svg>
@@ -207,7 +203,7 @@ const additionalInfoFour = `
             <span class="fs-6 fw-light" role="button" tabindex="0">Edit</span>
           </div>
         </div>
-        <div class="d-flex justify-content-between mb-2">
+        <div class="d-flex justify-content-between align-items-start mb-2">
           <svg width="1.125rem" height="1.125rem" class="mt-1 me-2" role="button" tabindex="0">
             <use xlink:href="${iconSprite}#tabler-file-search" />
           </svg>
@@ -258,7 +254,7 @@ const form_view_html = `
         <div class="d-none d-lg-block">
           ${LayoutSidebar()}
         </div>      
-        <div class="d-flex flex-column justify-content-start flex-wrap px-4">
+        <div class="d-flex flex-column justify-content-start flex-wrap px-md-4 px-sm-0">
           <div class="d-flex justify-content-between align-items-center flex-wrap px-3">
             <h2 class="m-0">00012-001-2020 (Billy Goatgruff - A1234421)</h2> 
             <button type="button" class="btn btn-danger fs-6">
