@@ -677,6 +677,21 @@ const multi_select_multi_level_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
+        <ul class="list-unstyled mb-2 overflow-auto">
+          <li class="mb-0">
+            <div class="list-group">
+              <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+                <span class="h4 mt-0 mb-0 ms-n2 ">
+                  <svg width="1.25rem" height="1.25rem">
+                    <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-left" />
+                  </svg>
+                </span>
+                <span class="w-100 text-center">
+                  Engineering
+                </span>
+              </a>
+          </li>
+        </ul>
         <ul class="list-unstyled list-inline mb-2 mt-n1">
           <li class="list-inline-item me-1">
             <button class="btn text-white d-inline-flex badge bg-primary minw-0">
@@ -736,6 +751,7 @@ const multi_select_multi_level_html = `
     `;
 
 export const MultiSelectMultiLevel = () => {
+  const drilldown_parent = text('Major', 'Engineering');
   const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
   const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
   const drilldown_option_3 = text(
@@ -841,6 +857,21 @@ export const MultiSelectMultiLevel = () => {
           </button>
         </div>
         <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <ul class="list-unstyled mb-2 overflow-auto">
+            <li class="mb-0">
+              <div class="list-group">
+                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+                  <span class="h4 mt-0 mb-0 ms-n2 ">
+                    <svg width="1.25rem" height="1.25rem">
+                      <use xlink:href="${iconSprite}#tabler-chevron-left" />
+                    </svg>
+                  </span>
+                  <span class="w-100 text-center">
+                    ${drilldown_parent}
+                  </span>
+                </a>
+            </li>
+          </ul>
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
@@ -887,6 +918,151 @@ MultiSelectMultiLevel.parameters = {
 
   \`\`\`html
   ${multi_select_multi_level_html}
+  \`\`\`
+
+  `,
+};
+
+const multi_select_multi_level_highlight_html = `
+    <div class="dropdown">
+      <h3>Multi-Select, Multi-Level Highlight</h3>
+      <div>
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+          <span class="w-100">
+            <label for="search-input">Majors</label>
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
+          </span>
+          <button class="bg-transparent border-0 me-n2">
+            <span class="d-flex align-items-center">
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-down" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 2</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 3</label>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    `;
+
+export const MultiSelectMultiLevelHighlight = () => {
+  const mwLabel = 'max-width (px):';
+  const mwDefaultValue = 320;
+  const mwOptions = {
+    range: true,
+    min: 100,
+    max: 600,
+    step: 1,
+  };
+
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+
+  return `
+    <div class="dropdown">
+      <h3>Multi-Select, Multi-Level Highlight</h3>
+      <div style="max-width: ${max_width_active}px;">
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+          <span class="w-100">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
+          </span>
+          <button class="bg-transparent border-0 me-n3">
+            <span class="visually-hidden">Child menu</span>
+            <span class="d-flex align-items-center">
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="${iconSprite}#tabler-chevron-down" />
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>gineering</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>glish</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>vironmental Design</label>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex flex-column px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Aeronautical&nbsp;<b>En</b>gineering
+                  </label>
+                  <span class="form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">Aerospace</span>
+                </span>
+              </span>
+            </li>
+            <li>
+            <span class="dropdown-item d-flex flex-column px-2 py-1">
+              <span class="w-100">
+                <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">G<b>en</b>etics
+                </label>
+                <span class="form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                Agricultural > Bio<b>en</b>gineering</span>
+              </span>
+            </span>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    `;
+};
+
+MultiSelectMultiLevelHighlight.storyName =
+  'Multi-Select, Multi-Level Highlight';
+
+MultiSelectMultiLevelHighlight.parameters = {
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${multi_select_multi_level_highlight_html}
   \`\`\`
 
   `,
