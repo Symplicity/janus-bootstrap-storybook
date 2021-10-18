@@ -1024,15 +1024,11 @@ export const MultiSelectMultiLevelHighlight = () => {
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>vironmental Design</label>
-                </span>
-              </span>
-            </li>
-            <li>
-              <span class="dropdown-item d-flex flex-column flex-wrap px-2 py-1">
-                <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Aeronautical&nbsp;<b>En</b>gineering
-                  </label>
-                  <span class="form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">Aerospace</span>
+                  <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <ol class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <li class="breadcrumb-item m-0">Aerospace</li>
+                    </ol>
+                  </nav>
                 </span>
               </span>
             </li>
@@ -1043,8 +1039,10 @@ export const MultiSelectMultiLevelHighlight = () => {
                   </label>
                   <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
                     <ol class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
-                      <li class="breadcrumb-item">Agricultural</li>
-                      <li class="breadcrumb-item">Bio<b>en</b>gineering</li>
+                      <li class="breadcrumb-item m-0  ">Agricultural</li>
+                      <li class="breadcrumb-item m-0">Bio<b>en</b>gineering</li>
+                    </ol>
+                  </nav>
                 </span>
               </span>
             </li>
