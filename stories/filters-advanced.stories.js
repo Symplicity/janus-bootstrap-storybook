@@ -1028,7 +1028,7 @@ export const MultiSelectMultiLevelHighlight = () => {
               </span>
             </li>
             <li>
-              <span class="dropdown-item d-flex flex-column px-2 py-1">
+              <span class="dropdown-item d-flex flex-column flex-wrap px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Aeronautical&nbsp;<b>En</b>gineering
                   </label>
@@ -1037,15 +1037,17 @@ export const MultiSelectMultiLevelHighlight = () => {
               </span>
             </li>
             <li>
-            <span class="dropdown-item d-flex flex-column px-2 py-1">
-              <span class="w-100">
-                <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">G<b>en</b>etics
-                </label>
-                <span class="form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
-                Agricultural > Bio<b>en</b>gineering</span>
+              <span class="dropdown-item d-flex flex-column flex-wrap px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">G<b>en</b>etics
+                  </label>
+                  <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <ol class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <li class="breadcrumb-item">Agricultural</li>
+                      <li class="breadcrumb-item">Bio<b>en</b>gineering</li>
+                </span>
               </span>
-            </span>
-          </li>
+            </li>
           </ul>
         </div>
       </div>
