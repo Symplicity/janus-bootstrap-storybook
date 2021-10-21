@@ -32,7 +32,7 @@ export const ModalBasic = () => `<div>${modal_basic_html}</div>`;
 
 ModalBasic.storyName = 'Modal Basic';
 
-ModalBasic.parameters = { 
+ModalBasic.parameters = {
   notes: `
   
   #Sample Code
@@ -41,7 +41,7 @@ ModalBasic.parameters = {
   ${modal_basic_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const modal_trigger_html = `
@@ -78,7 +78,7 @@ export const ModalTrigger = () => `<div>${modal_trigger_html}</div>`;
 
 ModalTrigger.storyName = 'Modal from Trigger';
 
-ModalTrigger.parameters = { 
+ModalTrigger.parameters = {
   notes: `
   
   #Sample Code
@@ -87,9 +87,8 @@ ModalTrigger.parameters = {
   ${modal_trigger_html}
   \`\`\`
 
-  `
+  `,
 };
-
 
 const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; position: relative;">
   <div class="modal-dialog">
@@ -137,7 +136,7 @@ export const ModalForm = () => `<div>${modal_form_html}</div>`;
 
 ModalForm.storyName = 'Modal with Form';
 
-ModalForm.parameters = { 
+ModalForm.parameters = {
   notes: `
   
   #Sample Code
@@ -146,7 +145,7 @@ ModalForm.parameters = {
   ${modal_form_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const modal_scrollable_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
@@ -188,7 +187,7 @@ export const ModalScrollable = () => `<div>${modal_scrollable_html}</div>`;
 
 ModalScrollable.storyName = 'Modal with Body Scroll';
 
-ModalScrollable.parameters = { 
+ModalScrollable.parameters = {
   notes: `
   
   #Sample Code
@@ -197,7 +196,7 @@ ModalScrollable.parameters = {
   ${modal_scrollable_html}
   \`\`\`
 
-  `
+  `,
 };
 
 const modal_featured_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
@@ -228,7 +227,7 @@ export const ModalFeatured = () => `<div>${modal_featured_html}</div>`;
 
 ModalFeatured.storyName = 'Modal with Featured Image';
 
-ModalFeatured.parameters = { 
+ModalFeatured.parameters = {
   notes: `
   
   #Sample Code
@@ -237,5 +236,5 @@ ModalFeatured.parameters = {
   ${modal_featured_html}
   \`\`\`
 
-  `
+  `,
 };
