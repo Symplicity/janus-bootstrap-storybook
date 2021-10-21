@@ -476,7 +476,7 @@ const staff_list_html = `
       <div class="d-none d-lg-block">
         ${sidebarNavLG}
       </div>      
-      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-4">
+      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-md-4 px-sm-0">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-3 w-100">
           <h2 class="m-0">Incident Reports</h2> 
           <button type="button" class="btn btn-danger fs-6">
