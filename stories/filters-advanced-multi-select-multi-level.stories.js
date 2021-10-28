@@ -374,11 +374,11 @@ export const MultiSelectMultiLevelHighlight = () => {
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>vironmental Design</label>
-                  <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
-                    <ol class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
-                      <li class="breadcrumb-item m-0">Aerospace</li>
-                    </ol>
-                  </nav>
+                  <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <span class="breadcrumb-item m-0">Aerospace</span>
+                    </span>
+                  </div>
                 </span>
               </span>
             </li>
@@ -387,12 +387,12 @@ export const MultiSelectMultiLevelHighlight = () => {
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">G<b>en</b>etics
                   </label>
-                  <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
-                    <ol class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
-                      <li class="breadcrumb-item m-0  ">Agricultural</li>
-                      <li class="breadcrumb-item m-0">Bio<b>en</b>gineering</li>
-                    </ol>
-                  </nav>
+                  <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <span class="breadcrumb-item m-0  ">Agricultural</span>
+                      <span class="breadcrumb-item m-0">Bio<b>en</b>gineering</span>
+                    </span>
+                  </div>
                 </span>
               </span>
             </li>
