@@ -70,7 +70,7 @@ const multi_select_multi_level_html = `
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
                 </span>
-                <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                <button class="py-0 px-2 me-n3">
                   <span class="visually-hidden">Child menu</span>
                   <span class="d-flex align-items-center">
                     <svg width="1.25rem" height="1.25rem">
@@ -228,7 +228,7 @@ export const MultiSelectMultiLevel = () => {
                 <span class="w-100">
                   <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">${drilldown_option_1}</label>
                 </span>
-                <button class="py-0 px-2 bg-transparent border-0 me-n2">
+                <button class="py-0 px-2 me-n2">
                   <span class="d-flex align-items-center">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-right" />
