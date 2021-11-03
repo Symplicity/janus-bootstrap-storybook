@@ -134,7 +134,7 @@ export const MultiSelectMultiLevel = () => {
   const filter_chip_item = text('Filter Chip Item', 'Engineering');
 
   const fcLabel = '# of Filter Chips';
-  const fcDefaultValue = 5;
+  const fcDefaultValue = 6;
   const fcOptions = {
     range: true,
     min: 0,
