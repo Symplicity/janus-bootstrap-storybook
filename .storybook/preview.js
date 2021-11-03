@@ -4,23 +4,26 @@ import { initializeRTL } from 'storybook-addon-rtl';
 
 // Import colors from janus design tokens and offer them as backgorund colors
 import janusColors from '../node_modules/@symplicity/janus-tokens/dist/colors.common.js';
-const backgrounds = [{name: 'white', value: '#ffffff', default: true }];
-Object.keys(janusColors).forEach(function(color) {
-      // Exclude text colors
-      if (!color.match(/text/i)) {
-         // Remove "color" from the name
-         backgrounds.push({ name: color.replace(/^color/,''), value: janusColors[color] });
-      }
+const backgrounds = [{ name: 'white', value: '#ffffff', default: true }];
+Object.keys(janusColors).forEach(function (color) {
+  // Exclude text colors
+  if (!color.match(/text/i)) {
+    // Remove "color" from the name
+    backgrounds.push({
+      name: color.replace(/^color/, ''),
+      value: janusColors[color],
+    });
+  }
 });
 
 export const decorators = [];
 
 const customViewports = {
   viewport1: {
-    name: 'Mobile (sm) - 320x960',
+    name: 'Mobile (sm) - 320x500',
     styles: {
       width: '320px',
-      height: '960px',
+      height: '500px',
     },
   },
   viewport2: {
@@ -65,41 +68,42 @@ const customViewports = {
       height: '1080px',
     },
   },
-
 };
 
 export const parameters = {
   actions: {
-    handles: ['mouseover .btn', 'click .btn']
+    handles: ['mouseover .btn', 'click .btn'],
   },
   backgrounds: {
     default: 'light',
     values: [
-      { 
-        name: 'light', 
-        value: '#fff'
+      {
+        name: 'light',
+        value: '#fff',
       },
-      { 
-        name: 'medium', 
-        value: '#efefef'
+      {
+        name: 'medium',
+        value: '#efefef',
       },
-      { 
-        name: 'dark', 
-        value: '#333' 
+      {
+        name: 'dark',
+        value: '#333',
       },
     ],
   },
   viewport: {
     viewports: {
       ...customViewports,
-    }
+    },
   },
   options: {
     storySort: (a, b) =>
-      a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, { numeric: true }),
+      a[1].kind === b[1].kind
+        ? 0
+        : a[1].id.localeCompare(b[1].id, { numeric: true }),
     selectedPanel: 'storybook/a11y/panel',
   },
-  layout: 'fullscreen'
+  layout: 'fullscreen',
 };
 
 initializeRTL();
