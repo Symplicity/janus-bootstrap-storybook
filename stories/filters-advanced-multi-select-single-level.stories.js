@@ -53,9 +53,14 @@ const multi_select_single_level_html = `
             <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
           </ul>
           <div class="dropdown-divider m-0"></div>
-          <div class="d-flex justify-content-between px-3 py-6">
-            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button type="button" class="btn btn-primary">Apply</button>
+          <div class="d-flex justify-content-between align-items-center px-3 py-6">
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-primary text-decoration-none p-0 mx-2">Show Selected</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
           </div>
         </div>
       </div>
@@ -135,9 +140,14 @@ export const MultiSelectSingleLevel = () => {
             <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
           </ul>
           <div class="dropdown-divider m-0"></div>
-          <div class="d-flex justify-content-between px-3 py-6">
-            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button type="button" class="btn btn-primary">Apply</button>
+          <div class="d-flex justify-content-between align-items-center px-3 py-6">
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-primary text-decoration-none p-0 mx-2">Show Selected</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
           </div>
         </div>
       </div>
@@ -219,11 +229,15 @@ const multi_select_single_level_with_search_html = `
             </li>
           </ul>
           <div class="dropdown-divider m-0"></div>
-          <div class="d-flex justify-content-between px-3 py-6">
-            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button type="button" class="btn btn-primary">Apply</button>
+          <div class="d-flex justify-content-between align-items-center px-3 py-6">
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-primary text-decoration-none p-0 mx-2">Show Selected</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
           </div>
-        </div>
       </div>
     </div>
     `;
@@ -321,9 +335,14 @@ export const MultiSelectSingleLevelWithSearch = () => {
             <ul class="list-unstyled list-unstyled-repeat list-group mb-0"></ul>
           </ul>
           <div class="dropdown-divider m-0"></div>
-          <div class="d-flex justify-content-between px-3 py-6">
-            <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
-            <button type="button" class="btn btn-primary">Apply</button>
+          <div class="d-flex justify-content-between align-items-center px-3 py-6">
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-secondary text-decoration-none p-0">Clear</button>
+            </div>
+            <div>
+              <button type="button" class="btn btn-link minw-0 text-primary text-decoration-none p-0 mx-2">Show Selected</button>
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
           </div>
         </div>
       </div>

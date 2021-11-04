@@ -50,7 +50,7 @@ const modal_trigger_html = `
 </button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog d-flex" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
