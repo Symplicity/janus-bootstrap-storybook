@@ -1,5 +1,7 @@
 import { document, setTimeout } from 'global';
 
+import { radios } from '@storybook/addon-knobs';
+
 export default {
   title: 'Components/Modals',
 };
@@ -44,53 +46,107 @@ ModalBasic.parameters = {
   `,
 };
 
-const modal_trigger_html = `
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+const modal_from_trigger_html = `
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-  <div class="modal-dialog d-flex" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...<br><br>
-        ...<br><br>
-        ...<br><br>
-        ...<br><br>
-        ...<br><br>
-        ...<br><br>
-        ...<br><br>
-      </div>
-      <div class="modal-footer">
-        <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
-          <div class="d-xs-block">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
-          </div>
-          <div class="d-xs-block">
-            <button type="button" class="btn btn-primary w-100">Save changes</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
+    <div class="modal-dialog d-flex" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            ...
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
+            <div class="d-xs-block">
+              <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="d-xs-block">
+              <button type="button" class="btn btn-primary w-100">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>`;
+`;
 
-export const ModalTrigger = () => `<div>${modal_trigger_html}</div>`;
+export const ModalFromTrigger = () => {
+  const label = 'Body Content Length';
+  const options = {
+    Long: 'long',
+    Short: 'short',
+  };
+  const defaultValue = 'long';
+  const groupId = 'GROUP-ID1';
 
-ModalTrigger.storyName = 'Modal from Trigger';
+  const value = radios(label, options, defaultValue, groupId);
 
-ModalTrigger.parameters = {
+  return `
+  <div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
+      <div class="modal-dialog d-flex" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ${(() => {
+              if (value === defaultValue) {
+                return `
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                `;
+              } else {
+                return `
+                  ...
+                `;
+              }
+            })()}
+          </div>
+          <div class="modal-footer">
+            <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
+              <div class="d-xs-block">
+                <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+              </div>
+              <div class="d-xs-block">
+                <button type="button" class="btn btn-primary w-100">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+};
+
+ModalFromTrigger.storyName = 'Modal from Trigger';
+
+ModalFromTrigger.parameters = {
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${modal_trigger_html}
+  ${modal_from_trigger_html}
   \`\`\`
 
   `,
