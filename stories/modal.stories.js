@@ -57,7 +57,13 @@ const modal_trigger_html = `
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        ...<br><br>
+        ...<br><br>
+        ...<br><br>
+        ...<br><br>
+        ...<br><br>
+        ...<br><br>
+        ...<br><br>
       </div>
       <div class="modal-footer">
         <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
