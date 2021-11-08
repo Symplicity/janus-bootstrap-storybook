@@ -68,7 +68,85 @@ const tabsDoubleRowHTML = `
   </ul>
 `;
 
-const batchAndPagination = `
+const paginationDesktop = `
+  <div class="d-none d-md-flex align-items-center flex-wrap">
+    <div class="w-auto me-4">
+      <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
+        <option value="20">Show 20</option>
+        <option value="50">Show 50</option>
+        <option value="100">Show 100</option>
+      </select>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm m-0">
+        <li class="page-item">
+          <a class="page-link border-end-0 m-0" href="#" aria-label="Previous">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-left" />
+              <span class="visually-hidden">Previous</span>
+            </svg>
+          </a>
+        </li>
+        <li class="page-item">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
+            <option value="1">Page 1</option>
+            <option value="2">Page 2</option>
+            <option value="3">Page 3</option>
+          </select>
+        </li>
+        <li class="page-item">
+          <a class="page-link border-start-0 m-0" href="#" aria-label="Next">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-right" />
+              <span class="visually-hidden">Next</span>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+`
+
+const paginationMobile = `
+  <div class="d-md-none d-flex align-items-center flex-wrap justify-content-between p-3 w-100 mt-auto bg-white position-sticky bottom-0">
+    <div class="w-auto me-4">
+      <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
+        <option value="20">Show 20</option>
+        <option value="50">Show 50</option>
+        <option value="100">Show 100</option>
+      </select>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm m-0">
+        <li class="page-item">
+          <a class="page-link border-end-0 m-0" href="#" aria-label="Previous">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-left" />
+              <span class="visually-hidden">Previous</span>
+            </svg>
+          </a>
+        </li>
+        <li class="page-item">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
+            <option value="1">Page 1</option>
+            <option value="2">Page 2</option>
+            <option value="3">Page 3</option>
+          </select>
+        </li>
+        <li class="page-item">
+          <a class="page-link border-start-0 m-0" href="#" aria-label="Next">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-right" />
+              <span class="visually-hidden">Next</span>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+`
+
+const batchOptionsElement = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
       <select class="form-select fs-6 pe-8 lh-sm w-auto shadow-none" aria-label="Default select example">
@@ -79,42 +157,7 @@ const batchAndPagination = `
       </select>
       <span class="fs-6 text-muted ms-3 w-100">1 item selected</span>
     </div>
-    <div class="d-flex align-items-center flex-wrap">
-      <div class="w-auto me-4">
-        <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
-          <option value="20">Show 20</option>
-          <option value="50">Show 50</option>
-          <option value="100">Show 100</option>
-        </select>
-      </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-sm m-0">
-          <li class="page-item">
-            <a class="page-link border-end-0 m-0" href="#" aria-label="Previous">
-              <svg class="icon-lg-font-size mt-n1 text-danger">
-                <use xlink:href="${iconSprite}#tabler-chevron-left" />
-                <span class="visually-hidden">Previous</span>
-              </svg>
-            </a>
-          </li>
-          <li class="page-item">
-            <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
-              <option value="1">Page 1</option>
-              <option value="2">Page 2</option>
-              <option value="3">Page 3</option>
-            </select>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-start-0 m-0" href="#" aria-label="Next">
-              <svg class="icon-lg-font-size mt-n1 text-danger">
-                <use xlink:href="${iconSprite}#tabler-chevron-right" />
-                <span class="visually-hidden">Next</span>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    ${paginationDesktop}
   </div>
 `
 
@@ -538,13 +581,14 @@ const staff_list_html = `
                 </div>
               </form>
             </div>
-            ${batchAndPagination}
+            ${batchOptionsElement}
             <div class="w-100 overflow-auto p-0 my-2 mb-0 border border-light">
               ${tableContent}              
             </div>
           </div>
       </div>
     </div>
+    ${paginationMobile}
   </div>
 </div>
 `;
