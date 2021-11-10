@@ -1417,7 +1417,7 @@
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": ".btn-primary",
-      "postInteractionWait": 200,
+      "postInteractionWait": 500,
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
