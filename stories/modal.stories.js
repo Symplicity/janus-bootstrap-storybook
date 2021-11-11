@@ -113,6 +113,13 @@ export const ModalFromTrigger = () => {
                   ...<br><br>
                   ...<br><br>
                   ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>                  
                 `;
               }
               if (value === 'medium') {
