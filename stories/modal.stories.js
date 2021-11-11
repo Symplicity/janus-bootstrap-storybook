@@ -52,7 +52,7 @@ const modal_from_trigger_html = `
   </button>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-dialog-scrollable d-flex" role="document">
+    <div class="modal-dialog modal-dialog-scrollable d-flex h-100" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -96,7 +96,7 @@ export const ModalFromTrigger = () => {
     </button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-      <div class="modal-dialog modal-dialog-scrollable d-flex" role="document">
+      <div class="modal-dialog modal-dialog-scrollable d-flex h-100" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
