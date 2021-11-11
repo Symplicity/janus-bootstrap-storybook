@@ -52,7 +52,7 @@ const modal_from_trigger_html = `
   </button>
 
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex" role="document">
+    <div class="modal-dialog modal-dialog-scrollable d-flex" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -81,13 +81,13 @@ const modal_from_trigger_html = `
 export const ModalFromTrigger = () => {
   const label = 'Body Content Length';
   const options = {
-    Long: 'long',
     Short: 'short',
+    Medium: 'medium',
+    Long: 'long',
   };
-  const defaultValue = 'long';
-  const groupId = 'GROUP-ID1';
+  const defaultValue = 'medium';
 
-  const value = radios(label, options, defaultValue, groupId);
+  const value = radios(label, options, defaultValue);
 
   return `
   <div>
@@ -96,7 +96,7 @@ export const ModalFromTrigger = () => {
     </button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" aria-modal="true" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable d-flex" role="document">
+      <div class="modal-dialog modal-dialog-scrollable d-flex" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -104,7 +104,7 @@ export const ModalFromTrigger = () => {
           </div>
           <div class="modal-body">
             ${(() => {
-              if (value === defaultValue) {
+              if (value === 'long') {
                 return `
                   ...<br><br>
                   ...<br><br>
@@ -114,7 +114,16 @@ export const ModalFromTrigger = () => {
                   ...<br><br>
                   ...<br><br>
                 `;
-              } else {
+              }
+              if (value === 'medium') {
+                return `
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                  ...<br><br>
+                `;
+              }
+              if (value === 'short') {
                 return `
                   ...
                 `;
