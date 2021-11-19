@@ -48,7 +48,7 @@
     "@storybook/html": "^6.3.12",
     "@symplicity/bootstrap": "github:Symplicity/bootstrap#v5.1.3-janus",
     "@symplicity/janus-tokens": "github:Symplicity/janus-tokens",
-    "@symplicity/tabler-icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
+    "@symplicity/tabler-icons": "github:Symplicity/tabler-icons",
     "babel-loader": "^8.2.2",
     "expose-loader": "^0.7.5",
     "jquery": "^3.6.0",
@@ -60,7 +60,6 @@
   },
   "dependencies": {
     "@storybook/theming": "^6.3.12",
-    "@tabler/icons": "git+ssh://git@github.com/Symplicity/tabler-icons.git",
     "bootstrap": "github:Symplicity/bootstrap#v5.0.2-janus"
   }
 }
