@@ -20,7 +20,7 @@
   "main": "index.js",
   "scripts": {
     "build-storybook": "build-storybook",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9009",
     "test": "npm-run-all test:*",
     "test:run": "docker run --rm -v $(pwd):/src backstopjs/backstopjs test",
     "test:view-report": "open-cli backstop_data/html_report/index.html",
