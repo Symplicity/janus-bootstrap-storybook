@@ -71,7 +71,7 @@ const tabsDoubleRowHTML = `
 const paginationDesktop = `
   <div class="d-none d-md-flex align-items-center flex-wrap">
     <div class="w-auto me-4">
-      <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
+      <select class="form-select lh-sm fs-6 bg-transparent border-light" aria-label="Default select example">
         <option value="20">Show 20</option>
         <option value="50">Show 50</option>
         <option value="100">Show 100</option>
@@ -88,7 +88,7 @@ const paginationDesktop = `
           </a>
         </li>
         <li class="page-item">
-          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-dark" aria-label="Default select example">
             <option value="1">Page 1</option>
             <option value="2">Page 2</option>
             <option value="3">Page 3</option>
@@ -110,7 +110,7 @@ const paginationDesktop = `
 const paginationMobile = `
   <div class="d-md-none d-flex align-items-center flex-wrap justify-content-between p-3 w-100 mt-auto bg-light position-sticky bottom-0">
     <div class="w-auto me-4">
-      <select class="form-select border-0 lh-sm fs-6 shadow-none bg-light" aria-label="Default select example">
+      <select class="form-select lh-sm fs-6 bg-transparent border-light" aria-label="Default select example">
         <option value="20">1-20 of 140</option>
         <option value="50">1-50 of 140</option>
         <option value="100">1-100 of 140</option>
@@ -127,7 +127,7 @@ const paginationMobile = `
           </a>
         </li>
         <li class="page-item">
-          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none border-dark" aria-label="Default select example">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-dark" aria-label="Default select example">
             <option value="1">Page 1</option>
             <option value="2">Page 2</option>
             <option value="3">Page 3</option>
