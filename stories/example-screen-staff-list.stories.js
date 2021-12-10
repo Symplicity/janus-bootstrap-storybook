@@ -68,10 +68,88 @@ const tabsDoubleRowHTML = `
   </ul>
 `;
 
-const batchAndPagination = `
+const paginationDesktop = `
+  <div class="d-none d-md-flex align-items-center flex-wrap">
+    <div class="w-auto me-4">
+      <select class="form-select lh-sm fs-6 bg-transparent border-0 pe-8" aria-label="Default select example">
+        <option value="20">Show 20</option>
+        <option value="50">Show 50</option>
+        <option value="100">Show 100</option>
+      </select>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm m-0">
+        <li class="page-item">
+          <a class="page-link border-end-0 m-0 rounded-start" href="#" aria-label="Previous">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-left" />
+              <span class="visually-hidden">Previous</span>
+            </svg>
+          </a>
+        </li>
+        <li class="page-item">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-gray" aria-label="Default select example">
+            <option value="1">Page 1</option>
+            <option value="2">Page 2</option>
+            <option value="3">Page 3</option>
+          </select>
+        </li>
+        <li class="page-item">
+          <a class="page-link border-start-0 m-0 rounded-end" href="#" aria-label="Next">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-right" />
+              <span class="visually-hidden">Next</span>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+`
+
+const paginationMobile = `
+  <div class="d-md-none d-flex align-items-center flex-wrap justify-content-between p-3 w-100 mt-auto bg-light position-sticky bottom-0">
+    <div class="w-auto me-4">
+      <select class="form-select lh-sm fs-6 bg-transparent border-0 pe-8" aria-label="Default select example">
+        <option value="20">1-20 of 140</option>
+        <option value="50">1-50 of 140</option>
+        <option value="100">1-100 of 140</option>
+      </select>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination pagination-sm m-0">
+        <li class="page-item">
+          <a class="page-link border-end-0 m-0 border-gray rounded-start" href="#" aria-label="Previous">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-left" />
+              <span class="visually-hidden">Previous</span>
+            </svg>
+          </a>
+        </li>
+        <li class="page-item">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-gray" aria-label="Default select example">
+            <option value="1">Page 1</option>
+            <option value="2">Page 2</option>
+            <option value="3">Page 3</option>
+          </select>
+        </li>
+        <li class="page-item">
+          <a class="page-link border-start-0 m-0 border-gray rounded-end" href="#" aria-label="Next">
+            <svg class="icon-lg-font-size mt-n1 text-danger">
+              <use xlink:href="${iconSprite}#tabler-chevron-right" />
+              <span class="visually-hidden">Next</span>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+`
+
+const batchOptionsElement = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6 pe-8 lh-sm w-auto shadow-none" aria-label="Default select example">
+      <select class="form-select fs-6 w-auto" aria-label="Default select example">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -79,48 +157,13 @@ const batchAndPagination = `
       </select>
       <span class="fs-6 text-muted ms-3 w-100">1 item selected</span>
     </div>
-    <div class="d-flex align-items-center flex-wrap">
-      <div class="w-auto me-4">
-        <select class="form-select border-0 lh-sm fs-6 shadow-none" aria-label="Default select example">
-          <option value="20">Show 20</option>
-          <option value="50">Show 50</option>
-          <option value="100">Show 100</option>
-        </select>
-      </div>
-      <nav aria-label="Page navigation example">
-        <ul class="pagination pagination-sm m-0">
-          <li class="page-item">
-            <a class="page-link border-end-0 m-0" href="#" aria-label="Previous">
-              <svg class="icon-lg-font-size mt-n1 text-danger">
-                <use xlink:href="${iconSprite}#tabler-chevron-left" />
-                <span class="visually-hidden">Previous</span>
-              </svg>
-            </a>
-          </li>
-          <li class="page-item">
-            <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 shadow-none" aria-label="Default select example">
-              <option value="1">Page 1</option>
-              <option value="2">Page 2</option>
-              <option value="3">Page 3</option>
-            </select>
-          </li>
-          <li class="page-item">
-            <a class="page-link border-start-0 m-0" href="#" aria-label="Next">
-              <svg class="icon-lg-font-size mt-n1 text-danger">
-                <use xlink:href="${iconSprite}#tabler-chevron-right" />
-                <span class="visually-hidden">Next</span>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    ${paginationDesktop}
   </div>
 `
 
 const tableContent = `
   <table class="table align-middle fs-5 mb-0 table-borderless">
-    <thead class="border-bottom border-light text-nowrap">
+    <thead class="border-bottom border-light border-top text-nowrap">
       <tr>
         <th class="fw-normal" scope="col">
           <label class="visually-hidden" for="checkboxHeader">Select Row</label>
@@ -476,7 +519,7 @@ const staff_list_html = `
       <div class="d-none d-lg-block">
         ${sidebarNavLG}
       </div>      
-      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-4">
+      <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-md-4 px-sm-0 pb-md-3">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-3 w-100">
           <h2 class="m-0">Incident Reports</h2> 
           <button type="button" class="btn btn-danger fs-6">
@@ -485,7 +528,7 @@ const staff_list_html = `
             </svg>Add New
           </button>
         </div>
-        <div class="bg-white my-3 w-100 rounded-4">
+        <div class="bg-white mt-3 w-100 rounded-4">
           <div class="text-center">${tabsDoubleRowHTML}</div>          
             <div class="bg-white">
               <form class="bg-light d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
@@ -502,7 +545,7 @@ const staff_list_html = `
                     </div>
                   </div>
                   <div class="flex-grow-1 me-7">
-                    <select class="form-select fs-6 text-muted shadow-none" aria-label="Default select example">
+                    <select class="form-select fs-6 text-muted" aria-label="Default select example">
                       <option selected>Assigned to</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
@@ -538,13 +581,14 @@ const staff_list_html = `
                 </div>
               </form>
             </div>
-            ${batchAndPagination}
-            <div class="w-100 overflow-auto p-0 my-2 mb-0 border border-light">
+            ${batchOptionsElement}
+            <div class="w-100 overflow-auto p-0 my-2 mb-0 border-light border-start-0 border-end-0">
               ${tableContent}              
             </div>
           </div>
       </div>
     </div>
+    ${paginationMobile}
   </div>
 </div>
 `;
