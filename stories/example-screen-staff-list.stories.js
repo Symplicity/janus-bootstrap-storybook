@@ -71,7 +71,7 @@ const tabsDoubleRowHTML = `
 const paginationDesktop = `
   <div class="d-none d-md-flex align-items-center flex-wrap">
     <div class="w-auto me-4">
-      <select class="form-select lh-sm fs-6 bg-transparent border-0" aria-label="Default select example">
+      <select class="form-select lh-sm fs-6 bg-transparent border-0 pe-8" aria-label="Default select example">
         <option value="20">Show 20</option>
         <option value="50">Show 50</option>
         <option value="100">Show 100</option>
@@ -110,7 +110,7 @@ const paginationDesktop = `
 const paginationMobile = `
   <div class="d-md-none d-flex align-items-center flex-wrap justify-content-between p-3 w-100 mt-auto bg-light position-sticky bottom-0">
     <div class="w-auto me-4">
-      <select class="form-select lh-sm fs-6 bg-transparent border-0" aria-label="Default select example">
+      <select class="form-select lh-sm fs-6 bg-transparent border-0 pe-8" aria-label="Default select example">
         <option value="20">1-20 of 140</option>
         <option value="50">1-50 of 140</option>
         <option value="100">1-100 of 140</option>
@@ -149,7 +149,7 @@ const paginationMobile = `
 const batchOptionsElement = `
   <div class="d-flex align-items-center justify-content-between flex-wrap mx-3 mt-4 mb-3">
     <div class="d-flex align-items-center justify-content-center">
-      <select class="form-select fs-6 pe-8 w-auto" aria-label="Default select example">
+      <select class="form-select fs-6 w-auto" aria-label="Default select example">
         <option selected>Batch Options</option>
         <option value="1">One</option>
         <option value="2">Two</option>
