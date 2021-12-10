@@ -88,7 +88,7 @@ const paginationDesktop = `
           </a>
         </li>
         <li class="page-item">
-          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-dark" aria-label="Default select example">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-gray" aria-label="Default select example">
             <option value="1">Page 1</option>
             <option value="2">Page 2</option>
             <option value="3">Page 3</option>
@@ -119,7 +119,7 @@ const paginationMobile = `
     <nav aria-label="Page navigation example">
       <ul class="pagination pagination-sm m-0">
         <li class="page-item">
-          <a class="page-link border-end-0 m-0 border-dark" href="#" aria-label="Previous">
+          <a class="page-link border-end-0 m-0 border-gray" href="#" aria-label="Previous">
             <svg class="icon-lg-font-size mt-n1 text-danger">
               <use xlink:href="${iconSprite}#tabler-chevron-left" />
               <span class="visually-hidden">Previous</span>
@@ -127,14 +127,14 @@ const paginationMobile = `
           </a>
         </li>
         <li class="page-item">
-          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-dark" aria-label="Default select example">
+          <select class="form-select fs-6 ps-3 pe-9 h-100 lh-sm rounded-0 page-link text-secondary m-0 border-gray" aria-label="Default select example">
             <option value="1">Page 1</option>
             <option value="2">Page 2</option>
             <option value="3">Page 3</option>
           </select>
         </li>
         <li class="page-item">
-          <a class="page-link border-start-0 m-0 border-dark" href="#" aria-label="Next">
+          <a class="page-link border-start-0 m-0 border-gray" href="#" aria-label="Next">
             <svg class="icon-lg-font-size mt-n1 text-danger">
               <use xlink:href="${iconSprite}#tabler-chevron-right" />
               <span class="visually-hidden">Next</span>
