@@ -163,7 +163,7 @@ const batchOptionsElement = `
 
 const tableContent = `
   <table class="table align-middle fs-5 mb-0 table-borderless">
-    <thead class="border-bottom border-light text-nowrap">
+    <thead class="border-bottom border-light border-top text-nowrap">
       <tr>
         <th class="fw-normal" scope="col">
           <label class="visually-hidden" for="checkboxHeader">Select Row</label>
@@ -582,7 +582,7 @@ const staff_list_html = `
               </form>
             </div>
             ${batchOptionsElement}
-            <div class="w-100 overflow-auto p-0 my-2 mb-0 border border-light">
+            <div class="w-100 overflow-auto p-0 my-2 mb-0 border-light border-start-0 border-end-0">
               ${tableContent}              
             </div>
           </div>
