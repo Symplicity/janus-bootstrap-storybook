@@ -7,14 +7,14 @@ module.exports = {
       name: '@storybook/addon-essentials',
       options: {
         docs: false,
-        controls: false,
-      },
+        controls: false
+      }
     },
     '@storybook/addon-events',
     '@storybook/addon-knobs',
     '@storybook/addon-links',
     '@storybook/addon-notes',
     'storybook-addon-rtl',
-    '@storybook/addon-storysource',
-  ],
-};
+    '@storybook/addon-storysource'
+  ]
+}

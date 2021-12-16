@@ -1,7 +1,8 @@
-module.exports = async ({ config }) => console.dir(config, { depth: null }) || config;
+module.exports = async ({ config }) =>
+  console.dir(config, { depth: null }) || config
 
-const path = require('path');
-const webpack = require('webpack');
+const path = require('path')
+const webpack = require('webpack')
 
 // Export a function. Accept the base config as the only param.
 module.exports = async ({ config, mode }) => {
@@ -11,20 +12,24 @@ module.exports = async ({ config, mode }) => {
 
   // Add bootstrap JS to preview mode
 
-   config.entry.push(require.resolve('../node_modules/@symplicity/bootstrap/dist/js/bootstrap.bundle.js'));
-   config.module.rules.push({
-        test: /\.stories.js?$/,
-        loaders: [require.resolve('../node_modules/@storybook/source-loader')],
-        enforce: 'pre',
-   });
+  config.entry.push(
+    require.resolve(
+      '../node_modules/@symplicity/bootstrap/dist/js/bootstrap.bundle.js'
+    )
+  )
+  config.module.rules.push({
+    test: /\.stories.js?$/,
+    loaders: [require.resolve('../node_modules/@storybook/source-loader')],
+    enforce: 'pre'
+  })
 
-   config.plugins.push(
-        new webpack.ProvidePlugin({
-           $: 'jquery',
-           jQuery: 'jquery'
-       })
-   );
+  config.plugins.push(
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+  )
 
   // Return the altered config
-  return config;
-};
+  return config
+}
