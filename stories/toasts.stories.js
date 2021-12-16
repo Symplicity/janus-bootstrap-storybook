@@ -1,4 +1,4 @@
-import { document, setTimeout } from 'global'
+import * as bootstrap from 'bootstrap'
 
 window.bootstrap = bootstrap
 
@@ -17,7 +17,7 @@ const toast_live_html = `
         <small>11 mins ago</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-      <div class="toast-body">
+      <div class="toast-body text-start">
         Hello, world! This is a toast message.
       </div>
     </div>
@@ -30,22 +30,20 @@ export const ToastLive = () => {
   ).append(toast_live_html)
 
   setTimeout(function () {
-    $(function () {
-      var toastTrigger = document.getElementById('liveToastBtn')
-      var toastLiveExample = document.getElementById('liveToast')
-      if (toastTrigger) {
-        toastTrigger.addEventListener('click', function () {
-          var toast = new bootstrap.Toast(toastLiveExample)
-          toast.show()
-        })
-      }
-    })
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+      })
+    }
   }, 0)
 
   return container[0]
 }
 
-ToastLive.storyName = 'Primary'
+ToastLive.storyName = 'Live'
 
 ToastLive.parameters = {
   notes: `
