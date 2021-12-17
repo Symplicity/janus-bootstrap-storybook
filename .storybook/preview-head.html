@@ -1,20 +1,20 @@
 <style>
-    <!-- custom preview styles -->
     body {
         background: transparent;
     }
-    #root > div {
+
+    #root>div {
         margin: 1rem;
         position: relative;
     }
 </style>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    let body = document.querySelector('html');
-    let dir = body.getAttribute('dir');
-    if (!dir) body.setAttribute('dir','ltr');
-    //if (!dir) body.setAttribute('dir','rtl');
-    //let lang = body.getAttribute('lang');
-    //body.setAttribute('lang','ar');
- });
+    document.addEventListener('DOMContentLoaded', function () {
+        let body = document.querySelector('html');
+        let dir = body.getAttribute('dir');
+        if (!dir) body.setAttribute('dir', 'ltr');
+        //if (!dir) body.setAttribute('dir','rtl');
+        //let lang = body.getAttribute('lang');
+        //body.setAttribute('lang','ar');
+    });
 </script>
