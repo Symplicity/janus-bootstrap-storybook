@@ -62,38 +62,68 @@ ToastLive.parameters = {
 }
 
 const toast_success_html = `
-<div class="toast d-inline-block w-auto align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
+<div class="toast align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: fit-content">
+  <div class="toast-body d-flex">
+    <div class="flex-shrink-1 d-flex">
       <svg width="1.5rem" height="1.5rem" class="me-2">
         <use xlink:href="${iconSprite}#tabler-circle-check" />
-      </svg> File updated.
+      </svg>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <div class="flex-grow-1 me-3">
+      <p class="mb-0">File updated.</p>
+    </div>
+    <div class="flex-shrink-1 mt-n1 mb-n1">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close">
+      </button>
+    </div>
   </div>
 </div>
-<br>
-<div class="toast d-inline-block w-auto align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
+
+<div class="toast align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: fit-content">
+  <div class="toast-body d-flex">
+    <div class="flex-shrink-1 d-flex">
       <svg width="1.5rem" height="1.5rem" class="me-2">
         <use xlink:href="${iconSprite}#tabler-circle-check" />
-      </svg> File updated.
-      <a href="#" class="text-white text-decoration-underline fw-normal ms-4">Action</a>
+      </svg>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <div class="flex-grow-1 me-3">
+      <div class="d-flex">
+        <div class="flex-fill">
+          <p class="mb-0">File updated.</p>
+        </div>
+        <div class="flex-fill text-end">
+          <a href="#" class="text-white text-decoration-underline fw-normal ms-4">Action</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-1 mt-n1 mb-n1">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close">
+      </button>
+    </div>
   </div>
 </div>
-<br>
-<div class="toast d-inline-block align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
-  <div class="d-flex">
-    <div class="toast-body">
+
+<div class="toast align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: fit-content">
+  <div class="toast-body d-flex">
+    <div class="flex-shrink-1 d-flex">
       <svg width="1.5rem" height="1.5rem" class="me-2">
         <use xlink:href="${iconSprite}#tabler-circle-check" />
-      </svg> Multiple lines of text. Curabitur blandit temppus porttitor. Nullam id dolor id nibh ultricies vehicula.
-      <a href="#" class="d-block text-end text-white text-decoration-underline fw-normal ms-4">Action</a>
+      </svg>
     </div>
-    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    <div class="flex-grow-1">
+      <div>
+        <p class="mb-0">
+          Multiple lines of text. Curabitur blandit temppus porttitor. Nullam id dolor id nibh ultricies vehicula.
+        </p>
+      </div>
+      <div class="text-end">
+        <a href="#" class="text-white text-decoration-underline fw-normal ms-4">Action</a>
+      </div>
+    </div>
+    <div class="flex-shrink-1 mt-n1 mb-n1">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close">
+      </button>
+    </div>
   </div>
 </div>
 `
