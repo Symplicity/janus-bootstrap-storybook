@@ -1,3 +1,5 @@
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
+
 import * as bootstrap from 'bootstrap'
 
 window.bootstrap = bootstrap
@@ -55,6 +57,61 @@ ToastLive.parameters = {
   
   \`\`\`html
   ${toast_live_html}
+  \`\`\`
+  `
+}
+
+const toast_success_html = `
+<div class="toast d-inline-block w-auto align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      <svg width="1.5rem" height="1.5rem" class="me-2">
+        <use xlink:href="${iconSprite}#tabler-circle-check" />
+      </svg> File updated.
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+<br>
+<div class="toast d-inline-block w-auto align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      <svg width="1.5rem" height="1.5rem" class="me-2">
+        <use xlink:href="${iconSprite}#tabler-circle-check" />
+      </svg> File updated.
+      <a href="#" class="text-white text-decoration-underline fw-normal ms-4">Action</a>
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+<br>
+<div class="toast d-inline-block align-items-center text-white bg-success border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body">
+      <svg width="1.5rem" height="1.5rem" class="me-2">
+        <use xlink:href="${iconSprite}#tabler-circle-check" />
+      </svg> Multiple lines of text. Curabitur blandit temppus porttitor. Nullam id dolor id nibh ultricies vehicula.
+      <a href="#" class="d-block text-end text-white text-decoration-underline fw-normal ms-4">Action</a>
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div>
+</div>
+`
+
+export const ToastSuccess = () => `${toast_success_html}`
+
+ToastSuccess.storyName = 'Success'
+
+ToastSuccess.parameters = {
+  notes: `
+  #Toast Success
+    
+  Toast Success alerts should be used to confirm that an important task or workflow has been completed.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${toast_success_html}
   \`\`\`
   `
 }
