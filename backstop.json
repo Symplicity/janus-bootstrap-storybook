@@ -1787,7 +1787,7 @@
     },
     {
       "label": "Toasts-SB-Info",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-info",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--info",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1805,7 +1805,7 @@
     },
     {
       "label": "Toasts-SB-Success",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-success",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--success",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1823,7 +1823,7 @@
     },
     {
       "label": "Toasts-SB-Error",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-error",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--error",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1841,7 +1841,7 @@
     },
     {
       "label": "Toasts-SB-Warning",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-warning",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--warning",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1859,7 +1859,7 @@
     },
     {
       "label": "Toasts-SB-Neutral",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-neutral",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--neutral",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
