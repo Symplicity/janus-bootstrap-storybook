@@ -1769,7 +1769,7 @@
     },
     {
       "label": "Toasts-SB-Live",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--toast-live",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--live",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
