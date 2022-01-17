@@ -22,10 +22,10 @@
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 9009",
     "test": "npm-run-all test:*",
-    "test:run": "docker run --rm -v $(pwd):/src backstopjs/backstopjs test",
+    "test:run": "docker run --rm -v $(pwd):/src backstopjs/backstopjs:6.0.4 test",
     "test:view-report": "open-cli backstop_data/html_report/index.html",
-    "approve": "docker run --rm -v $(pwd):/src backstopjs/backstopjs approve",
-    "reference": "docker run --rm -v $(pwd):/src backstopjs/backstopjs reference"
+    "approve": "docker run --rm -v $(pwd):/src backstopjs/backstopjs:6.0.4 approve",
+    "reference": "docker run --rm -v $(pwd):/src backstopjs/backstopjs:6.0.4 reference"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",

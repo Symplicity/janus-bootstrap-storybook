@@ -17,8 +17,8 @@
       "height": 768
     }
   ],
-  "onBeforeScript": "puppet/onBefore.js",
-  "onReadyScript": "puppet/onReady.js",
+  "onBeforeScript": "playwright/onBefore.js",
+  "onReadyScript": "playwright/onReady.js",
   "scenarios": [
     {
       "label": "Alerts-SB-Primary",
@@ -219,7 +219,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Badges-SB",
+      "label": "Badges-SB-Default",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-badges--badges",
       "referenceUrl": "",
       "readyEvent": "",
@@ -948,7 +948,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "input#btn-check",
+      "clickSelector": "label[for='btn-check']",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -984,7 +984,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "input#btn-check",
+      "clickSelector": "label[for='btn-check']",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -1615,7 +1615,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "#search-input",
+      "clickSelector": "",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -2083,9 +2083,10 @@
     "ci_report": "backstop_data/ci_report"
   },
   "report": ["browser"],
-  "engine": "puppeteer",
+  "engine": "playwright",
   "engineOptions": {
-    "args": ["--no-sandbox"]
+    "args": ["--no-sandbox"],
+    "browser": "chromium"
   },
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
