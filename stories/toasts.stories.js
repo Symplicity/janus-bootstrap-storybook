@@ -4,8 +4,21 @@ import * as bootstrap from 'bootstrap'
 
 window.bootstrap = bootstrap
 
+import {
+  array,
+  boolean,
+  button,
+  color,
+  date,
+  select,
+  withKnobs,
+  text,
+  number
+} from '@storybook/addon-knobs'
+
 export default {
-  title: 'Components/Toasts'
+  title: 'Components/Toasts',
+  decorators: [withKnobs]
 }
 
 const toast_live_html = `
@@ -307,6 +320,99 @@ Neutral.parameters = {
   
   \`\`\`html
   ${toast_html}
+  \`\`\`
+  `
+}
+
+const toast_notification_html = `
+  <div class="toast align-items-center bg-white border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: fit-content">
+    <div class="toast-body d-flex">
+      <div class="d-flex align-items-start">
+        <span class="bg-accent-red text-white rounded-2">
+          <svg width="1.5rem" height="1.5rem" class="m-1">
+            <use xlink:href="/path/to/icon-sprite.svg#tabler-alarm" />
+          </svg>
+        </span>
+      </div>
+      <div class="d-flex ms-6">
+        <div>
+          <p class="mb-0">
+            <strong>IR Meeting - Ella Cruz (23020155)</strong>
+          </p>
+          <p class="mb-0">
+            <span class="text-muted">2:00PM, Meeting Rm102</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+`
+
+export const NotificationToast = () => {
+  const icon_bg_color_options = {
+    'Accent Green': 'bg-accent-green',
+    'Accent Orange': 'bg-accent-orange',
+    'Accent Indigo': 'bg-accent-indigo',
+    'Accent Purple': 'bg-accent-purple',
+    'Accent Blue': 'bg-accent-blue',
+    'Accent Red': 'bg-accent-red'
+  }
+
+  const icon_bg_color = select(
+    'Icon Background Color',
+    icon_bg_color_options,
+    'bg-accent-red'
+  )
+
+  const icon_class = text('Icon Class', 'tabler-alarm')
+
+  const notification_title_text = text(
+    'Notification Title',
+    'IR Meeting - Ella Cruz (23020155)'
+  )
+
+  const notification_location_text = text(
+    'Notification Location',
+    '2:00PM, Meeting Rm102'
+  )
+
+  return `
+    <div class="toast align-items-center bg-white border-0 fade show" role="alert" aria-live="assertive" aria-atomic="true" style="max-width: fit-content">
+      <div class="toast-body d-flex">
+        <div class="d-flex align-items-start">
+          <span class="${icon_bg_color} text-white rounded-2">
+            <svg width="1.5rem" height="1.5rem" class="m-1">
+              <use xlink:href="${iconSprite}#${icon_class}" />
+            </svg>
+          </span>
+        </div>
+        <div class="d-flex ms-6">
+          <div>
+            <p class="mb-0">
+              <strong>${notification_title_text}</strong>
+            </p>
+            <p class="mb-0">
+              <span class="text-muted">${notification_location_text}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+}
+
+NotificationToast.storyName = 'Notification'
+
+NotificationToast.parameters = {
+  notes: `
+  #Toast Notification
+    
+  Toast Notification alerts should be used to confirm that an important task or workflow has been completed.
+
+  ##Sample Code
+  
+  \`\`\`html
+  ${toast_notification_html}
   \`\`\`
   `
 }
