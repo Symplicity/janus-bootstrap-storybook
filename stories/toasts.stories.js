@@ -367,12 +367,12 @@ export const NotificationToast = () => {
   const icon_class = text('Icon Class', 'tabler-alarm')
 
   const notification_title_text = text(
-    'Notification Title',
+    'Title (1st line)',
     'IR Meeting - Ella Cruz (23020155)'
   )
 
   const notification_location_text = text(
-    'Notification Location',
+    'Subtitle (2nd line)',
     '2:00PM, Meeting Rm102'
   )
 
