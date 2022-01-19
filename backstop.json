@@ -1876,6 +1876,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Toasts-SB-Notification",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-toasts--notification-toast",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 200,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Typography-SB-Global",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-typography--global",
       "referenceUrl": "",
