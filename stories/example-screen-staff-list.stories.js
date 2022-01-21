@@ -1,16 +1,14 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-import { LayoutLoggedHeader } from './example-layout-header-logged.stories';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
+import $ from 'jquery'
+window.jQuery = window.$ = $
+import { LayoutLoggedHeader } from './example-layout-header-logged.stories'
 
-import {
-  withKnobs
-} from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs'
 
 export default {
   title: 'Examples/Screens/Staff List',
-  decorators: [withKnobs],
-};
+  decorators: [withKnobs]
+}
 
 // TODO change docs
 const moreDocumentation = `
@@ -19,7 +17,7 @@ For additional documentation, see:
 
 - Bootstrap Documentation
 - Design System 
-`;
+`
 
 const tabsDoubleRowHTML = `
   <ul class="nav nav-tabs bg-white rounded-4 ps-7 pe-7">
@@ -66,7 +64,7 @@ const tabsDoubleRowHTML = `
       </a>
     </li>
   </ul>
-`;
+`
 
 const paginationDesktop = `
   <div class="d-none d-md-flex align-items-center flex-wrap">
@@ -524,7 +522,7 @@ const staff_list_html = `
           <h2 class="m-0">Incident Reports</h2> 
           <button type="button" class="btn btn-danger fs-6">
             <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
-              <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-plus" />
+              <use xlink:href="${iconSprite}#tabler-plus" />
             </svg>Add New
           </button>
         </div>
@@ -591,23 +589,44 @@ const staff_list_html = `
     ${paginationMobile}
   </div>
 </div>
-`;
+`
 
 export const ScreenStaffList = () => {
-  const container = $('<div class="m-0"></div>').append(
-    staff_list_html
-  );
-  const surnames = [["Wang", "Li"], ["Li", "Zhang"], ["Zhang", "Chen"], ["Chen", "Liu"], ["Liu", "Devi"], ["Devi", "Yang"], ["Yang", "Huang"], ["Huang", "Singh"], ["Singh", "Wu"], ["Wu", "Kumar"], ["Kumar", "Xu"], ["Xu", "Ali"], ["Ali", "Zhao"], ["Zhao", "Zhou"], ["Zhou", "Nguyen"], ["Nguyen", "Khan"], ["Khan", "Ma"], ["Ma", "Lu"], ["Lu", "Zhu"], ["Zhu", "Wang"]];
+  const container = $('<div class="m-0"></div>').append(staff_list_html)
+  const surnames = [
+    ['Wang', 'Li'],
+    ['Li', 'Zhang'],
+    ['Zhang', 'Chen'],
+    ['Chen', 'Liu'],
+    ['Liu', 'Devi'],
+    ['Devi', 'Yang'],
+    ['Yang', 'Huang'],
+    ['Huang', 'Singh'],
+    ['Singh', 'Wu'],
+    ['Wu', 'Kumar'],
+    ['Kumar', 'Xu'],
+    ['Xu', 'Ali'],
+    ['Ali', 'Zhao'],
+    ['Zhao', 'Zhou'],
+    ['Zhou', 'Nguyen'],
+    ['Nguyen', 'Khan'],
+    ['Khan', 'Ma'],
+    ['Ma', 'Lu'],
+    ['Lu', 'Zhu'],
+    ['Zhu', 'Wang']
+  ]
 
   setTimeout(() => {
-    const createListItems = document.querySelector('.table-data');
+    const createListItems = document.querySelector('.table-data')
     createListItems.innerHTML = `
       ${surnames
         .map(
           (item, i) => `
           <tr class="border-bottom border-light">
             <td>
-              <label class="visually-hidden" for="checkbox${i + 1}">Select Row</label>
+              <label class="visually-hidden" for="checkbox${
+                i + 1
+              }">Select Row</label>
               <input type="checkbox" id="checkbox${i + 1}">
             </td>
             <td>
@@ -646,13 +665,13 @@ export const ScreenStaffList = () => {
           </tr>
           `
         )
-      .join('')}
-    `;
-  }, 100);
-  return container[0];
+        .join('')}
+    `
+  }, 100)
+  return container[0]
 }
 
-ScreenStaffList.storyName = 'Staff List';
+ScreenStaffList.storyName = 'Staff List'
 
 ScreenStaffList.parameters = {
   notes: `
@@ -664,5 +683,5 @@ ScreenStaffList.parameters = {
     ${staff_list_html}
     \`\`\`
     ${moreDocumentation}
-  `,
-};
+  `
+}
