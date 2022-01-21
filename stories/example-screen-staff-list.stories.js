@@ -568,12 +568,12 @@ const staff_list_html = `
                 <div class="d-flex justify-content-start flex-wrap">
                   <button type="button" class="btn btn-outline-secondary fs-6 me-3">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
-                      <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-search" />
+                      <use xlink:href="${iconSprite}#tabler-search" />
                     </svg>Apply Search
                   </button>
                   <button type="button" class="btn btn-outline-secondary fs-6">
                     <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
-                      <use xlink:href="static/media/node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg#tabler-adjustments-horizontal" />
+                      <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
                     </svg>More Filters
                   </button>
                 </div>
