@@ -1,24 +1,11 @@
-import { document, setTimeout } from 'global';
+import { setTimeout } from 'global'
 
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import $ from 'jquery'
+window.jQuery = window.$ = $
 
 export default {
-  title: 'Components/Popovers',
-  decorators: [withKnobs],
-};
+  title: 'Components/Popovers'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -27,7 +14,7 @@ For additional documentation, see:
 - Bootstrap Documentation
 - Design System 
 
-`;
+`
 
 let popovers_html = `
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
@@ -44,26 +31,24 @@ Popover on bottom
 
 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
 Popover on left
-</button>`;
+</button>`
 
+export const story1 = () => {
+  const container = $(
+    '<div class="text-center" style="margin-top:100px"></div>'
+  ).append(popovers_html)
 
+  setTimeout(function () {
+    $(function () {
+      container.find('[data-bs-toggle="popover"]').popover()
+    })
+  }, 0)
 
-export const story1 = () => { 
+  return container[0]
+}
+story1.storyName = 'Popovers'
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(popovers_html);
-  
-  setTimeout(function() {
-    $(function() {
-      container.find('[data-bs-toggle="popover"]').popover();
-    });
-  },0)
-  
-  return container[0]; 
-    
-};
-story1.storyName = 'Popovers';
-
-story1.parameters = { 
+story1.parameters = {
   notes: `
 
     #Declarative Popovers
@@ -84,8 +69,4 @@ story1.parameters = {
     ${moreDocumentation}
     
   `
-};
-
-
-
-
+}

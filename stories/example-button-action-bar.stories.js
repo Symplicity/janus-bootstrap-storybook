@@ -1,12 +1,12 @@
-import buttonNotes from './button.notes.md';
-import buttonIconNotes from './button.icon.notes.md';
-import buttonOutlineNotes from './button.outline.notes.md';
+import buttonNotes from './button.notes.md'
+// import buttonIconNotes from './button.icon.notes.md';
+// import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Buttons/Action Bar',
-};
+  title: 'Examples/Buttons/Action Bar'
+}
 
 const actionHTML = `
   <div class="container">
@@ -54,23 +54,21 @@ const actionHTML = `
       </ul>
     </div>
   </div>
-`;
+`
 
 export const Action = () => {
-  const container = $('<div class="text-center pt-3"></div>').append(
-    actionHTML
-  );
+  const container = $('<div class="text-center pt-3"></div>').append(actionHTML)
 
   setTimeout(function () {
     $(function () {
-      container.find('[data-bs-toggle="dropdown"]').dropdown('show');
-    });
-  }, 0);
+      container.find('[data-bs-toggle="dropdown"]').dropdown('show')
+    })
+  }, 0)
 
-  return container[0];
-};
+  return container[0]
+}
 
-Action.storyName = 'Actions';
+Action.storyName = 'Actions'
 
 Action.parameters = {
   notes: `
@@ -88,5 +86,5 @@ Action.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}

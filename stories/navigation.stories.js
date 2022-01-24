@@ -1,23 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Navigation',
-  decorators: [withKnobs],
-};
+  title: 'Components/Navigation'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -26,7 +11,7 @@ For additional documentation, see:
 - Bootstrap Documentation
 - Design System 
 
-`;
+`
 
 const desktop_navigation_html = `
   <div class="bg-light rounded m-3 mb-0 p-3 d-lg-none text-center">
@@ -190,11 +175,11 @@ const desktop_navigation_html = `
       </nav>
     </header>
   </div>
-`;
+`
 
-export const DesktopNavigation = () => `${desktop_navigation_html}`;
+export const DesktopNavigation = () => `${desktop_navigation_html}`
 
-DesktopNavigation.storyName = 'Desktop';
+DesktopNavigation.storyName = 'Desktop'
 
 DesktopNavigation.parameters = {
   notes: `
@@ -205,8 +190,8 @@ DesktopNavigation.parameters = {
     ${desktop_navigation_html}
     \`\`\`
     
-  `,
-};
+  `
+}
 
 const mobile_navigation_html = `
   <div class="bg-light rounded m-3 mb-0 p-3 d-none d-lg-block text-center">
@@ -383,11 +368,11 @@ const mobile_navigation_html = `
       </div>
     </header>
   </div>
-`;
+`
 
-export const MobileNavigation = () => `${mobile_navigation_html}`;
+export const MobileNavigation = () => `${mobile_navigation_html}`
 
-MobileNavigation.storyName = 'Mobile';
+MobileNavigation.storyName = 'Mobile'
 
 MobileNavigation.parameters = {
   notes: `
@@ -398,5 +383,5 @@ MobileNavigation.parameters = {
     ${mobile_navigation_html}
     \`\`\`
     
-  `,
-};
+  `
+}

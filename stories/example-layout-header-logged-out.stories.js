@@ -1,15 +1,8 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
-import { withKnobs } from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Layout',
-  decorators: [withKnobs],
-};
-
+  title: 'Examples/Layout'
+}
 
 const loggedSystemHeaderLG = `
   <div class="m-0 d-none d-lg-block">
@@ -246,13 +239,13 @@ const loggedSystemHeaderSM = `
 const logged_system_header_html = `
   ${loggedSystemHeaderLG}
   ${loggedSystemHeaderSM}
-`;
-
+`
 
 export const LayoutLoggedHeader = () => {
   return logged_system_header_html
-};
-LayoutLoggedHeader.storyName = 'Header Logged';
+}
+
+LayoutLoggedHeader.storyName = 'Header Logged Out'
 
 LayoutLoggedHeader.parameters = {
   notes: `
@@ -265,5 +258,5 @@ LayoutLoggedHeader.parameters = {
     ${logged_system_header_html}
     \`\`\`
     
-  `,
-};
+  `
+}

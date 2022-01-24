@@ -1,14 +1,11 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
-import { withKnobs } from '@storybook/addon-knobs';
+import $ from 'jquery'
+window.jQuery = window.$ = $
 
 export default {
-  title: 'Examples/Layout',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Layout'
+}
 
 const sidebarHtml = `
   <nav class="main-nav navbar-collapse mt-0 fs-5 show" id="navbarNavLG">
@@ -51,7 +48,7 @@ const sidebarHtml = `
       </li>
       <li class="nav-item">
         <div class="list-group">
-          <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
+          <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" href="#">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
                 <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -120,7 +117,7 @@ const sidebarHtml = `
       </li>
       <li class="nav-item">
         <div class="list-group">
-          <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu3" data-bs-toggle="collapse" data-bs-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation" href="#">
+          <a class="d-flex nav-link text-dark ms-4 me-4 mt-10 mb-10 h-auto text-decoration-none" type="button" id="dropdownMenu3" data-bs-toggle="dropdown" data-bs-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation" href="#">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
                 <use xlink:href="${iconSprite}#tabler-calendar" />
@@ -331,9 +328,9 @@ const sidebarHtml = `
 
 export const LayoutSidebar = () => {
   return sidebarHtml
-};
+}
 
-LayoutSidebar.storyName = 'Sidebar';
+LayoutSidebar.storyName = 'Sidebar'
 
 LayoutSidebar.parameters = {
   notes: `
@@ -346,5 +343,5 @@ LayoutSidebar.parameters = {
     ${sidebarHtml}
     \`\`\`
     
-  `,
-};
+  `
+}

@@ -1,26 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Tabs',
-  decorators: [withKnobs],
-};
+  title: 'Components/Tabs'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -29,7 +11,7 @@ For additional documentation, see:
 - Bootstrap Documentation
 - Design System 
 
-`;
+`
 
 let tabsSingleRowHTML = `
 <ul class="nav nav-tabs bg-white rounded-top border border-light ps-7 pe-7">
@@ -64,12 +46,12 @@ let tabsSingleRowHTML = `
     </a>
   </li>
 </ul>
-`;
+`
 
 export const TabsSingleRow = () =>
-  `<div class="text-center" style="margin-top:100px">${tabsSingleRowHTML}</div>`;
+  `<div class="text-center" style="margin-top:100px">${tabsSingleRowHTML}</div>`
 
-TabsSingleRow.storyName = 'Single Row';
+TabsSingleRow.storyName = 'Single Row'
 
 TabsSingleRow.parameters = {
   notes: `
@@ -84,8 +66,8 @@ TabsSingleRow.parameters = {
     
     ${moreDocumentation}
     
-  `,
-};
+  `
+}
 
 let tabsDoubleRowHTML = `
 <ul class="nav nav-tabs bg-white rounded-top border border-light ps-7 pe-7">
@@ -138,12 +120,12 @@ let tabsDoubleRowHTML = `
     </a>
   </li>
 </ul>
-`;
+`
 
 export const TabsDoubleRow = () =>
-  `<div class="text-center" style="margin-top:100px">${tabsDoubleRowHTML}</div>`;
+  `<div class="text-center" style="margin-top:100px">${tabsDoubleRowHTML}</div>`
 
-TabsDoubleRow.storyName = 'Double Row';
+TabsDoubleRow.storyName = 'Double Row'
 
 TabsDoubleRow.parameters = {
   notes: `
@@ -158,8 +140,8 @@ TabsDoubleRow.parameters = {
     
     ${moreDocumentation}
     
-  `,
-};
+  `
+}
 
 let tabsWithControlsSingleRowHTML = `
   <div class="bg-white rounded-top border border-light d-flex">
@@ -208,12 +190,12 @@ let tabsWithControlsSingleRowHTML = `
       </svg>
     </button>
   </div>
-`;
+`
 
 export const TabsWithControlsSingleRow = () =>
-  `<div class="text-center" style="margin-top:100px">${tabsWithControlsSingleRowHTML}</div>`;
+  `<div class="text-center" style="margin-top:100px">${tabsWithControlsSingleRowHTML}</div>`
 
-TabsWithControlsSingleRow.storyName = 'SRow with Controls';
+TabsWithControlsSingleRow.storyName = 'SRow with Controls'
 
 TabsWithControlsSingleRow.parameters = {
   notes: `
@@ -228,8 +210,8 @@ TabsWithControlsSingleRow.parameters = {
     
     ${moreDocumentation}
     
-  `,
-};
+  `
+}
 
 let tabsWithControlsDoubleRowHTML = `
   <div class="bg-white rounded-top border border-light d-flex">
@@ -313,12 +295,12 @@ let tabsWithControlsDoubleRowHTML = `
     </button-->
     <div class="ps-3 pe-3"></div>
   </div>
-`;
+`
 
 export const TabsWithControlsDoubleRow = () =>
-  `<div class="text-center" style="margin-top:100px">${tabsWithControlsDoubleRowHTML}</div>`;
+  `<div class="text-center" style="margin-top:100px">${tabsWithControlsDoubleRowHTML}</div>`
 
-TabsWithControlsDoubleRow.storyName = 'DRow with Controls';
+TabsWithControlsDoubleRow.storyName = 'DRow with Controls'
 
 TabsWithControlsDoubleRow.parameters = {
   notes: `
@@ -333,5 +315,5 @@ TabsWithControlsDoubleRow.parameters = {
     
     ${moreDocumentation}
     
-  `,
-};
+  `
+}

@@ -1,23 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Headers',
-  decorators: [withKnobs],
-};
+  title: 'Components/Headers'
+}
 
 const job_profile_header = `
   <div class="profile-header">
@@ -65,7 +52,7 @@ const job_profile_header = `
       </div>
     </div>
   </div>
-`;
+`
 
 export const JobProfileHeader = () => {
   const line_clamp = {
@@ -73,41 +60,41 @@ export const JobProfileHeader = () => {
     '2 lines': 'line-clamp-2',
     '3 lines': 'line-clamp-3',
     '4 lines': 'line-clamp-4',
-    '5 lines': 'line-clamp-5',
-  };
+    '5 lines': 'line-clamp-5'
+  }
 
   const job_profile_header_heading_text = text(
     'Heading Text',
     'Full-Time, Internship'
-  );
+  )
 
   const job_profile_header_title_text = text(
     'Title Text',
     'Senior Software Engineer - 2201989'
-  );
+  )
 
   const job_profile_header_additional_info_text = text(
     'Additional Info',
     'Posted on Oct 14, 2020'
-  );
+  )
 
   const job_profile_header_heading_line_clamp = select(
     'Heading Line Clamp',
     line_clamp,
     'line-clamp-2'
-  );
+  )
 
   const job_profile_header_title_line_clamp = select(
     'Title Line Clamp',
     line_clamp,
     'line-clamp-2'
-  );
+  )
 
   const job_profile_header_additional_info_line_clamp = select(
     'Additional Info Line Clamp',
     line_clamp,
     'line-clamp-5'
-  );
+  )
 
   return `
       <div class="profile-header">
@@ -135,9 +122,9 @@ export const JobProfileHeader = () => {
                 if (job_profile_header_heading_text) {
                   return `
                     <span class="profile-header-title text-uppercase h6"><b>${job_profile_header_heading_text}</b></span>
-                  `;
+                  `
                 } else {
-                  return ``;
+                  return ``
                 }
               })()}
               <span class="h3 text-capitalize mb-1">
@@ -164,10 +151,10 @@ export const JobProfileHeader = () => {
           </div>
         </div>
       </div>
-  `;
-};
+  `
+}
 
-JobProfileHeader.storyName = 'Job Profile';
+JobProfileHeader.storyName = 'Job Profile'
 
 JobProfileHeader.parameters = {
   notes: `
@@ -183,8 +170,8 @@ JobProfileHeader.parameters = {
   ${job_profile_header}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const employer_profile_header = `
   <div class="profile-header">
@@ -223,11 +210,11 @@ const employer_profile_header = `
       </div>
     </div>
   </div>
-`;
+`
 
-export const EmployerProfileHeader = () => `${employer_profile_header}`;
+export const EmployerProfileHeader = () => `${employer_profile_header}`
 
-EmployerProfileHeader.storyName = 'Employer';
+EmployerProfileHeader.storyName = 'Employer'
 
 EmployerProfileHeader.parameters = {
   notes: `
@@ -243,8 +230,8 @@ EmployerProfileHeader.parameters = {
   ${employer_profile_header}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const event_profile_header = `
   <div class="profile-header">
@@ -283,11 +270,11 @@ const event_profile_header = `
       </svg>
     </div>
   </div>
-`;
+`
 
-export const EventProfileHeader = () => `${event_profile_header}`;
+export const EventProfileHeader = () => `${event_profile_header}`
 
-EventProfileHeader.storyName = 'Event';
+EventProfileHeader.storyName = 'Event'
 
 EventProfileHeader.parameters = {
   notes: `
@@ -303,8 +290,8 @@ EventProfileHeader.parameters = {
   ${event_profile_header}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const career_plan_profile_header_html = `
   <div class="profile-header">
@@ -330,12 +317,12 @@ const career_plan_profile_header_html = `
       </div>
     </div>
   </div>
-`;
+`
 
 export const CareerPlanProfileHeader = () =>
-  `${career_plan_profile_header_html}`;
+  `${career_plan_profile_header_html}`
 
-CareerPlanProfileHeader.storyName = 'Career Plan';
+CareerPlanProfileHeader.storyName = 'Career Plan'
 
 CareerPlanProfileHeader.parameters = {
   notes: `
@@ -351,8 +338,8 @@ CareerPlanProfileHeader.parameters = {
   ${career_plan_profile_header_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const connection_profile_header = `
   <div class="profile-header">
@@ -390,11 +377,11 @@ const connection_profile_header = `
       </div>
     </div>
   </div>
-`;
+`
 
-export const ConnectionProfileHeader = () => `${connection_profile_header}`;
+export const ConnectionProfileHeader = () => `${connection_profile_header}`
 
-ConnectionProfileHeader.storyName = 'Connection';
+ConnectionProfileHeader.storyName = 'Connection'
 
 ConnectionProfileHeader.parameters = {
   notes: `
@@ -410,5 +397,5 @@ ConnectionProfileHeader.parameters = {
   ${connection_profile_header}
   \`\`\`
 
-  `,
-};
+  `
+}

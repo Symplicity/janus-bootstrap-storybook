@@ -1,4 +1,4 @@
-import { configure } from '@storybook/html'
+// import { configure } from '@storybook/html'
 import '!style-loader!css-loader!./css-loader.scss'
 import { initializeRTL } from 'storybook-addon-rtl'
 
@@ -18,7 +18,7 @@ Object.keys(janusColors).forEach(function (color) {
   }
 })
 
-export const decorators = []
+// export const decorators = []
 
 const customViewports = {
   viewport1: {

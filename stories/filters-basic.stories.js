@@ -1,24 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-  radios,
-} from '@storybook/addon-knobs';
+import { text, number, radios } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Basic',
-  decorators: [withKnobs],
-};
+  title: 'Components/Filters Basic'
+}
 
 const filter_button_html = `
 <div class="dropdown">
@@ -70,11 +56,11 @@ const filter_button_html = `
       </a>
     </div>
   </div>
-</div>`;
+</div>`
 
 export const FilterButton = () => {
-  const filter_pr = text('Dropdown Position Type - Regular', 'Position Type A');
-  const filter_ps = text('Dropdown Position Type - Small', 'Position Type A');
+  const filter_pr = text('Dropdown Position Type - Regular', 'Position Type A')
+  const filter_ps = text('Dropdown Position Type - Small', 'Position Type A')
 
   return `
     <div class="dropdown">
@@ -126,10 +112,10 @@ export const FilterButton = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-FilterButton.storyName = 'Button with Dropdown';
+FilterButton.storyName = 'Button with Dropdown'
 
 FilterButton.parameters = {
   notes: `
@@ -140,8 +126,8 @@ FilterButton.parameters = {
   ${filter_button_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const all_filters_button_html = `
 <h3>All Filters Button</h3>
@@ -177,11 +163,11 @@ const all_filters_button_html = `
     </div>
   </div>
 </div>
-</div>`;
+</div>`
 
-export const AllFiltersButton = () => `<div>${all_filters_button_html}</div>`;
+export const AllFiltersButton = () => `<div>${all_filters_button_html}</div>`
 
-AllFiltersButton.storyName = 'All Filters with Modal';
+AllFiltersButton.storyName = 'All Filters with Modal'
 
 AllFiltersButton.parameters = {
   notes: `
@@ -192,8 +178,8 @@ AllFiltersButton.parameters = {
   ${all_filters_button_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const toggle_filter_button_html = `
 <h3>Toggle Filter Button (Checkbox)</h3>
@@ -204,22 +190,22 @@ const toggle_filter_button_html = `
 <button class="btn btn-outline-secondary filter-toggle rounded-pill">Remote</button>
 <br><br>
 <button class="btn btn-outline-secondary filter-toggle rounded-pill active">Remote</button>
-`;
+`
 
 export const ToggleFilterButton = () => {
-  const checkbox_label = 'Checked';
+  const checkbox_label = 'Checked'
   const checkbox_options = {
     Checked: 'checked',
-    Unchecked: '',
-  };
-  const checkbox_checked = radios(checkbox_label, checkbox_options);
+    Unchecked: ''
+  }
+  const checkbox_checked = radios(checkbox_label, checkbox_options)
 
-  const button_label = 'Active';
+  const button_label = 'Active'
   const button_options = {
     Active: 'active',
-    Inactive: '',
-  };
-  const button_active = radios(button_label, button_options);
+    Inactive: ''
+  }
+  const button_active = radios(button_label, button_options)
 
   return `
     <div>
@@ -230,10 +216,10 @@ export const ToggleFilterButton = () => {
       <h3>Toggle Filter Button (Button)</h3>
       <button class="btn btn-outline-secondary filter-toggle rounded-pill ${button_active}">Remote</button>
     </div>
-  `;
-};
+  `
+}
 
-ToggleFilterButton.storyName = 'Toggle';
+ToggleFilterButton.storyName = 'Toggle'
 
 ToggleFilterButton.parameters = {
   notes: `
@@ -244,8 +230,8 @@ ToggleFilterButton.parameters = {
   ${toggle_filter_button_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const toggle_filter_with_ellipsis_button_html = `
 <h3>Toggle Filter with Ellipsis Button (Checkbox)</h3>
@@ -256,33 +242,33 @@ const toggle_filter_with_ellipsis_button_html = `
 <button class="btn btn-outline-secondary filter-toggle rounded-pill text-truncate">EL Internship Fast Track (no results found)</button>
 <br><br>
 <button class="btn btn-outline-secondary filter-toggle rounded-pill active">Remote</button>
-`;
+`
 
 export const ToggleFilterWithEllipsisButton = () => {
-  const checkbox_label = 'Checked';
+  const checkbox_label = 'Checked'
   const checkbox_options = {
     Checked: 'checked',
-    Unchecked: '',
-  };
-  const checkbox_checked = radios(checkbox_label, checkbox_options);
+    Unchecked: ''
+  }
+  const checkbox_checked = radios(checkbox_label, checkbox_options)
 
-  const button_label = 'Active';
+  const button_label = 'Active'
   const button_options = {
     Active: 'active',
-    Inactive: '',
-  };
-  const button_active = radios(button_label, button_options);
+    Inactive: ''
+  }
+  const button_active = radios(button_label, button_options)
 
-  const label = 'max-width (px):';
-  const defaultValue = 300;
+  const label = 'max-width (px):'
+  const defaultValue = 300
   const options = {
     range: true,
     min: 50,
     max: 400,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const max_width_active = number(label, defaultValue, options);
+  const max_width_active = number(label, defaultValue, options)
 
   return `
     <div>
@@ -293,10 +279,10 @@ export const ToggleFilterWithEllipsisButton = () => {
       <h3>Toggle Filter Button with Ellipsis (Button)</h3>
       <button class="btn btn-outline-secondary filter-toggle rounded-pill text-truncate ${button_active}" style="max-width: ${max_width_active}px;">EL Internship Fast Track (no results found)</button>
     </div>
-  `;
-};
+  `
+}
 
-ToggleFilterWithEllipsisButton.storyName = 'Toggle with Ellipsis';
+ToggleFilterWithEllipsisButton.storyName = 'Toggle with Ellipsis'
 
 ToggleFilterWithEllipsisButton.parameters = {
   notes: `
@@ -307,5 +293,5 @@ ToggleFilterWithEllipsisButton.parameters = {
   ${toggle_filter_with_ellipsis_button_html}
   \`\`\`
 
-  `,
-};
+  `
+}

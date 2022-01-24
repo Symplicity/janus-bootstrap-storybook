@@ -1,6 +1,6 @@
 import buttonNotes from './button.notes.md';
-import buttonIconNotes from './button.icon.notes.md';
-import buttonOutlineNotes from './button.outline.notes.md';
+// import buttonIconNotes from './button.icon.notes.md';
+// import buttonOutlineNotes from './button.outline.notes.md';
 
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
 

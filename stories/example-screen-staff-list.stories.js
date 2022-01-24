@@ -1,13 +1,9 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
-import $ from 'jquery'
-window.jQuery = window.$ = $
-import { LayoutLoggedHeader } from './example-layout-header-logged.stories'
 
-import { withKnobs } from '@storybook/addon-knobs'
+import { LayoutLoggedHeader } from './example-layout-header-logged-out.stories'
 
 export default {
-  title: 'Examples/Screens/Staff List',
-  decorators: [withKnobs]
+  title: 'Examples/Screens/Staff List'
 }
 
 // TODO change docs

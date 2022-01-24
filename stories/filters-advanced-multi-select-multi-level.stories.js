@@ -1,24 +1,12 @@
-import { document, setTimeout } from 'global';
+import { document, setTimeout } from 'global'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-  radios,
-} from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Multi-Select  Multi-Level',
-  decorators: [withKnobs],
-};
+  title: 'Components/Filters Advanced/Multi-Select  Multi-Level'
+}
 
 const multi_select_multi_level_html = `
     <div class="dropdown">
@@ -98,54 +86,51 @@ const multi_select_multi_level_html = `
         </div>
       </div>
     </div>
-    `;
+    `
 
 export const MultiSelectMultiLevel = () => {
-  const drilldown_parent = text('Major', 'Engineering');
-  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
-  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
-  const drilldown_option_3 = text(
-    'Select Option 3',
-    'Jobs Matching My Profile'
-  );
+  const drilldown_parent = text('Major', 'Engineering')
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews')
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings')
+  const drilldown_option_3 = text('Select Option 3', 'Jobs Matching My Profile')
 
-  const label = 'Number of items';
-  const defaultValue = 15;
+  const label = 'Number of items'
+  const defaultValue = 15
   const options = {
     range: true,
     min: 0,
     max: 100,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const value = number(label, defaultValue, options);
+  const value = number(label, defaultValue, options)
 
-  const mwLabel = 'max-width (px):';
-  const mwDefaultValue = 320;
+  const mwLabel = 'max-width (px):'
+  const mwDefaultValue = 320
   const mwOptions = {
     range: true,
     min: 100,
     max: 600,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions)
 
-  const filter_chip_item = text('Filter Chip Item', 'Engineering');
+  const filter_chip_item = text('Filter Chip Item', 'Engineering')
 
-  const fcLabel = '# of Filter Chips';
-  const fcDefaultValue = 6;
+  const fcLabel = '# of Filter Chips'
+  const fcDefaultValue = 6
   const fcOptions = {
     range: true,
     min: 0,
     max: 10,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const filter_chip_value = number(fcLabel, fcDefaultValue, fcOptions);
+  const filter_chip_value = number(fcLabel, fcDefaultValue, fcOptions)
 
   setTimeout(function () {
-    const createListItems = document.querySelector('.list-unstyled-repeat');
+    const createListItems = document.querySelector('.list-unstyled-repeat')
     createListItems.innerHTML = `
         ${Array(value)
           .fill()
@@ -162,11 +147,11 @@ export const MultiSelectMultiLevel = () => {
               </li>`
           )
           .join('')}
-    `;
-  }, 0);
+    `
+  }, 0)
 
   setTimeout(function () {
-    const createListItems = document.querySelector('.list-inline');
+    const createListItems = document.querySelector('.list-inline')
     createListItems.innerHTML = `
         ${Array(filter_chip_value)
           .fill()
@@ -180,8 +165,8 @@ export const MultiSelectMultiLevel = () => {
               </li>`
           )
           .join('')}
-    `;
-  }, 0);
+    `
+  }, 0)
 
   return `
     <div class="dropdown">
@@ -256,10 +241,10 @@ export const MultiSelectMultiLevel = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-MultiSelectMultiLevel.storyName = 'Multi-Select, Multi-Level';
+MultiSelectMultiLevel.storyName = 'Multi-Select, Multi-Level'
 
 MultiSelectMultiLevel.parameters = {
   notes: `
@@ -270,8 +255,8 @@ MultiSelectMultiLevel.parameters = {
   ${multi_select_multi_level_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const multi_select_multi_level_highlight_html = `
     <div class="dropdown">
@@ -320,19 +305,19 @@ const multi_select_multi_level_highlight_html = `
         </div>
       </div>
     </div>
-    `;
+    `
 
 export const MultiSelectMultiLevelHighlight = () => {
-  const mwLabel = 'max-width (px):';
-  const mwDefaultValue = 320;
+  const mwLabel = 'max-width (px):'
+  const mwDefaultValue = 320
   const mwOptions = {
     range: true,
     min: 100,
     max: 600,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions)
 
   return `
     <div class="dropdown">
@@ -400,11 +385,10 @@ export const MultiSelectMultiLevelHighlight = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-MultiSelectMultiLevelHighlight.storyName =
-  'Multi-Select, Multi-Level Highlight';
+MultiSelectMultiLevelHighlight.storyName = 'Multi-Select, Multi-Level Highlight'
 
 MultiSelectMultiLevelHighlight.parameters = {
   notes: `
@@ -415,8 +399,8 @@ MultiSelectMultiLevelHighlight.parameters = {
   ${multi_select_multi_level_highlight_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const multi_select_multi_level_empty_html = `
     <div class="dropdown">
@@ -447,19 +431,19 @@ const multi_select_multi_level_empty_html = `
         </div>
       </div>
     </div>
-    `;
+    `
 
 export const MultiSelectMultiLevelEmpty = () => {
-  const mwLabel = 'max-width (px):';
-  const mwDefaultValue = 320;
+  const mwLabel = 'max-width (px):'
+  const mwDefaultValue = 320
   const mwOptions = {
     range: true,
     min: 100,
     max: 600,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions);
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions)
 
   return `
     <div class="dropdown">
@@ -490,10 +474,10 @@ export const MultiSelectMultiLevelEmpty = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-MultiSelectMultiLevelEmpty.storyName = 'Multi-Select, Multi-Level Empty';
+MultiSelectMultiLevelEmpty.storyName = 'Multi-Select, Multi-Level Empty'
 
 MultiSelectMultiLevelEmpty.parameters = {
   notes: `
@@ -504,5 +488,5 @@ MultiSelectMultiLevelEmpty.parameters = {
   ${multi_select_multi_level_empty_html}
   \`\`\`
 
-  `,
-};
+  `
+}

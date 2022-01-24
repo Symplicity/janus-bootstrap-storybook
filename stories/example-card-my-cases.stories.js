@@ -1,30 +1,17 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Examples/Cards/My Cases',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Cards/My Cases'
+}
 
 const card_basic_html = `
    <div class="card">
       <h3 class="card-header text-uppercase bg-white">
         <div class="card-header-icon d-inline-block">
           <span class="bg-accent-red d-block">
-            <svg width="1rem" height="1rem">
+            <svg width="1.5rem" height="1.5rem" class="m-1">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
             </svg>
           </span>
@@ -138,7 +125,7 @@ const card_basic_html = `
       </div>
       <a href="#" class="mt-2 d-block">View all</a>
     </div>
-  </div>`;
+  </div>`
 
 export const CardBasic = () => {
   const icon_bg_color_options = {
@@ -147,23 +134,23 @@ export const CardBasic = () => {
     'Accent Indigo': 'bg-accent-indigo',
     'Accent Purple': 'bg-accent-purple',
     'Accent Blue': 'bg-accent-blue',
-    'Accent Red': 'bg-accent-red',
-  };
+    'Accent Red': 'bg-accent-red'
+  }
 
-  const card_title_text = text('Title', 'My Cases');
-  const card_icon_class = text('Icon Class', 'tabler-folders');
+  const card_title_text = text('Title', 'My Cases')
+  const card_icon_class = text('Icon Class', 'tabler-folders')
   const card_icon_bg_color = select(
     'Icon Background Color',
     icon_bg_color_options,
     'bg-accent-red'
-  );
+  )
 
   return `
     <div class="card">
       <h3 class="card-header text-uppercase bg-white">
         <div class="card-header-icon d-inline-block">
           <span class="${card_icon_bg_color} d-block">
-            <svg width="1rem" height="1rem">
+            <svg width="1.5rem" height="1.5rem" class="m-1">
               <use xlink:href="${iconSprite}#${card_icon_class}" />
             </svg>
           </span>
@@ -276,10 +263,10 @@ export const CardBasic = () => {
         </div>
         <a href="#" class="mt-2 d-block">View all</a>
       </div>
-    </div>`;
-};
+    </div>`
+}
 
-CardBasic.storyName = 'My Cases';
+CardBasic.storyName = 'My Cases'
 
 CardBasic.parameters = {
   notes: `
@@ -290,5 +277,5 @@ CardBasic.parameters = {
   ${card_basic_html}
   \`\`\`
   
-  `,
-};
+  `
+}

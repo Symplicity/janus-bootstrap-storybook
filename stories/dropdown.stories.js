@@ -1,23 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Dropdown',
-  decorators: [withKnobs],
-};
+  title: 'Components/Dropdown'
+}
 
 const dropdown_primary_html = `
 <div>
@@ -155,15 +142,15 @@ const dropdown_primary_html = `
       </li>
     </ul>
   </div>
-</div>`;
+</div>`
 
 export const DropdownPrimary = () => {
   const dropdown_pl = text(
     'Dropdown Primary - Large',
     'Chad Hampton Is A Very Loooooooooong Name'
-  );
-  const dropdown_pr = text('Dropdown Primary - Regular', 'Chad Hampton');
-  const dropdown_ps = text('Dropdown Primary - Small', 'Chad Hampton');
+  )
+  const dropdown_pr = text('Dropdown Primary - Regular', 'Chad Hampton')
+  const dropdown_ps = text('Dropdown Primary - Small', 'Chad Hampton')
 
   return `
     <div>
@@ -302,10 +289,10 @@ export const DropdownPrimary = () => {
         </ul>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-DropdownPrimary.storyName = 'Primary';
+DropdownPrimary.storyName = 'Primary'
 
 DropdownPrimary.parameters = {
   notes: `
@@ -316,8 +303,8 @@ DropdownPrimary.parameters = {
   ${dropdown_primary_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const dropdown_outline_html = `
 <div>
@@ -455,15 +442,15 @@ const dropdown_outline_html = `
       </li>
     </ul>
   </div>
-</div>`;
+</div>`
 
 export const DropdownOutline = () => {
   const dropdown_ol = text(
     'Dropdown Outline - Large',
     'Chad Hampton Is A Very Loooooooooong Name'
-  );
-  const dropdown_or = text('Dropdown Outline - Regular', 'Chad Hampton');
-  const dropdown_os = text('Dropdown Outline - Small', 'Chad Hampton');
+  )
+  const dropdown_or = text('Dropdown Outline - Regular', 'Chad Hampton')
+  const dropdown_os = text('Dropdown Outline - Small', 'Chad Hampton')
 
   return `
     <div>
@@ -602,9 +589,9 @@ export const DropdownOutline = () => {
         </ul>
       </div>
     </div>
-    `;
-};
-DropdownOutline.storyName = 'Outline';
+    `
+}
+DropdownOutline.storyName = 'Outline'
 
 DropdownOutline.parameters = {
   notes: `
@@ -615,5 +602,5 @@ DropdownOutline.parameters = {
   ${dropdown_outline_html}
   \`\`\`
 
-  `,
-};
+  `
+}

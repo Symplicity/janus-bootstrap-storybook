@@ -1,24 +1,12 @@
-import { document, setTimeout } from 'global';
+import { document, setTimeout } from 'global'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-  radios,
-} from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Multi-Select  Single-Level',
-  decorators: [withKnobs],
-};
+  title: 'Components/Filters Advanced/Multi-Select  Single-Level'
+}
 
 const multi_select_single_level_html = `
     <div class="dropdown">
@@ -65,29 +53,26 @@ const multi_select_single_level_html = `
         </div>
       </div>
     </div>
-    `;
+    `
 
 export const MultiSelectSingleLevel = () => {
-  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
-  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
-  const drilldown_option_3 = text(
-    'Select Option 3',
-    'Jobs Matching My Profile'
-  );
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews')
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings')
+  const drilldown_option_3 = text('Select Option 3', 'Jobs Matching My Profile')
 
-  const label = 'Number of items';
-  const defaultValue = 15;
+  const label = 'Number of items'
+  const defaultValue = 15
   const options = {
     range: true,
     min: 0,
     max: 100,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const value = number(label, defaultValue, options);
+  const value = number(label, defaultValue, options)
 
   setTimeout(function () {
-    const createListItems = document.querySelector('.list-unstyled-repeat');
+    const createListItems = document.querySelector('.list-unstyled-repeat')
     createListItems.innerHTML = `
         ${Array(value)
           .fill()
@@ -104,8 +89,8 @@ export const MultiSelectSingleLevel = () => {
               </li>`
           )
           .join('')}
-    `;
-  }, 0);
+    `
+  }, 0)
 
   return `
     <div class="dropdown">
@@ -152,10 +137,10 @@ export const MultiSelectSingleLevel = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-MultiSelectSingleLevel.storyName = 'Multi-Select, Single-Level';
+MultiSelectSingleLevel.storyName = 'Multi-Select, Single-Level'
 
 MultiSelectSingleLevel.parameters = {
   notes: `
@@ -166,8 +151,8 @@ MultiSelectSingleLevel.parameters = {
   ${multi_select_single_level_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const multi_select_single_level_with_search_html = `
     <div class="dropdown">
@@ -240,29 +225,26 @@ const multi_select_single_level_with_search_html = `
           </div>
       </div>
     </div>
-    `;
+    `
 
 export const MultiSelectSingleLevelWithSearch = () => {
-  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
-  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
-  const drilldown_option_3 = text(
-    'Select Option 3',
-    'Jobs Matching My Profile'
-  );
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews')
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings')
+  const drilldown_option_3 = text('Select Option 3', 'Jobs Matching My Profile')
 
-  const label = 'Number of items';
-  const defaultValue = 15;
+  const label = 'Number of items'
+  const defaultValue = 15
   const options = {
     range: true,
     min: 0,
     max: 100,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const value = number(label, defaultValue, options);
+  const value = number(label, defaultValue, options)
 
   setTimeout(function () {
-    const createListItems = document.querySelector('.list-unstyled-repeat');
+    const createListItems = document.querySelector('.list-unstyled-repeat')
     createListItems.innerHTML = `
         ${Array(value)
           .fill()
@@ -279,8 +261,8 @@ export const MultiSelectSingleLevelWithSearch = () => {
               </li>`
           )
           .join('')}
-    `;
-  }, 0);
+    `
+  }, 0)
 
   return `
     <div class="dropdown">
@@ -347,11 +329,11 @@ export const MultiSelectSingleLevelWithSearch = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
 MultiSelectSingleLevelWithSearch.storyName =
-  'Multi-Select, Single-Level with Search';
+  'Multi-Select, Single-Level with Search'
 
 MultiSelectSingleLevelWithSearch.parameters = {
   notes: `
@@ -362,5 +344,5 @@ MultiSelectSingleLevelWithSearch.parameters = {
   ${multi_select_single_level_with_search_html}
   \`\`\`
 
-  `,
-};
+  `
+}

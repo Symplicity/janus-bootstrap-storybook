@@ -1,23 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Cards',
-  decorators: [withKnobs],
-};
+  title: 'Components/Cards'
+}
 
 const card_homepage_html = `
     <div class="card">
@@ -82,7 +69,7 @@ const card_homepage_html = `
         </div>
       </div>
     </div>
-`;
+`
 
 export const CardHomepage = () => {
   const icon_bg_color_options = {
@@ -91,17 +78,17 @@ export const CardHomepage = () => {
     'Accent Indigo': 'bg-accent-indigo',
     'Accent Purple': 'bg-accent-purple',
     'Accent Blue': 'bg-accent-blue',
-    'Accent Red': 'bg-accent-red',
-  };
+    'Accent Red': 'bg-accent-red'
+  }
 
-  const card_title_text = text('Title', 'Quick Actions');
-  const card_icon_class = text('Icon Class', 'tabler-link');
-  const card_item_icon_class = text('Item Icon Class', 'tabler-search');
+  const card_title_text = text('Title', 'Quick Actions')
+  const card_icon_class = text('Icon Class', 'tabler-link')
+  const card_item_icon_class = text('Item Icon Class', 'tabler-search')
   const card_icon_bg_color = select(
     'Icon Background Color',
     icon_bg_color_options,
     'bg-accent-purple'
-  );
+  )
 
   return `
     <div class="card">
@@ -166,10 +153,10 @@ export const CardHomepage = () => {
         </div>
       </div>
     </div>
-`;
-};
+`
+}
 
-CardHomepage.storyName = 'Homepage';
+CardHomepage.storyName = 'Homepage'
 
 CardHomepage.parameters = {
   notes: `
@@ -180,8 +167,8 @@ CardHomepage.parameters = {
   ${card_homepage_html}
   \`\`\`
   
-  `,
-};
+  `
+}
 
 const card_empty_state_with_icons_html = `
   <div class="card">
@@ -206,12 +193,12 @@ const card_empty_state_with_icons_html = `
       <span class="display-7">You're all caught up.</span>
     </div>
   </div>
-`;
+`
 
 export const CardEmptyStateWithIcons = () =>
-  `${card_empty_state_with_icons_html}`;
+  `${card_empty_state_with_icons_html}`
 
-CardEmptyStateWithIcons.storyName = 'Empty State / Icons';
+CardEmptyStateWithIcons.storyName = 'Empty State / Icons'
 
 CardEmptyStateWithIcons.parameters = {
   notes: `
@@ -222,8 +209,8 @@ CardEmptyStateWithIcons.parameters = {
   ${card_empty_state_with_icons_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const card_empty_state_no_icons_html = `
   <div class="card">
@@ -236,11 +223,11 @@ const card_empty_state_no_icons_html = `
       <span class="display-7">You're all caught up.</span>
     </div>
   </div>
-`;
+`
 
-export const CardEmptyStateNoIcons = () => `${card_empty_state_no_icons_html}`;
+export const CardEmptyStateNoIcons = () => `${card_empty_state_no_icons_html}`
 
-CardEmptyStateNoIcons.storyName = 'Empty State / No Icons';
+CardEmptyStateNoIcons.storyName = 'Empty State / No Icons'
 
 CardEmptyStateNoIcons.parameters = {
   notes: `
@@ -251,8 +238,8 @@ CardEmptyStateNoIcons.parameters = {
   ${card_empty_state_with_icons_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const card_sidebar = `
   <div class="sidebar">
@@ -292,11 +279,11 @@ const card_sidebar = `
       </div>
     </div>
   </div>
-`;
+`
 
-export const CardSidebar = () => `${card_sidebar}`;
+export const CardSidebar = () => `${card_sidebar}`
 
-CardSidebar.storyName = 'Sidebar';
+CardSidebar.storyName = 'Sidebar'
 
 CardSidebar.parameters = {
   notes: `
@@ -311,8 +298,8 @@ CardSidebar.parameters = {
   ${card_sidebar}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const card_group = `
     <div class="card card-alt">
@@ -347,7 +334,7 @@ const card_group = `
         <a href="#" class="card-link">Text link 2</a>
       </div>
     </div>  
-`;
+`
 
 export const CardGroup = () => {
   const line_clamp = {
@@ -355,19 +342,19 @@ export const CardGroup = () => {
     '2 lines': 'line-clamp-2',
     '3 lines': 'line-clamp-3',
     '4 lines': 'line-clamp-4',
-    '5 lines': 'line-clamp-5',
-  };
+    '5 lines': 'line-clamp-5'
+  }
 
   const card_subheading_text = text(
     'Subheading Text',
     'thrill friends and family with a make it yourself pizza party make it as cool as you can imagine'
-  );
+  )
 
   const card_subheading_line_clamp = select(
     'Subheading Line Clamp',
     line_clamp,
     'line-clamp-2'
-  );
+  )
 
   const card_body_text = text(
     'Body Text',
@@ -376,13 +363,13 @@ export const CardGroup = () => {
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (2) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (3) \
   '
-  );
+  )
 
   const card_body_line_clamp = select(
     'Body Line Clamp',
     line_clamp,
     'line-clamp-5'
-  );
+  )
 
   return `
     <div class="card card-alt">
@@ -402,10 +389,10 @@ export const CardGroup = () => {
         <a href="#" class="card-link">Text link 2</a>
       </div>
     </div>  
-  `;
-};
+  `
+}
 
-CardGroup.storyName = 'Group';
+CardGroup.storyName = 'Group'
 
 CardGroup.parameters = {
   notes: `
@@ -419,8 +406,8 @@ CardGroup.parameters = {
   ${card_group}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const card_group_horizontal = `
     <div class="card" style="max-width: 540px;">
@@ -457,7 +444,7 @@ const card_group_horizontal = `
         </div>
       </div>
     </div>  
-`;
+`
 
 export const CardGroupHorizontal = () => {
   const line_clamp = {
@@ -465,19 +452,19 @@ export const CardGroupHorizontal = () => {
     '2 lines': 'line-clamp-2',
     '3 lines': 'line-clamp-3',
     '4 lines': 'line-clamp-4',
-    '5 lines': 'line-clamp-5',
-  };
+    '5 lines': 'line-clamp-5'
+  }
 
   const card_subheading_text = text(
     'Subheading Text',
     'thrill friends and family with a make it yourself pizza party make it as cool as you can imagine'
-  );
+  )
 
   const card_subheading_line_clamp = select(
     'Subheading Line Clamp',
     line_clamp,
     'line-clamp-2'
-  );
+  )
 
   const card_body_text = text(
     'Body Text',
@@ -486,13 +473,13 @@ export const CardGroupHorizontal = () => {
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (2) \
     No matter how far along you are in your sophistication as an amateur astronomer, there is always one fundamental moment that we all go back to. That is that very first thing to know. (3) \
   '
-  );
+  )
 
   const card_body_line_clamp = select(
     'Body Line Clamp',
     line_clamp,
     'line-clamp-5'
-  );
+  )
 
   return `
     <div class="card" style="max-width: 540px;">
@@ -514,10 +501,10 @@ export const CardGroupHorizontal = () => {
         </div>
       </div>
     </div>  
-  `;
-};
+  `
+}
 
-CardGroupHorizontal.storyName = 'Group Horizontal';
+CardGroupHorizontal.storyName = 'Group Horizontal'
 
 CardGroupHorizontal.parameters = {
   notes: `
@@ -531,5 +518,5 @@ CardGroupHorizontal.parameters = {
   ${card_group_horizontal}
   \`\`\`
 
-  `,
-};
+  `
+}

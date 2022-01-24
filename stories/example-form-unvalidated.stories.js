@@ -1,23 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Forms/Unvalidated Form',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Forms/Unvalidated Form'
+}
 
 const unvalidated_form_html = `
 <div style="max-width: 500px; border: 1px solid #ccc; padding: 20px;  border-radius: 4px;"> 
@@ -147,12 +132,11 @@ const unvalidated_form_html = `
     </div>
   </form>
 </div>
-`;
+`
 
-export const UnvalidatedForm = () =>
-  `<div>${unvalidated_form_html}</div>`;
+export const UnvalidatedForm = () => `<div>${unvalidated_form_html}</div>`
 
-UnvalidatedForm.storyName = 'Unvalidated Form';
+UnvalidatedForm.storyName = 'Unvalidated Form'
 
 UnvalidatedForm.parameters = {
   notes: `
@@ -163,5 +147,5 @@ UnvalidatedForm.parameters = {
   ${unvalidated_form_html}
   \`\`\`
 
-  `,
-};
+  `
+}

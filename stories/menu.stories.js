@@ -1,34 +1,21 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Menus',
-  decorators: [withKnobs],
-};
+  title: 'Components/Menus'
+}
 
 const menu_basic_html = `
 <div class="dropdown-menu show position-relative">
   <a class="dropdown-item" href="#">Action</a>
   <a class="dropdown-item" href="#">Another action</a>
   <a class="dropdown-item" href="#">Something else here here here here here here here</a>
-</div>`;
+</div>`
 
-export const MenuBasic = () => `${menu_basic_html}`;
+export const MenuBasic = () => `${menu_basic_html}`
 
-MenuBasic.storyName = 'Menu Basic';
+MenuBasic.storyName = 'Menu Basic'
 
 MenuBasic.parameters = {
   notes: `
@@ -39,8 +26,8 @@ MenuBasic.parameters = {
   ${menu_basic_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const menu_prefix_icon_html = `
 <div class="dropdown-menu show position-relative">
@@ -104,11 +91,11 @@ const menu_prefix_icon_html = `
       Chad Hampton
     </div>
   </a>
-</div>`;
+</div>`
 
-export const MenuPrefixIcon = () => `${menu_prefix_icon_html}`;
+export const MenuPrefixIcon = () => `${menu_prefix_icon_html}`
 
-MenuPrefixIcon.storyName = 'Menu Prefix Icon';
+MenuPrefixIcon.storyName = 'Menu Prefix Icon'
 
 MenuPrefixIcon.parameters = {
   notes: `
@@ -119,13 +106,13 @@ MenuPrefixIcon.parameters = {
   ${menu_prefix_icon_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 export const MenuSuffixIcon = () => {
-  const item1_text = text('Item 1', 'Chad Hampton');
-  const item2_text = text('Item 2', 'Something Very very very long');
-  const item3_text = text('Item 3', 'Something Short');
+  const item1_text = text('Item 1', 'Chad Hampton')
+  const item2_text = text('Item 2', 'Something Very very very long')
+  const item3_text = text('Item 3', 'Something Short')
 
   return `
   <div class="dropdown-menu show position-relative">
@@ -166,10 +153,10 @@ export const MenuSuffixIcon = () => {
       </div>
     </a>
   </div>
-`;
-};
+`
+}
 
-MenuSuffixIcon.storyName = 'Menu Suffix Icon';
+MenuSuffixIcon.storyName = 'Menu Suffix Icon'
 
 MenuSuffixIcon.parameters = {
   notes: `
@@ -217,8 +204,8 @@ MenuSuffixIcon.parameters = {
   </div>
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const menu_divider_html = `
 <div class="dropdown-menu show position-relative">
@@ -227,11 +214,11 @@ const menu_divider_html = `
   <a class="dropdown-item" href="#">View as Word</a>
   <div class="dropdown-divider"></div>
   <a class="dropdown-item text-danger" href="#">Delete</a>
-</div>`;
+</div>`
 
-export const MenuDivider = () => `${menu_divider_html}`;
+export const MenuDivider = () => `${menu_divider_html}`
 
-MenuDivider.storyName = 'Menu with Divider';
+MenuDivider.storyName = 'Menu with Divider'
 
 MenuDivider.parameters = {
   notes: `
@@ -242,8 +229,8 @@ MenuDivider.parameters = {
   ${menu_divider_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const menu_header_html = `
 <div class="dropdown-menu show position-relative">
@@ -256,11 +243,11 @@ const menu_header_html = `
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
-</div>`;
+</div>`
 
-export const MenuHeader = () => `${menu_header_html}`;
+export const MenuHeader = () => `${menu_header_html}`
 
-MenuHeader.storyName = 'Menu with Header';
+MenuHeader.storyName = 'Menu with Header'
 
 MenuHeader.parameters = {
   notes: `
@@ -271,8 +258,8 @@ MenuHeader.parameters = {
   ${menu_header_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const menu_responsive_html = `
 <div class="dropdown-menu show position-relative">
@@ -285,11 +272,11 @@ const menu_responsive_html = `
   <a class="dropdown-item" href="#">Add to Career Portfolio</a>
   <a class="dropdown-item" href="#">Remove QR Code</a>
   <a class="dropdown-item" href="#">View as Word</a>
-</div>`;
+</div>`
 
-export const MenuResponsive = () => `${menu_responsive_html}`;
+export const MenuResponsive = () => `${menu_responsive_html}`
 
-MenuResponsive.storyName = 'Menu Responsive';
+MenuResponsive.storyName = 'Menu Responsive'
 
 MenuResponsive.parameters = {
   notes: `
@@ -300,5 +287,5 @@ MenuResponsive.parameters = {
   ${menu_responsive_html}
   \`\`\`
 
-  `,
-};
+  `
+}

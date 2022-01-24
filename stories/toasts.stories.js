@@ -4,21 +4,10 @@ import * as bootstrap from 'bootstrap'
 
 window.bootstrap = bootstrap
 
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number
-} from '@storybook/addon-knobs'
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Toasts',
-  decorators: [withKnobs]
+  title: 'Components/Toasts'
 }
 
 const toast_live_html = `

@@ -1,23 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Forms/Validated Form',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Forms/Validated Form'
+}
 
 const validated_form_html = `
 <div style="max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 4px;"> 
@@ -179,12 +164,11 @@ const validated_form_html = `
     </div>
   </form>
 </div>
-`;
+`
 
-export const ValidatedForm = () =>
-  `<div>${validated_form_html}</div>`;
+export const ValidatedForm = () => `<div>${validated_form_html}</div>`
 
-ValidatedForm.storyName = 'Validated Form';
+ValidatedForm.storyName = 'Validated Form'
 
 ValidatedForm.parameters = {
   notes: `
@@ -195,5 +179,5 @@ ValidatedForm.parameters = {
   ${validated_form_html}
   \`\`\`
 
-  `,
-};
+  `
+}

@@ -1,23 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Forms',
-  decorators: [withKnobs],
-};
+  title: 'Components/Forms'
+}
 
 const input_email_html = `
 <form>
@@ -40,11 +25,11 @@ const input_email_html = `
     <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com" aria-describedby="email2HelpBlock">
   </div>
 </form>
-`;
+`
 
-export const InputEmail = () => `<div>${input_email_html}</div>`;
+export const InputEmail = () => `<div>${input_email_html}</div>`
 
-InputEmail.storyName = '[type="email"]';
+InputEmail.storyName = '[type="email"]'
 
 InputEmail.parameters = {
   notes: `
@@ -55,8 +40,8 @@ InputEmail.parameters = {
   ${input_email_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const select_html = `
 <form>
@@ -87,11 +72,11 @@ const select_html = `
     </select>
   </div>
 </form>
-`;
+`
 
-export const Select = () => `<div>${select_html}</div>`;
+export const Select = () => `<div>${select_html}</div>`
 
-Select.storyName = '<select>';
+Select.storyName = '<select>'
 
 Select.parameters = {
   notes: `
@@ -102,8 +87,8 @@ Select.parameters = {
   ${select_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const textarea_html = `
 <form>
@@ -119,11 +104,11 @@ const textarea_html = `
     <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
   </div>
 </form>
-`;
+`
 
-export const Textarea = () => `<div>${textarea_html}</div>`;
+export const Textarea = () => `<div>${textarea_html}</div>`
 
-Textarea.storyName = '<textarea>';
+Textarea.storyName = '<textarea>'
 
 Textarea.parameters = {
   notes: `
@@ -134,8 +119,8 @@ Textarea.parameters = {
   ${textarea_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const input_checkbox_html = `
 <form>
@@ -196,11 +181,11 @@ const input_checkbox_html = `
     </fieldset>
   </div>
 </form>
-`;
+`
 
-export const InputCheckbox = () => `<div>${input_checkbox_html}</div>`;
+export const InputCheckbox = () => `<div>${input_checkbox_html}</div>`
 
-InputCheckbox.storyName = '[type="checkbox"]';
+InputCheckbox.storyName = '[type="checkbox"]'
 
 InputCheckbox.parameters = {
   notes: `
@@ -211,8 +196,8 @@ InputCheckbox.parameters = {
   ${input_checkbox_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const input_radio_html = `
 <form>
@@ -272,11 +257,11 @@ const input_radio_html = `
     </fieldset>
   </div>
 </form>
-`;
+`
 
-export const InputRadio = () => `<div>${input_radio_html}</div>`;
+export const InputRadio = () => `<div>${input_radio_html}</div>`
 
-InputRadio.storyName = '[type="radio"]';
+InputRadio.storyName = '[type="radio"]'
 
 InputRadio.parameters = {
   notes: `
@@ -287,8 +272,8 @@ InputRadio.parameters = {
   ${input_radio_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const input_file_html = `
 <form>
@@ -321,11 +306,11 @@ const input_file_html = `
     </fieldset>
   </div>
 </form>
-`;
+`
 
-export const InputFile = () => `<div>${input_file_html}</div>`;
+export const InputFile = () => `<div>${input_file_html}</div>`
 
-InputFile.storyName = '[type="file"]';
+InputFile.storyName = '[type="file"]'
 
 InputFile.parameters = {
   notes: `
@@ -336,5 +321,5 @@ InputFile.parameters = {
   ${input_file_html}
   \`\`\`
 
-  `,
-};
+  `
+}

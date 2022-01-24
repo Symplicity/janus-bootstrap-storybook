@@ -1,21 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Badges',
-  decorators: [withKnobs],
-};
+  title: 'Components/Badges'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -24,35 +11,26 @@ For additional documentation, see:
 - Bootstrap
 - Design System 
 
-`;
+`
 
-export const Badges = () => { 
-
+export const Badges = () => {
   const badge_options = {
-    Primary: "primary",
-    Secondary: "secondary",
-    Success: "success",
-    Warning: "warning text-dark",
-    Danger: "danger",
-    Info: "info",
-    Light: "light text-dark",
-    Dark: "dark"
-  };
+    Primary: 'primary',
+    Secondary: 'secondary',
+    Success: 'success',
+    Warning: 'warning text-dark',
+    Danger: 'danger',
+    Info: 'info',
+    Light: 'light text-dark',
+    Dark: 'dark'
+  }
 
-  const badge1_text = text("Badge 1 Text", "New");
-  const badge1_level = select(
-      "Badge 1 Level",
-      badge_options,
-      "secondary"
-  );
-  
-  const badge2_text = text("Badge 2 Text", "Default Ghost");
-  const badge2_level = select(
-      "Badge 2 Level",
-      badge_options,
-      "light text-dark"
-  );
-  
+  const badge1_text = text('Badge 1 Text', 'New')
+  const badge1_level = select('Badge 1 Level', badge_options, 'secondary')
+
+  const badge2_text = text('Badge 2 Text', 'Default Ghost')
+  const badge2_level = select('Badge 2 Level', badge_options, 'light text-dark')
+
   return `
   <div>
     <h2>Example</h2>
@@ -64,13 +42,12 @@ export const Badges = () => {
     <h5>h5 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h5>
     <h6>h6 - Design system heading <span class="badge bg-${badge1_level}">${badge1_text}</span> <span class="badge bg-${badge2_level}">${badge2_text}</span></h6> 
   </div>
-`;
-  
-};
+`
+}
 
-Badges.storyName = 'Badges';
+Badges.storyName = 'Badges'
 
-Badges.parameters = { 
+Badges.parameters = {
   notes: `
 
     #Badges
@@ -90,8 +67,7 @@ Badges.parameters = {
     ${moreDocumentation}
     
   `
-};
-
+}
 
 const button_badges = `
 <div>
@@ -104,10 +80,10 @@ const button_badges = `
     <span class="visually-hidden">unread messages</span>
   </button>
 </div>
-`;
+`
 
-export const Buttons = () => button_badges;
-Buttons.storyName = "Button Badges";
+export const Buttons = () => button_badges
+Buttons.storyName = 'Button Badges'
 
 Buttons.parameters = {
   notes: `
@@ -120,8 +96,7 @@ Buttons.parameters = {
     ${moreDocumentation}
 
   `
-};
-
+}
 
 const contextual_variations = `
 <div>
@@ -134,10 +109,10 @@ const contextual_variations = `
   <span class="badge bg-light text-dark">Light</span>
   <span class="badge bg-dark">Dark</span>
 </div>
-`;
+`
 
-export const Contexts = () => contextual_variations;
-Contexts.storyName = "Contextual Variations";
+export const Contexts = () => contextual_variations
+Contexts.storyName = 'Contextual Variations'
 
 Contexts.parameters = {
   notes: `
@@ -150,8 +125,7 @@ Contexts.parameters = {
     ${moreDocumentation}
 
   `
-};
-
+}
 
 const pill_badges = `
 <div>
@@ -164,10 +138,10 @@ const pill_badges = `
   <span class="badge rounded-pill bg-light text-dark">Light</span>
   <span class="badge rounded-pill bg-dark">Dark</span>
 </div>
-`;
+`
 
-export const Pills = () => pill_badges;
-Pills.storyName = "Pill Badges";
+export const Pills = () => pill_badges
+Pills.storyName = 'Pill Badges'
 
 Pills.parameters = {
   notes: `
@@ -180,8 +154,7 @@ Pills.parameters = {
     ${moreDocumentation}
 
   `
-};
-
+}
 
 const text_badges = `
 <div>
@@ -189,10 +162,10 @@ const text_badges = `
   <br>
   <span class="h3">Software Engineer <span class="badge rounded-pill bg-primary">New</span></span>
 </div>
-`;
+`
 
-export const Text = () => text_badges;
-Text.storyName = "Text Badges";
+export const Text = () => text_badges
+Text.storyName = 'Text Badges'
 
 Text.parameters = {
   notes: `
@@ -205,4 +178,4 @@ Text.parameters = {
     ${moreDocumentation}
 
   `
-};
+}

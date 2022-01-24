@@ -1,10 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import { radios } from '@storybook/addon-knobs';
+import { radios } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Modals',
-};
+  title: 'Components/Modals'
+}
 
 const modal_basic_html = `
 <div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" style="display: block; position: relative;" aria-labelledby="exampleModalLabel">
@@ -28,11 +26,11 @@ const modal_basic_html = `
         </div>
     </div>
   </div>
-</div>`;
+</div>`
 
-export const ModalBasic = () => `<div>${modal_basic_html}</div>`;
+export const ModalBasic = () => `<div>${modal_basic_html}</div>`
 
-ModalBasic.storyName = 'Modal Basic';
+ModalBasic.storyName = 'Modal Basic'
 
 ModalBasic.parameters = {
   notes: `
@@ -43,8 +41,8 @@ ModalBasic.parameters = {
   ${modal_basic_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const modal_from_trigger_html = `
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -76,18 +74,18 @@ const modal_from_trigger_html = `
       </div>
     </div>
   </div>
-`;
+`
 
 export const ModalFromTrigger = () => {
-  const label = 'Body Content Length';
+  const label = 'Body Content Length'
   const options = {
     Short: 'short',
     Medium: 'medium',
-    Long: 'long',
-  };
-  const defaultValue = 'medium';
+    Long: 'long'
+  }
+  const defaultValue = 'medium'
 
-  const value = radios(label, options, defaultValue);
+  const value = radios(label, options, defaultValue)
 
   return `
   <div>
@@ -120,7 +118,7 @@ export const ModalFromTrigger = () => {
                   ...<br><br>
                   ...<br><br>
                   ...<br><br>                  
-                `;
+                `
               }
               if (value === 'medium') {
                 return `
@@ -128,12 +126,12 @@ export const ModalFromTrigger = () => {
                   ...<br><br>
                   ...<br><br>
                   ...<br><br>
-                `;
+                `
               }
               if (value === 'short') {
                 return `
                   ...
-                `;
+                `
               }
             })()}
           </div>
@@ -151,10 +149,10 @@ export const ModalFromTrigger = () => {
       </div>
     </div>
   </div>
-  `;
-};
+  `
+}
 
-ModalFromTrigger.storyName = 'Modal from Trigger';
+ModalFromTrigger.storyName = 'Modal from Trigger'
 
 ModalFromTrigger.parameters = {
   notes: `
@@ -165,8 +163,8 @@ ModalFromTrigger.parameters = {
   ${modal_from_trigger_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; position: relative;">
   <div class="modal-dialog">
@@ -208,11 +206,11 @@ const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria
       </div>
     </div>
   </div>
-</div>`;
+</div>`
 
-export const ModalForm = () => `<div>${modal_form_html}</div>`;
+export const ModalForm = () => `<div>${modal_form_html}</div>`
 
-ModalForm.storyName = 'Modal with Form';
+ModalForm.storyName = 'Modal with Form'
 
 ModalForm.parameters = {
   notes: `
@@ -223,8 +221,8 @@ ModalForm.parameters = {
   ${modal_form_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const modal_scrollable_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
   <div class="modal-dialog modal-dialog-scrollable">
@@ -259,11 +257,11 @@ const modal_scrollable_html = `<div class="modal" id="exampleModal" tabindex="-1
       </div>
     </div>
   </div>
-</div>`;
+</div>`
 
-export const ModalScrollable = () => `<div>${modal_scrollable_html}</div>`;
+export const ModalScrollable = () => `<div>${modal_scrollable_html}</div>`
 
-ModalScrollable.storyName = 'Modal with Body Scroll';
+ModalScrollable.storyName = 'Modal with Body Scroll'
 
 ModalScrollable.parameters = {
   notes: `
@@ -274,8 +272,8 @@ ModalScrollable.parameters = {
   ${modal_scrollable_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const modal_featured_html = `<div class="modal" id="exampleModal" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="exampleModalLabel" style="display: block;">
   <div class="modal-dialog modal-lg">
@@ -299,11 +297,11 @@ const modal_featured_html = `<div class="modal" id="exampleModal" tabindex="-1" 
       </div>
     </div>
   </div>
-</div>`;
+</div>`
 
-export const ModalFeatured = () => `<div>${modal_featured_html}</div>`;
+export const ModalFeatured = () => `<div>${modal_featured_html}</div>`
 
-ModalFeatured.storyName = 'Modal with Featured Image';
+ModalFeatured.storyName = 'Modal with Featured Image'
 
 ModalFeatured.parameters = {
   notes: `
@@ -314,5 +312,5 @@ ModalFeatured.parameters = {
   ${modal_featured_html}
   \`\`\`
 
-  `,
-};
+  `
+}

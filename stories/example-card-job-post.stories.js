@@ -1,23 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Examples/Cards/Job Post',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Cards/Job Post'
+}
 
 const card = `
     <div class="card">
@@ -56,7 +43,7 @@ const card = `
         </p>
       </div>
     </div>  
-`;
+`
 
 export const Card = () => {
   const line_clamp = {
@@ -64,32 +51,32 @@ export const Card = () => {
     '2 lines': 'line-clamp-2',
     '3 lines': 'line-clamp-3',
     '4 lines': 'line-clamp-4',
-    '5 lines': 'line-clamp-5',
-  };
+    '5 lines': 'line-clamp-5'
+  }
 
-  const card_heading_text = text('Heading Text', 'Full-Time, Internship');
+  const card_heading_text = text('Heading Text', 'Full-Time, Internship')
 
-  const card_subheading_text = text('Subheading Text', 'Software Engineer');
+  const card_subheading_text = text('Subheading Text', 'Software Engineer')
 
-  const card_location_text = text('Location Text', 'Mountain View, CA');
+  const card_location_text = text('Location Text', 'Mountain View, CA')
 
   const card_heading_line_clamp = select(
     'Heading Line Clamp',
     line_clamp,
-    'line-clamp-2'
-  );
+    'line-clamp-1'
+  )
 
   const card_subheading_line_clamp = select(
     'Subheading Line Clamp',
     line_clamp,
     'line-clamp-2'
-  );
+  )
 
   const card_location_line_clamp = select(
     'Location Line Clamp',
     line_clamp,
     'line-clamp-5'
-  );
+  )
 
   return `
     <div class="card">
@@ -113,7 +100,9 @@ export const Card = () => {
         </div>
       </div>
       <div class="card-body">
-        <h5 class="card-title text-uppercase h6"><b>${card_heading_text}</b></h5>
+        <h5 class="card-title text-uppercase h6">
+          <b><span class="${card_heading_line_clamp}">${card_heading_text}</span></b>
+        </h5>
         <h6 class="h3 text-capitalize mb-1">
           <span class="${card_subheading_line_clamp}">${card_subheading_text}</span>
         </h6>
@@ -125,10 +114,10 @@ export const Card = () => {
         </p>
       </div>
     </div>  
-  `;
-};
+  `
+}
 
-Card.storyName = 'Job Post';
+Card.storyName = 'Job Post'
 
 Card.parameters = {
   notes: `
@@ -142,5 +131,5 @@ Card.parameters = {
   ${card}
   \`\`\`
 
-  `,
-};
+  `
+}

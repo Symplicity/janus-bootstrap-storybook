@@ -1,15 +1,12 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-import { LayoutLoggedHeader } from './example-layout-header-logged.stories';
-import { LayoutSidebar } from './example-layout-sidebar';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import { withKnobs } from '@storybook/addon-knobs';
+import { LayoutLoggedHeader } from './example-layout-header-logged-out.stories'
+
+import { LayoutSidebar } from './example-layout-sidebar'
 
 export default {
-  title: 'Examples/Screens/Form View',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Screens/Form View'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -17,7 +14,7 @@ For additional documentation, see:
 
 - Bootstrap Documentation
 - Design System 
-`;
+`
 
 const additionalInfoOne = `
   <div class="card bg-light border-0 mb-2">
@@ -294,106 +291,110 @@ const form_view_html = `
       </div>
     </div>
   </div>
-`;
+`
 
 export const ScreenFormView = () => {
   let tabItemsData = [
     {
-      "label": "Core Information",
-      "badges": 3
+      label: 'Core Information',
+      badges: 3
     },
     {
-      "label": "Summaries",
-      "badges": 2
+      label: 'Summaries',
+      badges: 2
     },
     {
-      "label": "Actions",
-      "badges": 0
+      label: 'Actions',
+      badges: 0
     },
     {
-      "label": "Meetings",
-      "badges": 2
+      label: 'Meetings',
+      badges: 2
     },
     {
-      "label": "Provisions",
-      "badges": 2
+      label: 'Provisions',
+      badges: 2
     },
     {
-      "label": "Sanctions",
-      "badges": 2
+      label: 'Sanctions',
+      badges: 2
     },
     {
-      "label": "Letters",
-      "badges": 2
+      label: 'Letters',
+      badges: 2
     },
     {
-      "label": "Appeals",
-      "badges": 0
+      label: 'Appeals',
+      badges: 0
     },
     {
-      "label": "Documents",
-      "badges": 2
+      label: 'Documents',
+      badges: 2
     },
     {
-      "label": "Notes",
-      "badges": 0
+      label: 'Notes',
+      badges: 0
     },
     {
-      "label": "Event",
-      "badges": 0
+      label: 'Event',
+      badges: 0
     }
-  ];
+  ]
 
   let incidentInfoData = [
     {
-      "label": "IR#",
-      "content": "00012-001-2020"
+      label: 'IR#',
+      content: '00012-001-2020'
     },
     {
-      "label": "Student",
-      "content": "Viola Collins"
+      label: 'Student',
+      content: 'Viola Collins'
     },
     {
-      "label": "Location",
-      "content": "Billions are spent each year on cosmetic products that promise to delete wrinkles, lighten age spots and eliminate itching, flaking, or redness. But the simplest and cheapest way to keep your skin healthy and youthful looking is to stay out of sun."
+      label: 'Location',
+      content:
+        'Billions are spent each year on cosmetic products that promise to delete wrinkles, lighten age spots and eliminate itching, flaking, or redness. But the simplest and cheapest way to keep your skin healthy and youthful looking is to stay out of sun.'
     },
     {
-      "label": "Students Involved",
-      "content": "902 Tressie Centers"
+      label: 'Students Involved',
+      content: '902 Tressie Centers'
     },
     {
-      "label": "EMS Called",
-      "content": "No"
+      label: 'EMS Called',
+      content: 'No'
     },
     {
-      "label": "Police Called",
-      "content": "No"
+      label: 'Police Called',
+      content: 'No'
     },
     {
-      "label": "Incident Description",
-      "content": "Billions are spent each year on cosmetic products that promise to delete wrinkles, lighten age spots and eliminate itching, flaking, or redness. But the simplest and cheapest way to keep your skin healthy and youthful looking is to stay out of sun."
+      label: 'Incident Description',
+      content:
+        'Billions are spent each year on cosmetic products that promise to delete wrinkles, lighten age spots and eliminate itching, flaking, or redness. But the simplest and cheapest way to keep your skin healthy and youthful looking is to stay out of sun.'
     },
     {
-      "label": "Alcohol Involved",
-      "content": "902 Tressie Centers"
+      label: 'Alcohol Involved',
+      content: '902 Tressie Centers'
     },
     {
-      "label": "Period of Recurrence",
-      "content": "902 Tressie Centers"
+      label: 'Period of Recurrence',
+      content: '902 Tressie Centers'
     },
     {
-      "label": "Status",
-      "content": "00012-001-2020"
+      label: 'Status',
+      content: '00012-001-2020'
     },
     {
-      "label": "Student",
-      "content": "Viola Collins"
+      label: 'Student',
+      content: 'Viola Collins'
     }
-  ];
+  ]
 
   setTimeout(() => {
-    const createTabItems = document.querySelector('.nav-tabs-single-row-with-controls');
-    const createIncidentItems = document.querySelector('.incident-report-list');
+    const createTabItems = document.querySelector(
+      '.nav-tabs-single-row-with-controls'
+    )
+    const createIncidentItems = document.querySelector('.incident-report-list')
 
     createTabItems.innerHTML = `
       ${tabItemsData
@@ -401,14 +402,20 @@ export const ScreenFormView = () => {
           (item, i) => `
           <li class="nav-item">
             <a class="nav-link fs-5 ${i === 0 ? 'active' : ''}" href="#">
-              <span class="${item.label.length > 10 ? 'line-clamp-2 lh-sm text-center' : ''}">${item.label}</span>
-              <span class="${item.badges === 0 ? 'd-none ' : ''}badge bg-secondary bg-gradient count-badge fw-bold text-white rounded-circle p-1 ms-1 mt-1">${item.badges}</span>
+              <span class="${
+                item.label.length > 10 ? 'line-clamp-2 lh-sm text-center' : ''
+              }">${item.label}</span>
+              <span class="${
+                item.badges === 0 ? 'd-none ' : ''
+              }badge bg-secondary bg-gradient count-badge fw-bold text-white rounded-circle p-1 ms-1 mt-1">${
+            item.badges
+          }</span>
             </a>
           </li>
           `
         )
-      .join('')}
-    `;
+        .join('')}
+    `
 
     createIncidentItems.innerHTML = `
     ${incidentInfoData
@@ -420,18 +427,16 @@ export const ScreenFormView = () => {
         </div>
         `
       )
-    .join('')}
-  `;
-  }, 100);
+      .join('')}
+  `
+  }, 100)
 
-  const container = $('<div class="m-0"></div>').append(
-    form_view_html
-  );
-  
-  return container[0];
+  const container = $('<div class="m-0"></div>').append(form_view_html)
+
+  return container[0]
 }
 
-ScreenFormView.storyName = 'Form View';
+ScreenFormView.storyName = 'Form View'
 
 ScreenFormView.parameters = {
   notes: `
@@ -443,5 +448,5 @@ ScreenFormView.parameters = {
     ${form_view_html}
     \`\`\`
     ${moreDocumentation}
-  `,
-};
+  `
+}

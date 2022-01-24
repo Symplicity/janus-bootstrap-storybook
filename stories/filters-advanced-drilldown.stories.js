@@ -1,24 +1,12 @@
-import { document, setTimeout } from 'global';
+import { document, setTimeout } from 'global'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-  radios,
-} from '@storybook/addon-knobs';
+import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Drilldown',
-  decorators: [withKnobs],
-};
+  title: 'Components/Filters Advanced/Drilldown'
+}
 
 const drilldown_button_parent_html = `
     <div class="dropdown">
@@ -74,29 +62,26 @@ const drilldown_button_parent_html = `
           </ul>
         </div>
       </div>
-    </div>`;
+    </div>`
 
 export const FilterButtonParent = () => {
-  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews');
-  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings');
-  const drilldown_option_3 = text(
-    'Select Option 3',
-    'Jobs Matching My Profile'
-  );
+  const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews')
+  const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings')
+  const drilldown_option_3 = text('Select Option 3', 'Jobs Matching My Profile')
 
-  const label = 'Number of items';
-  const defaultValue = 15;
+  const label = 'Number of items'
+  const defaultValue = 15
   const options = {
     range: true,
     min: 0,
     max: 100,
-    step: 1,
-  };
+    step: 1
+  }
 
-  const value = number(label, defaultValue, options);
+  const value = number(label, defaultValue, options)
 
   setTimeout(function () {
-    const createListItems = document.querySelector('.list-unstyled-repeat');
+    const createListItems = document.querySelector('.list-unstyled-repeat')
     createListItems.innerHTML = `
         ${Array(value)
           .fill()
@@ -107,8 +92,8 @@ export const FilterButtonParent = () => {
               }</span></a></div></li>`
           )
           .join('')}
-    `;
-  }, 0);
+    `
+  }, 0)
 
   return `
     <div class="dropdown">
@@ -165,10 +150,10 @@ export const FilterButtonParent = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-FilterButtonParent.storyName = 'Drilldown Parent';
+FilterButtonParent.storyName = 'Drilldown Parent'
 
 FilterButtonParent.parameters = {
   notes: `
@@ -179,8 +164,8 @@ FilterButtonParent.parameters = {
   ${drilldown_button_parent_html}
   \`\`\`
 
-  `,
-};
+  `
+}
 
 const drilldown_button_child_html = `
     <div class="dropdown">
@@ -250,13 +235,13 @@ const drilldown_button_child_html = `
           </ul>
         </div>
       </div>
-    </div>`;
+    </div>`
 
 export const FilterButtonChild = () => {
-  const drilldown_parent = text('Position Type', 'Position Type');
-  const drilldown_child_option_1 = text('Child Item 1', 'Category 1.3.1');
-  const drilldown_child_option_2 = text('Child Item 2', 'Category 1.3.2');
-  const drilldown_child_option_3 = text('Child Item 3', 'Category 1.3.3');
+  const drilldown_parent = text('Position Type', 'Position Type')
+  const drilldown_child_option_1 = text('Child Item 1', 'Category 1.3.1')
+  const drilldown_child_option_2 = text('Child Item 2', 'Category 1.3.2')
+  const drilldown_child_option_3 = text('Child Item 3', 'Category 1.3.3')
 
   return `
     <div class="dropdown">
@@ -327,10 +312,10 @@ export const FilterButtonChild = () => {
         </div>
       </div>
     </div>
-    `;
-};
+    `
+}
 
-FilterButtonChild.storyName = 'Drilldown Child';
+FilterButtonChild.storyName = 'Drilldown Child'
 
 FilterButtonChild.parameters = {
   notes: `
@@ -341,5 +326,5 @@ FilterButtonChild.parameters = {
   ${drilldown_button_child_html}
   \`\`\`
 
-  `,
-};
+  `
+}

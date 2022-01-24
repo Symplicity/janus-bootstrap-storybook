@@ -1,23 +1,8 @@
-import { document, setTimeout } from 'global';
-
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Avatars',
-  decorators: [withKnobs],
-};
+  title: 'Components/Avatars'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -26,7 +11,7 @@ For additional documentation, see:
 - Bootstrap Documentation
 - Design System 
 
-`;
+`
 
 const avatar_text_html = `
 <div class="container">
@@ -53,20 +38,19 @@ const avatar_text_html = `
     </div>
   </div>
 </div>
-`;
+`
 
+export const AvatarText = () => {
+  const container = $(
+    '<div class="text-center" style="margin-top:100px"></div>'
+  ).append(avatar_text_html)
 
-export const AvatarText = () => { 
+  return container[0]
+}
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_text_html);
-  
-  return container[0]; 
-    
-};
+AvatarText.storyName = 'Text Avatar'
 
-AvatarText.storyName = 'Text Avatar';
-
-AvatarText.parameters = { 
+AvatarText.parameters = {
   notes: `
 
     # Text Avatar
@@ -80,7 +64,7 @@ AvatarText.parameters = {
     ${moreDocumentation}
     
   `
-};
+}
 
 const avatar_image_html = `
 <div class="container">
@@ -107,19 +91,18 @@ const avatar_image_html = `
     </div>
   </div>
 </div>
-`;
+`
 
+export const AvatarImage = () => {
+  const container = $(
+    '<div class="text-center" style="margin-top:100px"></div>'
+  ).append(avatar_image_html)
 
-export const AvatarImage = () => { 
+  return container[0]
+}
+AvatarImage.storyName = 'Image Avatar'
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_image_html);
-  
-  return container[0]; 
-    
-};
-AvatarImage.storyName = 'Image Avatar';
-
-AvatarImage.parameters = { 
+AvatarImage.parameters = {
   notes: `
 
     # Image Avatar
@@ -133,8 +116,7 @@ AvatarImage.parameters = {
     ${moreDocumentation}
     
   `
-};
-
+}
 
 const avatar_icon_html = `
 <div class="container">
@@ -173,19 +155,18 @@ const avatar_icon_html = `
     </div>
   </div>
 </div>
-`;
+`
 
+export const AvatarIcon = () => {
+  const container = $(
+    '<div class="text-center" style="margin-top:100px"></div>'
+  ).append(avatar_icon_html)
 
-export const AvatarIcon = () => { 
+  return container[0]
+}
+AvatarIcon.storyName = 'Icon Avatar'
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_icon_html);
-  
-  return container[0]; 
-    
-};
-AvatarIcon.storyName = 'Icon Avatar';
-
-AvatarIcon.parameters = { 
+AvatarIcon.parameters = {
   notes: `
 
     # Icon Avatar
@@ -199,8 +180,7 @@ AvatarIcon.parameters = {
     ${moreDocumentation}
     
   `
-};
-
+}
 
 const avatar_logo_html = `
 <div class="container">
@@ -227,19 +207,18 @@ const avatar_logo_html = `
     </div>
   </div>
 </div>
-`;
+`
 
+export const AvatarLogo = () => {
+  const container = $(
+    '<div class="text-center" style="margin-top:100px"></div>'
+  ).append(avatar_logo_html)
 
-export const AvatarLogo = () => { 
+  return container[0]
+}
+AvatarLogo.storyName = 'Logo Avatar'
 
-  const container = $('<div class="text-center" style="margin-top:100px"></div>').append(avatar_logo_html);
-  
-  return container[0]; 
-    
-};
-AvatarLogo.storyName = 'Logo Avatar';
-
-AvatarLogo.parameters = { 
+AvatarLogo.parameters = {
   notes: `
 
     # Logo Avatar
@@ -253,5 +232,4 @@ AvatarLogo.parameters = {
     ${moreDocumentation}
     
   `
-};
-
+}

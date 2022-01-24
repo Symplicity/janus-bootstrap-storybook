@@ -1,26 +1,10 @@
-import { document, setTimeout } from 'global';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
-
-import $ from 'jquery';
-window.jQuery = window.$ = $;
-
-import {
-  array,
-  boolean,
-  button,
-  color,
-  date,
-  select,
-  withKnobs,
-  text,
-  number,
-} from '@storybook/addon-knobs';
+import { text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Examples/Layout/Header',
-  decorators: [withKnobs],
-};
+  title: 'Examples/Layout'
+}
 
 const moreDocumentation = `
 #Additional Documentation
@@ -29,7 +13,7 @@ For additional documentation, see:
 - Bootstrap Documentation
 - Design System 
 
-`;
+`
 
 let header_html = `
 <header class="d-block">
@@ -93,18 +77,18 @@ let header_html = `
     </div>
   </nav>
 </header>
-`;
+`
 
 export const LayoutHeader = () => {
-  const header_bg_color = text('Header BG Color', '#ffffff');
+  const header_bg_color = text('Header BG Color', '#ffffff')
 
   const container = $('<div style="margin: 100px -1rem 0;"></div>').append(
     header_html
-  );
+  )
 
   return `
     <header class="d-block">
-      <nav class="d-block navbar navbar-light bg-white shadow-lg" style="max-width: 1400px; margin: 0 auto; background: ${header_bg_color}">
+      <nav class="d-block navbar navbar-light shadow-lg" style="max-width: 1400px; margin: 0 auto; background-color: ${header_bg_color}">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
             <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-7 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,9 +148,9 @@ export const LayoutHeader = () => {
         </div>
       </nav>
     </header>
-  `;
-};
-LayoutHeader.storyName = 'Header';
+  `
+}
+LayoutHeader.storyName = 'Header Logged In'
 
 LayoutHeader.parameters = {
   notes: `
@@ -179,5 +163,5 @@ LayoutHeader.parameters = {
     ${header_html}
     \`\`\`
     
-  `,
-};
+  `
+}

@@ -1,14 +1,14 @@
-import buttonNotes from './button.notes.md';
-import buttonIconNotes from './button.icon.notes.md';
-import buttonOutlineNotes from './button.outline.notes.md';
+import buttonNotes from './button.notes.md'
+// import buttonIconNotes from './button.icon.notes.md';
+// import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Buttons/Sidebar Box',
-};
+  title: 'Examples/Buttons/Sidebar Box'
+}
 
-const sidebarHTML = `
+const sidebar_html = `
   <div class="sidebar">
     <div class="card bg-light border-0 h6">
       <div class="d-flex">
@@ -56,21 +56,11 @@ const sidebarHTML = `
       <a href="#" class="m-7 mt-0">View all</a>
     </div>
   </div>
-`;
+`
 
-export const Sidebar = () => {
-  const container = $('<div></div>').append(sidebarHTML);
+export const Sidebar = () => `${sidebar_html}`
 
-  setTimeout(function () {
-    $(function () {
-      container.find('[data-bs-toggle="dropdown"]').dropdown('show');
-    });
-  }, 0);
-
-  return container[0];
-};
-
-Sidebar.storyName = 'Sidebar';
+Sidebar.storyName = 'Sidebar'
 
 Sidebar.parameters = {
   notes: `
@@ -83,10 +73,10 @@ Sidebar.parameters = {
     ## Code Sample
     
     \`\`\`html
-    ${sidebarHTML}
+    ${sidebar_html}
     \`\`\`
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
