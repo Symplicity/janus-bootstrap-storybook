@@ -2056,8 +2056,26 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Example-SB-Layout-Header",
-      "url": "http://host.docker.internal:9009/iframe.html?id=examples-layout-header--layout-header",
+      "label": "Example-SB-Header-Logged-In",
+      "url": "http://host.docker.internal:9009/iframe.html?id=examples-headers-logged-in--header-logged-in",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 100,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Example-SB-Header-Logged-Out",
+      "url": "http://host.docker.internal:9009/iframe.html?id=examples-headers-logged-out--header-logged-out",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",

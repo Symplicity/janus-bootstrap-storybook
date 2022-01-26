@@ -1,6 +1,6 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import { LayoutLoggedHeader } from './example-layout-header-logged-out.stories'
+import { HeaderLoggedIn } from './example-layout-header-logged-in.stories'
 
 export default {
   title: 'Examples/Screens/Staff List'
@@ -508,7 +508,7 @@ const sidebarNavLG = `
 const staff_list_html = `
 <div class="m-0 bg-light">
   <div class="mx-auto my-0">
-    ${LayoutLoggedHeader()}
+    ${HeaderLoggedIn()}
     <div class="d-flex mt-4 w-100">
       <div class="d-none d-lg-block">
         ${sidebarNavLG}

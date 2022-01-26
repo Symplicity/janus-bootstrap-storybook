@@ -7,10 +7,10 @@ export default {
 const loggedSystemHeaderLG = `
   <div class="m-0 d-none d-lg-block">
     <header class="d-block pt-0">
-      <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation">
+      <nav class="d-block navbar navbar-light bg-white shadow-lg" aria-label="Main Navigation" style="max-width: 1400px; margin: 0 auto;">
         <div class="row justify-content-between align-items-center w-100">
           <div class="col-4 d-flex align-items-center flex-wrap">
-            <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-7 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLG" aria-controls="navbarNavLG" aria-expanded="true" aria-label="Toggle navigation">
+            <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-7 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavLG" aria-expanded="true" aria-label="Toggle navigation">
               <svg width="1rem" height="1rem">
                 <use xlink:href="${iconSprite}#tabler-menu-2" />
               </svg>
@@ -18,8 +18,8 @@ const loggedSystemHeaderLG = `
             <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
           <div class="col-4">
-            <div class="dropdown">
-              <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header bg-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="dropdown d-flex justify-content-center">
+              <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header bg-light" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
                   <use xlink:href="${iconSprite}#tabler-search" />
                   <span class="visually-hidden">Open Search Dialog</span>
@@ -27,7 +27,7 @@ const loggedSystemHeaderLG = `
               </div>
             </div>
           </div>
-          <div class="col-4 d-flex justify-content-end flex-wrap">
+          <div class="col-4 d-flex justify-content-end">
             <button type="button" class="btn btn-action btn-action-icon-only btn-action-header rounded-circle">
               <svg class="icon-lg-font-size mt-n1">
                 <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
@@ -47,8 +47,8 @@ const loggedSystemHeaderLG = `
 const loggedSystemHeaderSM = `
   <div class="bg-light m-0 d-lg-none">
     <header class="d-block mb-2 mx-auto bg-white">
-      <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation">
-        <div class="d-flex justify-content-between align-items-center flex-wrap w-100">
+      <nav class="d-block navbar navbar-light shadow-lg" aria-label="Main Navigation" style="max-width: 1400px; margin: 0 auto;">
+        <div class="d-flex justify-content-between align-items-center w-100">
           <div class="d-flex align-items-center flex-wrap">
             <button class="main-nav-trigger border-0 navbar-toggler btn btn-action btn-action-icon-only btn-action-header ms-8 me-7" data-bs-toggle="modal" data-bs-target="#myModal">
               <svg width="1rem" height="1rem">
@@ -209,7 +209,7 @@ const loggedSystemHeaderSM = `
               </li>
             </ul>
             <div class="ps-4 pe-4 pt-6 pb-6 my-2">
-              <div class="dropdown">
+              <div class="dropdown d-flex justify-content-center">
                 <div class="d-flex align-items-center flex-wrap btn-search btn btn-action btn-action-icon-only btn-action-header w-100 bg-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                   <svg class="icon-xl-font-size mx-2">
                     <use xlink:href="${iconSprite}#tabler-search" />

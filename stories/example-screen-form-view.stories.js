@@ -1,6 +1,6 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import { LayoutLoggedHeader } from './example-layout-header-logged-out.stories'
+import { HeaderLoggedIn } from './example-layout-header-logged-in.stories'
 
 import { LayoutSidebar } from './example-layout-sidebar'
 
@@ -246,7 +246,7 @@ const tabsNavigationHtml = `
 const form_view_html = `
   <div class="m-0 bg-light">
     <div class="mx-auto my-0">
-      ${LayoutLoggedHeader()}
+      ${HeaderLoggedIn()}
       <div class="d-flex mt-4">
         <div class="d-none d-lg-block">
           ${LayoutSidebar()}
@@ -293,7 +293,7 @@ const form_view_html = `
   </div>
 `
 
-export const ScreenFormView = () => {
+export const FormView = () => {
   let tabItemsData = [
     {
       label: 'Core Information',
@@ -436,9 +436,9 @@ export const ScreenFormView = () => {
   return container[0]
 }
 
-ScreenFormView.storyName = 'Form View'
+FormView.storyName = 'Form View'
 
-ScreenFormView.parameters = {
+FormView.parameters = {
   notes: `
     #Declarative Popovers
 
