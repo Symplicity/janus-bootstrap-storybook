@@ -1,7 +1,7 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Layout'
+  title: 'Examples/Headers/Logged Out'
 }
 
 const loggedSystemHeaderLG = `
@@ -241,13 +241,13 @@ const logged_system_header_html = `
   ${loggedSystemHeaderSM}
 `
 
-export const LayoutLoggedHeader = () => {
+export const HeaderLoggedOut = () => {
   return logged_system_header_html
 }
 
-LayoutLoggedHeader.storyName = 'Header Logged Out'
+HeaderLoggedOut.storyName = 'Logged Out'
 
-LayoutLoggedHeader.parameters = {
+HeaderLoggedOut.parameters = {
   notes: `
 
     #Declarative Popovers

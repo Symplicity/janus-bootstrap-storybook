@@ -3,7 +3,7 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Examples/Layout'
+  title: 'Examples/Headers/Logged In'
 }
 
 const moreDocumentation = `
@@ -79,7 +79,7 @@ let header_html = `
 </header>
 `
 
-export const LayoutHeader = () => {
+export const HeaderLoggedIn = () => {
   const header_bg_color = text('Header BG Color', '#ffffff')
 
   const container = $('<div style="margin: 100px -1rem 0;"></div>').append(
@@ -150,9 +150,9 @@ export const LayoutHeader = () => {
     </header>
   `
 }
-LayoutHeader.storyName = 'Header Logged In'
+HeaderLoggedIn.storyName = 'Logged In'
 
-LayoutHeader.parameters = {
+HeaderLoggedIn.parameters = {
   notes: `
 
     #Declarative Popovers
