@@ -28,7 +28,7 @@ let header_html = `
             <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
           <div class="d-flex flex-grow-1 mx-8">
-            <div class="dropdown top-search d-flex justify-content-center w-100 d-sm-none d-md-flex">
+            <div class="dropdown top-search d-flex justify-content-center w-100 d-none d-md-flex">
               <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
                   <use xlink:href="${iconSprite}#tabler-search" />
@@ -120,7 +120,7 @@ export const HeaderLoggedIn = () => {
             <svg class="bd-placeholder-img d-none d-md-block" width="170" height="64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">170x64</text></svg>
           </div>
           <div class="d-flex flex-grow-1 mx-8">
-            <div class="dropdown top-search d-flex justify-content-center w-100 d-sm-none d-md-flex">
+            <div class="dropdown top-search d-flex justify-content-center w-100 d-none d-md-flex">
               <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
                   <use xlink:href="${iconSprite}#tabler-search" />
