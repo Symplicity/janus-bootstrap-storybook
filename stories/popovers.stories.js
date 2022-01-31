@@ -1,8 +1,5 @@
 import { setTimeout } from 'global'
 
-import $ from 'jquery'
-window.jQuery = window.$ = $
-
 export default {
   title: 'Components/Popovers'
 }
@@ -39,8 +36,11 @@ export const story1 = () => {
   ).append(popovers_html)
 
   setTimeout(function () {
-    $(function () {
-      container.find('[data-bs-toggle="popover"]').popover()
+    var popoverTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="popover"]')
+    )
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
     })
   }, 0)
 

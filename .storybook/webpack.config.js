@@ -23,13 +23,6 @@ module.exports = async ({ config, mode }) => {
     enforce: 'pre'
   })
 
-  config.plugins.push(
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
-  )
-
   // Return the altered config
   return config
 }
