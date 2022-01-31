@@ -12,10 +12,10 @@ const multi_select_single_level_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 py-2 overflow-auto">
             <li>
               <span class="dropdown-item d-flex">
@@ -96,10 +96,10 @@ export const MultiSelectSingleLevel = () => {
     <div class="dropdown">
       <h3>Multi-Select, Single-Level</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 py-2 overflow-auto">
             <li>
               <span class="dropdown-item d-flex">
@@ -158,10 +158,10 @@ const multi_select_single_level_with_search_html = `
     <div class="dropdown">
       <h3>Multi-Select, Single-Level with Search</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -268,10 +268,10 @@ export const MultiSelectSingleLevelWithSearch = () => {
     <div class="dropdown">
       <h3>Multi-Select, Single-Level with Search</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-n2 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">

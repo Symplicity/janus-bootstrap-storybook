@@ -12,10 +12,10 @@ const drilldown_button_parent_html = `
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -99,10 +99,10 @@ export const FilterButtonParent = () => {
     <div class="dropdown">
       <h3>Drilldown Parent</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -171,10 +171,10 @@ const drilldown_button_child_html = `
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           Position Type 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">
@@ -247,10 +247,10 @@ export const FilterButtonChild = () => {
     <div class="dropdown">
       <h3>Drilldown Child</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           ${drilldown_parent} 
         </button>
-        <div class="dropdown-menu filter-menu shadow-sm mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu shadow-sm pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <form class="py-3 px-7 mb-0 bg-white border-bottom-light">
             <div class="input-group">
               <input type="text" class="form-control border-end-0" autocomplete="false" placeholder="Type to search">

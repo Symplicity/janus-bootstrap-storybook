@@ -7,32 +7,32 @@ export default {
 }
 
 const card_basic_html = `
-    <div class="card">
-      <h3 class="card-header text-uppercase bg-white">
-        <div class="card-header-icon d-inline-block">
+<div class="card">
+      <h3 class="card-header text-uppercase bg-white d-flex">
+        <div class="card-header-icon">
           <span class="bg-accent-purple d-block">
-            <svg width="1.5rem" height="1.5rem" class="m-1">
+            <svg width="1rem" height="1rem">
               <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
             </svg>
           </span>
         </div>
-        <div class="card-header-text d-inline-block">
+        <div class="card-header-text">
           Quick Actions
         </div>
       </h3>
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="me-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
                 <li>
                   <a class="dropdown-item" href="#">
                     <span class="me-1 mt-1">
-                      <svg width="1rem" height="1rem">
-                        <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
+                      <svg width="1rem" height="1rem" class="sw-2">
+                        <use xlink:href="/path/to/icon-sprite.svg#tabler-link" />
                       </svg>
                     </span>
                     Chad Hampton
@@ -61,14 +61,15 @@ const card_basic_html = `
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
           </div>
         </div>
       </div>
-    </div>`
+    </div>
+`
 
 export const CardBasic = () => {
   const icon_bg_color_options = {
@@ -90,69 +91,68 @@ export const CardBasic = () => {
   )
 
   return `
-    <div class="card">
-      <h3 class="card-header text-uppercase bg-white">
-        <div class="card-header-icon d-inline-block">
-          <span class="${card_icon_bg_color} d-block">
-            <svg width="1.5rem" height="1.5rem" class="m-1">
-              <use xlink:href="${iconSprite}#${card_icon_class}" />
-            </svg>
-          </span>
+  <div class="card">
+  <h3 class="card-header text-uppercase bg-white d-flex">
+    <div class="card-header-icon">
+      <span class="${card_icon_bg_color} d-block">
+        <svg width="1rem" height="1rem" class="sw-2">
+          <use xlink:href="${iconSprite}#${card_icon_class}" />
+        </svg>
+      </span>
+    </div>
+    <div class="card-header-text">
+      ${card_title_text}
+    </div>
+  </h3>
+  <div class="card-body">
+    <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group flex-wrap" role="group" aria-label="First group">
+        <div class="me-6">
+          <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
+            Create New 
+          </button>
+          <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
+            <li>
+              <a class="dropdown-item" href="#">
+                <span class="me-1 mt-1">
+                  <svg width="1rem" height="1rem">
+                    <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                  </svg>
+                </span>
+                Chad Hampton
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span class="me-1 mt-1">
+                  <svg width="1rem" height="1rem">
+                    <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                  </svg>
+                </span>
+                Chad Hampton
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span class="me-1 mt-1">
+                  <svg width="1rem" height="1rem">
+                    <use xlink:href="${iconSprite}#${card_item_icon_class}" />
+                  </svg>
+                </span>
+                Chad Hampton
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="card-header-text d-inline-block">
-          ${card_title_text}
-        </div>
-      </h3>
-      <div class="card-body">
-        <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Create New 
-              </button>
-              <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span class="me-1 mt-1">
-                      <svg width="1rem" height="1rem">
-                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
-                      </svg>
-                    </span>
-                    Chad Hampton
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span class="me-1 mt-1">
-                      <svg width="1rem" height="1rem">
-                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
-                      </svg>
-                    </span>
-                    Chad Hampton
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <span class="me-1 mt-1">
-                      <svg width="1rem" height="1rem">
-                        <use xlink:href="${iconSprite}#${card_item_icon_class}" />
-                      </svg>
-                    </span>
-                    Chad Hampton
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
-                Edit Draft Reports 
-              </button>
-            </div>
-          </div>
+        <div>
+          <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
+            Edit Draft Reports 
+          </button>
         </div>
       </div>
     </div>
-    </div>`
+  </div>
+</div>`
 }
 
 CardBasic.storyName = 'Quick Actions'

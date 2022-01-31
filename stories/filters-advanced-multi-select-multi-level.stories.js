@@ -19,7 +19,7 @@ const multi_select_multi_level_html = `
           <li class="mb-0">
             <div class="list-group">
               <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
-                <span class="h4 mt-0 mb-0 ms-n2 ">
+                <span class="h4 mt-0 mb-0 ms-n2">
                   <svg width="1.25rem" height="1.25rem">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-left" />
                   </svg>
@@ -38,7 +38,7 @@ const multi_select_multi_level_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -51,7 +51,7 @@ const multi_select_multi_level_html = `
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
@@ -178,7 +178,7 @@ export const MultiSelectMultiLevel = () => {
         <ul class="list-unstyled list-inline mb-2 mt-n1">
 
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
@@ -191,12 +191,12 @@ export const MultiSelectMultiLevel = () => {
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
         <ul class="list-unstyled mb-2 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
                 <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
-                  <span class="h4 mt-0 mb-0 ms-n2 ">
+                  <span class="h4 mt-0 mb-0 ms-n2">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-left" />
                     </svg>
@@ -265,7 +265,7 @@ const multi_select_multi_level_highlight_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
@@ -278,7 +278,7 @@ const multi_select_multi_level_highlight_html = `
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
@@ -326,7 +326,7 @@ export const MultiSelectMultiLevelHighlight = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
@@ -339,7 +339,7 @@ export const MultiSelectMultiLevelHighlight = () => {
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
@@ -374,7 +374,7 @@ export const MultiSelectMultiLevelHighlight = () => {
                   </label>
                   <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
                     <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
-                      <span class="breadcrumb-item m-0  ">Agricultural</span>
+                      <span class="breadcrumb-item m-0 ">Agricultural</span>
                       <span class="breadcrumb-item m-0">Bio<b>en</b>gineering</span>
                     </span>
                   </div>
@@ -409,7 +409,7 @@ const multi_select_multi_level_empty_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
@@ -422,7 +422,7 @@ const multi_select_multi_level_empty_html = `
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li class="p-2">
               No results found
@@ -452,7 +452,7 @@ export const MultiSelectMultiLevelEmpty = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
@@ -465,7 +465,7 @@ export const MultiSelectMultiLevelEmpty = () => {
             </span>
           </button>
         </div>
-        <div class="dropdown-menu filter-menu mt-1 pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li class="p-2">
               No results found

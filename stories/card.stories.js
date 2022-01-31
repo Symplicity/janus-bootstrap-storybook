@@ -23,8 +23,8 @@ const card_homepage_html = `
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="me-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
@@ -61,7 +61,7 @@ const card_homepage_html = `
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
@@ -107,8 +107,8 @@ export const CardHomepage = () => {
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="mt-1 mb-1 me-6">
-              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="me-6">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
                 Create New 
               </button>
               <ul class="dropdown-menu shadow-sm" aria-labelledby="cardButton1">
@@ -145,7 +145,7 @@ export const CardHomepage = () => {
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
@@ -247,7 +247,7 @@ const card_sidebar = `
       <h3 class="card-header bg-light mb-0 rounded">
         <div class="d-flex justify-content-between">
           <div>
-            <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="d-flex text-left btn btn-link text-decoration-none p-0 mb-0" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"  aria-controls="collapseExample">
               <span class="tabler-chevron-down h4 mt-0 mb-0 me-1">
                 <svg width="1rem" height="1rem">
                   <use xlink:href="${iconSprite}#tabler-chevron-down" />

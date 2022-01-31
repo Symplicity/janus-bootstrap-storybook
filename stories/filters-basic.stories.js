@@ -10,10 +10,10 @@ const filter_button_html = `
 <div class="dropdown">
   <h3>Filter Button - Regular</h3>
   <div>
-    <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
       Position Type 
     </button>
-    <div class="dropdown-menu shadow-sm mt-1" aria-labelledby="dropdownMenuButton2">
+    <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
       <a class="dropdown-item d-flex" href="#">
         <span class="flex-fill">
           Position Type A
@@ -34,10 +34,10 @@ const filter_button_html = `
   <br><br>
   <h3>Filter Button - Small</h3>
   <div>
-    <button class="btn btn-sm btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button class="btn btn-sm btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
       Position Type 
     </button>
-    <div class="dropdown-menu shadow-sm mt-1" aria-labelledby="dropdownMenuButton3">
+    <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
       <a class="dropdown-item d-flex" href="#">
         <span class="flex-fill">
           Position Type A
@@ -66,10 +66,10 @@ export const FilterButton = () => {
     <div class="dropdown">
       <h3>Filter Button - Regular</h3>
       <div>
-        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1" aria-labelledby="dropdownMenuButton2">
+        <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton2">
           <a class="dropdown-item d-flex" href="#">
             <span class="flex-fill">
               ${filter_pr}
@@ -90,10 +90,10 @@ export const FilterButton = () => {
       <br><br>
       <h3>Filter Button - Small</h3>
       <div>
-        <button class="btn btn-sm btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-sm btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
           Position Type 
         </button>
-        <div class="dropdown-menu shadow-sm mt-1" aria-labelledby="dropdownMenuButton3">
+        <div class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuButton3">
           <a class="dropdown-item d-flex" href="#">
             <span class="flex-fill">
               ${filter_ps}
