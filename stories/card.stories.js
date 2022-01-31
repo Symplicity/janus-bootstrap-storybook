@@ -23,7 +23,7 @@ const card_homepage_html = `
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="me-6">
+            <div class="me-6 mt-1 mb-1 ">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
                 Create New 
               </button>
@@ -61,7 +61,7 @@ const card_homepage_html = `
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
@@ -107,7 +107,7 @@ export const CardHomepage = () => {
       <div class="card-body">
         <div class="btn-toolbar mt-n3 mb-n1" role="toolbar" aria-label="Toolbar with button groups">
           <div class="btn-group flex-wrap" role="group" aria-label="First group">
-            <div class="me-6">
+            <div class="mt-1 mb-1 me-6">
               <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="cardButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4">
                 Create New 
               </button>
@@ -145,7 +145,7 @@ export const CardHomepage = () => {
               </ul>
             </div>
             <div>
-              <button class="btn btn-outline-secondary me-6" type="button" id="cardButton2">
+              <button class="btn btn-outline-secondary mt-1 mb-1 me-6" type="button" id="cardButton2">
                 Edit Draft Reports 
               </button>
             </div>
