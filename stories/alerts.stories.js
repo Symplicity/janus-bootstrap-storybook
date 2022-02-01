@@ -1,20 +1,20 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-const text = 'Unified Design System';
+const text = 'Unified Design System'
 
 export default {
-  title: 'Components/Alerts',
-};
+  title: 'Components/Alerts'
+}
 
 const alert_primary_html = `
     <div class="alert alert-primary" role="alert">
-      This is a primary alert - check it out!
+      A simple primary alert—check it out!
     </div>
-`;
+`
 
-export const AlertPrimary = () => `${alert_primary_html}`;
+export const AlertPrimary = () => `${alert_primary_html}`
 
-AlertPrimary.storyName = 'Primary';
+AlertPrimary.storyName = 'Primary'
 
 AlertPrimary.parameters = {
   notes: `
@@ -27,18 +27,18 @@ AlertPrimary.parameters = {
   \`\`\`html
   ${alert_primary_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_secondary_html = `
     <div class="alert alert-secondary" role="alert">
-      This is a secondary alert - check it out!
+      A simple secondary alert—check it out!
     </div>
-`;
+`
 
-export const AlertSecondary = () => `${alert_secondary_html}`;
+export const AlertSecondary = () => `${alert_secondary_html}`
 
-AlertSecondary.storyName = 'Secondary';
+AlertSecondary.storyName = 'Secondary'
 
 AlertSecondary.parameters = {
   notes: `
@@ -51,8 +51,8 @@ AlertSecondary.parameters = {
   \`\`\`html
   ${alert_secondary_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_success_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
@@ -62,18 +62,18 @@ const alert_success_html = `
         </svg>
       </div>
       <div class="flex-grow-1">
-        This is a success alert - check it out! 
+        A simple success alert—check it out! 
       </div>
       <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
-`;
+`
 
-export const AlertSuccess = () => `${alert_success_html}`;
+export const AlertSuccess = () => `${alert_success_html}`
 
-AlertSuccess.storyName = 'Success';
+AlertSuccess.storyName = 'Success'
 
 AlertSuccess.parameters = {
   notes: `
@@ -86,8 +86,8 @@ AlertSuccess.parameters = {
   \`\`\`html
   ${alert_success_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_error_html = `
     <div class="alert alert-danger alert-dismissible d-flex" role="alert">
@@ -99,9 +99,9 @@ const alert_error_html = `
       <div class="flex-grow-1">
         <b>An error has occurred</b>
         <ul class="ps-3 mb-0">
-          <li>This is a danger alert - check it out!</li>
-          <li>This is a danger alert - check it out!</li>
-          <li>This is a danger alert - check it out!</li>
+          <li>A simple danger alert—check it out!</li>
+          <li>A simple danger alert—check it out!</li>
+          <li>A simple danger alert—check it out!</li>
         </ul>
       </div>
       <div class="flex-shrink-1 mt-n1 mb-n1">
@@ -109,11 +109,11 @@ const alert_error_html = `
         </button>
       </div>
     </div>
-`;
+`
 
-export const AlertError = () => `${alert_error_html}`;
+export const AlertError = () => `${alert_error_html}`
 
-AlertError.storyName = 'Error';
+AlertError.storyName = 'Error'
 
 AlertError.parameters = {
   notes: `
@@ -126,8 +126,8 @@ AlertError.parameters = {
   \`\`\`html
   ${alert_error_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_warning_html = `
     <div class="alert alert-warning alert-dismissible d-flex" role="alert">
@@ -140,18 +140,18 @@ const alert_warning_html = `
         <p class="mb-2">
           <b>Warning! Please be careful to proceed the action.</b>
         </p>
-        This is a warning alert - check it out!
+        A simple warning alert—check it out!
       </div>
       <div class="flex-shrink-1  mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
-`;
+`
 
-export const AlertWarning = () => `${alert_warning_html}`;
+export const AlertWarning = () => `${alert_warning_html}`
 
-AlertWarning.storyName = 'Warning';
+AlertWarning.storyName = 'Warning'
 
 AlertWarning.parameters = {
   notes: `
@@ -164,8 +164,8 @@ AlertWarning.parameters = {
   \`\`\`html
   ${alert_warning_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_info_html = `
     <div class="alert alert-info alert-dismissible d-flex" role="alert">
@@ -175,20 +175,20 @@ const alert_info_html = `
         </svg>
       </div>
       <div class="flex-grow-1">
-        <p class="mb-2"><strong>This is a info alert - check it out!</strong></p>
-        <p class="mb-2">This is a info alert - check it out!</p>
-        <p class="mb-0">This is a info alert - check it out!</p>
+        <p class="mb-2"><strong>A simple info alert—check it out!</strong></p>
+        <p class="mb-2">A simple info alert—check it out!</p>
+        <p class="mb-0">A simple info alert—check it out!</p>
       </div>
       <div class="flex-shrink-1 mt-n1 mb-n1">
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
         </button>
       </div>
     </div>
-`;
+`
 
-export const AlertInfo = () => `${alert_info_html}`;
+export const AlertInfo = () => `${alert_info_html}`
 
-AlertInfo.storyName = 'Info';
+AlertInfo.storyName = 'Info'
 
 AlertInfo.parameters = {
   notes: `
@@ -202,8 +202,8 @@ AlertInfo.parameters = {
   \`\`\`html
   ${alert_info_html}
   \`\`\`
-  `,
-};
+  `
+}
 
 const alert_with_divider_html = `
     <div class="alert alert-success alert-dismissible d-flex" role="alert">
@@ -222,11 +222,11 @@ const alert_with_divider_html = `
         </button>
       </div>
     </div>
-`;
+`
 
-export const AlertWithDivider = () => `${alert_with_divider_html}`;
+export const AlertWithDivider = () => `${alert_with_divider_html}`
 
-AlertWithDivider.storyName = 'With Divider';
+AlertWithDivider.storyName = 'With Divider'
 
 AlertWithDivider.parameters = {
   notes: `
@@ -239,6 +239,5 @@ AlertWithDivider.parameters = {
   \`\`\`html
   ${alert_with_divider_html}
   \`\`\`
-  `,
-};
-
+  `
+}
