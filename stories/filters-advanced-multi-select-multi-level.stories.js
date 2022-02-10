@@ -332,14 +332,6 @@ export const MultiSelectMultiLevelHighlight = () => {
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
-          <button class="bg-transparent border-0 px-1">
-            <span class="visually-hidden">Remove Selection</span>
-            <span class="d-flex align-items-center">
-              <svg width="1rem" height="1rem" class="filter-remove">
-                <use xlink:href="${iconSprite}#tabler-x" />
-              </svg>
-            </span>
-          </button>
           <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
@@ -521,6 +513,17 @@ const multi_select_multi_level_selection_html = `
             </span>
           </button>
         </div>
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+        <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+          <li>
+            <span class="dropdown-item d-flex px-2 py-1">
+              <span class="w-100">
+                <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked><b>English</b></label>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
       </div>
     </div>
     `
@@ -564,6 +567,17 @@ export const MultiSelectMultiLevelSelection = () => {
               </svg>
             </span>
           </button>
+        </div>
+        <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked><b>English</b></label>
+                </span>
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
