@@ -38,14 +38,15 @@ const multi_select_multi_level_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
           </span>
-          <button class="bg-transparent border-0 me-n2">
+          <button class="bg-transparent border-0 me-n2 px-1">
+            <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
-              <svg width="1.25rem" height="1.25rem">
+              <svg width="1.125rem" height="1.125rem">
                 <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-down" />
               </svg>
             </span>
@@ -178,14 +179,14 @@ export const MultiSelectMultiLevel = () => {
         <ul class="list-unstyled list-inline mb-2 mt-n1">
 
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
-          <button class="bg-transparent border-0 me-n3">
+          <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
-              <svg width="1.25rem" height="1.25rem">
+              <svg width="1.125rem" height="1.125rem">
                 <use xlink:href="${iconSprite}#tabler-chevron-down" />
               </svg>
             </span>
@@ -265,15 +266,16 @@ const multi_select_multi_level_highlight_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
           </span>
-          <button class="bg-transparent border-0 me-n2">
+          <button class="bg-transparent border-0 me-n2 px-1">
+            <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
-              <svg width="1.25rem" height="1.25rem">
-                <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-down" />
+              <svg width="1.125rem" height="1.125rem">
+                <use xlink:href="${iconSprite}#tabler-chevron-down" />
               </svg>
             </span>
           </button>
@@ -330,22 +332,22 @@ export const MultiSelectMultiLevelHighlight = () => {
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
-          <div class="bg-transparent border-0 px-1">
+          <button class="bg-transparent border-0 px-1">
             <span class="visually-hidden">Remove Selection</span>
             <span class="d-flex align-items-center">
               <svg width="1rem" height="1rem" class="filter-remove">
                 <use xlink:href="${iconSprite}#tabler-x" />
               </svg>
             </span>
-          </div>
-          <div class="bg-transparent border-0 me-n2 px-1">
+          </button>
+          <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
-              <svg width="1rem" height="1rem">
+              <svg width="1.125rem" height="1.125rem">
                 <use xlink:href="${iconSprite}#tabler-chevron-down" />
               </svg>
             </span>
-          </div>
+          </button>
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
@@ -417,7 +419,7 @@ const multi_select_multi_level_empty_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
@@ -460,14 +462,14 @@ export const MultiSelectMultiLevelEmpty = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
-          <button class="bg-transparent border-0 me-n3">
+          <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
             <span class="d-flex align-items-center">
-              <svg width="1.25rem" height="1.25rem">
+              <svg width="1.125rem" height="1.125rem">
                 <use xlink:href="${iconSprite}#tabler-chevron-down" />
               </svg>
             </span>
@@ -494,6 +496,89 @@ MultiSelectMultiLevelEmpty.parameters = {
 
   \`\`\`html
   ${multi_select_multi_level_empty_html}
+  \`\`\`
+
+  `
+}
+
+const multi_select_multi_level_selection_html = `
+    <div class="dropdown">
+      <h3>Multi-Select, Multi-Level Selection</h3>
+      <div>
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+          <span class="w-100">
+            <label for="search-input">Majors</label>
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="English">
+          </span>
+          <button class="bg-transparent border-0 me-n2">
+            <span class="d-flex align-items-center">
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-down" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    `
+
+export const MultiSelectMultiLevelSelection = () => {
+  const mwLabel = 'max-width (px):'
+  const mwDefaultValue = 320
+  const mwOptions = {
+    range: true,
+    min: 100,
+    max: 600,
+    step: 1
+  }
+
+  const max_width_active = number(mwLabel, mwDefaultValue, mwOptions)
+
+  return `
+    <div class="dropdown">
+      <h3>Multi-Select, Multi-Level Selection</h3>
+      <div style="max-width: ${max_width_active}px;">
+        <div>
+          <label class="mb-1" for="search-input"><b>Major</b></label>
+        </div>
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+          <span class="w-100">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="English">
+          </span>
+          <button class="bg-transparent border-0 px-1">
+            <span class="visually-hidden">Remove Selection</span>
+            <span class="d-flex align-items-center">
+              <svg width="1rem" height="1rem" class="filter-remove">
+                <use xlink:href="${iconSprite}#tabler-x" />
+              </svg>
+            </span>
+          </button>
+          <button class="bg-transparent border-0 me-n2 px-1">
+            <span class="visually-hidden">Child menu</span>
+            <span class="d-flex align-items-center">
+              <svg width="1.125rem" height="1.125rem">
+                <use xlink:href="${iconSprite}#tabler-chevron-down" />
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    `
+}
+
+MultiSelectMultiLevelSelection.storyName = 'Multi-Select, Multi-Level Selection'
+
+MultiSelectMultiLevelSelection.parameters = {
+  notes: `
+  
+  #Sample Code
+
+  \`\`\`html
+  ${multi_select_multi_level_selection_html}
   \`\`\`
 
   `
