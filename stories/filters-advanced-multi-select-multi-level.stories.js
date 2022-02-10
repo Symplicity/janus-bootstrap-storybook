@@ -500,6 +500,14 @@ const multi_select_multi_level_selection_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
+        <ul class="list-unstyled list-inline mb-2 mt-n1">
+          <li class="list-inline-item me-1">
+            <button class="btn text-white d-inline-flex badge bg-primary minw-0">
+              English
+              <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
+            </button>
+          </li>
+        </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
@@ -514,16 +522,16 @@ const multi_select_multi_level_selection_html = `
           </button>
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-        <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
-          <li>
-            <span class="dropdown-item d-flex px-2 py-1">
-              <span class="w-100">
-                <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked><b>English</b></label>
+          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+            <li>
+              <span class="dropdown-item d-flex px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked><b>English</b></label>
+                </span>
               </span>
-            </span>
-          </li>
-        </ul>
-      </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     `
@@ -547,6 +555,14 @@ export const MultiSelectMultiLevelSelection = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
+        <ul class="list-unstyled list-inline mb-2 mt-n1">
+          <li class="list-inline-item me-1">
+            <button class="btn text-white d-inline-flex badge bg-primary minw-0">
+              English
+              <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
+            </button>
+          </li>
+        </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="English">
