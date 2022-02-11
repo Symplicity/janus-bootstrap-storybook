@@ -5,12 +5,11 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Multi-Select  Multi-Level'
+  title: 'Components/Filters Advanced/Hierarchical Picklist/Multi-Level'
 }
 
-const multi_select_multi_level_html = `
+const hierarchical_picklist_default_html = `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -89,7 +88,7 @@ const multi_select_multi_level_html = `
     </div>
     `
 
-export const MultiSelectMultiLevel = () => {
+export const HierarchicalPicklistMultiDefault = () => {
   const drilldown_parent = text('Major', 'Engineering')
   const drilldown_option_1 = text('Select Option 1', 'All Jobs and Interviews')
   const drilldown_option_2 = text('Select Option 2', 'Career Fair Postings')
@@ -171,7 +170,6 @@ export const MultiSelectMultiLevel = () => {
 
   return `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -245,23 +243,22 @@ export const MultiSelectMultiLevel = () => {
     `
 }
 
-MultiSelectMultiLevel.storyName = 'Multi-Select, Multi-Level'
+HierarchicalPicklistMultiDefault.storyName = 'Default'
 
-MultiSelectMultiLevel.parameters = {
+HierarchicalPicklistMultiDefault.parameters = {
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${multi_select_multi_level_html}
+  ${hierarchical_picklist_default_html}
   \`\`\`
 
   `
 }
 
-const multi_select_multi_level_highlight_html = `
+const hierarchical_picklist_highlight_html = `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Highlight</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -309,7 +306,7 @@ const multi_select_multi_level_highlight_html = `
     </div>
     `
 
-export const MultiSelectMultiLevelHighlight = () => {
+export const HierarchicalPicklistMultiHighlight = () => {
   const mwLabel = 'max-width (px):'
   const mwDefaultValue = 320
   const mwOptions = {
@@ -323,7 +320,6 @@ export const MultiSelectMultiLevelHighlight = () => {
 
   return `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Highlight</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -390,23 +386,22 @@ export const MultiSelectMultiLevelHighlight = () => {
     `
 }
 
-MultiSelectMultiLevelHighlight.storyName = 'Multi-Select, Multi-Level Highlight'
+HierarchicalPicklistMultiHighlight.storyName = 'Highlight'
 
-MultiSelectMultiLevelHighlight.parameters = {
+HierarchicalPicklistMultiHighlight.parameters = {
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${multi_select_multi_level_highlight_html}
+  ${hierarchical_picklist_default_html}
   \`\`\`
 
   `
 }
 
-const multi_select_multi_level_empty_html = `
+const hierarchical_picklist_empty_html = `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Empty</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -435,7 +430,7 @@ const multi_select_multi_level_empty_html = `
     </div>
     `
 
-export const MultiSelectMultiLevelEmpty = () => {
+export const HierarchicalPicklistMultiEmpty = () => {
   const mwLabel = 'max-width (px):'
   const mwDefaultValue = 320
   const mwOptions = {
@@ -449,7 +444,6 @@ export const MultiSelectMultiLevelEmpty = () => {
 
   return `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Highlight</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -479,23 +473,22 @@ export const MultiSelectMultiLevelEmpty = () => {
     `
 }
 
-MultiSelectMultiLevelEmpty.storyName = 'Multi-Select, Multi-Level Empty'
+HierarchicalPicklistMultiEmpty.storyName = 'Empty'
 
-MultiSelectMultiLevelEmpty.parameters = {
+HierarchicalPicklistMultiEmpty.parameters = {
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${multi_select_multi_level_empty_html}
+  ${hierarchical_picklist_empty_html}
   \`\`\`
 
   `
 }
 
-const multi_select_multi_level_selection_html = `
+const hierarchical_picklist_selection_html = `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Selection</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -536,7 +529,7 @@ const multi_select_multi_level_selection_html = `
     </div>
     `
 
-export const MultiSelectMultiLevelSelection = () => {
+export const HierarchicalPicklistMultiSelection = () => {
   const mwLabel = 'max-width (px):'
   const mwDefaultValue = 320
   const mwOptions = {
@@ -550,7 +543,6 @@ export const MultiSelectMultiLevelSelection = () => {
 
   return `
     <div class="dropdown">
-      <h3>Multi-Select, Multi-Level Selection</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -600,15 +592,15 @@ export const MultiSelectMultiLevelSelection = () => {
     `
 }
 
-MultiSelectMultiLevelSelection.storyName = 'Multi-Select, Multi-Level Selection'
+HierarchicalPicklistMultiSelection.storyName = 'Selection'
 
-MultiSelectMultiLevelSelection.parameters = {
+HierarchicalPicklistMultiSelection.parameters = {
   notes: `
   
   #Sample Code
 
   \`\`\`html
-  ${multi_select_multi_level_selection_html}
+  ${hierarchical_picklist_selection_html}
   \`\`\`
 
   `

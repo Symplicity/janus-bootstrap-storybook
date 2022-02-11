@@ -795,8 +795,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Multi-Level",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-multi-level--multi-select-multi-level",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Multi-Default",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-multi-level--hierarchical-picklist-multi-default",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -813,8 +813,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Multi-Level-Highlight",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-multi-level--multi-select-multi-level-highlight",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Multi-Highlight",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-multi-level--hierarchical-picklist-multi-highlight",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -831,8 +831,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Multi-Level-Empty",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-multi-level--multi-select-multi-level-empty",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Multi-Empty",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-multi-level--hierarchical-picklist-multi-empty",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -849,8 +849,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Multi-Level-Selection",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-multi-level--multi-select-multi-level-selection",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Multi-Selection",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-multi-level--hierarchical-picklist-multi-selection",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -867,8 +867,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Single-Level",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-single-level--multi-select-single-level",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Single-Default",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-single-level--hierarchical-picklist-single-default",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -885,8 +885,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Multi-Select-Single-Level-With-Search",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-multi-select-single-level--multi-select-single-level-with-search",
+      "label": "Filters-Advanced-SB-Hierarchical-Picklist-Single-Search",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-hierarchical-picklist-single-level--hierarchical-picklist-single-search",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
