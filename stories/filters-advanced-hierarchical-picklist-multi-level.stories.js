@@ -556,6 +556,19 @@ export const HierarchicalPicklistMultiSelection = () => {
 
   const max_width_active = number(mwLabel, mwDefaultValue, mwOptions)
 
+  const filter_chip_item = text('Filter Chip Item', 'Engineering')
+
+  const fcLabel = '# of Filter Chips'
+  const fcDefaultValue = 1
+  const fcOptions = {
+    range: true,
+    min: 0,
+    max: 10,
+    step: 1
+  }
+
+  const filter_chip_value = number(fcLabel, fcDefaultValue, fcOptions)
+
   setTimeout(function () {
     const createListItems = document.querySelector('.list-unstyled-repeat')
     createListItems.innerHTML = `
@@ -611,7 +624,7 @@ export const HierarchicalPicklistMultiSelection = () => {
         </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="English">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="Engineering">
           </span>
           <button class="bg-transparent border-0 px-1">
             <span class="visually-hidden">Remove Selection</span>

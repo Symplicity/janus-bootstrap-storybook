@@ -858,7 +858,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "",
+      "clickSelector": "#dropdownMenuButton2",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
