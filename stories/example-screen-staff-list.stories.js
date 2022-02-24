@@ -531,8 +531,8 @@ const staff_list_html = `
                     <div class="input-group">
                       <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
                         <svg class="icon-lg-font-size ps-1">
+                          <title>Open Search Dialog</title>   
                           <use xlink:href="${iconSprite}#tabler-search" />
-                          <span class="visually-hidden">Open Search Dialog</span>
                         </svg>
                       </span>
                       <input type="text" class="form-control border-start-0 fs-6" placeholder="Search cases by student, email, IR#" aria-label="Search" aria-describedby="basic-addon1">

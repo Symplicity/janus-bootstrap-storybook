@@ -166,7 +166,6 @@ const hierarchical_picklist_single_search_html = `
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>
@@ -275,7 +274,6 @@ export const HierarchicalPicklistSingleSearch = () => {
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>

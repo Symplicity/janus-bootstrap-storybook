@@ -18,8 +18,8 @@ const search_desktop_input_html = `
   <div class="dropdown">
     <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="true">
       <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+        <title>Open Search Dialog</title>
         <use xlink:href="${iconSprite}#tabler-search" />
-        <span class="visually-hidden">Open Search Dialog</span>
       </svg>
       <form class="d-flex w-100">
         <label for="search-input" class="visually-hidden">Search</label>
@@ -49,6 +49,7 @@ export const SearchDesktopInput = () => {
           <a class="dropdown-item d-flex mb-2" href="#" id="item-${i + 1}">
             <span>
               <svg width="1.25rem" height="1.25rem" class="me-2 mt-n1">
+                <title>Open Search Dialog</title>
                 <use xlink:href="${iconSprite}#tabler-search"></use>
               </svg>
             </span>
@@ -92,8 +93,8 @@ const search_desktop_combo_input_html = `
   <div class="">
     <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton1" data-toggle="collapse">
       <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+        <title>Open Search Dialog</title>
         <use xlink:href="${iconSprite}#tabler-search" />
-        <span class="visually-hidden">Open Search Dialog</span>
       </svg>
     </div>
   </div>
@@ -113,8 +114,8 @@ const search_desktop_combo_input_html = `
         <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping" autofocus>
         <button class="input-group-text border-0 ms-0" id="addon-wrapping">
           <svg class="icon-lg-font-size m-0">
+            <title>Open Search Dialog</title>
             <use xlink:href="${iconSprite}#tabler-search" />
-            <span class="visually-hidden">Open Search Dialog</span>
           </svg>
         </button>
       </div>
@@ -169,8 +170,8 @@ const search_mobile_input_html = `
 <div class="m-3">
   <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header" type="button">
     <svg class="icon-xl-font-size mt-n1">
+      <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
-      <span class="visually-hidden">Open Search Dialog</span>
     </svg>
   </button>
 </div>
@@ -239,7 +240,7 @@ export const SearchMobileInput = () => {
           <a class="dropdown-item d-flex p-0 mb-2" href="#" id="item-${i + 1}">
             <span>
               <svg width="1rem" height="1rem" class="me-2 mt-n1">
-                <use xlink:href="static/media/tabler-sprite.3d36b3c4.svg#tabler-search"></use>
+                <use xlink:href="${iconSprite}#tabler-search"></use>
               </svg>
             </span>
             <span class="flex-fill">
@@ -274,8 +275,8 @@ const search_mobile_input_complex_results_html = `
 <div class="m-3">
   <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
     <svg class="icon-xl-font-size mt-n1">
+      <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
-      <span class="visually-hidden">Open Search Dialog</span>
     </svg>
   </button>
 </div>
@@ -350,7 +351,6 @@ export const SearchMobileInputComplexResults = () => {
             <span class="list-avatar rounded-circle m-1 text-center">
               <svg class="icon-lg-font-size mt-2">
                 <use xlink:href="${iconSprite}#tabler-building" />
-                <span class="visually-hidden">Open Search Dialog</span>
               </svg>
             </span>
             <span class="flex-fill ms-1">
@@ -390,8 +390,8 @@ const search_mobile_combo_input_html = `
 <div class="m-3">
   <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
     <svg class="icon-xl-font-size mt-n1">
+      <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
-      <span class="visually-hidden">Open Search Dialog</span>
     </svg>
   </button>
 </div>
@@ -415,8 +415,8 @@ const search_mobile_combo_input_html = `
           <input class="search-input fs-6 form-control border-0" type="text" id="myInput" aria-label="Search input" aria-describedby="addon-wrapping">
           <span class="input-group-text border-0" id="addon-wrapping">
             <svg class="icon-lg-font-size">
+              <title>Open Search Dialog</title>
               <use xlink:href="${iconSprite}#tabler-search" />
-              <span class="visually-hidden">Open Search Dialog</span>
             </svg>
           </span>
         </div>

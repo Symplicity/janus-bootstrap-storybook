@@ -22,7 +22,6 @@ const drilldown_button_parent_html = `
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>
@@ -109,7 +108,6 @@ export const FilterButtonParent = () => {
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>
@@ -181,7 +179,6 @@ const drilldown_button_child_html = `
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>
@@ -257,7 +254,6 @@ export const FilterButtonChild = () => {
               <span class="input-group-text bg-white">
                   <svg class="icon-lg-font-size">
                     <use xlink:href="${iconSprite}#tabler-search" />
-                    <span class="visually-hidden">Search</span>
                   </svg>
               </span>
             </div>

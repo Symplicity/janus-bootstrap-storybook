@@ -31,8 +31,8 @@ let header_html = `
             <div class="dropdown top-search d-flex justify-content-center w-100 d-none d-md-flex">
               <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+                  <title>Open Search Dialog</title>
                   <use xlink:href="${iconSprite}#tabler-search" />
-                  <span class="visually-hidden">Open Search Dialog</span>
                 </svg>
                 <form class="d-flex w-100">
                   <label for="search-input" class="visually-hidden">Search</label>
@@ -123,8 +123,8 @@ export const HeaderLoggedIn = () => {
             <div class="dropdown top-search d-flex justify-content-center w-100 d-none d-md-flex">
               <div class="d-flex align-items-center btn-search btn btn-action btn-action-icon-only btn-action-header" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg class="icon-xl-font-size mt-n1 ms-0 me-2">
+                  <title>Open Search Dialog</title>
                   <use xlink:href="${iconSprite}#tabler-search" />
-                  <span class="visually-hidden">Open Search Dialog</span>
                 </svg>
                 <form class="d-flex w-100">
                   <label for="search-input" class="visually-hidden">Search</label>
