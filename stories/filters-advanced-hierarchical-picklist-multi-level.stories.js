@@ -139,6 +139,7 @@ export const HierarchicalPicklistMultiDefault = () => {
 
   return `
     <div class="dropdown">
+      <h3>Multi-Level - Default</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -225,6 +226,7 @@ HierarchicalPicklistMultiDefault.parameters = {
 
 const hierarchical_picklist_highlight_html = `
     <div class="dropdown">
+      <h3>Multi-Level - Highlight</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -286,6 +288,7 @@ export const HierarchicalPicklistMultiHighlight = () => {
 
   return `
     <div class="dropdown">
+      <h3>Multi-Level - Highlight</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -368,6 +371,7 @@ HierarchicalPicklistMultiHighlight.parameters = {
 
 const hierarchical_picklist_empty_html = `
     <div class="dropdown">
+      <h3>Multi-Level - Empty</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -410,6 +414,7 @@ export const HierarchicalPicklistMultiEmpty = () => {
 
   return `
     <div class="dropdown">
+      <h3>Multi-Level - Empty</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -455,6 +460,7 @@ HierarchicalPicklistMultiEmpty.parameters = {
 
 const hierarchical_picklist_selection_html = `
     <div class="dropdown">
+      <h3>Multi-Level - Selection</h3>
       <div>
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
@@ -576,6 +582,7 @@ export const HierarchicalPicklistMultiSelection = () => {
 
   return `
     <div class="dropdown">
+      <h3>Multi-Level - Selection</h3>
       <div style="max-width: ${max_width_active}px;">
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>

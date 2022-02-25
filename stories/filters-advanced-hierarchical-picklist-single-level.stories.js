@@ -10,6 +10,7 @@ export default {
 
 const hierarchical_picklist_single_default_html = `
     <div class="dropdown">
+      <h3>Single-Level - Default</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
@@ -93,6 +94,7 @@ export const HierarchicalPicklistSingleDefault = () => {
 
   return `
     <div class="dropdown">
+      <h3>Single-Level - Default</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
@@ -154,7 +156,7 @@ HierarchicalPicklistSingleDefault.parameters = {
 
 const hierarchical_picklist_single_search_html = `
     <div class="dropdown">
-      <h3>Multi-Select, Single-Level with Search</h3>
+      <h3>Single-Level - Search</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
@@ -263,6 +265,7 @@ export const HierarchicalPicklistSingleSearch = () => {
 
   return `
     <div class="dropdown">
+      <h3>Single-Level - Search</h3>
       <div>
         <button class="btn btn-outline-secondary filter-toggle rounded-pill" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-offset="0,4" data-bs-auto-close="outside">
           Position Type 
