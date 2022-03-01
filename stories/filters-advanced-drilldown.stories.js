@@ -186,16 +186,22 @@ const drilldown_button_child_html = `
           <ul class="list-unstyled mb-2 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
-                  <span class="h4 mt-0 mb-0 ms-n2 ">
-                    <svg width="1.25rem" height="1.25rem">
-                      <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-left" />
-                    </svg>
+                <div class="dropdown-item bg-white d-flex border border-light border-start-0 border-end-0" href="#" style="padding: 0.375rem 1.25rem">
+                  <span class="d-flex h4 mt-0 mb-0 ms-n2 ">
+                    <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                      <span class="visually-hidden">Child menu</span>
+                      <span class="d-flex align-items-center">
+                        <svg width="1.25rem" height="1.25rem">
+                          <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-left" />
+                        </svg>
+                      </span>
+                    </button>
                   </span>
                   <span class="w-100 text-center">
-                    Category 1.3
+                    Position Type
                   </span>
-                </a>
+                </div>
+              </div>
             </li>
           </ul>
           <ul class="list-unstyled mb-0 overflow-auto">
@@ -261,16 +267,22 @@ export const FilterButtonChild = () => {
           <ul class="list-unstyled mb-2 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
-                  <span class="h4 mt-0 mb-0 ms-n2 ">
-                    <svg width="1.25rem" height="1.25rem">
-                      <use xlink:href="${iconSprite}#tabler-chevron-left" />
-                    </svg>
+                <div class="dropdown-item bg-white d-flex border border-light border-start-0 border-end-0" href="#" style="padding: 0.375rem 1.25rem">
+                  <span class="d-flex h4 mt-0 mb-0 ms-n2 ">
+                    <button class="py-0 px-2 bg-transparent border-0 me-n3">
+                      <span class="visually-hidden">Child menu</span>
+                      <span class="d-flex align-items-center">
+                        <svg width="1.25rem" height="1.25rem">
+                          <use xlink:href="${iconSprite}#tabler-chevron-left" />
+                        </svg>
+                      </span>
+                    </button>
                   </span>
                   <span class="w-100 text-center">
                     ${drilldown_parent}
                   </span>
-                </a>
+                </div>
+              </div>
             </li>
           </ul>
           <ul class="list-unstyled mb-0 overflow-auto">
