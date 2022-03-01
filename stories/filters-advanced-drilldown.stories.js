@@ -186,8 +186,8 @@ const drilldown_button_child_html = `
           <ul class="list-unstyled mb-2 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <div class="dropdown-item bg-white d-flex border border-light border-start-0 border-end-0" href="#" style="padding: 0.375rem 1.25rem">
-                  <span class="d-flex h4 mt-0 mb-0 ms-n2 ">
+                <div class="dropdown-title d-flex border border-light border-start-0 border-end-0" href="#">
+                  <span class="d-flex h4 mt-0 mb-0 ms-n3">
                     <button class="py-0 px-2 bg-transparent border-0 me-n3">
                       <span class="visually-hidden">Child menu</span>
                       <span class="d-flex align-items-center">
@@ -267,8 +267,8 @@ export const FilterButtonChild = () => {
           <ul class="list-unstyled mb-2 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <div class="dropdown-item bg-white d-flex border border-light border-start-0 border-end-0" href="#" style="padding: 0.375rem 1.25rem">
-                  <span class="d-flex h4 mt-0 mb-0 ms-n2 ">
+                <div class="dropdown-title d-flex border border-light border-start-0 border-end-0" href="#">
+                  <span class="d-flex h4 mt-0 mb-0 ms-n3">
                     <button class="py-0 px-2 bg-transparent border-0 me-n3">
                       <span class="visually-hidden">Child menu</span>
                       <span class="d-flex align-items-center">
