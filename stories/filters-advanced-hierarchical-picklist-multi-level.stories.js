@@ -250,21 +250,40 @@ const hierarchical_picklist_highlight_html = `
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 1</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>gineering</b></label>
                 </span>
               </span>
             </li>
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 2</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>glish</b></label>
                 </span>
               </span>
             </li>
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">Option 3</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>vironmental Design</b></label>
+                  <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <span class="breadcrumb-item m-0">Aerospace</span>
+                    </span>
+                  </div>
+                </span>
+              </span>
+            </li>
+            <li>
+              <span class="dropdown-item d-flex flex-column flex-wrap px-2 py-1">
+                <span class="w-100">
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>G</b>en<b>etics</b>
+                  </label>
+                  <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
+                    <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
+                      <span class="breadcrumb-item m-0 ">Agricultural</span>
+                      <span class="breadcrumb-item m-0"><b>Bio</b>en<b>gineering</b></span>
+                    </span>
+                  </div>
                 </span>
               </span>
             </li>
@@ -311,21 +330,21 @@ export const HierarchicalPicklistMultiHighlight = () => {
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>gineering</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>gineering</b></label>
                 </span>
               </span>
             </li>
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>glish</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>glish</b></label>
                 </span>
               </span>
             </li>
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>En</b>vironmental Design</label>
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">En<b>vironmental Design</b></label>
                   <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
                     <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
                       <span class="breadcrumb-item m-0">Aerospace</span>
@@ -337,12 +356,12 @@ export const HierarchicalPicklistMultiHighlight = () => {
             <li>
               <span class="dropdown-item d-flex flex-column flex-wrap px-2 py-1">
                 <span class="w-100">
-                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="...">G<b>en</b>etics
+                  <label class="list-group-item d-flex border-0 p-0 bg-transparent"><input class="form-check-input me-2" type="checkbox" value="" aria-label="..."><b>G</b>en<b>etics</b>
                   </label>
                   <div style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
                     <span class="breadcrumb form-text d-flex border-0 p-0 bg-transparent ms-4 mb-0 fs-6">
                       <span class="breadcrumb-item m-0 ">Agricultural</span>
-                      <span class="breadcrumb-item m-0">Bio<b>en</b>gineering</span>
+                      <span class="breadcrumb-item m-0"><b>Bio</b>en<b>gineering</b></span>
                     </span>
                   </div>
                 </span>
