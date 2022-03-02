@@ -410,7 +410,7 @@ const hierarchical_picklist_empty_html = `
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
-            <li class="p-2">
+            <li class="px-6 py-2">
               No results found
             </li>
           </ul>
@@ -453,7 +453,7 @@ export const HierarchicalPicklistMultiEmpty = () => {
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
           <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
-            <li class="p-2">
+            <li class="px-6 py-2">
               No results found
             </li>
           </ul>
