@@ -17,9 +17,9 @@ const steps_html = `
 <div class="d-flex">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center">
     <li class="first done me-5 w-100">
-      <button>
-        <span class="step-icon">
-          <svg class="icon-lg-font-size">
+      <button class="btn btn-link">
+        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-xl-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
@@ -28,9 +28,9 @@ const steps_html = `
       </button>
     </li>
     <li class="done mx-5 w-100">
-      <button>
-        <span class="step-icon">
-          <svg class="icon-lg-font-size">
+      <button class="btn btn-link">
+        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-xl-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
@@ -39,13 +39,19 @@ const steps_html = `
       </button>
     </li>
     <li class="current mx-5 w-100">
-      <button>
+      <button class="btn btn-link">
+        <span class="step-icon bg-primary rounded-circle text-white icon-xl-font-size d-inline-block">
+          3
+        </span>
         <span class="visually-hidden">Step: 3 Current</span>
         <span class="text-nowrap">Review</span>
       </button>
     </li>
     <li class="disabled last ms-5 w-100">
-      <button>
+      <button class="btn btn-link">
+        <span class="step-icon bg-light rounded-circle text-dark icon-xl-font-size d-inline-block">
+          4
+        </span>
         <span class="visually-hidden">Step: 4</span>
         <span class="text-nowrap">What's Next?</span>
       </button>
