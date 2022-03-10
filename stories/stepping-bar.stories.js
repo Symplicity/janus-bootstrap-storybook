@@ -17,7 +17,7 @@ const stepping_bar_html = `
 <div class="float-start float-md-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-3 mb-0">
     <li class="first done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3">
+      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
         <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <svg class="text-white icon-base-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
@@ -28,7 +28,7 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3">
+      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
         <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <svg class="text-white icon-base-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
@@ -39,8 +39,8 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="current w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3">
-        <span class="step-number bg-primary rounded-circle text-white icon-xl-font-size d-inline-block mb-6">
+      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+        <span class="step-number bg-primary rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <span class="fs-6 d-flex align-items-center justify-content-center">3</span>
         </span>
         <span class="visually-hidden">Step: 3 Current</span>
@@ -50,8 +50,8 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3">
-        <span class="step-number rounded-circle icon-xl-font-size d-inline-block mb-6">
+      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+        <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
           <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
         </span>
         <span class="visually-hidden">Step: 4</span>
