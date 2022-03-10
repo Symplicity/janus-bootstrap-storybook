@@ -1,7 +1,7 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Steps'
+  title: 'Components/Stepping Bar'
 }
 
 const moreDocumentation = `
@@ -13,7 +13,7 @@ For additional documentation, see:
 
 `
 
-const steps_html = `
+const stepping_bar_html = `
 <div class="float-start float-md-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-3 mb-0">
     <li class="first done w-100">
@@ -62,17 +62,17 @@ const steps_html = `
 </div>
 `
 
-export const Steps = () => {
+export const SteppingBar = () => {
   const container = $(
     '<div class="text-center" style="margin:100px 0 0;"></div>'
-  ).append(steps_html)
+  ).append(stepping_bar_html)
 
   return container[0]
 }
 
-Steps.storyName = 'Steps'
+SteppingBar.storyName = 'Stepping Bar'
 
-Steps.parameters = {
+SteppingBar.parameters = {
   notes: `
 
     # Steps
@@ -80,7 +80,7 @@ Steps.parameters = {
     ###HTML
 
     \`\`\`html
-    ${steps_html}
+    ${stepping_bar_html}
     \`\`\`
     
     ${moreDocumentation}
