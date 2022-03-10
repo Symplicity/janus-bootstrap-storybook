@@ -50,7 +50,7 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+      <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
         <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
           <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
         </span>
