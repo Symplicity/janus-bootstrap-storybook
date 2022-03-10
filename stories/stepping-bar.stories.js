@@ -75,7 +75,7 @@ SteppingBar.storyName = 'Stepping Bar'
 SteppingBar.parameters = {
   notes: `
 
-    # Steps
+    # Stepping Bar
 
     ###HTML
 
