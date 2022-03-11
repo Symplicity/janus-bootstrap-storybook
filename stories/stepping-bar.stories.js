@@ -15,9 +15,9 @@ For additional documentation, see:
 
 const stepping_bar_html = `
 <div class="float-start float-md-none d-flex justify-content-center position-relative steps four-steps">
-  <ol class="d-flex flex-nowrap list-unstyled align-items-center px-3 mb-0">
+  <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
         <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <svg class="text-white icon-base-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
@@ -28,7 +28,7 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
         <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <svg class="text-white icon-base-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
@@ -39,7 +39,7 @@ const stepping_bar_html = `
       </button>
     </li>
     <li class="current w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0">
+      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
         <span class="step-number bg-primary rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
           <span class="fs-6 d-flex align-items-center justify-content-center">3</span>
         </span>
