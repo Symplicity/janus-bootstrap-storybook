@@ -13,7 +13,7 @@ For additional documentation, see:
 
 `
 
-const stepping_bar_short_html = `
+const stepping_bar_four_steps_html = `
 <div class="float-start float-md-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done w-100">
@@ -62,25 +62,25 @@ const stepping_bar_short_html = `
 </div>
 `
 
-export const SteppingBarShort = () => {
+export const SteppingBarFourSteps = () => {
   const container = $(
     '<div class="text-center" style="margin:100px 0 0;"></div>'
-  ).append(stepping_bar_short_html)
+  ).append(stepping_bar_four_steps_html)
 
   return container[0]
 }
 
-SteppingBarShort.storyName = 'Stepping Bar Short'
+SteppingBarFourSteps.storyName = '4-Steps'
 
-SteppingBarShort.parameters = {
+SteppingBarFourSteps.parameters = {
   notes: `
 
-    # Stepping Bar Short
+    # Stepping Bar 4-Steps
 
     ###HTML
 
     \`\`\`html
-    ${stepping_bar_short_html}
+    ${stepping_bar_four_steps_html}
     \`\`\`
     
     ${moreDocumentation}
@@ -88,7 +88,7 @@ SteppingBarShort.parameters = {
   `
 }
 
-const stepping_bar_long_html = `
+const stepping_bar_six_steps_html = `
 <div class="float-start float-md-none d-flex justify-content-center position-relative steps six-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done w-100">
@@ -136,7 +136,7 @@ const stepping_bar_long_html = `
     <li class="disabled last w-100">
       <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
         <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
+          <span class="fs-6 d-flex align-items-center justify-content-center">5</span>
         </span>
         <span class="visually-hidden">Step: 5</span>
         <span class="text-nowrap d-block lh-1">Configure Add-Ons</span>
@@ -145,7 +145,7 @@ const stepping_bar_long_html = `
     <li class="disabled last w-100">
       <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
         <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
+          <span class="fs-6 d-flex align-items-center justify-content-center">6</span>
         </span>
         <span class="visually-hidden">Step: 6</span>
         <span class="text-nowrap d-block lh-1">Publish</span>
@@ -155,25 +155,25 @@ const stepping_bar_long_html = `
 </div>
 `
 
-export const SteppingBarLong = () => {
+export const SteppingBarSixSteps = () => {
   const container = $(
     '<div class="text-center" style="margin:100px 0 0;"></div>'
-  ).append(stepping_bar_long_html)
+  ).append(stepping_bar_six_steps_html)
 
   return container[0]
 }
 
-SteppingBarLong.storyName = 'Stepping Bar Long'
+SteppingBarSixSteps.storyName = '6-Steps'
 
-SteppingBarLong.parameters = {
+SteppingBarSixSteps.parameters = {
   notes: `
 
-    # Stepping Bar Long
+    # Stepping Bar 6-Steps
 
     ###HTML
 
     \`\`\`html
-    ${stepping_bar_long_html}
+    ${stepping_bar_six_steps_html}
     \`\`\`
     
     ${moreDocumentation}
