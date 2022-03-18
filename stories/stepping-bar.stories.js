@@ -14,7 +14,7 @@ For additional documentation, see:
 `
 
 const stepping_bar_four_steps_html = `
-<div class="float-start float-md-none d-flex justify-content-center position-relative steps four-steps">
+<div class="float-start float-sm-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done w-100">
       <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
@@ -64,7 +64,7 @@ const stepping_bar_four_steps_html = `
 
 export const SteppingBarFourSteps = () => {
   const container = $(
-    '<div class="text-center" style="margin:100px 0 0;"></div>'
+    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;"></div>'
   ).append(stepping_bar_four_steps_html)
 
   return container[0]
@@ -89,7 +89,7 @@ SteppingBarFourSteps.parameters = {
 }
 
 const stepping_bar_six_steps_html = `
-<div class="float-start float-md-none d-flex justify-content-center position-relative steps six-steps">
+<div class="float-start d-flex justify-content-center position-relative steps six-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done w-100">
       <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
@@ -157,7 +157,7 @@ const stepping_bar_six_steps_html = `
 
 export const SteppingBarSixSteps = () => {
   const container = $(
-    '<div class="text-center" style="margin:100px 0 0;"></div>'
+    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;"></div>'
   ).append(stepping_bar_six_steps_html)
 
   return container[0]
