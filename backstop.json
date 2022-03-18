@@ -1687,7 +1687,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "",
+      "clickSelector": "#modal-trigger",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -1705,7 +1705,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "",
+      "clickSelector": "#modal-trigger",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -1723,7 +1723,7 @@
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
-      "clickSelector": "",
+      "clickSelector": "#modal-trigger",
       "postInteractionWait": 200,
       "selectors": [],
       "selectorExpansion": true,
@@ -1732,8 +1732,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Stepping-Bar-SB-Short",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-stepping-bar--stepping-bar-short",
+      "label": "Stepping-Bar-SB-Four-Steps",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-stepping-bar--stepping-bar-four-steps",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1750,8 +1750,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Stepping-Bar-SB-Long",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-stepping-bar--stepping-bar-long",
+      "label": "Stepping-Bar-SB-Six-Steps",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-stepping-bar--stepping-bar-six-steps",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",

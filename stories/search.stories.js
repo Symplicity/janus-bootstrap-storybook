@@ -168,7 +168,7 @@ SearchDesktopComboInput.parameters = {
 
 const search_mobile_input_html = `
 <div class="m-3">
-  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header" type="button">
+  <button id="modal-trigger" data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header" type="button">
     <svg class="icon-xl-font-size mt-n1">
       <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
@@ -273,7 +273,7 @@ SearchMobileInput.parameters = {
 
 const search_mobile_input_complex_results_html = `
 <div class="m-3">
-  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+  <button id="modal-trigger" data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
     <svg class="icon-xl-font-size mt-n1">
       <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
@@ -388,7 +388,7 @@ SearchMobileInputComplexResults.parameters = {
 
 const search_mobile_combo_input_html = `
 <div class="m-3">
-  <button data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
+  <button id="modal-trigger" data-bs-toggle="modal" data-bs-target="#myModal" class="rounded-circle btn btn-action btn-action-icon-only btn-action-header me-7" type="button">
     <svg class="icon-xl-font-size mt-n1">
       <title>Open Search Dialog</title>
       <use xlink:href="${iconSprite}#tabler-search" />
