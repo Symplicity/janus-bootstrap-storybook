@@ -14,10 +14,10 @@ const hierarchical_picklist_default_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <ul class="list-unstyled mb-2 overflow-auto">
+        <ul class="list-parent list-unstyled mb-0 overflow-auto">
           <li class="mb-0">
             <div class="list-group">
-              <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+              <button class="dropdown-item d-flex border border-light border-start-0 border-end-0">
                 <span class="h4 mt-0 mb-0 ms-n2">
                   <svg width="1.25rem" height="1.25rem">
                     <use xlink:href="/path/to/icon-sprite.svg#tabler-chevron-left" />
@@ -26,10 +26,10 @@ const hierarchical_picklist_default_html = `
                 <span class="w-100 text-center">
                   Engineering
                 </span>
-              </a>
+              </button>
           </li>
         </ul>
-        <ul class="list-unstyled list-inline mb-2 mt-n1">
+        <ul class="list-children list-unstyled list-inline mb-2 mt-n1">
           <li class="list-inline-item me-1">
             <button class="btn text-dark bg-light d-inline-flex badge minw-0">
               Engineering
@@ -37,7 +37,7 @@ const hierarchical_picklist_default_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -144,7 +144,7 @@ export const HierarchicalPicklistMultiDefault = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
@@ -158,10 +158,10 @@ export const HierarchicalPicklistMultiDefault = () => {
           </button>
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-        <ul class="list-unstyled mb-2 overflow-auto">
+          <ul class="list-parent list-unstyled mb-0 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+                <button class="dropdown-item d-flex border border-light border-start-0 border-end-0">
                   <span class="h4 mt-0 mb-0 ms-n2">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-left" />
@@ -170,10 +170,10 @@ export const HierarchicalPicklistMultiDefault = () => {
                   <span class="w-100 text-center">
                     ${drilldown_parent}
                   </span>
-                </a>
+                </button>
             </li>
           </ul>
-          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+          <ul class="list-children list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
@@ -232,7 +232,7 @@ const hierarchical_picklist_highlight_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
@@ -313,7 +313,7 @@ export const HierarchicalPicklistMultiHighlight = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
@@ -396,7 +396,7 @@ const hierarchical_picklist_empty_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
@@ -439,7 +439,7 @@ export const HierarchicalPicklistMultiEmpty = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100" value="En">
           </span>
@@ -493,7 +493,7 @@ const hierarchical_picklist_selection_readonly_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -615,7 +615,7 @@ export const HierarchicalPicklistMultiSelectionReadonly = () => {
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside"  style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
@@ -629,10 +629,10 @@ export const HierarchicalPicklistMultiSelectionReadonly = () => {
           </button>
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-        <ul class="list-unstyled mb-2 overflow-auto">
+        <ul class="list-parent list-unstyled mb-0 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+                <button class="dropdown-item d-flex border border-light border-start-0 border-end-0">
                   <span class="h4 mt-0 mb-0 ms-n2">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-left" />
@@ -641,10 +641,10 @@ export const HierarchicalPicklistMultiSelectionReadonly = () => {
                   <span class="w-100 text-center">
                     ${drilldown_parent}
                   </span>
-                </a>
+                </button>
             </li>
           </ul>
-          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+          <ul class="list-children list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
@@ -713,7 +713,7 @@ const hierarchical_picklist_selection_edit_html = `
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
           <span class="w-100">
             <label for="search-input">Majors</label>
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
@@ -833,7 +833,7 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
     const input = document.getElementById('search-input')
     dropdown.click()
     input.focus()
-  }, 0)
+  }, 500)
 
   return `
     <div class="dropdown">
@@ -850,7 +850,7 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
             </button>
           </li>
         </ul>
-        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside" style="max-width: ${max_width_active}px;">
+        <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside" style="max-width: ${max_width_active}px;">
           <span class="w-100">
             <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100">
           </span>
@@ -872,10 +872,10 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
           </button>
         </div>
         <div class="dropdown-menu filter-menu pb-0 pt-0" aria-labelledby="dropdownMenuButton2">
-        <ul class="list-unstyled mb-2 overflow-auto">
+          <ul class="list-parent list-unstyled mb-0 overflow-auto">
             <li class="mb-0">
               <div class="list-group">
-                <a class="dropdown-item d-flex border border-light border-start-0 border-end-0" href="#">
+                <button class="dropdown-item d-flex border border-light border-start-0 border-end-0">
                   <span class="h4 mt-0 mb-0 ms-n2">
                     <svg width="1.25rem" height="1.25rem">
                       <use xlink:href="${iconSprite}#tabler-chevron-left" />
@@ -884,10 +884,10 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
                   <span class="w-100 text-center">
                     ${drilldown_parent}
                   </span>
-                </a>
+                </button>
             </li>
           </ul>
-          <ul class="list-unstyled mb-0 pt-2 pb-0 overflow-auto">
+          <ul class="list-children list-unstyled mb-0 pt-2 pb-0 overflow-auto">
             <li>
               <span class="dropdown-item d-flex px-2 py-1">
                 <span class="w-100">
