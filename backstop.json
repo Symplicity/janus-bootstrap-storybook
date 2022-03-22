@@ -872,7 +872,7 @@
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 100,
+      "delay": 600,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
