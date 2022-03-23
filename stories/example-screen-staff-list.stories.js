@@ -161,14 +161,14 @@ const tableContent = `
       <tr>
         <th class="fw-normal" scope="col">
           <label class="visually-hidden" for="checkboxHeader">Select Row</label>
-          <input type="checkbox" id="checkboxHeader">
+          <input class="form-check-input fs-4 mt-0 align-middle" type="checkbox" id="checkboxHeader" value="" aria-label="...">
         </th>
         <th class="fw-normal" scope="col">Actions</th>
         <th class="fw-normal" scope="col">
           <button class="d-flex border-0 bg-white p-0">
             Last Name
             <svg class="icon-lg-font-size d-flex">
-              <use xlink:href="${iconSprite}#tabler-caret-up" />
+              <use xlink:href="${iconSprite}#tabler-chevron-up" />
             </svg>
             <span class="visually-hidden">Sorted ascending</span>
           </button>
@@ -516,7 +516,7 @@ const staff_list_html = `
       <div class="d-flex flex-column justify-content-start flex-wrap w-100 px-md-4 px-sm-0 pb-md-3">
         <div class="d-flex justify-content-between align-items-center flex-wrap px-3 w-100">
           <h2 class="m-0">Incident Reports</h2> 
-          <button type="button" class="btn btn-danger fs-6">
+          <button type="button" class="btn btn-primary fs-4">
             <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
               <use xlink:href="${iconSprite}#tabler-plus" />
             </svg>Add New
@@ -619,11 +619,13 @@ export const ScreenStaffList = () => {
         .map(
           (item, i) => `
           <tr class="border-bottom border-light">
-            <td>
+            <td class="lh-1">
               <label class="visually-hidden" for="checkbox${
                 i + 1
               }">Select Row</label>
-              <input type="checkbox" id="checkbox${i + 1}">
+              <input class="form-check-input fs-4 mt-0 align-middle" type="checkbox" id="checkbox${
+                i + 1
+              }" value="" aria-label="...">
             </td>
             <td>
               <div class="d-flex">
