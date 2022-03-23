@@ -1,12 +1,12 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Tables/List',
-};
+  title: 'Examples/Tables/List'
+}
 
 const listHTML = `
   <div class="mt-7">
-    <table class="table align-middle fs-5 table-borderless">
+    <table class="table align-middle table-borderless fs-5">
       <thead class="border-bottom border-light text-nowrap">
         <tr>
           <th scope="col">#</th>
@@ -15,7 +15,7 @@ const listHTML = `
             <button class="d-flex border-0 bg-white fw-bold p-0">
               Last Name
               <svg class="icon-lg-font-size d-flex">
-                <use xlink:href="${iconSprite}#tabler-caret-up" />
+                <use xlink:href="${iconSprite}#tabler-chevron-up" />
               </svg>
               <span class="visually-hidden">Sorted ascending</span>
             </button>
@@ -31,9 +31,9 @@ const listHTML = `
       </thead>
       <tbody>
         <tr class="border-bottom border-light">
-          <td>
+          <td class="lh-1">
             <label class="visually-hidden" for="checkbox1">Select Row</label>
-            <input type="checkbox" id="checkbox1">
+            <input class="form-check-input fs-4 mt-0 align-middle" type="checkbox" id="checkbox1" value="" aria-label="...">
           </td>
           <td>
             <div class="d-flex">
@@ -70,9 +70,9 @@ const listHTML = `
           </td>
         </tr>
         <tr class="border-bottom border-light">
-          <td>
+          <td class="lh-1">
             <label class="visually-hidden" for="checkbox2">Select Row</label>
-            <input type="checkbox" id="checkbox2">
+            <input class="form-check-input fs-4 mt-0 align-middle" type="checkbox" id="checkbox2" value="" aria-label="...">
           </td>
           <td>
             <div class="d-flex">
@@ -109,11 +109,11 @@ const listHTML = `
       </tbody>
     </table>  
   </div>
-`;
+`
 
-export const List = () => `${listHTML}`;
+export const List = () => `${listHTML}`
 
-List.storyName = 'List';
+List.storyName = 'List'
 
 List.parameters = {
   notes: `
@@ -129,5 +129,5 @@ List.parameters = {
     ${listHTML}
     \`\`\`
     
-    `,
-};
+    `
+}
