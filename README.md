@@ -45,7 +45,7 @@ Visual Regression Testing
 
 Visual regression testing opens storybook pages in a headless browser, takes screenshots, and compares those screenshots to the reference (previously approved) versions. We use Docker to ensure that the platform you are running does not influence test results. **Important: Manual review of test results is essential,** because visual regression is imperfect. 
 
-###Running a test
+### Running a test
 1. Run `npm run test`
 2. If you see npm errors, the test has probably failed. Review the log for something like: 
 
@@ -56,15 +56,15 @@ Visual regression testing opens storybook pages in a headless browser, takes scr
    ```
 3. Always review test results manually, because visual regression is imperfect.
 
-###Reviewing test results
+### Reviewing test results
 1. If the test results automatically opened in your browser, you probably passed. You must verify this manually.
 2. To open test results, use `npm run test:view-report`
 
-###Approving test results
+### Approving test results
 1. To approve test results and update the reference tests, use `npm run approve`
 
 
-###Adding new tests
+### Adding new tests
 1. Edit `backstop.json` and add your test in the `scenarios` array. See [the docs](https://github.com/garris/BackstopJS#using-backstopjs)
 2. If this is a new scenario and component you will need to generate a set of reference images before running a test, for example you would use `npm run reference --filter=Typography-SB` if your new sceario had a label of `Typography-SB`.
 3. Run all tests using `npm run test`.
