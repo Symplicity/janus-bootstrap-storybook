@@ -3,7 +3,7 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text, number, radios } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Basic'
+  title: 'Components/Filters'
 }
 
 const filter_button_html = `
