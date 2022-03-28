@@ -921,8 +921,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Button-with-Dropdown-Regular",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--filter-button",
+      "label": "Filters-SB-Button-with-Dropdown-Regular",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -939,8 +939,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Button-with-Dropdown-Small",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--filter-button",
+      "label": "Filters-SB-Button-with-Dropdown-Small",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -957,8 +957,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-All-Filters-with-Modal",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--all-filters-button",
+      "label": "Filters-SB-All-Filters-with-Modal",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--all-filters-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -975,8 +975,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Toggle-Filter-Button-Checkbox",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-button",
+      "label": "Filters-SB-Toggle-Filter-Button-Checkbox",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--toggle-filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -993,8 +993,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Toggle-Filter-Button-Button",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-button",
+      "label": "Filters-SB-Toggle-Filter-Button-Button",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--toggle-filter-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1011,8 +1011,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Toggle-Filter-With-Ellipsis-Button-Checkbox",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-with-ellipsis-button",
+      "label": "Filters-SB-Toggle-Filter-With-Ellipsis-Button-Checkbox",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--toggle-filter-with-ellipsis-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1029,8 +1029,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Basic-SB-Toggle-Filter-With-Ellipsis-Button-Button",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-basic--toggle-filter-with-ellipsis-button",
+      "label": "Filters-SB-Toggle-Filter-With-Ellipsis-Button-Button",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters--toggle-filter-with-ellipsis-button",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
