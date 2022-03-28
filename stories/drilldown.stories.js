@@ -5,7 +5,7 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Drilldown'
+  title: 'Components/Drilldown'
 }
 
 const drilldown_button_parent_html = `
@@ -151,7 +151,7 @@ export const FilterButtonParent = () => {
     `
 }
 
-FilterButtonParent.storyName = 'Drilldown Parent'
+FilterButtonParent.storyName = 'Parent'
 
 FilterButtonParent.parameters = {
   notes: `
@@ -323,7 +323,7 @@ export const FilterButtonChild = () => {
     `
 }
 
-FilterButtonChild.storyName = 'Drilldown Child'
+FilterButtonChild.storyName = 'Child'
 
 FilterButtonChild.parameters = {
   notes: `

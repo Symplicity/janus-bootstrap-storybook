@@ -759,8 +759,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Drilldown-Parent",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-drilldown--filter-button-parent",
+      "label": "Drilldown-SB-Parent",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-drilldown--filter-button-parent",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -777,8 +777,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Filters-Advanced-SB-Drilldown-Child",
-      "url": "http://host.docker.internal:9009/iframe.html?id=components-filters-advanced-drilldown--filter-button-child",
+      "label": "Drilldown-SB-Child",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-drilldown--filter-button-child",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
