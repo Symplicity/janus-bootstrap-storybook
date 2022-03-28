@@ -5,7 +5,7 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text, number } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Filters Advanced/Hierarchical Picklist/Multi-Level'
+  title: 'Components/Hierarchical Picklist/Multi-Level'
 }
 
 const hierarchical_picklist_default_html = `
