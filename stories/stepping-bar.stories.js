@@ -16,47 +16,49 @@ For additional documentation, see:
 const stepping_bar_four_steps_html = `
 <div class="float-start float-sm-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
-    <li class="first done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <svg class="text-white icon-base-font-size">
+    <li class="first done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
         <span class="visually-hidden">Step: 1 Complete</span>
-        <span class="text-nowrap d-block lh-1">Configure Collection</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">Configure Collection</span>
+      </div>
     </li>
-    <li class="done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <svg class="text-white icon-base-font-size">
+    <li class="done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
         <span class="visually-hidden">Step: 2 Complete</span>
-        <span class="text-nowrap d-block lh-1">Add Case Types</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">Add Case Types</span>
+      </div>
     </li>
-    <li class="current w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-number bg-primary rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">3</span>
+    <li class="current">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">3</span>
         </span>
         <span class="visually-hidden">Step: 3 Current</span>
-        <span class="text-nowrap d-block lh-1">
-          <strong>Review</strong>
+        <span class="text-nowrap d-block mt-6 fw-bold">
+          Review
         </span>
-      </button>
+      </div>
     </li>
-    <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
-        <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
+    <li class="disabled last">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">4</span>
         </span>
         <span class="visually-hidden">Step: 4</span>
-        <span class="text-nowrap d-block lh-1">What's Next?</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">
+          What's Next?
+        </span>
+      </div>
     </li>
   </ol>
 </div>
@@ -89,68 +91,76 @@ SteppingBarFourSteps.parameters = {
 }
 
 const stepping_bar_six_steps_html = `
-<div class="float-start d-flex justify-content-center position-relative steps six-steps">
+<div class="float-start float-sm-none d-flex justify-content-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
-    <li class="first done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <svg class="text-white icon-base-font-size">
+    <li class="first done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
         <span class="visually-hidden">Step: 1 Complete</span>
-        <span class="text-nowrap d-block lh-1">Build Intake Form</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">Build Intake Form</span>
+      </div>
     </li>
-    <li class="done w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-icon bg-success rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <svg class="text-white icon-base-font-size">
+    <li class="done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" />
           </svg>
         </span>
         <span class="visually-hidden">Step: 2 Complete</span>
-        <span class="text-nowrap d-block lh-1">Build Processing Form</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">
+          Build Processing Form
+        </span>
+      </div>
     </li>
-    <li class="current w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 p-md-7 border-0">
-        <span class="step-number bg-primary rounded-circle text-white d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">3</span>
+    <li class="current">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">3</span>
         </span>
         <span class="visually-hidden">Step: 3 Current</span>
-        <span class="text-nowrap d-block lh-1">
-          <strong>Add Stages</strong>
+        <span class="text-nowrap d-block mt-6 fw-bold">
+          Add Stages
         </span>
-      </button>
+      </div>
     </li>
-    <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
-        <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">4</span>
+    <li class="disabled">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">4</span>
         </span>
         <span class="visually-hidden">Step: 4</span>
-        <span class="text-nowrap d-block lh-1">Review</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">
+          Review
+        </span>
+      </div>
     </li>
-    <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
-        <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">5</span>
+    <li class="disabled">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">5</span>
         </span>
         <span class="visually-hidden">Step: 5</span>
-        <span class="text-nowrap d-block lh-1">Configure Add-Ons</span>
-      </button>
+        <span class="text-nowrap d-block mt-6">
+        Configure Add-Ons
+        </span>
+      </div>
     </li>
-    <li class="disabled last w-100">
-      <button class="btn btn-link text-decoration-none text-dark p-3 border-0" disabled>
-        <span class="step-number rounded-circle d-inline-block icon-xl-font-size mb-6">
-          <span class="fs-6 d-flex align-items-center justify-content-center">6</span>
+    <li class="disabled last">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">6</span>
         </span>
         <span class="visually-hidden">Step: 6</span>
-        <span class="text-nowrap d-block lh-1">Publish</span>
-      </button>
-    </li>
+        <span class="text-nowrap d-block mt-6">
+          Publish
+        </span>
+      </div>
+    </li>    
   </ol>
 </div>
 `
