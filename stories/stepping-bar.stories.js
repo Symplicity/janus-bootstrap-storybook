@@ -14,7 +14,7 @@ For additional documentation, see:
 `
 
 const stepping_bar_four_steps_html = `
-<div class="float-start float-sm-none d-flex justify-content-center position-relative steps four-steps">
+<div class="d-flex justify-content-start justify-content-md-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done">
       <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
@@ -91,7 +91,7 @@ SteppingBarFourSteps.parameters = {
 }
 
 const stepping_bar_six_steps_html = `
-<div class="float-start float-sm-none d-flex justify-content-center position-relative steps four-steps">
+<div class="d-flex justify-content-start justify-content-lg-center position-relative steps four-steps">
   <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
     <li class="first done">
       <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
