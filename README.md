@@ -29,15 +29,17 @@ Development Checkpoints (Proposed)
 
 1. Desktop, tablet and mobile breakpoints have been evaluated.
 2. There are no Accessibility errors reported in the accessibility panel.
-3. The component is entirely keyboard accessible, with standard keyboard interactions. See: [ARIA Design Pattern Examples](https://www.w3.org/TR/wai-aria-practices/examples/).
-4. JAWS Inspect describes good reading order and clear labels.
-5. UX has reviewed and approved the final build of the UI.
-6. Any additions or changes to supporting libraries have been reviewed and approved by design and technical leads.
-7. Documentation covers usage scenarios, dos and don'ts and configuration.
-8. Visual regression tests have been added/updated, run and approved.
-10. Code review is approved.
-11. Version number _(breaking.patch.fix)_ is updated in package.json. See [Semantic Versioning](semver.org).
-12. CHANGELOG.md is updated to reflect your additions. See [format requirements](http://keepachangelog.com/en/1.0.0/).
+    - _Optionally use [WAVE tool](https://wave.webaim.org/extension/) to be thorough_
+4. The component is entirely keyboard accessible, with standard keyboard interactions. See: [ARIA Design Pattern Examples](https://www.w3.org/TR/wai-aria-practices/examples/).
+5. JAWS Inspect describes good reading order and clear labels.
+    - _Optionally check NVDA and VoiceOver to bring screenreader coverage [above 80-90%](https://webaim.org/projects/screenreadersurvey9/#primary)_
+7. UX has reviewed and approved the final build of the UI.
+8. Any additions or changes to supporting libraries have been reviewed and approved by design and technical leads.
+9. Documentation covers usage scenarios, dos and don'ts and configuration.
+10. Visual regression tests have been added/updated, run and approved.
+11. Code review is approved.
+12. Version number _(breaking.patch.fix)_ is updated in package.json. See [Semantic Versioning](semver.org).
+13. CHANGELOG.md is updated to reflect your additions. See [format requirements](http://keepachangelog.com/en/1.0.0/).
 
 
 Visual Regression Testing
