@@ -66,7 +66,7 @@ const stepping_bar_four_steps_html = `
 
 export const SteppingBarFourSteps = () => {
   const container = $(
-    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;"></div>'
+    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;" tabindex="0"></div>'
   ).append(stepping_bar_four_steps_html)
 
   return container[0]
@@ -167,7 +167,7 @@ const stepping_bar_six_steps_html = `
 
 export const SteppingBarSixSteps = () => {
   const container = $(
-    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;"></div>'
+    '<div class="text-center" style="margin:100px 0 0; overflow-x: auto;" tabindex="0"></div>'
   ).append(stepping_bar_six_steps_html)
 
   return container[0]
