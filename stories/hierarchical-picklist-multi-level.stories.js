@@ -828,13 +828,6 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
     `
   }, 0)
 
-  setTimeout(function () {
-    const dropdown = document.querySelector('.filter-toggle')
-    const input = document.getElementById('search-input')
-    dropdown.click()
-    input.focus()
-  }, 500)
-
   return `
     <div class="dropdown">
       <h3>Multi-Level - Selection (edit)</h3>
