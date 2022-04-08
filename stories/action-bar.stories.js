@@ -75,7 +75,7 @@ const action_bar_html = `
 
 export const ActionBar = () => {
   const container = $(
-    '<div style="height: 100%; margin: 0; box-shadow: 0 0 5px 2px red inset;"></div>'
+    '<div style="position: unset !important; height: 100%; margin: 0; box-shadow: 0 0 5px 2px red inset;"></div>'
   ).append(action_bar_html)
 
   if (!('ontouchstart' in window)) {
