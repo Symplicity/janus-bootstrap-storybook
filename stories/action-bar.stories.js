@@ -17,58 +17,43 @@ const action_bar_html = `
 <div class="content position-absolute">test</div>
 <div class="action-bar-container position-absolute align-items-center end-0 bg-light justify-content-md-end" tabindex="0">
   <div class="action-bar fixed-bottom d-flex flex-row flex-md-column align-items-center align-self-end align-self-md-center justify-content-center bg-light">
-    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Icon-only">
-      <svg class="icon-lg-font-size">
-        <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
-      </svg>
-    </a>
-    <ul class="nav nav-pills nav-flush flex-row flex-md-column mb-auto text-center d-flex-column flex-nowrap">
+    <ul class="nav nav-pills nav-flush flex-row flex-md-column mb-0 text-center d-flex-column flex-nowrap">
       <li class="nav-item">
-        <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Home">
+        <a href="#" class="nav-link active p-3" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Home">
           <svg class="icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Dashboard">
+        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Dashboard">
           <svg class="icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Orders">
+        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Orders">
           <svg class="icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
           </svg>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Products">
-          <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href="${iconSprite}#tabler-check"></use></svg>
+        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Products">
+          <svg class="icon-lg-font-size">
+            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+          </svg>
         </a>
       </li>
       <li>
-        <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Customers">
+        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Customers">
           <svg class="icon-lg-font-size">
             <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
           </svg>
         </a>
       </li>
     </ul>
-    <div class="dropdown border-top">
-      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-      </a>
-      <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
   </div>
 </div>
 `
