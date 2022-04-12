@@ -14,7 +14,6 @@ For additional documentation, see:
 `
 
 const action_bar_html = `
-<div class="content position-absolute">test</div>
 <div class="action-bar-container position-absolute align-items-center end-0 bg-light justify-content-md-end" tabindex="0">
   <div class="action-bar fixed-bottom d-flex flex-row flex-md-column align-items-center align-self-end align-self-md-center justify-content-center bg-light">
     <ul class="nav nav-pills nav-flush flex-row flex-md-column mb-0 text-center d-flex-column flex-nowrap">
