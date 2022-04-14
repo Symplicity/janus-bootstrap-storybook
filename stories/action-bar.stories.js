@@ -18,37 +18,37 @@ const action_bar_html = `
   <div class="action-bar fixed-bottom d-flex flex-row flex-md-column align-items-center align-self-end align-self-md-center justify-content-center">
     <ul class="nav nav-pills nav-flush flex-row flex-md-column mb-0 text-center d-flex-column flex-nowrap w-100 justify-content-between justify-content-md-center">
       <li class="nav-item pb-md-2">
-        <a href="#" class="nav-link active p-3" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Home">
+        <a href="#" class="nav-link active p-3" aria-current="page" aria-label="Inbox" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Inbox">
           <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+            <use xlink:href="${iconSprite}#tabler-inbox" />
           </svg>
         </a>
       </li>
       <li class="nav-item py-md-2">
-        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Dashboard">
+        <a href="#" class="nav-link p-3" aria-label="Todo" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Todo">
           <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+            <use xlink:href="${iconSprite}#tabler-list-check" />
           </svg>
         </a>
       </li>
       <li class="nav-item py-md-2">
-        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Orders">
+        <a href="#" class="nav-link p-3" aria-label="Notes" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Notes">
           <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+            <use xlink:href="${iconSprite}#tabler-note"  />
           </svg>
         </a>
       </li>
       <li class="nav-item px-md-0 py-md-2">
-        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Products">
+        <a href="#" class="nav-link p-3" aria-label="Calendar" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Calendar">
           <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+            <use xlink:href="${iconSprite}#tabler-calendar" />
           </svg>
         </a>
       </li>
       <li class="nav-item px-md-0 pt-md-2">
-        <a href="#" class="nav-link p-3" title="" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Customers">
+        <a href="#" class="nav-link p-3" aria-label="Other" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Other">
           <svg class="icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" role="image" aria-label="Home" />
+            <use xlink:href="${iconSprite}#tabler-dots" />
           </svg>
         </a>
       </li>
@@ -62,7 +62,15 @@ export const ActionBar = () => {
     '<div style="position: unset !important; height: 100%; margin: 0;"></div>'
   ).append(action_bar_html)
 
-  if (!('ontouchstart' in window)) {
+  function isTouchDevice() {
+    return (
+      true ==
+      ('ontouchstart' in window ||
+        (window.DocumentTouch && document instanceof DocumentTouch))
+    )
+  }
+
+  if (isTouchDevice() === false) {
     setTimeout(function () {
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
