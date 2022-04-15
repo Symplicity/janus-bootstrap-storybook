@@ -21,6 +21,24 @@
   "onReadyScript": "playwright/onReady.js",
   "scenarios": [
     {
+      "label": "Action-Bar-SB-Primary",
+      "url": "http://host.docker.internal:9009/iframe.html?id=components-action-bar--action-bar",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Alerts-SB-Primary",
       "url": "http://host.docker.internal:9009/iframe.html?id=components-alerts--alert-primary",
       "referenceUrl": "",
