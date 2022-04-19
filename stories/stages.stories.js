@@ -1,5 +1,7 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
+import { text } from '@storybook/addon-knobs'
+
 export default {
   title: 'Components/Stages'
 }
@@ -12,20 +14,34 @@ For additional documentation, see:
 - Design System 
 
 `
-
 const stages_html = `
-<button class="border-0 bg-transparent w-auto">
-  <svg class="icon-lg-font-size">
-    <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
-  </svg>
-</button>
+<div class="stage-container">
+  <div class="stage-header bg-light p-2 rounded-top d-flex">
+    <button class="border-0 bg-transparent p-0 d-flex align-items-center">
+      <svg class="icon-lg-font-size">
+        <use xlink:href="/path/to/icon-sprite.svg#tabler-zz-drag-dots" />
+      </svg>
+    </button>
+    <div class="stage-header-title d-flex">
+      <span class="title lh-sm ps-2">Case Received</span>
+    </div>
+    <div class="stage-header-controls d-flex ms-auto">
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
+        <svg class="icon-lg-font-size">
+          <use xlink:href="/path/to/icon-sprite.svg#tabler-lock" />
+        </svg>
+      </button>
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
+      <svg class="icon-lg-font-size">
+        <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
+      </svg>
+    </button>
+    </div>
+  </div>
+</div>
 `
 
 export const Stages = () => {
-  const container = $('<div style="margin: 100px 0 0 0;"></div>').append(
-    stages_html
-  )
-
   function isTouchDevice() {
     return (
       true ==
@@ -45,7 +61,34 @@ export const Stages = () => {
     }, 0)
   }
 
-  return container[0]
+  const stageTitle = text('Stage Title', 'Case Received')
+
+  return `
+  <div class="stage-container">
+    <div class="stage-header bg-light p-2 rounded-top d-flex">
+    <button class="border-0 bg-transparent p-0 d-flex align-items-center">
+      <svg class="icon-lg-font-size">
+        <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
+      </svg>
+    </button>
+    <div class="stage-header-title d-flex">
+      <span class="title lh-sm ps-2">${stageTitle}</span>
+    </div>
+    <div class="stage-header-controls d-flex ms-auto">
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
+        <svg class="icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-lock" />
+        </svg>
+      </button>
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
+        <svg class="icon-lg-font-size">
+          <use xlink:href="${iconSprite}#tabler-dots" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+  `
 }
 
 Stages.storyName = 'Stages'
