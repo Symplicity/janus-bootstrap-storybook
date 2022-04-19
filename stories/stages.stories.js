@@ -71,8 +71,8 @@ export const Stages = () => {
           <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
         </svg>
       </button>
-      <div class="stage-header-title d-flex">
-        <span class="title lh-sm ps-2">${stageTitle}</span>
+      <div class="stage-header-title d-flex align-items-center">
+        <span class="title ps-2 fs-5">${stageTitle}</span>
       </div>
       <div class="stage-header-controls d-flex ms-auto">
         <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
