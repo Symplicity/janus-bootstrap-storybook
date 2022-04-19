@@ -17,23 +17,23 @@ For additional documentation, see:
 const stages_html = `
 <div class="stage-container">
   <div class="stage-header bg-light p-2 rounded-top d-flex">
-    <button class="border-0 bg-transparent p-0 d-flex align-items-center">
-      <svg class="icon-lg-font-size">
-        <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
+    <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Drag">
+      <svg class="icon-lg-font-size" aria-hidden="true">
+        <use xlink:href="/path/to/icon-sprite.svg#tabler-zz-drag-dots" />
       </svg>
     </button>
     <div class="stage-header-title d-flex">
-      <span class="title lh-sm ps-2">Test</span>
+      <span class="title lh-sm ps-2">Case Received</span>
     </div>
     <div class="stage-header-controls d-flex ms-auto">
-      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
-        <svg class="icon-lg-font-size">
-          <use xlink:href="${iconSprite}#tabler-lock" />
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
+        <svg class="icon-lg-font-size" aria-hidden="true">
+          <use xlink:href="/path/to/icon-sprite.svg#tabler-lock" />
         </svg>
       </button>
-      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
-      <svg class="icon-lg-font-size">
-        <use xlink:href="${iconSprite}#tabler-dots" />
+      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="More Actions">
+      <svg class="icon-lg-font-size" aria-hidden="true">
+        <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
       </svg>
     </button>
     </div>
@@ -66,29 +66,29 @@ export const Stages = () => {
   return `
   <div class="stage-container">
     <div class="stage-header bg-light p-2 rounded-top d-flex">
-    <button class="border-0 bg-transparent p-0 d-flex align-items-center">
-      <svg class="icon-lg-font-size">
-        <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
-      </svg>
-    </button>
-    <div class="stage-header-title d-flex">
-      <span class="title lh-sm ps-2">${stageTitle}</span>
-    </div>
-    <div class="stage-header-controls d-flex ms-auto">
-      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
-        <svg class="icon-lg-font-size">
-          <use xlink:href="${iconSprite}#tabler-lock" />
+      <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Drag">
+        <svg class="icon-lg-font-size" aria-hidden="true">
+          <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
         </svg>
       </button>
-      <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
-        <svg class="icon-lg-font-size">
-          <use xlink:href="${iconSprite}#tabler-dots" />
-        </svg>
-      </button>
+      <div class="stage-header-title d-flex">
+        <span class="title lh-sm ps-2">${stageTitle}</span>
+      </div>
+      <div class="stage-header-controls d-flex ms-auto">
+        <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
+          <svg class="icon-lg-font-size" aria-hidden="true">
+            <use xlink:href="${iconSprite}#tabler-lock" />
+          </svg>
+        </button>
+        <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="More Options">
+          <svg class="icon-lg-font-size" aria-hidden="true">
+            <use xlink:href="${iconSprite}#tabler-dots" />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
-</div>
-  `
+`
 }
 
 Stages.storyName = 'Stages'
