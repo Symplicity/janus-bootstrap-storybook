@@ -19,21 +19,21 @@ const stages_html = `
   <div class="stage-header bg-light p-2 rounded-top d-flex">
     <button class="border-0 bg-transparent p-0 d-flex align-items-center">
       <svg class="icon-lg-font-size">
-        <use xlink:href="/path/to/icon-sprite.svg#tabler-zz-drag-dots" />
+        <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
       </svg>
     </button>
     <div class="stage-header-title d-flex">
-      <span class="title lh-sm ps-2">Case Received</span>
+      <span class="title lh-sm ps-2">Test</span>
     </div>
     <div class="stage-header-controls d-flex ms-auto">
       <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
         <svg class="icon-lg-font-size">
-          <use xlink:href="/path/to/icon-sprite.svg#tabler-lock" />
+          <use xlink:href="${iconSprite}#tabler-lock" />
         </svg>
       </button>
       <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center">
       <svg class="icon-lg-font-size">
-        <use xlink:href="/path/to/icon-sprite.svg#tabler-dots" />
+        <use xlink:href="${iconSprite}#tabler-dots" />
       </svg>
     </button>
     </div>
