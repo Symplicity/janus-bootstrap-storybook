@@ -64,7 +64,7 @@ export const Stages = () => {
   const stageTitle = text('Stage Title', 'Case Received')
 
   return `
-  <div class="stage-container">
+  <div class="stage-container mt-3 mx-auto">
     <div class="stage-header bg-light p-2 rounded-top d-flex">
       <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Drag">
         <svg class="icon-lg-font-size" aria-hidden="true">
@@ -75,6 +75,18 @@ export const Stages = () => {
         <span class="title ps-2 fs-5">${stageTitle}</span>
       </div>
       <div class="stage-header-controls d-flex ms-auto">
+        <div class="move-controls d-flex">
+          <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Move Left">
+            <svg class="icon-lg-font-size" aria-hidden="true">
+              <use xlink:href="${iconSprite}#tabler-arrow-left" />
+            </svg>
+          </button>
+          <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Move Right">
+            <svg class="icon-lg-font-size" aria-hidden="true">
+              <use xlink:href="${iconSprite}#tabler-arrow-right" />
+            </svg>
+          </button>
+        </div>
         <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
           <svg class="icon-lg-font-size" aria-hidden="true">
             <use xlink:href="${iconSprite}#tabler-lock" />
