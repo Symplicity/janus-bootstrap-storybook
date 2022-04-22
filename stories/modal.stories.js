@@ -18,10 +18,10 @@ const modal_basic_html = `
       <div class="modal-footer">
         <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
           <div class="d-xs-block">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary w-100">Save changes</button>
           </div>
           <div class="d-xs-block">
-            <button type="button" class="btn btn-primary w-100">Save changes</button>
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
     </div>
@@ -64,11 +64,11 @@ const modal_from_trigger_html = `
         <div class="modal-footer">
           <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
             <div class="d-xs-block">
-              <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
-            </div>
-            <div class="d-xs-block">
               <button type="button" class="btn btn-primary w-100">Save changes</button>
             </div>
+            <div class="d-xs-block">
+              <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+            </div>            
           </div>
         </div>
       </div>
@@ -138,11 +138,11 @@ export const ModalFromTrigger = () => {
           <div class="modal-footer">
             <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
               <div class="d-xs-block">
-                <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
-              </div>
-              <div class="d-xs-block">
                 <button type="button" class="btn btn-primary w-100">Save changes</button>
               </div>
+              <div class="d-xs-block">
+                <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+              </div>              
             </div>
           </div>
         </div>
@@ -197,11 +197,11 @@ const modal_form_html = `<div class="modal" id="exampleModal" tabindex="-1" aria
             <button type="button" class="btn btn-link p-0 flex-fill">Other Action (Optional)</button>
           </div>
           <div class="d-xs-block">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
-          </div>
-          <div class="d-xs-block">
             <button type="button" class="btn btn-primary w-100">Save changes</button>
           </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>          
         </div>
       </div>
     </div>
@@ -248,11 +248,11 @@ const modal_scrollable_html = `<div class="modal" id="exampleModal" tabindex="-1
       <div class="modal-footer">
         <div class="d-sm-flex d-grid gap-6 w-100 m-0 justify-content-sm-end">
           <div class="d-xs-block">
-            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
-          </div>
-          <div class="d-xs-block">
             <button type="button" class="btn btn-primary w-100">Save changes</button>
           </div>
+          <div class="d-xs-block">
+            <button type="button" class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">Close</button>
+          </div>          
         </div>
       </div>
     </div>
