@@ -3,7 +3,7 @@ import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabl
 import { text } from '@storybook/addon-knobs'
 
 export default {
-  title: 'Components/Stages'
+  title: 'Components/Draggable Column'
 }
 
 const moreDocumentation = `
@@ -14,15 +14,15 @@ For additional documentation, see:
 - Design System 
 
 `
-const stages_html = `
-<div class="stage-container mt-3 mx-auto">
-  <div class="stage-header bg-light p-2 rounded-top d-flex">
+const draggabale_column_html = `
+<div class="draggable-column-container mt-3 mx-auto">
+  <div class="draggable-column-header bg-light p-2 rounded-top d-flex">
     <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Drag">
       <svg class="icon-lg-font-size" aria-hidden="true">
         <use xlink:href="/path/to/icon-sprite.svg#tabler-zz-drag-dots" />
       </svg>
     </button>
-    <div class="stage-header-title d-flex align-items-center position-relative w-100">
+    <div class="draggable-column-header-title d-flex align-items-center position-relative w-100">
       <span class="title ps-2 fs-5 text-truncate">Case Received</span>
       <div class="move-controls d-flex position-absolute h-100 end-0">
         <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Move Left">
@@ -37,7 +37,7 @@ const stages_html = `
         </button>
       </div>
     </div>
-    <div class="stage-header-controls d-flex ms-auto">
+    <div class="draggable-column-header-controls d-flex ms-auto">
       <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
         <svg class="icon-lg-font-size" aria-hidden="true">
           <use xlink:href="/path/to/icon-sprite.svg#tabler-lock" />
@@ -53,7 +53,7 @@ const stages_html = `
 </div>
 `
 
-export const Stages = () => {
+export const DraggableColumn = () => {
   function isTouchDevice() {
     return (
       true ==
@@ -73,18 +73,18 @@ export const Stages = () => {
     }, 0)
   }
 
-  const stageTitle = text('Stage Title', 'Case Received')
+  const columnTitle = text('Column Title', 'Case Received')
 
   return `
-  <div class="stage-container mt-3 mx-auto">
-    <div class="stage-header bg-light p-2 rounded-top d-flex">
+  <div class="draggable-column-container mt-3 mx-auto">
+    <div class="draggable-column-header bg-light p-2 rounded-top d-flex">
       <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Drag">
         <svg class="icon-lg-font-size" aria-hidden="true">
           <use xlink:href="${iconSprite}#tabler-zz-drag-dots" />
         </svg>
       </button>
-      <div class="stage-header-title d-flex align-items-center position-relative w-100">
-        <span class="title ps-2 fs-5 text-truncate">${stageTitle}</span>
+      <div class="draggable-column-header-title d-flex align-items-center position-relative w-100">
+        <span class="title ps-2 fs-5 text-truncate">${columnTitle}</span>
         <div class="move-controls d-flex position-absolute h-100 end-0">
           <button class="border-0 bg-transparent p-0 d-flex align-items-center" aria-label="Move Left">
             <svg class="icon-lg-font-size" aria-hidden="true">
@@ -98,7 +98,7 @@ export const Stages = () => {
           </button>
         </div>
       </div>
-      <div class="stage-header-controls d-flex ms-auto">
+      <div class="draggable-column-header-controls d-flex ms-auto">
         <button class="border-0 bg-transparent p-0 ms-2 d-flex align-items-center" aria-label="Locked">
           <svg class="icon-lg-font-size" aria-hidden="true">
             <use xlink:href="${iconSprite}#tabler-lock" />
@@ -115,17 +115,17 @@ export const Stages = () => {
 `
 }
 
-Stages.storyName = 'Stages'
+DraggableColumn.storyName = 'Draggable Column'
 
-Stages.parameters = {
+DraggableColumn.parameters = {
   notes: `
 
-    # Stages
+    # Draggable Column
 
     ###HTML
 
     \`\`\`html
-    ${stages_html}
+    ${draggabale_column_html}
     \`\`\`
     
     ${moreDocumentation}
