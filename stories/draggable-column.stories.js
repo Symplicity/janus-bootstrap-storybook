@@ -97,7 +97,7 @@ export const DraggableColumn = () => {
             </button>
           </div>
         </h3>
-        <ul class="draggable-column-item list-unstyled border-bottom border-light mb-3">
+        <ul class="draggable-column-item list-unstyled border-bottom border-light pb-3">
           <li class="px-3 py-2">
             <h4 class="fs-5 text-black mb-0 fw-semibold">Task 1</h4>
             <p class="fs-5 mb-0">Some task description that is sure to wrap to a second line
@@ -118,7 +118,7 @@ export const DraggableColumn = () => {
             </button>
           </div>
         </h3>
-        <ul class="draggable-column-item list-unstyled border-bottom border-light mb-3">
+        <ul class="draggable-column-item list-unstyled border-bottom border-light pb-3">
           <li class="px-3 py-2">
             <h4 class="fs-5 text-black mb-0 fw-semibold">All Field Groups</h4>
           </li>
