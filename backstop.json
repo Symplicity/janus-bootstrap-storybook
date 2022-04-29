@@ -2218,6 +2218,24 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Example-SB-Screen-Form-View",
+      "url": "http://host.docker.internal:9009/iframe.html?id=examples-screens-form-view--form-view",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 100,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 100,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold": 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Example-SB-Table-List",
       "url": "http://host.docker.internal:9009/iframe.html?id=examples-tables-list--list",
       "referenceUrl": "",
