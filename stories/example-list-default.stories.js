@@ -1,7 +1,7 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Examples/Tables/List'
+  title: 'Examples/Lists/Default'
 }
 
 const listHTML = `
@@ -111,13 +111,13 @@ const listHTML = `
   </div>
 `
 
-export const List = () => `${listHTML}`
+export const ListDefault = () => `${listHTML}`
 
-List.storyName = 'List'
+ListDefault.storyName = 'Default'
 
-List.parameters = {
+ListDefault.parameters = {
   notes: `
-    # List
+    # ListDefault
 
     ## Documentation
     
