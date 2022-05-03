@@ -1,5 +1,3 @@
-import { setTimeout } from 'global'
-
 export default {
   title: 'Components/Popovers'
 }
