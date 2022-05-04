@@ -1,6 +1,6 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
-import * as bootstrap from 'bootstrap'
+import * as bootstrap from '@symplicity/bootstrap'
 
 window.bootstrap = bootstrap
 

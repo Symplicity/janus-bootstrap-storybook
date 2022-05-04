@@ -59,8 +59,6 @@
     "storybook-addon-rtl": "^0.4.2"
   },
   "dependencies": {
-    "@storybook/theming": "^6.4.22",
-    "@tabler/icons": "github:Symplicity/tabler-icons",
-    "bootstrap": "github:Symplicity/bootstrap#v5.0.2-janus"
+    "@storybook/theming": "^6.4.22"
   }
 }
