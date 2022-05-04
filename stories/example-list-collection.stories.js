@@ -5,30 +5,30 @@ export default {
 }
 
 const listCollectionHTML = `
-  <div class="mt-7">
-    <table class="table align-middle table-borderless fs-5">
-      <thead class="border-bottom border-light text-nowrap">
+  <div class="mt-7 table-responsive">
+    <table class="table align-middle table-borderless fs-5 expandable-table">
+      <thead class="text-nowrap">
         <tr>
-          <th scope="col">Case Type</th>
-          <th scope="col">Last Published</th>
-          <th scope="col">Status</th>
-          <th scope="col">Actions</th>
+          <th scope="col" class="px-3" width="40%">Case Type</th>
+          <th scope="col" class="px-3" width="20%">Last Published</th>
+          <th scope="col" class="px-3" width="20%">Status</th>
+          <th scope="col" class="px-3" width="20%">Actions</th>
         </tr>
       </thead>
-      <tbody>
-        <tr class="border-bottom border-light bg-light">
+      <tbody class="expandable-row-parent">
+        <tr class="bg-light">
           <td class="lh-1 p-3" colspan="4">
             <div class="d-flex align-items-center">
               <div class="flex-fill">
                 <div>
-                  <span class="text-muted me-1">Collection:</span> <button class="btn btn-link p-0 lh-1 fs-5 minw-0 me-1 mt-n1">Incidents</button>
+                  <span class="text-gray-400 me-1">Collection:</span> <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Incidents</button>
                   <svg class="icon-base-font-size">
                     <use xlink:href="${iconSprite}#tabler-link" />
                     <span class="visually-hidden">View Collection</span>
                   </svg>
                 </div>
-                <div>
-                  <span class="text-muted me-1">Status:</span> <span class="fw-semibold">Active</span>
+                <div class="mb-1">
+                  <span class="text-muted me-1">Status:</span> <span class="text-black">Active</span>
                 </div>
               </div>
               <div class="d-flex flex-fill align-items-center justify-content-end">
@@ -38,7 +38,7 @@ const listCollectionHTML = `
                   </button>
                 </div>
                 <div class="d-inline-flex">
-                  <button class="btn btn-action d-flex py-1 px-2 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-action d-flex py-1 px-2 ms-3" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-expanded="false" aria-controls="collapseExample">
                     <svg class="icon-lg-font-size">
                       <use xlink:href="${iconSprite}#tabler-chevron-down" />
                       <span class="visually-hidden">Expand Row</span>
@@ -49,11 +49,60 @@ const listCollectionHTML = `
             </div>
           </td>
         </tr>
-        <tr class="border-bottom border-light collapse" id="collapseExample">
-          <td class="lh-1">1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>4</td>
+      </tbody>
+      <tbody class="collapse">
+        <tr id="row-1">
+          <td class="px-3 pt-3 pb-0 text-nowrap">
+          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
+            <span class="badge rounded-pill badge-published text-uppercase lh-sm">Published</span>
+          </td>
+          <td class="px-3 pt-3 pb-0">
+            <span>Oct 1, 2021</span>
+          </td>
+          <td class="px-3 pt-3 pb-0">
+            <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
+              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+            </div>
+          </td>
+          <td class="px-3 pt-3 pb-0">
+            <div class="d-inline-flex">
+              <button class="btn btn-action d-flex py-1 px-2" type="button">
+                <svg class="icon-base-font-size">
+                  <use xlink:href="${iconSprite}#tabler-copy" />
+                  <span class="visually-hidden">View Collection</span>
+                </svg>
+              </button>
+              <button class="btn btn-action d-flex py-1 px-2" type="button">
+                <svg class="icon-base-font-size">
+                  <use xlink:href="${iconSprite}#tabler-link" />
+                  <span class="visually-hidden">View Collection</span>
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr class="collapse" id="row-2">
+          <td class="px-3 py-0 text-nowrap">
+          <svg class="icon-base-font-size">
+            <use xlink:href="${iconSprite}#tabler-corner-down-right" />
+            <span class="visually-hidden">View Child Case</span>
+          </svg>
+          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
+            <span class="badge rounded-pill badge-draft text-uppercase lh-sm">Draft</span>
+          </td>
+          <td class="px-3 py-0"></td>
+          <td class="px-3 py-0"></td>
+          <td class="px-3 py-0">
+            <div class="d-inline-flex">
+              <button class="btn btn-action d-flex py-1 px-2" type="button">
+                <svg class="icon-base-font-size">
+                  <use xlink:href="${iconSprite}#tabler-trash" />
+                  <span class="visually-hidden">View Collection</span>
+                </svg>
+              </button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>  
