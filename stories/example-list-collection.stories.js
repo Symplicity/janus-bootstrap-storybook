@@ -53,20 +53,20 @@ const listCollectionHTML = `
 
       <tbody class="expandable-row-child collapse">
         <tr id="row-1">
-          <td class="px-3 py-0 text-nowrap">
+          <td class="px-3 text-nowrap">
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
             <span class="badge rounded-pill badge-published text-uppercase lh-1 fs-7">Published</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
               <label class="form-check-label" for="flexSwitchCheckChecked1">Active</label>
             </div>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -85,7 +85,7 @@ const listCollectionHTML = `
         </tr>
 
         <tr id="row-2">
-          <td class="px-3 py-0 text-nowrap">
+          <td class="px-3 text-nowrap">
           <svg class="icon-base-font-size">
             <use xlink:href="${iconSprite}#tabler-corner-down-right" />
             <span class="visually-hidden">View Child Case</span>
@@ -93,9 +93,9 @@ const listCollectionHTML = `
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
             <span class="badge rounded-pill badge-draft text-uppercase lh-1 fs-7">Draft</span>
           </td>
-          <td class="px-3 py-0"></td>
-          <td class="px-3 py-0"></td>
-          <td class="px-3 py-0">
+          <td class="px-3"></td>
+          <td class="px-3"></td>
+          <td class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -108,20 +108,20 @@ const listCollectionHTML = `
         </tr>
         
         <tr id="row-3">
-          <td class="px-3 py-0 text-nowrap">
+          <td class="px-3 text-nowrap">
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Student Grevience or Complaint</button>
             <span class="badge rounded-pill badge-ready-to-publish text-uppercase lh-1 fs-7">Ready to Publish</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
               <label class="form-check-label" for="flexSwitchCheckChecked2">Active</label>
             </div>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -140,20 +140,20 @@ const listCollectionHTML = `
         </tr>
 
         <tr id="row-4">
-          <td class="px-3 py-0 text-nowrap">
+          <td class="px-3 text-nowrap">
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Staff Misconduct / Serious Misconduct</button>
             <span class="badge rounded-pill badge-not-published text-uppercase lh-1 fs-7">Not  Published</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked3">
               <label class="form-check-label" for="flexSwitchCheckChecked3">Inactive</label>
             </div>
           </td>
-          <td class="px-3 py-0">
+          <td class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -210,20 +210,20 @@ const listCollectionHTML = `
 
     <tbody class="expandable-row-child collapse">
       <tr id="row-5">
-        <td class="px-3 py-0 text-nowrap">
+        <td class="px-3 text-nowrap">
         <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
           <span class="badge rounded-pill badge-published text-uppercase lh-1 fs-7">Published</span>
         </td>
-        <td class="px-3 py-0">
+        <td class="px-3">
           <span>Oct 1, 2021</span>
         </td>
-        <td class="px-3 py-0">
+        <td class="px-3">
           <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
             <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked4" checked>
             <label class="form-check-label" for="flexSwitchCheckChecked4">Active</label>
           </div>
         </td>
-        <td class="px-3 py-0">
+        <td class="px-3">
           <div class="d-inline-flex">
             <button class="btn btn-action d-flex py-1 px-2" type="button">
               <svg class="icon-base-font-size">
@@ -242,7 +242,7 @@ const listCollectionHTML = `
       </tr>
 
       <tr id="row-6">
-        <td class="px-3 pt-0 pb-3 text-nowrap">
+        <td class="px-3 text-nowrap">
         <svg class="icon-base-font-size">
           <use xlink:href="${iconSprite}#tabler-corner-down-right" />
           <span class="visually-hidden">View Child Case</span>
@@ -250,9 +250,9 @@ const listCollectionHTML = `
         <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
           <span class="badge rounded-pill badge-draft text-uppercase lh-1 fs-7">Draft</span>
         </td>
-        <td class="px-3 pt-0 pb-3"></td>
-        <td class="px-3 pt-0 pb-3"></td>
-        <td class="px-3 pt-0 pb-3">
+        <td class="px-3"></td>
+        <td class="px-3"></td>
+        <td class="px-3">
           <div class="d-inline-flex">
             <button class="btn btn-action d-flex py-1 px-2" type="button">
               <svg class="icon-base-font-size">
