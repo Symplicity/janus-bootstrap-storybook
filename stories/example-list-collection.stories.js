@@ -38,7 +38,7 @@ const listCollectionHTML = `
                   </button>
                 </div>
                 <div class="d-inline-flex">
-                  <button class="btn btn-action d-flex py-1 px-2 ms-3" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-action d-flex py-1 px-2 ms-3 row-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".collapse" aria-expanded="false" aria-controls="collapseExample">
                     <svg class="icon-lg-font-size">
                       <use xlink:href="${iconSprite}#tabler-chevron-down" />
                       <span class="visually-hidden">Expand Row</span>
@@ -51,7 +51,7 @@ const listCollectionHTML = `
         </tr>
       </tbody>
 
-      <tbody class="expandable-row-child collapse">
+      <tbody class="expandable-row-child collapse show">
         <tr id="row-1">
           <td class="px-3 text-nowrap">
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
@@ -175,7 +175,8 @@ const listCollectionHTML = `
 </div>
 `
 
-export const ListCollection = () => `<div>${listCollectionHTML}</div>`
+export const ListCollection = () =>
+  `<div style="margin: 0; overflow-x: auto;">${listCollectionHTML}</div>`
 
 ListCollection.storyName = 'Collection'
 
