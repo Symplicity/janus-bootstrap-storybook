@@ -5,7 +5,7 @@ export default {
 }
 
 const listHTML = `
-  <div class="mt-7">
+  <div class="mt-7 table-responsive">
     <table class="table align-middle table-borderless fs-5">
       <thead class="border-bottom border-light text-nowrap">
         <tr>
