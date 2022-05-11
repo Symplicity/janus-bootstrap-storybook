@@ -1,6 +1,4 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
-import { select, text } from '@storybook/addon-knobs'
-import { action } from '@storybook/addon-actions'
 
 export default {
   title: 'Components/List Items'
@@ -29,11 +27,6 @@ const getPublishers = (type) => {
   return 'N/A';
 }
 
-const showTypeActions = (type) => {
-  // highlightedType = type ? type.fw_case_type_id : null;
-  return null
-}
-
 // TODO
 /*
   - mouseover and mouseout on case-type-card
@@ -52,11 +45,7 @@ const listContent = (type) => {
               <span class="visually-hidden">Move Case Type</span>
           </svg>
       </div>
-      <div class="case-type-card w-100 d-flex flex-column justify-content-start position-relative"
-        onmouseover="${ showTypeActions(type) }"
-        onmouseout="${ showTypeActions(type) }"
-        onclick="${ showTypeActions(type) })"
-        >
+      <div class="case-type-card w-100 d-flex flex-column justify-content-start position-relative">
           <div class="case-top d-flex justify-content-start">
               <h3 class="case-title h3 mb-0 me-2 lh-1">
                   <a>${ type.name }</a>
@@ -181,8 +170,6 @@ const caseTypeHtml = `
 
 export const CaseType = (args) => {
   console.log(args)
-  const card_title_text = text('Title', 'Quick Actions')
-
 
   const container = $('<div class="container mt-3 mb-2 mx-auto overflow-auto" style="background-color: #fafafa;"></div>').append(caseTypeHtml)
   const caseTypeData = [
