@@ -2288,24 +2288,6 @@
       "expect": 0,
       "misMatchThreshold": 0,
       "requireSameDimensions": true
-    },
-    {
-      "label": "Example-SB-Table-List",
-      "url": "http://host.docker.internal:9009/iframe.html?id=examples-tables-list--list",
-      "referenceUrl": "",
-      "readyEvent": "",
-      "readySelector": "",
-      "delay": 300,
-      "hideSelectors": [],
-      "removeSelectors": [],
-      "hoverSelector": "",
-      "clickSelector": "",
-      "postInteractionWait": 100,
-      "selectors": [],
-      "selectorExpansion": true,
-      "expect": 0,
-      "misMatchThreshold": 0,
-      "requireSameDimensions": true
     }
   ],
   "paths": {
