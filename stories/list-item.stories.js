@@ -33,6 +33,7 @@ const getPublishers = (type) => {
     (mouseover)="showTypeActions(type)" (mouseout)="showTypeActions()"
   - every ng (click) actions
   - every ngClass or dynamically classes
+  - responsivess
 */
 
 const listContent = (type) => {
