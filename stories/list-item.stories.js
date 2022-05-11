@@ -5,49 +5,35 @@ export default {
 }
 
 const moreDocumentation = `
-#Additional Documentation
-For additional documentation, see:
+  #Additional Documentation
+  For additional documentation, see:
 
-- Bootstrap Documentation
-- Design System 
-
+  - Bootstrap Documentation
+  - Design System 
 `
 
 const getEditors = (type) => {
-  if (type.editor_group._label) {
-      return type.editor_group._label.join(', ');
-  }
-  return 'N/A';
+  const label = type.editor_group._label
+  return (label) ? label.join(', ') : 'N/A';
 }
 
 const getPublishers = (type) => {
-  if (type.publisher_group._label) {
-      return type.publisher_group._label.join(', ');
-  }
-  return 'N/A';
+  const label = type.publisher_group._label
+  return (label) ? label.join(', ') : 'N/A';
 }
-
-// TODO
-/*
-  - mouseover and mouseout on case-type-card
-    (mouseover)="showTypeActions(type)" (mouseout)="showTypeActions()"
-  - every ng (click) actions
-  - every ngClass or dynamically classes
-  - responsivess
-*/
 
 const listContent = (type) => {
   return (
     `
     <li class="bg-white px-sm-1 px-md-5 py-3 mb-3 d-flex align-items-baseline">
-      <div class="case-change-pos me-3">
+      <div class="case-change-pos me-3 d-sm-block d-md-none">
           <svg class="icon-lg-font-size mt-n1 text-muted">
               <use xlink:href="${iconSprite}#tabler-grip-vertical" />
               <span class="visually-hidden">Move Case Type</span>
           </svg>
       </div>
       <div class="case-type-card w-100 d-flex flex-column justify-content-start position-relative">
-          <div class="case-top d-flex justify-content-start">
+          <div class="case-top d-flex justify-content-start align-items-start flex-sm-column flex-md-row">
               <h3 class="case-title h3 mb-0 me-2 lh-1">
                   <a>${ type.name }</a>
               </h3>
@@ -63,7 +49,7 @@ const listContent = (type) => {
                       </span>
                   </span>
               </div>
-              <div class="case-actions-sm position-absolute end-0">
+              <div class="case-actions-sm position-absolute end-0 d-sm-flex d-md-none">
                   <div class="btn-group" dropdown>
                       <svg class="icon-lg-font-size mt-n1 text-muted" role="button" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
                           <use xlink:href="${iconSprite}#tabler-dots" />
@@ -105,8 +91,8 @@ const listContent = (type) => {
                       </ul>
                   </div>
               </div>
-              <div class="case-actions position-absolute end-0">
-                  <div>
+              <div class="case-actions position-absolute end-0 d-sm-none">
+                  <div class="d-sm-none d-md-flex">
                       <button class="btn btn-action">
                           <svg class="icon-lg-font-size mt-n1">
                               <use xlink:href="${iconSprite}#tabler-edit" />
@@ -134,7 +120,7 @@ const listContent = (type) => {
                   </div>
               </div>
           </div>
-          <div class="case-bottom d-flex justify-content-start lh-sm">
+          <div class="case-bottom d-flex justify-content-start lh-sm flex-sm-column flex-md-row mt-sm-2">
               <div class="text-black-50">Workflow Editors:<span class="ps-1 text-dark">${ getEditors(type) }</span></div>
               <div class="text-black-50 ms-sm-0 ms-md-2">Publishers:<span class="ps-1 text-dark">${ getPublishers(type) }</span></div>
           </div>
@@ -154,9 +140,7 @@ const caseTypeHtml = `
             </svg>
           </button>
       </div>
-
       <ul class="case-type-list ps-0"></ul>
-
       <div class="case-type-actions w-100 d-flex justify-content-start">
           <button type="button" class="btn d-flex align-items-center" aria-label="New Case Type">
             <svg class="icon-lg-font-size me-1">
@@ -169,9 +153,7 @@ const caseTypeHtml = `
   </div>
 `
 
-export const CaseType = (args) => {
-  console.log(args)
-
+export const CaseType = () => {
   const container = $('<div class="container mt-3 mb-2 mx-auto overflow-auto" style="background-color: #fafafa;"></div>').append(caseTypeHtml)
   const caseTypeData = [
     {
@@ -182,7 +164,7 @@ export const CaseType = (args) => {
         _label: "Active"
       },
       available_student_public: 0,
-      published: 0,
+      published: true,
       editor_group: {
         _id: null,
         _label: [
@@ -192,7 +174,10 @@ export const CaseType = (args) => {
       },
       publisher_group: {
         _id: null,
-        _label: null
+        _label: [
+          "Deans",
+          "Training Group"
+        ]
       },
       _created: null,
       _modified: "Wednesday, March 16, 2022 at 5:14 PM"
@@ -205,7 +190,7 @@ export const CaseType = (args) => {
         _label: "Active"
       },
       available_student_public: 0,
-      published: 0,
+      published: true,
       editor_group: {
         _id: null,
         _label: [
@@ -218,46 +203,6 @@ export const CaseType = (args) => {
       },
       _created: null,
       _modified: "Wednesday, March 16, 2022 at 5:15 PM"
-    },
-    {
-      fw_case_type_id: "c9cbc7c4a51daec45a2f854256bff420",
-      name: "Discrimination and Harassment",
-      status: {
-        _id: "inactive",
-        _label: "Inactive"
-      },
-      available_student_public: 0,
-      published: 0,
-      editor_group: {
-        _id: null,
-        _label: null
-      },
-      publisher_group: {
-        _id: null,
-        _label: null
-      },
-      _created: null,
-      _modified: "Wednesday, March 16, 2022 at 5:15 PM"
-    },
-    {
-      fw_case_type_id: "d317d71c1a76f7b95c7d58eccb883659",
-      name: "Testing",
-      status: {
-        _id: "active",
-        _label: "Active"
-      },
-      available_student_public: 0,
-      published: 1,
-      editor_group: {
-        _id: null,
-        _label: null
-      },
-      publisher_group: {
-        _id: null,
-        _label: null
-      },
-      _created: "Thursday, March 24, 2022 at 9:25 AM",
-      _modified: "Thursday, April 7, 2022 at 4:57 PM"
     }
   ]
 
@@ -276,22 +221,13 @@ export const CaseType = (args) => {
 
 CaseType.storyName = 'Case Type'
 
-CaseType.args = {
-  highlightedType: null
-}
-
 CaseType.parameters = {
   notes: `
-
     # Case Type
-
     ###HTML
-
     \`\`\`html
     ${caseTypeHtml}
     \`\`\`
-    
     ${moreDocumentation}
-    
   `
 }
