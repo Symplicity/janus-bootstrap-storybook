@@ -3,13 +3,7 @@ import { select, text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 
 export default {
-  title: 'Components/List Items',
-  argTypes: { onClick: { action: 'clicked' } },
-  parameters: {
-    actions: {
-      handles: ['mouseover', 'click .btn'],
-    },
-  },
+  title: 'Components/List Items'
 }
 
 const moreDocumentation = `
@@ -20,10 +14,6 @@ For additional documentation, see:
 - Design System 
 
 `
-
-const MyButton = () => (
-  <button onClick={onClick}>My Button</button>
-);
 
 const getEditors = (type) => {
   if (type.editor_group._label) {
