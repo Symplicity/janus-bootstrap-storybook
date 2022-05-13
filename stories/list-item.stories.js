@@ -25,7 +25,7 @@ const getPublishers = (type) => {
 const listContent = (type) => {
   return `
     <li class="bg-white rounded-2 px-md-5 p-3 mb-3 d-flex">
-      <div class="me-2 case-change-pos d-sm-block d-md-none position-relative">
+      <div class="case-change-pos d-sm-block d-md-none position-relative align-items-md-center me-2 ">
           <button type="button" class="border-0 bg-transparent p-0 d-flex align-items-start" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
             <svg class="icon-lg-font-size text-muted">
               <use xlink:href="${iconSprite}#tabler-grip-vertical" />
@@ -34,11 +34,13 @@ const listContent = (type) => {
           </button>
       </div>
       <div class="case-type-card w-100 d-flex flex-column justify-content-start position-relative">
-          <div class="case-top d-flex justify-content-start align-items-start flex-sm-column flex-md-row">
-              <h3 class="case-title h3 mb-0 me-2 lh-1">
-                  ${type.name}
-              </h3>
-              <div class="case-status-wrapper d-flex justify-content-start lh-1 mt-2">
+          <div class="case-top d-sm-flex align-items-center">
+              <div class="case-title d-inline-block mb-0 me-2">
+                <h3 class="h3 mb-0 me-2 lh-1">
+                    ${type.name}
+                </h3>
+              </div>
+              <div class="case-status-wrapper d-inline-flex justify-content-start lh-1 mt-md-0">
                   <span class="case-status mb-0 me-2">
                       <span class="bg-success badge rounded-pill text-uppercase lh-1 fs-7">
                           ${
@@ -52,85 +54,85 @@ const listContent = (type) => {
                       </span>
                   </span>
               </div>
-              <div class="case-actions-sm position-absolute end-0 d-sm-flex d-md-none">
-                  <div class="btn-group" dropdown>
-                      <button type="button" class="border-0 bg-transparent p-0 d-flex align-items-center" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
-                        <svg class="icon-lg-font-size text-muted">
-                            <use xlink:href="${iconSprite}#tabler-dots" />
-                            <span class="visually-hidden">Move Case Type</span>
+          </div>
+          <div class="case-actions-sm position-absolute end-0 d-sm-flex d-md-none">
+            <div class="btn-group" dropdown>
+                <button type="button" class="border-0 bg-transparent p-0 d-flex align-items-center" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
+                  <svg class="icon-lg-font-size text-muted">
+                      <use xlink:href="${iconSprite}#tabler-dots" />
+                      <span class="visually-hidden">Move Case Type</span>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-1 minw-auto" *dropdownMenu aria-labelledby="dropdownMenuButtonActions">
+                    <li role="menuitem">
+                    <button class="btn btn-action">
+                        <svg class="icon-lg-font-size mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-edit" />
+                            <span class="visually-hidden">Edit Case Type</span>
                         </svg>
-                      </button>
-                      <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-1 minw-auto" *dropdownMenu aria-labelledby="dropdownMenuButtonActions">
-                          <li role="menuitem">
-                          <button class="btn btn-action">
-                              <svg class="icon-lg-font-size mt-n1">
-                                  <use xlink:href="${iconSprite}#tabler-edit" />
-                                  <span class="visually-hidden">Edit Case Type</span>
-                              </svg>
-                          </button>
-                          </li>
-                          <li role="menuitem">
-                          <button class="btn btn-action">
-                              <svg class="icon-lg-font-size mt-n1">
-                                  <use xlink:href="${iconSprite}#tabler-copy" />
-                                  <span class="visually-hidden">Copy Case Type</span>
-                              </svg>
-                          </button>
-                          </li>
-                          <li role="menuitem">
-                          <button class="btn btn-action">
-                              <svg class="icon-lg-font-size mt-n1">
-                                  <use xlink:href="${iconSprite}#tabler-arrow-up" />
-                                  <span class="visually-hidden">Move Up Case Type</span>
-                              </svg>
-                          </button>
-                          </li>
-                          <li role="menuitem">
-                          <button class="btn btn-action">
-                              <svg class="icon-lg-font-size mt-n1">
-                                  <use xlink:href="${iconSprite}#tabler-arrow-down" />
-                                  <span class="visually-hidden">Move Down Case Type</span>
-                              </svg>
-                          </button>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="case-actions d-none position-absolute end-0 d-sm-none rounded-2">
-                  <div class="d-sm-none d-md-flex">
-                      <button class="btn btn-action">
-                          <svg class="icon-lg-font-size mt-n1">
-                              <use xlink:href="${iconSprite}#tabler-edit" />
-                              <span class="visually-hidden">Edit Case Type</span>
-                          </svg>
-                      </button>
-                      <button class="btn btn-action">
-                          <svg class="icon-lg-font-size mt-n1">
-                              <use xlink:href="${iconSprite}#tabler-copy" />
-                              <span class="visually-hidden">Copy Case Type</span>
-                          </svg>
-                      </button>
-                      <button class="btn btn-action">
-                          <svg class="icon-lg-font-size mt-n1">
-                              <use xlink:href="${iconSprite}#tabler-arrow-up" />
-                              <span class="visually-hidden">Move Up Case Type</span>
-                          </svg>
-                      </button>
-                      <button class="btn btn-action">
-                          <svg class="icon-lg-font-size mt-n1">
+                    </button>
+                    </li>
+                    <li role="menuitem">
+                    <button class="btn btn-action">
+                        <svg class="icon-lg-font-size mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-copy" />
+                            <span class="visually-hidden">Copy Case Type</span>
+                        </svg>
+                    </button>
+                    </li>
+                    <li role="menuitem">
+                    <button class="btn btn-action">
+                        <svg class="icon-lg-font-size mt-n1">
+                            <use xlink:href="${iconSprite}#tabler-arrow-up" />
+                            <span class="visually-hidden">Move Up Case Type</span>
+                        </svg>
+                    </button>
+                    </li>
+                    <li role="menuitem">
+                    <button class="btn btn-action">
+                        <svg class="icon-lg-font-size mt-n1">
                             <use xlink:href="${iconSprite}#tabler-arrow-down" />
                             <span class="visually-hidden">Move Down Case Type</span>
-                          </svg>
-                      </button>
-                  </div>
-              </div>
-          </div>
-          <div class="case-bottom d-flex justify-content-start lh-sm flex-sm-column flex-md-row fs-5 mt-2 align-items-start">
+                        </svg>
+                    </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="case-actions d-none position-absolute end-0 d-sm-none rounded-2">
+            <div class="d-sm-none d-md-flex">
+                <button class="btn btn-action">
+                    <svg class="icon-lg-font-size mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-edit" />
+                        <span class="visually-hidden">Edit Case Type</span>
+                    </svg>
+                </button>
+                <button class="btn btn-action">
+                    <svg class="icon-lg-font-size mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-copy" />
+                        <span class="visually-hidden">Copy Case Type</span>
+                    </svg>
+                </button>
+                <button class="btn btn-action">
+                    <svg class="icon-lg-font-size mt-n1">
+                        <use xlink:href="${iconSprite}#tabler-arrow-up" />
+                        <span class="visually-hidden">Move Up Case Type</span>
+                    </svg>
+                </button>
+                <button class="btn btn-action">
+                    <svg class="icon-lg-font-size mt-n1">
+                      <use xlink:href="${iconSprite}#tabler-arrow-down" />
+                      <span class="visually-hidden">Move Down Case Type</span>
+                    </svg>
+                </button>
+            </div>
+        </div>
+          <div class="case-bottom fs-5 mt-2">
               <div>
                 <span class="text-muted me-1">Workflow Editors:</span>
                 <span class="text-dark fw-semibold">${getEditors(type)}</span>
               </div>
-              <div class="ms-sm-0 ms-md-2">
+              <div>
                 <span class="text-muted me-1">Publishers:</span>
                 <span class="text-dark fw-semibold">${getPublishers(
                   type
