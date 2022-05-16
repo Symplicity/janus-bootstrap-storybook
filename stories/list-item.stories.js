@@ -25,7 +25,7 @@ const getPublishers = (type) => {
 const listContent = (type) => {
   return `
     <li class="case-type-item rounded-2 px-md-5 p-3 mb-3 d-flex">
-      <div class="case-change-pos d-sm-block d-md-none position-relative align-items-md-center me-2 ">
+      <div class="case-type-item-drag-handle position-relative align-items-md-center me-2 ">
           <button type="button" class="border-0 bg-transparent p-0 d-flex align-items-start" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
             <svg class="icon-lg-font-size text-muted">
               <use xlink:href="${iconSprite}#tabler-grip-vertical" />
@@ -33,7 +33,7 @@ const listContent = (type) => {
             </svg>
           </button>
       </div>
-      <div class="case-type-card w-100 d-flex flex-column justify-content-start position-relative">
+      <div class="case-type-item-body w-100 d-flex flex-column justify-content-start position-relative">
           <div class="case-top d-sm-flex align-items-center">
               <div class="case-title d-inline-block mb-0 me-2">
                 <h3 class="h3 mb-0 me-2 lh-1">
