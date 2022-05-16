@@ -24,7 +24,7 @@ const getPublishers = (type) => {
 
 const listContent = (type) => {
   return `
-    <li class="bg-white rounded-2 px-md-5 p-3 mb-3 d-flex">
+    <li class="case-type-item rounded-2 px-md-5 p-3 mb-3 d-flex">
       <div class="case-change-pos d-sm-block d-md-none position-relative align-items-md-center me-2 ">
           <button type="button" class="border-0 bg-transparent p-0 d-flex align-items-start" data-bs-toggle="dropdown" id="dropdownMenuButtonActions" dropdownToggle>
             <svg class="icon-lg-font-size text-muted">
@@ -42,14 +42,14 @@ const listContent = (type) => {
               </div>
               <div class="case-status-wrapper d-inline-flex justify-content-start lh-1 mt-md-0">
                   <span class="case-status mb-0 me-2">
-                      <span class="bg-success badge rounded-pill text-uppercase lh-1 fs-7">
+                      <span class="badge badge-light-green rounded-pill text-uppercase lh-1 fs-7">
                           ${
                             type.status._label ? type.status._label : 'Inactive'
                           }
                       </span>
                   </span>
                   <span class="case-status mb-0">
-                      <span class="bg-success badge rounded-pill text-uppercase lh-1 fs-7">
+                      <span class="badge badge-light-gray rounded-pill text-uppercase lh-1 fs-7">
                           ${type.published ? 'Published' : 'Not Pubslished'}
                       </span>
                   </span>
