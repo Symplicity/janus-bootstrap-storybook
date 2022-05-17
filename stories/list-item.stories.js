@@ -34,14 +34,14 @@ const listContent = (type) => {
           </svg>
         </a>
       </div>
-      <div class="case-type-item-body w-100 d-flex flex-column justify-content-start position-relative">
+      <div class="case-type-item-body w-100 d-flex flex-column justify-content-start position-relative overflow-hidden">
         <div class="case-top d-sm-flex align-items-center">
-          <div class="case-title d-inline-block text-truncate mb-0 me-2">
-            <h3 class="h3 mb-0 me-2 lh-1">
+          <div class="case-title d-flex mb-0 me-2">
+            <h3 class="h3 mb-0 me-2 lh-1 d-inline-block text-truncate">
                 ${type.name}
             </h3>
           </div>
-          <div class="case-status-wrapper d-flex justify-content-start lh-1 mt-md-0">
+          <div class="case-status-wrapper d-flex justify-content-start mt-md-0">
               <span class="case-status mb-0 me-2">
                   <span class="badge badge-light-green rounded-pill text-uppercase lh-1 fs-7">
                       ${type.status._label ? type.status._label : 'Inactive'}
