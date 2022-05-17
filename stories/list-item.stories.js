@@ -43,12 +43,12 @@ const listContent = (type) => {
           </div>
           <div class="case-status-wrapper d-flex justify-content-start mt-md-0">
               <span class="case-status mb-0 me-2">
-                  <span class="badge badge-light-green rounded-pill text-uppercase lh-1 fs-7">
+                  <span class="badge badge-light-green rounded-pill text-uppercase fs-7">
                       ${type.status._label ? type.status._label : 'Inactive'}
                   </span>
               </span>
               <span class="case-status mb-0">
-                  <span class="badge badge-light-gray rounded-pill text-uppercase lh-1 fs-7">
+                  <span class="badge badge-light-gray rounded-pill text-uppercase fs-7">
                       ${type.published ? 'Published' : 'Not Pubslished'}
                   </span>
               </span>
