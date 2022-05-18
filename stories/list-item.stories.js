@@ -153,7 +153,7 @@ const listContent = (type) => {
 const caseTypeHtml = `
   <div class="case-type-container container d-flex flex-column p-3">
       <div class="d-flex justify-content-between align-items-center py-10">
-          <span class="fs-7 text-muted">CASE TYPES</span>
+          <span class="fs-7 text-muted text-spaced">CASE TYPES</span>
           <button type="button" class="d-flex btn text-muted p-0 minw-auto" aria-label="New Case Type">
             <svg class="icon-lg-font-size">
               <use xlink:href="${iconSprite}#tabler-circle-plus" />

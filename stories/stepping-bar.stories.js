@@ -190,3 +190,80 @@ SteppingBarSixSteps.parameters = {
     
   `
 }
+
+const stepping_bar_vertical_html = `
+<div class="steps steps-vertical d-flex justify-content-start justify-content-md-center position-relative text-center">
+  <ol class="d-flex flex-wrap justify-content-center list-unstyled px-1 px-md-3 mb-0">
+    <li class="first done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
+            <use xlink:href="${iconSprite}#tabler-check" />
+          </svg>
+        </span>
+        <span class="visually-hidden">Step: 1 Complete</span>
+        <span class="text-nowrap d-block mt-6">Configure Collection</span>
+      </div>
+    </li>
+    <li class="done">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
+          <svg class="text-white icon-lg-font-size">
+            <use xlink:href="${iconSprite}#tabler-check" />
+          </svg>
+        </span>
+        <span class="visually-hidden">Step: 2 Complete</span>
+        <span class="text-nowrap d-block mt-6">Add Case Types</span>
+      </div>
+    </li>
+    <li class="current">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">3</span>
+        </span>
+        <span class="visually-hidden">Step: 3 Current</span>
+        <span class="text-nowrap d-block mt-6 fw-bold">
+          Review
+        </span>
+      </div>
+    </li>
+    <li class="disabled last">
+      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
+        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
+          <span class="d-flex justify-content-center">4</span>
+        </span>
+        <span class="visually-hidden">Step: 4</span>
+        <span class="text-nowrap d-block mt-6">
+          What's Next?
+        </span>
+      </div>
+    </li>
+  </ol>
+</div>
+`
+
+export const SteppingBarVertical = () => {
+  const container = $('<div style="margin: 0; tabindex="0"></div>').append(
+    stepping_bar_vertical_html
+  )
+
+  return container[0]
+}
+
+SteppingBarVertical.storyName = 'Vertical'
+
+SteppingBarVertical.parameters = {
+  notes: `
+
+    # Stepping Bar Vertical
+
+    ###HTML
+
+    \`\`\`html
+    ${stepping_bar_vertical_html}
+    \`\`\`
+    
+    ${moreDocumentation}
+    
+  `
+}
