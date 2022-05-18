@@ -48,7 +48,7 @@ const listContent = (type) => {
                   </span>
               </span>
               <span class="case-status mb-0">
-                  <span class="badge bg-light-light text-dark rounded-pill text-uppercase fs-7">
+                  <span class="badge bg-light text-dark rounded-pill text-uppercase fs-7">
                       ${type.published ? 'Published' : 'Not Pubslished'}
                   </span>
               </span>

@@ -91,7 +91,7 @@ const listCollectionHTML = `
             <span class="visually-hidden">View Child Case</span>
           </svg>
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
-            <span class="badge bg-dark-light text-light rounded-pill text-uppercase lh-1 fs-7">Draft</span>
+            <span class="badge bg-light text-dark rounded-pill text-uppercase lh-1 fs-7">Draft</span>
           </td>
           <td class="px-3"></td>
           <td class="px-3"></td>
