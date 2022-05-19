@@ -27,7 +27,7 @@ const sidebar_html = `
       <ul class="list-unstyled p-7 pt-0 pb-0">
         <li class="pb-7 d-flex">
           <div>
-            <img src="https://via.placeholder.com/33" alt="Placeholder" class="d-inline-flex">
+            <img src="https://dummyimage.com/33x33/aaa/fff" alt="Placeholder" class="d-inline-flex">
           </div>
           <div class="flex-grow-1 ps-2">
             <span><strong>System Engineer System Engineer System Engineer System Engineer </strong></span><br>
@@ -36,7 +36,7 @@ const sidebar_html = `
         </li>
         <li class="pb-7 d-flex">
           <div>
-            <img src="https://via.placeholder.com/33" alt="Placeholder" class="d-inline-flex">
+            <img src="https://dummyimage.com/33x33/aaa/fff" alt="Placeholder" class="d-inline-flex">
           </div>
           <div class="flex-grow-1 ps-2">
             <span><strong>System Engineer</strong></span><br>
@@ -45,7 +45,7 @@ const sidebar_html = `
         </li>
         <li class="pb-0 d-flex">
           <div>
-            <img src="https://via.placeholder.com/33" alt="Placeholder" class="d-inline-flex">
+            <img src="https://dummyimage.com/33x33/aaa/fff" alt="Placeholder" class="d-inline-flex">
           </div>
           <div class="flex-grow-1 ps-2">
             <span><strong>System Engineer</strong></span><br>
