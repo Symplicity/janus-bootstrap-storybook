@@ -1804,8 +1804,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Stepping-Bar-SB-Four-Steps",
-      "url": "http://host.docker.internal:1958/iframe.html?id=components-stepping-bar--stepping-bar-four-steps",
+      "label": "Stepping-Bar-SB-Horizontal",
+      "url": "http://host.docker.internal:1958/iframe.html?id=components-stepping-bar--stepping-bar-horizontal",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
@@ -1822,8 +1822,8 @@
       "requireSameDimensions": true
     },
     {
-      "label": "Stepping-Bar-SB-Six-Steps",
-      "url": "http://host.docker.internal:1958/iframe.html?id=components-stepping-bar--stepping-bar-six-steps",
+      "label": "Stepping-Bar-SB-Vertical",
+      "url": "http://host.docker.internal:1958/iframe.html?id=components-stepping-bar--stepping-bar-vertical",
       "referenceUrl": "",
       "readyEvent": "",
       "readySelector": "",
