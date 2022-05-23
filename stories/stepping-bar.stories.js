@@ -13,177 +13,74 @@ For additional documentation, see:
 
 `
 
-const stepping_bar_four_steps_html = `
-<div class="steps d-flex justify-content-start justify-content-md-center position-relative text-center" style="margin:100px 0 0;">
-  <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
-    <li class="first done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 1 Complete</span>
-        <span class="text-nowrap d-block mt-6">Configure Collection</span>
-      </div>
+const stepping_bar_horizontal_html = `
+<div class="steps-horizontal position-relative d-flex">
+  <ol class="list-unstyled list-steps d-flex mb-0">
+    <li class="list-steps-item position-relative completed">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
+          Build Intake Form
+        </p>
+      </div>   
     </li>
-    <li class="done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 2 Complete</span>
-        <span class="text-nowrap d-block mt-6">Add Case Types</span>
-      </div>
-    </li>
-    <li class="current">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">3</span>
-        </span>
-        <span class="visually-hidden">Step: 3 Current</span>
-        <span class="text-nowrap d-block mt-6 fw-bold">
-          Review
-        </span>
-      </div>
-    </li>
-    <li class="disabled last">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">4</span>
-        </span>
-        <span class="visually-hidden">Step: 4</span>
-        <span class="text-nowrap d-block mt-6">
-          What's Next?
-        </span>
-      </div>
-    </li>
-  </ol>
-</div>
-`
-
-export const SteppingBarFourSteps = () => {
-  const container = $(
-    '<div style="margin: 0; overflow-x: auto;" tabindex="0"></div>'
-  ).append(stepping_bar_four_steps_html)
-
-  return container[0]
-}
-
-SteppingBarFourSteps.storyName = '4-Steps'
-
-SteppingBarFourSteps.parameters = {
-  notes: `
-
-    # Stepping Bar 4-Steps
-
-    ###HTML
-
-    \`\`\`html
-    ${stepping_bar_four_steps_html}
-    \`\`\`
-    
-    ${moreDocumentation}
-    
-  `
-}
-
-const stepping_bar_six_steps_html = `
-<div class="steps d-flex justify-content-start justify-content-md-center position-relative text-center" style="margin:100px 0 0;">
-  <ol class="d-flex flex-nowrap list-unstyled align-items-center px-1 px-md-3 mb-0">
-    <li class="first done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 1 Complete</span>
-        <span class="text-nowrap d-block mt-6">Build Intake Form</span>
-      </div>
-    </li>
-    <li class="done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 2 Complete</span>
-        <span class="text-nowrap d-block mt-6">
+    <li class="list-steps-item position-relative completed">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           Build Processing Form
-        </span>
-      </div>
+        </p>
+      </div>   
     </li>
-    <li class="current">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">3</span>
-        </span>
-        <span class="visually-hidden">Step: 3 Current</span>
-        <span class="text-nowrap d-block mt-6 fw-bold">
-          Add Stages
-        </span>
-      </div>
+    <li class="list-steps-item position-relative selected">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
+          <strong class="text-dark fw-semibold">Add Stages</strong>
+        </p>
+      </div>   
     </li>
-    <li class="disabled">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">4</span>
-        </span>
-        <span class="visually-hidden">Step: 4</span>
-        <span class="text-nowrap d-block mt-6">
+    <li class="list-steps-item position-relative">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           Review
-        </span>
-      </div>
+        </p>
+      </div>   
     </li>
-    <li class="disabled">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">5</span>
-        </span>
-        <span class="visually-hidden">Step: 5</span>
-        <span class="text-nowrap d-block mt-6">
-        Configure Add-Ons
-        </span>
-      </div>
+    <li class="list-steps-item position-relative">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 text-center text-nowrap">
+          Configure Add-Ons
+        </p>
+      </div>   
     </li>
-    <li class="disabled last">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">6</span>
-        </span>
-        <span class="visually-hidden">Step: 6</span>
-        <span class="text-nowrap d-block mt-6">
+    <li class="list-steps-item position-relative">
+      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9">
+        <p class="text-muted fs-5 mt-4 text-center text-nowrap">
           Publish
-        </span>
-      </div>
-    </li>    
+        </p>
+      </div>   
+    </li>
   </ol>
 </div>
 `
 
-export const SteppingBarSixSteps = () => {
+export const SteppingBarHorizontal = () => {
   const container = $(
-    '<div style="margin: 0; overflow-x: auto;" tabindex="0"></div>'
-  ).append(stepping_bar_six_steps_html)
+    '<div style="margin: 100px 0 0; overflow-x: auto;" tabindex="0"></div>'
+  ).append(stepping_bar_horizontal_html)
 
   return container[0]
 }
 
-SteppingBarSixSteps.storyName = '6-Steps'
+SteppingBarHorizontal.storyName = 'Horizontal'
 
-SteppingBarSixSteps.parameters = {
+SteppingBarHorizontal.parameters = {
   notes: `
 
-    # Stepping Bar 6-Steps
+    # Stepping Bar Horizontal
 
     ###HTML
 
     \`\`\`html
-    ${stepping_bar_six_steps_html}
+    ${stepping_bar_horizontal_html}
     \`\`\`
     
     ${moreDocumentation}
@@ -192,58 +89,46 @@ SteppingBarSixSteps.parameters = {
 }
 
 const stepping_bar_vertical_html = `
-<div class="steps steps-vertical d-flex justify-content-start justify-content-md-center position-relative text-center">
-  <ol class="d-flex flex-wrap justify-content-center list-unstyled px-1 px-md-3 mb-0">
-    <li class="first done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 1 Complete</span>
-        <span class="text-nowrap d-block mt-6">Configure Collection</span>
-      </div>
+<div class="steps-vertical d-flex">
+  <ol class="list-unstyled list-steps">
+    <li class="list-steps-item position-relative p-2 completed">
+      <div class="list-steps-item-body">
+        <p class="text-muted fs-5 m-0">
+          <strong class="text-dark fs-6 fw-semibold">Ipsum Lorem</strong><br/>
+          Donec sollicitudin molestie malesuada
+        </p>
+      </div>   
     </li>
-    <li class="done">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-icon position-relative bg-success rounded-circle text-white d-inline-block icon-xl-font-size">
-          <svg class="text-white icon-lg-font-size">
-            <use xlink:href="${iconSprite}#tabler-check" />
-          </svg>
-        </span>
-        <span class="visually-hidden">Step: 2 Complete</span>
-        <span class="text-nowrap d-block mt-6">Add Case Types</span>
-      </div>
+    <li class="list-steps-item position-relative p-2 selected">
+      <div class="list-steps-item-body">
+        <p class="text-muted fs-5 m-0">
+          <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
+          Donec sollicitudin molestie malesuada
+        </p>
+      </div>   
     </li>
-    <li class="current">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative bg-primary rounded-circle text-white d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">3</span>
-        </span>
-        <span class="visually-hidden">Step: 3 Current</span>
-        <span class="text-nowrap d-block mt-6 fw-bold">
-          Review
-        </span>
-      </div>
+    <li class="list-steps-item position-relative p-2">
+      <div class="list-steps-item-body">
+        <p class="text-muted fs-5 m-0">
+          <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
+          Donec sollicitudin molestie malesuada
+        </p>
+      </div>   
     </li>
-    <li class="disabled last">
-      <div class="text-decoration-none text-dark py-3 px-7 py-md-7 px-md-9">
-        <span class="step-number position-relative rounded-circle d-inline-flex icon-xl-font-size">
-          <span class="d-flex justify-content-center">4</span>
-        </span>
-        <span class="visually-hidden">Step: 4</span>
-        <span class="text-nowrap d-block mt-6">
-          What's Next?
-        </span>
-      </div>
+    <li class="list-steps-item position-relative p-2">
+      <div class="list-steps-item-body">
+        <p class="text-muted fs-5 m-0">
+          <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
+          Donec sollicitudin molestie malesuada
+        </p>
+      </div>   
     </li>
   </ol>
 </div>
 `
 
 export const SteppingBarVertical = () => {
-  const container = $('<div style="margin: 0; tabindex="0"></div>').append(
+  const container = $('<div style="margin: 50px; tabindex="0"></div>').append(
     stepping_bar_vertical_html
   )
 
