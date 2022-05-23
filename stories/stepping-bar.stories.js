@@ -92,32 +92,32 @@ const stepping_bar_vertical_html = `
 <div class="steps-vertical d-flex">
   <ol class="list-unstyled list-steps">
     <li class="list-steps-item position-relative p-2 completed">
-      <div class="list-steps-item-body">
-        <p class="text-muted fs-5 m-0">
+      <div class="list-steps-item-body d-flex align-items-center">
+        <p class="text-muted fs-5 m-0 top-0">
           <strong class="text-dark fs-6 fw-semibold">Ipsum Lorem</strong><br/>
           Donec sollicitudin molestie malesuada
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative p-2 selected">
-      <div class="list-steps-item-body">
-        <p class="text-muted fs-5 m-0">
+      <div class="list-steps-item-body d-flex align-items-center">
+        <p class="text-muted fs-5 m-0 top-0">
           <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
           Donec sollicitudin molestie malesuada
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative p-2">
-      <div class="list-steps-item-body">
-        <p class="text-muted fs-5 m-0">
+      <div class="list-steps-item-body d-flex align-items-center">
+        <p class="text-muted fs-5 m-0 top-0">
           <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
           Donec sollicitudin molestie malesuada
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative p-2">
-      <div class="list-steps-item-body">
-        <p class="text-muted fs-5 m-0">
+      <div class="list-steps-item-body d-flex align-items-center">
+        <p class="text-muted fs-5 m-0 top-0">
           <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
           Donec sollicitudin molestie malesuada
         </p>
