@@ -1,12 +1,12 @@
-import buttonNotes from './button.notes.md';
+import buttonNotes from './button.notes.md'
 // import buttonIconNotes from './button.icon.notes.md';
 // import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg';
+import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
 
 export default {
-  title: 'Components/Buttons',
-};
+  title: 'Components/Buttons'
+}
 
 const primaryHTML = `
 <div>
@@ -44,11 +44,11 @@ const primaryHTML = `
   <button type="button" class="btn btn-sm btn-primary">Primary</button>
   <button type="button" class="btn btn-sm btn-primary" disabled>Primary</button>
 </div>
-`;
+`
 
-export const Primary = () => primaryHTML;
+export const Primary = () => primaryHTML
 
-Primary.storyName = 'Primary';
+Primary.storyName = 'Primary'
 
 Primary.parameters = {
   notes: `
@@ -66,8 +66,8 @@ Primary.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const altPrimaryHTML = `
 <div>
@@ -106,11 +106,11 @@ const altPrimaryHTML = `
   <button type="button" class="btn btn-sm btn-outline-primary">Alt Primary</button>
   <button type="button" class="btn btn-sm btn-outline-primary" disabled>Alt Primary</button>
 </div>
-`;
+`
 
-export const AltPrimary = () => altPrimaryHTML;
+export const AltPrimary = () => altPrimaryHTML
 
-AltPrimary.storyName = 'Alt Primary (Outline)';
+AltPrimary.storyName = 'Alt Primary (Outline)'
 
 AltPrimary.parameters = {
   notes: `
@@ -128,8 +128,8 @@ AltPrimary.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const secondaryHTML = `
 <div>
@@ -167,11 +167,11 @@ const secondaryHTML = `
   <button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
   <button type="button" class="btn btn-sm btn-outline-secondary" disabled>Secondary</button>
 </div>
-`;
+`
 
-export const Secondary = () => secondaryHTML;
+export const Secondary = () => secondaryHTML
 
-Secondary.storyName = 'Secondary (Outline)';
+Secondary.storyName = 'Secondary (Outline)'
 
 Secondary.parameters = {
   notes: `
@@ -189,8 +189,8 @@ Secondary.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const otherHTML = `
 <div>
@@ -228,11 +228,11 @@ const otherHTML = `
   <button type="button" class="btn btn-sm btn-danger">Delete</button>
   <button type="button" class="btn btn-sm btn-danger" disabled>Delete</button>
 </div>
-`;
+`
 
-export const Other = () => otherHTML;
+export const Other = () => otherHTML
 
-Other.storyName = 'Other';
+Other.storyName = 'Other'
 
 Other.parameters = {
   notes: `
@@ -250,8 +250,8 @@ Other.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const groupHTML = `
 <div>
@@ -299,11 +299,11 @@ const groupHTML = `
     <button type="button" class="btn btn-outline-primary">Right</button>
   </div>
 </div>
-`;
+`
 
-export const Group = () => groupHTML;
+export const Group = () => groupHTML
 
-Group.storyName = 'Group';
+Group.storyName = 'Group'
 
 Group.parameters = {
   notes: `
@@ -321,8 +321,8 @@ Group.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const actionHTML = `
 <div>
@@ -427,11 +427,11 @@ const actionHTML = `
     </div>
   </div>
 </div>
-`;
+`
 
-export const Action = () => actionHTML;
+export const Action = () => actionHTML
 
-Action.storyName = 'Action';
+Action.storyName = 'Action'
 
 Action.parameters = {
   notes: `
@@ -449,8 +449,8 @@ Action.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const toggleButtonHTML = `
 <div>
@@ -524,11 +524,11 @@ const toggleButtonHTML = `
     </div>
   </div>
 </div>
-`;
+`
 
-export const ToggleButton = () => toggleButtonHTML;
+export const ToggleButton = () => toggleButtonHTML
 
-ToggleButton.storyName = 'Toggle (Button)';
+ToggleButton.storyName = 'Toggle (Button)'
 
 ToggleButton.parameters = {
   notes: `
@@ -546,8 +546,8 @@ ToggleButton.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const toggleCheckboxHTML = `
 <div>
@@ -631,11 +631,11 @@ const toggleCheckboxHTML = `
     </div>
   </div>
 </div>
-`;
+`
 
-export const ToggleCheckbox = () => toggleCheckboxHTML;
+export const ToggleCheckbox = () => toggleCheckboxHTML
 
-ToggleCheckbox.storyName = 'Toggle (Checkbox)';
+ToggleCheckbox.storyName = 'Toggle (Checkbox)'
 
 ToggleCheckbox.parameters = {
   notes: `
@@ -653,8 +653,8 @@ ToggleCheckbox.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const extendedHTML = `
 <div>
@@ -680,11 +680,11 @@ const extendedHTML = `
     </div>
   </div>
 </div>
-`;
+`
 
-export const Extended = () => extendedHTML;
+export const Extended = () => extendedHTML
 
-Extended.storyName = 'Extended Icon Actions';
+Extended.storyName = 'Extended Icon Actions'
 
 Extended.parameters = {
   notes: `
@@ -702,8 +702,8 @@ Extended.parameters = {
     
     ${buttonNotes}
     
-    `,
-};
+    `
+}
 
 const filterChipHTML = `
 <div>
@@ -713,11 +713,11 @@ const filterChipHTML = `
         <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
   </button>
 </div>
-`;
+`
 
-export const FilterChip = () => filterChipHTML;
+export const FilterChip = () => filterChipHTML
 
-FilterChip.storyName = 'Filter Chip';
+FilterChip.storyName = 'Filter Chip'
 
 FilterChip.parameters = {
   notes: `
@@ -733,5 +733,51 @@ FilterChip.parameters = {
     ${filterChipHTML}
     \`\`\`
     
-    `,
-};
+    `
+}
+
+const fileWithActionsHTML = `
+<div>
+  <div class="rounded bg-light d-inline-flex align-items-center">
+    <button type="button" class="btn bg-light d-flex align-items-center fw-normal" aria-label="Download Filename.pdf">
+      <svg class="icon-base-font-size me-2">
+        <use xlink:href="${iconSprite}#tabler-file" />
+      </svg>
+      Filename.pdf
+    </button>
+    <div class="dropdown">
+      <button type="button" class="btn text-reset p-2 minw-0" href="#" title="Actions for Damian Wayne" aria-label="Actions for Filename.pdf" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg class="icon-lg-font-size mt-n1">
+          <use xlink:href="${iconSprite}#tabler-dots" />
+        </svg>
+      </button>
+      <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Download</a></li>
+        <li><a class="dropdown-item" href="#">Remove</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+`
+
+export const FileWithActions = () => fileWithActionsHTML
+
+FileWithActions.storyName = 'File with Actions'
+
+FileWithActions.parameters = {
+  notes: `
+    # File With Actions
+
+    ## Documentation
+    
+    Here are some notes on file with actions button variant. 
+    
+    ## Code Sample
+    
+    \`\`\`html
+    ${fileWithActionsHTML}
+    \`\`\`
+    
+    `
+}
