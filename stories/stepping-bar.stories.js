@@ -64,7 +64,7 @@ const stepping_bar_horizontal_html = `
 
 export const SteppingBarHorizontal = () => {
   const container = $(
-    '<div style="margin: 100px 0 0; overflow-x: auto;" tabindex="0"></div>'
+    '<div style="margin: 100px 0 0;" tabindex="0"></div>'
   ).append(stepping_bar_horizontal_html)
 
   return container[0]
