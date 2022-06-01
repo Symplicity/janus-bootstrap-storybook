@@ -1958,7 +1958,7 @@
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "#liveToastBtn",
-      "postInteractionWait": 200,
+      "postInteractionWait": 400,
       "selectors": [],
       "selectorExpansion": true,
       "expect": 0,
