@@ -165,12 +165,12 @@ const task_panel_expanded_html = `
                   </div>
                   
                   <div class="dropdown show-on-focus">
-                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
                       <svg class="icon-base-font-size mt-n1">
                         <use xlink:href="${iconSprite}#tabler-dots" />
                       </svg>
                     </button>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink1">
                       <li><a class="dropdown-item" href="#">Mark Completed</a></li>
                       <li><a class="dropdown-item" href="#">Edit</a></li>
                       <li><a class="dropdown-item" href="#">Cancel</a></li>
@@ -194,12 +194,12 @@ const task_panel_expanded_html = `
                     <div class="mt-2 ms-4"><button type="button" class="btn btn-sm btn-primary" disabled>Upload Document</button></div>
                   </div>
                   <div class="dropdown show-on-focus">
-                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">
                       <svg class="icon-base-font-size mt-n1">
                         <use xlink:href="${iconSprite}#tabler-dots" />
                       </svg>
                     </button>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink2">
                       <li><a class="dropdown-item" href="#">Mark Incomplete</a></li>
                     </ul>
                   </div>
@@ -220,12 +220,12 @@ const task_panel_expanded_html = `
                   </div>
                   </div>
                   <div class="dropdown show-on-focus">
-                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn p-2" href="#" title="Actions for Task 1" aria-label="Actions for Task 1" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">
                       <svg class="icon-base-font-size mt-n1">
                         <use xlink:href="${iconSprite}#tabler-dots" />
                       </svg>
                     </button>
-                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink">
+                    <ul class="dropdown-menu shadow-sm" aria-labelledby="dropdownMenuLink3">
                       <li><a class="dropdown-item" href="#">Mark Incomplete</a></li>
                     </ul>
                   </div>
