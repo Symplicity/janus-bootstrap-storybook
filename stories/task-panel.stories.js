@@ -143,7 +143,7 @@ const task_panel_expanded_html = `
             <legend class="visually-hidden">Tasks for this stage</legend>
             <ol class="list-unstyled list-on-hover my-1">
               <li>
-                <div class="d-flex align-items-start ps-3 pe-2 py-2">
+                <div class="d-flex align-items-center ps-3 pe-2 py-2">
                   <div class="flex-grow-1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="task-1">
@@ -179,7 +179,7 @@ const task_panel_expanded_html = `
                 </div>
               </li>
               <li>
-                <div class="d-flex align-items-start ps-3 pe-2 py-2">
+                <div class="d-flex align-items-center ps-3 pe-2 py-2">
                   <div class="flex-grow-1">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="task-2" checked>
@@ -206,7 +206,7 @@ const task_panel_expanded_html = `
                 </div>
               </li>
               <li>
-                <div class="d-flex align-items-start ps-3 pe-2 py-2">
+                <div class="d-flex align-items-center ps-3 pe-2 py-2">
                   <div class="flex-grow-1">
                     <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="task-3" checked>
@@ -235,8 +235,8 @@ const task_panel_expanded_html = `
           </fieldset>
         </form>
       </div>
-      <div class="p-2 pt-0">
-        <a href="#" class="btn fs-7">View all Tasks</a>
+      <div class="">
+        <button class="btn fs-7" type="button">View all Tasks</button>
       </div>
     </section>
 `
