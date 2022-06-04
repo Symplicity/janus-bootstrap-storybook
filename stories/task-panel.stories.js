@@ -235,7 +235,7 @@ const task_panel_expanded_html = `
           </fieldset>
         </form>
       </div>
-      <div class="">
+      <div>
         <button class="btn fs-7" type="button">View all Tasks</button>
       </div>
     </section>
