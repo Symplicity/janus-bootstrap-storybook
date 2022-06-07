@@ -7,19 +7,22 @@ export default {
 const listCollectionHTML = `
   <div class="mt-7 table-responsive">
     <table class="table align-middle table-borderless fs-5 expandable-table">
-      <thead class="text-nowrap">
+      <caption class="visually-hidden">
+        List of all Collections and their associated Case Types
+      </caption>
+      <thead class="text-nowrap border-0">
         <tr>
-          <th scope="col" class="px-3" width="40%">Case Type</th>
-          <th scope="col" class="px-3" width="20%">Last Published</th>
-          <th scope="col" class="px-3" width="20%">Status</th>
-          <th scope="col" class="px-3" width="20%">Actions</th>
+          <th id="co1" headers="blank" scope="col" class="px-3" width="40%">Case Type</th>
+          <th id="co2" headers="blank" scope="col" class="px-3" width="20%">Last Published</th>
+          <th id="co3" headers="blank" scope="col" class="px-3" width="20%">Status</th>
+          <th id="co4" headers="blank" scope="col" class="px-3" width="20%">Actions</th>
         </tr>
       </thead>
-      <tbody class="expandable-row-parent">
+      <tbody class="expandable-row-parent border-0">
         <tr class="bg-light">
-          <td class="lh-1 p-3" colspan="4">
+          <th id="c1" headers="blank" class="lh-1 p-3" colspan="4" scope="colgroup">
             <div class="d-flex align-items-center">
-              <div class="flex-fill">
+              <div class="flex-fill fw-normal">
                 <div>
                   <span class="text-muted me-1">Collection:</span> <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Incidents</button>
                   <svg class="icon-base-font-size">
@@ -47,26 +50,26 @@ const listCollectionHTML = `
                 </div>
               </div>
             </div>
-          </td>
+          </th>
         </tr>
       </tbody>
 
-      <tbody class="expandable-row-child collapse show">
+      <tbody class="expandable-row-child border-0 collapse show">
         <tr id="row-1">
-          <td class="px-3 text-nowrap">
-          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
+          <td headers="co1 c1" class="px-3 text-nowrap">
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
             <span class="badge bg-success-light text-dark rounded-pill text-uppercase lh-1 fs-7">Published</span>
           </td>
-          <td class="px-3">
+          <td headers="co2 c1" class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3">
+          <td headers="co3 c1" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
               <label class="form-check-label" for="flexSwitchCheckChecked1">Active</label>
             </div>
           </td>
-          <td class="px-3">
+          <td headers="co4 c1" class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -85,17 +88,17 @@ const listCollectionHTML = `
         </tr>
 
         <tr id="row-2">
-          <td class="px-3 text-nowrap">
-          <svg class="icon-base-font-size">
-            <use xlink:href="${iconSprite}#tabler-corner-down-right" />
-            <span class="visually-hidden">View Child Case</span>
-          </svg>
-          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
+          <td headers="co1 c1" class="px-3 text-nowrap">
+            <svg class="icon-base-font-size">
+              <use xlink:href="${iconSprite}#tabler-corner-down-right" />
+              <span class="visually-hidden">View Child Case</span>
+            </svg>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Academic Misconduct</button>
             <span class="badge bg-light text-dark rounded-pill text-uppercase lh-1 fs-7">Draft</span>
           </td>
-          <td class="px-3"></td>
-          <td class="px-3"></td>
-          <td class="px-3">
+          <td headers="co2 c1" class="px-3"></td>
+          <td headers="co3 c1" class="px-3"></td>
+          <td headers="co4 c1" class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -108,20 +111,20 @@ const listCollectionHTML = `
         </tr>
         
         <tr id="row-3">
-          <td class="px-3 text-nowrap">
+          <td headers="co1 c1" class="px-3 text-nowrap">
           <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Student Grevience or Complaint</button>
             <span class="badge bg-warning-light text-dark rounded-pill text-uppercase lh-1 fs-7">Ready to Publish</span>
           </td>
-          <td class="px-3">
+          <td headers="co2 c1" class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3">
+          <td headers="co3 c1" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked2" checked>
               <label class="form-check-label" for="flexSwitchCheckChecked2">Active</label>
             </div>
           </td>
-          <td class="px-3">
+          <td headers="co4 c1" class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
@@ -140,20 +143,20 @@ const listCollectionHTML = `
         </tr>
 
         <tr id="row-4">
-          <td class="px-3 text-nowrap">
-          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Staff Misconduct / Serious Misconduct</button>
+          <td headers="co1 c1" class="px-3 text-nowrap">
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Staff Misconduct / Serious Misconduct</button>
             <span class="badge bg-danger-light text-dark rounded-pill text-uppercase lh-1 fs-7">Not  Published</span>
           </td>
-          <td class="px-3">
+          <td headers="co2 c1" class="px-3">
             <span>Oct 1, 2021</span>
           </td>
-          <td class="px-3">
+          <td headers="co3 c1" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked3">
               <label class="form-check-label" for="flexSwitchCheckChecked3">Inactive</label>
             </div>
           </td>
-          <td class="px-3">
+          <td headers="co4 c1" class="px-3">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button">
                 <svg class="icon-base-font-size">
