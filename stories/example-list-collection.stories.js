@@ -12,15 +12,15 @@ const listCollectionHTML = `
       </caption>
       <thead class="text-nowrap border-0">
         <tr>
-          <th id="co1" headers="blank" scope="col" class="px-3" width="40%">Case Type</th>
-          <th id="co2" headers="blank" scope="col" class="px-3" width="20%">Last Published</th>
-          <th id="co3" headers="blank" scope="col" class="px-3" width="20%">Status</th>
-          <th id="co4" headers="blank" scope="col" class="px-3" width="20%">Actions</th>
+          <th id="co1" scope="col" class="px-3" width="40%">Case Type</th>
+          <th id="co2" scope="col" class="px-3" width="20%">Last Published</th>
+          <th id="co3" scope="col" class="px-3" width="20%">Status</th>
+          <th id="co4" scope="col" class="px-3" width="20%">Actions</th>
         </tr>
       </thead>
       <tbody class="expandable-row-parent border-0">
         <tr class="bg-light">
-          <th id="c1" headers="blank" class="lh-1 p-3" colspan="4" scope="colgroup">
+          <th id="c1" class="lh-1 p-3" colspan="4" scope="colgroup">
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
                 <div>
