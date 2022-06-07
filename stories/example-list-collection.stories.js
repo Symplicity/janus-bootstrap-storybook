@@ -19,7 +19,7 @@ const listCollectionHTML = `
         </tr>
       </thead>
       <tbody class="expandable-row-parent border-0">
-        <tr class="bg-light">
+        <tr class="bg-light shadow-none">
           <th id="c1" class="lh-1 p-3" colspan="4" scope="colgroup">
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
