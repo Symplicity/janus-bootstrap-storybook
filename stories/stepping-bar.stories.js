@@ -94,7 +94,7 @@ const stepping_bar_vertical_html = `
     <li class="list-steps-item position-relative p-2 completed">
       <div class="list-steps-item-body d-flex align-items-start">
         <p class="text-muted fs-5 mb-2 mt-n2 top-0">
-          <strong class="text-dark fs-6 fw-semibold">Ipsum Lorem</strong><br/>
+          <strong class="text-dark fw-semibold">Ipsum Lorem</strong><br/>
           Donec sollicitudin molestie malesuada
         </p>
       </div>   
