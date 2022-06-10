@@ -5,7 +5,7 @@ export default {
 }
 
 const listCollectionHTML = `
-  <div class="mt-7 table-responsive">
+  <div class="card m-3 table-responsive">
     <table class="table align-middle table-borderless fs-5 expandable-table">
       <caption class="visually-hidden">
         List of all Collections and their associated Case Types
