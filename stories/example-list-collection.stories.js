@@ -24,11 +24,12 @@ const listCollectionHTML = `
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
                 <div>
-                  <span class="text-muted me-1">Collection:</span> <button role="link" class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0">Incidents</button>
-                  <svg class="icon-base-font-size">
-                    <use xlink:href="${iconSprite}#tabler-link" />
-                    <span class="visually-hidden">View Collection</span>
-                  </svg>
+                  <span class="text-muted me-1">Collection:</span> <button role="link" class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0" aria-label="View Collection Overview">Incidents</button>
+                  <button type="button" class="btn btn-action p-0 d-inline-flex text-muted" aria-label="Copy Link to Public Form">
+                    <svg class="icon-base-font-size">
+                      <use xlink:href="${iconSprite}#tabler-link" />
+                    </svg>
+                  </button>
                 </div>
                 <div class="mb-1">
                   <span class="text-muted me-1">Status:</span> <span class="text-black">Active</span>
