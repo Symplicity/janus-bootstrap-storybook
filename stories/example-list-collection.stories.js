@@ -71,7 +71,7 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-4" class="px-3">
             <div class="d-inline-flex">
-              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Case Type">
+              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Link to Public Form">
                 <svg class="icon-base-font-size">
                   <use xlink:href="${iconSprite}#tabler-copy" />
                 </svg>
@@ -123,12 +123,12 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-4" class="px-3">
             <div class="d-inline-flex">
-              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Case Type">
+              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Link to Public Form">
                 <svg class="icon-base-font-size">
                   <use xlink:href="${iconSprite}#tabler-copy" />
                 </svg>
               </button>
-              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="View Case Type">
+              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Link to Public Form">
                 <svg class="icon-base-font-size">
                   <use xlink:href="${iconSprite}#tabler-link" />
                 </svg>
@@ -153,7 +153,7 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-4" class="px-3">
             <div class="d-inline-flex">
-              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Case Type">
+              <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Link to Public Form">
                 <svg class="icon-base-font-size">
                   <use xlink:href="${iconSprite}#tabler-copy" />
                 </svg>
