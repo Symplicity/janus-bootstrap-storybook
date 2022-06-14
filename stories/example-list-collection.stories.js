@@ -37,7 +37,7 @@ const listCollectionHTML = `
               </div>
               <div class="d-flex flex-fill align-items-center justify-content-end">
                 <div class="d-inline-flex">
-                  <button type="button" type="button" class="btn btn-action rounded-2 active py-0" aria-label="Add Case to TitleIX Reports">
+                  <button type="button" class="btn btn-action rounded-2 active py-0" aria-label="Add Case to TitleIX Reports">
                     <span class="fs-5 lh-lg">Add Case Type</span> 
                   </button>
                 </div>
@@ -55,22 +55,22 @@ const listCollectionHTML = `
         </tr>
       </tbody>
 
-      <tbody role="rowgroup" class="expandable-row-child border-0 collapse show">
+      <tbody role="rowgroup" class="expandable-row-child border-0 show">
         <tr id="content-1" role="row">
           <td role="cell" headers="column-1" class="px-3 text-nowrap">
             <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg">Academic Misconduct</button>
             <span class="badge bg-success-light text-dark rounded-pill text-uppercase lh-1 fs-7">Published</span>
           </td>
-          <td role="cell" headers="column-2" class="px-3">
+          <td role="cell" headers="column-2" class="px-3 text-nowrap">
             <span>Oct 1, 2021</span>
           </td>
-          <td role="cell" headers="column-3" class="px-3">
+          <td role="cell" headers="column-3" class="px-3 text-nowrap">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
               <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
               <label class="form-check-label" for="flexSwitchCheckChecked1" aria-label="Case Type Active">Active</label>
             </div>
           </td>
-          <td role="cell" headers="column-4" class="px-3">
+          <td role="cell" headers="column-4" class="px-3 text-nowrap">
             <div class="d-inline-flex">
               <button class="btn btn-action d-flex py-1 px-2" type="button" aria-label="Copy Link to Public Form">
                 <svg class="icon-base-font-size">
