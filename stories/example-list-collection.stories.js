@@ -12,10 +12,10 @@ const listCollectionHTML = `
       </caption>
       <thead role="rowgroup" class="text-nowrap border-0">
         <tr role="row">
-          <th id="column-1" role="columnheader" scope="col" scope="col" class="px-3" width="40%">Case Type</th>
-          <th id="column-2" role="columnheader" scope="col" scope="col" class="px-3" width="20%">Last Published</th>
-          <th id="column-3" role="columnheader" scope="col" scope="col" class="px-3" width="20%">Status</th>
-          <th id="column-4" role="columnheader" scope="col" scope="col" class="px-3" width="20%">Actions</th>
+          <th id="column-1" role="columnheader" scope="col" class="px-3" width="40%">Case Type</th>
+          <th id="column-2" role="columnheader" scope="col" class="px-3" width="20%">Last Published</th>
+          <th id="column-3" role="columnheader" scope="col" class="px-3" width="20%">Status</th>
+          <th id="column-4" role="columnheader" scope="col" class="px-3" width="20%">Actions</th>
         </tr>
       </thead>
       <tbody role="rowgroup" class="expandable-row-parent border-0">
