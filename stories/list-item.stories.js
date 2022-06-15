@@ -65,7 +65,7 @@ const listContent = (type) => {
           </div>
         </div>
       </div>
-      <div class="case-actions-sm d-sm-flex d-md-none">
+      <div class="case-type-actions case-actions-sm d-sm-flex d-md-none">
         <div class="btn-group d-inline" dropdown>
           <a href="#" role="button" class="border-0 bg-transparent p-0 d-flex align-items-center" data-bs-toggle="dropdown"  dropdownToggle>
             <svg class="icon-lg-font-size text-muted">
@@ -91,7 +91,7 @@ const listContent = (type) => {
               </button>
             </li>
             <li role="menuitem">
-              <button class="btn btn-action">
+              <button class="case-type-btn-move-up btn btn-action">
                 <svg class="icon-lg-font-size mt-n1">
                   <use xlink:href="${iconSprite}#tabler-arrow-up" />
                   <span class="visually-hidden">Move Up Case Type</span>
@@ -99,7 +99,7 @@ const listContent = (type) => {
               </button>
             </li>
             <li role="menuitem">
-              <button class="btn btn-action">
+              <button class="case-type-btn-move-down btn btn-action">
                 <svg class="icon-lg-font-size mt-n1">
                   <use xlink:href="${iconSprite}#tabler-arrow-down" />
                   <span class="visually-hidden">Move Down Case Type</span>
@@ -109,7 +109,7 @@ const listContent = (type) => {
           </ul>
         </div>
       </div>
-      <div class="case-actions-lg d-md-flex d-sm-none align-items-center">
+      <div class="case-type-actions case-actions-lg d-md-flex d-sm-none align-items-center">
         <div class="d-md-flex">
           <ul class="list-unstyled d-md-flex">
             <li role="menuitem">
@@ -129,7 +129,7 @@ const listContent = (type) => {
               </button>
             </li>
             <li role="menuitem">
-              <button class="border-0 bg-transparent mx-1 p-0">
+              <button class="case-type-btn-move-up border-0 bg-transparent mx-1 p-0">
                 <svg class="icon-lg-font-size mt-n1 text-muted">
                     <use xlink:href="${iconSprite}#tabler-arrow-up" />
                     <span class="visually-hidden">Move Up Case Type</span>
@@ -137,7 +137,7 @@ const listContent = (type) => {
               </button>
             </li>
             <li role="menuitem">
-              <button class="border-0 bg-transparent mx-1 p-0">
+              <button class="case-type-btn-move-down border-0 bg-transparent mx-1 p-0">
                 <svg class="icon-lg-font-size mt-n1 text-muted">
                   <use xlink:href="${iconSprite}#tabler-arrow-down" />
                   <span class="visually-hidden">Move Down Case Type</span>
