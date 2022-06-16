@@ -16,7 +16,7 @@ For additional documentation, see:
 `
 
 let header_html = `
-    <header class="d-block">
+    <header class="d-block position-relative">
       <nav class="d-block shadow-lg py-2" style="max-width: 1400px; margin: 0 auto; background-color: #fff">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
@@ -108,7 +108,7 @@ export const HeaderLoggedIn = () => {
   )
 
   return `
-    <header class="d-block">
+    <header class="d-block position-relative">
       <nav class="d-block shadow-lg py-2" style="max-width: 1400px; margin: 0 auto; background-color: ${header_bg_color}">
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex align-items-center">
