@@ -14,12 +14,12 @@ const moreDocumentation = `
 
 const getEditors = (type) => {
   const label = type.editor_group._label
-  return label ? label.join(', ') : 'N/A'
+  return label ? label.join(', ') : '-'
 }
 
 const getPublishers = (type) => {
   const label = type.publisher_group._label
-  return label ? label.join(', ') : 'N/A'
+  return label ? label.join(', ') : '-'
 }
 
 const listContent = (type) => {
@@ -35,23 +35,44 @@ const listContent = (type) => {
         </a>
       </div>
       <div class="case-type-item-body w-100 d-flex flex-column justify-content-start position-relative overflow-hidden">
-        <div class="case-top d-sm-flex align-items-center">
+        <div class="case-top flex-sm-wrap d-sm-flex align-items-center">
           <div class="case-title d-flex mb-0 me-2">
             <h3 class="h3 mb-0 me-2 lh-1 d-inline-block text-truncate">
                 ${type.name}
             </h3>
           </div>
-          <div class="case-status-wrapper d-flex justify-content-start mt-md-0">
+          <div class="case-status-wrapper d-flex flex-wrap justify-content-start mt-md-0">
               <span class="case-status mb-0 me-2">
-                  <span class="badge bg-success-light text-dark rounded-pill text-uppercase fs-7">
-                      ${type.status._label ? type.status._label : 'Inactive'}
+                  <span class="badge bg-success rounded-pill text-uppercase fs-7">
+                    Active
                   </span>
+              </span>
+              <span class="case-status mb-0 me-2">
+                  <span class="badge bg-dark rounded-pill text-uppercase fs-7">
+                    Inactive
+                  </span>
+              </span>
+              <span class="case-status mb-0 me-2">
+                <span class="badge bg-success rounded-pill text-uppercase fs-7">
+                  Published
+                </span>
+              </span>
+              <span class="case-status mb-0 me-2">
+                <span class="badge bg-danger rounded-pill text-uppercase fs-7">
+                  Unpublished
+                </span>
+              </span>
+              <span class="case-status mb-0 me-2">
+                <span class="badge bg-info rounded-pill text-uppercase fs-7">
+                  Public
+                </span>
               </span>
               <span class="case-status mb-0">
-                  <span class="badge bg-light text-dark rounded-pill text-uppercase fs-7">
-                      ${type.published ? 'Published' : 'Not Pubslished'}
-                  </span>
-              </span>
+                <span class="badge bg-info rounded-pill text-uppercase fs-7">
+                  Private
+                </span>
+              </span>                    
+            </span>
           </div>
         </div>
         <div class="case-bottom fs-5 mt-1">
@@ -184,7 +205,8 @@ export const CaseType = () => {
       name: 'Academic Misconduct',
       status: {
         _id: 'active',
-        _label: 'Active'
+        _label: 'Active',
+        _bg: 'success'
       },
       available_student_public: 0,
       published: true,
@@ -203,11 +225,11 @@ export const CaseType = () => {
       fw_case_type_id: 'ae684ba7a56fcfd50c016c3083e36817',
       name: 'Student Grievance or Complaint',
       status: {
-        _id: 'active',
-        _label: 'Active'
+        _id: 'inactive',
+        _label: 'Inactive',
+        _bg: 'dark'
       },
       available_student_public: 0,
-      published: true,
       editor_group: {
         _id: null,
         _label: ['Dani Director']
