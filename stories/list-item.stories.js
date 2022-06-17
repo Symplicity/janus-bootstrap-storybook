@@ -24,7 +24,7 @@ const getPublishers = (type) => {
 
 const listContent = (type) => {
   return `
-    <li tabindex="0" class="case-type-item rounded-2 px-md-5 p-3 mb-3 d-flex">
+    <li tabindex="0" class="case-type-item rounded-2 p-3 mb-3 d-flex">
       <div class="case-type-item-drag-handle d-sm-block d-md-flex 
       position-relative align-items-center me-2">
         <a href="#" role="button" class="border-0 bg-transparent p-0 d-flex align-items-start">
