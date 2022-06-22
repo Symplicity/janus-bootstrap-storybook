@@ -38,9 +38,9 @@ const hierarchical_picklist_default_html = `
           </li>
         </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
-          <span class="w-100">
+          <span class="w-100 text-start">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
@@ -233,9 +233,9 @@ const hierarchical_picklist_highlight_html = `
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
-          <span class="w-100">
+          <span class="w-100 text-start">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0" value="En">
           </span>
           <button class="bg-transparent border-0 me-n2 px-1">
             <span class="visually-hidden">Child menu</span>
@@ -397,9 +397,9 @@ const hierarchical_picklist_empty_html = `
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
-          <span class="w-100">
+          <span class="w-100 text-start">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320" value="En">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0" value="En">
           </span>
           <button class="bg-transparent border-0 me-n2">
             <span class="d-flex align-items-center">
@@ -494,9 +494,9 @@ const hierarchical_picklist_selection_readonly_html = `
           </li>
         </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
-          <span class="w-100">
+          <span class="w-100 text-start">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 me-n2">
             <span class="d-flex align-items-center">
@@ -714,9 +714,9 @@ const hierarchical_picklist_selection_edit_html = `
           </li>
         </ul>
         <div class="btn btn-outline-secondary ps-6 pe-3 filter-toggle filter-drop d-inline-flex align-items-center w-100" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-offset="0,4" data-bs-auto-close="outside">
-          <span class="w-100">
+          <span class="w-100 text-start">
             <label for="search-input">Majors</label>
-            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0 w-100 maxw-320">
+            <input id="search-input" type="text" placeholder="Search majors" class="border-0 p-0">
           </span>
           <button class="bg-transparent border-0 px-1">
             <span class="visually-hidden">Remove Selection</span>
