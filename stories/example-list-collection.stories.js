@@ -23,9 +23,9 @@ const listCollectionHTML = `
           <th id="row-1" class="lh-1 p-3" colspan="4" scope="colgroup">
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
-                <div>
-                  <span class="text-muted me-1">Collection:</span> <button role="link" class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg minw-0" aria-label="View Collection Overview">Incidents</button>
-                  <button type="button" class="btn btn-action p-0 d-inline-flex text-muted" aria-label="Copy Link to Public Form">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="text-muted">Collection:</span> <a class="fw-semibold ms-1" aria-label="View Collection Overview">Incidents</a>
+                  <button type="button" class="btn btn-action p-0 d-flex align-items-center ms-1 text-muted" aria-label="Copy Link to Title IX Reports" title="Copy Link to Title IX Reports">
                     <svg class="icon-base-font-size">
                       <use xlink:href="${iconSprite}#tabler-link" />
                     </svg>
@@ -148,8 +148,8 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-3" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
-              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked4">
-              <label class="form-check-label" for="flexSwitchCheckChecked4" aria-label="Case Type Inactive">Inactive</label>
+              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked3">
+              <label class="form-check-label" for="flexSwitchCheckChecked3" aria-label="Case Type Inactive">Inactive</label>
             </div>
           </td>
           <td role="cell" headers="column-4" class="px-3">
@@ -178,8 +178,8 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-3" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
-              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked5">
-              <label class="form-check-label" for="flexSwitchCheckChecked5" aria-label="Case Type Inactive">Inactive</label>
+              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked4">
+              <label class="form-check-label" for="flexSwitchCheckChecked4" aria-label="Case Type Inactive">Inactive</label>
             </div>
           </td>
           <td role="cell" headers="column-4" class="px-3">
@@ -208,8 +208,8 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-3" class="px-3">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
-              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked6">
-              <label class="form-check-label" for="flexSwitchCheckChecked6" aria-label="Case Type Inactive">Inactive</label>
+              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked5">
+              <label class="form-check-label" for="flexSwitchCheckChecked5" aria-label="Case Type Inactive">Inactive</label>
             </div>
           </td>
           <td role="cell" headers="column-4" class="px-3">
@@ -231,7 +231,7 @@ const listCollectionHTML = `
 
       <tbody role="rowgroup" class="expandable-row-parent">
         <tr role="row" class="bg-light shadow-none">
-          <th id="row-1" class="lh-1 p-3" colspan="4" scope="colgroup">
+          <th id="row-2" class="lh-1 p-3" colspan="4" scope="colgroup">
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
                 <div>
@@ -277,8 +277,8 @@ const listCollectionHTML = `
           </td>
           <td role="cell" headers="column-3" class="px-3 text-nowrap">
             <div class="form-check form-switch m-0 p-0 d-flex align-items-center">
-              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
-              <label class="form-check-label" for="flexSwitchCheckChecked1" aria-label="Case Type Active">Active</label>
+              <input class="form-check-input m-2 ms-0" type="checkbox" role="switch" id="flexSwitchCheckChecked6" checked>
+              <label class="form-check-label" for="flexSwitchCheckChecked6" aria-label="Case Type Active">Active</label>
             </div>
           </td>
           <td role="cell" headers="column-4" class="px-3 text-nowrap">
