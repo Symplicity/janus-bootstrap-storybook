@@ -7,7 +7,7 @@ export default {
 const input_email_html = `
 <form>
   <div class="mb-4">
-    <label for="email" class="form-label">Email</label>
+    <label for="email" class="form-label">Email<span class="text-muted fw-normal ms-1">(required)</span></label>
     <div id="emailHelpBlock" class="form-text">Please enter an email (not school)</div>
     <input type="email" class="form-control" id="email" placeholder="name@example.com" aria-describedby="emailHelpBlock">
   </div>
@@ -15,7 +15,7 @@ const input_email_html = `
 <br><br>
 <form>
   <div class="mb-4 is-invalid">
-    <label for="email2" class="form-label">Email</label>
+    <label for="email2" class="form-label">Email<span class="text-danger fw-normal ms-1">(required)</span></label>
     <div class="invalid-feedback">
       <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
         <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -46,7 +46,7 @@ InputEmail.parameters = {
 const select_html = `
 <form>
   <div class="mb-4">
-    <label for="select" class="form-label">Select</label>
+    <label for="select" class="form-label">Select<span class="text-muted fw-normal ms-1">(required)</span></label>
     <select class="form-select" aria-label="Default select example">
       <option selected>Open this select menu</option>
       <option value="1">One</option>
@@ -58,7 +58,7 @@ const select_html = `
 <br><br>
 <form>
   <div class="mb-4 is-invalid">
-    <label for="select2" class="form-label">Select</label>
+    <label for="select2" class="form-label">Select<span class="text-danger fw-normal ms-1">(required)</span></label>
     <div class="invalid-feedback">
       <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
         <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -93,14 +93,14 @@ Select.parameters = {
 const textarea_html = `
 <form>
 <div class="mb-4">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea<span class="text-muted fw-normal ms-1">(required)</span></label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
 </div>
 </form>
 <br><br>
 <form>
   <div class="mb-4 is-invalid">
-    <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+    <label for="exampleFormControlTextarea2" class="form-label">Example textarea<span class="text-danger fw-normal ms-1">(required)</span></label>
     <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
   </div>
 </form>
@@ -126,7 +126,7 @@ const input_checkbox_html = `
 <form>
   <div class="mb-4">
     <fieldset>
-      <legend>Checkbox Group</legend>
+      <legend>Checkbox Group<span class="text-muted fw-normal ms-1">(required)</span></legend>
       <div id="checkboxHelpBlock" class="form-text">Select ones that apply to you</div>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
@@ -153,7 +153,7 @@ const input_checkbox_html = `
 <form>
   <div class="mb-4 is-invalid">
     <fieldset>
-      <legend>Checkbox Group</legend>
+      <legend>Checkbox Group<span class="text-danger fw-normal ms-1">(required)</span></legend>
       <div class="invalid-feedback">
         <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -203,7 +203,7 @@ const input_radio_html = `
 <form>
   <div class="mb-4">
     <fieldset>
-      <legend>Radio Group</legend>
+      <legend>Radio Group<span class="text-muted fw-normal ms-1">(required)</span></legend>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
         <label class="form-check-label" for="flexRadioDefault1">
@@ -229,7 +229,7 @@ const input_radio_html = `
 <form>
   <div class="mb-4 is-invalid">
     <fieldset>
-      <legend>Radio Group</legend>
+      <legend>Radio Group<span class="text-danger fw-normal ms-1">(required)</span></legend>
       <div class="invalid-feedback">
         <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -281,7 +281,7 @@ const input_file_html = `
     <fieldset>
       <div class="form-file">
         <label class="form-label" for="inputGroupFile01">
-          Simple File Upload 
+          Simple File Upload<span class="text-muted fw-normal ms-1">(required)</span>
         </label>
         <input type="file" class="form-control" id="inputGroupFile01">
       </div>
@@ -294,7 +294,7 @@ const input_file_html = `
     <fieldset>
       <div class="form-file">
         <label class="form-label" for="inputGroupFile02">
-          Simple File Upload
+          Simple File Upload<span class="text-danger fw-normal ms-1">(required)</span>
         </label>
         <div class="invalid-feedback">
           <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
