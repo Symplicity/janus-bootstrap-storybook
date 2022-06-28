@@ -8,7 +8,7 @@ const validated_form_html = `
 <div style="max-width: 500px; border: 1px solid #ccc; padding: 20px; border-radius: 4px;"> 
   <form>
     <div class="mb-4 is-invalid">
-      <label for="select2" class="form-label">Select</label>
+      <label for="select2" class="form-label">Select<span class="fw-normal ms-1">(required)</span></label>
       <div class="invalid-feedback">
         <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -22,7 +22,7 @@ const validated_form_html = `
       </select>
     </div>
     <div class="mb-4 is-invalid">
-      <label for="email2" class="form-label">Email</label>
+      <label for="email2" class="form-label">Email<span class="fw-normal ms-1">(required)</span></label>
       <div class="invalid-feedback">
         <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
           <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -32,13 +32,13 @@ const validated_form_html = `
       <input type="email" class="form-control is-invalid" id="email2" placeholder="name@example.com">
     </div>
     <div class="mb-4 is-invalid">
-      <label for="exampleFormControlTextarea2" class="form-label">Example textarea</label>
+      <label for="exampleFormControlTextarea2" class="form-label">Example textarea<span class="fw-normal ms-1">(required)</span></label>
       <textarea class="form-control" id="exampleFormControlTextarea2" rows="5"></textarea>
     </div>
     <p class="h3 fieldgroup-label">More Fields</p>
     <div class="mb-4 is-invalid">
       <fieldset>
-        <legend>Checkbox Group</legend>
+        <legend>Checkbox Group<span class="fw-normal ms-1">(required)</span></legend>
         <div class="invalid-feedback">
           <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
             <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -67,7 +67,7 @@ const validated_form_html = `
     </div>
     <div class="mb-4 is-invalid">
       <fieldset>
-        <legend>Radio Group</legend>
+        <legend>Radio Group<span class="fw-normal ms-1">(required)</span></legend>
         <div class="invalid-feedback">
           <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
             <use xlink:href="${iconSprite}#tabler-alert-circle" />
@@ -95,7 +95,7 @@ const validated_form_html = `
     </div>
     <div class="mb-6 is-invalid">
       <fieldset>
-        <legend>Subform</legend>
+        <legend>Subform<span class="fw-normal ms-1">(required)</span></legend>
         <div id="checkboxHelpBlock2" class="form-text">Enter your permanent address</div>
         <div class="subform bg-light p-3 rounded">
           <div class="mb-6">
@@ -151,7 +151,7 @@ const validated_form_html = `
       <fieldset>
         <div class="form-file">
           <label class="form-label" for="inputGroupFile02">
-            Simple File Upload
+            Simple File Upload<span class="fw-normal ms-1">(required)</span>
           </label>
           <div class="invalid-feedback">
             <svg width="1.25rem" height="1.25rem" class="mt-n1 me-1">
