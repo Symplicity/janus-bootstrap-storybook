@@ -58,7 +58,7 @@ const listCollectionHTML = `
       <tbody role="rowgroup" class="expandable-row-child show">
         <tr id="content-1" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Academic Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Academic Misconduct</button>
             <span class="badge bg-success rounded-pill text-uppercase lh-1 fs-7">Published</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1 text-nowrap">
@@ -92,7 +92,7 @@ const listCollectionHTML = `
               <use xlink:href="${iconSprite}#tabler-corner-down-right" />
               <span class="visually-hidden">View Child Case</span>
             </svg>
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2 minw-0">Academic Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0 minw-0">Academic Misconduct</button>
             <span class="badge bg-dark rounded-pill text-uppercase lh-1 fs-7">Draft</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1"></td>
@@ -110,7 +110,7 @@ const listCollectionHTML = `
         
         <tr id="content-3" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Student Grevience or Complaint</button>
+          <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Student Grevience or Complaint</button>
             <span class="badge bg-warning rounded-pill text-uppercase lh-1 fs-7">Ready to Publish</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1">
@@ -140,7 +140,7 @@ const listCollectionHTML = `
 
         <tr id="content-4" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Staff Misconduct / Serious Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Staff Misconduct / Serious Misconduct</button>
             <span class="badge bg-danger rounded-pill text-uppercase lh-1 fs-7">Not Published</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1">
@@ -170,7 +170,7 @@ const listCollectionHTML = `
 
         <tr id="content-5" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Staff Misconduct / Serious Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Staff Misconduct / Serious Misconduct</button>
             <span class="badge bg-info rounded-pill text-uppercase lh-1 fs-7">Public</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1">
@@ -200,7 +200,7 @@ const listCollectionHTML = `
 
         <tr id="content-6" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Staff Misconduct / Serious Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Staff Misconduct / Serious Misconduct</button>
             <span class="badge bg-info rounded-pill text-uppercase lh-1 fs-7">Internal</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1">
@@ -235,7 +235,7 @@ const listCollectionHTML = `
             <div class="d-flex align-items-center">
               <div class="flex-fill fw-normal">
                 <div>
-                  <span class="text-muted me-1">Collection:</span> <button role="link" class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2 minw-0" aria-label="View Collection Overview">Incidents</button>
+                  <span class="text-muted me-1">Collection:</span> <button role="link" class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0 minw-0" aria-label="View Collection Overview">Incidents</button>
                   <button type="button" class="btn btn-action p-0 d-inline-flex text-muted" aria-label="Copy Link to Public Form">
                     <svg class="icon-base-font-size">
                       <use xlink:href="${iconSprite}#tabler-link" />
@@ -269,7 +269,7 @@ const listCollectionHTML = `
       <tbody role="rowgroup" class="expandable-row-child show">
         <tr id="content-7" role="row">
           <td role="cell" headers="column-1" class="px-3 py-1 text-nowrap">
-            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 lh-lg me-2">Academic Misconduct</button>
+            <button class="btn btn-link fw-normal mt-n1 d-inline-flex fs-5 p-0 me-2 minw-0">Academic Misconduct</button>
             <span class="badge bg-success rounded-pill text-uppercase lh-1 fs-7">Published</span>
           </td>
           <td role="cell" headers="column-2" class="px-3 py-1 text-nowrap">
