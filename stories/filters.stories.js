@@ -300,14 +300,14 @@ const list_filter_html = `
 <div class="card bg-light m-3">
   <div class="card-body">
     <div class="row">
-      <div class="col-3">
+      <div class="col-lg-3">
         <div class="mb-3">
           <label for="keywords" class="form-label">keywords</label>
           <input type="keywords" class="form-control" id="keywords" placeholder="Search Names and Case #s">
         </div>
       </div>
     </div>
-    <button class="btn btn-light border">Search</button>
+    <button class="btn btn-outline-secondary">Search</button>
   </div>
 </div>`
 
