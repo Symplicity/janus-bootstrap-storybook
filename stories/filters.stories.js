@@ -296,23 +296,109 @@ ToggleFilterWithEllipsisButton.parameters = {
   `
 }
 
-const list_filter_html = `
-<div class="card bg-light m-3">
-  <div class="card-body">
-    <div class="row">
-      <div class="col-lg-3">
-        <div class="mb-3">
-          <label for="keywords" class="form-label">keywords</label>
-          <input type="keywords" class="form-control" id="keywords" placeholder="Search Names and Case #s">
-        </div>
-      </div>
+
+const ListFilterHtml = () => {
+  const checkbox_label = 'Extra Fields'
+  const checkbox_options = {
+    Yes: 'yes',
+    no: ''
+  }
+  const checkbox_checked = radios(checkbox_label, checkbox_options)
+
+  return `
+<div class="bg-white mt-3 w-100 rounded-4">
+    <div class="text-center"></div>
+    <div class="bg-white">
+        <form class="bg-light">
+            <div class="d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
+                <div class="d-flex align-items-center justify-content-start flex-wrap flex-grow-1">
+                    <div class="flex-grow-1 me-7">
+                        <div class="input-group">
+                            <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
+                                <svg class="icon-lg-font-size ps-1">
+                                    <title>Open Search Dialog</title>
+                                    <use xlink:href="${iconSprite}#tabler-search" />
+                                </svg>
+                            </span>
+                            <input type="text" class="form-control border-start-0 fs-6"
+                                placeholder="Search cases by student, email, IR#" aria-label="Search"
+                                aria-describedby="basic-addon1" />
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 me-7">
+                        <select class="form-select fs-6 text-muted" aria-label="Default select example">
+                            <option selected>Assigned to</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="d-flex align-items-center flex-wrap flex-grow-1">
+                        <div class="form-check me-3 mb-0">
+                            <input class="form-check-input" type="checkbox" value="true" id="flexCheck1" />
+                            <label class="form-check-label fs-6" for="flexCheck1">
+                                Parent Case
+                            </label>
+                        </div>
+                        <div class="form-check me-2 mb-0">
+                            <input class="form-check-input" type="checkbox" value="true" id="flexCheck2" />
+                            <label class="form-check-label fs-6" for="flexCheck2">
+                                Child Case
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start flex-wrap">
+                    <button type="button" class="btn btn-outline-secondary fs-6 me-3">
+                        <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
+                            <use xlink:href="${iconSprite}#tabler-search" />
+                        </svg>Apply Search
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary fs-6" id="toggleFields" style="display: ${checkbox_checked ? "block" : "none"}">
+                        <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
+                            <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
+                        </svg>More Filters
+                    </button>
+                </div>
+            </div>
+            <div class="collapse" id="hiddenFields">
+                <div class="d-flex align-items-start justify-content-between flex-sm-wrap px-7 mx-3">
+                    <div class="flex-grow-1 me-7">
+                      <input type="text" class="form-control fs-6" placeholder="Example Field"/>
+                    </div>
+                    <div class="flex-grow-1">
+                        <select class="form-select fs-6 text-muted" aria-label="Default select example">
+                            <option selected>Hidden Select Example</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
+                    <div class="flex-grow-1">
+                      <textarea class="form-control fs-6" placeholder="Hidden textarea" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
+                  </div>
+            </div>
+        </form>
     </div>
-    <button class="btn btn-outline-secondary">Search</button>
-  </div>
-</div>`
+</div>
+`;
+};
 
 export const ListFilter = () => {
-  return list_filter_html;
+  setTimeout(function() {
+    const collapsible = document.querySelector("#hiddenFields");
+    const cta = document.querySelector("#toggleFields");
+
+    cta.addEventListener("click", () => {
+      var bsCollapse = new bootstrap.Collapse(collapsible)
+    })
+    
+  }, 0)
+
+  return ListFilterHtml();
 }
 
 ListFilter.storyName = 'List Filter';
@@ -323,9 +409,8 @@ ListFilter.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${list_filter_html}
+  ${ListFilterHtml}
   \`\`\`
 
-  `
+  `  
 }
-
