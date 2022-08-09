@@ -297,7 +297,7 @@ ToggleFilterWithEllipsisButton.parameters = {
 }
 
 
-const ListFilterHtml = () => {
+const list_filter_html = () => {
   const checkbox_label = 'Extra Fields'
   const checkbox_options = {
     Yes: 'yes',
@@ -307,7 +307,6 @@ const ListFilterHtml = () => {
 
   return `
 <div class="bg-white mt-3 w-100 rounded-4">
-    <div class="text-center"></div>
     <div class="bg-white">
         <form class="bg-light">
             <div class="d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
@@ -398,7 +397,7 @@ export const ListFilter = () => {
     
   }, 0)
 
-  return ListFilterHtml();
+  return list_filter_html();
 }
 
 ListFilter.storyName = 'List Filter';
@@ -409,7 +408,7 @@ ListFilter.parameters = {
   #Sample Code
 
   \`\`\`html
-  ${ListFilterHtml}
+  ${list_filter_html}
   \`\`\`
 
   `  
