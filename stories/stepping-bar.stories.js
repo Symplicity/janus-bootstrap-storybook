@@ -17,42 +17,42 @@ const stepping_bar_horizontal_html = `
 <div class="steps-horizontal position-relative d-flex justify-content-lg-center">
   <ol class="list-unstyled list-steps d-flex mb-0">
     <li class="list-steps-item position-relative completed">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           Build Intake Form
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative completed">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           Build Processing Form
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative selected">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           <strong class="text-dark fw-semibold">Add Stages</strong>
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 mb-0 text-center text-nowrap">
           Review
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 text-center text-nowrap">
           Configure Add-Ons
         </p>
       </div>   
     </li>
     <li class="list-steps-item position-relative">
-      <div class="list-steps-item-body py-3 px-7 py-md-7 px-md-9" tabindex="0">
+      <div class="list-steps-item-body py-3 px-7" tabindex="0">
         <p class="text-muted fs-5 mt-4 text-center text-nowrap">
           Publish
         </p>
