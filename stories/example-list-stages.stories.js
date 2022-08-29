@@ -11,7 +11,7 @@ const listStagesHTML = `
     <div>STEPPER</div>
 
     <fw-case-type-stage-list class="flex-grow-1 d-flex flex-column overflow-hidden bg-success">
-      <div class="p-2 mb-5 overflow-auto">
+      <div class="p-2 overflow-auto">
         <div class="d-flex align-items-center px-4 py-1">
           <span class="fs-4 text-muted">STAGES</span> 
           <button class="btn btn-action">
