@@ -235,7 +235,7 @@ EmployerProfileHeader.parameters = {
 
 const event_profile_header = `
   <div class="profile-header">
-    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top" height="150" width="100%" style="object-fit: cover;" alt="...">
+    <img src="https://via.placeholder.com/674x150" class="card-img-top" height="150" width="100%" style="object-fit: cover;" alt="...">
     <div class="w-100 p-9 border border-light">
       <div class="m-0">
         <div class="profile-header-secondary-actions position-relative">
