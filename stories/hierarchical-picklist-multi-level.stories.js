@@ -30,7 +30,7 @@ const hierarchical_picklist_default_html = `
           </li>
         </ul>
         <ul class="list-children list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item me-1">
+          <li class="list-inline-item me-1 mb-2">
             <button class="btn text-dark bg-light d-inline-flex badge minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
@@ -485,8 +485,8 @@ const hierarchical_picklist_selection_readonly_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <ul class="list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item me-1">
+        <ul class="list-unstyled list-inline my-0">
+          <li class="list-inline-item me-1 mb-2">
             <button class="btn text-dark bg-light d-inline-flex badge minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-dark ms-2 me-0 p-0"></span>
@@ -589,7 +589,7 @@ export const HierarchicalPicklistMultiSelectionReadonly = () => {
           .fill()
           .map(
             (item, i) =>
-              `<li class="list-inline-item me-1">
+              `<li class="list-inline-item me-1 mb-2">
                 <button class="btn text-dark bg-light d-inline-flex badge minw-0">
                   ${filter_chip_item}
                   <span class="d-flex align-items-center btn-close btn-close-dark ms-2 me-0 p-0"></span>
@@ -607,8 +607,8 @@ export const HierarchicalPicklistMultiSelectionReadonly = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <ul class="list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item me-1">
+        <ul class="list-unstyled list-inline my-0">
+          <li class="list-inline-item me-1 mb-2">
             <button class="btn text-dark bg-light d-inline-flex badge minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
@@ -705,8 +705,8 @@ const hierarchical_picklist_selection_edit_html = `
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <ul class="list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item me-1">
+        <ul class="list-unstyled list-inline my-0">
+          <li class="list-inline-item me-1 mb-2">
             <button class="btn text-white d-inline-flex badge bg-primary minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-dark ms-2 me-0 p-0"></span>
@@ -817,7 +817,7 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
           .fill()
           .map(
             (item, i) =>
-              `<li class="list-inline-item me-1">
+              `<li class="list-inline-item me-1 mb-2">
                 <button class="btn text-white bg-primary d-inline-flex badge minw-0">
                   ${filter_chip_item}
                   <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
@@ -835,8 +835,8 @@ export const HierarchicalPicklistMultiSelectionEdit = () => {
         <div>
           <label class="mb-1" for="search-input"><b>Major</b></label>
         </div>
-        <ul class="list-unstyled list-inline mb-2 mt-n1">
-          <li class="list-inline-item me-1">
+        <ul class="list-unstyled list-inline my-0">
+          <li class="list-inline-item me-1 mb-2">
             <button class="btn text-white bg-primary d-inline-flex badge minw-0">
               Engineering
               <span class="d-flex align-items-center btn-close btn-close-white ms-2 me-0 p-0"></span>
