@@ -308,7 +308,7 @@ const list_filter_html = () => {
   return `
   <div class="card">
   <div class="card-body">
-    <div class="d-flex flex-column flex-md-row gap-4 w-100">
+    <div class="d-flex flex-column flex-md-row gap-3 w-100">
       <div class="flex-grow-1 position-relative">
         <label for="exampleFormControlInput1" class="form-label visually-hidden">Email address</label>
         <input type="search" class="form-control fs-6 ps-9" id="exampleFormControlInput1" placeholder="Search by case #, name, or email">
