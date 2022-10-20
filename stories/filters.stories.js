@@ -306,82 +306,43 @@ const list_filter_html = () => {
   const checkbox_checked = radios(checkbox_label, checkbox_options)
 
   return `
-<div class="bg-white mt-3 w-100 rounded-4">
-    <div class="bg-white">
-        <form class="bg-light">
-            <div class="d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
-                <div class="d-flex align-items-center justify-content-start flex-wrap flex-grow-1">
-                    <div class="flex-grow-1 me-7">
-                        <div class="input-group">
-                            <span class="input-group-text border-end-0 bg-white p-1" id="basic-addon1">
-                                <svg class="icon-lg-font-size ps-1">
-                                    <title>Open Search Dialog</title>
-                                    <use xlink:href="${iconSprite}#tabler-search" />
-                                </svg>
-                            </span>
-                            <input type="text" class="form-control border-start-0 fs-6"
-                                placeholder="Search cases by student, email, IR#" aria-label="Search"
-                                aria-describedby="basic-addon1" />
-                        </div>
-                    </div>
-                    <div class="flex-grow-1 me-7">
-                        <select class="form-select fs-6 text-muted" aria-label="Default select example">
-                            <option selected>Assigned to</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="d-flex align-items-center flex-wrap flex-grow-1">
-                        <div class="form-check me-3 mb-0">
-                            <input class="form-check-input" type="checkbox" value="true" id="flexCheck1" />
-                            <label class="form-check-label fs-6" for="flexCheck1">
-                                Parent Case
-                            </label>
-                        </div>
-                        <div class="form-check me-2 mb-0">
-                            <input class="form-check-input" type="checkbox" value="true" id="flexCheck2" />
-                            <label class="form-check-label fs-6" for="flexCheck2">
-                                Child Case
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-start flex-wrap">
-                    <button type="button" class="btn btn-outline-secondary fs-6 me-3">
-                        <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
-                            <use xlink:href="${iconSprite}#tabler-search" />
-                        </svg>Apply Search
-                    </button>
-                    <button type="button" class="btn btn-outline-secondary fs-6" id="toggleFields" style="display: ${checkbox_checked ? "block" : "none"}">
-                        <svg width="1.125rem" height="1.125rem" class="mt-n1 me-1">
-                            <use xlink:href="${iconSprite}#tabler-adjustments-horizontal" />
-                        </svg>More Filters
-                    </button>
-                </div>
-            </div>
-            <div class="collapse" id="hiddenFields">
-                <div class="d-flex align-items-start justify-content-between flex-sm-wrap px-7 mx-3">
-                    <div class="flex-grow-1 me-7">
-                      <input type="text" class="form-control fs-6" placeholder="Example Field"/>
-                    </div>
-                    <div class="flex-grow-1">
-                        <select class="form-select fs-6 text-muted" aria-label="Default select example">
-                            <option selected>Hidden Select Example</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                  </div>
-                  <div class="d-flex align-items-start justify-content-between flex-sm-wrap p-7 mx-3">
-                    <div class="flex-grow-1">
-                      <textarea class="form-control fs-6" placeholder="Hidden textarea" id="exampleFormControlTextarea1" rows="5"></textarea>
-                    </div>
-                  </div>
-            </div>
-        </form>
+  <div class="card">
+  <div class="card-body py-0 px-3">
+    <div class="d-flex flex-column flex-md-row gap-3 w-100 py-3">
+      <div class="flex-grow-1 position-relative">
+        <label for="exampleFormControlInput1" class="form-label visually-hidden">Email address</label>
+        <input type="search" class="form-control fs-6 ps-9" id="exampleFormControlInput1" placeholder="Search by case #, name, or email">
+        <svg width="1rem" height="1rem" class="position-absolute top-0 mt-2 ms-3">
+          <use xlink:href="${iconSprite}#tabler-search" />
+        </svg>
+      </div>
+      <div class="flex-grow-1">
+        <label for="exampleFormControlInput2" class="form-label visually-hidden">Email address</label>
+        <select id="exampleFormControlInput2" class="form-select fs-6" aria-label="Default select example">
+          <option selected>Collection & Case type</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="flex-grow-1">
+        <label for="exampleFormControlInput3" class="form-label visually-hidden">Assigned To</label>
+        <select id="exampleFormControlInput3" class="form-select fs-6" aria-label="Default select example">
+          <option selected>Assigned To</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <button type="button" class="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2 fs-6">
+        <svg width="1rem" height="1rem">
+          <use xlink:href="${iconSprite}#tabler-search" />
+        </svg>
+        Search</button>
+      <button type="button" class="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2 fs-6">
+        Clear</button>
     </div>
+  </div>
 </div>
 `;
 };
