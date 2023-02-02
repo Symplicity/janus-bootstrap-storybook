@@ -132,3 +132,10 @@
 .text-spaced {
   letter-spacing: 0.2rem;
 }
+
+
+
+
+.btn {
+  min-width: min-content !important;
+}
