@@ -45,10 +45,6 @@
       rgba(255, 255, 255, 1) 100%);
 }
 
-.min-w-0 {
-  min-width: 0;
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,10 +119,6 @@
 
 .fs-7 {
   font-size: 0.75rem !important;
-}
-
-.text-spaced {
-  letter-spacing: 0.2rem;
 }
 
 .btn {
