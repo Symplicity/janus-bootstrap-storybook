@@ -50,7 +50,7 @@ const listHTML = `
                 </div>
               </div>
 
-              <div class="d-lg-none z-10">
+              <div class="d-lg-none">
 
                 <div class="btn-group">
                   <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -75,8 +75,7 @@ const listHTML = `
                 </div>
               </div>
             </div>
-
-            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
               <div class="card-actions-container d-flex h-100 px-2">
 
                 <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -177,7 +176,7 @@ const listHTML = `
                 </div>
               </div>
 
-              <div class="d-lg-none z-10">
+              <div class="d-lg-none">
 
                 <div class="btn-group">
                   <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -203,7 +202,7 @@ const listHTML = `
               </div>
             </div>
 
-            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
               <div class="card-actions-container d-flex h-100 px-2">
 
                 <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -325,7 +324,7 @@ const listHTML = `
                 </div>
               </div>
 
-              <div class="d-lg-none z-10">
+              <div class="d-lg-none">
 
                 <div class="btn-group">
                   <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -351,7 +350,7 @@ const listHTML = `
               </div>
             </div>
 
-            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
               <div class="card-actions-container d-flex h-100 px-2">
 
                 <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -407,7 +406,7 @@ const listHTML = `
             </div>
           </div>
         </div>
-        <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled list-item-child mt-3" id="my-list-1">
+        <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled ms-5 mt-3" id="my-list-1">
           <li role="none">
             <div class="group focus-within ms-4 ms-lg-0 mb-3">
               <div class="card border-lg-primary position-relative transition-all">
@@ -433,7 +432,7 @@ const listHTML = `
                   <div class="">
                     <button type="button" title="Expand" aria-expanded="false" aria-owns="my-list-2" aria-title="Expand" class="btn p-2 d-flex align-items-center justify-content-center">
 
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <polyline points="9 6 15 12 9 18" />
                       </svg>
@@ -465,7 +464,7 @@ const listHTML = `
                     </div>
                   </div>
 
-                  <div class="d-lg-none z-10">
+                  <div class="d-lg-none">
 
                     <div class="btn-group">
                       <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -491,7 +490,7 @@ const listHTML = `
                   </div>
                 </div>
 
-                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
                   <div class="card-actions-container d-flex h-100 px-2">
 
                     <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -549,7 +548,7 @@ const listHTML = `
             </div>
 
         
-            <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled list-item-child mt-3" id="my-list-2">
+            <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled ms-5 mt-3" id="my-list-2">
             <li role="none">
             <div class="group focus-within ms-4 ms-lg-0 mb-3">
               <div class="card border-lg-primary position-relative transition-all">
@@ -575,7 +574,7 @@ const listHTML = `
                   <div class="">
                     <button type="button" title="Expand" aria-expanded="false" aria-owns="my-list-2" aria-title="Expand" class="btn p-2 d-flex align-items-center justify-content-center">
 
-                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <polyline points="9 6 15 12 9 18" />
                       </svg>
@@ -607,7 +606,7 @@ const listHTML = `
                     </div>
                   </div>
 
-                  <div class="d-lg-none z-10">
+                  <div class="d-lg-none">
 
                     <div class="btn-group">
                       <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -633,7 +632,7 @@ const listHTML = `
                   </div>
                 </div>
 
-                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
                   <div class="card-actions-container d-flex h-100 px-2">
 
                     <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -691,7 +690,7 @@ const listHTML = `
             </div>
 
         
-            <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled list-item-child mt-3" id="my-list-2">
+            <ul role="group" aria-label="Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim." class="list-unstyled ms-5 mt-3" id="my-list-2">
           <!-- more items go here -->
         </ul>
             
@@ -721,7 +720,7 @@ const listHTML = `
                   </button>
                 </div>
 
-                <div class="d-flex py-3 align-items-center px-14 gap-2 pe-lg-4">
+                <div class="d-flex py-3 align-items-center px-12 gap-2 pe-lg-4">
 
                   <div class="minw-0">
                     <div class="position-relative">
@@ -748,7 +747,7 @@ const listHTML = `
                     </div>
                   </div>
 
-                  <div class="d-lg-none z-10">
+                  <div class="d-lg-none">
 
                     <div class="btn-group">
                       <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -774,7 +773,7 @@ const listHTML = `
                   </div>
                 </div>
 
-                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+                <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
                   <div class="card-actions-container d-flex h-100 px-2">
 
                     <div class="d-flex flex-row align-items-center gap-2 bg-white">
@@ -854,9 +853,7 @@ const listHTML = `
                 </svg>
               </button>
             </div>
-
-            <div class="d-flex py-3 align-items-center px-14 gap-2 pe-lg-4">
-
+            <div class="d-flex py-3 align-items-center px-12 gap-2 pe-lg-4">
               <div class="minw-0">
                 <div class="position-relative">
                   <h3 class="d-flex align-items-center m-0 mb-1 fs-6 fs-lg-5 gap-2">
@@ -882,7 +879,7 @@ const listHTML = `
                 </div>
               </div>
 
-              <div class="d-lg-none z-10">
+              <div class="d-lg-none">
 
                 <div class="btn-group">
                   <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
@@ -908,7 +905,7 @@ const listHTML = `
               </div>
             </div>
 
-            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+            <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
               <div class="card-actions-container d-flex h-100 px-2">
 
                 <div class="d-flex flex-row align-items-center gap-2 bg-white">

@@ -2,10 +2,6 @@
   cursor: move;
 }
 
-.list-item-child {
-  margin-left: 3.5rem;
-}
-
 .group-hover-opacity {
   opacity: 0;
 }
@@ -26,9 +22,6 @@
 }
 
 .card-actions {
-  position: absolute;
-  top: 0;
-  bottom: 0;
   right: 0;
   z-index: 10;
   overflow: hidden;
@@ -49,22 +42,6 @@
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.w-0 {
-  width: 0 !important;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.-mr-1 {
-  margin-right: -1rem;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -105,20 +82,8 @@
   }
 }
 
-.mt-14 {
-  margin-top: 3.5rem !important;
-}
-
-.px-14 {
-  margin-left: 3.5rem;
-}
-
 .list-buttons li:hover {
   background: #f8f9fa;
-}
-
-.fs-7 {
-  font-size: 0.75rem !important;
 }
 
 .btn {

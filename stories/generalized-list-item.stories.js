@@ -23,7 +23,7 @@ const listContent = (type) => {
     <li role="none">
       <div class="group focus-within ms-4 ms-lg-0 mb-3">
         <div class="card border-lg-primary position-relative transition-all">
-          <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+          <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute mt-0 mt-lg-1 me-n9 h-100 pe-2">
             <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
                 <svg class="icon-lg-font-size">
                   <use xlink:href="${iconSprite}#tabler-grid-dots" />
@@ -40,7 +40,7 @@ const listContent = (type) => {
                 </svg>
               </button>
             </div>
-            <div class="min-w-0">
+            <div class="minw-0">
               <div class="position-relative">
                 <h3 class="d-flex align-items-center m-0 mb-1 fs-6 fs-lg-5 gap-2">
                   <div class="flex-grow-1 text-truncate">
@@ -50,7 +50,7 @@ const listContent = (type) => {
                   </div>
                   <span class="badge bg-secondary flex-shrink-0 fs-7 fs-lg-6">Some Label</span>
                 </h3>
-                <p class="m-0 text-truncate min-w-0">
+                <p class="m-0 text-truncate minw-0">
                   ${type.description}
                 </p>
                 <dl class="d-flex flex-wrap flex-column flex-lg-row gap-0 m-0">
@@ -84,7 +84,7 @@ const listContent = (type) => {
                 </dl>
               </div>
             </div>
-            <div class="d-lg-none z-10">
+            <div class="d-lg-none">
               <div class="btn-group">
                 <button type="button" class="btn p-2 d-flex align-items-center justify-content-center" data-bs-toggle="dropdown" aria-expanded="false">
                   <svg class="icon-lg-font-size">
@@ -104,7 +104,7 @@ const listContent = (type) => {
               </div>
             </div>
           </div>
-          <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all -mr-1 group-hover-me-0">
+          <div class="d-none d-lg-block card-actions group-hover-opacity h-100 transition-all me-n3 group-hover-me-0 position-absolute top-0 bottom-0">
             <div class="card-actions-container d-flex h-100 px-2">
               <div class="d-flex flex-row align-items-center gap-2 bg-white">
                 <button type="button" title="Add Below" aria-title="Add Below" class="btn p-2 d-flex align-items-center justify-content-center">
