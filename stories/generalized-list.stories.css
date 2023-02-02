@@ -1,0 +1,134 @@
+.drag-handle:hover button {
+  cursor: move;
+}
+
+.list-item-child {
+  margin-left: 3.5rem;
+}
+
+.group-hover-opacity {
+  opacity: 0;
+}
+
+.group:hover .group-hover-opacity,
+.group:focus-within .group-hover-opacity {
+  opacity: 1;
+}
+
+.drag-handle {
+  margin-left: -2.5rem;
+}
+
+.universal-list-container {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+.card-actions {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.card-actions-container::before {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 1) 100%);
+}
+
+.min-w-0 {
+  min-width: 0;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.w-0 {
+  width: 0 !important;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.-mr-1 {
+  margin-right: -1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .group-hover-lg-opacity {
+    opacity: 0;
+  }
+
+  .group:hover .group-hover-lg-opacity,
+  .group:focus-within .group-hover-lg-opacity {
+    opacity: 1;
+  }
+
+  .mt-lg-1 {
+    margin-top: 1rem !important;
+  }
+
+  .group:hover .group-hover-mt-0,
+  .group:focus-within .group-hover-mt-0 {
+    margin-top: 0 !important;
+  }
+
+  .group:hover .group-hover-me-0,
+  .group:focus-within .group-hover-me-0 {
+    margin-right: 0 !important;
+  }
+
+  .focus-within:hover .border-lg-primary,
+  .focus-within:focus-within .border-lg-primary {
+    border: 1px solid #0d6efd;
+  }
+
+  .fs-lg-5 {
+    font-size: 1.25rem !important;
+  }
+
+  .fs-lg-6 {
+    font-size: 1rem !important;
+  }
+}
+
+
+/* Ignore below */
+
+.mt-14 {
+  margin-top: 3.5rem !important;
+}
+
+.px-14 {
+  margin-left: 3.5rem;
+}
+
+.list-buttons li:hover {
+  /* .bg-light */
+  background: #f8f9fa;
+}
+
+.fs-7 {
+  font-size: 0.75rem !important;
+}
+
+.text-spaced {
+  letter-spacing: 0.2rem;
+}
