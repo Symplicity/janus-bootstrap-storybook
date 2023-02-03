@@ -6,15 +6,15 @@ export default {
 }
 
 const listHTML = `
-<div class="container">
-  <div class="container my-container">
+<div class="universal-list-container mx-12">
+  <div class="container">
     <h2 class="text-uppercase fs-7 text-spaced  text-muted mb-3">Non-Expandable List</h2>
     <ul class="list-unstyled">
       <li class="">
         <div class="group focus-within ms-4 ms-lg-0 mb-3">
 
           <div class="card border-lg-primary position-relative transition-all">
-            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
               <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -131,7 +131,7 @@ const listHTML = `
         <div class="group focus-within ms-4 ms-lg-0 mb-3">
 
           <div class="card border-lg-primary position-relative transition-all">
-            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
               <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -263,14 +263,14 @@ const listHTML = `
 
     </ul>
   </div>
-  <div class="container my-container">
+  <div class="container">
     <h2 class="text-uppercase fs-7 text-spaced  text-muted mb-3">Expandable List</h2>
     <ul aria-label="Expandable List" role="tree" class="list-unstyled">
       <li role="none">
 
         <div class="group focus-within ms-4 ms-lg-0 mb-3">
           <div class="card border-lg-primary position-relative transition-all">
-            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
               <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -410,7 +410,7 @@ const listHTML = `
           <li role="none">
             <div class="group focus-within ms-4 ms-lg-0 mb-3">
               <div class="card border-lg-primary position-relative transition-all">
-                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
                   <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -552,7 +552,7 @@ const listHTML = `
             <li role="none">
             <div class="group focus-within ms-4 ms-lg-0 mb-3">
               <div class="card border-lg-primary position-relative transition-all">
-                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
                   <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -702,7 +702,7 @@ const listHTML = `
 
             <div class="group focus-within ms-4 ms-lg-0 mb-3">
               <div class="card border-lg-primary position-relative transition-all">
-                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+                <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
                   <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -836,7 +836,7 @@ const listHTML = `
 
         <div class="group focus-within ms-4 ms-lg-0 mb-3">
           <div class="card border-lg-primary position-relative transition-all">
-            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
+            <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute -ml-2 mt-0 mt-lg-1 h-100 pe-2">
               <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
 
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid-dots" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">

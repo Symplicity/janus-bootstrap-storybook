@@ -23,7 +23,7 @@ const listContent = (type) => {
     <li role="none">
       <div class="group focus-within ms-4 ms-lg-0 mb-3">
         <div class="card border-lg-primary position-relative transition-all">
-          <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle d-flex position-absolute mt-0 mt-lg-1 me-n9 h-100 pe-2">
+          <div class="group-hover-lg-opacity group-hover-mt-0 transition-all drag-handle ms-n9 d-flex position-absolute mt-0 mt-lg-1 me-n9 h-100 pe-2">
             <button type="button" title="Drag to Position" aria-title="Drag to Position" tabindex="-1" class="btn p-2 d-flex align-items-center justify-content-center">
                 <svg class="icon-lg-font-size">
                   <use xlink:href="${iconSprite}#tabler-grid-dots" />
@@ -147,7 +147,7 @@ const listContent = (type) => {
 }
 
 const universalListHTML = `
-<div class="universal-list-container container d-flex flex-column p-3">
+<div class="universal-list-container container mx-auto text-left d-flex flex-column p-3">
   <ul aria-label="Expandable List" role="tree" class="universal-list list-unstyled"></ul>
 </div>
 `

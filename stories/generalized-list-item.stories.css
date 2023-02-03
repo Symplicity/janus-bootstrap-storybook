@@ -11,14 +11,8 @@
   opacity: 1;
 }
 
-.drag-handle {
-  margin-left: -2.5rem;
-}
-
 .universal-list-container {
-  margin: 0 auto;
   max-width: 800px;
-  text-align: left;
 }
 
 .card-actions {
@@ -52,10 +46,6 @@
   .group:hover .group-hover-lg-opacity,
   .group:focus-within .group-hover-lg-opacity {
     opacity: 1;
-  }
-
-  .mt-lg-1 {
-    margin-top: 1rem !important;
   }
 
   .group:hover .group-hover-mt-0,
