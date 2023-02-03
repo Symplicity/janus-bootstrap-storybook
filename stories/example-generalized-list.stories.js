@@ -1,5 +1,4 @@
 import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
-import './generalized-list-item.stories.css';
 
 export default {
   title: 'Examples/Lists'
