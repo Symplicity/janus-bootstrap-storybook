@@ -22,16 +22,16 @@ const listHTML = `
             <div class="d-flex py-3 align-items-center ps-4 pe-2 gap-2 pe-lg-4">
               <div class="minw-0">
                 <div class="position-relative">
-                  <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                    <div class="flex-grow-1 text-truncate h3">
+                  <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                    <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
                     </div>
                     <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                   </h4>
-                  <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                    <div class="flex-grow-1 text-truncate h4">
+                  <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                    <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
@@ -159,16 +159,16 @@ const listHTML = `
 
               <div class="minw-0">
                 <div class="position-relative">
-                  <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                    <div class="flex-grow-1 text-truncate h3">
+                  <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                    <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
                     </div>
                     <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                   </h4>
-                  <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                    <div class="flex-grow-1 text-truncate h4">
+                  <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                    <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
@@ -318,16 +318,16 @@ const listHTML = `
 
               <div class="minw-0">
                 <div class="position-relative">
-                  <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                    <div class="flex-grow-1 text-truncate h3">
+                  <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                    <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
                     </div>
                     <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                   </h4>
-                  <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                    <div class="flex-grow-1 text-truncate h4">
+                  <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                    <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
@@ -469,16 +469,16 @@ const listHTML = `
 
                   <div class="minw-0">
                     <div class="position-relative">
-                      <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                        <div class="flex-grow-1 text-truncate h3">
+                      <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                        <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                           <a href="#" class="stretched-link">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
                         </div>
                         <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                       </h4>
-                      <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                        <div class="flex-grow-1 text-truncate h4">
+                      <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                        <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                           <a href="#" class="stretched-link">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
@@ -622,17 +622,17 @@ const listHTML = `
 
                   <div class="minw-0">
                     <div class="position-relative">
-                      <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                        <div class="flex-grow-1 text-truncate h3">
-                          <a href="#" class="stretched-link">
+                      <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                        <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
+                          <a href="#" class="stretched-link lh-1">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
                         </div>
                         <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                       </h4>
-                      <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                        <div class="flex-grow-1 text-truncate h4">
-                          <a href="#" class="stretched-link">
+                      <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                        <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
+                          <a href="#" class="stretched-link lh-1">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
                         </div>
@@ -774,16 +774,16 @@ const listHTML = `
 
                   <div class="minw-0">
                     <div class="position-relative">
-                      <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                        <div class="flex-grow-1 text-truncate h3">
+                      <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                        <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                           <a href="#" class="stretched-link">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
                         </div>
                         <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                       </h4>
-                      <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                        <div class="flex-grow-1 text-truncate h4">
+                      <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                        <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                           <a href="#" class="stretched-link">
                             Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                           </a>
@@ -917,16 +917,16 @@ const listHTML = `
             <div class="d-flex py-3 align-items-center px-12 gap-2 pe-lg-4">
               <div class="minw-0">
                 <div class="position-relative">
-                  <h4 class="d-none d-md-flex align-items-center m-0 mb-1 gap-2 ">
-                    <div class="flex-grow-1 text-truncate h3">
+                  <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                    <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
                     </div>
                     <span class="badge bg-secondary flex-shrink-0">Some Label</span>
                   </h4>
-                  <h5 class="d-flex d-md-none align-items-center m-0 mb-1 gap-2">
-                    <div class="flex-grow-1 text-truncate h4">
+                  <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
+                    <div class="flex-grow-1 text-truncate h4 lh-sm m-0">
                       <a href="#" class="stretched-link">
                         Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Proin eget tortor risus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                       </a>
