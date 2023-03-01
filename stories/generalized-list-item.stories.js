@@ -41,22 +41,30 @@ const listContent = (type) => {
             </div>
             <div class="minw-0">
               <div class="position-relative">
-                <h4 class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                  <div class="flex-grow-1 text-truncate h3 mb-0 lh-sm">
-                    <a href="#" class="stretched-link lh-1">
-                      ${type.name}
-                    </a>
+                <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
+                  <div class="text-truncate h3 mb-0 lh-sm">
+                    <h3 class="m-0">
+                      <a href="#" class="stretched-link lh-1">
+                        ${type.name}
+                      </a>
+                    </h3>
                   </div>
-                  <span class="badge bg-secondary flex-shrink-0">Some Label</span>
-                </h4>
-                <h5 class="d-flex d-md-none align-items-center m-0 gap-2">
-                  <div class="flex-grow-1 text-truncate mb-0 lh-sm">
-                    <a href="#" class="stretched-link lh-1">
-                      ${type.name}
-                    </a>
+                  <div class="badge bg-secondary flex-shrink-0">
+                    Some Label
                   </div>
-                  <span class="badge bg-secondary flex-shrink-0">Some Label</span>
-                </h5>
+                </div>
+                <div class="d-flex d-md-none align-items-center m-0 gap-2">
+                  <div class="text-truncate mb-0 lh-sm">
+                    <h4 class="m-0">
+                      <a href="#" class="stretched-link lh-1">
+                        ${type.name}
+                      </a>
+                    </h4>
+                  </div>
+                  <div class="badge bg-secondary flex-shrink-0">
+                    Some Label
+                  </div>
+                </div>
                 <p class="m-0 text-truncate minw-0">
                   ${type.description}
                 </p>
