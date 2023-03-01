@@ -23,10 +23,10 @@ const listHTML = `
               <div class="minw-0">
                 <div class="position-relative">
                   <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                    <div class="text-truncate h3 mb-0 lh-sm">
-                      <h3 class="m-0">
+                    <div class="text-truncate mb-0 lh-sm">
+                      <h3 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
-                          Curabitur arcu erat, accumsan
+                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                         </a>
                       </h3>
                     </div>
@@ -36,7 +36,7 @@ const listHTML = `
                   </div>
                   <div class="d-flex d-md-none align-items-center m-0 gap-2">
                     <div class="text-truncate mb-0 lh-sm">
-                      <h4 class="m-0">
+                      <h4 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
                           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                         </a>
@@ -168,10 +168,10 @@ const listHTML = `
               <div class="minw-0">
                 <div class="position-relative">
                   <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                    <div class="text-truncate h3 mb-0 lh-sm">
-                      <h3 class="m-0">
+                    <div class="text-truncate mb-0 lh-sm">
+                      <h3 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
-                          Curabitur arcu erat, accumsan
+                          Curabitur 
                         </a>
                       </h3>
                     </div>
@@ -181,9 +181,9 @@ const listHTML = `
                   </div>
                   <div class="d-flex d-md-none align-items-center m-0 gap-2">
                     <div class="text-truncate mb-0 lh-sm">
-                      <h4 class="m-0">
+                      <h4 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
-                          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
+                          Curabitur
                         </a>
                       </h4>
                     </div>
@@ -335,8 +335,8 @@ const listHTML = `
               <div class="minw-0">
                 <div class="position-relative">
                   <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                    <div class="text-truncate h3 mb-0 lh-sm">
-                      <h3 class="m-0">
+                    <div class="text-truncate mb-0 lh-sm">
+                      <h3 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
                           Curabitur arcu erat, accumsan
                         </a>
@@ -348,7 +348,7 @@ const listHTML = `
                   </div>
                   <div class="d-flex d-md-none align-items-center m-0 gap-2">
                     <div class="text-truncate mb-0 lh-sm">
-                      <h4 class="m-0">
+                      <h4 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
                           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                         </a>
@@ -494,8 +494,8 @@ const listHTML = `
                   <div class="minw-0">
                     <div class="position-relative">
                       <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                        <div class="text-truncate h3 mb-0 lh-sm">
-                          <h3 class="m-0">
+                        <div class="text-truncate mb-0 lh-sm">
+                          <h3 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
                               Curabitur arcu erat, accumsan
                             </a>
@@ -507,9 +507,9 @@ const listHTML = `
                       </div>
                       <div class="d-flex d-md-none align-items-center m-0 gap-2">
                         <div class="text-truncate mb-0 lh-sm">
-                          <h4 class="m-0">
+                          <h4 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
-                              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
+                              Curabitur
                             </a>
                           </h4>
                         </div>
@@ -655,8 +655,8 @@ const listHTML = `
                   <div class="minw-0">
                     <div class="position-relative">
                       <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                        <div class="text-truncate h3 mb-0 lh-sm">
-                          <h3 class="m-0">
+                        <div class="text-truncate mb-0 lh-sm">
+                          <h3 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
                               Curabitur arcu erat, accumsan
                             </a>
@@ -668,7 +668,7 @@ const listHTML = `
                       </div>
                       <div class="d-flex d-md-none align-items-center m-0 gap-2">
                         <div class="text-truncate mb-0 lh-sm">
-                          <h4 class="m-0">
+                          <h4 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
                               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                             </a>
@@ -815,8 +815,8 @@ const listHTML = `
                   <div class="minw-0">
                     <div class="position-relative">
                       <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                        <div class="text-truncate h3 mb-0 lh-sm">
-                          <h3 class="m-0">
+                        <div class="text-truncate mb-0 lh-sm">
+                          <h3 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
                               Curabitur arcu erat, accumsan
                             </a>
@@ -828,7 +828,7 @@ const listHTML = `
                       </div>
                       <div class="d-flex d-md-none align-items-center m-0 gap-2">
                         <div class="text-truncate mb-0 lh-sm">
-                          <h4 class="m-0">
+                          <h4 class="m-0 text-truncate">
                             <a href="#" class="stretched-link lh-1">
                               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                             </a>
@@ -966,8 +966,8 @@ const listHTML = `
               <div class="minw-0">
                 <div class="position-relative">
                   <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                    <div class="text-truncate h3 mb-0 lh-sm">
-                      <h3 class="m-0">
+                    <div class="text-truncate mb-0 lh-sm">
+                      <h3 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
                           Curabitur arcu erat, accumsan
                         </a>
@@ -979,7 +979,7 @@ const listHTML = `
                   </div>
                   <div class="d-flex d-md-none align-items-center m-0 gap-2">
                     <div class="text-truncate mb-0 lh-sm">
-                      <h4 class="m-0">
+                      <h4 class="m-0 text-truncate">
                         <a href="#" class="stretched-link lh-1">
                           Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem
                         </a>

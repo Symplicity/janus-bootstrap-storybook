@@ -42,8 +42,8 @@ const listContent = (type) => {
             <div class="minw-0">
               <div class="position-relative">
                 <div class="d-none d-md-flex align-items-center m-0 gap-2 lh-sm">
-                  <div class="text-truncate h3 mb-0 lh-sm">
-                    <h3 class="m-0">
+                  <div class="text-truncate mb-0 lh-sm">
+                    <h3 class="m-0 text-truncate">
                       <a href="#" class="stretched-link lh-1">
                         ${type.name}
                       </a>
@@ -55,7 +55,7 @@ const listContent = (type) => {
                 </div>
                 <div class="d-flex d-md-none align-items-center m-0 gap-2">
                   <div class="text-truncate mb-0 lh-sm">
-                    <h4 class="m-0">
+                    <h4 class="m-0 text-truncate">
                       <a href="#" class="stretched-link lh-1">
                         ${type.name}
                       </a>
@@ -188,7 +188,7 @@ export const GeneralizedListItem = () => {
     },
     {
       id: '1235',
-      name: 'Student Grievance or Complaint',
+      name: 'Student Grievance or Complaint or Grievance or Complaint or Grievance or Complaint',
       description: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
       status: false,
       published: true,
