@@ -15,6 +15,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-notes',
     'storybook-addon-rtl',
-    '@storybook/addon-storysource'
+    '@storybook/addon-storysource',
+    'storybook-addon-dark-mode-toggle'
   ]
 }

@@ -14,3 +14,15 @@
         //body.setAttribute('lang','ar');
     });
 </script>
+<script>
+    const darkButton = document.getElementById('dark-button')
+    const lightButton = document.getElementById('light-button')
+    const html = document.querySelector('html')
+
+    darkButton.addEventListener('click', () => {
+        html.setAttribute('data-bs-theme', 'dark')
+    })
+    lightButton.addEventListener('click', () => {
+        html.setAttribute('data-bs-theme', 'light')
+    })
+</script>

@@ -6,19 +6,6 @@ import '../node_modules/@symplicity/bootstrap/dist/js/bootstrap.min.js'
 
 // Import colors from janus design tokens and offer them as backgorund colors
 import janusColors from '../node_modules/@symplicity/janus-tokens/dist/colors.common.js'
-const backgrounds = [{ name: 'white', value: '#ffffff', default: true }]
-Object.keys(janusColors).forEach(function (color) {
-  // Exclude text colors
-  if (!color.match(/text/i)) {
-    // Remove "color" from the name
-    backgrounds.push({
-      name: color.replace(/^color/, ''),
-      value: janusColors[color]
-    })
-  }
-})
-
-// export const decorators = []
 
 const customViewports = {
   viewport1: {
@@ -76,23 +63,7 @@ export const parameters = {
   actions: {
     handles: ['mouseover .btn', 'click .btn']
   },
-  backgrounds: {
-    default: 'light',
-    values: [
-      {
-        name: 'light',
-        value: '#fff'
-      },
-      {
-        name: 'medium',
-        value: '#efefef'
-      },
-      {
-        name: 'dark',
-        value: '#333'
-      }
-    ]
-  },
+  backgrounds: { disable: true },
   viewport: {
     viewports: {
       ...customViewports
@@ -104,6 +75,17 @@ export const parameters = {
         ? 0
         : a[1].id.localeCompare(b[1].id, { numeric: true }),
     selectedPanel: 'storybook/a11y/panel'
+  },
+  'data-theme-toggle': {
+    querySelector: 'html',
+    'data-target': 'bs-theme',
+    default: 'light',
+    values: {
+      dark: 'dark',
+      light: 'light'
+    },
+    lightFill: '#a05b00',
+    darkFill: '#0926b5'
   },
   layout: 'fullscreen'
 }
