@@ -1,4 +1,4 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
+import iconSprite from '../node_modules/@symplicity/tabler-icons/tabler-sprite-nostroke.svg'
 
 export default {
   title: 'Components/List Items'
@@ -13,8 +13,8 @@ const moreDocumentation = `
 `
 
 const getMetaInfo = (type) => {
-  const label = type.label;
-  return label ? label.join(', ') : '-';
+  const label = type.label
+  return label ? label.join(', ') : '-'
 }
 
 const listContent = (type) => {
@@ -70,31 +70,34 @@ const listContent = (type) => {
                 </p>
                 <dl class="d-flex flex-wrap flex-column flex-lg-row gap-0 m-0">
                   ${
-                    (type.metaA?.label?.length)
-                    ? `
+                    type.metaA?.label?.length
+                      ? `
                       <div class="d-flex gap-1 me-4">
                         <dt class="text-muted fw-normal">Meta:</dt>
                         <dd class="m-0">${getMetaInfo(type.metaA)}</dd>
                       </div>
-                    `: ''
+                    `
+                      : ''
                   }
                   ${
-                    (type.metaB?.label?.length)
-                    ? `
+                    type.metaB?.label?.length
+                      ? `
                       <div class="d-flex gap-1 me-4">
                         <dt class="text-muted fw-normal">Meta:</dt>
                         <dd class="m-0">${getMetaInfo(type.metaB)}</dd>
                       </div>
-                    `: ''
+                    `
+                      : ''
                   }
                   ${
-                    (type.metaC?.label?.length)
-                    ? `
+                    type.metaC?.label?.length
+                      ? `
                       <div class="d-flex gap-1 me-4">
                         <dt class="text-muted fw-normal">Meta:</dt>
                         <dd class="m-0">${getMetaInfo(type.metaC)}</dd>
                       </div>
-                    `: ''
+                    `
+                      : ''
                   }
                 </dl>
               </div>
@@ -171,12 +174,13 @@ export const GeneralizedListItem = () => {
   const container = $(
     '<div class="m-0" style="background: #fafafa;"></div>'
   ).append(universalListHTML)
-  
+
   const caseTypeData = [
     {
       id: '1234',
       name: 'Academic Misconduct',
-      description: 'Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
+      description:
+        'Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
       status: true,
       published: true,
       metaA: {
@@ -184,12 +188,13 @@ export const GeneralizedListItem = () => {
       },
       metaB: {
         label: ['The Collective', 'The Crew']
-      },
+      }
     },
     {
       id: '1235',
       name: 'Student Grievance or Complaint or Grievance or Complaint or Grievance or Complaint',
-      description: 'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
+      description:
+        'Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.',
       status: false,
       published: true,
       metaA: {
@@ -199,8 +204,13 @@ export const GeneralizedListItem = () => {
         label: ['The Alliance', 'The Crew']
       },
       metaC: {
-        label: ['The Collective', 'The Crew', 'The Circle of Trust', 'The Fellowship']
-      },
+        label: [
+          'The Collective',
+          'The Crew',
+          'The Circle of Trust',
+          'The Fellowship'
+        ]
+      }
     }
   ]
 
@@ -209,11 +219,11 @@ export const GeneralizedListItem = () => {
     createListItems.innerHTML = `
       ${caseTypeData.map((item, i) => listContent(item)).join('')}
     `
-    }, 100)
+  }, 100)
   return container[0]
 }
 
-GeneralizedListItem.storyName = 'Generalized List Item';
+GeneralizedListItem.storyName = 'Generalized List Item'
 
 GeneralizedListItem.parameters = {
   notes: `

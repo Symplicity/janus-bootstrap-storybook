@@ -1,4 +1,4 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
+import iconSprite from '../node_modules/@symplicity/tabler-icons/tabler-sprite-nostroke.svg'
 
 export default {
   title: 'Examples/Forms/Unvalidated Form'

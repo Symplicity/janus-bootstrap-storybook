@@ -1,4 +1,4 @@
-import iconSprite from '../node_modules/@symplicity/tabler-icons/symplicity/tabler-sprite-nostroke.svg'
+import iconSprite from '../node_modules/@symplicity/tabler-icons/tabler-sprite-nostroke.svg'
 
 import { text, number, radios } from '@storybook/addon-knobs'
 
@@ -296,7 +296,6 @@ ToggleFilterWithEllipsisButton.parameters = {
   `
 }
 
-
 const list_filter_html = () => {
   const checkbox_label = 'Extra Fields'
   const checkbox_options = {
@@ -344,24 +343,23 @@ const list_filter_html = () => {
     </div>
   </div>
 </div>
-`;
-};
-
-export const ListFilter = () => {
-  setTimeout(function() {
-    const collapsible = document.querySelector("#hiddenFields");
-    const cta = document.querySelector("#toggleFields");
-
-    cta.addEventListener("click", () => {
-      var bsCollapse = new bootstrap.Collapse(collapsible)
-    })
-    
-  }, 0)
-
-  return list_filter_html();
+`
 }
 
-ListFilter.storyName = 'List Filter';
+export const ListFilter = () => {
+  setTimeout(function () {
+    const collapsible = document.querySelector('#hiddenFields')
+    const cta = document.querySelector('#toggleFields')
+
+    cta.addEventListener('click', () => {
+      var bsCollapse = new bootstrap.Collapse(collapsible)
+    })
+  }, 0)
+
+  return list_filter_html()
+}
+
+ListFilter.storyName = 'List Filter'
 
 ListFilter.parameters = {
   notes: `
@@ -372,5 +370,5 @@ ListFilter.parameters = {
   ${list_filter_html}
   \`\`\`
 
-  `  
+  `
 }
