@@ -1,6 +1,6 @@
 import { document, setTimeout } from 'global'
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/tabler-sprite-nostroke.svg'
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite-nostroke.svg'
 
 export default {
   title: 'Components/Search'

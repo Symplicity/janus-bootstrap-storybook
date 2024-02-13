@@ -2,7 +2,7 @@ import buttonNotes from './button.notes.md'
 // import buttonIconNotes from './button.icon.notes.md';
 // import buttonOutlineNotes from './button.outline.notes.md';
 
-import iconSprite from '../node_modules/@symplicity/tabler-icons/tabler-sprite-nostroke.svg'
+import iconSprite from '../node_modules/@tabler/icons/tabler-sprite-nostroke.svg'
 
 export default {
   title: 'Examples/Buttons/Action Bar'
